@@ -13,7 +13,8 @@ pages:
     - pnpm config set store-dir node_modules/
   script:
     - pnpm install --frozen-lockfile
-    - pnpm docs:build --dest public
+    - pnpm docs:build
+    - mv .vitepress/dist public
   artifacts:
     expire_in: 1h30min
     paths:
