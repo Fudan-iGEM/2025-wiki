@@ -13,48 +13,48 @@ export default defineConfig({
       {
         text: 'Project',
         items: [
-          { text: 'Contribution', link: 'contribution' },
-          { text: 'Description', link: 'description' },
-          { text: 'Design', link: 'design' },
-          { text: 'Engineering', link: 'engineering' },
-          { text: 'Implementation', link: 'implementation' },
-          { text: 'Notebook', link: 'notebook' },
-          { text: 'Results', link: 'results' },
+          { text: 'Contribution', link: '/fudan/contribution' },
+          { text: 'Description', link: '/fudan/description' },
+          { text: 'Design', link: '/fudan/design' },
+          { text: 'Engineering', link: '/fudan/engineering' },
+          { text: 'Implementation', link: '/fudan/implementation' },
+          { text: 'Notebook', link: '/fudan/notebook' },
+          { text: 'Results', link: '/fudan/results' },
         ]
       },
       {
         text: 'Technology',
         items: [
-          { text: 'Experiments', link: 'experiments' },
-          { text: 'Measurement', link: 'measurement' },
-          { text: 'Improved Parts', link: 'improve' },
-          { text: 'Part Collection', link: 'part-collection' },
-          { text: 'Parts List', link: 'parts' },
-          { text: 'Safety', link: 'safety' },
-          { text: 'Software', link: 'software' },
-          { text: 'Hardware', link: 'hardware' },
+          { text: 'Experiments', link: '/fudan/experiments' },
+          { text: 'Measurement', link: '/fudan/measurement' },
+          { text: 'Improved Parts', link: '/fudan/improve' },
+          { text: 'Part Collection', link: '/fudan/part-collection' },
+          { text: 'Parts List', link: '/fudan/parts' },
+          { text: 'Safety', link: '/fudan/safety' },
+          { text: 'Software', link: '/fudan/software' },
+          { text: 'Hardware', link: '/fudan/hardware' },
         ]
       },
       {
         text: 'Community',
         items: [
-          { text: 'Education', link: 'education' },
-          { text: 'Entrepreneurship', link: 'entrepreneurship' },
-          { text: 'Inclusivity', link: 'inclusivity' },
-          { text: 'Integrated HP', link: 'human-practices' },
-          { text: 'Presentation', link: 'pv' },
-          { text: 'Promotion video', link: 'promotion-video' },
-          { text: 'Sustainable', link: 'sustainable' },
-          { text: 'Wiki @gitlab', link: 'hardware' },
+          { text: 'Education', link: '/fudan/education' },
+          { text: 'Entrepreneurship', link: '/fudan/entrepreneurship' },
+          { text: 'Inclusivity', link: '/fudan/inclusivity' },
+          { text: 'Integrated HP', link: '/fudan/human-practices' },
+          { text: 'Presentation', link: '/fudan/pv' },
+          { text: 'Promotion video', link: '/fudan/promotion-video' },
+          { text: 'Sustainable', link: '/fudan/sustainable' },
+          { text: 'Wiki @gitlab', link: '/fudan/hardware' },
         ]
       },
       {
         text: 'Team',
         items: [
-          { text: 'Attributions', link: 'attributions' },
-          { text: 'Collaborations', link: 'collaborations' },
-          { text: 'Heritage', link: 'heritage' },
-          { text: 'Members', link: 'team' },
+          { text: 'Attributions', link: '/fudan/attributions' },
+          { text: 'Collaborations', link: '/fudan/collaborations' },
+          { text: 'Heritage', link: '/fudan/heritage' },
+          { text: 'Members', link: '/fudan/team' },
         ]
       }
 
