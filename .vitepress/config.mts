@@ -13,48 +13,48 @@ export default defineConfig({
       {
         text: 'Project',
         items: [
-          { text: 'Contribution', link: '/contribution' },
-          { text: 'Description', link: '/description' },
-          { text: 'Design', link: '/design' },
-          { text: 'Engineering', link: '/engineering' },
-          { text: 'Implementation', link: '/implementation' },
-          { text: 'Notebook', link: '/notebook' },
-          { text: 'Results', link: '/results' },
+          { text: 'Contribution', link: 'contribution' },
+          { text: 'Description', link: 'description' },
+          { text: 'Design', link: 'design' },
+          { text: 'Engineering', link: 'engineering' },
+          { text: 'Implementation', link: 'implementation' },
+          { text: 'Notebook', link: 'notebook' },
+          { text: 'Results', link: 'results' },
         ]
       },
       {
         text: 'Technology',
         items: [
-          { text: 'Experiments', link: '/experiments' },
-          { text: 'Measurement', link: '/measurement' },
-          { text: 'Improved Parts', link: '/improve' },
-          { text: 'Part Collection', link: '/part-collection' },
-          { text: 'Parts List', link: '/parts' },
-          { text: 'Safety', link: '/safety' },
-          { text: 'Software', link: '/software' },
-          { text: 'Hardware', link: '/hardware' },
+          { text: 'Experiments', link: 'experiments' },
+          { text: 'Measurement', link: 'measurement' },
+          { text: 'Improved Parts', link: 'improve' },
+          { text: 'Part Collection', link: 'part-collection' },
+          { text: 'Parts List', link: 'parts' },
+          { text: 'Safety', link: 'safety' },
+          { text: 'Software', link: 'software' },
+          { text: 'Hardware', link: 'hardware' },
         ]
       },
       {
         text: 'Community',
         items: [
-          { text: 'Education', link: '/education' },
-          { text: 'Entrepreneurship', link: '/entrepreneurship' },
-          { text: 'Inclusivity', link: '/inclusivity' },
-          { text: 'Integrated HP', link: '/human-practices' },
-          { text: 'Presentation', link: '/pv' },
-          { text: 'Promotion video', link: '/promotion-video' },
-          { text: 'Sustainable', link: '/sustainable' },
-          { text: 'Wiki @gitlab', link: '/hardware' },
+          { text: 'Education', link: 'education' },
+          { text: 'Entrepreneurship', link: 'entrepreneurship' },
+          { text: 'Inclusivity', link: 'inclusivity' },
+          { text: 'Integrated HP', link: 'human-practices' },
+          { text: 'Presentation', link: 'pv' },
+          { text: 'Promotion video', link: 'promotion-video' },
+          { text: 'Sustainable', link: 'sustainable' },
+          { text: 'Wiki @gitlab', link: 'hardware' },
         ]
       },
       {
         text: 'Team',
         items: [
-          { text: 'Attributions', link: '/attributions' },
-          { text: 'Collaborations', link: '/collaborations' },
-          { text: 'Heritage', link: '/heritage' },
-          { text: 'Members', link: '/team' },
+          { text: 'Attributions', link: 'attributions' },
+          { text: 'Collaborations', link: 'collaborations' },
+          { text: 'Heritage', link: 'heritage' },
+          { text: 'Members', link: 'team' },
         ]
       }
 
