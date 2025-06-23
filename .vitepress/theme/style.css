@@ -1,0 +1,261 @@
+/* Import Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Modern tech color palette */
+  --vp-c-brand-1: #00bcd4;
+  --vp-c-brand-2: #0098a1;
+  --vp-c-brand-3: #55c2bb;
+  --vp-c-brand-soft: rgba(0, 188, 212, 0.14);
+  
+  --vp-c-default-1: var(--vp-c-gray-1);
+  --vp-c-default-2: var(--vp-c-gray-2);
+  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-soft: var(--vp-c-gray-soft);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  --vp-c-warning-1: #f97316;
+  --vp-c-warning-2: #fb923c;
+  --vp-c-warning-3: #fed7aa;
+  --vp-c-warning-soft: rgba(249, 115, 22, 0.14);
+
+  --vp-c-danger-1: var(--vp-c-red-1);
+  --vp-c-danger-2: var(--vp-c-red-2);
+  --vp-c-danger-3: var(--vp-c-red-3);
+  --vp-c-danger-soft: var(--vp-c-red-soft);
+  
+  /* Tech theme colors */
+  --tech-primary: #0098a1;
+  --tech-secondary: #00bcd4;
+  --tech-accent: #55c2bb;
+  --tech-dark: #1e3955;
+  --tech-light: #e0f7fa;
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+/* 确保导航栏在内容区之上 */
+.VPNav, .ModernNavbar {
+  position: relative !important;
+  z-index: 100 !important; /* 高z-index确保在最上层 */
+  pointer-events: auto !important; /* 确保能接收鼠标事件 */
+}
+
+/* 确保内容区不会覆盖导航栏 */
+.VPContent, .VPDoc, .content {
+  position: relative !important;
+  z-index: 10 !important; /* 低于导航栏的z-index */
+  pointer-events: auto !important; /* 确保能接收鼠标事件 */
+  padding : 0 !important;
+}
+
+/* 移除可能干扰链接点击的所有覆盖层 */
+.VPLocalNav, .VPContent:before, .VPContent:after, .VPDoc:before, .VPDoc:after {
+  pointer-events: none !important; /* 透明层不应该拦截事件 */
+}
+
+/* 确保navbar items是可见的且可点击 */
+.VPNavBarMenu, .nav-links-desktop, .nav-item, .nav-link {
+  display: flex !important;
+  pointer-events: auto !important;
+}
+
+/* 使下拉菜单可点击 */
+.dropdown-menu.is-active {
+  pointer-events: auto !important;
+  z-index: 999 !important;
+}
+
+.VPLocalNav{
+  display: none;
+}
+
+/* Modern scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00bcd4, #55c2bb);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0098a1, #00bcd4);
+  background-clip: padding-box;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(0, 188, 212, 0.2);
+  color: #1e3955;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced link transitions */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Modern focus styles */
+:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Enhanced heading styles for h2 and h3 */
+.vp-doc h2,
+.vp-doc h3 {
+  position: relative;
+  transition: color 0.3s ease;
+  color: var(--tech-dark);
+}
+
+.vp-doc h2 {
+  padding-bottom: 0.75rem; /* 12px */
+  margin-top: 3rem; /* 48px */
+  margin-bottom: 1.5rem; /* 24px */
+  border-bottom: 1px solid rgba(0, 188, 212, 0.1);
+}
+
+.vp-doc h2::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vp-doc h2:hover {
+  color: var(--vp-c-brand-2);
+}
+
+.vp-doc h2:hover::after {
+  width: 140px;
+}
+
+.vp-doc h3 {
+  padding-left: 1.25rem; /* 20px */
+  margin-top: 2rem; /* 32px */
+  margin-bottom: 1rem; /* 16px */
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.vp-doc h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid rgba(0, 188, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
+.vp-doc h3:hover {
+  color: var(--vp-c-brand-2);
+}
+
+.vp-doc h3:hover::before {
+  background: rgba(0, 188, 212, 0.3);
+  border-color: var(--vp-c-brand-2);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+}
+
+/* Code block enhancements */
+.vp-doc div[class*="language-"] {
+  border: 1px solid rgba(0, 188, 212, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.vp-doc div[class*="language-"]:hover {
+  box-shadow: 0 8px 24px rgba(0, 152, 161, 0.1);
+  border-color: rgba(0, 188, 212, 0.2);
+}
+
+/* Modern table styling */
+.vp-doc table {
+  border: 1px solid rgba(0, 188, 212, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.vp-doc th {
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.05) 0%, rgba(85, 194, 187, 0.05) 100%);
+  font-weight: 600;
+}
+
+.vp-doc tr:hover {
+  background-color: rgba(0, 188, 212, 0.02);
+}
+
+/* Enhanced blockquote */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: linear-gradient(to right, rgba(0, 188, 212, 0.05) 0%, transparent 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.vp-doc blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 4rem;
+  color: rgba(0, 188, 212, 0.1);
+  font-family: Georgia, serif;
+}
