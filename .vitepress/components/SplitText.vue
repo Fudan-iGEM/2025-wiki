@@ -15,10 +15,21 @@
   <script setup lang="ts">
   import { ref, onMounted, onUnmounted, watch, nextTick, useTemplateRef } from 'vue';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-import { SplitText as GSAPSplitText } from 'gsap/SplitText.js';
 
-gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
+// 动态导入GSAP插件
+let ScrollTrigger: any, GSAPSplitText: any;
+
+if (typeof window !== 'undefined') {
+  import('gsap/ScrollTrigger').then(module => {
+    ScrollTrigger = module.default || module.ScrollTrigger;
+    gsap.registerPlugin(ScrollTrigger);
+  });
+  
+  import('gsap/SplitText').then(module => {
+    GSAPSplitText = module.default || module.SplitText;
+    gsap.registerPlugin(GSAPSplitText);
+  });
+}
   
   export interface SplitTextProps {
     text: string;
@@ -64,6 +75,12 @@ gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
     if (typeof window === 'undefined' || !textRef.value || !props.text) return;
   
     await nextTick();
+    
+    // 等待GSAP插件加载完成
+    if (!GSAPSplitText || !ScrollTrigger) {
+      setTimeout(initializeAnimation, 100);
+      return;
+    }
   
     const el = textRef.value;
   

@@ -30,6 +30,9 @@ export default defineConfig({
           )
         }
       ]
+    },
+    ssr: {
+      noExternal: ['gsap']
     }
   }
 })
