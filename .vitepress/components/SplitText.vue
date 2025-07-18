@@ -14,11 +14,11 @@
   
   <script setup lang="ts">
   import { ref, onMounted, onUnmounted, watch, nextTick, useTemplateRef } from 'vue';
-  import { gsap } from 'gsap';
-  import { ScrollTrigger } from 'gsap/ScrollTrigger';
-  import { SplitText as GSAPSplitText } from 'gsap/SplitText';
-  
-  gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
+import { SplitText as GSAPSplitText } from 'gsap/SplitText.js';
+
+gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
   
   export interface SplitTextProps {
     text: string;
@@ -58,7 +58,7 @@
   const animationCompletedRef = ref(false);
   const scrollTriggerRef = ref<ScrollTrigger | null>(null);
   const timelineRef = ref<gsap.core.Timeline | null>(null);
-  const splitterRef = ref<GSAPSplitText | null>(null);
+  const splitterRef = ref<any>(null);
   
   const initializeAnimation = async () => {
     if (typeof window === 'undefined' || !textRef.value || !props.text) return;
@@ -72,7 +72,7 @@
     const absoluteLines = props.splitType === 'lines';
     if (absoluteLines) el.style.position = 'relative';
   
-    let splitter: GSAPSplitText;
+    let splitter: any;
     try {
       splitter = new GSAPSplitText(el, {
         type: props.splitType,
