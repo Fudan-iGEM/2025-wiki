@@ -893,16 +893,27 @@ onUnmounted(() => {
 
 <style scoped>
 .ModernNavbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e2e8f0; /* Softer border */
-  padding: 0.5rem 1.5rem; /* Reduced padding from 0.8rem to 0.5rem */
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 135, 148, 0.1);
+  padding: 0.5rem 1.5rem;
   position: sticky;
   top: 0;
-  z-index: 100; /* 增加z-index确保导航栏在最上层 */
+  z-index: 100;
   width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  pointer-events: auto; /* 确保能接收鼠标事件 */
-  position: relative; /* Ensure positioning context for absolute elements */
+  box-shadow: 0 2px 20px rgba(0, 135, 148, 0.08), 
+              0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ModernNavbar:hover {
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid rgba(0, 135, 148, 0.15);
+  box-shadow: 0 4px 24px rgba(0, 135, 148, 0.12), 
+              0 1px 0 rgba(255, 255, 255, 0.2) inset;
 }
 
 .container {
@@ -951,19 +962,40 @@ onUnmounted(() => {
 }
 
 .nav-link {
-  color: #4a5568; /* Medium gray text */
+  color: #4a5568;
   text-decoration: none;
-  font-size: 0.98rem; /* 稍微大一点的字体 */
-  padding: 0.5rem 0;
-  transition: color 0.2s ease-in-out;
+  font-size: 0.98rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
-  pointer-events: auto; /* 确保能接收鼠标事件 */
-  font-weight: 500; /* 稍微加粗 */
+  pointer-events: auto;
+  font-weight: 500;
+  position: relative;
+  background: transparent;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 135, 148, 0.08), rgba(93, 202, 198, 0.05));
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #2d3748; /* Darker on hover */
+  color: #008794;
+  transform: translateY(-1px);
+}
+
+.nav-link:hover::before {
+  opacity: 1;
 }
 
 .nav-link .arrow {
@@ -985,18 +1017,21 @@ onUnmounted(() => {
   top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
-  margin-top: 10px; /* Space between nav item and dropdown */
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.04);
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 135, 148, 0.12),
+              0 2px 0 rgba(255, 255, 255, 0.1) inset;
   padding: 1rem;
-  min-width: 435px; /* Reduced from 500px to make it narrower */
-  z-index: 101; /* 确保下拉菜单在导航栏之上 */
+  min-width: 435px;
+  z-index: 101;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid #e2e8f0;
-  pointer-events: none; /* 默认状态下不接收事件 */
+  border: 1px solid rgba(93, 202, 198, 0.15);
+  pointer-events: none;
   transform-origin: top center;
 }
 
@@ -1039,7 +1074,7 @@ onUnmounted(() => {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #3182ce;
+  background-color: #008794;
   transition: width 0.3s ease;
 }
 
@@ -1050,13 +1085,13 @@ onUnmounted(() => {
 .dropdown-item-icon {
   margin-right: 0.75rem;
   flex-shrink: 0;
-  color: #4299e1; /* Example icon color */
+  color: #0e9f99; /* Example icon color */
   transition: transform 0.3s ease;
 }
 
 .dropdown-item:hover .dropdown-item-icon {
   transform: scale(1.1);
-  color: #3182ce;
+  color: #008794;
 }
 
 .dropdown-item-content {
@@ -1123,7 +1158,7 @@ onUnmounted(() => {
 
 .mobile-menu-toggle.is-active .icon-bar:nth-child(1) {
   transform: rotate(45deg) translate(4px, 4px);
-  background-color: #3182ce;
+  background-color: #008794;
 }
 
 .mobile-menu-toggle.is-active .icon-bar:nth-child(2) {
@@ -1133,18 +1168,21 @@ onUnmounted(() => {
 
 .mobile-menu-toggle.is-active .icon-bar:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -5px);
-  background-color: #3182ce;
+  background-color: #008794;
 }
 
 .mobile-nav-links {
   display: none;
   position: fixed;
-  top: 50px; /* Adjusted to match new navbar height */
+  top: 50px;
   left: 0;
   right: 0;
-  background-color: #ffffff;
-  border-top: 1px solid #e2e8f0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(0, 135, 148, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 135, 148, 0.12),
+              0 1px 0 rgba(255, 255, 255, 0.1) inset;
   padding: 0;
   max-height: calc(100vh - 50px);
   overflow-y: auto;
@@ -1217,7 +1255,7 @@ onUnmounted(() => {
 
 .mobile-nav-item .arrow.open {
   transform: rotate(-135deg);
-  border-color: #3182ce;
+  border-color: #008794;
 }
 
 .mobile-submenu {
@@ -1249,7 +1287,7 @@ onUnmounted(() => {
 .mobile-submenu a:hover,
 .mobile-submenu a:active {
   background-color: #edf2f7;
-  color: #3182ce;
+  color: #008794;
 }
 
 .mobile-menu-overlay {

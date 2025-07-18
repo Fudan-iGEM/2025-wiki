@@ -4,11 +4,29 @@
 @tailwind utilities;
 
 :root {
-  /* Modern tech color palette */
-  --vp-c-brand-1: #00bcd4;
-  --vp-c-brand-2: #0098a1;
-  --vp-c-brand-3: #55c2bb;
-  --vp-c-brand-soft: rgba(0, 188, 212, 0.14);
+  /* 基于用户色板的现代配色方案 */
+  /* 主要色 - 青绿色系 */
+  --vp-c-brand-1: #008794;
+  --vp-c-brand-2: #0e9f99;
+  --vp-c-brand-3: #5dcac6;
+  --vp-c-brand-soft: rgba(0, 135, 148, 0.14);
+  
+  /* 品牌色渐变 */
+  --vp-c-brand-light: #b2eeeb;
+  --vp-c-brand-lighter: #e6f8f7;
+  
+  /* 橙色系 - 强调色 */
+  --vp-c-accent-1: #e97e35;
+  --vp-c-accent-2: #ffb07b;
+  --vp-c-accent-3: #faccaf;
+  --vp-c-accent-soft: rgba(233, 126, 53, 0.14);
+  
+  /* 次要色 */
+  --vp-c-secondary-1: #062570;
+  --vp-c-secondary-2: #e6f2fe;
+  --vp-c-highlight: #fff771;
+  --vp-c-warning: #ffd237;
+  --vp-c-success: #6fbe02;
   
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
@@ -20,22 +38,27 @@
   --vp-c-tip-3: var(--vp-c-brand-3);
   --vp-c-tip-soft: var(--vp-c-brand-soft);
 
-  --vp-c-warning-1: #f97316;
-  --vp-c-warning-2: #fb923c;
-  --vp-c-warning-3: #fed7aa;
-  --vp-c-warning-soft: rgba(249, 115, 22, 0.14);
+  --vp-c-warning-1: var(--vp-c-accent-1);
+  --vp-c-warning-2: var(--vp-c-accent-2);
+  --vp-c-warning-3: var(--vp-c-accent-3);
+  --vp-c-warning-soft: var(--vp-c-accent-soft);
 
   --vp-c-danger-1: var(--vp-c-red-1);
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
   
-  /* Tech theme colors */
-  --tech-primary: #0098a1;
-  --tech-secondary: #00bcd4;
-  --tech-accent: #55c2bb;
-  --tech-dark: #1e3955;
-  --tech-light: #e0f7fa;
+  /* 新主题色彩变量 */
+  --tech-primary: #008794;
+  --tech-secondary: #0e9f99;
+  --tech-accent: #5dcac6;
+  --tech-dark: #062570;
+  --tech-light: #e6f2fe;
+  --tech-orange: #e97e35;
+  --tech-orange-light: #ffb07b;
+  --tech-orange-lighter: #faccaf;
+  --tech-highlight: #fff771;
+  --tech-success: #6fbe02;
 }
 
 /**
@@ -71,6 +94,12 @@
   position: relative !important;
   z-index: 100 !important; /* 高z-index确保在最上层 */
   pointer-events: auto !important; /* 确保能接收鼠标事件 */
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 135, 148, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 135, 148, 0.08), 
+              0 1px 0 rgba(255, 255, 255, 0.1) inset;
 }
 
 /* 确保内容区不会覆盖导航栏 */
@@ -96,71 +125,100 @@
 .dropdown-menu.is-active {
   pointer-events: auto !important;
   z-index: 999 !important;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(93, 202, 198, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 135, 148, 0.12),
+              0 2px 0 rgba(255, 255, 255, 0.1) inset;
 }
 
 .VPLocalNav{
   display: none;
 }
 
-/* Modern scrollbar styling */
+/* 美化滚动条样式 */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
+  background: var(--tech-light);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 135, 148, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00bcd4, #55c2bb);
-  border-radius: 10px;
+  background: linear-gradient(180deg, var(--tech-primary), var(--tech-secondary));
+  border-radius: 12px;
   border: 2px solid transparent;
   background-clip: padding-box;
+  box-shadow: inset 0 0 0 1px rgba(0, 135, 148, 0.1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #0098a1, #00bcd4);
+  background: linear-gradient(180deg, var(--tech-secondary), var(--tech-accent));
   background-clip: padding-box;
+  box-shadow: inset 0 0 0 1px rgba(0, 135, 148, 0.2);
 }
 
-/* Selection styling */
+/* 选择文本样式 */
 ::selection {
-  background: rgba(0, 188, 212, 0.2);
-  color: #1e3955;
+  background: rgba(93, 202, 198, 0.3);
+  color: var(--tech-dark);
 }
 
-/* Add smooth scrolling */
+/* 平滑滚动 */
 html {
   scroll-behavior: smooth;
+  background: linear-gradient(135deg, #ffffff 0%, var(--tech-light) 100%);
 }
 
-/* Enhanced link transitions */
+/* 增强链接过渡效果 */
 a {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Modern focus styles */
+a:hover {
+  color: var(--tech-orange);
+  text-decoration-color: var(--tech-orange);
+}
+
+/* 现代焦点样式 */
 :focus-visible {
-  outline: 2px solid var(--vp-c-brand-1);
+  outline: 2px solid var(--tech-highlight);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 4px rgba(255, 247, 113, 0.2);
 }
 
-/* Enhanced heading styles for h2 and h3 */
+/* 增强标题样式 */
+.vp-doc h1 {
+  background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 50%, var(--tech-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
 .vp-doc h2,
 .vp-doc h3 {
   position: relative;
-  transition: color 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--tech-dark);
 }
 
 .vp-doc h2 {
-  padding-bottom: 0.75rem; /* 12px */
-  margin-top: 3rem; /* 48px */
-  margin-bottom: 1.5rem; /* 24px */
-  border-bottom: 1px solid rgba(0, 188, 212, 0.1);
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(93, 202, 198, 0.2);
+  background: linear-gradient(135deg, var(--tech-dark) 0%, var(--tech-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .vp-doc h2::after {
@@ -168,26 +226,27 @@ a {
   position: absolute;
   bottom: -1px;
   left: 0;
-  width: 70px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
-  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.vp-doc h2:hover {
-  color: var(--vp-c-brand-2);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--tech-primary), var(--tech-orange));
+  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 135, 148, 0.3);
 }
 
 .vp-doc h2:hover::after {
-  width: 140px;
+  width: 160px;
+  height: 4px;
+  box-shadow: 0 4px 16px rgba(0, 135, 148, 0.4);
 }
 
 .vp-doc h3 {
-  padding-left: 1.25rem; /* 20px */
-  margin-top: 2rem; /* 32px */
-  margin-bottom: 1rem; /* 16px */
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 600;
+  color: var(--tech-primary);
 }
 
 .vp-doc h3::before {
@@ -196,66 +255,102 @@ a {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: transparent;
-  border: 2px solid rgba(0, 188, 212, 0.3);
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, var(--tech-accent), var(--tech-orange));
+  box-shadow: 0 2px 8px rgba(93, 202, 198, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .vp-doc h3:hover {
-  color: var(--vp-c-brand-2);
+  color: var(--tech-orange);
+  transform: translateX(4px);
 }
 
 .vp-doc h3:hover::before {
-  background: rgba(0, 188, 212, 0.3);
-  border-color: var(--vp-c-brand-2);
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+  transform: translateY(-50%) scale(1.2);
+  box-shadow: 0 4px 16px rgba(233, 126, 53, 0.4);
 }
 
-/* Code block enhancements */
+/* 代码块增强 */
 .vp-doc div[class*="language-"] {
-  border: 1px solid rgba(0, 188, 212, 0.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(93, 202, 198, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 135, 148, 0.08);
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(135deg, #ffffff 0%, var(--tech-light) 100%);
 }
 
 .vp-doc div[class*="language-"]:hover {
-  box-shadow: 0 8px 24px rgba(0, 152, 161, 0.1);
-  border-color: rgba(0, 188, 212, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 135, 148, 0.12);
+  border-color: var(--tech-accent);
+  transform: translateY(-2px);
 }
 
-/* Modern table styling */
+/* 表格样式 */
 .vp-doc table {
-  border: 1px solid rgba(0, 188, 212, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(93, 202, 198, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 135, 148, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .vp-doc th {
-  background: linear-gradient(135deg, rgba(0, 188, 212, 0.05) 0%, rgba(85, 194, 187, 0.05) 100%);
+  background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 100%);
+  color: white;
   font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .vp-doc tr:hover {
-  background-color: rgba(0, 188, 212, 0.02);
+  background: linear-gradient(135deg, rgba(93, 202, 198, 0.05) 0%, rgba(178, 238, 235, 0.05) 100%);
 }
 
-/* Enhanced blockquote */
+/* 引用块增强 */
 .vp-doc blockquote {
-  border-left: 4px solid var(--vp-c-brand-1);
-  background: linear-gradient(to right, rgba(0, 188, 212, 0.05) 0%, transparent 100%);
+  border-left: 4px solid var(--tech-orange);
+  background: linear-gradient(to right, rgba(233, 126, 53, 0.08) 0%, transparent 100%);
   position: relative;
   overflow: hidden;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 12px rgba(233, 126, 53, 0.1);
 }
 
 .vp-doc blockquote::before {
   content: '"';
   position: absolute;
   top: -10px;
-  left: 10px;
+  left: 15px;
   font-size: 4rem;
-  color: rgba(0, 188, 212, 0.1);
+  color: rgba(233, 126, 53, 0.15);
   font-family: Georgia, serif;
+}
+
+/* 自定义高亮框 */
+.highlight-box {
+  background: linear-gradient(135deg, var(--tech-highlight) 0%, rgba(255, 247, 113, 0.3) 100%);
+  border: 2px solid var(--tech-success);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 16px rgba(111, 190, 2, 0.15);
+}
+
+/* 成功提示框 */
+.success-box {
+  background: linear-gradient(135deg, rgba(111, 190, 2, 0.1) 0%, rgba(255, 247, 113, 0.1) 100%);
+  border-left: 4px solid var(--tech-success);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* 警告框 */
+.warning-box {
+  background: linear-gradient(135deg, rgba(255, 210, 55, 0.1) 0%, rgba(255, 176, 123, 0.1) 100%);
+  border-left: 4px solid var(--vp-c-warning);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem;
+  margin: 1rem 0;
 }

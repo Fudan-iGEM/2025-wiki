@@ -6,14 +6,14 @@ import VPDocFooter from "vitepress/dist/client/theme-default/components/VPDocFoo
 import "../theme/tw.css";
 import TitleInfo from "./TitleInfo.vue";
 import CustomTOC from "./CustomTOC.vue";
+import SpotlightCard from "./SpotlightCard.vue";
+import CircularText from "./CircularText.vue";
 
 const { theme, frontmatter } = useData();
 
 const route = useRoute();
-// 假设我们总是需要侧边栏，根据你的实际逻辑调整
 const hasAside = computed(() => true);
-// 布局图中侧边栏在左侧
-const leftAside = computed(() => true); // 保持左侧边栏
+const leftAside = computed(() => true); 
 
 const pageName = computed(() => route.path.replace(/[./]+/g, "_").replace(/_html$/, ""));
 const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.jpg");
@@ -61,28 +61,6 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
         <div class="content-container">
           <slot name="doc-before" />
           <main class="main">
-            <!-- Enhanced Solution Cards -->
-            <div class="solution-cards">
-              <div class="solution-card">
-                <div class="card-icon">💼</div>
-                <h3 class="card-title">Business Solution</h3>
-                <p class="card-description">Interdum et malesuada ac ante...</p>
-                <div class="card-action">Learn more →</div>
-              </div>
-              <div class="solution-card">
-                <div class="card-icon">💡</div>
-                <h3 class="card-title">Free project quote</h3>
-                <p class="card-description">Interdum et malesuada ac ante...</p>
-                <div class="card-action">Get quote →</div>
-              </div>
-              <div class="solution-card">
-                <div class="card-icon">🚀</div>
-                <h3 class="card-title">Nulla lobortis nunc</h3>
-                <p class="card-description">Interdum et malesuada ac ante...</p>
-                <div class="card-action">Explore →</div>
-              </div>
-            </div>
-
             <!-- Content Sections container -->
             <div class="content-sections">
               <!-- Content will be rendered from markdown files -->
@@ -355,7 +333,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #00bcd4, #4dd0e1, #55c2bb);
+  background: linear-gradient(90deg, #008794, #0e9f99, #5dcac6);
   border-radius: 16px 16px 0 0;
 }
 
@@ -411,7 +389,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #00bcd4, transparent);
+  background: linear-gradient(90deg, transparent, #008794, transparent);
   border-radius: 2px;
 }
 
@@ -449,7 +427,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, #00bcd4, #55c2bb, #0098a1, #4dd0e1);
+  background: linear-gradient(45deg, #008794, #5dcac6, #0e9f99, #b2eeeb);
   border-radius: 20px;
   opacity: 0;
   z-index: -1;
@@ -515,7 +493,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   left: 0;
   width: 50px;
   height: 3px;
-  background: linear-gradient(90deg, #00bcd4, transparent);
+  background: linear-gradient(90deg, #008794, transparent);
   border-radius: 2px;
   transition: width 0.4s ease;
 }
@@ -544,7 +522,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
 
 .card-action:hover {
   transform: translateX(6px);
-  color: #00bcd4;
+  color: #008794;
 }
 
 .card-action::after {
@@ -589,7 +567,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
 .doc-footer {
   flex-shrink: 0;
   padding: 2rem 3rem;
-  background: linear-gradient(135deg, #0a1628 0%, #1e3955 100%);
+  background: linear-gradient(135deg, #062570 0%, #041944 100%);
   text-align: center;
   color: #94a3b8;
   font-size: 0.9rem;
@@ -606,7 +584,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #00bcd4 20%, #55c2bb 50%, #00bcd4 80%, transparent);
+  background: linear-gradient(90deg, transparent, #008794 20%, #5dcac6 50%, #008794 80%, transparent);
   animation: slide-line 8s linear infinite;
 }
 

@@ -1,7 +1,29 @@
 <template>
   <div class="title-info">
     <!-- Add back the title that floats between image and content -->
-    <h1 class="hero-title" ref="titleRef">{{ pageTitle || "Suspendisse" }}</h1>
+    <div class="hero-title-container" ref="titleRef">
+      <SplitText
+        :text="pageTitle || 'Suspendisse'"
+        :style="{
+          fontSize: '4.2rem',
+          fontWeight: '800',
+          lineHeight: '1.1',
+          letterSpacing: '-2px',
+          display: 'block',
+          color: '#062570'
+        }"
+        :delay="200"
+        :duration="0.8"
+        ease="power3.out"
+        split-type="chars"
+        :from="{ opacity: 0, y: 60, rotateX: 90 }"
+        :to="{ opacity: 1, y: 0, rotateX: 0 }"
+        :threshold="0.1"
+        root-margin="-50px"
+        text-align="left"
+        @animation-complete="handleTitleAnimationComplete"
+      />
+    </div>
 
     <!-- Description and button content -->
     <div class="hero-bottom-content">
@@ -25,6 +47,7 @@
 <script setup>
 import { useData } from "vitepress";
 import { computed, ref, onMounted, onUnmounted } from "vue";
+import SplitText from "./SplitText.vue";
 
 // 获取当前页面的数据
 const { frontmatter } = useData();
@@ -75,50 +98,11 @@ import "../theme/tw.css";
 
 const titleRef = ref(null);
 
-const handleMouseMove = (event) => {
-  if (!titleRef.value) return;
-
-  const { clientX, clientY } = event;
-  const rect = titleRef.value.getBoundingClientRect();
-  const centerX = rect.left + rect.width / 2;
-  const centerY = rect.top + rect.height / 2;
-
-  // Calculate rotation values based on mouse position relative to title center
-  const rotateY = ((clientX - centerX) / (rect.width / 2)) * 8; // Max rotation 8 degrees
-  const rotateX = -((clientY - centerY) / (rect.height / 2)) * 8; // Max rotation 8 degrees
-
-  // Apply transform using CSS variables for a smooth effect
-  titleRef.value.style.setProperty("--rotateX", `${rotateX}deg`);
-  titleRef.value.style.setProperty("--rotateY", `${rotateY}deg`);
-  titleRef.value.style.setProperty("--shadow-x", `${rotateY * 0.8}px`);
-  titleRef.value.style.setProperty("--shadow-y", `${-rotateX * 0.8}px`);
+// 标题动画完成回调
+const handleTitleAnimationComplete = () => {
+  // 可以在这里添加标题动画完成后的逻辑
+  console.log('Title animation completed');
 };
-
-const handleMouseLeave = () => {
-  if (!titleRef.value) return;
-
-  // Reset styles when mouse leaves
-  titleRef.value.style.setProperty("--rotateX", "0deg");
-  titleRef.value.style.setProperty("--rotateY", "0deg");
-  titleRef.value.style.setProperty("--shadow-x", "0px");
-  titleRef.value.style.setProperty("--shadow-y", "0px");
-};
-
-onMounted(() => {
-  const heroContainer = document.querySelector(".hero-container");
-  if (heroContainer) {
-    heroContainer.addEventListener("mousemove", handleMouseMove);
-    heroContainer.addEventListener("mouseleave", handleMouseLeave);
-  }
-});
-
-onUnmounted(() => {
-  const heroContainer = document.querySelector(".hero-container");
-  if (heroContainer) {
-    heroContainer.removeEventListener("mousemove", handleMouseMove);
-    heroContainer.removeEventListener("mouseleave", handleMouseLeave);
-  }
-});
 </script>
 
 <style>
@@ -129,42 +113,28 @@ onUnmounted(() => {
   position: relative;
 }
 
-/* Title styling - enhanced with tech aesthetics */
-.hero-title {
-  font-size: 4.2rem;
-  font-weight: 800;
-  color: #1e3955;
-  margin: 0;
-  line-height: 1.1;
-  padding: 0 6rem;
+/* 标题容器样式 */
+.hero-title-container {
   position: relative;
   z-index: 20;
   margin-bottom: 1.5rem;
-  letter-spacing: -2px;
-  background: linear-gradient(135deg, #1e3955 0%, #0098a1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: var(--shadow-x, 0px) var(--shadow-y, 0px) 20px rgba(0, 20, 40, 0.2),
-    0 0 50px rgba(0, 152, 161, 0.2);
-
-  /* Apply 3D transform using CSS variables from script */
-  transform: translateY(-50%) perspective(1500px) rotateX(var(--rotateX, 0deg))
-    rotateY(var(--rotateY, 0deg));
-  transition: transform 0.1s ease-out, text-shadow 0.1s ease-out;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  padding: 0 6rem;
 }
 
-/* Add animated underline effect */
-.hero-title::after {
+/* 添加动态下划线效果 */
+.hero-title-container::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 6rem;
-  width: 120px;
+  width: 0;
   height: 4px;
-  background: linear-gradient(90deg, #00bcd4, #55c2bb);
+  background: linear-gradient(90deg, #008794, #5dcac6, #0e9f99);
   border-radius: 2px;
-  animation: expand-line 2s ease-out forwards;
+  animation: expand-line 2s ease-out 1s forwards;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
 }
 
 @keyframes expand-line {
@@ -202,7 +172,7 @@ onUnmounted(() => {
 }
 
 .hero-description .text-orange-400 {
-  color: #f97316;
+  color: #e97e35;
   font-weight: 600;
   position: relative;
   padding: 0 4px;
@@ -215,7 +185,7 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   height: 2px;
-  background: #f97316;
+  background: #e97e35;
   opacity: 0.3;
 }
 
@@ -224,7 +194,7 @@ onUnmounted(() => {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  background: linear-gradient(135deg, #00bcd4 0%, #55c2bb 100%);
+  background: linear-gradient(135deg, #008794 0%, #5dcac6 100%);
   color: white;
   border: none;
   padding: 0.8rem 1.8rem;
@@ -263,9 +233,12 @@ onUnmounted(() => {
 
 /* Improved responsive adjustments */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 3rem;
+  .hero-title-container {
     padding: 0 3rem;
+  }
+
+  .hero-title-container::after {
+    left: 3rem;
   }
 
   .hero-bottom-content {
@@ -274,9 +247,12 @@ onUnmounted(() => {
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.5rem;
+  .hero-title-container {
     padding: 0 1.5rem;
+  }
+
+  .hero-title-container::after {
+    left: 1.5rem;
   }
 
   .hero-bottom-content {

@@ -275,8 +275,8 @@ function scrollToHeading(id) {
 }
 
 .toc-link.active .h2-marker {
-  background: linear-gradient(135deg, #00bcd4, #55c2bb);
-  box-shadow: 0 0 12px rgba(0, 188, 212, 0.4);
+  background: linear-gradient(135deg, #008794, #5dcac6);
+  box-shadow: 0 0 12px rgba(0, 135, 148, 0.4);
 }
 
 .toc-link.active .h2-marker::after {
@@ -284,9 +284,9 @@ function scrollToHeading(id) {
 }
 
 .toc-link.active .h3-marker {
-  border-color: #00bcd4;
-  background: rgba(0, 188, 212, 0.3);
-  box-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+  border-color: #008794;
+  background: rgba(0, 135, 148, 0.3);
+    box-shadow: 0 0 8px rgba(0, 135, 148, 0.3);
 }
 
 .no-headings {
