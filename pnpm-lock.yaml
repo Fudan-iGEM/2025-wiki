@@ -26,6 +26,9 @@ importers:
       tailwindcss:
         specifier: ^4.1.3
         version: 4.1.3
+      three:
+        specifier: ^0.178.0
+        version: 0.178.0
       url:
         specifier: ^0.11.4
         version: 0.11.4
@@ -1054,6 +1057,9 @@ packages:
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
+
+  three@0.178.0:
+    resolution: {integrity: sha512-ybFIB0+x8mz0wnZgSGy2MO/WCO6xZhQSZnmfytSPyNpM0sBafGRVhdaj+erYh5U+RhQOAg/eXqw5uVDiM2BjhQ==}
 
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
@@ -2150,6 +2156,8 @@ snapshots:
   tailwindcss@4.1.3: {}
 
   tapable@2.2.1: {}
+
+  three@0.178.0: {}
 
   trim-lines@3.0.1: {}
 
