@@ -155,7 +155,7 @@
 <script>
 import { ref, reactive, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import ResistanceSim3DStandalone from './ResistanceSim3DStandalone.vue'
 
 export default {
