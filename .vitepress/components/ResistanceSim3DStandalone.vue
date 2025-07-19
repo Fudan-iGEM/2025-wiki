@@ -1,213 +1,185 @@
 <template>
-  <div class="w-full max-w-5xl mx-auto bg-white rounded-lg border shadow-sm">
-    <!-- Header -->
-    <div class="flex flex-col space-y-1.5 p-6">
-      <h3
-        class="text-2xl font-semibold leading-none tracking-tight"
-        style="
-          background: linear-gradient(135deg, #008794 0%, #0e9f99 50%, #5dcac6 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        "
-      >
-        3D Drug Resistance Gradient Model
-      </h3>
-    </div>
-
-    <!-- Content Area -->
-    <div class="p-6 pt-0">
-      <div class="flex flex-col gap-4" style="width: 800px; margin: 0 auto">
-        <!-- Control Buttons -->
-        <div class="flex gap-4 mb-4">
-          <button
-            @click="togglePause"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-24"
-            style="
-              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-              color: white;
-              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-            "
-          >
-            {{ isPaused ? "Start" : "Pause" }}
-          </button>
-          <button
-            @click="handleReset"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-24"
-            style="
-              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-              color: white;
-              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-            "
-          >
-            Reset
-          </button>
-          <button
-            @click="resetCamera"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-32"
-            style="
-              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-              color: white;
-              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-            "
-          >
-            Reset View
-          </button>
-          <button
-            @click="startOpioidSecretion"
-            :disabled="opioidSecreting"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-40"
-            :style="
-              opioidSecreting
-                ? 'background: #e6f8f7; color: #008794; border: 1px solid #5dcac6;'
-                : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
-            "
-          >
-            {{ opioidSecreting ? "Opioid Secreted" : "Secrete Opioid" }}
-          </button>
-          <button
-            @click="() => addAntibiotic('low')"
-            :disabled="antibioticConcentration === 'high'"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-40"
-            :style="
-              antibioticConcentration === 'none'
-                ? 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
-                : 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
-            "
-          >
-            {{
-              antibioticConcentration === "none" ? "Low Antibiotic" : "Low Conc. Added"
-            }}
-          </button>
-          <button
-            @click="() => addAntibiotic('high')"
-            :disabled="antibioticConcentration === 'high'"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-40"
-            :style="
-              antibioticConcentration === 'high'
-                ? 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
-                : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
-            "
-          >
-            {{
-              antibioticConcentration === "high" ? "High Conc. Added" : "High Antibiotic"
-            }}
-          </button>
-        </div>
-
-        <!-- Speed Control -->
-        <div class="mb-4">
-          <div class="mb-2" style="color: #008794; font-weight: 600">
-            Simulation Speed: {{ speedMultiplier }}x
-          </div>
-          <input
-            type="range"
-            v-model.number="speedMultiplier"
-            min="0.5"
-            max="3"
-            step="0.5"
-            class="w-full h-2 rounded-lg appearance-none cursor-pointer"
-            style="background: linear-gradient(to right, #e6f8f7, #5dcac6); outline: none"
-          />
-          <div class="flex justify-between text-xs" style="color: #008794">
-            <span>0.5x</span>
-            <span>1x</span>
-            <span>1.5x</span>
-            <span>2x</span>
-            <span>2.5x</span>
-            <span>3x</span>
-          </div>
-        </div>
-
-        <!-- 3D Canvas Container -->
-        <div
-          class="flex justify-center items-center rounded-lg mb-4"
+  <div class="min-h-screen bg-gradient-to-br from-slate-50 to-cyan-50 p-4">
+    <div class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+        <h3
+          class="text-2xl md:text-3xl font-bold text-center"
           style="
-            width: 800px;
-            height: 500px;
-            position: relative;
-            background: linear-gradient(135deg, #e6f8f7 0%, #f8fafb 100%);
-            border: 1px solid #5dcac6;
+            background: linear-gradient(135deg, #008794 0%, #0e9f99 50%, #5dcac6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
           "
         >
-          <canvas
-            ref="canvasRef"
-            class="rounded-lg cursor-grab active:cursor-grabbing"
-            style="width: 800px; height: 500px"
-            @click="handleMouseClick"
-          />
-          <!-- Antibiotic Concentration Display -->
-          <div
-            class="absolute text-white px-3 py-2 rounded-md text-sm font-semibold"
-            style="
-              top: 10px;
-              right: 10px;
-              z-index: 15;
-              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-            "
-          >
-            Antibiotic:
-            {{
-              antibioticConcentration === "none"
-                ? "None"
-                : antibioticConcentration === "low"
-                ? "Low"
-                : "High"
-            }}
-          </div>
-          <!-- Selected Cell Info Display -->
-          <div
-            v-if="selectedCell"
-            class="absolute text-white px-2 py-1 rounded-md text-sm"
-            style="background: rgba(0, 135, 148, 0.9); border: 1px solid #5dcac6"
-            :style="{
-              left: `${
-                selectedCell.clickPosition ? selectedCell.clickPosition.x : 400
-              }px`,
-              top: `${selectedCell.clickPosition ? selectedCell.clickPosition.y : 250}px`,
-              transform: 'translate(-50%, -50%)',
-              zIndex: 10,
-            }"
-          >
-            <div>Generation {{ selectedCell.id }}</div>
-            <div>
-              Opioid Conc.: {{ (selectedCell.opioidConcentration * 100).toFixed(1) }}%
+          3D Drug Resistance Gradient Model
+        </h3>
+      </div>
+
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Left Panel - Controls and Charts -->
+        <div class="lg:col-span-4 space-y-6">
+          <!-- Control Buttons -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Simulation Controls
+            </h4>
+            <div
+              class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3"
+            >
+              <button
+                @click="togglePause"
+                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+                style="
+                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+                  color: white;
+                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+                "
+              >
+                {{ isPaused ? "Start" : "Pause" }}
+              </button>
+              <button
+                @click="handleReset"
+                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+                style="
+                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+                  color: white;
+                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+                "
+              >
+                Reset
+              </button>
+              <button
+                @click="resetCamera"
+                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+                style="
+                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+                  color: white;
+                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+                "
+              >
+                Reset View
+              </button>
+              <button
+                @click="startOpioidSecretion"
+                :disabled="opioidSecreting"
+                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+                :style="
+                  opioidSecreting
+                    ? 'background: #e6f8f7; color: #008794; border: 1px solid #5dcac6;'
+                    : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
+                "
+              >
+                {{ opioidSecreting ? "Opioid Secreted" : "Secrete Opioid" }}
+              </button>
+              <button
+                @click="() => addAntibiotic('low')"
+                :disabled="antibioticConcentration === 'high'"
+                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+                :style="
+                  antibioticConcentration === 'none'
+                    ? 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
+                    : 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
+                "
+              >
+                {{
+                  antibioticConcentration === "none"
+                    ? "Low Antibiotic"
+                    : "Low Conc. Added"
+                }}
+              </button>
+              <button
+                @click="() => addAntibiotic('high')"
+                :disabled="antibioticConcentration === 'high'"
+                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+                :style="
+                  antibioticConcentration === 'high'
+                    ? 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
+                    : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
+                "
+              >
+                {{
+                  antibioticConcentration === "high"
+                    ? "High Conc. Added"
+                    : "High Antibiotic"
+                }}
+              </button>
             </div>
+
+            <!-- Speed Control -->
+            <div class="mt-6">
+              <div class="mb-2 text-sm font-medium" style="color: #008794">
+                Simulation Speed: {{ speedMultiplier }}x
+              </div>
+              <input
+                type="range"
+                v-model.number="speedMultiplier"
+                min="0.5"
+                max="3"
+                step="0.5"
+                class="w-full h-2 rounded-lg appearance-none cursor-pointer"
+                style="
+                  background: linear-gradient(to right, #e6f8f7, #5dcac6);
+                  outline: none;
+                "
+              />
+              <div class="flex justify-between text-xs mt-1" style="color: #008794">
+                <span>0.5x</span>
+                <span>1x</span>
+                <span>1.5x</span>
+                <span>2x</span>
+                <span>2.5x</span>
+                <span>3x</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real-time Statistics Chart -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Cell Population Trends
+            </h4>
+            <div ref="populationChartRef" class="w-full h-64"></div>
+          </div>
+
+          <!-- Resistance Distribution Chart -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Resistance Distribution
+            </h4>
+            <div ref="resistanceChartRef" class="w-full h-48"></div>
           </div>
         </div>
 
-        <!-- Statistics -->
-        <div
-          class="p-4 rounded-lg shadow border"
-          style="
-            width: 800px;
-            background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
-            border: 1px solid #5dcac6;
-          "
-        >
-          <div class="grid grid-cols-2 gap-4">
-            <div class="text-sm space-y-2">
-              <div class="font-bold mb-2" style="color: #008794">
-                Real-time Statistics
-              </div>
-              <div style="color: #475569">
-                Total Cells: {{ stats.totalCells.toLocaleString() }}
-              </div>
-              <div style="color: #475569">Visible Cells: {{ stats.visibleCells }}</div>
-              <div style="color: #475569">Avg Cell Length: {{ stats.avgLength }}</div>
-              <div style="color: #475569">Growth Rate: {{ stats.growthRate }}%</div>
-              <div style="color: #475569">
-                Simulation Time: {{ minutes }}min {{ seconds }}sec
-              </div>
-            </div>
-            <div class="text-sm space-y-2">
-              <div class="font-bold mb-2" style="color: #008794">Resistance Status</div>
-              <div style="color: #475569">
-                Opioid Secretion: {{ opioidSecreting ? "Yes" : "No" }}
-              </div>
-              <div style="color: #475569">
-                Antibiotic Conc.:
+        <!-- Center Panel - 3D Visualization -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              3D Cell Simulation
+            </h4>
+            <div
+              class="relative w-full rounded-lg overflow-hidden"
+              style="
+                aspect-ratio: 16/10;
+                background: linear-gradient(135deg, #e6f8f7 0%, #f8fafb 100%);
+                border: 1px solid #5dcac6;
+              "
+            >
+              <canvas
+                ref="canvasRef"
+                class="w-full h-full cursor-grab active:cursor-grabbing"
+                @click="handleMouseClick"
+              />
+              <!-- Antibiotic Concentration Display -->
+              <div
+                class="absolute top-3 right-3 text-white px-3 py-2 rounded-lg text-sm font-semibold"
+                style="
+                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+                "
+              >
+                Antibiotic:
                 {{
                   antibioticConcentration === "none"
                     ? "None"
@@ -216,62 +188,188 @@
                     : "High"
                 }}
               </div>
-              <div style="color: #475569">Oxygen: {{ environment.oxygen }}%</div>
-              <div style="color: #475569">
-                Temperature: {{ environment.temperature }}°C
+              <!-- Selected Cell Info Display -->
+              <div
+                v-if="selectedCell"
+                class="absolute text-white px-3 py-2 rounded-lg text-sm"
+                style="background: rgba(0, 135, 148, 0.9); border: 1px solid #5dcac6"
+                :style="{
+                  left: `${
+                    selectedCell.clickPosition ? selectedCell.clickPosition.x : '50%'
+                  }px`,
+                  top: `${
+                    selectedCell.clickPosition ? selectedCell.clickPosition.y : '50%'
+                  }px`,
+                  transform: 'translate(-50%, -50%)',
+                  zIndex: 10,
+                }"
+              >
+                <div>Generation {{ selectedCell.id }}</div>
+                <div>
+                  Opioid Conc.: {{ (selectedCell.opioidConcentration * 100).toFixed(1) }}%
+                </div>
               </div>
-              <div style="color: #475569">Yeast Type: Snowflake Yeast</div>
             </div>
           </div>
         </div>
 
-        <!-- Simulation Description -->
-        <div
-          class="p-4 rounded-lg shadow border"
-          style="
-            width: 800px;
-            background: linear-gradient(135deg, #e6f8f7 0%, #f8fafb 100%);
-            border: 1px solid #5dcac6;
-          "
-        >
-          <div class="font-bold mb-2" style="color: #008794">Simulation Guide</div>
-          <div class="text-sm space-y-2" style="color: #475569">
-            <div>
-              <strong style="color: #e97e35">1. Initial State:</strong> Ancestor cell
-              (white) with resistance plasmid at center
+        <!-- Right Panel - Statistics and Charts -->
+        <div class="lg:col-span-3 space-y-6">
+          <!-- Real-time Stats -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Live Statistics
+            </h4>
+            <div class="space-y-3">
+              <div
+                class="flex justify-between items-center py-2 border-b border-gray-100"
+              >
+                <span class="text-sm text-gray-600">Total Cells</span>
+                <span class="font-semibold" style="color: #008794">{{
+                  stats.totalCells.toLocaleString()
+                }}</span>
+              </div>
+              <div
+                class="flex justify-between items-center py-2 border-b border-gray-100"
+              >
+                <span class="text-sm text-gray-600">Visible Cells</span>
+                <span class="font-semibold" style="color: #008794">{{
+                  stats.visibleCells
+                }}</span>
+              </div>
+              <div
+                class="flex justify-between items-center py-2 border-b border-gray-100"
+              >
+                <span class="text-sm text-gray-600">Growth Rate</span>
+                <span class="font-semibold" style="color: #6fbe02"
+                  >{{ stats.growthRate }}%</span
+                >
+              </div>
+              <div
+                class="flex justify-between items-center py-2 border-b border-gray-100"
+              >
+                <span class="text-sm text-gray-600">Simulation Time</span>
+                <span class="font-semibold" style="color: #008794"
+                  >{{ minutes }}m {{ seconds }}s</span
+                >
+              </div>
+              <div class="flex justify-between items-center py-2">
+                <span class="text-sm text-gray-600">Opioid Secretion</span>
+                <span
+                  class="font-semibold"
+                  :style="opioidSecreting ? 'color: #6fbe02;' : 'color: #e97e35;'"
+                >
+                  {{ opioidSecreting ? "Active" : "Inactive" }}
+                </span>
+              </div>
             </div>
-            <div>
-              <strong style="color: #e97e35">2. Opioid Secretion:</strong> Click "Secrete
-              Opioid" - ancestor cell starts secreting opioids (blue diffusion field)
+          </div>
+
+          <!-- Environment Chart -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Environment Status
+            </h4>
+            <div ref="environmentChartRef" class="w-full h-48"></div>
+          </div>
+
+          <!-- Opioid Concentration Chart -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Opioid Diffusion
+            </h4>
+            <div ref="opioidChartRef" class="w-full h-48"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Panel - Simulation Guide -->
+      <div class="bg-white rounded-xl shadow-lg p-6 mt-6">
+        <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+          Simulation Guide
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div
+            class="p-4 rounded-lg border-l-4"
+            style="border-color: #e97e35; background: #fef8f3"
+          >
+            <div class="font-semibold mb-2" style="color: #e97e35">1. Initial State</div>
+            <div class="text-sm text-gray-600">
+              Ancestor cell (white) with resistance plasmid at center
             </div>
-            <div>
-              <strong style="color: #e97e35">3. Gene Activation:</strong> Cells receiving
-              opioids activate resistance gene expression (green indicates expression
-              strength)
+          </div>
+          <div
+            class="p-4 rounded-lg border-l-4"
+            style="border-color: #e97e35; background: #fef8f3"
+          >
+            <div class="font-semibold mb-2" style="color: #e97e35">
+              2. Opioid Secretion
             </div>
-            <div>
-              <strong style="color: #e97e35">4. Antibiotic Pressure:</strong> Click "Add
-              Antibiotic" to apply selection pressure on all cells
+            <div class="text-sm text-gray-600">
+              Click "Secrete Opioid" - ancestor cell starts secreting opioids
             </div>
-            <div>
-              <strong style="color: #e97e35">5. Cell Death:</strong> Non-resistant cells
-              die (turn gray, then disappear)
+          </div>
+          <div
+            class="p-4 rounded-lg border-l-4"
+            style="border-color: #e97e35; background: #fef8f3"
+          >
+            <div class="font-semibold mb-2" style="color: #e97e35">
+              3. Gene Activation
             </div>
-            <div>
-              <strong style="color: #e97e35">6. Mutation Evolution:</strong> Surviving
-              cells may mutate (red), gaining stronger resistance (deeper red = higher
-              resistance)
+            <div class="text-sm text-gray-600">
+              Cells receiving opioids activate resistance gene expression
             </div>
-            <div>
-              <strong style="color: #e97e35">7. Cluster Formation:</strong> Eventually
-              forms clusters of highly resistant cells
+          </div>
+          <div
+            class="p-4 rounded-lg border-l-4"
+            style="border-color: #e97e35; background: #fef8f3"
+          >
+            <div class="font-semibold mb-2" style="color: #e97e35">
+              4. Antibiotic Pressure
+            </div>
+            <div class="text-sm text-gray-600">
+              Click "Add Antibiotic" to apply selection pressure
+            </div>
+          </div>
+          <div
+            class="p-4 rounded-lg border-l-4"
+            style="border-color: #e97e35; background: #fef8f3"
+          >
+            <div class="font-semibold mb-2" style="color: #e97e35">5. Cell Death</div>
+            <div class="text-sm text-gray-600">
+              Non-resistant cells die (turn gray, then disappear)
+            </div>
+          </div>
+          <div
+            class="p-4 rounded-lg border-l-4"
+            style="border-color: #e97e35; background: #fef8f3"
+          >
+            <div class="font-semibold mb-2" style="color: #e97e35">
+              6. Mutation Evolution
+            </div>
+            <div class="text-sm text-gray-600">
+              Surviving cells may mutate, gaining stronger resistance
+            </div>
+          </div>
+          <div
+            class="p-4 rounded-lg border-l-4"
+            style="border-color: #e97e35; background: #fef8f3"
+          >
+            <div class="font-semibold mb-2" style="color: #e97e35">
+              7. Cluster Formation
+            </div>
+            <div class="text-sm text-gray-600">
+              Eventually forms clusters of highly resistant cells
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- Navigation -->
+      <div class="flex justify-center mt-6">
         <button
           @click="$emit('exit')"
-          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2"
+          class="px-8 py-3 rounded-lg text-sm font-medium transition-all duration-300"
           style="
             background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
             color: white;
@@ -289,6 +387,7 @@
 import { ref, reactive, computed, onMounted, onUnmounted, watch, nextTick } from "vue";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import * as echarts from "echarts";
 
 export default {
   name: "ResistanceSim3DStandalone",
@@ -311,6 +410,14 @@ export default {
       growthRate: 0,
     });
 
+    // 图表数据
+    const chartData = reactive({
+      populationHistory: [],
+      resistanceDistribution: { resistant: 0, sensitive: 0, dead: 0 },
+      environmentData: { oxygen: 10, temperature: 30, ph: 7.2 },
+      opioidLevels: [],
+    });
+
     // 固定环境条件
     const environment = {
       oxygen: 10,
@@ -319,6 +426,16 @@ export default {
 
     // 模板引用
     const canvasRef = ref(null);
+    const populationChartRef = ref(null);
+    const resistanceChartRef = ref(null);
+    const environmentChartRef = ref(null);
+    const opioidChartRef = ref(null);
+
+    // ECharts实例
+    let populationChart = null;
+    let resistanceChart = null;
+    let environmentChart = null;
+    let opioidChart = null;
 
     // Three.js相关引用
     let scene = null;
@@ -344,6 +461,360 @@ export default {
     // 计算属性
     const minutes = computed(() => Math.floor(timeStep.value / 10));
     const seconds = computed(() => ((timeStep.value % 10) * 6).toFixed(0));
+
+    // 初始化ECharts图表
+    const initCharts = () => {
+      nextTick(() => {
+        initPopulationChart();
+        initResistanceChart();
+        initEnvironmentChart();
+        initOpioidChart();
+      });
+    };
+
+    // 初始化细胞数量趋势图
+    const initPopulationChart = () => {
+      if (!populationChartRef.value) return;
+
+      populationChart = echarts.init(populationChartRef.value);
+      const option = {
+        backgroundColor: "transparent",
+        grid: {
+          left: "10%",
+          right: "10%",
+          top: "15%",
+          bottom: "15%",
+        },
+        xAxis: {
+          type: "category",
+          boundaryGap: false,
+          data: [],
+          axisLine: { lineStyle: { color: "#008794" } },
+          axisLabel: { color: "#64748b", fontSize: 10 },
+        },
+        yAxis: {
+          type: "value",
+          axisLine: { lineStyle: { color: "#008794" } },
+          axisLabel: { color: "#64748b", fontSize: 10 },
+          splitLine: { lineStyle: { color: "#e6f8f7" } },
+        },
+        series: [
+          {
+            name: "Total Cells",
+            type: "line",
+            smooth: true,
+            symbol: "circle",
+            symbolSize: 4,
+            lineStyle: {
+              color: "#008794",
+              width: 2,
+            },
+            itemStyle: {
+              color: "#008794",
+            },
+            areaStyle: {
+              color: {
+                type: "linear",
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [
+                  { offset: 0, color: "rgba(0, 135, 148, 0.3)" },
+                  { offset: 1, color: "rgba(0, 135, 148, 0.05)" },
+                ],
+              },
+            },
+            data: [],
+          },
+          {
+            name: "Visible Cells",
+            type: "line",
+            smooth: true,
+            symbol: "circle",
+            symbolSize: 4,
+            lineStyle: {
+              color: "#5dcac6",
+              width: 2,
+            },
+            itemStyle: {
+              color: "#5dcac6",
+            },
+            data: [],
+          },
+        ],
+        tooltip: {
+          trigger: "axis",
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          borderColor: "#008794",
+          textStyle: { color: "#333" },
+        },
+      };
+      populationChart.setOption(option);
+    };
+
+    // 初始化抗药性分布图
+    const initResistanceChart = () => {
+      if (!resistanceChartRef.value) return;
+
+      resistanceChart = echarts.init(resistanceChartRef.value);
+      const option = {
+        backgroundColor: "transparent",
+        tooltip: {
+          trigger: "item",
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          borderColor: "#008794",
+          textStyle: { color: "#333" },
+        },
+        legend: {
+          bottom: "5%",
+          left: "center",
+          textStyle: { color: "#64748b", fontSize: 10 },
+        },
+        series: [
+          {
+            name: "Resistance Status",
+            type: "pie",
+            radius: ["40%", "70%"],
+            center: ["50%", "45%"],
+            avoidLabelOverlap: false,
+            label: {
+              show: false,
+              position: "center",
+            },
+            emphasis: {
+              label: {
+                show: true,
+                fontSize: 14,
+                fontWeight: "bold",
+                color: "#008794",
+              },
+            },
+            labelLine: {
+              show: false,
+            },
+            data: [
+              { value: 80, name: "Resistant", itemStyle: { color: "#6fbe02" } },
+              { value: 15, name: "Sensitive", itemStyle: { color: "#e97e35" } },
+              { value: 5, name: "Dead", itemStyle: { color: "#94a3b8" } },
+            ],
+          },
+        ],
+      };
+      resistanceChart.setOption(option);
+    };
+
+    // 初始化环境状态图
+    const initEnvironmentChart = () => {
+      if (!environmentChartRef.value) return;
+
+      environmentChart = echarts.init(environmentChartRef.value);
+      const option = {
+        backgroundColor: "transparent",
+        radar: {
+          indicator: [
+            { name: "Oxygen", max: 21, color: "#64748b" },
+            { name: "Temperature", max: 40, color: "#64748b" },
+            { name: "pH", max: 14, color: "#64748b" },
+          ],
+          shape: "circle",
+          splitNumber: 5,
+          axisLine: { lineStyle: { color: "#e6f8f7" } },
+          splitLine: { lineStyle: { color: "#e6f8f7" } },
+          splitArea: {
+            show: true,
+            areaStyle: {
+              color: ["rgba(0, 135, 148, 0.05)", "rgba(0, 135, 148, 0.1)"],
+            },
+          },
+        },
+        series: [
+          {
+            name: "Environment",
+            type: "radar",
+            data: [
+              {
+                value: [10, 30, 7.2],
+                name: "Current",
+                itemStyle: { color: "#008794" },
+                areaStyle: { color: "rgba(0, 135, 148, 0.2)" },
+              },
+            ],
+          },
+        ],
+        tooltip: {
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          borderColor: "#008794",
+          textStyle: { color: "#333" },
+        },
+      };
+      environmentChart.setOption(option);
+    };
+
+    // 初始化阿片肽浓度图
+    const initOpioidChart = () => {
+      if (!opioidChartRef.value) return;
+
+      opioidChart = echarts.init(opioidChartRef.value);
+      const option = {
+        backgroundColor: "transparent",
+        grid: {
+          left: "15%",
+          right: "10%",
+          top: "15%",
+          bottom: "15%",
+        },
+        xAxis: {
+          type: "category",
+          data: [],
+          axisLine: { lineStyle: { color: "#008794" } },
+          axisLabel: { color: "#64748b", fontSize: 10 },
+        },
+        yAxis: {
+          type: "value",
+          max: 100,
+          axisLine: { lineStyle: { color: "#008794" } },
+          axisLabel: {
+            color: "#64748b",
+            fontSize: 10,
+            formatter: "{value}%",
+          },
+          splitLine: { lineStyle: { color: "#e6f8f7" } },
+        },
+        series: [
+          {
+            name: "Opioid Concentration",
+            type: "bar",
+            data: [],
+            itemStyle: {
+              color: {
+                type: "linear",
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [
+                  { offset: 0, color: "#5dcac6" },
+                  { offset: 1, color: "#008794" },
+                ],
+              },
+            },
+            emphasis: {
+              itemStyle: {
+                color: "#0e9f99",
+              },
+            },
+          },
+        ],
+        tooltip: {
+          trigger: "axis",
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          borderColor: "#008794",
+          textStyle: { color: "#333" },
+          formatter: "{b}: {c}%",
+        },
+      };
+      opioidChart.setOption(option);
+    };
+
+    // 更新图表数据
+    const updateCharts = () => {
+      updatePopulationChart();
+      updateResistanceChart();
+      updateOpioidChart();
+    };
+
+    const updatePopulationChart = () => {
+      if (!populationChart) return;
+
+      const timeLabel = `${minutes.value}:${seconds.value.padStart(2, "0")}`;
+      chartData.populationHistory.push({
+        time: timeLabel,
+        total: stats.totalCells,
+        visible: stats.visibleCells,
+      });
+
+      // 保持最近50个数据点
+      if (chartData.populationHistory.length > 50) {
+        chartData.populationHistory.shift();
+      }
+
+      const times = chartData.populationHistory.map((d) => d.time);
+      const totalData = chartData.populationHistory.map((d) => d.total);
+      const visibleData = chartData.populationHistory.map((d) => d.visible);
+
+      populationChart.setOption({
+        xAxis: { data: times },
+        series: [{ data: totalData }, { data: visibleData }],
+      });
+    };
+
+    const updateResistanceChart = () => {
+      if (!resistanceChart) return;
+
+      const aliveCells = cells.filter(
+        (cell) => !cell.userData.isDead && !cell.userData.dying
+      );
+      const resistantCells = aliveCells.filter(
+        (cell) =>
+          cell.userData.opioidConcentration > 0.2 || cell.userData.mutationLevel > 0
+      ).length;
+      const sensitiveCells = aliveCells.length - resistantCells;
+      const deadCells = cells.filter(
+        (cell) => cell.userData.isDead || cell.userData.dying
+      ).length;
+
+      resistanceChart.setOption({
+        series: [
+          {
+            data: [
+              {
+                value: resistantCells,
+                name: "Resistant",
+                itemStyle: { color: "#6fbe02" },
+              },
+              {
+                value: sensitiveCells,
+                name: "Sensitive",
+                itemStyle: { color: "#e97e35" },
+              },
+              { value: deadCells, name: "Dead", itemStyle: { color: "#94a3b8" } },
+            ],
+          },
+        ],
+      });
+    };
+
+    const updateOpioidChart = () => {
+      if (!opioidChart) return;
+
+      const concentrationRanges = ["0-20%", "20-40%", "40-60%", "60-80%", "80-100%"];
+      const distribution = [0, 0, 0, 0, 0];
+
+      cells.forEach((cell) => {
+        if (!cell.userData.isDead && !cell.userData.dying) {
+          const conc = cell.userData.opioidConcentration * 100;
+          if (conc < 20) distribution[0]++;
+          else if (conc < 40) distribution[1]++;
+          else if (conc < 60) distribution[2]++;
+          else if (conc < 80) distribution[3]++;
+          else distribution[4]++;
+        }
+      });
+
+      opioidChart.setOption({
+        xAxis: { data: concentrationRanges },
+        series: [{ data: distribution }],
+      });
+    };
+
+    // 窗口大小调整处理
+    const handleResize = () => {
+      if (populationChart) populationChart.resize();
+      if (resistanceChart) resistanceChart.resize();
+      if (environmentChart) environmentChart.resize();
+      if (opioidChart) opioidChart.resize();
+    };
 
     // 计算细胞长度（雪花酵母根据氧气浓度调整形状）
     const calculateCellLength = (oxygen) => {
@@ -805,6 +1276,10 @@ export default {
       addInitialCell();
       timeStep.value = 0;
       isPaused.value = true;
+
+      // 重置图表数据
+      chartData.populationHistory = [];
+      updateCharts();
     };
 
     const resetCamera = () => {
@@ -834,7 +1309,20 @@ export default {
         canvas: canvasRef.value,
         antialias: true,
       });
-      renderer.setSize(canvasRef.value.clientWidth, canvasRef.value.clientHeight);
+
+      const resizeRenderer = () => {
+        const container = canvasRef.value?.parentElement;
+        if (container) {
+          const width = container.clientWidth;
+          const height = container.clientHeight;
+          camera.aspect = width / height;
+          camera.updateProjectionMatrix();
+          renderer.setSize(width, height);
+        }
+      };
+
+      resizeRenderer();
+      window.addEventListener("resize", resizeRenderer);
 
       controls = new OrbitControls(camera, renderer.domElement);
       controls.enableDamping = true;
@@ -1309,6 +1797,11 @@ export default {
             });
 
             updateStats();
+
+            // 每5步更新一次图表以提高性能
+            if (timeStep.value % 5 === 0) {
+              updateCharts();
+            }
           }, intervalTime);
         }
       },
@@ -1349,8 +1842,22 @@ export default {
       { immediate: true }
     );
 
-    onMounted(initThreeJS);
-    onUnmounted(cleanupThreeJS);
+    onMounted(() => {
+      initThreeJS();
+      initCharts();
+      window.addEventListener("resize", handleResize);
+    });
+
+    onUnmounted(() => {
+      cleanupThreeJS();
+      window.removeEventListener("resize", handleResize);
+
+      // 清理ECharts实例
+      if (populationChart) populationChart.dispose();
+      if (resistanceChart) resistanceChart.dispose();
+      if (environmentChart) environmentChart.dispose();
+      if (opioidChart) opioidChart.dispose();
+    });
 
     return {
       isPaused,
@@ -1364,6 +1871,10 @@ export default {
       minutes,
       seconds,
       canvasRef,
+      populationChartRef,
+      resistanceChartRef,
+      environmentChartRef,
+      opioidChartRef,
       togglePause,
       handleReset,
       resetCamera,
@@ -1376,7 +1887,7 @@ export default {
 </script>
 
 <style scoped>
-/* Enhanced styles with project color scheme */
+/* Enhanced responsive styles with project color scheme */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
@@ -1387,8 +1898,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   background: linear-gradient(135deg, #008794, #5dcac6);
   cursor: pointer;
@@ -1402,14 +1913,14 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 input[type="range"]::-webkit-slider-track {
-  height: 8px;
+  height: 6px;
   background: linear-gradient(to right, #e6f8f7, #5dcac6);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 input[type="range"]::-moz-range-thumb {
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   background: linear-gradient(135deg, #008794, #5dcac6);
   cursor: pointer;
@@ -1424,9 +1935,36 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 
 input[type="range"]::-moz-range-track {
-  height: 8px;
+  height: 6px;
   background: linear-gradient(to right, #e6f8f7, #5dcac6);
-  border-radius: 4px;
+  border-radius: 3px;
   border: none;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .lg\:col-span-4,
+  .lg\:col-span-5,
+  .lg\:col-span-3 {
+    grid-column: span 1 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem !important;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.75rem !important;
+  }
 }
 </style>

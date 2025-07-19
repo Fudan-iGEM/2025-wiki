@@ -1,3 +1,4 @@
+
 <template>
   <div class="title-info">
     <!-- Add back the title that floats between image and content -->
