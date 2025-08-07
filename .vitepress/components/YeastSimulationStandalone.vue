@@ -19,141 +19,115 @@
         </h3>
       </div>
 
-      <!-- Main Content -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        <!-- Left Panel - Controls and Charts -->
-        <div class="lg:col-span-4 space-y-6">
-          <!-- Control Panel -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Simulation Controls
-            </h4>
-            <div
-              class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3"
+      <!-- Control Panel - Full Width Top -->
+      <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+        <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+          Simulation Controls
+        </h4>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
+          <button
+            @click="togglePause"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+            style="
+              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+              color: white;
+              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+            "
+          >
+            {{ isPaused ? "Start" : "Pause" }}
+          </button>
+          <button
+            @click="handleReset"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+            style="
+              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+              color: white;
+              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+            "
+          >
+            Reset
+          </button>
+          <button
+            @click="resetCamera"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+            style="
+              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+              color: white;
+              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+            "
+          >
+            Reset View
+          </button>
+          <div class="relative">
+            <select
+              v-model="yeastType"
+              class="w-full h-10 rounded-lg bg-white text-sm appearance-none cursor-pointer transition-all duration-300"
+              style="
+                border: 2px solid #5dcac6;
+                color: #008794;
+                font-weight: 600;
+                box-shadow: 0 2px 10px rgba(0, 135, 148, 0.1);
+                background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+                padding: 8px 36px 8px 12px;
+                text-align: center;
+                text-align-last: center;
+              "
             >
-              <button
-                @click="togglePause"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                style="
-                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-                  color: white;
-                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-                "
+              <option value="snowflake" style="color: #008794; background: white">
+                Grape Yeast
+              </option>
+              <option value="normal" style="color: #008794; background: white">
+                Normal Yeast
+              </option>
+            </select>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+            >
+              <svg
+                class="h-4 w-4 transition-transform duration-200"
+                style="color: #5dcac6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                {{ isPaused ? "Start" : "Pause" }}
-              </button>
-              <button
-                @click="handleReset"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                style="
-                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-                  color: white;
-                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-                "
-              >
-                Reset
-              </button>
-              <button
-                @click="resetCamera"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                style="
-                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-                  color: white;
-                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-                "
-              >
-                Reset View
-              </button>
-              <div class="relative">
-                <select
-                  v-model="yeastType"
-                  class="w-full h-10 rounded-lg bg-white text-sm appearance-none cursor-pointer transition-all duration-300"
-                  style="
-                    border: 2px solid #5dcac6;
-                    color: #008794;
-                    font-weight: 600;
-                    box-shadow: 0 2px 10px rgba(0, 135, 148, 0.1);
-                    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
-                    padding: 8px 36px 8px 12px;
-                    text-align: center;
-                    text-align-last: center;
-                  "
-                >
-                  <option value="snowflake" style="color: #008794; background: white">
-                    Snowflake Yeast
-                  </option>
-                  <option value="normal" style="color: #008794; background: white">
-                    Normal Yeast
-                  </option>
-                </select>
-                <div
-                  class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
-                >
-                  <svg
-                    class="h-4 w-4 transition-transform duration-200"
-                    style="color: #5dcac6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
             </div>
-
+          </div>
+          <div class="lg:col-span-2">
             <!-- Speed Control -->
-            <div class="mt-6">
-              <div class="mb-2 text-sm font-medium" style="color: #008794">
-                Simulation Speed: {{ speedMultiplier }}x
-              </div>
-              <input
-                type="range"
-                v-model.number="speedMultiplier"
-                min="0.5"
-                max="3"
-                step="0.5"
-                class="w-full h-2 rounded-lg appearance-none cursor-pointer"
-                style="
-                  background: linear-gradient(to right, #e6f8f7, #5dcac6);
-                  outline: none;
-                "
-              />
-              <div class="flex justify-between text-xs mt-1" style="color: #008794">
-                <span>0.5x</span>
-                <span>1x</span>
-                <span>1.5x</span>
-                <span>2x</span>
-                <span>2.5x</span>
-                <span>3x</span>
-              </div>
+            <div class="mb-2 text-sm font-medium" style="color: #008794">
+              Speed: {{ speedMultiplier }}x
             </div>
-          </div>
-
-          <!-- Growth Trends Chart -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Growth Trends
-            </h4>
-            <div ref="growthChartRef" class="w-full h-64"></div>
-          </div>
-
-          <!-- Morphology Analysis -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Cell Morphology
-            </h4>
-            <div ref="morphologyChartRef" class="w-full h-48"></div>
+            <input
+              type="range"
+              v-model.number="speedMultiplier"
+              min="0.5"
+              max="3"
+              step="0.5"
+              class="w-full h-2 rounded-lg appearance-none cursor-pointer"
+              style="
+                background: linear-gradient(to right, #e6f8f7, #5dcac6);
+                outline: none;
+              "
+            />
+            <div class="flex justify-between text-xs mt-1" style="color: #008794">
+              <span>0.5x</span>
+              <span>3x</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- Center Panel - 3D Visualization -->
-        <div class="lg:col-span-5">
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Left Panel - 3D Visualization -->
+        <div class="lg:col-span-7">
           <div class="bg-white rounded-xl shadow-lg p-6">
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">
               3D Cell Colony
@@ -180,7 +154,7 @@
                     : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
                 "
               >
-                {{ yeastType === "snowflake" ? "Snowflake" : "Normal" }} Yeast
+                {{ yeastType === "snowflake" ? "Grape" : "Normal" }} Yeast
               </div>
               <!-- Selected Cell Info Display -->
               <div
@@ -204,8 +178,8 @@
           </div>
         </div>
 
-        <!-- Right Panel - Statistics and Environment -->
-        <div class="lg:col-span-3 space-y-6">
+        <!-- Right Panel - Charts and Statistics -->
+        <div class="lg:col-span-5 space-y-6">
           <!-- Real-time Statistics -->
           <div class="bg-white rounded-xl shadow-lg p-6">
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">
@@ -222,7 +196,7 @@
                     yeastType === 'snowflake' ? 'color: #5dcac6;' : 'color: #e97e35;'
                   "
                 >
-                  {{ yeastType === "snowflake" ? "Snowflake" : "Normal" }}
+                  {{ yeastType === "snowflake" ? "Grape" : "Normal" }}
                 </span>
               </div>
               <div
@@ -266,10 +240,25 @@
             </div>
           </div>
 
+          <!-- Growth Trends Chart -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Growth Trends
+            </h4>
+            <div ref="growthChartRef" class="w-full h-48"></div>
+          </div>
+
+          <!-- Morphology Analysis -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+              Cell Morphology
+            </h4>
+            <div ref="morphologyChartRef" class="w-full h-40"></div>
+          </div>
           <!-- Environment Monitoring -->
           <div class="bg-white rounded-xl shadow-lg p-6">
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">Environment</h4>
-            <div ref="environmentChartRef" class="w-full h-48"></div>
+            <div ref="environmentChartRef" class="w-full h-40"></div>
           </div>
 
           <!-- Division Pattern Analysis -->
@@ -277,7 +266,7 @@
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">
               Division Patterns
             </h4>
-            <div ref="divisionChartRef" class="w-full h-48"></div>
+            <div ref="divisionChartRef" class="w-full h-40"></div>
           </div>
         </div>
       </div>
@@ -326,11 +315,11 @@
                 <div class="w-2 h-2 rounded-full" style="background: #e97e35"></div>
                 <span
                   ><strong>{{
-                    yeastType === "snowflake" ? "Snowflake Yeast:" : "Normal Yeast:"
+                    yeastType === "snowflake" ? "Grape Yeast:" : "Normal Yeast:"
                   }}</strong>
                   {{
                     yeastType === "snowflake"
-                      ? "Divides along fixed directions, forming snowflake structure"
+                      ? "Divides along fixed directions, forming grape-like clusters"
                       : "Multiple divisions, forming natural colony"
                   }}</span
                 >
@@ -604,10 +593,10 @@ export default {
         backgroundColor: "transparent",
         radar: {
           indicator: [
-            { name: "Oxygen", max: 21, color: "#64748b" },
-            { name: "Temperature", max: 40, color: "#64748b" },
-            { name: "pH", max: 14, color: "#64748b" },
-            { name: "Growth Rate", max: 100, color: "#64748b" },
+            { name: "Oxygen", min: 0, max: 20, color: "#64748b" },
+            { name: "Temperature", min: 0, max: 40, color: "#64748b" },
+            { name: "pH", min: 0, max: 12, color: "#64748b" },
+            { name: "Growth Rate", min: 0, max: 100, color: "#64748b" },
           ],
           shape: "circle",
           splitNumber: 4,
@@ -619,6 +608,10 @@ export default {
               color: ["rgba(0, 135, 148, 0.05)", "rgba(0, 135, 148, 0.1)"],
             },
           },
+          axisName: {
+            color: "#64748b"
+          },
+          axisNameGap: 5,
         },
         series: [
           {
@@ -1534,7 +1527,7 @@ export default {
 
       const resizeRenderer = () => {
         const container = canvasRef.value?.parentElement;
-        if (container) {
+        if (container && renderer && camera) {
           const width = container.clientWidth;
           const height = container.clientHeight;
           camera.aspect = width / height;
@@ -1596,7 +1589,10 @@ export default {
         if (controls) {
           controls.update();
         }
-        renderer.render(scene, camera);
+        
+        if (renderer && scene && camera) {
+          renderer.render(scene, camera);
+        }
       };
 
       animate();

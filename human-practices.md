@@ -6,7 +6,7 @@ author:
 - name: Yuhan Wang
   url: /fudan/team/#yuhan-wang
 layout: igem
-heroImage: "https://www.insight.com/content/insight-web/en_US/content-and-resources/tech-journal/fall-2019/the-top-4-benefits-of-collaboration-workspaces/jcr%3Acontent/top-container-width/column_layout_458368662/-column-1/insight_image_1799013934.img.jpg/1579797870050.jpg"
+heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 

@@ -16,144 +16,118 @@
         </h3>
       </div>
 
-      <!-- Main Content -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        <!-- Left Panel - Controls and Charts -->
-        <div class="lg:col-span-4 space-y-6">
-          <!-- Control Buttons -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Simulation Controls
-            </h4>
-            <div
-              class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3"
-            >
-              <button
-                @click="togglePause"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                style="
-                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-                  color: white;
-                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-                "
-              >
-                {{ isPaused ? "Start" : "Pause" }}
-              </button>
-              <button
-                @click="handleReset"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                style="
-                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-                  color: white;
-                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-                "
-              >
-                Reset
-              </button>
-              <button
-                @click="resetCamera"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                style="
-                  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-                  color: white;
-                  box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
-                "
-              >
-                Reset View
-              </button>
-              <button
-                @click="startOpioidSecretion"
-                :disabled="opioidSecreting"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                :style="
-                  opioidSecreting
-                    ? 'background: #e6f8f7; color: #008794; border: 1px solid #5dcac6;'
-                    : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
-                "
-              >
-                {{ opioidSecreting ? "Opioid Secreted" : "Secrete Opioid" }}
-              </button>
-              <button
-                @click="() => addAntibiotic('low')"
-                :disabled="antibioticConcentration === 'high'"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                :style="
-                  antibioticConcentration === 'none'
-                    ? 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
-                    : 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
-                "
-              >
-                {{
-                  antibioticConcentration === "none"
-                    ? "Low Antibiotic"
-                    : "Low Conc. Added"
-                }}
-              </button>
-              <button
-                @click="() => addAntibiotic('high')"
-                :disabled="antibioticConcentration === 'high'"
-                class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
-                :style="
-                  antibioticConcentration === 'high'
-                    ? 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
-                    : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
-                "
-              >
-                {{
-                  antibioticConcentration === "high"
-                    ? "High Conc. Added"
-                    : "High Antibiotic"
-                }}
-              </button>
-            </div>
-
+      <!-- Control Panel - Full Width Top -->
+      <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+        <h4 class="text-lg font-semibold mb-4" style="color: #008794">
+          Simulation Controls
+        </h4>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 mb-6">
+          <button
+            @click="togglePause"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+            style="
+              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+              color: white;
+              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+            "
+          >
+            {{ isPaused ? "Start" : "Pause" }}
+          </button>
+          <button
+            @click="handleReset"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+            style="
+              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+              color: white;
+              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+            "
+          >
+            Reset
+          </button>
+          <button
+            @click="resetCamera"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-4"
+            style="
+              background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
+              color: white;
+              box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
+            "
+          >
+            Reset View
+          </button>
+          <button
+            @click="startOpioidSecretion"
+            :disabled="opioidSecreting"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-3"
+            :style="
+              opioidSecreting
+                ? 'background: #e6f8f7; color: #008794; border: 1px solid #5dcac6;'
+                : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
+            "
+          >
+            {{ opioidSecreting ? "Opioid Added" : "Add Opioid" }}
+          </button>
+          <button
+            @click="() => addAntibiotic('low')"
+            :disabled="antibioticConcentration === 'high'"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-3"
+            :style="
+              antibioticConcentration === 'none'
+                ? 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
+                : 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
+            "
+          >
+            {{
+              antibioticConcentration === "none"
+                ? "Low Drug"
+                : "Low Added"
+            }}
+          </button>
+          <button
+            @click="() => addAntibiotic('high')"
+            :disabled="antibioticConcentration === 'high'"
+            class="flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 h-10 px-3"
+            :style="
+              antibioticConcentration === 'high'
+                ? 'background: #faccaf; color: #e97e35; border: 1px solid #ffb07b;'
+                : 'background: linear-gradient(135deg, #e97e35 0%, #ffb07b 100%); color: white; box-shadow: 0 4px 15px rgba(233, 126, 53, 0.3);'
+            "
+          >
+            {{
+              antibioticConcentration === "high"
+                ? "High Added"
+                : "High Drug"
+            }}
+          </button>
+          <div>
             <!-- Speed Control -->
-            <div class="mt-6">
-              <div class="mb-2 text-sm font-medium" style="color: #008794">
-                Simulation Speed: {{ speedMultiplier }}x
-              </div>
-              <input
-                type="range"
-                v-model.number="speedMultiplier"
-                min="0.5"
-                max="3"
-                step="0.5"
-                class="w-full h-2 rounded-lg appearance-none cursor-pointer"
-                style="
-                  background: linear-gradient(to right, #e6f8f7, #5dcac6);
-                  outline: none;
-                "
-              />
-              <div class="flex justify-between text-xs mt-1" style="color: #008794">
-                <span>0.5x</span>
-                <span>1x</span>
-                <span>1.5x</span>
-                <span>2x</span>
-                <span>2.5x</span>
-                <span>3x</span>
-              </div>
+            <div class="mb-2 text-sm font-medium" style="color: #008794">
+              Speed: {{ speedMultiplier }}x
             </div>
-          </div>
-
-          <!-- Real-time Statistics Chart -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Cell Population Trends
-            </h4>
-            <div ref="populationChartRef" class="w-full h-64"></div>
-          </div>
-
-          <!-- Resistance Distribution Chart -->
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Resistance Distribution
-            </h4>
-            <div ref="resistanceChartRef" class="w-full h-48"></div>
+            <input
+              type="range"
+              v-model.number="speedMultiplier"
+              min="0.5"
+              max="3"
+              step="0.5"
+              class="w-full h-2 rounded-lg appearance-none cursor-pointer"
+              style="
+                background: linear-gradient(to right, #e6f8f7, #5dcac6);
+                outline: none;
+              "
+            />
+            <div class="flex justify-between text-xs mt-1" style="color: #008794">
+              <span>0.5x</span>
+              <span>3x</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- Center Panel - 3D Visualization -->
-        <div class="lg:col-span-5">
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Left Panel - 3D Visualization -->
+        <div class="lg:col-span-7">
           <div class="bg-white rounded-xl shadow-lg p-6">
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">
               3D Cell Simulation
@@ -179,14 +153,8 @@
                   box-shadow: 0 4px 15px rgba(0, 135, 148, 0.3);
                 "
               >
-                Antibiotic:
-                {{
-                  antibioticConcentration === "none"
-                    ? "None"
-                    : antibioticConcentration === "low"
-                    ? "Low"
-                    : "High"
-                }}
+                {{ antibioticConcentration === "none" ? "No Drug" : 
+                   antibioticConcentration === "low" ? "Low Drug" : "High Drug" }}
               </div>
               <!-- Selected Cell Info Display -->
               <div
@@ -204,18 +172,15 @@
                   zIndex: 10,
                 }"
               >
-                <div>Generation {{ selectedCell.id }}</div>
-                <div>
-                  Opioid Conc.: {{ (selectedCell.opioidConcentration * 100).toFixed(1) }}%
-                </div>
+                Cell ID: {{ selectedCell.id }}
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Right Panel - Statistics and Charts -->
-        <div class="lg:col-span-3 space-y-6">
-          <!-- Real-time Stats -->
+        <!-- Right Panel - Charts and Statistics -->
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Real-time Statistics -->
           <div class="bg-white rounded-xl shadow-lg p-6">
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">
               Live Statistics
@@ -240,10 +205,14 @@
               <div
                 class="flex justify-between items-center py-2 border-b border-gray-100"
               >
-                <span class="text-sm text-gray-600">Growth Rate</span>
-                <span class="font-semibold" style="color: #6fbe02"
-                  >{{ stats.growthRate }}%</span
-                >
+                <span class="text-sm text-gray-600">Drug Level</span>
+                <span class="font-semibold" :style="
+                  antibioticConcentration === 'none' ? 'color: #6fbe02;' :
+                  antibioticConcentration === 'low' ? 'color: #e97e35;' : 'color: #dc2626;'
+                ">
+                  {{ antibioticConcentration === "none" ? "None" : 
+                     antibioticConcentration === "low" ? "Low" : "High" }}
+                </span>
               </div>
               <div
                 class="flex justify-between items-center py-2 border-b border-gray-100"
@@ -254,31 +223,28 @@
                 >
               </div>
               <div class="flex justify-between items-center py-2">
-                <span class="text-sm text-gray-600">Opioid Secretion</span>
-                <span
-                  class="font-semibold"
-                  :style="opioidSecreting ? 'color: #6fbe02;' : 'color: #e97e35;'"
+                <span class="text-sm text-gray-600">Speed</span>
+                <span class="font-semibold" style="color: #008794"
+                  >{{ speedMultiplier }}x</span
                 >
-                  {{ opioidSecreting ? "Active" : "Inactive" }}
-                </span>
               </div>
             </div>
           </div>
 
-          <!-- Environment Chart -->
+          <!-- Cell Population Trends Chart -->
           <div class="bg-white rounded-xl shadow-lg p-6">
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Environment Status
+              Population Trends
             </h4>
-            <div ref="environmentChartRef" class="w-full h-48"></div>
+            <div ref="populationChartRef" class="w-full h-48"></div>
           </div>
 
-          <!-- Opioid Concentration Chart -->
+          <!-- Resistance Distribution Chart -->
           <div class="bg-white rounded-xl shadow-lg p-6">
             <h4 class="text-lg font-semibold mb-4" style="color: #008794">
-              Opioid Diffusion
+              Resistance Distribution
             </h4>
-            <div ref="opioidChartRef" class="w-full h-48"></div>
+            <div ref="resistanceChartRef" class="w-full h-40"></div>
           </div>
         </div>
       </div>

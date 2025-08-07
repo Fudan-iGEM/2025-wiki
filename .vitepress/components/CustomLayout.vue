@@ -12,7 +12,10 @@ import CircularText from "./CircularText.vue";
 const { theme, frontmatter } = useData();
 
 const route = useRoute();
-const hasAside = computed(() => true);
+const hasAside = computed(() => {
+  // 在team页面隐藏侧边栏
+  return !route.path.includes('/team');
+});
 const leftAside = computed(() => true); 
 
 const pageName = computed(() => route.path.replace(/[./]+/g, "_").replace(/_html$/, ""));
@@ -610,6 +613,21 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
 }
 
 /* Improved Responsive design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .aside {
+    width: 260px;
+    margin-right: 2rem;
+  }
+
+  .content-container {
+    padding: 2.5rem 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -620,20 +638,26 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
     width: 100%;
     position: static;
     height: auto;
-    max-height: 300px;
+    max-height: 280px;
     border-right: none;
     border-bottom: 1px solid #eaecef;
     margin-right: 0;
     margin-bottom: 1rem;
-    border-radius: 0;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
   .content {
-    border-radius: 0;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .content-container {
+    padding: 2rem 1.5rem;
   }
 
   .solution-cards {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .hero-image-section {
@@ -647,19 +671,62 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   .hero-container > :deep(.title-info) {
     margin-top: -40px;
   }
+
+  .toc-title {
+    padding: 1.25rem 1rem;
+    font-size: 1rem;
+  }
+
+  .aside-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .solution-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
   .content-container {
     padding: 1rem;
   }
 
   .card-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .solution-card {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero-image-section {
-    height: 200px;
+    height: 180px;
   }
 
   .hero-content-section {
@@ -667,7 +734,84 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -35px;
+    margin-top: -30px;
+  }
+
+  .aside {
+    max-height: 240px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .content {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .toc-title {
+    padding: 1rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .aside-content {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .content-container {
+    padding: 0.75rem;
+  }
+
+  .solution-card {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  .hero-image-section {
+    height: 160px;
+  }
+
+  .hero-container > :deep(.title-info) {
+    margin-top: -25px;
+  }
+}
+
+/* 横屏模式优化 */
+@media (max-width: 896px) and (orientation: landscape) {
+  .hero-image-section {
+    height: 160px;
+  }
+
+  .aside {
+    max-height: 200px;
+  }
+
+  .content-container {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+  .solution-card:hover {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  .solution-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+
+  .aside:hover {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
 }
 </style>
