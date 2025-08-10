@@ -79,10 +79,8 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
       </div>
     </div>
 
-    <!-- Enhanced Footer -->
-    <VPDocFooter class="doc-footer">
-      <template #doc-footer-before><slot name="doc-footer-before" /></template>
-    </VPDocFooter>
+    <!-- Bottom spacing for better page ending -->
+    <div class="page-bottom-spacing"></div>
 
     <slot name="doc-bottom" />
   </div>
@@ -114,6 +112,13 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
     radial-gradient(circle at 40% 40%, rgba(85, 194, 187, 0.03) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
+}
+
+/* Bottom spacing for better page ending */
+.page-bottom-spacing {
+  height: 3rem;
+  background: linear-gradient(to bottom, transparent 0%, rgba(223, 246, 246, 0.3) 100%);
+  margin-top: 2rem;
 }
 
 /* Hero section structure */

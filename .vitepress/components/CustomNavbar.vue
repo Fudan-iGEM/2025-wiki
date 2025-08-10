@@ -530,6 +530,11 @@
         </div>
       </div>
 
+      <!-- Search Component -->
+      <div class="search-container" :class="{ 'menu-open': isMobileMenuOpen }">
+        <VPNavBarSearch />
+      </div>
+
       <!-- Mobile Menu Toggle -->
       <button
         class="mobile-menu-toggle"
@@ -588,6 +593,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import VPNavBarSearch from "vitepress/dist/client/theme-default/components/VPNavBarSearch.vue";
 import "../theme/tw.css";
 
 const navItems = ref([
@@ -924,6 +930,7 @@ onUnmounted(() => {
   align-items: center;
   position: relative; /* 确保子元素定位正确 */
   height: 50px; /* Reduced from 60px to 50px */
+  padding: 0 1.5rem; /* 确保所有屏幕尺寸都有适当的内边距 */
 }
 
 .title {
@@ -935,8 +942,59 @@ onUnmounted(() => {
   align-items: center;
   flex: 0 0 180px; /* Fixed width without growing */
   position: absolute;
-  left: 1.5rem;
+  left: 0; /* 相对于容器的左边距，由容器的padding控制 */
   z-index: 2;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 70px; /* 默认移动端位置，为移动菜单按钮留出空间 */
+  z-index: 50; /* 降低z-index，确保移动菜单和遮罩能覆盖在上面 */
+}
+
+/* Ensure VitePress search modal appears correctly */
+.search-container :deep(.DocSearch-Button) {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  margin: 0;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 1; /* 确保搜索按钮在正常情况下可见，但低于移动菜单 */
+}
+
+.search-container :deep(.DocSearch-Button:hover) {
+  background: rgba(0, 135, 148, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 135, 148, 0.08);
+}
+
+/* 当移动菜单打开时，降低搜索容器的可见性 */
+.search-container.menu-open {
+  pointer-events: none; /* 禁用搜索框的点击事件 */
+  opacity: 0.3; /* 降低透明度表示不可用 */
+  transition: opacity 0.3s ease;
+}
+
+/* 确保VitePress搜索模态框的z-index低于移动菜单 */
+:deep(.DocSearch-Modal) {
+  z-index: 80 !important; /* 低于移动菜单的100，但高于遮罩的90 */
+}
+
+/* 桌面端为搜索按钮添加微妙的样式 */
+@media (min-width: 1000px) {
+  .search-container :deep(.DocSearch-Button) {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 135, 148, 0.1);
+  }
+
+  .search-container :deep(.DocSearch-Button:hover) {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 135, 148, 0.2);
+    box-shadow: 0 2px 12px rgba(0, 135, 148, 0.1);
+  }
 }
 
 .nav-links-desktop {
@@ -1132,7 +1190,7 @@ onUnmounted(() => {
   justify-content: center;
   transition: all 0.3s ease;
   position: absolute;
-  right: 1.5rem;
+  right: 0; /* 相对于容器的右边距，由容器的padding控制 */
   z-index: 2;
 }
 
@@ -1316,8 +1374,12 @@ onUnmounted(() => {
   }
 
   .container {
-    padding: 0 1rem;
     justify-content: center; /* 容器整体居中对齐 */
+  }
+
+  .search-container {
+    position: absolute;
+    right: 50px; /* 在桌面端移动菜单按钮隐藏时，搜索框可以更靠近右边 */
   }
 
   .mobile-menu-toggle {
@@ -1330,13 +1392,15 @@ onUnmounted(() => {
 /* Fix for smaller screens */
 @media (max-width: 999px) {
   /* Changed from 991px to 999px to match the new breakpoint */
-  .container {
-    padding: 0 1rem;
-  }
 
   .title {
     font-size: 1.2rem;
     max-width: none;
+  }
+
+  .search-container {
+    position: absolute;
+    right: 70px; /* 在移动菜单按钮前留出足够空间 */
   }
 
   .nav-links-desktop {
@@ -1367,6 +1431,10 @@ onUnmounted(() => {
 
   .title {
     font-size: 1.1rem;
+  }
+
+  .search-container {
+    right: 55px; /* 为小屏幕优化位置，确保不与移动菜单按钮重叠 */
   }
 
   .mobile-menu-toggle {

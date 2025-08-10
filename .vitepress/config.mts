@@ -12,6 +12,9 @@ export default defineConfig({
     // The nav config has been deprecated, please use the CustomNavbar.vue instead.
     // The nav config has been deprecated, please use the CustomNavbar.vue instead.
     // The nav config has been deprecated, please use the CustomNavbar.vue instead.
+    search: {
+      provider: 'local'
+    }
   },
 
   vite: {
