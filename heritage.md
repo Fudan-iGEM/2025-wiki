@@ -5,7 +5,7 @@ author:
   url: /fudan/team/#meet-our-members
 layout: igem
 heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
+description: Our legacy is being passed down from our ancestors.
 ---
 
 <br><br>
@@ -14,7 +14,7 @@ description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis
 
 Below is the complete list of our iGEM projects.
 
-<table style="width:105%">
+<table>
   <thead><tr><th>Team&#160;Name</th><th>Title</th><th>Leader</th><th>Year</th><th>Awards</th><th>Social</th></tr></thead>
   <tbody>
     <tr><td>Fudan&#8209;Shanghai</td><td>E.tree, neon light and the dinner service</td><td>Ruojun&#160;Wang</td><td><a href="https://teams.igem.org/604" rel="noreferrer" target="_blank">2011</a></td>
@@ -74,11 +74,14 @@ Below is the complete list of our iGEM projects.
     <tr><td>Fudan</td><td><a href="https://video.igem.org/w/d1795b71-2707-4eeb-92ce-5b88145ef1a3" target="_blank">MINERAL</a> - Microparticle Integration for Nickel Extraction and Resuable Applications</td><td>Xujie&#160;Tan</td><td><a href="https://teams.igem.org/5115" rel="noreferrer" target="_blank">2024</a></td>
       <td>Nominated for <a href="https://jamboree.igem.org/2024/results/village-awards#Bioremediation" target="_blank">Bioremediation Project</a>, Measurement, Inculsivity, Wiki; <a href="https://jamboree.igem.org/2024/results/medals" target="_blank">Gold Medal</a></td>
       <td><a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU2ODA2MTY1MQ==&action=getalbum&album_id=3322758862575403011#wechat_redirect" target="_blank">Fudan_iGEM</a></td></tr>
+    <tr><td>Fudan</td><td><a href="https://video.igem.org/w/" target="_blank">Dr</a> - track evolution</td><td>Zhiqin&#160;Wang</td><td><a href="https://teams.igem.org/5643" rel="noreferrer" target="_blank">2025</a></td>
+      <td><a href="https://jamboree.igem.org/2025/results/village-awards#" target="_blank"></a>; <a href="https://jamboree.igem.org/2025/results/medals" target="_blank"></a></td>
+      <td><a href="https://mp.weixin.qq.com/" target="_blank">Fudan_iGEM</a></td></tr>
   </tbody>
 </table>
 
 ## --
 
-This page is updated from our [2023](https://2023.igem.wiki/fudan/heritage/), [2022](https://2022.igem.wiki/fudan/heritage), [2021](https://2021.igem.org/Team:Fudan/Heritage), [2020](https://2020.igem.org/Team:Fudan/Heritage) and [2019](https://2019.igem.org/Team:Fudan-TSI/Heritage) pages.
+This page is updated from our [2024](https://2024.igem.wiki/fudan/heritage/), [2023](https://2023.igem.wiki/fudan/heritage/), [2022](https://2022.igem.wiki/fudan/heritage), [2021](https://2021.igem.org/Team:Fudan/Heritage), [2020](https://2020.igem.org/Team:Fudan/Heritage) and [2019](https://2019.igem.org/Team:Fudan-TSI/Heritage) pages.
 
-For more details about our winter-break training, please visit our [2018](http://2018.igem.org/Team:Fudan/Heritage) page. We learn and confirm parts from [2023](https://2023.igem.wiki/fudan/parts/) and [2022](https://2022.igem.wiki/fudan/parts) during the training.
+For more details about our winter-break training, please visit our [2018](http://2018.igem.org/Team:Fudan/Heritage) page.
