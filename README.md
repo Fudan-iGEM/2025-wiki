@@ -1,6 +1,6 @@
 # Team Fudan 2025 Wiki
 
-We use [Vue.js](https://vuejs.org/) and [Vuepress 2](https://vuepress.vuejs.org/) to build our wiki as an [Progressive Web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) on [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/). Our custom theme is based on the [Vuepress-theme-Hope](https://theme-hope.vuejs.press/).
+We use [Vue.js](https://vuejs.org/) and [Vitepress](https://vitepress.dev/) to build our wiki as an [Progressive Web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) on [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
 
 This repository contains **all coding assets** to generate our team's wiki (HTML, CSS, JavaScript, 
 etc).
