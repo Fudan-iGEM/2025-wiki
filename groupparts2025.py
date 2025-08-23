@@ -180,7 +180,7 @@ for zz in z:
     fff.write('|%s |%s |%s |%s |%s |%s |%s |' % (part_name,
                     p2['uuid'],
                     p2['title'],
-                    p2['description'],
+                    p2['description'].replace('\n', '<br>').replace('\r', '<br>'),
                     p2['type']['label'],
                     len(p2['sequence']),
                     p2['audit']['updated'] ))
