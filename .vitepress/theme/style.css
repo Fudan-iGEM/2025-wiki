@@ -4,7 +4,6 @@
 @tailwind utilities;
 
 :root {
-  /* 基于用户色板的现代配色方案 */
   /* 主要色 - 青绿色系 */
   --vp-c-brand-1: #008794;
   --vp-c-brand-2: #0e9f99;
