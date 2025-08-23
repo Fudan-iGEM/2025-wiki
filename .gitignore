@@ -119,3 +119,9 @@ public/
 # 临时文件夹
 .tmp/
 .temp/
+bs4/
+selenium/
+urllib3/
+websocket/
+typing_extensions.py
+lxml/
