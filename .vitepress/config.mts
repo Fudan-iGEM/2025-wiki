@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Fudan",
   description: "The iGEM wiki website for Team Fudan 2025.",
   base: '/fudan/',
+  srcDir: './pages',
   ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

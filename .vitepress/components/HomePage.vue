@@ -8,13 +8,11 @@
     :speed="8" 
     class-name="your-custom-class"
   />
-  <YeastSimulationStandalone />
   </div>
 </template>
 
 <script setup>
-import ShinyText from './ShinyText.vue';
-import YeastSimulationStandalone from './YeastSimulationStandalone.vue';
+
 </script>
 
 <style scoped>
