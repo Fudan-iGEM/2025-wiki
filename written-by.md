@@ -26,7 +26,7 @@
 | Plant              | none                                 |
 | Presentation Video | Yuxin Duan                           |
 | Promotion Video    | Yuxin Duan                           |
-| Results            | Yixuan Lu，Yue Yue                   |
+| Results            | Yixuan Lu, Yue Yue                   |
 | Safety             | Yue Yue                              |
 | Software           | Yufan Han                            |
 | Sustainbale        | Yixuan Lu                            |
