@@ -1,21 +1,13 @@
 import os
 # mkdir parts-json
 
-from selenium import webdriver # 4.24.0
-from selenium.webdriver.firefox.options import Options
-## websocket_client 1.8.0
-## urllib3 2.2.3
-## typing_extensions.py 4.12.2
-service = webdriver.FirefoxService(executable_path='/usr/local/bin/geckodriver') # 0.36.0
-options = Options()
-options.add_argument("-headless")
-driver = webdriver.Firefox(service=service, options=options)
-#driver.get("https://parts.igem.org/cgi/partsdb/part_info.cgi?part_name=BBa_K5115003")
-#print( driver.page_source )
-
-#import lxml # 4.9.4-cp312-universal2
-#from bs4 import BeautifulSoup # 4.12.3
+# pip3 install scrapy
 from time import sleep
+import json as py_json
+
+only_local = False
+force_check_rfc = False
+force_check_used = False
 
 white_listed = ['BBa_B0030',
 'BBa_I742151',
@@ -52,7 +44,7 @@ z = white_listed + ['BBa_K4162001', 'BBa_K4162009', 'BBa_K4162010', 'BBa_K416201
 white_listed += ['BBa_K5115058', 'BBa_K5115059', 'BBa_K5115086', 'BBa_K5115087' ] # a fusion protein
 z = sorted( list(set(z)) )
 z += range(0, 91)
-#z += range(101, 141)
+z += range(101, 141)
 subparts = []
 sub_is_NOT_basic = []
 basic_parts = []
@@ -126,7 +118,7 @@ known_basic_parts = ['BBa_B0030',
 
 table_th = ('Part Name', 'Short Description', 'Part Type', 'Designer(s)')
 fff = open('groupparts.md', 'w')
-fff.write('| | | Part Name | Description | Part Type | Designer(s) | Length | Compatible | |\n')
+fff.write('| |Slug |Part Name |Description |Part Type |Length |Modified at |Compatible |Used in |\n')
 fff.write('|----|----|----|----|----|----|----|----|----|\n')
 
 for zz in z:
@@ -134,131 +126,102 @@ for zz in z:
         part_name = zz
     else:
         part_name = 'BBa_K5643%s' % str(zz).zfill(3) # Team Fudan iGEM 2025
-    local = False
-    if os.path.isfile('parts-json/%s.slug' % part_name):
+    if os.path.isfile('parts-json/%s_slug.json' % part_name):
         print('load:\t', part_name)
-        ff = open('parts-json/%s.slug' % part_name, 'r')
-        page = ff.read()
-        ff.close()
-        if page != '<html><head></head><body></body></html>':
-            local = BeautifulSoup(page, features="lxml")
-    if not local:
+    elif not only_local:
         print('fetch:\t', part_name)
         if part_name.startswith('BBa_K'): # new in 2025, slug
             #driver.get("https://registry.igem.org/parts/bba-k%s" % part_name[5:] )
-            driver.get("https://api.registry.igem.org/v1/parts/slugs/bba-k%s" % part_name[5:] )
+            os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/slugs/bba-k%s" > parts-json/%s_slug.json' % (
+                       part_name[5:],
+                       part_name ))
         else:
-            driver.get("https://api.registry.igem.org/v1/parts/slugs/%s" % part_name.lower().replace('-', '_') )
-        sleep(10)
-        p1 = BeautifulSoup(driver.page_source, features="lxml")
-        waiting = 30
-        while (not p1.find('span', {'class': 'SnF_partSeqLength legend'}) or
-               not p1.find('table', {'id' : 'subpart_table'}) ) and waiting > 0:
-            sleep(2)
-            p1 = BeautifulSoup(driver.page_source, features="lxml")
-            waiting -= 1
-        f = open('parts-json/%s.txt' % part_name, 'w')
-        f.write(driver.page_source)
-        f.close()
-    else:
-        p1 = local
-    p2 = p1.find_all('table', {'id' : 'table_header'})
-    if not p2:
-        print('!! empty\n')
-        continue
-    p3 = p1.find('span', {'class': 'SnF_partSeqLength legend'}).get_text().strip()
-    print(p3)
-    p4 = p1.find('div', {'class': 'compatibility_div'}).get_text().find('INCOMPATIBLE WITH RFC[10]') > -1
-    td = []
-    favorited = ''
-    for tr in p2:
-        started = False
-        tr_text = tr.get_text(" |\t", strip=True)
-        for th in table_th:
-            if tr_text.startswith('%s |' % th):
-                td_str = tr_text.split(' |\t', 1)[1].strip()
-                if td_str.startswith('BBa_'):
-                    td.append('[%s](https://parts.igem.org/Part:%s)' % (td_str,td_str))
-                else:
-                    td.append(td_str)
-                print(th, td[-1] )
-        if tr_text.startswith('DNA Status') and not started:
-            if tr_text.find('Deleted') > -1:
-                fff.write('| X ')
-            else:
-                fff.write('| ')
-            started = True
-        if tr_text.startswith('Group Favorite') and tr_text.find('Yes') > -1:
-            favorited = 'U'
-    fff.write('| %s | %s | %s | ' % (favorited, ' | '.join(td), p3) )
-    if p4 == True:
-        fff.write('@@ | ')
-        print('RFC[10] incompatible!!!!!!!')
-        sleep(10)
-    else:
-        fff.write('RFC10 | ')
+            os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/slugs/%s" > parts-json/%s_slug.json' % (
+                       part_name.lower().replace('_', '-'),
+                       part_name ))
+        sleep(2)
+        # page = driver.page_source
+        # if page:
+        #     f = open('' % part_name, 'w')
+        #     f.write(driver.page_source)
+        #     f.close()
+    ff = open('parts-json/%s_slug.json' % part_name, 'r')
+    page = ff.read()
+    ff.close()
     try:
-        p5 = p1.find_all('table', {'id' : 'subpart_table'})[0].find_all('input')
-        if p5:
-            subpartss = 0
-            for inp in p5:
-                if inp['value'] and inp['value'].startswith('BBa_'):
-                    subpartss += 1
-                    fff.write('%s ' % inp['value'] )
-                    if inp['value'] not in subparts:
-                        subparts.append( inp['value'] )
-                        if inp['value'] not in known_basic_parts and inp['value'] not in white_listed:
-                            sub_is_NOT_basic.append( inp['value'] )
-            print('__ subpart_table count %d BBa_' % subpartss)
-            fff.write('|\n')
-        else:
-            fff.write('basic |\n')
-            if part_name not in basic_parts:
-                basic_parts.append( part_name )
-    except:
-        print('!! fail to extract subparts')
-        fff.write(' |\n')
-    print('\n\n')
+        p2 = py_json.loads(page)
+        if p2.get('error'):
+            print('!! %s' % p2['error'])
+            continue
+        # {
+        #   "uuid": "3e30ad4f-5360-49f7-bda4-60929b0f2971",
+        #   "name": "BBa_B0030",
+        #   "slug": "bba-b0030",
+        #   "status": "published",
+        #   "title": "RBS.1 (strong) -- modified from R. Weiss",
+        #   "description": "Strong RBS based on Ron Weiss thesis. Strength is considered relative to \u003Cbb_part\u003EBBa_B0031\u003C/bb_part\u003E, \u003Cbb_part\u003EBBa_B0032\u003C/bb_part\u003E, \u003Cbb_part\u003EBBa_B0033\u003C/bb_part\u003E.\\n",
+        #   "type": {
+        #     "uuid": "9136e5fb-7232-4992-b828-d4fa4889ce63",
+        #     "label": "RBS",
+        #     "slug": "rbs"
+        #   },
+        #   "licenseUUID": "d6c69ca7-8be4-4bc0-b4a8-d3ae1d428aa6",
+        #   "source": "",
+        #   "sequence": "ATTAAAGAGGAGAAA",
+        #   "audit": {
+        #     "created": "2003-01-31T00:00:00.000Z",
+        #     "updated": "2021-09-08T20:22:43.000Z"
+        #   }
+        # }
+    except ExceptionType as e:
+        print('!! %s' % e)
+        continue
+    favorited = ''
+    fff.write('|%s |%s |%s |%s |%s |%s |%s |' % (part_name,
+                    p2['uuid'],
+                    p2['title'],
+                    p2['description'],
+                    p2['type']['label'],
+                    len(p2['sequence']),
+                    p2['audit']['updated'] ))
+    # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/compatibilities
+    # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/uses
+    if force_check_rfc or not os.path.isfile('parts-json/%s_rfc.json' % part_name):
+        os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/%s/compatibilities" > parts-json/%s_rfc.json' % (
+                  p2['uuid'], part_name ))
+    # {"rfc10":{"compatible":true,"motif":null,"index":null},"rfc1000":{"compatible":false,"motif":"GGTCTC","index":178}}
+    if force_check_used or not os.path.isfile('parts-json/%s_used.txt' % part_name):
+        os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/%s/uses" > parts-json/%s_used.txt' % (
+                  p2['uuid'], part_name ))
+    ff = open('parts-json/%s_rfc.json' % part_name, 'r')
+    p3 = py_json.loads( ff.read() )
+    ff.close()
+    if p3['rfc10']['compatible']:
+        fff.write('RFC10 ')
+    if p3['rfc1000']['compatible']:
+        fff.write('RFC1000 ')
+    ff = open('parts-json/%s_used.txt' % part_name, 'r')
+    fff.write('|%s |\n' % ff.read().strip() )
+    ff.close()
+    sleep(2)
+    # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/is-composite
+    # https://api.registry.igem.org/v1/parts/49ca5c96-e5c4-48ac-850b-3271e6b188eb/is-composite
+    print('!! cannot extract subparts at this moment')
+#driver.quit() # end of zz in z
 
-fff.write('\n\n| | | Old Part | Description | Type | Not 2024 | Length | Compatible | |\n')
-fff.write('|----|----|----|----|----|----|----|----|----|\n')
+
+# fff.write('\n\n| | | Old Part | Description | Type | Not 2024 | Length | Compatible | |\n')
+# fff.write('|----|----|----|----|----|----|----|----|----|\n')
 fff.close()
 
-print('\n\n====\nBelow are subparts in composite parts:\n')
-print('\n'.join(["'%s'," % x for x in sorted(subparts) ]))
+# print('\n\n====\nBelow are subparts in composite parts:\n')
+# print('\n'.join(["'%s'," % x for x in sorted(subparts) ]))
 
-print('\n====\nBelow are basic parts:\n')
-print('\n'.join(["'%s'," % x for x in sorted(basic_parts) ]))
+# print('\n====\nBelow are basic parts:\n')
+# print('\n'.join(["'%s'," % x for x in sorted(basic_parts) ]))
 
-print('\n====\nSubparts are Not basic, and not white listed:\n')
-print('\n'.join(["'%s'," % x for x in sorted(sub_is_NOT_basic) ]))
-# 'BBa_K5115011',
-# 'BBa_K5115012',
-# 'BBa_K5115013',
-# 'BBa_K5115014',
-# 'BBa_K5115015',
-# 'BBa_K5115016',
-# 'BBa_K5115017',
-# 'BBa_K5115018',
-# 'BBa_K5115019',
-# 'BBa_K5115033',
-# 'BBa_K5115035',
-# 'BBa_K5115036',
-# 'BBa_K5115038',
-# 'BBa_K5115052',
-# 'BBa_K5115053',
-# 'BBa_K5115060',
-# 'BBa_K5115061',
-# 'BBa_K5115062',
-# 'BBa_K5115063',
-# 'BBa_K5115064',
-# 'BBa_K5115065',
-# 'BBa_K5115077',
-# 'BBa_K5115078',
-# 'BBa_K5115079',
-# 'BBa_K5115080',
-# 'BBa_K5115081',
+# print('\n====\nSubparts are Not basic, and not white listed:\n')
+# print('\n'.join(["'%s'," % x for x in sorted(sub_is_NOT_basic) ]))
 
 print('\n\nCAUTION: remove files in parts-json for update\n')
 #print('Validate with https://parts.igem.org/partsdb/search_1000.cgi?q=K5115000\n\n\n\n')
-driver.quit()
