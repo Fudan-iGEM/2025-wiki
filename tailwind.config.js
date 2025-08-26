@@ -15,7 +15,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // 主要色 - 青绿色系
         primary: {
           50: '#e6f8f7',
           100: '#b2eeeb',
@@ -28,7 +27,6 @@ export default {
           800: '#004d5c',
           900: '#003e4e',
         },
-        // 橙色系 - 强调色
         accent: {
           50: '#fef8f3',
           100: '#faccaf',
@@ -41,7 +39,6 @@ export default {
           800: '#8a401c',
           900: '#773317',
         },
-        // 次要色
         secondary: {
           50: '#e6f2fe',
           100: '#d4e8fc',
@@ -54,11 +51,9 @@ export default {
           800: '#041944',
           900: '#03132e',
         },
-        // 功能色
         highlight: '#fff771',
         warning: '#ffd237',
         success: '#6fbe02',
-        // 科技主题色彩
         tech: {
           primary: '#008794',
           secondary: '#0e9f99',
