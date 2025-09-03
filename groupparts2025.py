@@ -29,24 +29,18 @@ white_listed = ['BBa_B0030',
 'BBa_K4162013',
 'BBa_K4162016',
 'BBa_K4162019',
-'BBa_K4765015',
-'BBa_K4765016',
 'BBa_K4765020',
 'BBa_K4765021',
 'BBa_K4765111',
-'BBa_K4765112',
-'BBa_K4765113',
 'BBa_K4655016',
 'BBa_K4767017' ] # not this year
 z = white_listed + ['BBa_K4162001', 'BBa_K4162009', 'BBa_K4162010', 'BBa_K4162011', 'BBa_K4162012',
- 'BBa_K4162013', 'BBa_K4162014', 'BBa_K4162016', 'BBa_K4162019', 'BBa_K4162021',
- 'BBa_K4162022', 'BBa_K4162023', 'BBa_K4162101', 'BBa_K4162103', 'BBa_K4162106',
- 'BBa_K4162107', 'BBa_K4162108', 'BBa_K4162112', 'BBa_K4765022', 'BBa_K4765022',
- 'BBa_K4765111', 'BBa_K4765112', 'BBa_K4765113', 'BBa_K4765117', 'BBa_K4765126' ] # testing software tool
-white_listed += ['BBa_K5115058', 'BBa_K5115059', 'BBa_K5115086', 'BBa_K5115087' ] # a fusion protein
+ 'BBa_K4162013', 'BBa_K4162014', 'BBa_K4162016', 'BBa_K4162019', 'BBa_K4162021', 'BBa_K4765022',
+ 'BBa_K4765117', 'BBa_K4765126' ] # testing software tool
+white_listed += ['BBa_K5115058', 'BBa_K5115059', 'BBa_K5115086', 'BBa_K5115087' ] # fusion proteins from 2024
 z = sorted( list(set(z)) )
-z += range(0, 91)
-z += range(101, 141)
+z += range(0, 10)
+# z += range(101, 141)
 subparts = []
 sub_is_NOT_basic = []
 basic_parts = []
@@ -118,6 +112,7 @@ known_basic_parts = ['BBa_B0030',
 'BBa_K5115088',
 'BBa_K5115089' ]
 
+
 table_th = ('Part Name', 'Short Description', 'Part Type', 'Designer(s)')
 fff = open('groupparts.md', 'w')
 fff.write('| |Slug |Part Name |Description |Part Type |Length |Modified at |Compatible |Used in |\n')
@@ -154,6 +149,7 @@ for zz in z:
         p2 = py_json.loads(page)
         if p2.get('error'):
             print('!! %s' % p2['error'])
+            os.system('rm parts-json/%s_slug.json' % part_name)
             continue
         # {
         #   "uuid": "3e30ad4f-5360-49f7-bda4-60929b0f2971",
@@ -182,7 +178,7 @@ for zz in z:
     fff.write('|%s |%s |%s |%s |%s |%s |%s |' % (part_name,
                     p2['uuid'],
                     p2['title'],
-                    p2['description'].replace('\n', '<br>').replace('\r', '<br>'),
+                    p2['description'].replace('\n', '    ').replace('\r', '    '), # <br>
                     p2['type']['label'],
                     len(p2['sequence']),
                     p2['audit']['updated'] ))
