@@ -151,6 +151,40 @@ let isAnimating = false;
 let lastUpdateTime = 0;
 const THROTTLE_DELAY = 16; // ~60fps
 
+// 可见性与合帧更新控制
+const isVisible = ref(false);
+let io: IntersectionObserver | null = null;
+let rafLoopId: number | null = null;
+let needsUpdate = false;
+let pointerClientX = 0;
+let pointerClientY = 0;
+let cachedRect: DOMRect | null = null;
+let hasRunInitialAnimation = false;
+
+const startRafLoop = () => {
+  if (rafLoopId != null) return;
+  const loop = () => {
+    if (needsUpdate && cardRef.value && wrapRef.value && cachedRect) {
+      updateCardTransform(
+        pointerClientX - cachedRect.left,
+        pointerClientY - cachedRect.top,
+        cardRef.value,
+        wrapRef.value
+      );
+      needsUpdate = false;
+    }
+    rafLoopId = requestAnimationFrame(loop);
+  };
+  rafLoopId = requestAnimationFrame(loop);
+};
+
+const stopRafLoop = () => {
+  if (rafLoopId != null) {
+    cancelAnimationFrame(rafLoopId);
+    rafLoopId = null;
+  }
+};
+
 const updateCardTransform = (offsetX: number, offsetY: number, card: HTMLElement, wrap: HTMLElement) => {
   // 缓存尺寸以避免重复计算
   const width = card.clientWidth;
@@ -217,18 +251,10 @@ const cancelAnimation = () => {
 };
 
 const handlePointerMove = (event: PointerEvent) => {
-  const card = cardRef.value;
-  const wrap = wrapRef.value;
-
-  if (!card || !wrap || !props.enableTilt || isAnimating) return;
-
-  // 节流处理，限制更新频率
-  const now = performance.now();
-  if (now - lastUpdateTime < THROTTLE_DELAY) return;
-  lastUpdateTime = now;
-
-  const rect = card.getBoundingClientRect();
-  updateCardTransform(event.clientX - rect.left, event.clientY - rect.top, card, wrap);
+  if (!cardRef.value || !wrapRef.value || !props.enableTilt || isAnimating) return;
+  pointerClientX = event.clientX;
+  pointerClientY = event.clientY;
+  needsUpdate = true;
 };
 
 const handlePointerEnter = () => {
@@ -237,9 +263,11 @@ const handlePointerEnter = () => {
 
   if (!card || !wrap || !props.enableTilt) return;
 
+  cachedRect = card.getBoundingClientRect();
   cancelAnimation();
   wrap.classList.add('active');
   card.classList.add('active');
+  startRafLoop();
 };
 
 const handlePointerLeave = (event: PointerEvent) => {
@@ -251,6 +279,24 @@ const handlePointerLeave = (event: PointerEvent) => {
   createSmoothAnimation(ANIMATION_CONFIG.SMOOTH_DURATION, event.offsetX, event.offsetY, card, wrap);
   wrap.classList.remove('active');
   card.classList.remove('active');
+  stopRafLoop();
+  cachedRect = null;
+};
+
+const addPointerListeners = () => {
+  const card = cardRef.value;
+  if (!card) return;
+  card.addEventListener('pointerenter', handlePointerEnter);
+  card.addEventListener('pointermove', handlePointerMove);
+  card.addEventListener('pointerleave', handlePointerLeave);
+};
+
+const removePointerListeners = () => {
+  const card = cardRef.value;
+  if (!card) return;
+  card.removeEventListener('pointerenter', handlePointerEnter);
+  card.removeEventListener('pointermove', handlePointerMove);
+  card.removeEventListener('pointerleave', handlePointerLeave);
 };
 
 const cardStyle = computed(() => ({
@@ -308,34 +354,40 @@ const handleBarAvatarError = (event: Event) => {
 };
 
 onMounted(() => {
-  if (!props.enableTilt) return;
-
-  const card = cardRef.value;
   const wrap = wrapRef.value;
+  if (!wrap) return;
 
-  if (!card || !wrap) return;
+  io = new IntersectionObserver(([entry]) => {
+    isVisible.value = entry.isIntersecting;
+    if (!props.enableTilt) return;
 
-  card.addEventListener('pointerenter', handlePointerEnter);
-  card.addEventListener('pointermove', handlePointerMove);
-  card.addEventListener('pointerleave', handlePointerLeave);
+    if (isVisible.value) {
+      addPointerListeners();
+      // 仅首次在可见时运行初始动画
+      if (!hasRunInitialAnimation && cardRef.value && wrapRef.value) {
+        const initialX = wrapRef.value.clientWidth - ANIMATION_CONFIG.INITIAL_X_OFFSET;
+        const initialY = ANIMATION_CONFIG.INITIAL_Y_OFFSET;
+        updateCardTransform(initialX, initialY, cardRef.value, wrapRef.value);
+        createSmoothAnimation(ANIMATION_CONFIG.INITIAL_DURATION, initialX, initialY, cardRef.value, wrapRef.value);
+        hasRunInitialAnimation = true;
+      }
+    } else {
+      removePointerListeners();
+      stopRafLoop();
+      cancelAnimation();
+      cachedRect = null;
+    }
+  }, { rootMargin: '200px' });
 
-  const initialX = wrap.clientWidth - ANIMATION_CONFIG.INITIAL_X_OFFSET;
-  const initialY = ANIMATION_CONFIG.INITIAL_Y_OFFSET;
-
-  updateCardTransform(initialX, initialY, card, wrap);
-  createSmoothAnimation(ANIMATION_CONFIG.INITIAL_DURATION, initialX, initialY, card, wrap);
+  io.observe(wrap);
 });
 
 onUnmounted(() => {
-  const card = cardRef.value;
-
-  if (card) {
-    card.removeEventListener('pointerenter', handlePointerEnter);
-    card.removeEventListener('pointermove', handlePointerMove);
-    card.removeEventListener('pointerleave', handlePointerLeave);
-  }
-
+  removePointerListeners();
+  stopRafLoop();
   cancelAnimation();
+  io?.disconnect();
+  io = null;
 });
 </script>
 
@@ -676,7 +728,6 @@ onUnmounted(() => {
   position: absolute;
   inset: 0;
   z-index: 1;
-  backdrop-filter: blur(30px);
   mask: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
@@ -697,7 +748,6 @@ onUnmounted(() => {
   align-items: center;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px);
   border: 1px solid rgba(8, 135, 148, 0.2);
   border-radius: 15px;
   padding: 12px 14px;
@@ -755,7 +805,6 @@ onUnmounted(() => {
   color: #008794;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-  backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.5);
   position: relative;
   overflow: hidden;

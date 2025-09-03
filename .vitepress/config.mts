@@ -6,7 +6,13 @@ export default defineConfig({
   title: "Fudan",
   description: "The iGEM wiki website for Team Fudan 2025.",
   base: '/fudan/',
+  srcDir: './pages',
   ignoreDeadLinks: true,
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'https://static.igem.wiki/teams/5643/img/logo-icon.svg' }],
+    ['link', { rel: 'shortcut icon', href: 'https://static.igem.wiki/teams/5643/img/logo-icon.svg' }],
+    ['link', { rel: 'apple-touch-icon', href: 'https://static.igem.wiki/teams/5643/img/logo-icon.svg' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // The nav config has been deprecated, please use the CustomNavbar.vue instead.

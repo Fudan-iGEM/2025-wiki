@@ -2,7 +2,6 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import ProfileCard from './ProfileCard/ProfileCard.vue'
 import ExpandableGallery from './ExpandableGallery.vue'
-import PhotoLens from './PhotoLens.vue'
 
 const handleContactClick = () => {
   // 处理联系点击事件
@@ -258,7 +257,6 @@ onUnmounted(() => {
   </div>
 </div>
 
-<PhotoLens />
 </template>
 
 <style scoped>

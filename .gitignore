@@ -1,4 +1,4 @@
-# macOS系统文件
+# macOS System
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -17,7 +17,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Node.js依赖
+# Node.js
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -25,103 +25,113 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# VitePress构建输出
+# VitePress
 dist/
 .vitepress/dist/
 .vitepress/cache/
 
-# 环境变量文件
+# env
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# 编辑器配置
+# ide config
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# 日志文件
+# logs
 logs/
 *.log
 
-# 运行时数据
+# runtime data
 pids/
 *.pid
 *.seed
 *.pid.lock
 
-# 覆盖率目录
+# coverage
 lib-cov/
 coverage/
 *.lcov
 .nyc_output/
 
-# 依赖目录
+# dependencies
 jspm_packages/
 
-# 可选的npm缓存目录
+# npm cache
 .npm
 
-# 可选的eslint缓存
+# eslint cache
 .eslintcache
 
-# Microbundle缓存
+# Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
 
-# 可选的REPL历史
+# repl history
 .node_repl_history
 
-# 输出的npm包
+# npm package
 *.tgz
 
-# Yarn完整性文件
+# Yarn integrity file
 .yarn-integrity
 
-# 临时文件夹
+# tmp
 tmp/
 temp/
 
-# Python环境（如果有Python相关文件）
+# Python
 env/
 venv/
 __pycache__/
 *.pyc
 
-# 公共文件夹（如果由构建生成）
+# public
 public/
 
-# 缓存文件
+# cache
 .cache/
 .parcel-cache/
 
-# Next.js构建输出（如果混合使用）
+# Next.js
 .next/
 out/
 
-# Nuxt.js构建/生成输出
+# Nuxt.js
 .nuxt/
 
-# Gatsby文件
+# Gatsby
 .cache/
 public/
 
-# Storybook构建输出
+# Storybook
 .out/
 .storybook-out/
 
-# 临时文件夹
+# tmp
 .tmp/
 .temp/
+
+# bs4
 bs4/
+
+# selenium
 selenium/
 urllib3/
+
+# websocket
 websocket/
+
+# typing_extensions
 typing_extensions.py
+
+# lxml
 lxml/

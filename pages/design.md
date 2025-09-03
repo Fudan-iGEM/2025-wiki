@@ -11,7 +11,7 @@ description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis
 
 
 <script setup>
-import ChromosomeVisualization from './.vitepress/components/ChromosomeVisualization.vue'
+import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualization.vue'
 </script>
 
 

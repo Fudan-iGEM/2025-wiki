@@ -8,7 +8,7 @@ description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis
 ---
 
 <script setup>
-import MemberPage from './.vitepress/components/MemberPage.vue'
+import MemberPage from '../.vitepress/components/MemberPage.vue'
 </script>
 
 <MemberPage/>
