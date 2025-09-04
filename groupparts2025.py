@@ -44,6 +44,7 @@ z += range(0, 10)
 subparts = []
 sub_is_NOT_basic = []
 basic_parts = []
+parts_not_published = []
 known_basic_parts = ['BBa_B0030',
 'BBa_I742151',
 'BBa_J18920',
@@ -136,7 +137,8 @@ for zz in z:
             os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/slugs/%s" > parts-json/%s_slug.json' % (
                        part_name.lower().replace('_', '-'),
                        part_name ))
-        sleep(2)
+        if not only_local:
+            sleep(2)
         # page = driver.page_source
         # if page:
         #     f = open('' % part_name, 'w')
@@ -175,6 +177,9 @@ for zz in z:
         print('!! %s' % e)
         continue
     favorited = ''
+    if p2['status'] != 'published':
+        parts_not_published.append(part_name)
+        print('!! %s blocked for doc, due to "%s"' % (part_name, p2['status']))
     fff.write('|%s |%s |%s |%s |%s |%s |%s |' % (part_name,
                     p2['uuid'],
                     p2['title'],
@@ -201,7 +206,8 @@ for zz in z:
     ff = open('parts-json/%s_used.txt' % part_name, 'r')
     fff.write('|%s |\n' % ff.read().strip() )
     ff.close()
-    sleep(2)
+    if not only_local:
+        sleep(2)
     # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/is-composite
     # https://api.registry.igem.org/v1/parts/49ca5c96-e5c4-48ac-850b-3271e6b188eb/is-composite
     print('!! cannot extract subparts at this moment')
@@ -220,6 +226,10 @@ fff.close()
 
 # print('\n====\nSubparts are Not basic, and not white listed:\n')
 # print('\n'.join(["'%s'," % x for x in sorted(sub_is_NOT_basic) ]))
+
+if parts_not_published:
+    print('\n\n====\nBelow are parts block for doc:\n')
+    print('\n'.join(["'%s'," % x for x in sorted(parts_not_published) ]))
 
 print('\n\nCAUTION: remove files in parts-json for update\n')
 #print('Validate with https://parts.igem.org/partsdb/search_1000.cgi?q=K5115000\n\n\n\n')
