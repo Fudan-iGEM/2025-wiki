@@ -33,14 +33,17 @@ white_listed = ['BBa_B0030',
 'BBa_K4765021',
 'BBa_K4765111',
 'BBa_K4655016',
-'BBa_K4767017' ] # not this year
+'BBa_K4767017' ] # before 2024
+white_listed += ['BBa_K5115058', 'BBa_K5115059', 'BBa_K5115086', 'BBa_K5115087' ] # fusion proteins from Fudan 2024
 z = white_listed + ['BBa_K4162001', 'BBa_K4162009', 'BBa_K4162010', 'BBa_K4162011', 'BBa_K4162012',
  'BBa_K4162013', 'BBa_K4162014', 'BBa_K4162016', 'BBa_K4162019', 'BBa_K4162021', 'BBa_K4765022',
  'BBa_K4765117', 'BBa_K4765126' ] # testing software tool
-white_listed += ['BBa_K5115058', 'BBa_K5115059', 'BBa_K5115086', 'BBa_K5115087' ] # fusion proteins from 2024
 z = sorted( list(set(z)) )
-z += range(0, 10)
-# z += range(101, 141)
+z += ['BBa_25Y6BTXZ', 'BBa_25ATGCHY', 'BBa_25TEB42Q', 'BBa_25Q67BOD', 'BBa_255A36IQ', 'BBa_25TMD7MC', 'BBa_25O0GI56', 'BBa_25U88LU3', 'BBa_2533RATE', 'BBa_25CLCLXX',
+      'BBa_251T359T', 'BBa_259DU8YN', 'BBa_252BO17G', 'BBa_251I2TLJ', 'BBa_25IK0L52', 'BBa_2599SI53', 'BBa_25M2Z9H7', 'BBa_25GARG3E', 'BBa_25F6RD26', 'BBa_25IB5O7X',
+      'BBa_25TYRLM9', 'BBa_25YPQSK9', 'BBa_25OM7KR0', 'BBa_25RDFDUP', 'BBa_25PI44VT', 'BBa_25S9WAFG', 'BBa_25AIDL8P', 'BBa_25TQG9WZ', 'BBa_25VHXKNL', 'BBa_25MK00H6',
+      'BBa_250R9OVR', 'BBa_25TBH6RS', 'BBa_25QW6S8M' ]
+# XXXXYYY no longer used by registry.igem.org z += range(0, 10)
 subparts = []
 sub_is_NOT_basic = []
 basic_parts = []
@@ -144,7 +147,12 @@ for zz in z:
         #     f = open('' % part_name, 'w')
         #     f.write(driver.page_source)
         #     f.close()
-    ff = open('parts-json/%s_slug.json' % part_name, 'r')
+    try:
+        ff = open('parts-json/%s_slug.json' % part_name, 'r')
+    except Exception as e:
+        if not only_local:
+            print('!!\n\n   %s' % e)
+        continue
     page = ff.read()
     ff.close()
     try:
@@ -173,13 +181,13 @@ for zz in z:
         #     "updated": "2021-09-08T20:22:43.000Z"
         #   }
         # }
-    except ExceptionType as e:
+    except Exception as e:
         print('!! %s' % e)
         continue
     favorited = ''
     if p2['status'] != 'published':
         parts_not_published.append(part_name)
-        print('!! %s blocked for doc, due to "%s"' % (part_name, p2['status']))
+        print('-- %s blocked for doc, due to "%s"' % (part_name, p2['status']))
     fff.write('|%s |%s |%s |%s |%s |%s |%s |' % (part_name,
                     p2['uuid'],
                     p2['title'],
@@ -210,7 +218,7 @@ for zz in z:
         sleep(2)
     # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/is-composite
     # https://api.registry.igem.org/v1/parts/49ca5c96-e5c4-48ac-850b-3271e6b188eb/is-composite
-    print('!! cannot extract subparts at this moment')
+    print('-- cannot extract subparts at this moment')
 #driver.quit() # end of zz in z
 
 
