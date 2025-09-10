@@ -4,6 +4,7 @@ import os
 # pip3 install scrapy
 from time import sleep
 import json as py_json
+import requests
 
 only_local = False
 force_check_rfc = False
@@ -42,7 +43,8 @@ z = sorted( list(set(z)) )
 z += ['BBa_25Y6BTXZ', 'BBa_25ATGCHY', 'BBa_25TEB42Q', 'BBa_25Q67BOD', 'BBa_255A36IQ', 'BBa_25TMD7MC', 'BBa_25O0GI56', 'BBa_25U88LU3', 'BBa_2533RATE', 'BBa_25CLCLXX',
       'BBa_251T359T', 'BBa_259DU8YN', 'BBa_252BO17G', 'BBa_251I2TLJ', 'BBa_25IK0L52', 'BBa_2599SI53', 'BBa_25M2Z9H7', 'BBa_25GARG3E', 'BBa_25F6RD26', 'BBa_25IB5O7X',
       'BBa_25TYRLM9', 'BBa_25YPQSK9', 'BBa_25OM7KR0', 'BBa_25RDFDUP', 'BBa_25PI44VT', 'BBa_25S9WAFG', 'BBa_25AIDL8P', 'BBa_25TQG9WZ', 'BBa_25VHXKNL', 'BBa_25MK00H6',
-      'BBa_250R9OVR', 'BBa_25TBH6RS', 'BBa_25QW6S8M' ]
+      'BBa_250R9OVR', 'BBa_25TBH6RS', 'BBa_25QW6S8M', #@@@@
+      'BBa_25ULT0GX' ]
 # XXXXYYY no longer used by registry.igem.org z += range(0, 10)
 subparts = []
 sub_is_NOT_basic = []
@@ -123,6 +125,7 @@ fff.write('| |Slug |Part Name |Description |Part Type |Length |Modified at |Comp
 fff.write('|----|----|----|----|----|----|----|----|----|\n')
 
 for zz in z:
+    fetch_or_local = False
     if str(zz).startswith('BBa_'):
         part_name = zz
     else:
@@ -133,15 +136,17 @@ for zz in z:
         print('fetch:\t', part_name)
         if part_name.startswith('BBa_K'): # new in 2025, slug
             #driver.get("https://registry.igem.org/parts/bba-k%s" % part_name[5:] )
-            os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/slugs/bba-k%s" > parts-json/%s_slug.json' % (
+            os.system('scrapy fetch --nolog \
+"https://api.registry.igem.org/v1/parts/slugs/bba-k%s" > parts-json/%s_slug.json' % (
                        part_name[5:],
                        part_name ))
         else:
-            os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/slugs/%s" > parts-json/%s_slug.json' % (
+            os.system('scrapy fetch --nolog \
+"https://api.registry.igem.org/v1/parts/slugs/%s" > parts-json/%s_slug.json' % (
                        part_name.lower().replace('_', '-'),
                        part_name ))
-        if not only_local:
-            sleep(2)
+        fetch_or_local = True
+        sleep(2)
         # page = driver.page_source
         # if page:
         #     f = open('' % part_name, 'w')
@@ -158,7 +163,7 @@ for zz in z:
     try:
         p2 = py_json.loads(page)
         if p2.get('error'):
-            print('!! %s' % p2['error'])
+            print('!! slug %s' % p2['error'])
             os.system('rm parts-json/%s_slug.json' % part_name)
             continue
         # {
@@ -198,12 +203,14 @@ for zz in z:
     # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/compatibilities
     # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/uses
     if force_check_rfc or not os.path.isfile('parts-json/%s_rfc.json' % part_name):
-        os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/%s/compatibilities" > parts-json/%s_rfc.json' % (
-                  p2['uuid'], part_name ))
+        os.system('scrapy fetch --nolog \
+"https://api.registry.igem.org/v1/parts/%s/compatibilities" > parts-json/%s_rfc.json' % (
+                   p2['uuid'], part_name ))
     # {"rfc10":{"compatible":true,"motif":null,"index":null},"rfc1000":{"compatible":false,"motif":"GGTCTC","index":178}}
     if force_check_used or not os.path.isfile('parts-json/%s_used.txt' % part_name):
-        os.system('scrapy fetch --nolog "https://api.registry.igem.org/v1/parts/%s/uses" > parts-json/%s_used.txt' % (
-                  p2['uuid'], part_name ))
+        os.system('scrapy fetch --nolog \
+"https://api.registry.igem.org/v1/parts/%s/uses" > parts-json/%s_used.txt' % (
+                   p2['uuid'], part_name ))
     ff = open('parts-json/%s_rfc.json' % part_name, 'r')
     p3 = py_json.loads( ff.read() )
     ff.close()
@@ -214,11 +221,49 @@ for zz in z:
     ff = open('parts-json/%s_used.txt' % part_name, 'r')
     fff.write('|%s |\n' % ff.read().strip() )
     ff.close()
-    if not only_local:
+    if fetch_or_local:
         sleep(2)
-    # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/is-composite
-    # https://api.registry.igem.org/v1/parts/49ca5c96-e5c4-48ac-850b-3271e6b188eb/is-composite
-    print('-- cannot extract subparts at this moment')
+    # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/is-composite false
+    # https://api.registry.igem.org/v1/parts/49ca5c96-e5c4-48ac-850b-3271e6b188eb/is-composite false
+    # https://api.registry.igem.org/v1/parts/7137d74d-0891-4092-830b-d611700c49c4/is-composite true
+    if part_name.startswith('BBa_25') and (not os.path.isfile('parts-json/%s_composition.json' % part_name) 
+                                        or not os.path.isfile('parts-json/%s_basic')):
+        # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/composition
+        resp= requests.get('https://api.registry.igem.org/v1/parts/%s/is-composite' % p2['uuid'])
+        if resp.status_code == 200 and resp.text == 'true':
+            os.system('scrapy fetch --nolog \
+"https://api.registry.igem.org/v1/parts/%s/composition?page=1&pageSize=100" > parts-json/%s_composition.json' % (
+                       p2['uuid'], part_name ))
+            ff = open('parts-json/%s_composition.json' % part_name, 'r')
+            p4 = py_json.loads( ff.read() )
+            ff.close()
+            while p4['total'] > len( p4['data'] ):
+                p4['page'] += 1
+                resp = requests.get('https://api.registry.igem.org/v1/parts/7137d74d-0891-4092-830b-d611700c49c4/composition?page=%s&pageSize=100' % (
+                                     p2['uuid'], pp + 1))
+                p4['data'] += resp.json()['data']
+            for pp in p4['data']:
+                if pp['componentName'] not in subparts:
+                    subparts += [ pp['componentName'] ]
+                    if pp['componentName'] not in basic_parts and pp['componentName'] not in known_basic_parts:
+                        resp = requests.get('https://api.registry.igem.org/v1/parts/%s/is-composite' % pp['componentUUID'] )
+                        if resp.status_code == 200 and resp.text == 'true':
+                            sub_is_NOT_basic += [ pp['componentName'] ]
+                        elif resp.status_code == 200 and resp.text == 'false':
+                            basic_parts += [ pp['componentName'] ]
+                        else:
+                            print('-- cannot check subpart %s' % pp['componentName'])
+            if p4['page'] > 1:
+                print('-- update composition.json with complete data')
+                ff = open('parts-json/%s_rfc.json' % part_name, 'w')
+                ff.write( py_json.dumps(p4, indent=2) )
+        elif resp.status_code == 200 and resp.text == 'false':
+            os.system('touch parts-json/%s_basic' % part_name )
+        else:
+            sleep(10) # 429
+            print('-- cannot extract subparts at this moment %s' % resp.status_code)
+        sleep(2)
+        # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/documentation
 #driver.quit() # end of zz in z
 
 
@@ -226,14 +271,15 @@ for zz in z:
 # fff.write('|----|----|----|----|----|----|----|----|----|\n')
 fff.close()
 
-# print('\n\n====\nBelow are subparts in composite parts:\n')
-# print('\n'.join(["'%s'," % x for x in sorted(subparts) ]))
-
-# print('\n====\nBelow are basic parts:\n')
-# print('\n'.join(["'%s'," % x for x in sorted(basic_parts) ]))
-
-# print('\n====\nSubparts are Not basic, and not white listed:\n')
-# print('\n'.join(["'%s'," % x for x in sorted(sub_is_NOT_basic) ]))
+if subparts:
+    print('\n\n====\nBelow are subparts in composite parts:\n')
+    print('\n'.join(["'%s'," % x for x in sorted(subparts) ]))
+if basic_parts:
+    print('\n====\nBelow are basic parts:\n')
+    print('\n'.join(["'%s'," % x for x in sorted(basic_parts) ]))
+if sub_is_NOT_basic:
+    print('\n====\nSubparts are Not basic, and not white listed:\n')
+    print('\n'.join(["'%s'," % x for x in sorted(sub_is_NOT_basic) ]))
 
 if parts_not_published:
     print('\n\n====\nBelow are parts block for doc:\n')
