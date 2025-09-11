@@ -38,21 +38,21 @@
 |BBa_K5115059 |d12c04c4-5c13-4067-8b92-7c5d207c11d5 |hoxU fused with EP |1 |Miscellaneous |1561 |2024-09-27T09:53:27.000Z |RFC10 |0 |
 |BBa_K5115086 |ac8e1936-6d2e-4077-9a4f-7affb55518f4 |NixA-F1v |1 |Miscellaneous |1288 |2024-09-30T14:54:44.000Z |RFC10 RFC1000 |0 |
 |BBa_K5115087 |fe2c5499-7337-4711-bce5-a2eada8bf19a |F1v-NixA |1 |Miscellaneous |1288 |2024-09-29T10:51:25.000Z |RFC10 RFC1000 |0 |
-|BBa_25Y6BTXZ |bf5b7b0e-5b2b-469b-85b5-851a084b0023 |HR3'-DPB3_chr2 |Knock out DPB3. |DNA (Deprecated) |546 |2025-08-26T16:10:41.879Z |RFC1000 |0 |
-|BBa_25ATGCHY |6195f67f-3a7f-4631-b775-a6274be7d0d1 |HR5'-DPB3_chr2 |Knock out DPB3. |DNA (Deprecated) |508 |2025-08-26T16:10:24.812Z |RFC10 RFC1000 |0 |
-|BBa_25TEB42Q |501c9eab-6b31-472e-b2a7-11c8be3bd3a9 |HR3'-FEN2_chr3 |Knock out FEN2. |DNA (Deprecated) |546 |2025-08-26T16:09:59.681Z |RFC1000 |0 |
-|BBa_25Q67BOD |e21edec1-3343-4712-8499-8a973065652d |HR5'-FEN2_chr3 |Knock out FEN2. |DNA (Deprecated) |508 |2025-08-26T15:42:44.218Z |RFC1000 |0 |
-|BBa_255A36IQ |ca18d466-99a8-4a17-8f1a-f34fd286e517 |HR3'-SWI4_chr5 |Knock out SWI4. |DNA (Deprecated) |546 |2025-08-26T15:40:09.286Z |RFC1000 |0 |
-|BBa_25TMD7MC |e2e21484-c098-4adf-b0f5-8145734b228b |HR5'-SWI4_chr5 |Knock out SWI4. |DNA (Deprecated) |508 |2025-08-26T15:38:04.413Z |RFC10 RFC1000 |0 |
-|BBa_25O0GI56 |933d73a9-c8b4-469d-8eb2-1756c7097d92 |HR3'-CAF_chr14R |Knock out CAF. |DNA (Deprecated) |546 |2025-08-26T15:32:54.793Z |RFC1000 |0 |
-|BBa_25U88LU3 |9a8f4c03-b59c-4d58-b5ee-d0e9207bdce2 |HR5'-CAF_chr14L |Knock out CAF. |DNA (Deprecated) |508 |2025-08-26T15:11:32.063Z |RFC10 RFC1000 |0 |
-|BBa_2533RATE |f225a24c-9400-4a44-a2e7-aaa91de1db08 |HR3'-SOD1_chr10R |Knock out SOD1. |DNA (Deprecated) |546 |2025-08-26T15:09:26.464Z |RFC10 RFC1000 |0 |
-|BBa_25CLCLXX |294c287f-b00f-4a88-bd39-bb447a5f3865 |HR5'-SOD1_chr10 |Knock out SOD1. |DNA (Deprecated) |508 |2025-08-26T14:48:16.427Z |RFC10 RFC1000 |0 |
+|BBa_25Y6BTXZ |bf5b7b0e-5b2b-469b-85b5-851a084b0023 |HR3'-DPB3_chr2 |Knock out DPB3. |Miscellaneous |546 |2025-09-09T14:43:27.286Z |RFC1000 |0 |
+|BBa_25ATGCHY |6195f67f-3a7f-4631-b775-a6274be7d0d1 |HR5'-DPB3_chr2 |Knock out DPB3. |Miscellaneous |508 |2025-09-09T14:43:55.475Z |RFC10 RFC1000 |0 |
+|BBa_25TEB42Q |501c9eab-6b31-472e-b2a7-11c8be3bd3a9 |HR3'-FEN2_chr3 |Knock out FEN2. |Miscellaneous |546 |2025-09-09T14:44:17.885Z |RFC1000 |0 |
+|BBa_25Q67BOD |e21edec1-3343-4712-8499-8a973065652d |HR5'-FEN2_chr3 |Knock out FEN2. |Miscellaneous |508 |2025-09-09T14:44:41.136Z |RFC1000 |0 |
+|BBa_255A36IQ |ca18d466-99a8-4a17-8f1a-f34fd286e517 |HR3'-SWI4_chr5 |Knock out SWI4. |Miscellaneous |546 |2025-09-09T14:44:59.944Z |RFC1000 |0 |
+|BBa_25TMD7MC |e2e21484-c098-4adf-b0f5-8145734b228b |HR5'-SWI4_chr5 |Knock out SWI4. |Miscellaneous |508 |2025-09-09T14:45:20.541Z |RFC10 RFC1000 |0 |
+|BBa_25O0GI56 |933d73a9-c8b4-469d-8eb2-1756c7097d92 |HR3'-CAF_chr14R |Knock out CAF. |Miscellaneous |546 |2025-09-09T14:45:37.144Z |RFC1000 |0 |
+|BBa_25U88LU3 |9a8f4c03-b59c-4d58-b5ee-d0e9207bdce2 |HR5'-CAF_chr14L |Knock out CAF. |Miscellaneous |508 |2025-09-09T14:45:55.493Z |RFC10 RFC1000 |0 |
+|BBa_2533RATE |f225a24c-9400-4a44-a2e7-aaa91de1db08 |HR3'-SOD1_chr10R |Knock out SOD1. |Miscellaneous |546 |2025-09-09T14:46:13.710Z |RFC10 RFC1000 |0 |
+|BBa_25CLCLXX |294c287f-b00f-4a88-bd39-bb447a5f3865 |HR5'-SOD1_chr10 |Knock out SOD1. |Miscellaneous |508 |2025-09-09T14:46:42.206Z |RFC10 RFC1000 |0 |
 |BBa_251T359T |0ef2f736-3937-41ef-9689-842461f45630 |rtTA |Responsive to anhydrotetracycline (aTc). |Regulatory |1008 |2025-08-26T07:18:49.545Z |RFC10 RFC1000 |0 |
 |BBa_259DU8YN |3478aec2-6e30-4c19-a294-07b100bf9a39 |LacI |Responsive to isopropyl β-D-1-thiogalactopyranoside (IPTG). |Regulatory |1119 |2025-08-26T16:12:39.932Z |RFC10 RFC1000 |0 |
-|BBa_252BO17G |567e67b8-6653-41b6-9385-077eb604c3f5 |pTet2 |Inducible Promoter. |Regulatory |225 |2025-08-26T07:14:30.380Z |RFC10 RFC1000 |0 |
-|BBa_251I2TLJ |c0829c6b-ee4e-448d-a41e-a4f1d4f084f8 |pLacD |Inducible Promoter. |Regulatory |190 |2025-08-26T07:10:51.854Z |RFC10 RFC1000 |0 |
-|BBa_25IK0L52 |194a8eb5-c7b8-4ea6-9981-96dfd7a29512 |pREV1 |Constitutive Promoter, low level expression. |Regulatory |700 |2025-08-26T03:07:26.870Z |RFC10 RFC1000 |0 |
+|BBa_252BO17G |567e67b8-6653-41b6-9385-077eb604c3f5 |pTet2 |Inducible Promoter. |Promoter |225 |2025-09-10T06:49:01.106Z |RFC10 RFC1000 |0 |
+|BBa_251I2TLJ |c0829c6b-ee4e-448d-a41e-a4f1d4f084f8 |pLacD |Inducible Promoter. |Promoter |190 |2025-09-10T06:49:37.050Z |RFC10 RFC1000 |0 |
+|BBa_25IK0L52 |194a8eb5-c7b8-4ea6-9981-96dfd7a29512 |pREV1 |Constitutive Promoter, low level expression. |Promoter |700 |2025-09-10T06:50:19.907Z |RFC10 RFC1000 |0 |
 |BBa_2599SI53 |dd48e4c8-8fe9-4aba-a07d-f45c2551a30f |EMSfp643 |Optimized miRFP670-2 to resist EMS. |Coding |936 |2025-08-25T14:58:36.683Z |RFC10 RFC1000 |0 |
 |BBa_25M2Z9H7 |5dfa7966-37e5-4b68-aa95-6751772e278c |EMSfp399 |Optimized Bluebonnet2 to resist EMS. |Coding |705 |2025-08-25T14:54:03.599Z |RFC10 RFC1000 |0 |
 |BBa_25GARG3E |b5d5e1d6-cb6c-41c2-a42a-fce74c644b82 |EMSfp642 |Optimized smURFP to resist EMS. |Coding |402 |2025-08-25T14:52:16.694Z |RFC10 RFC1000 |0 |
@@ -61,13 +61,14 @@
 |BBa_25TYRLM9 |8a82b32e-db66-4d70-b71c-66bf782abca9 |EMSfp569 |Optimized mScarlet to resist EMS. |Coding |705 |2025-08-25T14:45:50.922Z |RFC10 RFC1000 |0 |
 |BBa_25YPQSK9 |d4bfd000-e3c5-4300-ac04-26e65708bbf4 |AmpR-ColE1 |Bacterial Expression, with Ampicillin resistance. |Plasmid |1850 |2025-08-25T13:31:42.604Z |RFC10 RFC1000 |0 |
 |BBa_25OM7KR0 |0240ff6b-81ce-4450-8f81-3ec7c5a0b1c8 |KanR-ColE1 |Bacterial Expression, with Kanamycin resistance. |Plasmid |1755 |2025-08-25T13:28:24.801Z |RFC10 RFC1000 |0 |
-|BBa_25RDFDUP |17ec94b4-676a-4fc9-82f3-fd962ba43b1b |Error |Bacterial Expression, with Ampicillin resistance. |Plasmid |1850 |2025-08-25T13:32:03.998Z |RFC10 RFC1000 |0 |
+|BBa_25RDFDUP |17ec94b4-676a-4fc9-82f3-fd962ba43b1b |AmpR-ColE1‘ |Bacterial Expression, with Ampicillin resistance. |Plasmid |1850 |2025-09-09T14:58:17.574Z |RFC10 RFC1000 |0 |
 |BBa_25PI44VT |d1ff6f30-4531-4c0f-aa10-5e840767f309 |M-Enk |M-Enk with α-factor secretion signal. |Coding |341 |2025-08-25T12:46:40.746Z |RFC10 |0 |
-|BBa_25S9WAFG |afecaef0-ab2b-4a9f-ba91-3bda6c9310c8 |pCUP1 |Promoter. |Regulatory |306 |2025-08-25T12:35:04.472Z |RFC10 RFC1000 |0 |
-|BBa_25AIDL8P |d7562128-d208-45a2-b93d-9f4fc83abe42 |ASH1 3'UTR |Guide mRNA to locate in the daughter cells. |DNA (Deprecated) |250 |2025-08-25T12:12:26.833Z |RFC10 RFC1000 |0 |
+|BBa_25S9WAFG |afecaef0-ab2b-4a9f-ba91-3bda6c9310c8 |pCUP1 |Promoter. |Promoter |306 |2025-09-10T06:51:20.883Z |RFC10 RFC1000 |0 |
+|BBa_25AIDL8P |d7562128-d208-45a2-b93d-9f4fc83abe42 |ASH1 3'UTR |Guide mRNA to locate in the daughter cells. |Miscellaneous |250 |2025-09-09T14:51:25.396Z |RFC10 RFC1000 |0 |
 |BBa_25TQG9WZ |dfd14d21-97dc-4618-b0d3-79258c64b7fa |modified mCherry |Fluorescent timer based on mCherry whose color changes over time. |Coding |711 |2025-08-25T12:06:26.138Z |RFC10 RFC1000 |0 |
 |BBa_25VHXKNL |95f1ea39-9d54-4a8b-9caf-8c0bdbba0914 |ASH1 AIpro |Promoter of ASH1, predicted by DeePromClass. |Regulatory |2463 |2025-08-25T12:01:30.383Z |RFC10 RFC1000 |0 |
 |BBa_25MK00H6 |d6bd2220-d51b-4f40-baa5-c2e33c2d8161 |tENO1 |Terminator,weak. |Terminator |225 |2025-08-25T11:50:44.374Z |RFC10 RFC1000 | |
+|BBa_250R9OVR |a239e354-0469-43a3-987b-ff12e3dadc40 |Ime1 |Induce meiosis. |Coding |1083 |2025-08-25T10:53:11.682Z |RFC10 RFC1000 |0 |
 |BBa_25TBH6RS |8bd5521c-d80f-48bc-945f-302980f1c08c |Ime1 |Induce meiosis |Coding |1083 |2025-08-25T10:21:33.349Z |RFC10 RFC1000 |0 |
 |BBa_25QW6S8M |6e96e5cd-bdbb-4791-93e2-fa2c4da50268 |pREV1 |Constitutive Promoter, low level expression. |Regulatory |700 |2025-08-25T09:54:42.894Z |RFC10 RFC1000 |0 |
 |BBa_25ULT0GX |7137d74d-0891-4092-830b-d611700c49c4 |pET28a-papain |The pET-28a-papain construct is designed to express the Carica papaya papain protease in *E. coli* under the control of the T7 promoter, enabling high-level, inducible protein expression. The system utilizes the lac operon-based regulation, where IPTG induction activates T7 RNA polymerase, initiating transcription of the papain coding sequence. A His-tag is fused to the protein to facilitate purification via affinity chromatography. This design enables efficient production and downstream application of recombinant papain for functional assays such as protein degradation or skin exfoliation. |Plasmid |5099 |2025-09-09T02:34:32.184Z |RFC10 RFC1000 |0 |
