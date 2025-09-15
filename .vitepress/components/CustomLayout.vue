@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import { useRoute } from "vitepress";
-import { computed, ref, onMounted } from "vue";
+import { computed, watch, onMounted, nextTick } from "vue";
 import { useData } from "vitepress/dist/client/theme-default/composables/data.js";
-import VPDocFooter from "vitepress/dist/client/theme-default/components/VPDocFooter.vue";
 import "../theme/tw.css";
 import TitleInfo from "./TitleInfo.vue";
 import CustomTOC from "./CustomTOC.vue";
-import SpotlightCard from "./SpotlightCard.vue";
-import CircularText from "./CircularText.vue";
 
 const { theme, frontmatter } = useData();
 
@@ -20,6 +17,94 @@ const leftAside = computed(() => true);
 
 const pageName = computed(() => route.path.replace(/[./]+/g, "_").replace(/_html$/, ""));
 const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.jpg");
+
+// 内容处理函数
+const processContent = () => {
+  nextTick(() => {
+    const contentElement = document.querySelector('.vp-doc');
+    if (!contentElement || contentElement.hasAttribute('data-processed')) return;
+    
+    // 标记为已处理，避免重复处理
+    contentElement.setAttribute('data-processed', 'true');
+
+    try {
+      // 直接处理innerHTML，更安全高效
+      let html = contentElement.innerHTML;
+      let hasChanges = false;
+
+      // 1. BBa_25开头的文本 -> 自动链接
+      const bbaRegex = /(?<!<[^>]*?)BBa_25[A-Za-z0-9]+(?![^<]*?>)/g;
+      if (bbaRegex.test(html)) {
+        hasChanges = true;
+        html = html.replace(bbaRegex, (match) => {
+          const lowercaseMatch = match.toLowerCase().replace('_', '-');
+          return `<a href="https://registry.igem.org/parts/${lowercaseMatch}" target="_blank" rel="noopener noreferrer">${match}</a>`;
+        });
+      }
+
+      // 2. DOI格式 -> 自动链接
+      const doiRegex = /(?<!<[^>]*?)(?:doi:|DOI:)?\s*(10\.\d+\/[^\s<]+)(?![^<]*?>)/g;
+      if (doiRegex.test(html)) {
+        hasChanges = true;
+        html = html.replace(doiRegex, (match, doi) => {
+          return `<a href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI: ${doi}</a>`;
+        });
+      }
+
+      // 3. PMID格式 -> 自动链接
+      const pmidRegex = /(?<!<[^>]*?)PMID:\s*(\d+)(?![^<]*?>)/g;
+      if (pmidRegex.test(html)) {
+        hasChanges = true;
+        html = html.replace(pmidRegex, (match, pmid) => {
+          return `<a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank" rel="noopener noreferrer">PMID: ${pmid}</a>`;
+        });
+      }
+
+      // 4. 学名斜体
+      const scientificNameRegex = /(?<!<[^>]*?)(?<!<em>)\b([A-Z][a-z]+ [a-z]+)\b(?![^<]*?>)(?!<\/em>)/g;
+      const commonLatinPatterns = /^(Escherichia coli|Bacillus subtilis|Saccharomyces cerevisiae|Arabidopsis thaliana|Drosophila melanogaster|Caenorhabditis elegans|Mus musculus|Homo sapiens|Rattus norvegicus|Danio rerio|Xenopus laevis|Gallus gallus|Bos taurus|Sus scrofa|Ovis aries|Capra hircus|Equus caballus|Canis familiaris|Felis catus|Macaca mulatta|Pan troglodytes|Gorilla gorilla|Pongo pygmaeus|Chlorella vulgaris|Spirulina platensis|Pseudomonas aeruginosa|Staphylococcus aureus|Streptococcus pyogenes|Mycobacterium tuberculosis|Salmonella enterica|Vibrio cholerae|Clostridium botulinum|Listeria monocytogenes|Campylobacter jejuni|Helicobacter pylori|Neisseria gonorrhoeae|Treponema pallidum|Borrelia burgdorferi|Plasmodium falciparum|Trypanosoma brucei|Leishmania major|Toxoplasma gondii|Candida albicans|Aspergillus niger|Penicillium chrysogenum|Neurospora crassa|Schizosaccharomyces pombe|Pichia pastoris|Kluyveromyces lactis|Yarrowia lipolytica|Trichoderma reesei|Fusarium graminearum|Magnaporthe oryzae|Ustilago maydis|Cryptococcus neoformans|Pneumocystis jirovecii)$/i;
+      
+      html = html.replace(scientificNameRegex, (match, name) => {
+        if (commonLatinPatterns.test(name)) {
+          hasChanges = true;
+          return `<em>${name}</em>`;
+        }
+        return match;
+      });
+
+      // 如果有变化，更新内容
+      if (hasChanges) {
+        contentElement.innerHTML = html;
+      }
+    } catch (error) {
+      console.warn('Content processing error:', error);
+    }
+  });
+};
+
+// 监听路由变化和内容更新
+onMounted(() => {
+  // 延迟执行，确保内容已完全渲染
+  setTimeout(() => {
+    processContent();
+  }, 100);
+});
+
+// 路由切换后强制重新处理内容
+watch(
+  () => route.path,
+  () => {
+    // 移除旧的处理标记，避免阻止新页面处理
+    const contentElement = document.querySelector('.vp-doc');
+    if (contentElement) {
+      contentElement.removeAttribute('data-processed');
+    }
+    // 等待新内容挂载后再处理
+    setTimeout(() => {
+      processContent();
+    }, 100);
+  }
+);
 </script>
 
 <template>
@@ -71,6 +156,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
 
             <Content
               class="vp-doc"
+              :key="route.path"
               :class="[pageName, theme.externalLinkIcon && 'external-link-icon-enabled']"
             />
           </main>

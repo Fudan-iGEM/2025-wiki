@@ -1,4 +1,3 @@
-
 <template>
   <div class="title-info">
     <!-- Add back the title that floats between image and content -->
@@ -37,10 +36,19 @@
       </p>
 
       <!-- Button styling to match image -->
-      <a :href="authorUrl" class="hero-button" v-if="authorName">
-        Author:{{ authorName }}
-      </a>
-      <button class="hero-button" v-else>Author:{{ author || "XXX" }}</button>
+      <div class="authors-container">
+        <div class="author-button-wrapper" v-for="(author, index) in authors" :key="index">
+          <a :href="author.url" class="hero-button" v-if="author.url">
+            Author: {{ author.name }}
+          </a>
+          <button class="hero-button" v-else>Author: {{ author.name }}</button>
+          
+          <!-- Author avatar tooltip -->
+          <div class="author-avatar-tooltip" v-if="author.avatar">
+            <img :src="author.avatar" :alt="author.name" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -69,28 +77,55 @@ const formattedDescription = computed(() => {
   );
 });
 
-// Update author computed properties to handle object
-const authorData = computed(() => frontmatter.value.author);
-
-const authorName = computed(() => {
-  if (typeof authorData.value === "object" && authorData.value?.name) {
-    return authorData.value.name;
+// Handle authors - support both single author and multiple authors (max 3)
+const authors = computed(() => {
+  const authorData = frontmatter.value.authors || frontmatter.value.author;
+  
+  // If no author data
+  if (!authorData) {
+    return [{ name: "XXX", url: null, avatar: null }];
   }
-  if (typeof authorData.value === "string") {
-    return authorData.value; // Handle case where author is just a string
+  
+  // If it's an array of authors
+  if (Array.isArray(authorData)) {
+    // Limit to 3 authors maximum
+    return authorData.slice(0, 3).map(author => {
+      if (typeof author === "string") {
+        return { name: author, url: null, avatar: null };
+      }
+      if (typeof author === "object") {
+        return {
+          name: author.name || "Unknown",
+          url: author.url ? formatUrl(author.url) : null,
+          avatar: author.avatar || null
+        };
+      }
+      return { name: "Unknown", url: null, avatar: null };
+    });
   }
-  return null; // No valid author name found
+  
+  // If it's a single author (backward compatibility)
+  if (typeof authorData === "string") {
+    return [{ name: authorData, url: null, avatar: null }];
+  }
+  
+  if (typeof authorData === "object") {
+    return [{
+      name: authorData.name || "Unknown",
+      url: authorData.url ? formatUrl(authorData.url) : null,
+      avatar: authorData.avatar || null
+    }];
+  }
+  
+  return [{ name: "XXX", url: null, avatar: null }];
 });
 
-const authorUrl = computed(() => {
-  if (typeof authorData.value === "object" && authorData.value?.url) {
-    // Ensure URL starts with '/' or 'http' for proper linking
-    return authorData.value.url.startsWith("/") || authorData.value.url.startsWith("http")
-      ? authorData.value.url
-      : `/${authorData.value.url}`; // Prepend slash if it's a relative path without one
-  }
-  return null; // No URL provided
-});
+// Helper function to format URLs
+function formatUrl(url) {
+  if (!url) return null;
+  // Ensure URL starts with '/' or 'http' for proper linking
+  return url.startsWith("/") || url.startsWith("http") ? url : `/${url}`;
+}
 
 // Get hero image from frontmatter
 const heroImage = computed(() => frontmatter.value.heroImage);
@@ -190,6 +225,20 @@ const handleTitleAnimationComplete = () => {
   opacity: 0.3;
 }
 
+/* Authors container for multiple authors */
+.authors-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Author button wrapper for avatar tooltip */
+.author-button-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
 .hero-button {
   display: inline-flex;
   align-items: center;
@@ -203,33 +252,56 @@ const handleTitleAnimationComplete = () => {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
   position: relative;
-  overflow: hidden;
-}
-
-.hero-button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
 }
 
 .hero-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.4);
 }
 
-.hero-button:hover::before {
-  width: 300px;
-  height: 300px;
+/* Author avatar tooltip */
+.author-avatar-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.author-avatar-tooltip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Show avatar on hover */
+.author-button-wrapper:hover .author-avatar-tooltip {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+/* Add arrow pointing down */
+.author-avatar-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #fff transparent transparent transparent;
 }
 
 /* Improved responsive adjustments */
