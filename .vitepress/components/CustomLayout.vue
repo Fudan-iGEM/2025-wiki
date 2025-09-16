@@ -179,8 +179,7 @@ watch(
   flex-direction: column;
   min-height: 100vh;
   background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Outfit', sans-serif;
   position: relative;
 }
 
@@ -207,24 +206,30 @@ watch(
   margin-top: 2rem;
 }
 
-/* Hero section structure */
+/* Hero section structure - 全屏高度 */
 .hero-container {
   position: relative;
   width: 100%;
+  height: 100vh;
+  min-height: 600px;
   margin-bottom: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   background: white;
   overflow: hidden;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Image section */
+/* Image section - 占更大比例 */
 .hero-image-section {
-  height: 320px;
+  height: 55vh;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 /* Overlay for the image */
@@ -367,18 +372,24 @@ watch(
   }
 }
 
-/* Content section positioned to connect with image */
+/* Content section positioned to connect with image - 填满剩余空间 */
 .hero-content-section {
   position: relative;
   z-index: 10;
   margin-top: 0;
   background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Set up positioning context for TitleInfo */
 .hero-container > :deep(.title-info) {
   position: relative;
-  margin-top: -50px; /* Pull up to overlap with image */
+  margin-top: -80px; /* Pull up to overlap with image more */
+  width: 100%;
 }
 
 .container {
@@ -391,19 +402,20 @@ watch(
   padding: 0 1rem;
 }
 
-/* Enhanced TOC Bar / Sidebar with modern tech style */
+/* Enhanced TOC Bar / Sidebar with modern tech style - 更窄更高 */
 .aside {
   flex-shrink: 0;
-  width: 280px;
+  width: 220px; /* 从280px缩小到220px */
   background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
-  height: calc(100vh - 60px - 320px);
+  height: calc(100vh - 120px); /* 增加高度 */
+  max-height: 800px; /* 设置最大高度 */
   overflow-y: auto;
   position: sticky;
-  top: 160px;
+  top: 90px; /* 调整顶部距离 */
   align-self: flex-start;
   border: 1px solid rgba(0, 152, 161, 0.1);
   border-radius: 16px;
-  margin-right: 2.5rem;
+  margin-right: 2rem; /* 从2.5rem减少到2rem */
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.08),
     0 0 0 1px rgba(0, 188, 212, 0.05);
@@ -433,7 +445,7 @@ watch(
 
 .toc-title {
   font-weight: 700;
-  padding: 1.5rem 1.25rem;
+  padding: 1rem 0.75rem; /* 减少内边距 */
   text-align: left;
   border-bottom: 1px solid rgba(0, 152, 161, 0.1);
   color: #0098a1;
@@ -441,13 +453,13 @@ watch(
   align-items: center;
   justify-content: flex-start;
   background: linear-gradient(135deg, rgba(0, 188, 212, 0.05) 0%, transparent 100%);
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
+  font-size: 1rem; /* 稍微减小字体 */
+  letter-spacing: 0.3px;
 }
 
 .toc-icon {
-  margin-right: 0.75rem;
-  font-size: 1.4rem;
+  margin-right: 0.5rem; /* 减少间距 */
+  font-size: 1.2rem; /* 减小图标 */
   background: linear-gradient(135deg, #00bcd4, #55c2bb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -455,7 +467,7 @@ watch(
 }
 
 .aside-content {
-  padding: 1.25rem;
+  padding: 0.75rem; /* 减少内边距以适配更窄的宽度 */
 }
 
 /* Enhance Main Content with modern design */
@@ -710,12 +722,20 @@ watch(
   }
 
   .aside {
-    width: 260px;
-    margin-right: 2rem;
+    width: 200px; /* 保持较窄 */
+    margin-right: 1.5rem;
   }
 
   .content-container {
     padding: 2.5rem 2rem;
+  }
+
+  .hero-container {
+    height: 90vh; /* 平板端稍微减少高度 */
+  }
+
+  .hero-image-section {
+    height: 50vh; /* 平板端稍微减少图片高度 */
   }
 }
 
@@ -751,8 +771,14 @@ watch(
     gap: 1.5rem;
   }
 
+  .hero-container {
+    height: 80vh; /* 移动端减少高度 */
+    min-height: 500px;
+  }
+
   .hero-image-section {
-    height: 220px;
+    height: 40vh; /* 移动端减少图片高度 */
+    min-height: 280px;
   }
 
   .hero-content-section {
@@ -760,16 +786,16 @@ watch(
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -40px;
+    margin-top: -60px;
   }
 
   .toc-title {
-    padding: 1.25rem 1rem;
-    font-size: 1rem;
+    padding: 0.8rem 0.6rem;
+    font-size: 0.95rem;
   }
 
   .aside-content {
-    padding: 1rem;
+    padding: 0.6rem;
   }
 }
 
@@ -816,16 +842,22 @@ watch(
     margin-bottom: 1.5rem;
   }
 
+  .hero-container {
+    height: 70vh; /* 小屏幕进一步减少 */
+    min-height: 450px;
+  }
+
   .hero-image-section {
-    height: 180px;
+    height: 35vh;
+    min-height: 200px;
   }
 
   .hero-content-section {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -30px;
+    margin-top: -40px;
   }
 
   .aside {
@@ -864,19 +896,31 @@ watch(
     font-size: 0.85rem;
   }
 
+  .hero-container {
+    height: 65vh; /* 最小屏幕 */
+    min-height: 420px;
+  }
+
   .hero-image-section {
-    height: 160px;
+    height: 30vh;
+    min-height: 180px;
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -25px;
+    margin-top: -30px;
   }
 }
 
 /* 横屏模式优化 */
 @media (max-width: 896px) and (orientation: landscape) {
+  .hero-container {
+    height: 100vh;
+    min-height: 400px;
+  }
+
   .hero-image-section {
-    height: 160px;
+    height: 50vh;
+    min-height: 200px;
   }
 
   .aside {

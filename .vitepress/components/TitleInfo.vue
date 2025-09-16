@@ -4,14 +4,7 @@
     <div class="hero-title-container" ref="titleRef">
       <SplitText
         :text="pageTitle || 'Suspendisse'"
-        :style="{
-          fontSize: '4.2rem',
-          fontWeight: '800',
-          lineHeight: '1.1',
-          letterSpacing: '-2px',
-          display: 'block',
-          color: '#062570'
-        }"
+        :style="titleStyles"
         :delay="200"
         :duration="0.8"
         ease="power3.out"
@@ -55,17 +48,63 @@
 
 <script setup>
 import { useData } from "vitepress";
-import { computed, ref, onMounted, onUnmounted } from "vue";
+import { computed, ref, onMounted, onUnmounted, reactive } from "vue";
+import { useWindowSize } from "@vueuse/core";
 import SplitText from "./SplitText.vue";
 
 // 获取当前页面的数据
 const { frontmatter } = useData();
+
+// 获取窗口尺寸
+const { width: windowWidth } = useWindowSize();
 
 // 计算属性：获取页面标题
 const pageTitle = computed(() => frontmatter.value.title);
 
 // 获取页面描述
 const pageDescription = computed(() => frontmatter.value.description);
+
+// 响应式标题样式
+const titleStyles = computed(() => {
+  let fontSize = '5rem'; // 默认大屏幕
+  let letterSpacing = '-2px';
+  let lineHeight = '1.1';
+  
+  // 根据屏幕宽度动态调整
+  if (windowWidth.value <= 360) {
+    fontSize = '2rem';
+    letterSpacing = '-0.5px';
+    lineHeight = '1.2';
+  } else if (windowWidth.value <= 480) {
+    fontSize = '2.5rem';
+    letterSpacing = '-0.8px';
+    lineHeight = '1.15';
+  } else if (windowWidth.value <= 640) {
+    fontSize = '3rem';
+    letterSpacing = '-1px';
+    lineHeight = '1.15';
+  } else if (windowWidth.value <= 768) {
+    fontSize = '3.5rem';
+    letterSpacing = '-1.5px';
+    lineHeight = '1.1';
+  } else if (windowWidth.value <= 1024) {
+    fontSize = '4rem';
+    letterSpacing = '-1.8px';
+    lineHeight = '1.1';
+  }
+  
+  return {
+    fontSize,
+    fontWeight: '800',
+    lineHeight,
+    letterSpacing,
+    display: 'block',
+    color: '#062570',
+    wordBreak: 'break-word', // 处理长词换行
+    overflowWrap: 'break-word', // 兼容性
+    hyphens: 'auto' // 添加连字符
+  };
+});
 
 // Handle description formatting
 const formattedDescription = computed(() => {
@@ -149,14 +188,21 @@ const handleTitleAnimationComplete = () => {
   position: relative;
 }
 
-/* 标题容器样式 */
+/* 标题容器样式 - 适配全屏 */
 .hero-title-container {
   position: relative;
   z-index: 20;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   transform: translateY(-50%);
   transition: all 0.3s ease;
-  padding: 0 6rem;
+  padding: 0 8rem; /* 增加左右边距 */
+  max-width: 1200px;
+  width: 100%;
+  word-wrap: break-word; /* 确保长词换行 */
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 /* 添加动态下划线效果 */
@@ -164,7 +210,7 @@ const handleTitleAnimationComplete = () => {
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 6rem;
+  left: 8rem; /* 匹配新的padding */
   width: 0;
   height: 4px;
   background: linear-gradient(90deg, #008794, #5dcac6, #0e9f99);
@@ -186,13 +232,15 @@ const handleTitleAnimationComplete = () => {
 
 /* Container for description and button - enhanced design */
 .hero-bottom-content {
-  padding: 0rem 6rem 3rem;
+  padding: 0rem 8rem 3rem; /* 增加左右边距匹配标题 */
   background: linear-gradient(to bottom, #ffffff 0%, rgba(248, 250, 252, 0.8) 100%);
   position: relative;
   transition: all 0.3s ease;
   border-radius: 0;
   box-shadow: none;
-  margin-top: -2rem;
+  margin-top: -1rem;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .hero-description {
@@ -305,23 +353,24 @@ const handleTitleAnimationComplete = () => {
 }
 
 /* Improved responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero-title-container {
-    padding: 0 3rem;
+    padding: 0 4rem;
   }
 
   .hero-title-container::after {
-    left: 3rem;
+    left: 4rem;
   }
 
   .hero-bottom-content {
-    padding: 2.5rem 3rem 2rem;
+    padding: 0rem 4rem 2.5rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .hero-title-container {
     padding: 0 1.5rem;
+    transform: translateY(-30%); /* 减少向上偏移 */
   }
 
   .hero-title-container::after {
@@ -329,7 +378,71 @@ const handleTitleAnimationComplete = () => {
   }
 
   .hero-bottom-content {
-    padding: 2rem 1.5rem 1.8rem;
+    padding: 0rem 1.5rem 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-container {
+    padding: 0 1rem;
+    transform: translateY(-20%); /* 进一步减少偏移 */
+    margin-bottom: 1rem;
+  }
+
+  .hero-title-container::after {
+    left: 1rem;
+    width: 60px;
+    height: 3px;
+  }
+
+  .hero-bottom-content {
+    padding: 0rem 1rem 1.5rem;
+    margin-top: -0.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .authors-container {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title-container {
+    padding: 0 0.75rem;
+    transform: translateY(-15%); /* 最小屏幕最少偏移 */
+  }
+
+  .hero-title-container::after {
+    left: 0.75rem;
+    width: 50px;
+  }
+
+  .hero-bottom-content {
+    padding: 0rem 0.75rem 1.25rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
   }
 }
 

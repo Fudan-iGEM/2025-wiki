@@ -1,5 +1,15 @@
 <template>
-  <nav class="ModernNavbar">
+  <nav 
+    class="ModernNavbar"
+    :class="{ 
+      'navbar-hidden': !isVisible,
+      'navbar-visible': isVisible,
+      'navbar-pinned': isPinned
+    }"
+    :style="{ transform: `translateY(${navTranslateY}px)` }"
+    @mouseenter="handleNavbarHover"
+    @mouseleave="handleNavbarLeave"
+  >
     <div class="container">
       <a href="/fudan" class="title">
         <!-- Add Logo SVG or Image here if available -->
@@ -592,7 +602,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, computed, watch } from "vue";
+import { useScroll, useWindowScroll, useThrottleFn, useDebounce } from "@vueuse/core";
+import { gsap } from "gsap";
 import VPNavBarSearch from "vitepress/dist/client/theme-default/components/VPNavBarSearch.vue";
 import "../theme/tw.css";
 
@@ -788,6 +800,90 @@ const isMobileMenuOpen = ref(false);
 const activeMobileSubmenu = ref(null);
 let hideTimeout = null;
 
+// 智能隐藏导航栏相关变量
+const isVisible = ref(true);
+const isPinned = ref(false);
+const navTranslateY = ref(0);
+const lastScrollY = ref(0);
+const scrollDirection = ref('up');
+const scrollOffset = 5; // 滚动偏移量阈值
+const navbarHeight = 70; // 导航栏高度
+
+// 使用 @vueuse/core 的 useWindowScroll 来监听滚动
+const { y: currentScrollY } = useWindowScroll();
+
+// 使用节流函数优化性能
+const handleScroll = useThrottleFn(() => {
+  const scrollY = currentScrollY.value;
+  const diff = scrollY - lastScrollY.value;
+  
+  // 判断滚动方向
+  if (Math.abs(diff) < scrollOffset) return;
+  
+  // 向下滚动时隐藏
+  if (diff > 0 && scrollY > navbarHeight) {
+    scrollDirection.value = 'down';
+    if (isVisible.value) {
+      isVisible.value = false;
+      animateNavbar(-navbarHeight + 3, 0.35); // 使用 GSAP 动画
+    }
+  } 
+  // 向上滚动时显示
+  else if (diff < 0) {
+    scrollDirection.value = 'up';
+    if (!isVisible.value) {
+      isVisible.value = true;
+      animateNavbar(0, 0.3); // 使用 GSAP 动画
+    }
+  }
+  
+  // 在页面顶部时始终显示
+  if (scrollY <= navbarHeight) {
+    isVisible.value = true;
+    animateNavbar(0, 0.25); // 快速显示
+    isPinned.value = true;
+  } else {
+    isPinned.value = false;
+  }
+  
+  lastScrollY.value = scrollY;
+}, 100); // 100ms 节流
+
+// 使用 GSAP 进行动画
+const animateNavbar = (targetY, duration = 0.3) => {
+  gsap.to('.ModernNavbar', {
+    y: targetY,
+    duration: duration,
+    ease: 'power2.inOut',
+    onUpdate: () => {
+      navTranslateY.value = gsap.getProperty('.ModernNavbar', 'y');
+    }
+  });
+};
+
+// 鼠标悬停在导航栏区域时显示
+const handleNavbarHover = () => {
+  if (!isVisible.value && currentScrollY.value > navbarHeight) {
+    animateNavbar(0, 0.25); // 更快的悬停响应
+  }
+};
+
+// 鼠标离开导航栏区域时恢复隐藏状态
+const handleNavbarLeave = () => {
+  if (!isVisible.value && currentScrollY.value > navbarHeight) {
+    setTimeout(() => {
+      if (!isVisible.value) { // 再次检查，避免快速滚动时的问题
+        animateNavbar(-navbarHeight + 3, 0.3);
+      }
+    }, 100); // 100ms 延迟，避免鼠标快速移动时的闪烁
+  }
+};
+
+// 监听滚动变化
+watch(currentScrollY, () => {
+  handleScroll();
+});
+
 // 用于测试按钮
 function showAlert(msg) {
   window.alert(msg);
@@ -904,15 +1000,44 @@ onUnmounted(() => {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(0, 135, 148, 0.1);
   padding: 0.5rem 1.5rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
   box-shadow: 0 2px 20px rgba(0, 135, 148, 0.08), 
               0 1px 0 rgba(255, 255, 255, 0.1) inset;
   pointer-events: auto;
-  position: relative;
-  transition: all 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
+              opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
+              box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+/* 智能隐藏相关样式 */
+.navbar-hidden {
+  opacity: 0.98;
+  /* 不禁用pointer-events，以便能够检测鼠标悬停 */
+}
+
+.navbar-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navbar-pinned {
+  box-shadow: 0 1px 10px rgba(0, 135, 148, 0.05);
+}
+
+/* 为隐藏时的顶部边缘添加悬停区域 */
+.ModernNavbar::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: transparent;
+  pointer-events: auto;
 }
 
 .ModernNavbar:hover {
@@ -1022,14 +1147,14 @@ onUnmounted(() => {
 .nav-link {
   color: #4a5568;
   text-decoration: none;
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   padding: 0.75rem 1rem;
   border-radius: 8px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   pointer-events: auto;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   background: transparent;
 }

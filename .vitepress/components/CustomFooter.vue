@@ -30,7 +30,7 @@
   background-color: #d9f7f5; 
   text-align: center;
   padding-top: 40px;
-  font-family: sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .footer-sponsors {

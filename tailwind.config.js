@@ -14,6 +14,12 @@ export default {
   },
   theme: {
     extend: {
+      fontFamily: {
+        'josefin': ['Josefin Sans', 'sans-serif'],
+        'outfit': ['Outfit', 'sans-serif'],
+        'heading': ['Josefin Sans', 'sans-serif'],
+        'body': ['Outfit', 'sans-serif'],
+      },
       colors: {
         primary: {
           50: '#e6f8f7',
