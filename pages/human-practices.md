@@ -56,7 +56,7 @@ Next, join us as we embark on an exciting HP journey together!
     </div>
     <div style="width: 100%; text-align: center; margin-top: 20px;">
         <!-- 居中注释：七张自然风光组成的字母竖版照片 -->
-        <span style="color: gray; font-size: 14px;">MINERAL project (Generated from CAMP LANDSAT)</span>
+        <span style="color: gray; font-size: 14px; font-family: 'Outfit', sans-serif;">MINERAL project (Generated from CAMP LANDSAT)</span>
     </div>
 </div>
 <br>
@@ -180,7 +180,7 @@ On May 4th, we hosted a project design exchange at our University with [BIT-Chin
 
 <br>
 
-<strong><font size="4rem">These two HP efforts, along with subsequent reflections, profoundly changed our understanding of the electric vehicle battery issue, leading us to adjust both the direction of our project and the design of some components.</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">These two HP efforts, along with subsequent reflections, profoundly changed our understanding of the electric vehicle battery issue, leading us to adjust both the direction of our project and the design of some components.</strong>
 
 <br>
 
@@ -332,9 +332,9 @@ We visited Suzhou CPS's electroplating wastewater equipment production workshop,
 
 <br>
 
-<strong><font size="4rem">The final visit to Suzhou IES greatly inspired us, reinforcing our belief that the optimized "MINERAL project" project is well-suited to addressing nickel wastewater pollution in both industrial and natural environments.</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">The final visit to Suzhou IES greatly inspired us, reinforcing our belief that the optimized "MINERAL project" project is well-suited to addressing nickel wastewater pollution in both industrial and natural environments.</strong>
 
-<strong><font size="4rem">These three iHP efforts ultimately guiding us to focus on "nickel wastewater pollution" as the core issue, refining our project, and leading to the creation of the new "MINERAL project."</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">These three iHP efforts ultimately guiding us to focus on "nickel wastewater pollution" as the core issue, refining our project, and leading to the creation of the new "MINERAL project."</strong>
 
 <br>
 
@@ -366,7 +366,7 @@ Two professors discussed with us the rationale and feasibility of the three-modu
 
 <br>
 
-<strong><font size="4rem">In the following months, after multiple rounds of feedback and iteration, we noticed the special properties of hydrogenase, which can catalyze the conversion of nickel ions into [nickel microparticles](/fudan/description/#_3-nickel-microparticle-module) in [a hydrogen-supplied environment](/fudan/description/#_4-hydrogen-supply-via-cyanobacteria-e-coli-interaction). With this, we developed an intracellular downstream mechanism involving hydrogenase catalysis to form microparticles.</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">In the following months, after multiple rounds of feedback and iteration, we noticed the special properties of hydrogenase, which can catalyze the conversion of nickel ions into [nickel microparticles](/fudan/description/#_3-nickel-microparticle-module) in [a hydrogen-supplied environment](/fudan/description/#_4-hydrogen-supply-via-cyanobacteria-e-coli-interaction). With this, we developed an intracellular downstream mechanism involving hydrogenase catalysis to form microparticles.</strong>
 
 <br>
 
@@ -391,7 +391,7 @@ At the 11th CCiC, experts from the School of Pharmaceutical Sciences at [Xi'an J
 
 <br>
 
-<strong><font size="4rem">As the experiments progressed, we encountered several significant technical challenges, which we aimed to address through iHP.</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">As the experiments progressed, we encountered several significant technical challenges, which we aimed to address through iHP.</strong>
 
 <br>
 
@@ -472,7 +472,7 @@ Prof. Xu Xiaoling also provided us with the contact information of other experts
 
 <br>
 
-<strong><font size="4rem">In this section, the work of iHP has helped resolve numerous issues in the MINERAL project technical route, facilitating the progression and optimization of project design.</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">In this section, the work of iHP has helped resolve numerous issues in the MINERAL project technical route, facilitating the progression and optimization of project design.</strong>
 
 <br>
 
@@ -561,7 +561,7 @@ In CNERC-CTHMP, we observed specialized X-ray-based instruments capable of deter
 
 <br>
 
-<strong><font size="4">The three iHP efforts guided us in developing a comprehensive detection method and techniques. This allowed us to establish a nickel testing approach focused primarily on two core technologies: standard colorimetric methods and electron microscopy observation.</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">The three iHP efforts guided us in developing a comprehensive detection method and techniques. This allowed us to establish a nickel testing approach focused primarily on two core technologies: standard colorimetric methods and electron microscopy observation.</strong>
 
 <br>
 
@@ -682,7 +682,7 @@ Following this feedback, our team believes that our product indeed has market po
 
 <br>
 
-<strong><font size="4rem">Our iHP sessions related to hardware provided comprehensive guidance for the hardware design.</font></strong>
+<strong style="font-size: 1.125rem; font-family: 'Josefin Sans', sans-serif;">Our iHP sessions related to hardware provided comprehensive guidance for the hardware design.</strong>
 
 <br>
 

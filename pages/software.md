@@ -58,7 +58,7 @@ PartHub 3.0 is designed with a strong emphasis on user-friendliness, ensuring th
 
 Our software is compatible with the following browsers:
 
-| <img src='https://static.igem.wiki/teams/5115/software/edge-logo.svg' style="height:1.6rem">Edge | <img src='https://static.igem.wiki/teams/5115/software/firefox-logo.svg' style="height:1.6rem">Firefox | <img src='https://static.igem.wiki/teams/5115/software/chrome-logo.svg' style="height:1.6rem">Chrome | <img src='https://static.igem.wiki/teams/5115/software/safari-logo.svg' style="height:1.6rem">Safari | <img src='https://static.igem.wiki/teams/5115/software/opera-logo.svg' style="height:1.6rem">Opera |
+| **Edge** | **Firefox** | **Chrome** | **Safari** | **Opera** |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | version≥116                                                  | version≥116                                                  | version≥116                                                  | version≥18                                                   | version≥100                                                  |
 

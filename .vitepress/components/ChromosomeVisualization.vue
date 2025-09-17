@@ -466,6 +466,6 @@ function hideTooltip() {
 }
 
 .scale-markers text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 </style>

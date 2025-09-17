@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import { useRoute } from "vitepress";
-import { computed, ref, onMounted } from "vue";
+import { computed, watch, onMounted, nextTick } from "vue";
 import { useData } from "vitepress/dist/client/theme-default/composables/data.js";
-import VPDocFooter from "vitepress/dist/client/theme-default/components/VPDocFooter.vue";
 import "../theme/tw.css";
 import TitleInfo from "./TitleInfo.vue";
 import CustomTOC from "./CustomTOC.vue";
-import SpotlightCard from "./SpotlightCard.vue";
-import CircularText from "./CircularText.vue";
 
 const { theme, frontmatter } = useData();
 
@@ -20,6 +17,94 @@ const leftAside = computed(() => true);
 
 const pageName = computed(() => route.path.replace(/[./]+/g, "_").replace(/_html$/, ""));
 const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.jpg");
+
+// 内容处理函数
+const processContent = () => {
+  nextTick(() => {
+    const contentElement = document.querySelector('.vp-doc');
+    if (!contentElement || contentElement.hasAttribute('data-processed')) return;
+    
+    // 标记为已处理，避免重复处理
+    contentElement.setAttribute('data-processed', 'true');
+
+    try {
+      // 直接处理innerHTML，更安全高效
+      let html = contentElement.innerHTML;
+      let hasChanges = false;
+
+      // 1. BBa_25开头的文本 -> 自动链接
+      const bbaRegex = /(?<!<[^>]*?)BBa_25[A-Za-z0-9]+(?![^<]*?>)/g;
+      if (bbaRegex.test(html)) {
+        hasChanges = true;
+        html = html.replace(bbaRegex, (match) => {
+          const lowercaseMatch = match.toLowerCase().replace('_', '-');
+          return `<a href="https://registry.igem.org/parts/${lowercaseMatch}" target="_blank" rel="noopener noreferrer">${match}</a>`;
+        });
+      }
+
+      // 2. DOI格式 -> 自动链接
+      const doiRegex = /(?<!<[^>]*?)(?:doi:|DOI:)?\s*(10\.\d+\/[^\s<]+)(?![^<]*?>)/g;
+      if (doiRegex.test(html)) {
+        hasChanges = true;
+        html = html.replace(doiRegex, (match, doi) => {
+          return `<a href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI: ${doi}</a>`;
+        });
+      }
+
+      // 3. PMID格式 -> 自动链接
+      const pmidRegex = /(?<!<[^>]*?)PMID:\s*(\d+)(?![^<]*?>)/g;
+      if (pmidRegex.test(html)) {
+        hasChanges = true;
+        html = html.replace(pmidRegex, (match, pmid) => {
+          return `<a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank" rel="noopener noreferrer">PMID: ${pmid}</a>`;
+        });
+      }
+
+      // 4. 学名斜体
+      const scientificNameRegex = /(?<!<[^>]*?)(?<!<em>)\b([A-Z][a-z]+ [a-z]+)\b(?![^<]*?>)(?!<\/em>)/g;
+      const commonLatinPatterns = /^(Escherichia coli|Bacillus subtilis|Saccharomyces cerevisiae|Arabidopsis thaliana|Drosophila melanogaster|Caenorhabditis elegans|Mus musculus|Homo sapiens|Rattus norvegicus|Danio rerio|Xenopus laevis|Gallus gallus|Bos taurus|Sus scrofa|Ovis aries|Capra hircus|Equus caballus|Canis familiaris|Felis catus|Macaca mulatta|Pan troglodytes|Gorilla gorilla|Pongo pygmaeus|Chlorella vulgaris|Spirulina platensis|Pseudomonas aeruginosa|Staphylococcus aureus|Streptococcus pyogenes|Mycobacterium tuberculosis|Salmonella enterica|Vibrio cholerae|Clostridium botulinum|Listeria monocytogenes|Campylobacter jejuni|Helicobacter pylori|Neisseria gonorrhoeae|Treponema pallidum|Borrelia burgdorferi|Plasmodium falciparum|Trypanosoma brucei|Leishmania major|Toxoplasma gondii|Candida albicans|Aspergillus niger|Penicillium chrysogenum|Neurospora crassa|Schizosaccharomyces pombe|Pichia pastoris|Kluyveromyces lactis|Yarrowia lipolytica|Trichoderma reesei|Fusarium graminearum|Magnaporthe oryzae|Ustilago maydis|Cryptococcus neoformans|Pneumocystis jirovecii)$/i;
+      
+      html = html.replace(scientificNameRegex, (match, name) => {
+        if (commonLatinPatterns.test(name)) {
+          hasChanges = true;
+          return `<em>${name}</em>`;
+        }
+        return match;
+      });
+
+      // 如果有变化，更新内容
+      if (hasChanges) {
+        contentElement.innerHTML = html;
+      }
+    } catch (error) {
+      console.warn('Content processing error:', error);
+    }
+  });
+};
+
+// 监听路由变化和内容更新
+onMounted(() => {
+  // 延迟执行，确保内容已完全渲染
+  setTimeout(() => {
+    processContent();
+  }, 100);
+});
+
+// 路由切换后强制重新处理内容
+watch(
+  () => route.path,
+  () => {
+    // 移除旧的处理标记，避免阻止新页面处理
+    const contentElement = document.querySelector('.vp-doc');
+    if (contentElement) {
+      contentElement.removeAttribute('data-processed');
+    }
+    // 等待新内容挂载后再处理
+    setTimeout(() => {
+      processContent();
+    }, 100);
+  }
+);
 </script>
 
 <template>
@@ -71,6 +156,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
 
             <Content
               class="vp-doc"
+              :key="route.path"
               :class="[pageName, theme.externalLinkIcon && 'external-link-icon-enabled']"
             />
           </main>
@@ -93,8 +179,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   flex-direction: column;
   min-height: 100vh;
   background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Outfit', sans-serif;
   position: relative;
 }
 
@@ -121,24 +206,30 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   margin-top: 2rem;
 }
 
-/* Hero section structure */
+/* Hero section structure - 全屏高度 */
 .hero-container {
   position: relative;
   width: 100%;
+  height: 100vh;
+  min-height: 600px;
   margin-bottom: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   background: white;
   overflow: hidden;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Image section */
+/* Image section - 占更大比例 */
 .hero-image-section {
-  height: 320px;
+  height: 55vh;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 /* Overlay for the image */
@@ -281,18 +372,24 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   }
 }
 
-/* Content section positioned to connect with image */
+/* Content section positioned to connect with image - 填满剩余空间 */
 .hero-content-section {
   position: relative;
   z-index: 10;
   margin-top: 0;
   background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Set up positioning context for TitleInfo */
 .hero-container > :deep(.title-info) {
   position: relative;
-  margin-top: -50px; /* Pull up to overlap with image */
+  margin-top: -80px; /* Pull up to overlap with image more */
+  width: 100%;
 }
 
 .container {
@@ -305,19 +402,20 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   padding: 0 1rem;
 }
 
-/* Enhanced TOC Bar / Sidebar with modern tech style */
+/* Enhanced TOC Bar / Sidebar with modern tech style - 更窄更高 */
 .aside {
   flex-shrink: 0;
-  width: 280px;
+  width: 220px; /* 从280px缩小到220px */
   background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
-  height: calc(100vh - 60px - 320px);
+  height: calc(100vh - 120px); /* 增加高度 */
+  max-height: 800px; /* 设置最大高度 */
   overflow-y: auto;
   position: sticky;
-  top: 160px;
+  top: 90px; /* 调整顶部距离 */
   align-self: flex-start;
   border: 1px solid rgba(0, 152, 161, 0.1);
   border-radius: 16px;
-  margin-right: 2.5rem;
+  margin-right: 2rem; /* 从2.5rem减少到2rem */
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.08),
     0 0 0 1px rgba(0, 188, 212, 0.05);
@@ -347,7 +445,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
 
 .toc-title {
   font-weight: 700;
-  padding: 1.5rem 1.25rem;
+  padding: 1rem 0.75rem; /* 减少内边距 */
   text-align: left;
   border-bottom: 1px solid rgba(0, 152, 161, 0.1);
   color: #0098a1;
@@ -355,13 +453,13 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   align-items: center;
   justify-content: flex-start;
   background: linear-gradient(135deg, rgba(0, 188, 212, 0.05) 0%, transparent 100%);
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
+  font-size: 1rem; /* 稍微减小字体 */
+  letter-spacing: 0.3px;
 }
 
 .toc-icon {
-  margin-right: 0.75rem;
-  font-size: 1.4rem;
+  margin-right: 0.5rem; /* 减少间距 */
+  font-size: 1.2rem; /* 减小图标 */
   background: linear-gradient(135deg, #00bcd4, #55c2bb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -369,7 +467,7 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
 }
 
 .aside-content {
-  padding: 1.25rem;
+  padding: 0.75rem; /* 减少内边距以适配更窄的宽度 */
 }
 
 /* Enhance Main Content with modern design */
@@ -624,12 +722,20 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   }
 
   .aside {
-    width: 260px;
-    margin-right: 2rem;
+    width: 200px; /* 保持较窄 */
+    margin-right: 1.5rem;
   }
 
   .content-container {
     padding: 2.5rem 2rem;
+  }
+
+  .hero-container {
+    height: 90vh; /* 平板端稍微减少高度 */
+  }
+
+  .hero-image-section {
+    height: 50vh; /* 平板端稍微减少图片高度 */
   }
 }
 
@@ -665,8 +771,14 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
     gap: 1.5rem;
   }
 
+  .hero-container {
+    height: 80vh; /* 移动端减少高度 */
+    min-height: 500px;
+  }
+
   .hero-image-section {
-    height: 220px;
+    height: 40vh; /* 移动端减少图片高度 */
+    min-height: 280px;
   }
 
   .hero-content-section {
@@ -674,16 +786,16 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -40px;
+    margin-top: -60px;
   }
 
   .toc-title {
-    padding: 1.25rem 1rem;
-    font-size: 1rem;
+    padding: 0.8rem 0.6rem;
+    font-size: 0.95rem;
   }
 
   .aside-content {
-    padding: 1rem;
+    padding: 0.6rem;
   }
 }
 
@@ -730,16 +842,22 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
     margin-bottom: 1.5rem;
   }
 
+  .hero-container {
+    height: 70vh; /* 小屏幕进一步减少 */
+    min-height: 450px;
+  }
+
   .hero-image-section {
-    height: 180px;
+    height: 35vh;
+    min-height: 200px;
   }
 
   .hero-content-section {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -30px;
+    margin-top: -40px;
   }
 
   .aside {
@@ -778,19 +896,31 @@ const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.j
     font-size: 0.85rem;
   }
 
+  .hero-container {
+    height: 65vh; /* 最小屏幕 */
+    min-height: 420px;
+  }
+
   .hero-image-section {
-    height: 160px;
+    height: 30vh;
+    min-height: 180px;
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -25px;
+    margin-top: -30px;
   }
 }
 
 /* 横屏模式优化 */
 @media (max-width: 896px) and (orientation: landscape) {
+  .hero-container {
+    height: 100vh;
+    min-height: 400px;
+  }
+
   .hero-image-section {
-    height: 160px;
+    height: 50vh;
+    min-height: 200px;
   }
 
   .aside {

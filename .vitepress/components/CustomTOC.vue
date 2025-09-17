@@ -167,43 +167,46 @@ function scrollToHeading(id) {
 .custom-toc {
   width: 100%;
   position: relative;
-  /* Removed max-height and overflow properties to prevent nested scrollbars */
+  /* 简化结构，直接展示内容 */
 }
 
 .toc-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* 减少间距 */
 }
 
 .toc-item {
-  margin: 10px 0;
+  margin: 2px 0; /* 减少上下间距 */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: left center;
 }
 
 .toc-item:hover {
-  transform: translateX(4px);
+  transform: translateX(3px); /* 减少移动距离 */
 }
 
 .h3-item {
-  padding-left: 20px;
-  font-size: 0.9em;
-  margin: 8px 0;
-  opacity: 0.9;
+  padding-left: 16px; /* 减少缩进 */
+  font-size: 0.88em;
+  margin: 2px 0; /* 减少间距 */
+  opacity: 0.85;
 }
 
 .toc-link {
   display: flex;
   align-items: center;
-  padding: 10px 14px;
-  border-radius: 12px;
+  padding: 6px 10px; /* 减少内边距 */
+  border-radius: 8px; /* 减小圆角 */
   color: #64748b;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 0.9rem; /* 稍微减小字体 */
+  line-height: 1.4;
   position: relative;
   overflow: hidden;
 }
@@ -226,14 +229,14 @@ function scrollToHeading(id) {
 .h2-marker,
 .h3-marker {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 8px; /* 减少右边距 */
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
 .h2-marker {
-  width: 10px;
-  height: 10px;
+  width: 7px; /* 减小尺寸 */
+  height: 7px;
   background: linear-gradient(135deg, rgba(0, 188, 212, 0.4), rgba(85, 194, 187, 0.4));
   border-radius: 50%;
   position: relative;
@@ -249,9 +252,9 @@ function scrollToHeading(id) {
 }
 
 .h3-marker {
-  width: 8px;
-  height: 8px;
-  border: 2px solid rgba(0, 188, 212, 0.4);
+  width: 5px; /* 减小尺寸 */
+  height: 5px;
+  border: 1.5px solid rgba(0, 188, 212, 0.4);
   border-radius: 50%;
   background: transparent;
 }
@@ -259,12 +262,12 @@ function scrollToHeading(id) {
 .toc-link:hover {
   color: #0098a1;
   background-color: rgba(0, 188, 212, 0.08);
-  padding-left: 18px;
+  padding-left: 14px; /* 减少hover时的padding变化 */
 }
 
 .toc-link:hover .h2-marker,
 .toc-link:hover .h3-marker {
-  transform: scale(1.2);
+  transform: scale(1.15); /* 稍微减少放大效果 */
 }
 
 .toc-link.active {
