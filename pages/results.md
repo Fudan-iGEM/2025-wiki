@@ -12,8 +12,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 We assemble some of our wet lab results from the [Registry](https://parts.igem.org/partsdb/search_1000.cgi?q=K5115000) onto this page. Please note on our [Inclusivity](/fudan/inclusivity/), [Entrepreneurship](/fudan/entrepreneurship/), [Education](/fudan/education/) and [Hardware](/fudan/hardware/) pages, we documented interesting results from those activities.
 
 ## Testing nickel enrichment module

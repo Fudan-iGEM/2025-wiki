@@ -9,8 +9,7 @@ layout: igem
 heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
-
-<br><br>
+<!-- NO SIDEBAR ON THIS PAGE -->
 
 <pre>
 ## Common Forward Primer for ribozyme connected parts: 5-tcagcaaattgtgaacatcatcacg-3
@@ -45,12 +44,8 @@ Our favourite parts are [BBa_K5115067](https://parts.igem.org/Part:BBa_K5115067)
 
 These two parts are outstanding examples of our expanding ribozyme-connected parts [collection](/fudan/part-collection). Promoters and terminators are not included in these parts, and they were built in our plasmid backbones: [BBa_K4765027](http://parts.igem.org/Part:BBa_K4765027) (T7 promoter with lac operator, T7 and rrnB T1 dual-terminator) and [BBa_K5115069](https://parts.igem.org/Part:BBa_K5115069) (J23107, T7 and rrnB T1 dual-terminator). This flexible design enables all our ribozyme-connected parts easily transfer to other prokaryotic expression vectors, even shuttle vectors. 
 
-## --
-
 Visit our [Improve](/fudan/improve/) page for parts we improved this year.
 
 Vist our [Part Collection](/fudan/part-collection/) page for parts we made in 2024. Links to all parts available at [gitlab](https://gitlab.igem.org/2024/fudan/-/blob/main/groupparts.md) and the [Registry](https://parts.igem.org/partsdb/search_1000.cgi?q=K5115000).
 
-To check scencs behind [our promotion video](https://video.igem.org/w/d1795b71-2707-4eeb-92ce-5b88145ef1a3), please visit [https://2024.igem.wiki/fudan/promotion-video/](/fudan/promotion-video/). Transcripts for [our presentation video](https://video.igem.org/w/4817e7e4-446b-4760-b866-2817794b02c9) is [on this Wiki](/fudan/pv/).
-
-Back to [https://2024.igem.wiki/fudan/](https://2024.igem.wiki/fudan/)
+Please check [our promotion video](https://video.igem.org/w/d1795b71-2707-4eeb-92ce-5b88145ef1a3), from [Team Fudan](https://2025.igem.wiki/fudan/).

@@ -10,8 +10,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 Our favourite composite part is [MINERAL](/fudan/description/) F module ([BBa_K5115067](https://parts.igem.org/Part:BBa_K5115067)).
 
 ## Nickel Enrichment Module

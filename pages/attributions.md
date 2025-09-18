@@ -15,27 +15,8 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-BBa_2573RA1U - 这是一个测试part
+The content below is fetched from [https://attributions.igem.org?team=Fudan&year=2025](https://attributions.igem.org?team=Fudan&year=2025).
 
-DOI: 10.1038/nature12345
-
-doi:10.1126/science.abcd1234
-
-10.1016/j.cell.2023.01.001
-
-PMID: 12345678
-
-PMID:87654321
-
-PMID: 11223344
-
-Escherichia coli 大肠杆菌
-
-Saccharomyces cerevisiae 酿酒酵母
-
-Bacillus subtilis 枯草芽孢杆菌
-
-Arabidopsis thaliana 拟南芥
-
-
-## --
+<iframe style="border:0;width:100%;height:800px !important;"
+        width="100%" height="800px"
+        src="https://teams.igem.org/wiki/5643/attributions"></iframe>

@@ -8,8 +8,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 Nickel plays a vital role in human civilization, underpinning everything [from rockets to cars](#fig1). Without it, technological progress would grind to a halt, and the society as we know could collapse.
 
 <div style="text-align: center;" id="fig1">
@@ -75,8 +73,6 @@ Finally, our centerpiece: the Nickel Microfactory. By targeting oxygen-tolerant 
 </div>
 
 <br>
-
-## --
 
 [MINERAL](#fig4) demonstrates extraordinary creativity, and the same principles can be applied to other heavy metals, building a bridge between nature and human society through synthetic biology.
 

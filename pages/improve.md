@@ -8,8 +8,6 @@ author:
 headergif: https://static.igem.wiki/teams/5115/header/parts-header.gif
 ---
 
-<br><br>
-
 [MINERAL](/fudan/description/) consists of complex DNA sequences, including coding and non-coding fragments. Our improvements aim at balanced CDS expression, stable enzyme reaction environment and effective protein function.
 
 In this year's project, we focused on three major improvements:

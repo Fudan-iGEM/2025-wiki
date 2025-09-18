@@ -10,8 +10,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 "Human Practices" refers to iGEM teams' proactive efforts to assess how their work interacts with the world and the broader impacts it creates. The [MINERAL](/fudan/description/) project addressed the industrial issue of nickel wastewater pollution, aiming to contribute to a better planet and future for humanity. This vision also evolved through the project's lifecycle. Our HP efforts helped us navigate challenges, fostering connections with esteemed scientists, wastewater treatment enterprises, government bodies, and like-minded teams, all of which played pivotal roles in key decisions throughout the project.
 
 Next, join us as we embark on an exciting HP journey together!

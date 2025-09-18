@@ -8,8 +8,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 [MINERAL](/fudan/description/) tones in with multiple [Sustainable Development Goals (SDGs)](https://sdgs.un.org/goals) across a wide spectrum, contributing to a more sustainable and equitable future.
 
 <div style="text-align: center;" id="fig1">

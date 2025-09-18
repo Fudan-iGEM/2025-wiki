@@ -8,8 +8,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 ::: tip
 
 To try PartHub 3.0 - please follow the [installation tutorial](#tutorial) to deploy our software on your own device!

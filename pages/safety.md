@@ -8,8 +8,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 The growing severity of heavy metal pollution and the inevitable depletion of mineral resources in the foreseeable future underscore the importance and urgency of resource recovery. Among the various solutions, [bioremediation](https://competition.igem.org/participation/villages#h-list-of-villages) holds great promise, though it has not yet been fully explored. **MINERAL** demonstrates strong potential in addressing this issue, and we aim to utilize *Escherichia coli* to convert heavy metal ions in water into usable micro-metal particles.
 
 However, this project comes with significant challenges in terms of biosafety management. We recognize that, despite all precautions, our products and chassis microorganisms remain at risk of leaking into the environment. To address this, in addition to minimizing this risk as much as possible, we have employed *Caenorhabditis elegans* as environmental indicator organisms to assess the potential environmental impact of our project.

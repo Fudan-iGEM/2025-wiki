@@ -8,8 +8,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 Updated on 2024-10-26: we were nominated for [the Best Bioremediation Project (Undergrad)](https://jamboree.igem.org/2024/results/village-awards#Bioremediation).
 
 Updated on 2024-10-10: our presentation video is at [https://video.igem.org/w/4817e7e4-446b-4760-b866-2817794b02c9](https://video.igem.org/w/4817e7e4-446b-4760-b866-2817794b02c9).

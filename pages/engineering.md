@@ -10,8 +10,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
 ---
 
-<br><br>
-
 Throughout our project, we encountered problems in [Parts](/fudan/parts/), [Measurement](/fudan/measurement/#previous-inspiring-methodologies-in-igem), [Software](/fudan/software/#dbtl-cycle), [Hardware](/fudan/hardware/#fiber-design), [Human Practices](/fudan/human-practices/), [Inclusivity](/fudan/inclusivity/#the-preliminary-attempt-of-steamed) and [Entrepreneurship](/fudan/entrepreneurship/#our-first-try-on-commercialization), we solved them following iterations of the DBTL cycle (Design, Build, Test, Learn). Below are the steps we went through to develop our nickel module - part number [BBa_K5115068](https://parts.igem.org/Part:BBa_K5115068).
 
 ## Cycle 1
