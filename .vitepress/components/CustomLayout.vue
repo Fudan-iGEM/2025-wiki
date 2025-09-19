@@ -10,8 +10,7 @@ const { theme, frontmatter } = useData();
 
 const route = useRoute();
 const hasAside = computed(() => {
-  // 在team页面隐藏侧边栏
-  return !route.path.includes('/team');
+  return !route.path.includes('/team') && !route.path.includes('/attributions') && !route.path.includes('/heritage');
 });
 const leftAside = computed(() => true); 
 

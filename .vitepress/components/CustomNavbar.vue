@@ -817,8 +817,22 @@ const handleScroll = useThrottleFn(() => {
   const scrollY = currentScrollY.value;
   const diff = scrollY - lastScrollY.value;
   
-  // 判断滚动方向
-  if (Math.abs(diff) < scrollOffset) return;
+  // 在页面顶部时始终显示
+  if (scrollY <= navbarHeight) {
+    isVisible.value = true;
+    animateNavbar(0, 0.25); // 快速显示
+    isPinned.value = true;
+    lastScrollY.value = scrollY;
+    return;
+  } else {
+    isPinned.value = false;
+  }
+  
+  // 判断滚动方向 - 降低阈值以提高响应性
+  if (Math.abs(diff) < 2) {
+    lastScrollY.value = scrollY;
+    return;
+  }
   
   // 向下滚动时隐藏
   if (diff > 0 && scrollY > navbarHeight) {
@@ -828,26 +842,17 @@ const handleScroll = useThrottleFn(() => {
       animateNavbar(-navbarHeight + 3, 0.35); // 使用 GSAP 动画
     }
   } 
-  // 向上滚动时显示
+  // 向上滚动时显示 - 移除额外条件，提高响应性
   else if (diff < 0) {
     scrollDirection.value = 'up';
     if (!isVisible.value) {
       isVisible.value = true;
-      animateNavbar(0, 0.3); // 使用 GSAP 动画
+      animateNavbar(0, 0.25); // 更快的显示动画
     }
   }
   
-  // 在页面顶部时始终显示
-  if (scrollY <= navbarHeight) {
-    isVisible.value = true;
-    animateNavbar(0, 0.25); // 快速显示
-    isPinned.value = true;
-  } else {
-    isPinned.value = false;
-  }
-  
   lastScrollY.value = scrollY;
-}, 100); // 100ms 节流
+}, 50); // 减少节流时间以提高响应性
 
 // 使用 GSAP 进行动画
 const animateNavbar = (targetY, duration = 0.3) => {
@@ -864,18 +869,21 @@ const animateNavbar = (targetY, duration = 0.3) => {
 // 鼠标悬停在导航栏区域时显示
 const handleNavbarHover = () => {
   if (!isVisible.value && currentScrollY.value > navbarHeight) {
-    animateNavbar(0, 0.25); // 更快的悬停响应
+    isVisible.value = true; // 立即设置为可见
+    animateNavbar(0, 0.2); // 更快的悬停响应
   }
 };
 
 // 鼠标离开导航栏区域时恢复隐藏状态
 const handleNavbarLeave = () => {
-  if (!isVisible.value && currentScrollY.value > navbarHeight) {
+  if (currentScrollY.value > navbarHeight && scrollDirection.value === 'down') {
     setTimeout(() => {
-      if (!isVisible.value) { // 再次检查，避免快速滚动时的问题
-        animateNavbar(-navbarHeight + 3, 0.3);
+      // 检查鼠标是否仍在导航栏外且向下滚动
+      if (currentScrollY.value > navbarHeight && scrollDirection.value === 'down') {
+        isVisible.value = false;
+        animateNavbar(-navbarHeight + 3, 0.25);
       }
-    }, 100); // 100ms 延迟，避免鼠标快速移动时的闪烁
+    }, 150); // 稍微增加延迟，避免鼠标快速移动时的闪烁
   }
 };
 
