@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
+import mathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,10 +9,16 @@ export default defineConfig({
   base: '/fudan/',
   srcDir: './pages',
   ignoreDeadLinks: true,
+  markdown: {
+    config: (md) => {
+      md.use(mathjax3)
+    }
+  },
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: 'https://static.igem.wiki/teams/5643/img/logo-icon.svg' }],
     ['link', { rel: 'shortcut icon', href: 'https://static.igem.wiki/teams/5643/img/logo-icon.svg' }],
-    ['link', { rel: 'apple-touch-icon', href: 'https://static.igem.wiki/teams/5643/img/logo-icon.svg' }]
+    ['link', { rel: 'apple-touch-icon', href: 'https://static.igem.wiki/teams/5643/img/logo-icon.svg' }],
+
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

@@ -7,9 +7,6 @@ authors:
   - name: John Doe
     url: /fudan/team/#john-doe
     avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
-  - name: Jane Smith
-    url: /fudan/team/#jane-smith
-    avatar: https://static.igem.wiki/teams/5643/img/team-member-3.jpg
 layout: igem
 heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
 description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.

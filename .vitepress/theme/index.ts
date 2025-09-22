@@ -8,6 +8,8 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './tw.css'  // 添加Tailwind CSS导入
 
+
+
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -21,6 +23,8 @@ export default {
     // Register Custom404 component if needed elsewhere
     app.component('Custom404', Custom404)
     app.component('igem', CustomLayout)
+    
+
   },
 
 } satisfies Theme
