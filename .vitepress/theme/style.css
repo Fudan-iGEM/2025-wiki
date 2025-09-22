@@ -263,29 +263,6 @@
               0 1px 0 rgba(255, 255, 255, 0.1) inset;
 }
 
-/* 为防止内容跳动，添加顶部内边距 */
-.VPDoc, .vp-doc {
-  padding-top: 70px !important;
-}
-
-/* 确保内容区不会覆盖导航栏 */
-.VPContent, .VPDoc, .content {
-  position: relative !important;
-  z-index: 10 !important; /* 低于导航栏的z-index */
-  pointer-events: auto !important; /* 确保能接收鼠标事件 */
-  padding : 0 !important;
-}
-
-/* 移除可能干扰链接点击的所有覆盖层 */
-.VPLocalNav, .VPContent:before, .VPContent:after, .VPDoc:before, .VPDoc:after {
-  pointer-events: none !important; /* 透明层不应该拦截事件 */
-}
-
-/* 确保navbar items是可见的且可点击 */
-.VPNavBarMenu, .nav-links-desktop, .nav-item, .nav-link {
-  display: flex !important;
-  pointer-events: auto !important;
-}
 
 /* 使下拉菜单可点击 */
 .dropdown-menu.is-active {
@@ -392,7 +369,7 @@ a:hover {
 }
 
 .vp-doc h2 {
-  font-size: 35px;
+  font-size: 31px;
   padding-bottom: 1rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -509,30 +486,18 @@ a:hover {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* 自定义高亮框 */
-.highlight-box {
-  background: linear-gradient(135deg, var(--tech-highlight) 0%, rgba(255, 247, 113, 0.3) 100%);
-  border: 2px solid var(--tech-success);
-  border-radius: 12px;
-  padding: 1rem;
-  margin: 1rem 0;
-  box-shadow: 0 4px 16px rgba(111, 190, 2, 0.15);
+.vp-doc img {
+  max-width: 70%;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 135, 148, 0.08);
+  border: 1px solid rgba(93, 202, 198, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 成功提示框 */
-.success-box {
-  background: linear-gradient(135deg, rgba(111, 190, 2, 0.1) 0%, rgba(255, 247, 113, 0.1) 100%);
-  border-left: 4px solid var(--tech-success);
-  border-radius: 0 8px 8px 0;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
-/* 警告框 */
-.warning-box {
-  background: linear-gradient(135deg, rgba(255, 210, 55, 0.1) 0%, rgba(255, 176, 123, 0.1) 100%);
-  border-left: 4px solid var(--vp-c-warning);
-  border-radius: 0 8px 8px 0;
-  padding: 1rem;
-  margin: 1rem 0;
+.VPContent, .VPDoc, .content {
+  position: relative !important;
+  z-index: 10 !important; /* 低于导航栏的z-index */
+  pointer-events: auto !important; /* 确保能接收鼠标事件 */
+  padding : 0 !important;
 }
