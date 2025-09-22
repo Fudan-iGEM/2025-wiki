@@ -116,9 +116,37 @@ watch(
       <div class="hero-image-section" :style="{ backgroundImage: `url(${heroImage})` }">
         <div class="hero-overlay"></div>
         <div class="hero-shapes">
-          <div class="shape shape-circle"></div>
-          <div class="shape shape-dots"></div>
-          <div class="shape shape-rect"></div>
+          <svg class="hero-svg-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.35 460">
+            <ellipse class="svg-shape" cx="363.88" cy="286.44" rx="44.9" ry="40.44"/>
+            <ellipse class="svg-shape" cx="300.29" cy="190.5" rx="34.5" ry="40.5" transform="translate(38.91 431.63) rotate(-75.08)"/>
+            <ellipse class="svg-shape" cx="233.29" cy="149.5" rx="29.5" ry="39.5" transform="translate(-42.45 176.73) rotate(-38.29)"/>
+            <ellipse class="svg-shape" cx="172.15" cy="98.3" rx="30" ry="41.93" transform="translate(-2.08 192.85) rotate(-58.21)"/>
+            <ellipse class="svg-shape" cx="291.29" cy="128" rx="26.5" ry="35"/>
+            <circle class="svg-shape" cx="241.29" cy="207.5" r="29.5"/>
+            <ellipse class="svg-shape" cx="306.79" cy="248" rx="31" ry="26" transform="translate(-79.7 168.95) rotate(-27.39)"/>
+            <ellipse class="svg-shape" cx="261.29" cy="266" rx="19.5" ry="16" transform="translate(-97.99 166.28) rotate(-30)"/>
+            <ellipse class="svg-shape" cx="437.52" cy="272.58" rx="32.5" ry="28" transform="translate(-76.39 312.88) rotate(-36.41)"/>
+            <ellipse class="svg-shape" cx="355.61" cy="361.72" rx="43.98" ry="30.61" transform="translate(-94.3 595.98) rotate(-72.99)"/>
+            <ellipse class="svg-shape" cx="330.8" cy="426.31" rx="34.67" ry="31.53" transform="translate(-208.07 454.42) rotate(-55.18)"/>
+            <ellipse class="svg-shape" cx="378.66" cy="416.76" rx="22.78" ry="25" transform="translate(-169.87 289.52) rotate(-34.68)"/>
+            <ellipse class="svg-shape" cx="171.79" cy="156" rx="31" ry="27" transform="translate(-54.98 106.79) rotate(-30)"/>
+            <ellipse class="svg-shape" cx="225.29" cy="84.5" rx="35.5" ry="21.5" transform="translate(92.88 285.41) rotate(-77.17)"/>
+            <ellipse class="svg-shape" cx="232.79" cy="26.5" rx="24" ry="26.5"/>
+            <ellipse class="svg-shape" cx="290.79" cy="67" rx="25" ry="28"/>
+            <ellipse class="svg-shape" cx="142.57" cy="41.29" rx="24.11" ry="34" transform="translate(-5.83 44.26) rotate(-17.3)"/>
+            <ellipse class="svg-shape" cx="30.38" cy="142.39" rx="39" ry="25.5" transform="translate(-104.61 87.85) rotate(-55.96)"/>
+            <ellipse class="svg-shape" cx="81.14" cy="111.39" rx="24" ry="22" transform="translate(-51.8 75.09) rotate(-38.66)"/>
+            <ellipse class="svg-shape" cx="44.99" cy="94.21" rx="21.5" ry="20" transform="translate(-48.99 48.74) rotate(-38.66)"/>
+            <ellipse class="svg-shape" cx="114.79" cy="79.5" rx="30" ry="20.5"/>
+            <ellipse class="svg-shape" cx="331.79" cy="149" rx="22" ry="20" transform="translate(-31.35 169.35) rotate(-27.39)"/>
+            <ellipse class="svg-shape" cx="345.79" cy="121.5" rx="19.5" ry="14" transform="translate(60.37 351.43) rotate(-58.21)"/>
+            <ellipse class="svg-shape" cx="356.79" cy="193" rx="31" ry="23" transform="translate(-36.65 94.22) rotate(-14.32)"/>
+            <circle class="svg-shape" cx="398.46" cy="168.83" r="19"/>
+            <ellipse class="svg-shape" cx="411.61" cy="138.31" rx="18.5" ry="31.5" transform="translate(-7.51 24.78) rotate(-3.42)"/>
+            <ellipse class="svg-shape" cx="480.73" cy="258.18" rx="31" ry="20.5" transform="translate(-57.07 165.84) rotate(-18.5)"/>
+            <ellipse class="svg-shape" cx="503.26" cy="224.41" rx="14.05" ry="14.16" transform="translate(-44.78 281.7) rotate(-30)"/>
+            <ellipse class="svg-shape" cx="423.13" cy="182.15" rx="15" ry="11.5" transform="translate(-10.11 25.55) rotate(-3.42)"/>
+          </svg>
         </div>
       </div>
 
@@ -248,7 +276,7 @@ watch(
   backdrop-filter: blur(2px);
 }
 
-/* Hero shapes styling - Enhanced tech style */
+/* Hero shapes styling - SVG mask overlay */
 .hero-shapes {
   position: absolute;
   top: 0;
@@ -258,107 +286,36 @@ watch(
   z-index: 2;
 }
 
-.shape {
+.hero-svg-mask {
   position: absolute;
-  transition: all 0.5s ease;
+  bottom: 0;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  opacity: 0.6;
+  animation: gentle-float 8s ease-in-out infinite;
+  filter: blur(0.5px);
+  transition: all 0.3s ease;
 }
 
-.shape-circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    rgba(0, 188, 212, 0.2) 0deg,
-    rgba(85, 194, 187, 0.4) 90deg,
-    rgba(0, 152, 161, 0.2) 180deg,
-    rgba(255, 255, 255, 0.1) 270deg,
-    rgba(0, 188, 212, 0.2) 360deg
-  );
-  top: 20px;
-  right: 8%;
-  animation: rotate-slow 20s linear infinite;
-  filter: blur(1px);
+.hero-svg-mask:hover {
+  opacity: 0.8;
+  filter: blur(0px);
 }
 
-.shape-circle::after {
-  content: "";
-  position: absolute;
-  inset: 20px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.8) 0%,
-    transparent 70%
-  );
+.svg-shape {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
-.shape-dots {
-  width: 120px;
-  height: 120px;
-  background-image: 
-    radial-gradient(circle, rgba(0, 188, 212, 0.6) 2px, transparent 2px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.4) 1px, transparent 1px);
-  background-size: 20px 20px, 10px 10px;
-  background-position: 0 0, 5px 5px;
-  left: 10%;
-  top: 40px;
-  transform: rotate(30deg);
-  animation: pulse-opacity 4s ease-in-out infinite;
-}
-
-.shape-rect {
-  width: 220px;
-  height: 120px;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 188, 212, 0.1) 0%,
-    rgba(255, 255, 255, 0.2) 25%,
-    transparent 50%,
-    rgba(85, 194, 187, 0.1) 75%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  right: 12%;
-  bottom: -30px;
-  transform: skew(-20deg, -5deg);
-  animation: slide-fade 12s ease-in-out infinite;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-}
-
-/* Enhanced animations for tech feel */
-@keyframes rotate-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes pulse-opacity {
+/* Enhanced animations for SVG mask */
+@keyframes gentle-float {
   0%, 100% {
-    opacity: 0.3;
-    transform: rotate(30deg) scale(1);
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
   }
   50% {
+    transform: translateY(-10px) scale(1.02);
     opacity: 0.8;
-    transform: rotate(30deg) scale(1.1);
-  }
-}
-
-@keyframes slide-fade {
-  0%, 100% {
-    transform: skew(-20deg, -5deg) translateX(0);
-    opacity: 0.5;
-  }
-  25% {
-    transform: skew(-20deg, -5deg) translateX(20px);
-    opacity: 0.8;
-  }
-  75% {
-    transform: skew(-20deg, -5deg) translateX(-20px);
-    opacity: 0.3;
   }
 }
 
