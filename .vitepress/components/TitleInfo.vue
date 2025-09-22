@@ -45,7 +45,7 @@
     </div>
 
     <!-- Scroll down animation -->
-    <div class="scroll-down-container" :class="{ 'visible': titleAnimationDone }" @click="scrollToContent">
+    <div class="scroll-down-container" @click="scrollToContent">
       <div class="mouse">
         <div class="scroller"></div>
       </div>
@@ -60,7 +60,6 @@ import { computed, ref, onMounted, onUnmounted, reactive } from "vue";
 import { useWindowSize } from "@vueuse/core";
 import SplitText from "./SplitText.vue";
 
-const titleAnimationDone = ref(false);
 const titleInfoRef = ref(null);
 
 const scrollToContent = () => {
@@ -197,7 +196,6 @@ const titleRef = ref(null);
 const handleTitleAnimationComplete = () => {
   // 可以在这里添加标题动画完成后的逻辑
   console.log('Title animation completed');
-  titleAnimationDone.value = true;
 };
 </script>
 
@@ -254,7 +252,7 @@ const handleTitleAnimationComplete = () => {
 /* Container for description and button - enhanced design */
 .hero-bottom-content {
   padding: 0rem 8rem 3rem; /* 增加左右边距匹配标题 */
-  background: linear-gradient(to bottom, #ffffff 0%, rgba(248, 250, 252, 0.8) 100%);
+  background: transparent;
   position: relative;
   transition: all 0.3s ease;
   border-radius: 0;
@@ -477,16 +475,10 @@ const handleTitleAnimationComplete = () => {
   flex-direction: column;
   align-items: center;
   color: #062570;
-  opacity: 0;
-  transition: opacity 1s ease 1s; /* Add a delay for a smoother appearance */
-  z-index: 10;
-  pointer-events: none; /* So it doesn't block clicks */
-}
-
-.scroll-down-container.visible {
   opacity: 0.6;
   cursor: pointer;
-  pointer-events: auto;
+  z-index: 10;
+  transition: opacity 0.3s ease;
 }
 
 .scroll-down-text {
@@ -538,9 +530,9 @@ const handleTitleAnimationComplete = () => {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .scroll-down-container {
-    display: none; /* Hide on very small screens */
+    display: none; /* Hide on mobile devices */
   }
 }
 
