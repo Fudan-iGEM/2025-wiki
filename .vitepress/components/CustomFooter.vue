@@ -18,8 +18,9 @@
       </div>
       <!-- 右侧内容 -->
       <div class="copyright-right">
-        <p>Content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p>
-        <p>The repository used to create this website is available at <a class="footer-copyright-link" href="https://gitlab.igem.org/2025/fudan/">gitlab.igem.org/2025/fudan/</a>.</p>
+        <!-- Content on this site is licensed under a Creative Commons Attribution 4.0 International license -->
+        <p>The repository used to create this website is available at <a class="footer-copyright-link" href="https://gitlab.igem.org/2025/fudan/" target="_blank">gitlab.igem.org/2025/fudan/</a>.</p>
+        <p>Contact us <a href="mailto:igem@fudan.edu.cn" target="_blank">igem@fudan.edu.cn</a></p>
       </div>
     </div>
   </div>
