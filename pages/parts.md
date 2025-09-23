@@ -48,4 +48,4 @@ Visit our [Improve](/fudan/improve/) page for parts we improved this year.
 
 Vist our [Part Collection](/fudan/part-collection/) page for parts we made in 2024. Links to all parts available at [gitlab](https://gitlab.igem.org/2024/fudan/-/blob/main/groupparts.md) and the [Registry](https://parts.igem.org/partsdb/search_1000.cgi?q=K5115000).
 
-Please check [our promotion video](https://video.igem.org/w/d1795b71-2707-4eeb-92ce-5b88145ef1a3), from [Team Fudan](https://2025.igem.wiki/fudan/).
+Please check [our promotion video](https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe), from [Team Fudan](https://2025.igem.wiki/fudan/).

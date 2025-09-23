@@ -740,7 +740,7 @@ const navItems = ref([
         icon: "promotion-video",
         title: "Promotion video",
         description: "Project promotional video",
-        link: "https://video.igem.org/w/d1795b71-2707-4eeb-92ce-5b88145ef1a3",
+        link: "https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe",
       },
       {
         icon: "sustainable",
