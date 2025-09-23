@@ -1,8 +1,10 @@
 ---
 title: Proof of Concept
+authors:
+  - name: none
 layout: igem
 heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
+description: This is a page for redirecting purposes.
 ---
 
 Please visit our [Results](/results/), [Software](/software/) and [Model](/model/) pages.

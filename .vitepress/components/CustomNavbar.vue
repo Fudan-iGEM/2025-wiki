@@ -701,12 +701,6 @@ const navItems = ref([
         description: "Software tools and applications",
         link: "/fudan/software",
       },
-      {
-        icon: "hardware",
-        title: "Hardware",
-        description: "Hardware equipment and tools",
-        link: "/fudan/hardware",
-      },
     ],
   },
   {
@@ -739,14 +733,14 @@ const navItems = ref([
       {
         icon: "presentation",
         title: "Presentation",
-        description: "Project presentations",
-        link: "/fudan/pv",
+        description: "Project presentation",
+        link: "https://teams.igem.org/5643/project-presentation",
       },
       {
         icon: "promotion-video",
         title: "Promotion video",
-        description: "Project promotional videos",
-        link: "/fudan/promotion-video",
+        description: "Project promotional video",
+        link: "https://video.igem.org/w/d1795b71-2707-4eeb-92ce-5b88145ef1a3",
       },
       {
         icon: "sustainable",
@@ -758,7 +752,7 @@ const navItems = ref([
         icon: "wiki",
         title: "Wiki @gitlab",
         description: "Project wiki hosted on GitLab",
-        link: "/fudan/hardware",
+        link: "https://gitlab.igem.org/2025/fudan/",
       },
     ],
   },
@@ -793,7 +787,7 @@ const navItems = ref([
   },
 ]);
 
-const socialLinks = ref([{ icon: "gitlab", link: "https://github.com/vuejs/vitepress" }]);
+const socialLinks = ref([{ icon: "gitlab", link: "https://gitlab.igem.org/2025/fudan/" }]);
 
 const activeDropdown = ref(null);
 const isMobileMenuOpen = ref(false);

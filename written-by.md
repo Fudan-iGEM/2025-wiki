@@ -5,7 +5,7 @@
 | Homepage           | Xiuqi Tian, Zhongyi Huang, Yufan Han |
 | Attributions       | Yuxin Duan                           |
 | Collabrations      | Huizhen Du                           |
-| Communication      |                                      |
+| Communication      | none                                 |
 | Contribution       | Yuxin Duan                           |
 | Description        | Zuyao Wu                             |
 | Design             | Zhiqin Wang, Yining Zhao             |
@@ -13,8 +13,8 @@
 | Engineering        | Zhiqin Wang                          |
 | Entrepreneurship   | Xiuqi Tian                           |
 | Experiments        | Yixuan Lu                            |
-| Hardware           | Jihua Tang                           |
-| Heritage           | Heritage                             |
+| Hardware           | none                                 |
+| Heritage           | Liang Cai                            |
 | Integrated HP      | Yixuan Lu, Yufan Han                 |
 | Implementation     | Yuxin Duan                           |
 | Improved Parts     | Yining Zhao                          |
@@ -30,5 +30,5 @@
 | Safety             | Yue Yue                              |
 | Software           | Yufan Han                            |
 | Sustainbale        | Yixuan Lu                            |
-| Model              | Jihua Tang                           |
+| Model              | Jihua Tang, Yue Yue                  |
 | Team               | all                                  |

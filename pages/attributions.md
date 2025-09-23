@@ -1,9 +1,6 @@
 ---
 title: Attributions
 authors:
-  - name: Wanqi Li
-    url: /fudan/team/#wanqi-li
-    avatar: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqDqIqdyQxnYeRa-L5muAwwUNb_iGAzNVTw&s
   - name: John Doe
     url: /fudan/team/#john-doe
     avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
