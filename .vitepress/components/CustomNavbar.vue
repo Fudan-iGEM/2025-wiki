@@ -606,7 +606,7 @@ import { ref, onMounted, onUnmounted, computed, watch } from "vue";
 import { useScroll, useWindowScroll, useThrottleFn, useDebounce } from "@vueuse/core";
 import { gsap } from "gsap";
 import VPNavBarSearch from "vitepress/dist/client/theme-default/components/VPNavBarSearch.vue";
-import "../theme/tw.css";
+
 
 const navItems = ref([
   {

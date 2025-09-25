@@ -188,7 +188,7 @@ function formatUrl(url) {
 // Get hero image from frontmatter
 const heroImage = computed(() => frontmatter.value.heroImage);
 
-import "../theme/tw.css";
+
 
 const titleRef = ref(null);
 

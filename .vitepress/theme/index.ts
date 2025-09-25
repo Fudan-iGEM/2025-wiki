@@ -6,7 +6,6 @@ import CustomLayout from '../components/CustomLayout.vue';
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import './tw.css'  // 添加Tailwind CSS导入
 
 
 

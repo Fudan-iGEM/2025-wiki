@@ -9,13 +9,13 @@
 | Contribution       | Yuxin Duan                           |
 | Description        | Zuyao Wu                             |
 | Design             | Zhiqin Wang, Yining Zhao             |
-| Education          | Huizhen Du, Yufan Han                |
+| Education          | Huizhen Du                           |
 | Engineering        | Zhiqin Wang                          |
 | Entrepreneurship   | Xiuqi Tian                           |
 | Experiments        | Yixuan Lu                            |
 | Hardware           | none                                 |
 | Heritage           | Liang Cai                            |
-| Integrated HP      | Yixuan Lu, Yufan Han                 |
+| Integrated HP      | Yixuan Lu                            |
 | Implementation     | Yuxin Duan                           |
 | Improved Parts     | Yining Zhao                          |
 | Inclusivity        | Zhongyi Huang                        |
