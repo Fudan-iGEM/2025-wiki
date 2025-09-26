@@ -8,7 +8,6 @@ const handleContactClick = () => {
   console.log('Contact clicked');
 };
 const images = [
-  
 ];
 
 // 团队成员数据
