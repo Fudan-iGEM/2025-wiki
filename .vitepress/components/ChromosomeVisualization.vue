@@ -1,38 +1,38 @@
 <template>
-  <div class="chromosome-visualization bg-white p-6 rounded-lg border border-gray-200">
+  <div class="chromosome-visualization">
     <!-- Simple Header -->
-    <div class="mb-6">
-      <h3 class="text-xl font-semibold text-gray-800 mb-1">Saccharomyces cerevisiae Genome</h3>
-      <p class="text-sm text-gray-600">Hover over markers to view distance from centromere</p>
+    <div class="header">
+      <h3 class="title">Saccharomyces cerevisiae Genome</h3>
+      <p class="subtitle">Hover over markers to view distance from centromere</p>
     </div>
     
     <!-- Chromosomes Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <div class="chromosomes-grid">
       <div 
         v-for="chromosome in chromosomes" 
         :key="chromosome.number"
-        class="chromosome-container relative p-3 border border-gray-100 rounded"
+        class="chromosome-container"
       >
         <!-- Simple Chromosome Header -->
-        <div class="flex items-center justify-between mb-3">
-          <div class="flex items-center gap-2">
-            <span class="text-sm font-medium text-gray-700">Chr {{ chromosome.roman }}</span>
-            <span class="text-xs text-gray-500" v-if="chromosome.intLocus">
+        <div class="chromosome-header">
+          <div class="chromosome-info">
+            <span class="chromosome-name">Chr {{ chromosome.roman }}</span>
+            <span class="locus-info" v-if="chromosome.intLocus">
               (Int. locus {{ chromosome.intLocus }})
             </span>
-            <span class="text-xs text-orange-600" v-else-if="chromosome.number === 12">
+            <span class="ace2-info" v-else-if="chromosome.number === 12">
               (ACE2)
             </span>
           </div>
-          <span class="text-xs text-gray-500">{{ formatLength(chromosome.totalLength) }}</span>
+          <span class="length-info">{{ formatLength(chromosome.totalLength) }}</span>
         </div>
         
         <!-- Chromosome Visualization -->
-        <div class="relative">
+        <div class="svg-container">
           <svg 
             :width="chromosomeWidth" 
             :height="chromosomeHeight"
-            class="chromosome-svg w-full"
+            class="chromosome-svg"
             :viewBox="`0 0 ${chromosomeWidth} ${chromosomeHeight}`"
           >
             <!-- Chromosome background with gradient -->
@@ -76,6 +76,16 @@
             
             <!-- Insertion site with glow effect -->
             <g v-if="chromosome.insertionLocus">
+              <rect
+                :x="30 + getInsertionPosition(chromosome) - 8"
+                y="19.5"
+                width="16"
+                height="16"
+                fill="transparent"
+                class="interactive-marker"
+                @mouseenter="showTooltip($event, chromosome, 'insertion')"
+                @mouseleave="hideTooltip"
+              />
               <defs>
                 <filter id="glow-insertion">
                   <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
@@ -92,10 +102,8 @@
                 fill="#008794"
                 stroke="#ffffff"
                 stroke-width="2"
-                class="cursor-pointer transition-all duration-300 hover:fill-teal-600"
+                class="insertion-shape"
                 filter="url(#glow-insertion)"
-                @mouseenter="showTooltip($event, chromosome, 'insertion')"
-                @mouseleave="hideTooltip"
               />
               <circle
                 :cx="30 + getInsertionPosition(chromosome)"
@@ -108,6 +116,16 @@
             
             <!-- ACE2 position with special styling -->
             <g v-if="chromosome.number === 12">
+              <rect
+                :x="30 + getACE2Position() - 8"
+                y="15"
+                width="16"
+                height="20"
+                fill="transparent"
+                class="interactive-marker"
+                @mouseenter="showTooltip($event, chromosome, 'ace2')"
+                @mouseleave="hideTooltip"
+              />
               <defs>
                 <filter id="glow-ace2">
                   <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
@@ -122,10 +140,8 @@
                 fill="#e97e35"
                 stroke="#ffffff"
                 stroke-width="2"
-                class="cursor-pointer transition-all duration-300 hover:fill-orange-600"
+                class="ace2-shape"
                 filter="url(#glow-ace2)"
-                @mouseenter="showTooltip($event, chromosome, 'ace2')"
-                @mouseleave="hideTooltip"
               />
               <circle
                 :cx="30 + getACE2Position()"
@@ -155,57 +171,59 @@
     </div>
     
     <!-- Simple Legend -->
-    <div class="mt-6 pt-4 border-t border-gray-200">
-      <div class="flex flex-wrap gap-4 justify-center text-xs">
-        <div class="flex items-center gap-1">
-          <div class="w-4 h-3 bg-gradient-to-r from-blue-100 to-teal-100 rounded border border-teal-300"></div>
-          <span class="text-gray-600">Chromosome</span>
+    <div class="legend">
+      <div class="legend-items">
+        <div class="legend-item">
+          <div class="legend-color chromosome-color"></div>
+          <span class="legend-text">Chromosome</span>
         </div>
-        <div class="flex items-center gap-1">
-          <div class="w-4 h-4 rounded" style="background-color: #062570"></div>
-          <span class="text-gray-600">Centromere</span>
+        <div class="legend-item">
+          <div class="legend-color centromere-color"></div>
+          <span class="legend-text">Centromere</span>
         </div>
-        <div class="flex items-center gap-1">
-          <div class="w-4 h-4 rounded-full" style="background-color: #008794"></div>
-          <span class="text-gray-600">Insertion Site</span>
+        <div class="legend-item">
+          <div class="legend-color insertion-color"></div>
+          <span class="legend-text">Insertion Site</span>
         </div>
-        <div class="flex items-center gap-1">
-          <div class="w-4 h-4" style="background-color: #e97e35; clip-path: polygon(50% 0%, 0% 100%, 100% 100%)"></div>
-          <span class="text-gray-600">ACE2 Gene</span>
+        <div class="legend-item">
+          <div class="legend-color ace2-color"></div>
+          <span class="legend-text">ACE2 Gene</span>
         </div>
       </div>
     </div>
     
     <!-- Enhanced Tooltip -->
-    <div
-      v-if="tooltip.visible"
-      :style="{ left: tooltip.x + 'px', top: tooltip.y + 'px' }"
-      class="absolute z-20 bg-white border-2 border-teal-200 rounded-xl shadow-2xl p-4 pointer-events-none transform -translate-x-1/2 -translate-y-full"
-    >
-      <div class="text-sm font-bold text-teal-800 mb-2 flex items-center gap-2">
-        <div class="w-3 h-3 rounded-full" :class="tooltip.type === 'insertion' ? 'bg-teal-500' : 'bg-orange-500'"></div>
-        {{ tooltip.title }}
+    <Teleport to="body">
+      <div
+        v-if="tooltip.visible"
+        :style="{ left: tooltip.x + 'px', top: tooltip.y + 'px' }"
+        class="tooltip"
+      >
+        <div class="tooltip-header">
+          <div class="tooltip-indicator" :class="tooltip.type === 'insertion' ? 'insertion-indicator' : 'ace2-indicator'"></div>
+          {{ tooltip.title }}
+        </div>
+        <div class="tooltip-content">
+          <div class="tooltip-row">
+            <span class="tooltip-label">Position:</span>
+            <span class="tooltip-value">{{ tooltip.position.toLocaleString() }} bp</span>
+          </div>
+          <div class="tooltip-row">
+            <span class="tooltip-label">Distance:</span>
+            <span class="tooltip-value">{{ tooltip.distance.toLocaleString() }} bp</span>
+          </div>
+          <div class="tooltip-row">
+            <span class="tooltip-label">Percentage:</span>
+            <span class="tooltip-percentage">{{ tooltip.percentage }}%</span>
+          </div>
+          <div v-if="tooltip.type === 'insertion'" class="tooltip-chromosome">
+            <span class="tooltip-chromosome-text">Chromosome {{ tooltip.chromosome }}</span>
+          </div>
+        </div>
+        <!-- Tooltip arrow -->
+        <div class="tooltip-arrow"></div>
       </div>
-      <div class="text-xs text-gray-600 space-y-1">
-        <div class="flex justify-between gap-4">
-          <span class="text-gray-500">Position:</span>
-          <span class="font-semibold text-teal-700">{{ tooltip.position.toLocaleString() }} bp</span>
-        </div>
-        <div class="flex justify-between gap-4">
-          <span class="text-gray-500">Distance:</span>
-          <span class="font-semibold text-teal-700">{{ tooltip.distance.toLocaleString() }} bp</span>
-        </div>
-        <div class="flex justify-between gap-4">
-          <span class="text-gray-500">Percentage:</span>
-          <span class="font-semibold text-orange-600">{{ tooltip.percentage }}%</span>
-        </div>
-        <div v-if="tooltip.type === 'insertion'" class="pt-1 border-t border-gray-200">
-          <span class="text-xs text-gray-500">Chromosome {{ tooltip.chromosome }}</span>
-        </div>
-      </div>
-      <!-- Tooltip arrow -->
-      <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-teal-200"></div>
-    </div>
+    </Teleport>
   </div>
 </template>
 
@@ -421,10 +439,10 @@ function formatLength(length) {
 
 function showTooltip(event, chromosome, type) {
   const rect = event.target.getBoundingClientRect()
-  const containerRect = event.target.closest('.chromosome-visualization').getBoundingClientRect()
   
-  tooltip.x = rect.left - containerRect.left + rect.width / 2
-  tooltip.y = rect.top - containerRect.top - 10
+  // 使用固定定位，直接使用viewport坐标
+  tooltip.x = rect.left + rect.width / 2
+  tooltip.y = rect.top - 10
   
   if (type === 'insertion') {
     const distance = calculateDistanceFromCentromere(chromosome.insertionLocus, chromosome.centromereCenter)
@@ -457,15 +475,264 @@ function hideTooltip() {
 </script>
 
 <style scoped>
-.chromosome-svg {
-  overflow: visible;
+/* 主容器样式 */
+.chromosome-visualization {
+  position: relative;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
 }
 
+/* 头部样式 */
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #008794;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* 染色体网格样式 */
+.chromosomes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .chromosomes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 染色体容器样式 */
 .chromosome-container {
+  position: relative;
+  padding: 0.75rem;
+  border: 1px solid #f3f4f6;
+  border-radius: 0.25rem;
   min-height: 80px;
+}
+
+/* 染色体头部样式 */
+.chromosome-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.chromosome-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chromosome-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.locus-info {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.ace2-info {
+  font-size: 0.75rem;
+  color: #ea580c;
+}
+
+.length-info {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* SVG容器样式 */
+.svg-container {
+  position: relative;
+}
+
+.chromosome-svg {
+  overflow: visible;
+  pointer-events: auto;
+  width: 100%;
+}
+
+/* 图例样式 */
+.legend {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.legend-color {
+  width: 1rem;
+  height: 0.75rem;
+}
+
+.chromosome-color {
+  background: linear-gradient(to right, #dbeafe, #b2f5ea);
+  border-radius: 0.125rem;
+  border: 1px solid #5eead4;
+}
+
+.centromere-color {
+  background-color: #062570;
+  border-radius: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.insertion-color {
+  background-color: #008794;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.ace2-color {
+  background-color: #e97e35;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 1rem;
+  height: 1rem;
+}
+
+.legend-text {
+  color: #6b7280;
+}
+
+/* Tooltip样式 */
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  background-color: white;
+  border: 2px solid #5eead4;
+  border-radius: 0.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.tooltip-header {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0f766e;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tooltip-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.insertion-indicator {
+  background-color: #14b8a6;
+}
+
+.ace2-indicator {
+  background-color: #f97316;
+}
+
+.tooltip-content {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.tooltip-content > * + * {
+  margin-top: 0.25rem;
+}
+
+.tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tooltip-label {
+  color: #6b7280;
+}
+
+.tooltip-value {
+  font-weight: 600;
+  color: #0f766e;
+}
+
+.tooltip-percentage {
+  font-weight: 600;
+  color: #ea580c;
+}
+
+.tooltip-chromosome {
+  padding-top: 0.25rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.tooltip-chromosome-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #5eead4;
 }
 
 .scale-markers text {
   font-family: 'Inter', sans-serif;
+}
+
+/* 确保可交互元素能够接收鼠标事件 */
+.chromosome-svg circle,
+.chromosome-svg polygon {
+  pointer-events: auto;
+}
+
+.interactive-marker {
+  cursor: pointer;
+}
+
+.interactive-marker:hover ~ .insertion-shape {
+  fill: #0f766e; /* hover:fill-teal-600 */
+}
+
+.interactive-marker:hover ~ .ace2-shape {
+  fill: #c2410c; /* hover:fill-orange-600 */
 }
 </style>

@@ -2,7 +2,7 @@
 import { useRoute } from "vitepress";
 import { computed, watch, onMounted, nextTick } from "vue";
 import { useData } from "vitepress/dist/client/theme-default/composables/data.js";
-import "../theme/tw.css";
+
 import TitleInfo from "./TitleInfo.vue";
 import CustomTOC from "./CustomTOC.vue";
 

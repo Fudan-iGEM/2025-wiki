@@ -1,5 +1,5 @@
 <template>
-  <div :class="cn('expandable-gallery', props.class)">
+  <div :class="['expandable-gallery', props.class].filter(Boolean).join(' ')">
     <div
       v-for="image in images"
       :key="image"
@@ -20,7 +20,6 @@
   
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { cn } from "../lib/utils";
 
 interface Props {
   images: string[];
@@ -66,18 +65,18 @@ const handleImageError = (event: Event) => {
   flex: 1;
   cursor: pointer;
   overflow: hidden;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid transparent;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(8px);
 }
 
 .gallery-item:hover {
   flex: 3;
-  border-color: rgba(59, 130, 246, 0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.12);
 }
 
 .gallery-image {
@@ -86,7 +85,7 @@ const handleImageError = (event: Event) => {
   width: 100%;
   object-fit: cover;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
 }
 
 .gallery-item:hover .gallery-image {
@@ -135,17 +134,17 @@ const handleImageError = (event: Event) => {
   .expandable-gallery {
     height: 12rem;
     padding: 0.5rem;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
   }
 
   .gallery-item {
     min-width: 6rem;
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
   }
 
   .gallery-item:hover {
     flex: 1.5;
-    transform: translateY(-1px);
+    transform: translateY(-0.5px);
   }
 }
 
@@ -155,10 +154,12 @@ const handleImageError = (event: Event) => {
     height: 10rem;
     padding: 0.375rem;
     gap: 0.125rem;
+    border-radius: 0.375rem;
   }
 
   .gallery-item {
     min-width: 5rem;
+    border-radius: 0.25rem;
   }
 
   .gallery-item:hover {

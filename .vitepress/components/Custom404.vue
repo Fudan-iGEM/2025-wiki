@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
+  <div class="error-container">
     <!-- 404 SVG 图片 -->
-    <div class="mb-8" ref="svgContainer">
-      <div ref="svg404" class="w-80 h-80 md:w-96 md:h-96 flex items-center justify-center">
+    <div class="svg-wrapper" ref="svgContainer">
+      <div ref="svg404" class="svg-container">
         <!-- 直接嵌入SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" id="_图层_1" data-name="图层 1" viewBox="0 0 1205.78 789" class="w-full h-full">
+        <svg xmlns="http://www.w3.org/2000/svg" id="_图层_1" data-name="图层 1" viewBox="0 0 1205.78 789" class="svg-404">
           <g id="_应用例" data-name="应用例">
             <g id="_袖子" data-name="袖子">
               <path d="M959 358c0 52.39-11.25 102.15-31.47 147H274.47C254.25 460.15 243 410.39 243 358 243 160.28 403.28 0 601 0s358 160.28 358 358Z" style="fill:#f6fbe2"/>
@@ -43,16 +43,13 @@
     </div>
     
     <!-- 错误信息 -->
-    <h1 class="text-6xl md:text-8xl font-bold text-blue-500 mb-4">404</h1>
-    <div class="text-xl md:text-2xl text-gray-700 mb-8 text-center">
+    <h1 class="error-title">404</h1>
+    <div class="error-message">
       Oops! The page you're looking for doesn't exist.
     </div>
     
     <!-- 返回按钮 -->
-    <a
-      href="/"
-      class="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg text-lg font-medium"
-    >
+    <a href="/" class="back-button">
       Back to Home
     </a>
   </div>
@@ -61,7 +58,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { gsap } from 'gsap'
-import "../theme/tw.css"
 
 const svgContainer = ref(null)
 const svg404 = ref(null)
@@ -191,6 +187,89 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+/* 主容器样式 */
+.error-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* SVG容器样式 */
+.svg-wrapper {
+  margin-bottom: 2rem;
+}
+
+.svg-container {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+  .svg-container {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+.svg-404 {
+  width: 100%;
+  height: 100%;
+}
+
+/* 错误标题样式 */
+.error-title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .error-title {
+    font-size: 6rem;
+  }
+}
+
+/* 错误消息样式 */
+.error-message {
+  font-size: 1.25rem;
+  color: #374151;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .error-message {
+    font-size: 1.5rem;
+  }
+}
+
+/* 返回按钮样式 */
+.back-button {
+  padding: 1rem 2rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #1d4ed8;
+}
+
 /* SVG样式类 */
 .cls-5 {
   fill: #5dcac6;
