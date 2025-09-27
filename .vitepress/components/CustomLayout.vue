@@ -10,7 +10,13 @@ const { theme, frontmatter } = useData();
 
 const route = useRoute();
 const hasAside = computed(() => {
-  return !route.path.includes('/team') && !route.path.includes('/attributions') && !route.path.includes('/heritage');
+  return !route.path.includes('/team') &&
+         !route.path.includes('/attributions') &&
+         !route.path.includes('/heritage') &&
+         !route.path.includes('/communication') &&
+         !route.path.includes('/hardware') &&
+         !route.path.includes('/plant') &&
+         !route.path.includes('/proof-of-concept') ;
 });
 const leftAside = computed(() => true); 
 
