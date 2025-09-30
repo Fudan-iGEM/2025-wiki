@@ -49,9 +49,9 @@
     </div>
     
     <!-- 返回按钮 -->
-    <a href="/" class="back-button">
-      Back to Home
-    </a>
+Please check <a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target=_blank>our promotion video</a>,
+from <a href="/" class="back-button">Team Fudan</a>.
+
   </div>
 </template>
 
