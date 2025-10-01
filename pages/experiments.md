@@ -1,6 +1,6 @@
 ---
-Title: Experiments
-Author: 
+title: Experiments
+author: 
   - name: Yixuan Lu
     url: /team/#lu-yixuan
     avatar: （头像，先不填）
@@ -89,21 +89,21 @@ In every experiment, two control strains with known ploidy, namely, the engineer
 ### Preparation Procedure
 
 1. Grow each strain of interest in YPD media to mid-log phase.
-2. Transfer 250 µL of the culture into a 1.5-mL microcentrifuge tube. 
-3. Pellet the clusters by spinning at 5,000 *g* for 1  min and wash them with 1 mL of H<sub>2</sub>O.
+2. Transfer 250 µL of the culture into a 1.5-mL microcentrifuge tube. 
+3. Pellet the clusters by spinning at 5,000 *g* for 1  min and wash them with 1 mL of H<sub>2</sub>O.
    `For macroscopic strains, break the clusters into small pieces by pipetting vigorously using 100-µL regular-bore tips before washing.` 
 4. Fix and permeabilize the cells in 1 mL of 70% ethanol at room temperature for 2 h with end-to-end rotation on a mini-rotator at a speed of 40 rpm. 
 5. Centrifugat for ethanol removal and wash the pellet with 1 mL of 50 mM sodium citrate twice. 
-6. Resuspend the clusters in 200 µL of 50 mM sodium citrate containing 0.5 mg/ml RNase A and incubate them in a 37 °C heat block for 2 h with gentle inversion every 30 min (as clusters settle over time). 
-7. After RNA digestion, add 5  µL of 1 mg /mL propidium iodide and incubate the mixture in a 30 °C incubator in dark overnight with rotation on a mini-rotator at  at a speed of 10 rpm to keep clusters from settling.
-8. Propidium iodide-stained clusters can be stored at 4 °C for no longer than 1 week before imaging.
+6. Resuspend the clusters in 200 µL of 50 mM sodium citrate containing 0.5 mg/ml RNase A and incubate them in a 37°C heat block for 2 h with gentle inversion every 30 min (as clusters settle over time). 
+7. After RNA digestion, add 5 µL of 1 mg/mL propidium iodide and incubate the mixture in a 30°C incubator in dark overnight with rotation on a mini-rotator at  at a speed of 10 rpm to keep clusters from settling.
+8. Propidium iodide-stained clusters can be stored at 4°C for no longer than 1 week before imaging.
 
 ### Fluorescent Imaging
 
-1. Crush 5 µL of propidium iodide-stained clusters into a single layer of cells between a microscope slide and a coverslip.
+1. Crush 5 µL of propidium iodide-stained clusters into a single layer of cells between a microscope slide and a coverslip.
 2. For each sample, take 14-bit images of approximately 10 FOVs at ×20 magnification. 
 3. For each FOV (fields of view), set the focus by manually moving to a *z*-plane in which cells look grey (rather than brighter or darker) in the brightfield channel and then moving down by 1 µm to get sharp fluorescent signals of the nuclei. 
-4. Image the flattened clusters in the red fluorescent channel (exposure of 600 ms and gain of 2.2×) at the focal plane as well as one *z*-plane 0.3 µm above and below the focal plane (three *z*-planes in total) to detect the propidium iodide-stained nuclei, and then imaged in the brightfield channel (exposure of 100 ms and gain of 4.1×) at the focal plane. 
+4. Image the flattened clusters in the red fluorescent channel (exposure of 600 ms and gain of 2.2×) at the focal plane as well as one *z*-plane 0.3 µm above and below the focal plane (three *z*-planes in total) to detect the propidium iodide-stained nuclei, and then imaged in the brightfield channel (exposure of 100 ms and gain of 4.1×) at the focal plane. 
 5. Set the exposure and gain of the fluorescent channel such that the brightest pixels in the tetraploid control strain are approximately 80% of the maximal allowed pixel value while minimizing photobleaching and noise.
 
 ### Image Analysis
