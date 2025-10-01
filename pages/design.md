@@ -79,7 +79,7 @@ While a complete modification of the GPCR system would require the knockout of a
 
 #### 2)Yeast Membrane Engineering
 
-The ergosterol biosynthesis pathway is crucial, with ERG6 and ERG5 defining membrane sterol composition and influencing the expression and functionality of heterologously expressed human GPCRs. High ergosterol levels impair the proper insertion and activity of GPCRs in the yeast membrane. Consequently, deleting ERG5/6 and redirecting sterol flux toward cholesterol significantly enhances receptor efficiency[^11]. Furthermore, the resulting reduced ergosterol content mimics a phenotype associated with antifungal drug resistance[^12], offering a platform to investigate the impact of membrane composition on drug sensitivity and to identify non-ergosterol-related targets.
+The ergosterol biosynthesis pathway is crucial, with *ERG6* and *ERG5* defining membrane sterol composition and influencing the expression and functionality of heterologously expressed human GPCRs. High ergosterol levels impair the proper insertion and activity of GPCRs in the yeast membrane. Consequently, deleting *ERG5/6* and redirecting sterol flux toward cholesterol significantly enhances receptor efficiency[^11]. Furthermore, the resulting reduced ergosterol content mimics a phenotype associated with antifungal drug resistance[^12], offering a platform to investigate the impact of membrane composition on drug sensitivity and to identify non-ergosterol-related targets.
 
 To leverage this for our application, we deleted *ERG5/6* and added TDH3p-driven zebrafish genes (*DHCR7/24*:BBa_25RCU5CB and BBa_25FOVO4C). This modification blocks ergosterol production and redirects zymosterol to cholesterol, which is necessary for the human receptor to function properly[^11]. We confirmed this modification using cholesterol staining.
 
@@ -95,13 +95,13 @@ To leverage this for our application, we deleted *ERG5/6* and added TDH3p-driven
 
 ### *Module 3—Controlling Cluster Size*
 
-For increased control and safety, we introduced BAX(BBa_K5441013), an apoptosis-inducing protein, under the control of a pTet2 promoter. BAX is a pro-apoptotic member of the Bcl-2 protein family. When expressed in *S. cerevisiae*, it induces cell apoptosis via a mitochondria-related pathway[^13]. This mechanism allows us to control the size of our clusters and, if necessary, induce the apoptosis of the entire system. We verified the module's effectiveness by observing and analyzing the cluster size under a confocal microscope .
+For increased control and safety, we introduced *BAX*(BBa_K5441013), an apoptosis-inducing protein, under the control of a pTet2 promoter. Bax is a pro-apoptotic member of the Bcl-2 protein family. When expressed in *S. cerevisiae*, it induces cell apoptosis via a mitochondria-related pathway[^13]. This mechanism allows us to control the size of our clusters and, if necessary, induce the apoptosis of the entire system. We verified the module's effectiveness by observing and analyzing the cluster size under a confocal microscope .
 
 ### *Module* 4—*Controlling Individual Diversity*
 
 Genomic instability can lead to cells acquiring multiple drug resistances in a short period. For example, changes in chromosome ploidy (e.g. from diploid to haploid) can result in the loss of sensitive genes, contributing to multi-drug resistance. This suggests a strong link between ploidy and resistance[^14].
 
-To control individual diversity within the cluster, we introduced the meiosis-inducing gene Ime1(BBa_250R9OVR) under the control of a pTet2 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size analysis and PI staining observed under a microscope.
+To control individual diversity within the cluster, we introduced the meiosis-inducing gene IME1(BBa_250R9OVR) under the control of a pTet2 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size analysis and PI staining observed under a microscope.
 
 <div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig3-bax-ime.webp" style="width:80%">
@@ -120,7 +120,7 @@ Our project features two simple yet powerful visualization tools designed to tra
 
 Microscopic observation alone cannot determine the chronological relationship between two neighboring cells. To address this, we developed the **Timer** module, which visually records a single cell's life cycle in real-time. The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro), a modified-mCherry fluorescent protein, the Ash1 3'UTR, and the ScENO1terminator.
 
-Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the DeePromClass deep learning algorithm[^16], which initiates transcription during the late M phase[^17].Modified mCherry is a mutant that changes color over time from blue ( which has excitation/emission peaks of 403/466nm) to red (which has excitation/emission peaks of 583/606)[^18]. To ensure it is only expressed in daughter cells, we used the Ash1 3'UTR, which localizes the mRNA to the bud tip of dividing daughter cells[^19].Thus,
+Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the DeePromClass deep learning algorithm[^16], which initiates transcription during the late M phase[^17].Modified mCherry is a mutant that changes color over time from blue ( which has excitation/emission peaks of 403/466nm) to red (which has excitation/emission peaks of 583/606)[^18]. To ensure it is only expressed in daughter cells, we used the Ash1 3'UTR, which localizes the mRNA to the bud tip of dividing daughter cells[^19].Thus,the Timer begins to mature in the daughter cells produced after a cell division, thereby visualizing the life cycle.
 
 **Table: Spectral Properties of Modified mCherry**
 
