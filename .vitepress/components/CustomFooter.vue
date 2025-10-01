@@ -17,7 +17,7 @@
     <div class="footer-copyright">
       <!-- 左侧内容 -->
       <div class="copyright-left">
-        <p>© Fudan iGEM 2025</p>
+        <p>Grape Job!</p>
       </div>
       <!-- 右侧内容 -->
       <div class="copyright-right">
