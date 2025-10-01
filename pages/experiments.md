@@ -1,6 +1,6 @@
 ---
-Title: Experiments
-Author: 
+title: Experiments
+author: 
   - name: Yixuan Lu
     url: （先不填）
     avatar: （头像，先不填）
