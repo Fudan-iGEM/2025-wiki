@@ -4,9 +4,9 @@ authors:
   - name: Yue Yue
     url: （先不填）
     avatar: （头像，先不填）
-    layout: igem
-    heroImage: （拍摄并且选取页面图像，作为顶部展示）
-    description: （页面描述）
+layout: igem
+heroImage: （拍摄并且选取页面图像，作为顶部展示）
+description: （页面描述）
 ---
 
 ### Introduction
@@ -31,9 +31,13 @@ To achieve this, we applied the **24Model systems framework**, systematically id
 
 As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis Report**, available in the PDF below. We hope it will offer future iGEM teams and laboratory practitioners a systematic perspective on lab safety, as well as fresh insights for building safer research environments.
 
-<iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="600px" style="border: none;">
-  <p>Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf">Download the PDF</a>.</p>
-</iframe>
+<div style="position: relative; width: 100%; height: 600px;">
+  <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="100%" style="border: none;">
+  </iframe>
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none;" id="pdf-fallback-1">
+    Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf">Download the PDF</a>.
+  </div>
+</div>
 
 #### Comprehensive Table of Laboratory Safety Evaluation Dimensions (24Model Framework)
 
@@ -44,9 +48,13 @@ As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis
 | **Organizational Level** | Safety Management System (SMS)  | - Organizational Structure Gaps - Responsibility Allocation Gaps - Procedural/Documentation Deficiencies - Resource Management Deficiencies - Training Deficiencies | **Root causes** of accidents. These reflect systematic weaknesses in management, regulations, procedures, and resources. |
 |                          | Safety Culture                  | - Value of Safety - Belief that Accidents Are Preventable - Safety as Good Practice - Leadership & Oversight Responsibility - Personnel Safety Performance | **Fundamental root causes** of accidents. Safety culture represents the deepest level of influence, shaping whether safety is prioritized, embedded, and sustained across the organization. |
 
-<iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="600px" style="border: none;">
-  <p>Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf">Download the PDF</a>.</p>
-</iframe>
+<div style="position: relative; width: 100%; height: 600px;">
+  <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="100%" style="border: none;">
+  </iframe>
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none;" id="pdf-fallback-2">
+    Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf">Download the PDF</a>.
+  </div>
+</div>
 
 ### Our Laboratory Safety
 
