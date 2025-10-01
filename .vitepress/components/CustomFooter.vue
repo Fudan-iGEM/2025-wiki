@@ -8,9 +8,7 @@
     </div>
     <div class="footer-sponsors">
       <!-- img src="https://static.igem.wiki/teams/5643/img/sponsor.svg" alt="sponsors" /-->
-      <a href="https://www.yfc.cn/" target="_blank"><img src="https://static.igem.wiki/teams/5115/czh/yf-lyh.svg" alt="yfc.cn"></a>
-      <a href="https://www.fudan.edu.cn/en/" target="_blank"><img class="logo" src="https://static.igem.wiki/teams/5115/czh/fudan-lyh.svg" alt="www.fudan.edu.cn"></a>
-      <a href="https://life.fudan.edu.cn/main.htm" target="_blank"><img class="logo" src="https://static.igem.wiki/teams/5115/czh/life-lyh.svg" alt="life.fudan.edu.cn"></a>
+<a href="https://www.yfc.cn/" target="_blank"><img style="width:256px" src="https://static.igem.wiki/teams/5115/czh/yf-lyh.svg" alt="yfc.cn"></a>&nbsp;&nbsp;<a href="https://www.fudan.edu.cn/en/" target="_blank"><img style="width:256px" src="https://static.igem.wiki/teams/5115/czh/fudan-lyh.svg" alt="www.fudan.edu.cn"></a>&nbsp;&nbsp;<a href="https://life.fudan.edu.cn/" target="_blank"><img style="width:256px" src="https://static.igem.wiki/teams/5115/czh/life-lyh.svg" alt="life.fudan.edu.cn"></a>
     </div>
 
     <!-- 版权信息区域 -->

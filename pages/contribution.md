@@ -13,7 +13,7 @@ description: On this page, we
 
 ### Bronze
 
-- We successfully complete the following Competition Deliverables: [Wiki](/), Presentation Video, [Safety Form](https://teams.igem.org/5643/safety), [Attributions Form](https://teams.igem.org/5643/attributions), [Judging Form](https://teams.igem.org/5643/judging) and in-person Judging Session at Paris.
+- We successfully complete the following Competition Deliverables: [Wiki](/), Presentation Video, [Safety Form](https://teams.igem.org/5643/safety), [Attributions Form](https://teams.igem.org/wiki/5643/attributions), [Judging Form](https://teams.igem.org/5643/judging) and in-person Judging Session at Paris.
 - We carefully describe what work our team members did and what other people did for our project at [Attributions](/attributions/).
 - We describe how and why we chose our iGEM project on our [Description](/description/) page.
 - We document our [Contribution](/contribution/) for future iGEM teams, one example is @@@@.
