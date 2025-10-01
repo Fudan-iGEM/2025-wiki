@@ -2,10 +2,10 @@
 title: Parts
 authors:
   - name: Peining Wu
-    url: /team/#wu-peining
+    url: /fudan/team/#wu-peining
     avatar: （头像，先不填）
   - name: Zhiqin Wang
-    url: /team/#wang-zhiqin
+    url: /fudan/team/#wang-zhiqin
     avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jp
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）

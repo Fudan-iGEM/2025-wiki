@@ -2,7 +2,7 @@
 title: Education
 authors:
   - name: Huizhen Du
-    url: /team/#du-huizhen
+    url: /fudan/team/#du-huizhen
     avatar: （头像，先不填）
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
@@ -1060,7 +1060,7 @@ This reflective practice feeds back into the ecosystem, enabling us to **refine 
 
 Ultimately, what we gained went far beyond subject expertise. We learned how to co-create with diverse groups, how to design for scalability and empathy, and how to turn criticism into better design. These insights represent the most valuable outcome of our education journey—one that we now share proudly as part of our iGEM legacy.
 
-## summary
+## Summary
 
 Our education initiative is built on the **Constructionism** learning theory and implemented through our unique **"Triple P" framework**: **Play → Practice → Produce**.
 
@@ -1068,7 +1068,7 @@ We **sparked curiosity** through interactive games, urban challenges (SynbioSH),
 
 All activities were **co-created with our community** through interviews with teachers, academics, and students. We designed our projects for **long-term impact**, creating reusable materials to ensure our educational legacy continues beyond iGEM.
 
-
+## Reference
 
 [^1]: Muñoz-Losa, A., Corbacho-Cuello, I. Impact of Interactive Science Workshops Participation on Primary School Children's Emotions and Attitudes Towards Science. *Int J of Sci and Math Educ* (2025). https://doi.org/10.1007/s10763-024-10539-2
 [^2]: Master A, Cheryan S, Moscatelli A, Meltzoff AN. Programming experience promotes higher STEM motivation among first-grade girls. J Exp Child Psychol. 2017 Aug;160:92-106. doi: 10.1016/j.jecp.2017.03.013. Epub 2017 Apr 21. PMID: 28433822.

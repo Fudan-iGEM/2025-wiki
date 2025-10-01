@@ -7,7 +7,10 @@
       </div>
     </div>
     <div class="footer-sponsors">
-      <img src="https://static.igem.wiki/teams/5643/img/sponsor.svg" alt="sponsors" />
+      <!-- img src="https://static.igem.wiki/teams/5643/img/sponsor.svg" alt="sponsors" /-->
+      <a href="https://www.yfc.cn/" target="_blank"><img src="https://static.igem.wiki/teams/5115/czh/yf-lyh.svg" alt="yfc.cn"></a>
+      <a href="https://www.fudan.edu.cn/en/" target="_blank"><img class="logo" src="https://static.igem.wiki/teams/5115/czh/fudan-lyh.svg" alt="www.fudan.edu.cn"></a>
+      <a href="https://life.fudan.edu.cn/main.htm" target="_blank"><img class="logo" src="https://static.igem.wiki/teams/5115/czh/life-lyh.svg" alt="life.fudan.edu.cn"></a>
     </div>
 
     <!-- 版权信息区域 -->
@@ -20,7 +23,7 @@
       <div class="copyright-right">
         <!-- Content on this site is licensed under a Creative Commons Attribution 4.0 International license -->
         <p>The repository used to create this website is available at <a class="footer-copyright-link" href="https://gitlab.igem.org/2025/fudan/" target="_blank">gitlab.igem.org/2025/fudan/</a>.</p>
-        <p>Contact us <a href="mailto:igem@fudan.edu.cn" target="_blank">igem@fudan.edu.cn</a></p>
+        <p>Contact us&nbsp;&nbsp; <a href="mailto:igem@fudan.edu.cn" target="_blank">igem@fudan.edu.cn</a></p>
       </div>
     </div>
   </div>

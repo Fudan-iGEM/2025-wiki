@@ -2,7 +2,7 @@
 title: Description
 authors:
   name: Zuyao Wu
-  url: /team/#wu-zuyao
+  url: /fudan/team/#wu-zuyao
   avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
 layout: igem
 heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"

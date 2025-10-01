@@ -2,7 +2,7 @@
 title: Experiments
 author: 
   - name: Yixuan Lu
-    url: /team/#lu-yixuan
+    url: /fudan/team/#lu-yixuan
     avatar: （头像，先不填）
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）

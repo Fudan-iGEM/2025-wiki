@@ -2,7 +2,7 @@
 title: Part Collection
 authors:
   - name: Peining Wu
-    url: /team/#wu-peining
+    url: /fudan/team/#wu-peining
     avatar: （头像，先不填）
 layout: igem （勿动）
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
@@ -129,7 +129,7 @@ Table 3: Homologous Arm Integration Collection for Saccharomyces cerevisiae
 | BBa_25O0GI56 | HR3'\_CAF_chr14R  |     Int.16:ChrXIV:84390-84957     |
 
 
-----
+## Reference
 
 [^1]: Hodgins-Davis, Andrea et al. “Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*.” *Proceedings of the National Academy of Sciences of the United States of America* vol. 116,42 (2019): 21085-21093. doi:10.1073/pnas.1902823116
 [^2]:Shaw, William M et al. “A Multiplex MoClo Toolkit for Extensive and Flexible Engineering of *Saccharomyces cerevisiae*.” *ACS synthetic biology* vol. 12,11 (2023): 3393-3405. doi:10.1021/acssynbio.3c00423

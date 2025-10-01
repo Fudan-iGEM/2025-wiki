@@ -2,7 +2,7 @@
 title: entrepreneurship
 authors:
   - name: Xiuqi Tian
-    url: /team/#tian-xiuqi
+    url: /fudan/team/#tian-xiuqi
     avatar: （头像，先不填）
 layout: igem 
 heroImage: （拍摄并且选取页面图像，作为顶部展示）

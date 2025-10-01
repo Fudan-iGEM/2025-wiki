@@ -2,8 +2,11 @@
 title: Model
 authors:
   - name: Jihua Tang
-    url: /team/#tang-jihua
+    url: /fudan/team/#tang-jihua
     avatar: （头像，先不填）
+  - name: Yue Yue
+    url: /fudan/team/#yue-yue
+    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jp
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
 description: On this page, we
