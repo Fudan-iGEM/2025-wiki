@@ -1,167 +1,189 @@
 ---
 title: Sustainable
-author:
-  name: Ruiwen Ma
-  url: /fudan/team/#ruiwen-ma
+authors:
+  - name: Zuyao Wu
+    url: （先不填）
+    avatar: （头像，先不填）
 layout: igem
-heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
+heroImage: （拍摄并且选取页面图像，作为顶部展示）
+description: （页面描述）
+
 ---
 
-[MINERAL](/fudan/description/) tones in with multiple [Sustainable Development Goals (SDGs)](https://sdgs.un.org/goals) across a wide spectrum, contributing to a more sustainable and equitable future.
+## Overview
 
-<div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5115/sdgs/sdg-9-trans.png" style='width:50%'>
-    <div>
-        <span style="color:gray">Our project tones in with 9 of the 17 SDGs</span>
-        <br><br>
-    </div>
-</div>
+Fungal infections are an increasing public health concern with common infections growing increasingly resistant to treatment. Everyone is a potential stakeholder, yet immuno-compromised individuals and rare disease patients bear a disproportionate risk.
 
-<br>
+We identified the **long-term social, economic, and environmental implications** of fungal resistance and reshaped our actions based on continuous dialogue with multiple stakeholders. With the Sustainable Development Goals (SDGs) as our guiding framework, we aligned our project to **SDG from DR. sTraTeGY**, meaning that we:
 
-## Sustainable Development by Nickel Recycling
+- **Safeguard** health and well-being (SDG 3) through new models to study anti-fungal resistance and by amplifying vulnerable voices.
+- **Deliver** quality education (SDG 4) through playful, practice-based, and production-oriented activities reaching diverse communities.
+- **Grow** partnerships for the goals (SDG 17) across borders, collaborating with universities, NGOs, and civil society to build open resources and lasting impact.
 
-Nickel, essential for electric vehicle batteries, is crucial for modern infrastructure and clean energy technologies. However, current recycling methods are inefficient and environmentally damaging, impeding progress toward sustainable development.
+------
 
-We develop a system that recycles nickel from waste and transforms it into harmless microparticles, minimizing the nickel industry's environmental impact and reducing the need for future nickel mining. This process aligns with the Sustainable Development Goals and supports bioremediation efforts, reinforcing our determination for a greener future.
+## **Safeguard**
 
-### SDG 7: Affordable and Clean Energy
+**SDG 3: GOOD HEALTH AND WELL-BEING**
+ *Ensure healthy lives and promote well-being for all at all ages*
 
-The 7th SDG emphasizes the need for reliable and sustainable energy solutions.
+Fungal infections are a growing global health threat. Our project seeks to reduce the health burden of fungal resistance through creating new platforms for anti-fungal resistance study and by amplifying the voices of vulnerable groups, building an inclusive community for those related.
 
-[MINERAL](/fudan/description/) transforms nickel into harmless microparticles, making it affordable and environmentally friendly for future use. By simplifying the utilization of nickel, our project reduces costs associated with traditional nickel extraction and promotes a sustainable approach to clean energy.
+------
 
-<div style="text-align: center;" id="fig2">
-    <img src="https://static.igem.wiki/teams/5115/sdgs/sdg-microfactory.png" style='width:100%'>
-    <div>
-        <span style="color:gray">We built a micro-factory by transforming nickel into harmless microparticles.</span>
-        <br><br>
-    </div>
-</div>
+### Problem Identification
 
-Please refer to [Implementation](/fudan/implementation/) for more information.
+**Problem 1 – Marginalized voices in healthcare**
+Patients with EB and other rare conditions frequently suffer fungal infections, yet their lived experiences are rarely integrated into biomedical research or treatment design due to insufficient data and high costs.
 
-### SDG 9: Industry, Innovation and Infrastructure
+**Problem 2 – Psychosocial and economic burdens**
+Beyond the physical disease, patients encounter stigma, emotional isolation, and heavy financial costs, which remain under-addressed in healthcare systems.
 
-The 9th SDG aims to build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation.
+------
 
-[MINERAL](/fudan/description/) makes recycling nickel energy-efficient, which supports the development of advanced technologies and infrastructure, particularly in regions where resource scarcity and environmental degradation pose significant challenges. We contacted a battery recycling company, and they saw real potential in our project for making a positive impact in the industry, supporting infrastructure growth while protecting our planet's resources.
+### Our Actions and Solutions
 
-Below is a photo taken while our team reaching out to a battery company and gettting their feedbacks. Please refer to [Entrepreneurship](/fudan/entrepreneurship/) for more information.
+**Solution to Problem 1– Visibility**
 
-<div style="text-align:center;height:288px" id="fig3">
-    <img src="https://static.igem.wiki/teams/5115/sdgs/battery.jpg" style="width:100%;transform:translate(0,-45%);">
-    <!-- div>
-    	<span style="color: gray">Our team reached out to a battery company, introduced our project, and got feedbacks.</span>
-        <br><br>
-    </div -->
-</div>
+To address the absence of patient perspectives in biomedical research, we created platforms that repositioned EB patients and families from “subjects” to “co-creators.” Through participatory mapping, patients, elderly participants, and transplant recipients used drawings, colors, and metaphors to articulate challenges such as hospital stigma, difficulties in drug administration, and diagnostic delays. These lived insights were not left as anecdotes but directly fed back into our yeast-based antifungal resistance research, ensuring that scientific priorities reflected the realities of those most affected. Similarly, the PhotoVoice and Science of Healing exhibition enabled patients, doctors, and scientists to share stories and simulate barriers—such as restricted mobility during pipetting—bridging the gap between clinical research and patient experience.
 
-<br>
+**Solution to Problem 2– Diverse Engagement**
 
-### SDG 12: Responsible Consumption and Production
+To confront the stigma, emotional isolation, and financial strain faced by EB families, we facilitated creative, community-driven engagements. At a charity art fair, patients contributed handmade artworks and crafts, raising over 500 RMB while transforming their role from “patients” into “creators.” This act of visibility not only generated modest economic support but also fostered dignity and recognition within society. The PhotoVoice narratives and interactive exhibitions further helped dismantle stigma by making hidden struggles visible to broader audiences, while participatory mapping created safe spaces for expression. Together, these initiatives addressed the psychosocial dimensions of EB, offering families both material support and the affirmation that their voices matter in shaping healthcare solutions.
 
-The 12th SDG calls for sustainable patterns in how we use resources and manage waste, aiming to minimize the environmental impact of production and consumption.
+For more information, please check our [Inclusivity page](/Inclusivity/).
 
-[MINERAL](/fudan/description/) supports responsible consumption by making nickel recovery eco-friendly. It also contributes to sustainable production by providing a more reliable and less destructive alternative to traditional nickel production. This will foster a circular economy and promote more responsible practices in resource management.
+------
 
-<div style="text-align: center;" id="fig4">
-    <img src="https://static.igem.wiki/teams/5115/sdgs/description-fig4.png" style="width:100%">
-    <div>
-        <span style="color:gray">Our project, MINERAL, has modified <em>E. coli</em> to enhance its ability to absorb Ni<sup>2+</sup> from water and convert them into microparticles, thereby achieving eco-friendly nickel recovery. </span>
-        <br><br>
-    </div>
-</div>
+### Long-term Positive Impacts
 
-<br>
+- **Social**: Reduced stigma by amplifying patient voices and normalizing open conversations around fungal infections.
+- **Economic**: Highlighted antifungal drug cost barriers, promoting awareness of the need for more affordable solutions.
+- **Scientific**: Patient feedback reshaped our synthetic biology design, ensuring that future antifungal tools align with real-world needs.
 
-## Sustainable Development by Stopping Nickel Pollution
+------
 
-Nickel is a major pollutant due to inefficient recycling practices and destructive mining methods. [MINERAL](/fudan/description/) is a system that recovers and transforms nickel into harmless microparticles and addresses this issue head-on.
+### Possible Negative Impacts
 
-### SDG 6: Clean Water and Sanitation
+- Without long-term institutional support, patient engagement may risk tokenization.
+- Visibility campaigns alone may raise awareness but not guarantee improved treatment access.
+- Managing sensitive narratives (rare disease, children) requires strong ethical safeguards.
 
-The 6th SDG emphasizes the availability and sustainable management of water and sanitation for all.
+------
 
-[MINERAL](/fudan/description/) offers a more energy-efficient and eco-friendly approach compared to traditional, wasteful recycling processes, reducing the harmful environmental impact of nickel mining and industrial wastewater. [MINERAL](/fudan/description/) supports cleaner water and better sanitation, directly advancing global efforts to ensure sustainable water management and protect our water resources for future generations.
+### Stakeholder Feedback
 
-### SDG 14: Life Below Water
+Participants affirmed the value of our sensory-friendly research methods. They noted that the use of colors allowed them to “express more precisely,”  and articulate aspects of their illness that were previously “hard to put into words.” Building on this feedback, we developed a **Sensory-Friendly Research Toolkit**, designed to make such participatory approaches replicable in broader contexts.
 
-The 14th SDG targets at conserving and sustainably using the oceans, seas, and marine resources.
+## **Deliver**
 
-Mining and industrial processes release nickel into rivers, lakes, and oceans, leading to severe pollution that harms aquatic life and disrupts marine food chains. [MINERAL](/fudan/description/) helps mitigate the toxic effects of nickel in oceans and protect marine biodiversity, maintaining the health of our oceans.
+**SDG 4: QUALITY EDUCATION**
+ *Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all*
 
-We also recognized that releasing *E. coli* into the water body could harm aquatic life. We prioritize safety by studying the behavior of *C. elegans*; they show no significant abnormalities when consuming our microparticles and microbes (*E. coli* + hydrogenase) but are affected in nickel-rich growth media. Please refer to [Safety](/fudan/safety/) for more information.
+Fungal infections and synthetic biology are both areas where public awareness remains limited. To achieve sustainable health solutions, it is essential not only to advance science in the lab, but also to foster a society that understands, values, and engages with these innovations.
 
-Additionally, we've developed hardware that allows *E. coli* to grow on fibers, preventing its spread in water, and effectively addressing metal issues while avoiding creating new problems. Please refer to [Hardware](/fudan/hardware/) for more information.
+------
 
-<div style="text-align: center;" id="fig5">
-    <img src="https://static.igem.wiki/teams/5115/sdgs/celegan-fibre-ni-pic.png" style='width:80%'>
-    <div>
-        <span style="color:gray">Besides recycling nickel from water, we also use <em>C. elegans</em> to test biosafety and make <em>E. coli</em> grow on fibers to prevent its spread.</span>
-        <br><br>
-    </div>
-</div>
+### Problem Identification
 
-<br>
+**Problem #1 – Limited understanding of fungal threats**
+Most people are unaware of the severity of fungal infections or anti-fungal resistance, leaving prevention and early intervention underdeveloped.
 
-## Sustainable Development by Inclusive Education
+**Problem #2 – Unequal access to synthetic biology education**
+Knowledge of synthetic biology is concentrated in elite institutions. Primary and secondary school students, as well as non-academic communities, often lack accessible learning materials.
 
-### SDG 4: Quality Education
+**Problem #3 – Low engagement formats**
+Traditional lectures and texts fail to engage young learners or general audiences, creating barriers to effective science communication.
 
-The 4th SDG is the cornerstone that enables the achievement of many Sustainable Development Goals.
+------
 
-We focus on delivering biology education across the K-12 spectrum, actively gathering feedback from students to refine our methods in each teaching session continually. Please refer to [Education](/fudan/education/) for more information. The photo below shows a team member is delivering biology education in a primary school.
+### Our Actions and Solutions
 
-<div style="text-align:center;overflow:hidden;height:435px;" id="fig6">
-    <img src="https://static.igem.wiki/teams/5115/sdgs/quality-education.jpg" style="width:100%;transform:translate(0,-10%);">
-    <!-- div><span style='color: gray;'>
-      Fudan iGEM 2024 is delivering biology education in a primary school.
-    </span>
-    <br><br>
-    </div -->
-</div>
+**Solution to Problem 1– Spreading knowledge to every age group**
 
-We believe that education should embrace inclusivity, ensuring that no one is excluded from scientific learning due to barriers like physical conditions and imbalanced resources. We recognized that many autistic individuals possess the cognitive abilities to grasp scientific concepts but their potentials are constantly ignored because they usually don't give active feedback in ordinary lectures. Therefore, we developed specialized [STEAMed](/fudan/inclusivity/#STEAMed) programs tailored to them. We strive to create more engaging and interactive teaching approaches to meet their unique needs—an area currently underserved by existing educational resources.
+To address the inadequate knowledge of fungal threats, we developed innovative educational tools tailored to different age groups. Together with AFMU-China, we co-created a children’s picture book *My Microbial Friend*, which personifies microbes such as yeast, *E. coli*, and viruses to make microbiology approachable for young readers. The book was accompanied by a parent’s guide that encourages intergenerational learning by linking microbes to daily life. In parallel, we designed “Rumor Stopping” workshops for seniors and, in collaboration with Jilin University, produced a science handbook to help the public recognize and debunk misinformation about biotechnology.
 
-<div style="text-align: center;" id="fig7">
-    <img src="https://static.igem.wiki/teams/5115/sdgs/inclu-3.jpg" style="width:100%">
-    <div>
-    	<span style="color: gray">Our team member, Kexin Zheng, is using interactive approaches to teach an autistic girl scientific concepts.</span>
-        <br><br>
-    </div>
-</div>
+**Solution to Problem 2– Equal and accessible education**
 
-Furthermore, we strongly emphasize modular teaching tools and digital transformation, enabling our educational methods to reach a bigger audience with greater ease. Please refer to [Inclusivity](/fudan/inclusivity/) for more information.
+To overcome limited access to synthetic biology education, we reached out to underprivileged communities that are often excluded from advanced science education. Partnering with the Sunflower education center, we designed two hands-on classes for migrant children—one on genes and proteins, and another on fermentation—delivered through storytelling, simple experiments, and games. We also collaborated with the Communist Youth League to bring synthetic biology classes to remote rural schools, directly addressing the education gap faced by students in under-resourced areas. By lowering entry barriers and ensuring inclusivity, we helped empower children who rarely have the chance to encounter synthetic biology in their regular curriculum.
 
-### SDG 11: Sustainable Cities and Communities
+**Solution to Problem 3– Interactive Engagement**
 
-The 11th SDG aims at making cities and human settlements inclusive, safe, resilient, and sustainable.
+To tackle the issue of low attractiveness of traditional education formats, we transformed learning into interactive experiences. We created games such as “Microbial Squat,” adapted from a popular children’s activity, to help students internalize microbial diversity through movement, and role-playing exercises to demonstrate how genes become proteins. Together with ShanghaiTech and Shanghai Jiao Tong University, we launched SynbioSH, a city-wide orienteering game in which participants solved biology puzzles at urban landmarks, turning the city into a living classroom. Additionally, through the Torch Plan, we partnered with education students to co-develop interactive slide decks for young learners, translating complex topics like anti-fungal resistance into playful and accessible formats. These approaches significantly enhanced engagement, transforming abstract knowledge into memorable experiences.
 
-As urban populations surge and cities expand rapidly, the pressure on infrastructure and resources intensifies. [MINERAL](/fudan/description/) addresses this issue by recycling nickel—a critical component in urban infrastructure.
+---
 
-In addition, our inclusive education spreads knowledge among diverse communities. By offering tailored [STEAMed](/fudan/inclusivity/#STEAMed) programs and modular teaching tools, we aim to empower students across various backgrounds, contributing to a more sustainable community for all. Please refer to [Education](/fudan/education/) and [Inclusivity](/fudan/inclusivity/) for more information.
+### Long-term Positive Impacts
 
+- **Social:** Normalizes conversations about fungi and rare diseases among children and youth, reducing stigma and misinformation.
+- **Educational:** Provides novel, creative learning tools (illustrative storybooks, games, workshops) that can be adopted by schools and iGEM teams globally.
+- **Global:** Strengthens cross-border science communication and nurtures a generation of students who see biology as collaborative and socially embedded.
 
-## Sustainable Development by Incorporation
+------
 
-### SDG 8: Decent Work and Economic Growth
+### Possible Negative Impacts
 
-The 8th SDG appeals to promoting sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.
+- Without institutional uptake, materials risk being one-time interventions rather than sustainable curriculum.
+- Games and books, if not updated, may lag behind scientific advances and inadvertently spread outdated concepts.
+- Language barriers may limit accessibility across non-English-speaking communities.
 
-The implementation of [MINERAL](/fudan/description/) creates new job opportunities in the fields of biotechnology and environmental management. By fostering partnerships with industry leaders, we support a vibrant job market and contribute to the growth of the green economy. Companies invest significant resources to comply with environmental regulations. By using [MINERAL](/fudan/description/), they can save money and redirect those funds into investments and other areas. This ultimately contributes to economic growth.
+------
 
-Please refer to [Human Practices](/fudan/human-practices/) and [Entrepreneurship](/fudan/entrepreneurship/) for more information.
+### Stakeholder Feedback
 
-### SDG 17: Partnerships for the Goals
+- **Teachers (n=12)** noted that interactive formats (story + play) significantly improved student engagement compared to standard lectures.
+- **Students (surveyed n=103)** reported that the board game helped them “feel” the struggle of antifungal resistance, making abstract concepts tangible.
+- **International partners** encouraged us to document and share all materials openly, leading us to publish both the book and board game instructions online.
 
-The 17th SDG encourages strengthening the means of implementation and revitalizing [the Global Partnership](https://sdgs.un.org/goals/goal17) for Sustainable Development.
+------
 
-Our initiative to develop a biological solution for nickel recycling relies on strong, multi-faceted collaborations. Recognizing that a single team cannot tackle global challenges alone, we actively engage with a diverse network of stakeholders.
+## **Grow**
 
-We have forged valuable partnerships with industry leaders, academic experts, and other iGEMers who share the same aim with us to Refine our technology and understand market dynamics. Our collaboration with a battery recycling company has provided practical insights, enhancing the feasibility of our project. We also aim to raise awareness and garner support for our mission through promotional activities.
+**SDG 17: PARTNERSHIPS FOR THE GOALS**
+ *Strengthen the means of implementation and revitalize the global partnership for sustainable development*
 
-----
+Our project has long realized that addressing global challenges requires strong partnerships across borders, disciplines, and sectors. Therefore, we positioned partnership not as an auxiliary activity, but as a central methodology, to ensure that fungal health research is inclusive, trans-disciplinary, and socially embedded.
 
-All in all, our project, [MINERAL](/fudan/description/), contributes to the achievement of many of the UN Sustainable Development Goals, in many ways. We focus on nickel recycling, promoting clean energy, responsible consumption, and biosafety below water. Besides, we foster inclusive education and reach out to partnerships, ultimately supporting a greener and more sustainable future.
+------
+
+### Problem Identification
+
+**Problem #1 – Marginalized communities excluded**
+Rare-disease groups such as EB (epidermolysis bullosa) families are often treated as beneficiaries, not co-creators, in scientific projects.
+
+**Problem #2 – Limited cross-sector dialogue:****
+Academic teams frequently miss the chance to partner with civil society, educators, and artists who could help transform complex science into inclusive narratives.
+
+------
+
+### Our Actions and Partnerships
+
+**Solution to Problem 1– Partnerships with Rare Disease Communities**
+
+Through our Intersectional Echoes framework, we worked closely with EB patients and families. These partnerships were bidirectional: patients shared lived experiences (treatment pain points, stigma, economic barriers), while we co-developed participatory mapping and PhotoVoice toolkits that gave their voices scientific and social visibility.
+
+**Solution to Problem 2– Cross-sector Collaborations**
+
+Our project partnered with artists, social workers, and educators to co-create activities such as art fundraising fairs, the *Science of Healing* exhibition, and interactive toolkits. We also collaborated with Georgia Institute of Technology in the outreach education of multicellular yeast growth and the usage of yeasts in our daily life. These collaborations allowed synthetic biology to intersect with art, education, and advocacy, ensuring that knowledge circulates outside the lab and reaches wider publics.
+
+------
+
+## Long-term Positive Impacts
+
+- **Scientific:** International and local iGEM partnerships enriched the design of our multicellular yeast model by situating it in a well-discussed research atmosphere.
+- **Social:** By involving EB communities as partners, not subjects, we developed sustainable practices for inclusive science.
+- **Educational:** Cross-sector collaborations produced open-access storybooks, games, and participatory toolkits that can be reused by future iGEM teams and NGOs.
+
+------
+
+## Stakeholder Feedback
+
+- **EB families** affirmed that our participatory mapping toolkit captured struggles (like swallowing antifungal pills) often invisible in standard surveys, validating the value of co-creation.
+- **Collaboration partners**  highlighted that our yeast chassis could serve both as a research tool and as an educational case, encouraging us to share documentation openly.
+- **Artists and educators** stressed that creative formats (PhotoVoice, exhibitions) enabled broader audiences to understand fungal health, shaping how we designed future outreach.
+
+------
+
+## Conclusion
+
+Our project demonstrates that fighting anti-fungal resistance requires more than science alone. It demands empathy, education, and broad cooperation. By safeguarding health, delivering education, and growing partnerships, **SDG from DR. sTraTeGY** embodies iGEM’s responsibility to help achieve the SDGs—creating not only innovative tools but also inclusive and lasting impact. With SDGs in mind, we believe that the science community will always be endeavoring on the journey of building bridges from the lab to lives, from classrooms to communities and from local to global.
