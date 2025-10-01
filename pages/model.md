@@ -42,13 +42,11 @@ This model is based on the following experimental settings:
 | **$dt_{min}$**      | Integration step size | 1.0                           | min      |
 | **$pulse_{widthmin}$** | Pulse duration | 15                               | min      |
 | **$pulse_{amp}$**   | Pulse amplitude                   | 1.0                              | -        |
-| **$k_{tx}$**        | Transcription rate                | 分段函数（详见下表）            | min⁻¹    |
 | **$k_{dm}$**        | mRNA degradation rate | \($\ln 2 / 10$\)                 | min⁻¹    |
-| **$k_{tl}$**        | Translation rate                  | 分段函数（详见下表）                       | min⁻¹    |
 | **$\tau_{Bmin}$** | C to B time constant       | 12.0                             | min      |
 | **$\tau_{Imin}$** | B to I time constant       | 45.0                             | min      |
 | **$\tau_{Rmin}$**  | I to R time constant       | 720.0                            | min      |
-| **$t_{12}^{(R)} $** | Red protein half-life      | 247.2                       | h        |
+| **$t_{12}^{(R)}$** | Red protein half-life      | 247.2                       | h        |
 | **$inherit_{frac,C}$** | Inheritance fraction of C-state protein | 1.0                           | -        |
 | **$k_B$**           | C to B rate constant         | \($1 / \tau_B$\)                 | min⁻¹    |
 | **$k_I$**           | B to I rate constant         | \($1 / \tau_I$\)                 | min⁻¹    |
