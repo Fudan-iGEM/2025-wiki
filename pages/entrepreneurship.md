@@ -1,432 +1,464 @@
 ---
-title: Entrepreneurship
-author:
-  name: Kexin Zheng
-  url: /fudan/team/#kexin-zheng
-layout: igem
-heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
+title: entrepreneurship
+authors:
+  - name: Xiuqi Tian
+    url: （先不填）
+    avatar: （头像，先不填）
+layout: igem 
+heroImage: （拍摄并且选取页面图像，作为顶部展示）
+description: How we commercialize Dr.sTraTeGY into a product for CROs.
 ---
 
 
-## Our Mission
 
-### Why
+## Summary
 
-We need nickel to sustain Earth's operations and reduce pollution from mining.
+### `Why`
 
-### How
+- The problem of antifungal resistance is rising fast in China, especially in the **Yangtze Delta region (a market share of  65.3 million)**.
+- Current tools like WGS are **expensive, slow, and static**—they miss the **real-time process** of resistance evolution.
+- CROs and pharma need **faster, quantitative, and easy-to-use platforms** to support antifungal drug development.
 
-Provide an eco-friendly method to absorb nickel from contaminated water.
+### **What**
 
-### What
+- **Dr.sTraTeGY = Kit + Software** for dynamic resistance tracking.
+- **Kit:** engineered yeast strains with fluorescent clocks + mutation probes + reagents.
+- **Software:** quantifies fluorescence, models resistance evolution, exports ready-to-publish reports.
+- **Pricing:** USD 18,000–38,000 per package; optional customization & service contracts.
 
-Mass-produced nickel-absorbing bacterial cleaner for water bodies.
+### **How**
 
-Below is our [business plan](https://static.igem.wiki/teams/5115/entrepreneurship/pdf2.pdf).
+- Structured in **three phases (2025–2029+)**, focusing on pilot testing in the Yangtze Delta, national expansion, and eventual exit opportunities.
 
-<PDF url="https://static.igem.wiki/teams/5115/entrepreneurship/pdf2.pdf" page="1" width="100%" height="640px"/>
+- Strengthened by complementary strategies, including SaaS licensing for software IP, tiered pricing models, and third-party distribution channels.
 
-<div style="text-align: center;" id="pdf2">
-  <span style="color: gray">Business Plan of MINERAL</span>
-  <br><br>
-</div>
+- Backed by expert validation (Shanghai Stock Exchange Cup, SoftBank China CEO), prioritizing **IP protection, CRO partnerships, and targeted market segmentation.**
 
-## Identifying and Understanding Unmet Needs
+  
 
-### Growing Demand for Nickel
+## Our pre-research: What's happening in the Antifungal medication market?
 
-As global awareness of environmental protection increases, the demand for sustainable resource management and the reduction of industrial pollution is growing. According to estimates by [AsianMetal](#fig1), 4.4 to 4.6 million tons of nickel-containing scrap are collected annually, with a nickel content of nearly 350,000 tons, accounting for about 1/4 of the total nickel demand[^1]. The mining and production of nickel have caused significant environmental damage, including deforestation, soil erosion, and water pollution.
+####  One:  Take a look at the business landscape 
 
-<div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/fig1new.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 1: Nickel has a significant market demand.(data base from Wind, Baocheng Futures Financial Research Institute)</span>
-        <br><br>
-    </div>
-</div>
+ According to Fortune Business Insights, the global antifungal drugs market size is projected to reach **USD** **13.17 billion by 2027**, with a compound annual growth rate (CAGR) of **3.3%** during the forecast period*[1]*. With our estimation,the chinese antifungal drugs market accounts for 25% of the global share（3.29billion）.
 
-On the other hand, current global nickel reserves are struggling to meet the growing demand from electric vehicles and other high-tech products, increasing the risk of resource depletion. [Energy and Mineral Resources Ministry, ESDM](https://en.wikipedia.org/wiki/Ministry_of_Energy_and_Mineral_Resources) has pointed out that high-grade nickel ore with a content of over 1.7% can only sustain consumption for 7 to 10 years[^2]. The Earth needs an efficient nickel recycling technology to extend the lifespan of nickel resources and meet the ongoing demand for nickel in the future.
+ Since the advent of echinocandins, the worsening drug resistance crisis has made the development of antifungal drugs with entirely new mechanisms an urgent global need. 
 
-<div style="text-align: center;" id="fig2">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/newfig2.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 2: According to prediction, nickel will be exhausted in 24 years.(data base from USGS)</span>
-        <br><br>
-    </div>
-</div>
+ Moreover, current fungal infection treatments still face the following challenges, contributing to a significant market demand for new antifungal drugs:
 
-However, existing nickel recycling methods are inefficient, costly, and harmful to the environment. Given the surge in nickel demand, the market shows a strong willingness to invest in a new nickel recycling system that meets the pursuit of innovation and efficiency. As a result, we have identified the potential customers for the MINERAL product as industrial manufacturers utilizing nickel, including battery manufacturers, stainless steel producers, industrial wastewater treatment companies, mining companies, and electroplating companies.
+![The main causes of Antifungal  Drug Resistance](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic1.webp)
 
-<div style="text-align: center;" id="fig3">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/nicon.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 3: Nickel Consumption Structure</span>
-        <br><br>
-    </div>
-</div>
+ In addition, the continuous growth of the elderly population, the rising prevalence of chronic diseases, and the increasing number of immunocompromised patients are all closely linked to the high disease burden and demand for antifungal drugs within these target groups:
 
-<br>
+![High-Incidence Global Fungal Diseases in 2025](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic2.webp)
 
-<div style="text-align: center;" id="fig4">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/fig4new.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 4: Potential Customers</span>
-        <br><br>
-    </div>
-</div>
+- According to a study published in the *Journal of Microbiology, Immunology and Infection[2]*, patients who have recovered from COVID-19 face a significantly elevated risk of developing fungal respiratory infections. The incidence of invasive pulmonary aspergillosis (IPA) within the studied population ranged from 19.6% to 33.3%. Consequently, since 2021, there has been a sharp increase in demand for antifungal medications.
+- Based on data updated in September 2022 by the U.S. Centers for Disease Control and Prevention (CDC), onychomycosis (fungal infection of the fingernails and toenails) may affect up to 14% of the global population, with diabetic patients being particularly vulnerable. Among this group, dermatophytes (50%) and yeasts (30.8%) were identified as the most common cultured strains.
 
-<br>
+ While these factors underscore the rising strategic importance of antifungal drug development, it is necessary to examine **the practical process of antifungal drug** **R&D** in greater detail to better evaluate the market landscape and opportunities.
 
-### Competitive Analysis
+  
 
-We conducted competitive analysis with the most popular ways[^3].
+####  Two: why and who needs to study AMR ？
 
-<div style="text-align: center;" id="fig5">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/newfig5.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 5: Compare to Other Substitute Ways</span>
-        <br><br>
-    </div>
-</div>
+Currently, the preclinical R&D pipeline for antifungal drugs remains insufficiently robust. This is attributed to the lack of efficient and effective drug screening, which results in a relatively high attrition rate during early-stage drug innovation. Specifically, many drugs that appear promising in the preclinical phase fail in subsequent clinical trials due to various reasons, such as safety concerns and inadequate efficacy. The existing preclinical R&D pipeline is unable to offset the losses caused by these high attrition rates.
 
-<br>
+ Through our desk research, the R&D of a drug pipeline usually has five stages: Drug Discovery；Pharmaceutical Research；Preclinical Research；Clinical Trial；Approval and Marketing. AMR testing typically focuses on the phase of **pharmaceutical research.**
 
-## Our Possible, Scalable and Inventive Solution
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic3.webp)
 
-### Possibility of Our Product Strategy
+ In this stage, CRO usually take the responsibility of drug screening for Drug manufacturers. CRO stands for Contract Research Organization，companies that provides outsourced research services to pharmaceutical, biotechnology, and medical device firms. Therefore, they usually conduct specialized works including AMR tests that allow drug developers to reduce costs, accelerate timelines, and access specialized expertise without building everything in-house.
 
-#### 1. Competitiveness of MINERAL
 
-Our product is a bioengineered solution utilizing *E. coli* and cyanobacteria to efficiently recover nickel from industrial wastewater, transforming it into reusable nickel microparticles in an environmentally friendly manner[^4]. The visible nature of the product enhances its market appeal. Additionally, our production process has been optimized to maintain product quality and production efficiency as we scale up. These features ensure that our project meets scalability requirements while maintaining market competitiveness.
 
-<div style="text-align: center;" id="fig6">
-    <img src="https://static.igem.wiki/teams/5115/education-zkx/newfig7.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 6: Competitiveness of MINERAL</span>
-        <br><br>
-    </div>
-</div>
-<br>
+##  Making our solution possible，scalable and inventive
 
-#### 2. Product Lifecycle
+####  Core Technology
 
-Most importantly, our product simplifies the previously cumbersome industrial process using a highly innovative approach — no chemical reagents, and no molecular membrane filtration. The customers simply need to attatch the Gile Carbon Fiber following the product manual, and will be able to observe the valuable nickel being separated.
+At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture.
 
-<div style="text-align: center;" id="fig7">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/fig88new.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 7: Our Product Lifecycle</span>
-        <br><br>
-    </div>
-</div>
+![img](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
 
-<br>
+####  MVP (Minimum Viable Product)
 
-### Scalability of Our Operation Strategy
+ Our will deliver **Dr.sTraTeGY** to our clients as a **“Reagent Kit + Companion Software”** tool package, consisting of three parts.
 
-#### 1. Business Model and Core Product
+![toolkit of Dr.sTraTeGY](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic5.webp)
 
-In response to the identified unmet needs and the development progress of [MINERAL](/fudan/description/), we propose our product — [Gile Carbon Fiber](/fudan/hardware/#fig1) — accompanied by our unique monthly subscription service.
+ **Core Reagent Components**
 
-Traditional biological filtration devices often feature fixed structures and limited designs, which restrict their adaptability to the diverse requirements of wastewater treatment. In response to this challenge, we present our innovative product: Gile Carbon Fiber. This cutting-edge solution is based on carbon nanotube-agarose gel (aCNT) composite fibers, where carbon nanotubes provide a robust skeleton wrapped in agarose gel, creating a versatile composite structure.
+- Tree-like multicellular grape yeast strains (pre-installed with fluorescent molecular clock and GPCR circuit);
+- Multi-target mutation fluorescent probe set (covering common resistance-associated genes; customizable site-specific probes available);
+- Signal inducers (to regulate the GPCR circuit), fluorescent detection buffer, and other supporting reagents.
 
-Our product is designed for multiple applications. In industrial settings, our composite fiber-engineered bacteria mesh can be integrated into wastewater treatment systems, where engineered bacteria absorb and reduce nickel ions as wastewater flows through. In natural water bodies, we can weave the fibers into nets akin to fishing nets, which can be secured along riverbanks or wooden poles, allowing for natural purification.
+ **Data Analysis** **Software**
 
-Serving as a carrier for synthetic biology applications, our Gile Carbon Fiber enhances contemporary wastewater treatment technology. The reversible weaving process enables recycling and reuse, effectively extending the product's lifespan while reducing environmental impact. Furthermore, our fiber is characterized by low energy consumption. It not only recovers nickel but can also be adapted for the recovery of other heavy metals and general wastewater purification. With aCNT composite fibers, we offer an efficient, eco-friendly approach to wastewater treatment, paving the way for sustainable advancements in bioenergy and green chemistry.
+- Fluorescence Quantification Module: Automatically detects fluorescence intensity and calculates mutation rates;
+- Evolutionary Modeling Module: Generates evolutionary branching maps and mutation-generation prediction reports based on experimental parameters (e.g., drug concentration, culture time);
+- Data Export Module: Exports results in formats compatible with Excel, GraphPad, and other tools for easy figure and manuscript preparation.
 
-After purchasing our basic product, customers will receive free equipment installation and technical guidance. By paying a monthly membership fee, they can access our real-time wastewater treatment monitoring system, which provides optimization for improving product usage and reducing costs. By introducing engieered parts into *E. coli* to control the absorption and enrichment of nickel ions, we have [successfully](/fudan/results/#fig1) developed a product that significantly reduces nickel ion concentrations in water, validating the feasibility of our product.
+ **Auxiliary Tools:**
 
-<div style="text-align: center;" id="fig8">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/fig6.webp" style="width:100%">
-</div>
+- Microscope-adapted slides optimized for fluorescence imaging;
+- Standard Operating Manual;
+- Technical Support Service.
 
-<br>
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic6.webp)
 
-#### 2. Exit Strategy
 
-Our exit strategy is multifaceted, designed to maximize project value and ensure efficient resource allocation.
 
-It includes seeking mergers with wastewater treatment companies to leverage their market resources and accelerate the application of our technology. We also retain the option to sell patents and licenses to realize the commercial value of our intellectual property. Additionally, the project can be preserved as a startup opportunity to be pursued when market conditions are favorable. This strategy aims to maximize the project's value while laying the groundwork for future growth.
+##  Where our market is located: Unmet needs in the Yangtze Delta region
 
-### Inventiveness of Our Charging Strategy
+####  The gap in Critical Genetic Screening Approaches for Drug Resistance
 
-#### Special Monthly Membership Subscription
+ Currently, the escalation of fungal drug resistance and the lag in chassis organism models have led to a 24-year stagnation in the development of new classes of antifungal drugs.
 
-In addition to selling MINERAL's core products, we have introduced a **Monthly Membership Subscription service**.
+ The root cause of the inability to address the drug resistance issue lies in the lack of suitable chassis organisms, specifically because existing models have flaws. Single-cell systems cannot simulate the drug-resistant behaviors of biofilms or fungal populations.
 
-When customers subscribe to our service, they will receive a **basic backup** that includes a real-time wastewater monitoring system, which facilitates strategy optimization and further reduces costs.
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic7.webp)
 
-On this basis, we provide comprehensive maintenance services for our Gile Carbon Fiber.
+ The prerequisite for developing anti-resistance drugs is the **precise identification of resistance mutation sites.** However, traditional whole-genome sequencing (WGS) is costly, analytically complex, and faces four major challenges: lack of standardization, resource dependency, high expense, and ambiguous results. Therefore, we aim to leverage our technology to develop a toolkit that can track the evolutionary dynamics of fungal resistance under drug pressure.
 
-First, during the membership service period, we will offer a two-week supply of phage-resistant *E. coli* strains free of charge to ensure the stability of product function.
+####  Benchhead market
 
-Second, throughout the membership duration, customers can enjoy free maintenance and testing services for the Gile Carbon Fiber, similar to insurance. [See our capabilities](/fudan/safety/#project-risk-control). This minimizes the risk of production efficiency decline due to product aging, ensuring that customers' factories operate at peak performance at all times.
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic8.webp)
 
+ Located in the Yangtze River Delta (YRD) region, which includes Shanghai, Suzhou, and Hangzhou, this area is a hub for China’s biopharmaceutical industry, housing key players like WuXi AppTec and numerous innovative drug developers. Our decision to focus on this region is driven by four key factors:
 
-## Product Development Plans
+**Strong Industrial Cluster** The YRD region has developed a robust R&D cluster, particularly around Shanghai's Zhangjiang Medicine Valley and Suzhou BioBAY, which together represent 25% of China’s clinical-stage anti-fungal drug pipelines. Zhangjiang Medicine Valley supports a full industrial chain, including gene synthesis and preclinical validation. In 2024, the park’s technical transaction volume exceeded USD 210 million. We estimate an annual investment potential of USD 28 million in anti-fungal drug pipelines.
 
-### Milestones
+**Talent Pool** Led by Zhejiang University of Technology, the YRD Green Pharmaceutical Collaborative Innovation Center is supported by top-tier institutions such as Zhejiang University and the Shanghai Institute of Pharmaceutical Industry. With 190 members, including 15 high-level talents, such as Chinese Academy of Engineering members and recipients of the National Outstanding Youth Fund, the center offers extensive expertise across pharmaceutical engineering, pharmacodynamics, and toxicology—key to advancing antifungal drug R&D.
 
-#### Our First Try on Commercialization
+**Expanding Market** East China is the primary growth engine for China's anti-infective drug market, valued at USD 6.8 billion in 2023 (36.7% of the national market). Projected to exceed USD 8.4 billion by 2025, it is growing at an 8.2% CAGR. The YRD region alone sees over 2.8 million annual dermatology outpatient visits, with a high density of pharmacies, providing a vast market for antifungal drug development.
 
-In May 2024, we participated in the Fudan University Innovation and Entrepreneurship Competition.
+**Policy Support** The YRD Pharmaceutical Industry Collaborative Development Plan prioritizes the establishment of joint R&D platforms for anti-infective drugs and accelerates regulatory processes for new antibiotics and antifungal drugs. To date, 4 Class 1 new drugs have been approved through priority review, enhancing the speed of antifungal drug R&D implementation.
 
-The professional innovation and entrepreneurship instructors from our university conducted a comprehensive review of our business plan and provided us with valuable feedbacks. One suggesting is to quickly move beyond the laboratory phase and engage with businesses.
+ By embedding ourselves in this ecosystem, we will gain:
 
-<div style="text-align: center;" id="fig9">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/match.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 9: Participating in the Entrepreneurship Competition</span>
-        <br><br>
-    </div>
-</div>
+- Direct access to a concentrated customer base.
 
-We received the [Honourable Mention Award](https://mp.weixin.qq.com/s/tw9UTN5enW3R9KSMAoJnCg) in the competition, gaining not only recognition but also the confidence to accelerate our project. Thus, this summer, we reached out to the following business partners.
+- Opportunities for strategic partnerships with leading CROs.
 
-#### Our Current Business Partners
+- A thriving talent pool for recruitment and collaborative research.
 
-**1. U Power Tech**
+  
 
-Located in Xuhui district, Shanghai, [U Power](https://en.upower.com) is a startup company dedicated to integrating key power and control systems for electric vehicles into the chassis to facilitate car manufacturing. With a battery research and development team of up to 30 professionals, U Power possesses unique insights into the entire lifecycle of power batteries. After several interactions, U Power expressed significant interest in the MINERAL product.
+####  TAM, SAM, SOM Analysis 
 
-<div style="text-align: center;" id="fig10">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/upower.webp" style="width:50%">
-    <div>
-    	<span style="color: gray">Figure 10: U Power Tech, A Robust Startup</span>
-        <br><br>
-    </div>
-</div>
+ **TAM Analysis** The Yangtze River Delta accounts for 39.7% of China’s antifungal resistance testing market. Given that the national fungal infection diagnostics market is projected to reach **USD 3.29 billion** by 2027, and assuming antifungal resistance testing represents **5%**, the total national market would be approximately **USD 164.5 million**. Based on the regional share, the TAM in the Yangtze Delta is about **USD 65.3 million**.
 
-U Power hosted an investment promotion meeting for our project, where [Kexin](/fudan/team/#kexin-zheng) presented our business prospects to the attending company representatives.
+ **SAM Analysis** Our core target customers—CROs (70%) and research institutes/pharmaceutical R&D companies (30%)—represent **45%** of the market. Adjusting for geographic accessibility, where 20% of CROs remain difficult to reach, the SAM is estimated at **USD** **23.5 million**.
 
-<div style="text-align: center;" id="fig11">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/upre.gif" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 11: Team member Kexin Zheng is promoting our project</span>
-        <br><br>
-    </div>
-</div>
+ **SOM** **Analysis** In the presence of established competitors, a new entrant with technical, pricing, or network advantages could reasonably capture **20%** of the SAM, resulting in a SOM of approximately **USD** **4.7 million**.
 
-Participants not only highly praised our development potential and product design philosophy but also provided valuable suggestions for our marketing strategy: targeting electroplating and stainless steel manufacturing companies as our primary customer base, as these industries have a significant demand for nickel and the electroplating sector operates entirely in liquid environments, making their needs urgent and aligned with our product.
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic9.webp)
 
-Additionally, professionals from U Power's marketing department recommended positioning environmental protection and pollution control as our core concept and additional market focus, given that existing heavy metal pollution often spreads to water bodies with wide-ranging but low concentrations, and there are insufficient environmentally friendly and efficient methods to address this issue. Our low-cost, non-hazardous biological approach can fill these critical gaps.
+##  Crafting Our Strategic Path：analyzing our resources and stakeholders
 
-Furthermore, U Power recommended several closely related companies for potential collaboration:
+####  Product Advantages
 
-**2. GEM Factory**
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
 
-Upon the recommendation of U Power, we visited [GEM Factory](https://www.gem.com.cn), a developed company focused on the recycling of waste metal resources.
+####  PEST analysis
 
-<div style="text-align: center;" id="fig12">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/gem.webp" style="width:33%">
-    <div>
-    	<span style="color: gray">Figure 12: GEM, Recycling For Future!</span>
-        <br><br>
-    </div>
-</div>
+![Pest analysis](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic10.webp)
 
-GEM adheres to the development philosophy of *limited resources, unlimited recycling*, committed to *eliminating pollution and regenerating resources*. They promote a circular industrial culture aimed at achieving a harmonious integration of economic value, environmental value, and social responsibility, which aligns closely with our ideas and missions.
+####  Our stakeholders
 
-<div style="text-align: center;" id="fig13">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/productionlinenew.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 13: Control Center of Production Line in GEM</span>
-        <br><br>
-    </div>
-</div>
+ The stakeholder matrix is a widely used strategic tool to differentiate partners by their value contribution and engagement priority. Applying this framework, we identified three tiers:
 
-GEM expressed strong interest in our project and invited us to their key mineral resource recovery research institute in Jingmen, Hubei Province, China, for a tour and discussions on technical collaboration.
+![Stakeholder Analysis](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic11.webp)
 
-<div style="text-align:center;overflow:hidden;height:324px" id="fig14">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/confernew.webp" style="width:100%;transform:translate(0,-39%);">
-    <!-- div>
-    	<span style="color: gray">Figure 14: Exchanging Technical Details</span>
-        <br><br>
-    </div -->
-</div>
+- **Tier 1 (CROs):** Our primary focus. They hold the strongest purchasing power, have an urgent need for precise resistance tracking, and can rapidly validate our approach through pilot studies—making them ideal for early case studies.
+- **Tier 2 (*R&D* pharma** **and research institutions):** Critical for credibility and downstream influence. They strengthen intellectual property, support publications, and broaden application scenarios, creating mid-term strategic value.
+- **Tier 3 (Public health, regulators, and policy stakeholders):** Their benefits are societal and systemic, helping to drive market access, regulatory acceptance, reimbursement, and policy alignment. They typically come into play later or via partnerships.
 
-After assessing the actual conditions of GEM's production line, we quickly identified the most suitable processing phase for our [MINERAL](/fudan/description/) product. Consequently, we successfully reached a technical cooperation agreement and later received the relevant wastewater samples from GEM. After we got [results](/fudan/results/) and shared it with GEM, they conveyed even stronger willingness to carry out further cooperation with us.
+Of course. Here is the information organized into a table.
 
-<div style="text-align: center;" id="fig15">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/wastewater.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 15: Sample of Wastewater Sent by GEM</span>
-        <br><br>
-    </div>
-</div>
+| Tier                           | Stakeholder Type                                             | Representative Example                                       | Interests / Needs                                            | How DR.sTraTeGY Can Serve Them                               | Risks & Considerations                                       |
+| :----------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| **Tier 1 (Primary)**           | CROs in China                                                | Shanghai Medicilon Inc. — a leading R&D CRO based in Shanghai. | High-resolution, robust mutation/resistance data.<br />Reduced time & cost vs whole-genome sequencing.<br />Regulatory compliance, software/data export for analyses.<br />Good support / training. | <ul><li>Offers real-time tracking of resistance emergence and quantitative mutation rates.</li><li>Automation and software export help integrate into CRO workflows.</li><li>Modular/pre-installed reagents reduce set-up time.</li></ul> | <ul><li>Need to demonstrate cost/time advantages over NGS/WGS.</li><li>Learning curve, software usability, and microscope infrastructure.</li><li>Pricing must be acceptable vs. CRO project budgets.</li></ul> |
+| **Tier 2 (Secondary)**         | Other research institutions in YRD; Antifungal/Infectious Disease R&D pharma companies | Lizhu Pharmaceutical (cooperation on SG1001); Hansoh Pharma (partnership with SCYNEXIS). | Deep mechanistic insights to support drug candidate development.<br />Usage in preclinical models / early drug efficacy study.<br />Custom probe panels to monitor specific resistance genes.<br />Publication / translational outputs. | <ul><li>Provides detailed mutation mapping and simulates evolutionary pressure under drug concentrations.</li><li>Customizable panels allow tracking of relevant resistance mutations.</li><li>Software outputs usable for academic papers and regulatory dossiers.</li></ul> | <ul><li>Require extensive proof/validation due to long R&D timelines.</li><li>High expectations for data quality and reproducibility.</li><li>May require certification/regulatory-grade assays.</li></ul> |
+| **Tier 3 (Tertiary/Indirect)** | Patients; Local health authorities; Hospitals & diagnostic labs | Local CDC in YRD provinces; Hospital mycology labs in Shanghai/Zhejiang. | Better diagnostics and earlier detection of resistant strains.<br />Public health surveillance to track resistance emergence.<br />Hospitals want reliable assays with understandable metrics.<br />Patients want effective treatments. | <ul><li>Outputs could support hospital labs in diagnostics and inform clinicians.</li><li>Health authorities can use aggregated data for stewardship policies.</li><li>Potentially reduces treatment failures and hospital costs.</li></ul> | <ul><li>Slow adoption in hospitals; may lack equipment or trained staff.</li><li>Regulatory approvals (IVD) needed for diagnostic use.</li><li>Patient benefit is indirect and needs demonstrated clinical outcomes.</li></ul> |
 
-**3. Suzhou CPS**
 
-With the technical cooperation agreement with GEM as proof of our project's commercial capabilities, we further expanded our potential customers and partners by reaching out to [Suzhou In Times of Chemical Environmental Protection Equipment Technology](http://www.cps88.com) (hereafter referred to as CPS).
 
-<div style="text-align: center;" id="fig16">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/cps.webp" style="width:50%">
-    <div>
-    	<span style="color: gray">Figure 16: CPS, a Wastewater Treatment Company</span>
-        <br><br>
-    </div>
-</div>
+####  Team Members' capability
 
-Located in the Suzhou Industrial Park, CPS is a Sino-Dutch joint venture dedicated to providing one-stop solutions for industrial wastewater treatment. With 38 years of experience in the European environmental protection industry, their wastewater treatment equipment and projects are widely applied in sectors such as chemicals, dyeing, papermaking, metal surface treatment, and machining.
+ As a team with diverse backgrounds, we have members specialized in different areas，including: biology，Clinical Medical Science，software development，commercialization，public relations.
 
-<div style="text-align: center;" id="fig17">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/cps1new.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 17: CPS is sharing technical details</span>
-        <br><br>
-    </div>
-</div>
+ Dr. Meredith Belbin，the famous British management psychologist develop **the Belbin Team Roles Theory** in the 1970s. His framework identifies nine distinct roles individuals naturally adopt in teamwork. The core premise of the theory is that no single person possesses all the skills or traits needed for a team to succeed. And it is essential to ensure each iGEM team members’ roles align, complement each other in the commericalization of our product.
 
-<br>
+ Here is the visualization of our distribution of team roles of the 12 members:
 
-<div style="text-align: center;" id="fig18">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/cps2new.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 18: A Happy Ending for the Visit</span>
-        <br><br>
-    </div>
-</div>
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic12.webp)
 
-After visiting CPS's factory, we found that their medium-sized facility is ideally suited for the initial practical implementation of the MINERAL product. CPS extended an invitation for school-enterprise cooperation and expressed their desire to invest funds as soon as possible to pilot part of the production line. As on the wiki freeze day, MINERAL had finished the communication on the [first version](#pdf1) of the contract with CPS.
+####  SWOT Analysis
 
-<PDF url="https://static.igem.wiki/teams/5115/entrepreneurship/agreement2.pdf" page="1" width="100%" height="640px"/>
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic13.webp)
 
-<div style="text-align: center;" id="pdf1">
-    	<span style="color: gray">Technical Cooperation Intention Agreement</span>
-    <br><br>
-</div>
+ Based on the analysis，we will take the SO strategy: where we will leverage **internal strengths** to capitalize on **external opportunities**.
 
-<br>
+ **Leverage** **unique dynamic-tracking strength** to position DR.sTraTeGY as the *gold-standard tool* for CROs developing antifungal drugs.
 
-### Timelines
+ **Bundle kit + software with CRO service workflows** to tap into the rapidly growing outsourcing sector.
 
-**1. Development Timeline**
+ **Partner with Yangtze Delta** **biotech** **clusters** (Shanghai, Suzhou, Hangzhou) to capture nearly 40% of the national market first, then scale nationwide.
 
-Our goal is to improve nickel recovery efficiency, enhance the cleaner's ability to handle higher heavy metal, salt, and pH concentrations, scale up production, achieve profitability, and set a green industry benchmark.
+ **Use competition wins and expert endorsements** to strengthen brand credibility and accelerate adoption in regulatory- and policy-driven biotech programs.
 
-So we prepared a development timeline for MINERAL.
+ **Differentiate with quantifiable metrics** (selection pressure, mutation rates) to meet pharma demand for precision antifungal R&D.
 
-<div style="text-align: center;" id="fig19">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/fig11.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 19: Our Development Timeline</span>
-        <br><br>
-    </div>
-</div>
 
-**2. Financial Analysis**
 
-<div style="text-align: center;" id="fig20">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/costanalysis.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 20: Cost Analysis of MINERAL</span>
-        <br><br>
-    </div>
-</div>
+##  Going to market ：Strategies and roadmap
 
-We first analyzed the profit model for battery recycling companies among potential customers.
+####  Our mission
 
-Focusing on the most valuable materials in raw material recovery, cobalt and nickel, the existing hydrometallurgical and pyrometallurgical combined technology can recover 107.84 tons of nickel sulfate (current price: approximately [\$4,500/ton](https://www.spglobal.com/commodityinsights/en/market-insights/latest-news/metals/101723-trade-review-china-nickel-sulfate-prices-set-to-drift-sideways-in-q4-on-surplus-stocks)) and 84.65 tons of cobalt sulfate (current price: approximately [\$13,000/ton](https://mmta.co.uk/cobalt-sulfate-the-state-of-play-and-whats-to-come/)) from every 1,000 tons of used power batteries. With our microbial separation technology, production is estimated to increase by 10%-30%. Based on the current market price of industrial raw materials, the revenue from processing each ton of waste power batteries can directly amount to approximately $228,000.
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic14.webp)
 
-Conservatively estimating that the cost of each ton of used power batteries entering the disassembly and recovery stage is about \$42,000, the battery recycling company could earn over $1.8 million annually by processing 10 tons of waste batteries, after accounting for expenses such as equipment depreciation and microbial modification costs.
+####  Pricing Strategy
 
-Therefore, in the sales scenario of our microbial heavy metal ion cleaner, the customer acquisition phase has a relatively low unit price of approximately \$280 per unit of wastewater caused by a kilogram of waste power batteries. Each ton could yield a profit of approximately $280,000, and this could be increased by about 50% after improving production technology.
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic15.webp)
 
-### Resources
+ With our understanding of stakeholders and YRD CRO / diagnostics kit markets, we will develop three suggested tiers for pricing.
 
-- Ample technical labor provided by the campus
-- Ongoing pursuit of funding
-- Strong technological barriers
-- Supported by production practices from business  partners
-- Backed by government support for green initiatives
+Of course. Here is the information presented in a clear, tabular format.
 
-**1. Technical Labor**
+| Package          | Contents                                                     | Suggested Price (USD) | Additional Notes                                             |
+| :--------------- | :----------------------------------------------------------- | :-------------------- | :----------------------------------------------------------- |
+| **Basic**        | Standard reagent kit (tree yeast strain + core probes), core software (fluorescence quantification, evolutionary modeling), manual, 3-month tech support | $18,000               | Lower margin for easier entry; potentially a subsidized/pilot price for early adopters; could include a consumable usage cap. |
+| **Professional** | Adds customizable probes, advanced software features, priority technical support, potentially shorter training lead time | $28,000               | Intended for mid-sized CROs doing repeated studies, or labs needing more advanced metrics. |
+| **Enterprise**   | Full probe customization, extended license (12 months+), higher usage volumes, potential onsite/bespoke modifications, premium support, software updates & modeling additions | $38,000 - $45,000     | May include "consumables per run" pricing or subscription components for software updates. |
 
-Our project relies on the abundant technical resources and laboratory equipment within Fudan University, ensuring that the hardware needs for research and experimentation are fully met. Our team benefits from a robust supply of technical labor, including talented students and professional faculty members, who bring both innovative ideas and practical skills to the project.
+ Additionally, we also planned pricing strategy ABC to engage our first consumers:
 
-**2. Ongoing pursuit of funding**
+ **A. Consumables / Per-Sample Add-ons**: For labs / CROs not able to purchase full kits/licences upfront, you might offer per-sample reagents or per-run reagent bundles priced at e.g. **USD** **300-500 / sample** depending on complexity, or “run” pricing (batch) to make it more accessible.
 
-Additionally, we are actively seeking continuous funding support through various channels and partnerships to ensure a stable financial pipeline for the project. And there's some [resources](#our-business-partners) that we achieved.
+ **B. Software License / Maintenance / Updates**: After initial sale, offer annual renewal/subscription for software updates / new models / cloud features in range **USD** **5,000-10,000/year** for Pro and Enterprise clients.
 
-**3. Technological Barriers**
+ **C. Discounts and Pilot Offers**: Early adopter discount (e.g. 10-20% off) for first few CRO clients in YRD in exchange for validation data / case studies.
 
-On the technical side, we have established certain technological barriers, including preparing patent protection and the specialized knowledge of our team. This gives our project a competitive edge and helps us maintain a unique position in the market.
 
-**4. Partner Companies**
 
-We have also forged strong ties with partner companies that provide valuable support in terms of production practices, including access to facilities, technology, and management expertise, which are crucial for transitioning our lab results into viable products.
+####  Marketing Strategy 
 
-**5. Government Support**
+ **Target Segments**
 
-Moreover, our project has received substantial backing from the government, especially since green technologies and sustainable development are highly encouraged under current policies:
+- Primary: CROs in Yangtze River Delta (especially those doing antifungal drug development / resistance studies).
+- Secondary: Hospital labs, diagnostic centers, academic research labs focusing on infectious disease / mycology.
 
-- National People's Congress of the People's Republic of China: *[Draft Amendment to the Mineral Resources Law Second Review: Promoting Green and High-Quality Development in the Mining Industry](http://www.npc.gov.cn/npc/c2/c30834/202407/t20240724_438430.html)*
+ **Channels**
 
-- EU Commission: *[Circular Economy Action Plan](https://environment.ec.europa.eu/topics/waste-and-recycling_en), [Regulation on Batteries and Waste Batteries](https://eur-lex.europa.eu/eli/reg/2023/1542/oj)*
+- Direct sales / business development to CROs in Shanghai, Suzhou, Hangzhou, Nanjing etc.
+- Collaborations with academic mycology / infectious disease departments in local universities.
+- Conferences, workshops in China (biomed conferences) to promote proof-of-concept / case studies.
 
-- Environmental Protection Agency (EPA): *[Resource Conservation and Recovery Act](https://www.epa.gov/rcra)*
+ **Partnerships**
 
-Government support includes financial subsidies, tax incentives, research grants, and other initiatives, all of which will greatly accelerate the growth and market expansion of our project. The strategic use of these key resources lays a solid foundation for the success of our project and paves the way for future development.
+- Partner with CROs for pilot studies.
 
-### Risks
+- Possibly co-develop with diagnostic companies or reagent distributors for broader reach.
 
-- In the current context where environmental pollution is difficult to measure as equitably as carbon emissions, our team's biological method lacks cost advantages when heavy metal ion concentrations in wastewater are high.
-- Integrating this method into the end of chemical treatment processes also places high demands on facility infrastructure.
+- Engage with government / public health labs for surveillance projects.
 
-- The shortage of synthetic biology talent means that after selling the product, we would need to provide customers with extensive and detailed after-sales services, creating significant pressure on human resources.
+  
 
-- Moreover, existing nickel ion separation methods are relatively crude and inexpensive, leaving companies with little motivation to switch to biological recovery methods.
+ **Regulatory / Compliance Strategy**
 
-#### We need to address these difficulties with the support  of everyone in iGEM.
+- Design product & validation to meet NMPA IVD standards; classify appropriately.
 
-## Our Skills, Capabilities and Stakeholders
+- Ensure quality systems (GMP / QC for reagents; software ISO / cybersecurity where needed).
 
-### Skills
+  
 
-To ensure the success of the project, we need to master key skills, including technological innovation to optimize product performance, channel development to expand the market, marketing to enhance brand influence, financial management to ensure proper use of funds, factory operations to guarantee production efficiency, human resource management to build an efficient team, public relations to maintain the company's image, and data analysis to guide strategic decisions. Together, these skills will drive the development of the project and strengthen its market competitiveness.
+ **Geographic Focus / Expansion**
 
-### Capability
+ **Phase 1**: Yangtze River Delta — dense client base, efficient logistics.
 
-Our team needs excellent communication and collaboration skills to ensure smooth information flow and teamwork. Presentation skills are crucial for conveying the project's vision and attracting support. Strong analytical and decision-making abilities are essential for solving complex problems and seizing opportunities. A responsible attitude and good reputation are vital for gaining the trust and support of stakeholders and ensuring the project's smooth progression. These core capabilities will collectively drive the success and sustainable development of the project.
+ **Phase 2**: Beijing-Tianjin-Hebei region
 
-Furthermore, our product has strong competitiveness. See [Swot Analysis](#fig21) below.
+ **Phase 3**: Pearl River Delta (Guangdong-Hong Kong-Macau) 
 
-<div style="text-align: center;" id="fig21">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/fig3.webp" style="width:100%">
-</div>
 
-<br>
 
-### [Reliable Team](/fudan/team/)
+ **Public relations**
 
-Our team consists of 14 members from Fudan University's iGEM team, a diverse group of people from various academic fields. Our members bring deep theoretical knowledge and practical experience in technological innovation, project management, and social engagement. This diversity fosters creativity and allows us to approach problems from multiple perspectives. With the valuable guidance and support from mentors with extensive academic and industry connections, our team's combination of reliability, technical expertise, and practical experience provides a solid foundation for project success.
+ Core message
 
-### Stakeholders
+- Emphasize **real-time** **evolutionary dynamics** vs end-point measurement.
+- Show **quantitative metrics**: mutation rates per locus; selection pressure under drug; generational mapping.
+- Highlight **cost / time efficiency** vs WGS + downstream analysis.
 
-<div style="text-align: center;" id="fig22">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/fig10.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 22: Stakeholders Analysis</span>
-        <br><br>
-    </div>
-</div>
+ Campaigns
 
+- Corporate Social Responsibility activities
 
-## Long-term Impacts
+ **Media channels**: 
 
-<div style="text-align: center;" id="fig23">
-    <img src="https://static.igem.wiki/teams/5115/entrepreneurship/newfig23.webp" style="width:100%">
-    <div>
-    	<span style="color: gray">Figure 23: Our Possible Long-term Impacts</span>
-        <br><br>
-    </div>
-</div>
+- WeChat, official website, Rednote, targeted Chinese biotech media outlets.
 
-----
+  
 
-[^1]: Kalungi, P., Yao, Z., & Huang, H. (2024). Aspects of Nickel, Cobalt and  Lithium, the Three Key Elements for Li-Ion Batteries: An Overview on  Resources, Demands, and Production. *Materials (Basel, Switzerland)*, *17*(17), 4389. [https://doi.org/10.3390/ma17174389](https://doi.org/10.3390/ma17174389)
-[^2]: China Geology. (2022). *2022 Annual report of China mineral resources (lithium, nickel, cobalt, REE etc.)*. 5(4), 779–780. [https://doi.org/10.31035/cg2022071](https://doi.org/10.31035/cg2022071)
-[^3]: Kazeminezhad, I., & Mosivand, S. (2017). Elimination of copper and nickel from wastewater by electrooxidation method. *Journal of Magnetism and Magnetic Materials*, 422, 84-92. [https://doi.org/10.1016/j.jmmm.2016.08.049](https://doi.org/10.1016/j.jmmm.2016.08.049)
-[^4]: Gong, S., Dong, E., Liu, B., Yuwen, C., Niu, Y., Ji, G., Chen, W., Hou, K., Guo, S., & Zhang, L. (2024). Eco-friendly closed-loop recycling of nickel, cobalt, manganese, and lithium from spent ternary lithium-ion battery cathodes. Separation and Purification Technology, 348, 127771. [https://doi.org/10.1016/j.seppur.2024.127771](https://doi.org/10.1016/j.seppur.2024.127771)
+####  IP Protection Strategy
+
+ **Possible** **IP** **assets**
+
+- Patents: key recombinant yeast strain with fluorescent clock + GPCR circuit; mutation probes; software algorithms (modeling, branch prediction, mutation rate computation).
+- Trade secrets: specific probe designs / sequences; software source code; data from lineage tracking (unique datasets).
+- Copyright / licensing: software, manuals, user interfaces.
+
+ **Protection Actions**
+
+- File patents in China and optionally in other key jurisdictions (e.g. USA, Europe) for core innovations (probes, yeast strain design, algorithmic modeling method).
+- Use non-disclosure agreements (NDAs / NNN agreements) with partners and customers.
+- Use copyright / license terms for software; possibly obfuscate or protect the software modeling part (copyright + possibly pat‐pending for significant algorithmic innovations).
+- Monitor for infringement; have enforcement plan. Use China’s strengthening IP regime (WIPO, patent courts) to register and defend rights. WIPO data shows China has many PCT applications (70,000+ in 2024) and is emphasizing global IP layout.
+
+ **Commercial** **IP** **Strategy**
+
+- Licensing: for labs or CROs that prefer not to buy full kit, license software / probe use.
+- Exclusive / co-exclusive agreements for high-volume clients.
+- 
+
+####  Business Exit Strategy
+
+We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from first commercial sales to either acquisition or IPO if all goes well (market traction, regulatory compliance, scaling).
+
+| Exit Path                                               | Description                                                  | Pros / Cons                                                  | Likely Valuation Drivers                                     |
+| :------------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| **Acquisition by larger diagnostics / biotech company** | A company that sells diagnostic kits or an IVD/antifungal R&D company buys you for your tech, customer base, and IP. | **Pros:** Quicker exit, less risk of scaling; acquirer's distribution & regulatory power aids scaling.<br>**Cons:** Might accept a lower valuation; integration risk. | Validated performance (clinical/pilot data), regulatory approvals, revenue growth, CRO customer list, defensible IP. |
+| **Licensing plus strategic partnerships**               | License the technology to different geographies or companies; possibly involve partial buy-outs. | **Pros:** Lower risk; retain ownership; recurring revenue; flexibility.<br>**Cons:** Slower cash inflow; requires strong legal/IP infrastructure. | Value of licensing agreements, royalty streams, strength of contracts, robust and defensible IP. |
+| **IPO / public listing**                                | Float on a Chinese board (e.g., Zhujiang Delta Market) or an overseas biotech-friendly market. | **Pros:** Potential for high valuation if growth is strong; brand and resource expansion.<br>**Cons:** Burdensome regulations, public reporting, dilution, market risk; dependent on favorable market conditions. | Proof of scale, documented revenue growth, recurring contracts, a clear path to profitability. |
+| **M&A by CRO / service company**                        | A large CRO might acquire DR、r.sTraTeGY to internalize the resistance-tracking capability. | **Pros:** Logical buyer with direct benefit from the technology; potential for strong synergies.<br>**Cons:** Purchase price negotiation challenges; may command a lower premium than a product company. | Integration potential, cost-saving synergies, ability to scale the technology, overlap with the acquirer's customer base. |
+
+####  Business model canvas
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic17.webp)
+
+
+
+##  Overlooking to the long-term：how we impact the future 
+
+####  Expansion Timeline
+
+ With our product planning to exit in 5years，we planned the business timeline since 2026： 
+| Phase                                               | Timeline     | Key Activities                                               |
+| :-------------------------------------------------- | :----------- | :----------------------------------------------------------- |
+| **Phase 1: Proof & Pilot**                          | 0-12 months  | Regulatory groundwork; pilot studies with 2-3 CROs in YRD; gather data; refine kit + software UI; generate case studies/publications; set up IP filings. |
+| **Phase 2: Local Market Rollout**                   | 12-24 months | Full launch in YRD; onboarding of CRO clients; sales & marketing; refinement; support infrastructure; pricing optimization; consumables supply chain; begin expansion to other Chinese regions. |
+| **Phase 3: Product Maturation & Scaling**           | 24-36 months | Expand probe panels; enhance software features (cloud, dashboards); automation; partner with reagent distributors; strengthen regulatory certification; build recurring contracts. |
+| **Phase 4: Geographic Expansion & Licensing**       | 36-48 months | Enter other provinces in China; possibly Southeast Asia; license or partnership in non-China jurisdictions; consider export/IVD registration overseas; build brand internationally. |
+| **Phase 5: Exit Preparation & Growth Optimization** | 48-60 months | Solidify recurring revenue streams; profitability or path to it; clean financials; prepare for M&A or IPO; investor relations; possibly raise growth-stage capital. |
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic16.webp-business-pic16.webp)
+
+
+
+####  Impact Assessment **Scientific / Healthcare Impact**
+
+- Improved detection of resistance evolution in fungi; better understanding of mutation emergence & selection.
+- Faster diagnostics & resistance surveillance → better patient outcomes, more rational antifungal usage.
+
+ **Economic / Market Impact**
+
+- Help CROs reduce the cost/time of R&D (faster read-outs, less wasted drug candidates).
+- Enable local Chinese biotech/diagnostic industry to capture more of the value chain.
+
+ **Social & Regulatory Impact**
+
+- Contributes to public health efforts on antimicrobial resistance (AMR).
+- Supports policy goals: China’s plans to strengthen diagnostics, biotech, IVD capacity.
+
+ **Risks & Mitigations**
+
+- Potential for misinterpretation of data → require strong training / SOPs.
+
+- Patient/sample safety / biosafety issues: need containment, quality control.
+
+- Ethical/regulatory oversight especially if samples are clinical.
+
+  
+
+####  **Financial Planning**
+
+ Here’s a sketch of financial projections and assumptions plus how exit might play out.
+
+
+
+**Financial Projections & Assumptions**
+
+| Item                                       | Year 1                                  | Year 2  | Year 3                                                       | Year 4                      | Year 5                      |
+| :----------------------------------------- | :-------------------------------------- | :------ | :----------------------------------------------------------- | :-------------------------- | :-------------------------- |
+| **Number of CRO Clients (Full Kit Sale)**  | 2                                       | 5       | 10                                                           | 20                          | 30                          |
+| **Revenue from Kit Sales**                 | ~$60k - $100k                           | ~$300k  | ~$800k - $1,200k                                             | ~$2,000k - $3,000k          | ~$4,000k - $6,000k          |
+| **Consumables / Re-order Revenue**         | Low                                     | Growing | **25-40%** of Total Revenue                                  | **25-40%** of Total Revenue | **25-40%** of Total Revenue |
+| **Software License / Maintenance Revenue** | Small                                   | Growing | ~$100k - $200k/yr                                            | ~$100k - $200k/yr           | ~$100k - $200k/yr           |
+| **R&D / Operational Costs**                | High (pilot studies, staff, regulatory) | High    | Tapering in relative %                                       | Tapering in relative %      | Tapering in relative %      |
+| **Gross Margin**                           |                                         |         | Kits/Reagents: **>60%** after scale; Software: High after fixed cost amortization |                             |                             |
+
+**Exit Valuation Estimate**
+
+| Metric                                 | Value / Multiple                          | Notes                                           |
+| :------------------------------------- | :---------------------------------------- | :---------------------------------------------- |
+| **Valuation Method**                   | Revenue Multiple                          | Based on biotech/diagnostics sector benchmarks. |
+| **Typical Exit Multiple**              | **8x - 10x** Annual Revenue               | Depends on growth, visibility, and IP strength. |
+| **Reference Data**                     | Avg: ~9.7x Revenue<br>Median Exit: ~$250M | Based on desk research in certain markets.      |
+| **Scenario (Based on Year 5 Revenue)** |                                           |                                                 |
+| Conservative (8x)                      | $32M - $48M                               |                                                 |
+| Base Case (~9.7x)                      | $38.8M - $58.2M                           |                                                 |
+| Optimistic (10x)                       | $40M - $60M                               |                                                 |
+
+ So possible exit values at different revenue levels:
+
+- If Year 4 revenue is USD ~2-3 million, exit might fetch USD ~16-30 million (if acquired).
+- If by Year 5 revenue reaches ~USD 5-6 million with good margin, strong customer base, IP, then exit could be **USD 40-60 million** or more; with licensing, recurring revenue, or IPO, possibly higher.
+
+ **Funding Needs & Use**
+
+- Seed / Pre-Series A (USD 1-2 million) for pilot, regulatory, initial sales / hiring.
+- Series A (USD 5-10 million) around Year 2-3 to scale production, marketing, expand geographic coverage.
+
+ **Return for Investors**
+
+- If exit in Year 4-5 at multiple revenues, investors in early rounds could see a 5-10× return, depending on dilution, growth.
+
+  
+
+##  Our Action
+
+ In March 2025, we participated in the National Innovation Competition, where we refined our business model and product presentation for the first time. 
+
+ Later, in May 2025, we took part in the he Biopharmaceutical Track of the Shanghai College Student Innovation and Entrepreneurship Competition (Shanghai Stock Exchange Cup), aiming to raise initial funding from potential investors through roadshows. Industry experts and judges provided valuable feedback in discussion sessions—— for instance, experts recommended that we further segment our target customer groups in market sizing and strengthen the alignment of our product applications with clinical needs. Investors also highlighted the importance of early planning for intellectual property protection and building strong competitive barriers. Overall, these experiences sharpened our understanding of both our strengths and weaknesses, laying a solid foundation for product iteration, market expansion, and fundraising strategies in the future.
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action1.webp)
+
+ In June 2025, we had the privilege of engaging in a face-to-face discussion with **Mr. Jie Chen, CEO of SoftBank China**. During the meeting, we presented the development concept, market positioning, and future roadmap of our core product, **DR.sTraTeGY**, highlighting its potential applications in antifungal resistance testing and drug discovery. Mr. Chen  emphasized the importance of establishing benchmark collaborations with CRO clients in the early stage to create demonstrative impact. He also reminded us to balance long-term capital planning with short-term cash flow management in our fundraising strategy. This exchange not only provided us with strategic insights from the investment community but also strengthened our confidence in driving the product toward industrialization.
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action2.webp)
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action3.webp)
+
+ On September 18, our team held a constructive meeting with the iGEM team from East China University of Science and Technology (ECUST) to discuss the commercialization plans of our respective projects. The dialogue covered business alignment, progress updates, and marketing strategies, while also clarifying each team's commercial focus and strategic logic.
+
+ We introduced our multi-cellular yeast tracking tool, targeting CROs in the Yangtze River Delta, along with the designed yeast strains and software package. Our exit strategy involves licensing the toolkit to CROs by the fifth year.ECUST shared their project centered on gout prevention through functional food, aimed at easing the burden on healthcare and patients. They addressed challenges such as public skepticism toward functional products and safety concerns regarding engineered bacteria, highlighting outreach as key to gaining acceptance.
+
+ Additionally, ECUST provided suggestions for our business plan, including:
+
+1. Adding supporting data, patents, or authoritative certifications;
+2. Including documents such as patent applications, after-sales guarantees, and user guides to enhance credibility;
+3. Emphasizing favorable macro-trends and policy support;
+4. Adhering to international standards to ensure safety and compliance.
+
+ The exchange was insightful and beneficial for both teams.
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action5.webp)
+
+
+
+#  References 
+
+[^1]: Fortunebusinessinsights. (2020). *Anti Fungal Drugs Market Size, Share & Industry Analysis*. https://www.fortunebusinessinsights.com/zh/industry-reports/antifungal-drugs-market-101188
+[^2]: Lai CC, Yu WL. COVID-19 associated with pulmonary aspergillosis: A literature review. J Microbiol Immunol Infect. 2021 Feb;54(1):46-53
+[^3]: Rao, H., Choo, S., Rajeswari Mahalingam, S. R., Adisuri, D. S., Madhavan, P., Md. Akim, A., & Chong, P. P. (2021). *Approaches for mitigating microbial biofilm-related drug resistance: A focus on micro- and nanotechnologies.* *Molecules, 26*(7), 1870.
 
