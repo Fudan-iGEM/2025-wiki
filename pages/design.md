@@ -31,12 +31,13 @@ To address this challenge, we developed DR. sTraTeGY, an innovative platform bui
 3. **YeastVerse:** A virtual experiment platform to guide our wet lab designs and simulate evolutionary processes.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig1-dr.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig1-dr-strategy.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure 1: DR. sTraTeGY overview</span>
         <br><br>
     </div>
 </div>
+
 
 
 ## Constructing the Grape Yeast
@@ -45,7 +46,7 @@ To address this challenge, we developed DR. sTraTeGY, an innovative platform bui
 
 To study fungal evolution, we focused on *Saccharomyces cerevisiae*, a classic model organism for eukaryotes and a widely used chassis in synthetic biology. It offers significant advantages, including a fully sequenced genome, mature genetic tools[^2], and a non-pathogenic nature with conserved resistance mechanisms[^3].  However, traditional methods that based on unicellular yeast like bulk sequencing provide only a static endpoint snapshot of evolving populations, making it challenging to capture low-frequency mutations or the real-time emergence of complex traits[^4].
 
-To overcome this, we designed the **Grape Yeast**—a new modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates **DR. sTraTeGY** from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer]() tracks cell lineage and the [Recorder]() logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex traits would mask in a conventional bulk culture.
+To overcome this, we designed the **Grape Yeast**—a new modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates **DR. sTraTeGY** from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#**Timer: Tracking Cell Lineage**) tracks cell lineage and the [Recorder](#**Recorder: Recording Selective Pressure**) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex traits would mask in a conventional bulk culture.
 
 We engineered this chassis through a simple four-module approach that allows us to achieve key functions: multicellularity development, external signal response, cluster size control, and individual diversity control.  In essence, these designs provide synthetic biology with a new chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast represents an efficient, controllable, and scalable engineered biological system. It functions more like an organized multicellular body—with spatial structure and division of labor among cells—similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a production platform but also as a foundational model for exploring multicellular engineering.
 
@@ -78,7 +79,7 @@ Endogenous signaling pathway play central roles in regulating efflux pumps, cell
 
 Responding to external environmental signals is crucial for both fungal adaptation and synthetic control. Thus, in this module we expanded the signal transduction pathway, creating an interface that can be further utilized to respond to signals from other organisms or the environment by the community. GPCRs are among the most common drug targets in humans, highlighting their physiological relevance. We linked G-protein coupled receptors (GPCRs) to the yeast pheromone response pathway (PRP) which can activate a mitogen-activated protein kinase (MAPK) signaling cascade, leading to the upregulation of Ste12-regulated genes. 
 
-While a complete modification of the GPCR system would require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused our efforts on modifying only the most critical genes.  We replaced **ACE2** with the human δ opioid receptor (*HsDOR*) (BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera(BBa_254K9906) with five residues replaced by Giα3.We validated this pathway using the small molecule agonist SNC80 [^11].
+While a complete modification of the GPCR system would require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused our efforts on modifying only the most critical genes.  We replaced ***ACE2*** with the human δ opioid receptor (*HsDOR*) (BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera(BBa_254K9906) with five residues replaced by Giα3.We validated this pathway using the small molecule agonist SNC80 [^11].
 
 #### 2)Yeast Membrane Engineering
 
@@ -89,10 +90,11 @@ To leverage this for our application, we deleted *ERG5/6* and added TDH3p-driven
 <div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig4-gpcr.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 3: Mechanism of external signal response</span>
+        <span style="color:gray">Figure 3: Mechanism of external signal response.We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and validated by the agonist SNC80</span>
         <br><br>
     </div>
 </div>
+
 
 
 
@@ -135,13 +137,14 @@ Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the Dee
 <div style="text-align: center;" id="fig5">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig5-timer.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 5: Design of the Timer</span>
+        <span style="color:gray">Figure 5: Design of the Timer.The Timer module enables real-time visualization of a cell’s life cycle, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
         <br><br>
     </div>
 </div>
 
 
-Besides，we
+
+
 
 ### **Recorder: Recording Selective Pressure**
 
@@ -179,12 +182,13 @@ To study its stability and performance in different genomic environments., we in
 Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating **YeastVerse**, our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [model page](/model/) for more details.
 
 <div style="text-align: center;" id="fig6">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeastverse.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 6: use digital YeastVerse to guide our wet lab</span>
+        <span style="color:gray">Figure 6: se digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
         <br><br>
     </div>
 </div>
+
 
 
 ## **Summary**
