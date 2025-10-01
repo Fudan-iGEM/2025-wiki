@@ -172,8 +172,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 - **Tier 1 (CROs):** Our primary focus. They hold the strongest purchasing power, have an urgent need for precise resistance tracking, and can rapidly validate our approach through pilot studies—making them ideal for early case studies.
 - **Tier 2 (*R&D* pharma** **and research institutions):** Critical for credibility and downstream influence. They strengthen intellectual property, support publications, and broaden application scenarios, creating mid-term strategic value.
 - **Tier 3 (Public health, regulators, and policy stakeholders):** Their benefits are societal and systemic, helping to drive market access, regulatory acceptance, reimbursement, and policy alignment. They typically come into play later or via partnerships.
-
-Of course. Here is the information organized into a table.
+- 
 
 | Tier                           | Stakeholder Type                                             | Representative Example                                       | Interests / Needs                                            | How DR.sTraTeGY Can Serve Them                               | Risks & Considerations                                       |
 | :----------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -195,9 +194,7 @@ Of course. Here is the information organized into a table.
 
 ####  SWOT Analysis
 
-![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic13.webp)
-
- Based on the analysis，we will take the SO strategy: where we will leverage **internal strengths** to capitalize on **external opportunities**.
+Based on SWOT，we will take the SO strategy: where we will leverage **internal strengths** to capitalize on **external opportunities**.
 
  **Leverage** **unique dynamic-tracking strength** to position DR.sTraTeGY as the *gold-standard tool* for CROs developing antifungal drugs.
 
@@ -208,6 +205,8 @@ Of course. Here is the information organized into a table.
  **Use competition wins and expert endorsements** to strengthen brand credibility and accelerate adoption in regulatory- and policy-driven biotech programs.
 
  **Differentiate with quantifiable metrics** (selection pressure, mutation rates) to meet pharma demand for precision antifungal R&D.
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic13.webp)
 
 
 
@@ -222,8 +221,6 @@ Of course. Here is the information organized into a table.
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic15.webp)
 
  With our understanding of stakeholders and YRD CRO / diagnostics kit markets, we will develop three suggested tiers for pricing.
-
-Of course. Here is the information presented in a clear, tabular format.
 
 | Package          | Contents                                                     | Suggested Price (USD) | Additional Notes                                             |
 | :--------------- | :----------------------------------------------------------- | :-------------------- | :----------------------------------------------------------- |
@@ -319,7 +316,8 @@ Of course. Here is the information presented in a clear, tabular format.
 
 - Licensing: for labs or CROs that prefer not to buy full kit, license software / probe use.
 - Exclusive / co-exclusive agreements for high-volume clients.
-- 
+
+  
 
 ####  Business Exit Strategy
 
@@ -381,10 +379,6 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
   
 
 ####  **Financial Planning**
-
- Here’s a sketch of financial projections and assumptions plus how exit might play out.
-
-
 
 **Financial Projections & Assumptions**
 
