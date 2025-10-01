@@ -1,305 +1,135 @@
 ---
 title: Part Collection
-author:
-- name: Yi Shi
-  url: /fudan/team/#yi-shi
-- name: Liyue Chen
-  url: /fudan/team/#liyue-chen
-layout: igem
-heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
+authors:
+  - name: Peining Wu
+    url: /team/#wu-peining
+    avatar: （头像，先不填）
+layout: igem （勿动）
+heroImage: （拍摄并且选取页面图像，作为顶部展示）
+description: On this page, we
 ---
 
-Our favourite composite part is [MINERAL](/fudan/description/) F module ([BBa_K5115067](https://parts.igem.org/Part:BBa_K5115067)).
+## Part Collection
+
+Based on our team’s project **DR.sTraTeGY (Drug Resistance mutation Tracking Technology based on Grape Yeast)**, we designed three collections: Grape Yeast, the optimal promoter–fluorescent protein combination screening collection, and the homologous arms integration collection for *Saccharomyces cerevisiae*.
+
+### Collection 1: Grape-Yeast
+
+The construction of Grape Yeast is the foundational engineering of our project. To create this chassis, we knocked out the transcription factor gene **ACE2**, which is essential for septum degradation during yeast cell division. The resulting strain fails to release daughter cells after cytokinesis, instead forming multicellular clusters that resemble grape bunches. And its morphology and characteristics closely mimic those of pathogenic fungi. To expand the functionality of the strain, we introduced the human **δ-opioid receptor **- **HsDOR** to the **ACE2** deletion locus. As human-derived HsDOR cannot transduce signals inside yeast cells upon ligand binding, we introduced **Modified GAP1** (BBa_254K9906) downstream of **HsDOR**. This allowed **Modified GAP1** to serve as the intracellular ligand for **HsDOR**, thereby achieving a functional human GPCR-yeast coupling. This modification not only endowed the multicellular yeast chassis with drug-ensing capabilities but also demonstrated the feasibility of transplanting human receptor proteins into this system.
+
+To stimulate the differentiation potential of our multicellular yeast system, we introduced the **IME1** (BBa_250R9OVR) and **BAX** (BBa_K5441013) genes to generate morphological diversity. **IME1**, a key regulator of meiosis, was integrated into the yeast genome via homologous recombination, which resulted in changes to the size and morphology of daughter cells. **BAX**, a regulator of apoptosis, was expressed in the multicellular yeast to accelerate cell death, producing branches of varying sizes and altering the overall morphology of the clusters. To tightly control the expression of these genes, we implemented the Tet-on/off system. In the presence of doxycycline, the system activates the transcription of **IME1** and **BAX** by binding to the pTet2 promoter, thereby precisely regulating their expression.
+
+Pathogenic fungi differ significantly from *Saccharomyces cerevisiae* in their membrane lipid composition. The presence of cholesterol components in the cell membranes of pathogenic fungi, which resemble those of human cells, is a key factor in their invasiveness. Therefore, in addition to morphological engineering, we aimed to modify the membrane structure of Grape Yeast by replacing ergosterol with cholesterol to more closely mimic the cell membranes of clinically relevant pathogenic fungi, such as *Candida albicans*. The products of the **ERG5** and **ERG6** genes are key enzymes in the *S. cerevisiae* ergosterol biosynthesis pathway, responsible for catalyzing the formation of the C-22(23) double bond and the C-24 methyl transfer reaction, respectively. We replaced **ERG5** and **ERG6** with **DrDHCR7** (BBa_25RCU5CB) and **DrDHCR24** (BBa_25FOVO4C), respectively. This redirection of the metabolic pathway enabled the substitution of ergosterol with cholesterol on the Grape Yeast cell membrane surface.
+
+Table 1: Parts for Grape-Yeast 
+
+| Part Number  |        Type        |        Part Name         |
+| :----------: | :----------------: | :----------------------: |
+| BBa_256S6J1M |       coding       |          HsDOR           |
+| BBa_254K9906 |       coding       |      Modified GAP1       |
+| BBa_K3944010 |     regulatory     |           rtTA           |
+| BBa_252BO17G |      promoter      |          pTet2           |
+| BBa_K5470011 |       coding       |           E2A            |
+| BBa_K5441013 |       coding       |           BAX            |
+| BBa_250R9OVR |       coding       |           IME1           |
+| BBa_25RCU5CB |       coding       |         DrDHCR7          |
+| BBa_25FOVO4C |       coding       |         DrDHCR24         |
+| BBa_25AKJ83S | Translational_Unit |    pREV1-HsDOR-tENO1     |
+| BBa_25JOF7TY | Translational_Unit |     pREV1-rtTA-tENO1     |
+| BBa_25MTFXKO | Translational_Unit | pTet2-BAX-E2A-mSG-tENO1  |
+| BBa_25N811P5 | Translational_Unit | pTet2-IME1-E2A-mSG-tENO1 |
+| BBa_25FU0JM9 | Translational_Unit |   pREV1-DrDHCR7-tENO1    |
+| BBa_25JA9ZHO | Translational_Unit |   pREV1-DrDHCR24-tENO1   |
+
+
+
+### Collection 2:  The Optimal Promoter–Fluorescent Protein Combination Screening
+
+      Fluorescent proteins (EMSfp) can respond to gene mutations induced by the mutagen EMS, resulting in changes in fluorescence intensity at the corresponding wavelengths. To identify the optimal mutation-tracking device for our project, we selected four promoters (**pOST1, pRNR2, pSTM1, pTDH3**), six EMSfps (**EMSfp569, EMSfp499, EMSfp383, EMSfp642, EMSfp399, EMSfp643**), and one fixed terminator (**tENO1**), yielding a total of 24 TU modules. [^1]By comparing fluorescence changes between the EMS-treated group and the control group, we screened out the combination with the most significant variation as the optimal pair, which was then integrated into the 16 chromosomes of yeast via homologous arms.
+
+Table 2: Parts for 24 TU Recorders
+
+| Part Number  |        Type        |        Part Name        |
+| :----------: | :----------------: | :---------------------: |
+| BBa_25S7HMJ7 | Translational_Unit | pOST1- EMSfp383 - tENO1 |
+| BBa_25DWU82I | Translational_Unit | pOST1- EMSfp399 - tENO1 |
+| BBa_25L56M2M | Translational_Unit | pOST1- EMSfp499 - tENO1 |
+| BBa_251VI6SD | Translational_Unit | pOST1- EMSfp569 - tENO1 |
+| BBa_25T5YP8M | Translational_Unit | pOST1- EMSfp642 - tENO1 |
+| BBa_25BWBNVL | Translational_Unit | pOST1- EMSfp643 - tENO1 |
+| BBa_25FQWVZE | Translational_Unit | pRNR2- EMSfp383 - tENO1 |
+| BBa_25P3CYM6 | Translational_Unit | pRNR2- EMSfp399 - tENO1 |
+| BBa_250UY7YR | Translational_Unit | pRNR2- EMSfp499 - tENO1 |
+| BBa_25GIKETL | Translational_Unit | pRNR2- EMSfp569 - tENO1 |
+| BBa_25R85SZ9 | Translational_Unit | pRNR2- EMSfp642 - tENO1 |
+| BBa_258547VP | Translational_Unit | pRNR2- EMSfp643 - tENO1 |
+| BBa_25T01PTJ | Translational_Unit | pSTM1- EMSfp383 - tENO1 |
+| BBa_25R7QESE | Translational_Unit | pSTM1- EMSfp399 - tENO1 |
+| BBa_255T0PHY | Translational_Unit | pSTM1- EMSfp499 - tENO1 |
+| BBa_259AX3UO | Translational_Unit | pSTM1- EMSfp569 - tENO1 |
+| BBa_259Z131H | Translational_Unit | pSTM1- EMSfp642 - tENO1 |
+| BBa_25DI5UXV | Translational_Unit | pSTM1- EMSfp643 - tENO1 |
+| BBa_25PHHOV9 | Translational_Unit | pTDH3- EMSfp383 - tENO1 |
+| BBa_258CH7EU | Translational_Unit | pTDH3- EMSfp399 - tENO1 |
+| BBa_25L2MY7F | Translational_Unit | pTDH3- EMSfp499 - tENO1 |
+| BBa_25A00YSZ | Translational_Unit | pTDH3- EMSfp569 - tENO1 |
+| BBa_257O6RCL | Translational_Unit | pTDH3- EMSfp642 - tENO1 |
+| BBa_25RJG3B2 | Translational_Unit | pTDH3- EMSfp643 - tENO1 |
+
+
+### Collection 3:  **Homologous Arm Integration Collection for Saccharomyces cerevisiae**
+
+In synthetic biology, efficient and predictable genome integration is fundamental for constructing complex biological systems and accelerating the engineering cycle. To address this need, our team developed a robust **Homologous Arm Integration Collection for Saccharomyces cerevisiae**. This collection not only incorporates validated safe integration sites but also extends to novel replacement-based strategies, providing future iGEM teams with a powerful, flexible, and standardized solution.
+
+The core of this collection consists of two parts of homologous arms :
+
+#### **10 Safe Insertion Homologous Arms**
+
+Based on the MoClo toolkit published by Shaw et al. (2023)[^2], we identified and validated ten genomic integration sites (**Int.1–Int.10**). These loci are situated in non-coding regions of the Y55 yeast genome, ensuring that the integration of exogenous genes does not interfere with endogenous expression. This approach minimizes off-target effects and avoids impairing host cell growth. Through homologous recombination, any transcriptional unit (TU) can be stably integrated into these sites. These loci provide a reliable foundation for constructing complex multi-gene circuits while preserving the physiological homeostasis of the host cell.
+
+#### **6 Gene Replacement Homologous Arms**
+
+To provide comprehensive coverage across the yeast genome, we designed a set of homologous arms (**Int.11–Int.16**) for replacing endogenous genes on six different chromosomes of the Y55 strain. This library facilitates the precise deletion or replacement of target genes via homologous recombination. This strategy is particularly valuable in metabolic engineering, where it can be applied to eliminate competing pathways or introduce new functions. By complementing the safe insertion library, this replacement library expands our toolkit's functionality, enabling applications ranging from simple gene addition to complex genome reprogramming.
+
+Table 3: Homologous Arm Integration Collection for Saccharomyces cerevisiae
+
+| Part number  |    Part name     |          Integration Loci          |
+| :----------: | :--------------: | :--------------------------------: |
+| BBa_250U3B6G |    HR5'\_chr1L    |  Int.1(pMYT75):ChrI:169,422-169,940   |
+| BBa_25GQIZIK |    HR3'\_chr1R    |  Int.1(pMYT75):ChrI:169,942-170,478   |
+| BBa_253K1B8N |    HR5'\_chr4L    |  Int.2(pMYT76):ChrIV:359,868-360,355  |
+| BBa_25P0EZQP |    HR3'\_chr4R    |  Int.2(pMYT76):ChrIV:360,356-360,897  |
+| BBa_2552AC6E |    HR5'\_chr6L    |   Int.3(pMYT77):ChrVI:10,278-10,913   |
+| BBa_25IULUBT |    HR3'\_chr6R    |   Int.3(pMYT77):ChrVI:10,914-11,424   |
+| BBa_25ZYL3GW |    HR5'\_chr7L    |  Int.4(pMYT78):ChrVII:12,472-12,982   |
+| BBa_25H1VEJW |    HR3'\_chr7R    |  Int.4(pMYT78):ChrVII:12,983-13,498   |
+| BBa_25FYK3TX |    HR5'\_chr8L    | Int.5(pMYT79):ChrVIII:191,015-191,539 |
+| BBa_25PJP4LG |    HR3'\_chr8R    | Int.5(pMYT79):ChrVIII:191,540-192,044 |
+| BBa_25FUWBU7 |   HR5'\_chr9L     |  Int.6(pMYT80):ChrIX:340,431-340,933  |
+| BBa_25PDQZ8Z |    HR3'\_chr9R    |  Int.6(pMYT80):ChrIX:340,935-341,523  |
+| BBa_25DIWZUL |   HR5'\_chr11L    |  Int.7(pMYT81):ChrXI:24,931-25,451   |
+| BBa_257IAIOG |   HR3'\_chr11R    |   Int.7(pMYT81):ChrXI:25,452-25,963   |
+| BBa_25F4SCLY |   HR5'\_chr13L    | Int.8(pMYT82):ChrXIII:408,123-408,657 |
+| BBa_25GCY7VQ |   HR3'\_chr13R    | Int.8(pMYT82):ChrXIII:408,658-409,161 |
+| BBa_25B7ZBSD |   HR5'\_chr15L    |  Int.9(pMYT83):ChrXV:686,950-687,450  |
+| BBa_25Q3F2B3 |   HR3'\_chr15R    |  Int.9(pMYT83):ChrXV:687,451-687,964  |
+| BBa_25RRB2RQ |   HR5'\_chr16L    | Int.10(pMYT84):ChrXVI:569,995-570,541 |
+| BBa_25U7CTYJ |   HR3'\_chr16R    | Int.10(pMYT84):ChrXVI:570,542-571,023 |
+| BBa_25ATGCHY | HR5'\_DPB3_chr2L  |     Int.11:ChrII:735469-735988    |
+| BBa_25Y6BTXZ | HR3'\_DPB3_chr2R  |     Int.11:ChrII:736574-737141    |
+| BBa_25Q67BOD | HR5'\_FEN2_chr3L  |    Int.12:ChrIII:165465-165991    |
+| BBa_25TEB42Q | HR3'\_FEN2_chr3R  |    Int.12:ChrIII:163418-163951    |
+| BBa_25TMD7MC | HR5'\_SWI4_chr5L  |     Int.13:ChrV:390514-391024     |
+| BBa_255A36IQ | HR3'\_SWI4_chr5R  |     Int.13:ChrV:386704-387244     |
+| BBa_25CLCLXX | HR5'\_SOD1_chr10L |     Int.14:ChrX:601161-601690     |
+| BBa_2533RATE | HR3'\_SOD1_chr10R |     Int.14:ChrX:600171-600723     |
+| BBa_25MIG4EW | HR5'\_ACE2_chr12L |    Int.15:ChrXII:390877-391176    |
+| BBa_259HCU8C | HR3'\_ACE2_chr12R |    Int.15:ChrXII:388.058-388563   |
+| BBa_25U88LU3 | HR5'\_CAF_chr14L  |     Int.16:ChrXIV:82768-83297     |
+| BBa_25O0GI56 | HR3'\_CAF_chr14R  |     Int.16:ChrXIV:84390-84957     |
 
-## Nickel Enrichment Module
-
-Based on our experimental [results](/fudan/results/), we have finalized [MINERAL](/fudan/description/) nickel module ([BBa_K5115068]([BBa_K5115068](https://parts.igem.org/Part:BBa_K5115068))), which consist of ribozyme-connected Metallothionein (MTA, [BBa_K5115050](https://parts.igem.org/Part:BBa_K5115050)), Histidine-rich metal-binding protein [(Hpn)](https://parts.igem.org/Part:BBa_K1151001), RcnR^C35L^ ([BBa_K5115000](https://parts.igem.org/Part:BBa_K5115000)), and NixA-F1v ([BBa_K5115086](https://parts.igem.org/Part:BBa_K5115086)).
-
-This integrated module enables bacteria not only for efficient nickel ion absorption, but also for maintaining cellular health under heavy metal stress conditions, thereby increasing nickel tolerance and facilitating sustainable nickel recovery from wastewater.
-
-
-### Nickel Absorption
-
-Our module is engineered to optimize nickel ion update from industrial wastewater, leveraging a synergistic integration of various components. The ribozyme connected nikABCDE ([BBa_K5115082](https://parts.igem.org/Part:BBa_K5115082)) is our first made nickel absorption plasmid. This ATP-binding cassette (ABC) transporter complex is essential for transporting nickel ions from the *E. coli* periplasm into the cytoplasm. NikABCDE comprises five proteins: NikA ([BBa_K5115072](https://parts.igem.org/Part:BBa_K5115072)) functions as a periplasmic nickel-binding protein that captures nickel ions and facilitates their delivery to the membrane transport components. NikB ([BBa_K5115073](https://parts.igem.org/Part:BBa_K5115073)) and NikC ([BBa_K5115074](https://parts.igem.org/Part:BBa_K5115074)) are crucial membrane-spanning proteins that create a channel through which nickel ions can traverse the membrane, while NikD ([BBa_K5115075](https://parts.igem.org/Part:BBa_K5115075)) and NikE ([BBa_K5115076](https://parts.igem.org/Part:BBa_K5115076)) provide the requisite ATPase activity that powers this transport machanie, ensuring an efficient influx of nickel ions essential for various metabolic processes. Because nikA is the rate-limiting step, according to [our previous observations](https://parts.igem.org/Part:BBa_K4765129), we put it as the last one when we connect these CDS with the Ribozyme-Assisted Polycistronic expression system (pRAP)[^2].
-
-In parallel, NixA ([BBa_K5115071](https://parts.igem.org/Part:BBa_K5115071)), a member of the NiCoT family, was made also for nickel absorption. This monomeric protein is specifically adapted for nickel transport. By employing a modified FKBP, F1v (FKBP with F36V mutation) ([BBa_K5115085](https://parts.igem.org/Part:BBa_K5115085)), we optimize NixA's dimerization with two different assembly orders, as NixA-F1v ([BBa_K5115086](https://parts.igem.org/Part:BBa_K5115086)) and F1v-NixA ([BBa_K5115087](https://parts.igem.org/Part:BBa_K5115087)), and the former significantly improving its transport efficiency.
-
-To counteract the spontaneous nickel efflux of *E. coli*, we overexpress RcnR^C35L^ ([BBa_K5115000](https://parts.igem.org/Part:BBa_K5115000)), a nickel-responsive transcriptional regulator mutant, to optimize nickel uptake by limiting *rcnA* expression. RcnR is a tetrameric transcriptional repressor that responds to the binding of Ni(II) ions by releasing DNA, resulting in the expression of RcnA, which is responsible for nickel export from the cell. By limiting RcnA, RcnR^C35L^ ensures that intracellular nickel ion concentrations remain elevated.
-
-Our Nickel Absorption module allows *E. coli* to achieve a high influx of nickel ions, vital for subsequent biochemical pathways and nickel-dependent enzymatic activities in our design.
-
-<div style="text-align: center;" id="fig-1">
-<img src="https://static.igem.wiki/teams/5115/part-collection/parts-nickel-absorption.png" style="width:100%">
-<div>
-   <span style="color:gray">Figure 1: Overview of Nickel Uptake Mechanisms.<br><small>
-     This diagram illustrates the interaction and functions of the nik operon, NixA transporter, RcnR regulator, and NixA-F1v in facilitating nickel ion absorption <em>E. coli</em></small>
-   </span><br><br>
-</div>
-</div>
-
-<br>
-
-<div style="text-align: center;">
-   <p>Table 1: Parts for Nickel Absorption</p>
-</div>
-
-| Part Name        | Type   | Description    |
-| ---------------- | ------ | ---------------|
-| [BBa_K5115000](https://parts.igem.org/Part:BBa_K5115000) | Coding    | RcnR_C35L – nickel-responsive transcriptional regulator that modulates gene expression for nickel homeostasis. |
-| [BBa_K5115071](https://parts.igem.org/Part:BBa_K5115071) | Coding    | NixA – nickel transporter, enhanced dimerization via FKBP for improved transport efficiency. |
-| [BBa_K5115072](https://parts.igem.org/Part:BBa_K5115072) | Coding    | nikA – periplasmic nickel-binding protein, essential for nickel ion capture and delivery to transport components. |
-| [BBa_K5115073](https://parts.igem.org/Part:BBa_K5115073) | Coding    | nikB – integral membrane protein that forms part of the transport channel for nickel ions. |
-| [BBa_K5115074](https://parts.igem.org/Part:BBa_K5115074) | Coding    | nikC – integral membrane protein facilitating the movement of nickel ions across the membrane. |
-| [BBa_K5115075](https://parts.igem.org/Part:BBa_K5115075) | Coding    | nikD – ATPase that powers the transporter, essential for the active transport of nickel ions. |
-| [BBa_K5115076](https://parts.igem.org/Part:BBa_K5115076) | Coding    | nikE – ATP-binding component crucial for the proper functioning and assembly of the NikABCDE operon. |
-| [BBa_K5115077](https://parts.igem.org/Part:BBa_K5115077) | Composite | ribozyme+RBS+nikA+stem-loop                                  |
-| [BBa_K5115078](https://parts.igem.org/Part:BBa_K5115078) | Composite | ribozyme+RBS+nikB+stem-loop                                  |
-| [BBa_K5115079](https://parts.igem.org/Part:BBa_K5115079) | Composite | ribozyme+RBS+nikC+stem-loop                                  |
-| [BBa_K5115080](https://parts.igem.org/Part:BBa_K5115080) | Composite | ribozyme+RBS+nikD+stem-loop                                  |
-| [BBa_K5115081](https://parts.igem.org/Part:BBa_K5115081) | Composite | ribozyme+RBS+nikE+stem-loop                                  |
-| [BBa_K5115082](https://parts.igem.org/Part:BBa_K5115082) | Composite | ribozyme connected nik - Post-transcriptional regulated expression of the nik operon. |
-| [BBa_K5115085](https://parts.igem.org/Part:BBa_K5115085) | Coding    | F1v (FKBP with F36V mutation)                               |
-| [BBa_K5115086](https://parts.igem.org/Part:BBa_K5115086) | Composite | NixA-F1v                                                    |
-| [BBa_K5115087](https://parts.igem.org/Part:BBa_K5115087) | Composite | F1v-NixA                                                    |
-
-<br>
-
-### Nickel Tolerance
-
-To enhance nickel tolerance of our engineered *E. coli*, we integrate Hpn ([BBa_K1151001](https://parts.igem.org/Part:BBa_K1151001)) and MTA ([BBa_K5115050](https://parts.igem.org/Part:BBa_K5115050)) with NixA-F1v leveraging their unique properties to mitigate nickel toxicity while optimizing absorption.
-
-Histidine-rich metal-binding protein ([BBa_K1151001](https://parts.igem.org/Part:BBa_K1151001)), is a crucial component for bacterial nickel tolerance. This protein, derived from *Helicobacter pylori*, is characterized by its high histidine content. Its structure allows it to exist in various multimeric forms in solution. The primary function of Hpn is to bind nickel ions, with the ability to sequester up to five Ni²⁺ ions per monomer in a pH-dependent manner (optimal at pH 7.4). This property is essential for maintaining nickel homeostasis within the bacterial cell, especially in environments with elevated metal concentrations. By binding and storing excess nickel, Hpn prevents harmful interactions between nickel ions and cellular machinery, thereby promoting the survival and functionality of *E. coli* in nickel-rich conditions.
-
-Our improved construct, ribozyme + RBS + Hpn + stem-loop ([BBa_K5115036](https://parts.igem.org/Part:BBa_K5115036)), is designed to enhance the expression of Hpn when combing with other modules in one plasmid. Twister ribozyme quickly self-cleaves and generates mono-cistrons from one transcribed mRNA, ensuring robust expression of each integrated part, in the case of Hpn, facilitating effective nickel detoxification.
-
-In addition to Hpn, we incorporate metallothionein (MTA, [BBa_K5115050](https://parts.igem.org/Part:BBa_K5115050)) from *Pisum sativum*. MTA is a cysteine-rich protein known for its high binding affinity for various heavy metals, including nickel. By sequestering excess nickel ions, MTA further reduces the potential cytotoxic effects associated with elevated nickel levels. Combining Hpn and MTA, enhances the overall nickel storage capability of our engineered bacteria while simultaneously minimizing the harmful effects of nickel accumulation.
-
-Together, the synergistic action of ribozyme-connected Hpn ([BBa_K5115036](https://parts.igem.org/Part:BBa_K5115036)) and MTA ([BBa_K5115050](https://parts.igem.org/Part:BBa_K5115050)) establishes a comprehensive nickel tolerance mechanism, which not only supports the effective uptake of nickel ions but also ensures that *E. coli* can thrive in challenging environments characterized by fluctuating metal concentrations.
-
-<div style="text-align: center;" id="fig-2">
-<img src="https://static.igem.wiki/teams/5115/part-collection/parts-nickel-tolerance.png" style="width:100%">
-<div>
-   <span style="color:gray">Figure 2: Overview of Nickel Tolerance Mechanisms.<br><small>
-     This diagram illustrates the interaction and functions of the Hpn and MTA in facilitating nickel ion recovery and tolerance in <em>E. coli</em></small>
-   </span><br><br>
-</div>
-</div>
-
-<br>
-
-<div style="text-align: center;">
-   <p>Table 2: Parts for Nickel Tolerance</p>
-</div>
-
-| Part Name        | Type   | Description    |
-| ---------------- | ------ | ---------------|
-| [BBa_K5115036](https://parts.igem.org/Part:BBa_K5115050) | Composite | Ribozyme + RBS + Hpn + stem-loop – histidine-rich protein that sequesters nickel ions, protecting cells from nickel toxicity. |
-| [BBa_K5115050](https://parts.igem.org/Part:BBa_K5115050) | Coding  | MTA, metallothionein from *Pisum sativum* for heavy metal binding, protecting cells from nickel toxicity. |
-
-<br>
-
-## Survival Modules
-
-### Anti-phage
-
-To ensure the viability of our engineered *E. coli* in semi-open environments, such as wastewater treatment facilities, we developed an anti-phage survival module utilizing YejM ([BBa_K5115070](https://parts.igem.org/Part:BBa_K5115070)). YejM plays a key role in regulating the synthesis of lipopolysaccharide (LPS), a major component of the *E. coli* outer membrane. By inhibiting the degradation of LpxC, an enzyme required for LPS biosynthesis, YejM maintains stable LPS level, which in turn enhances bacterial membrane's integrity. A strong outer membrane serves as a protective barrier, reducing susceptibility to phage infection. Mechanistically, YejM competes with FtsH, a membrane-bound protease, preventing FtsH from degrading LpxC.
-
-To validate the anti-phage effect of YejM, we expressed YejM in *E. coli* TG1 strain, which carry type IV pili required for infection by M13KO7 phages. After exposuring to phages (carrying Kan resistence), on dual-antibiotic (Amp+Kan) LB plates, we observed significantly fewer colonies from YejM-expressing bactera (carrying Amp resistence), indicating a marked reduction in phage infection. As we designed, increased LPS level loweres the efficiency of phage binding and entry, ensuring the functionality of our [MINERAL](/fudan/description/) modules for industrial applications.
-
-<div style="text-align: center;" id="fig-2">
-<img src="https://static.igem.wiki/teams/5115/part-collection/parts-anti-phage.png" style="height:480px">
-<div>
-   <span style="color:gray">Figure 3: Overview of Anti-Phage Mechanisms.<br><small>
-     This diagram illustrates the interaction and functions of the YejM in preventing phage from infecting <em>E. coli</em></small>
-   </span><br><br>
-</div>
-</div>
-
-<br>
-
-<div style="text-align: center;">
-   <p>Table 3: Parts for Survival</p>
-</div>
-
-| Part Name        | Type   | Description    |
-| ---------------- | ------ | ---------------|
-| [BBa_K5115070](https://parts.igem.org/Part:BBa_K5115070) | Coding | YejM – anti-adaptor protein that regulates LPS synthesis, indirectly improving *E. coli* survival and enhancing phage resistance. |
-| [BBa_K4765015](https://parts.igem.org/Part:BBa_K4765015) | Coding | AnAFP, from [Fudan 2023](https://2023.igem.wiki/fudan/part-collection/#survival-system) |
-| [BBa_K4765016](https://parts.igem.org/Part:BBa_K4765016) | Coding | *H. ex* mtSSB, from [Fudan 2023](https://2023.igem.wiki/fudan/part-collection/#survival-system) |
-| [BBa_K4765126](https://parts.igem.org/Part:BBa_K4765126) | Composite | ribozyme connected: *H. ex* mtSSB + SAHS 33020 + AnAFP, from [Fudan 2023](https://2023.igem.wiki/fudan/part-collection/#survival-system) |
-
-<br>
-
-### Anti-freeze & Anti-Desiccation
-
-Our engineered *E. coli* bacteria, optimized for nickel absorption, require resilient survival mechanisms to flourish in demanding working conditions. The integration of anti-freeze module provides additional benefit. We extend our sincere gratitude to [Fudan 2023](https://2023.igem.wiki/fudan/part-collection/#survival-system) for providing the plasmids that enhance our strains' anti-freeze and anti-desiccation capabilities.
-
-The Anti-freeze module includes the protein AnAFP ([BBa_K4765015](https://parts.igem.org/Part:BBa_K4765015)), which enhances resistance to freezing temperatures. Additionally, they have incorporated the *H. ex* mtSSB protein, derived from tardigrades. This protein provides anti-desiccation properties, ensuring robust survival in harsh conditions.
-
-For Anti-desiccation, we utilize the protein SAHS protein (TDP, [BBa_K2306003](https://parts.igem.org/Part:BBa_K2306003)), which is essential for preventing cell damage in dry environments. This capability is critical for maintaining bacterial viability during periods of low moisture, which may occur in industrial processes.
-
-Together, these modules enhance the *E. coli*'s resilience, allowing it to withstand extreme conditions.
-
-## Microparticle Module
-
-The microparticle module aims to create a specialized microenvironment within *E. coli* for the effective reduction of bioaccumulated nickel ions into nickel microparticles. Central to this process is Ni/Fe hydrogenase, a key enzyme that facilitates the transition of nickel ions into metallic particles through a catalytic reaction.
-
-Based on our experimental results, we have selected our favorite module for nickel reduction and particle formation - [MINERAL](/fudan/description/) F module ([BBa_K5115067](https://parts.igem.org/Part:BBa_K5115067)), which includes ribozyme-connected hox and hyp (with EP targeted hoxF, [BBa_K5115063](https://parts.igem.org/Part:BBa_K5115063)) and cso (without csoS3, [BBa_K5115065](https://parts.igem.org/Part:BBa_K5115065)). While the alternative, U module ([BBa_K5115066](https://parts.igem.org/Part:BBa_K5115066)) has also been test experimentally.
-
-This integrated module provides a reliable framework for effective reduction of nickel ions into [less harmful](/fudan/safety/#fig45) forms, promoting not only efficient nickel recovery but also surprisingly nickel uptake ability of our engineered *E. coli*.
-
-<div style="text-align:left;padding-left:7em;">
-   <p>Table 4: Parts for Microparticle System</p>
-</div>
-
-| Part Name           | Type      | Description       |
-| ------------------- | --------- | ----------------- |
-| [BBa_K5115066](https://parts.igem.org/Part:BBa_K5115066) | Composite | mineral, U module |
-| [BBa_K5115067](https://parts.igem.org/Part:BBa_K5115067) | Composite | mineral, F module |
-
-<br>
-
-### Hydrogenase-Mediated Nickel Ion Reduction
-
-The hox and hyp operon ([BBa_K5115020](https://parts.igem.org/Part:BBa_K5115020)) components play crucial roles in the bioconversion of nickel ions into nickel microparticles.
-
-The hox operon consists of multiple genes that work collaboratively to facilitate hydrogen production and nickel reduction. The subunit hoxF ([BBa_K5115001](https://parts.igem.org/Part:BBa_K5115001)) encodes the core hydrogenase subunit, which catalyzes the conversion of protons and electrons into molecular hydrogen. This process is crucial for providing the reducing power needed for nickel ion reduction. The subunits hoxU ([BBa_K5115003](https://parts.igem.org/Part:BBa_K5115003)), hoxY ([BBa_K5115004](https://parts.igem.org/Part:BBa_K5115004)), hoxH ([BBa_K5115005](https://parts.igem.org/Part:BBa_K5115005)), hoxW ([BBa_K5115006](https://parts.igem.org/Part:BBa_K5115006)), and hoxI ([BBa_K5115007](https://parts.igem.org/Part:BBa_K5115007)) contribute to the structure and electron transfer of the hydrogenase complex, ensuring its optimal performance during nickel reduction.
-
-The hyp operon plays a critical role in the maturation of hydrogenase, with hypA ([BBa_K5115008](https://parts.igem.org/Part:BBa_K5115008)), hypB ([BBa_K5115009](https://parts.igem.org/Part:BBa_K5115009)), and hypF ([BBa_K5115010](https://parts.igem.org/Part:BBa_K5115010)) working together to facilitate the delivery of necessary cofactors to the enzyme complex. Specifically, hypA and hypB are involved in nickel binding and transport, ensuring that the hydrogenase subunits receive the required metal ions for optimal activity. HypF assists in the assembly of the hydrogenase complex by stabilizing its structure during maturation.
-
-Through the synergistic integration of the hox and hyp operon, our module effectively enables the reduction of nickel ions into nickel particles, thereby maximizing the efficiency of nickel recovery from industrial wastewater.
-
-<div style="text-align: center;" id="fig-2">
-<img src="https://static.igem.wiki/teams/5115/part-collection/parts-hydrogenase-mediated-nickel-ion-reduction.png" style="width:70%">
-<div>
-   <span style="color:gray">Figure 4: Overview of Nickel-Reduction Mechanisms.<br><small>
-     This diagram illustrates the interaction and functions of hox and hyp operon in mediating nickel reduction in <em>E. coli</em></small>
-   </span><br><br>
-</div>
-</div>
-
-<br>
-
-<div style="text-align: center;">
-   <p>Table 5: Parts for Hydrogenase-Mediated Nickel Ion Reduction</p>
-</div>
-
-| Part Name      | Type      | Description      |
-| -------------- | --------- | ---------------- |
-| [BBa_K5115001](https://parts.igem.org/Part:BBa_K5115001) | Coding    | hoxF                                          |
-| [BBa_K5115003](https://parts.igem.org/Part:BBa_K5115003) | Coding    | hoxU                                          |
-| [BBa_K5115004](https://parts.igem.org/Part:BBa_K5115004) | Coding    | hoxY                                          |
-| [BBa_K5115005](https://parts.igem.org/Part:BBa_K5115005) | Coding    | hoxH                                          |
-| [BBa_K5115006](https://parts.igem.org/Part:BBa_K5115006) | Coding    | hoxW                                          |
-| [BBa_K5115007](https://parts.igem.org/Part:BBa_K5115007) | Coding    | hoxI                                          |
-| [BBa_K5115008](https://parts.igem.org/Part:BBa_K5115008) | Coding    | hypA                                          |
-| [BBa_K5115009](https://parts.igem.org/Part:BBa_K5115009) | Coding    | hypB                                          |
-| [BBa_K5115010](https://parts.igem.org/Part:BBa_K5115010) | Coding    | hypF                                          |
-| [BBa_K5115011](https://parts.igem.org/Part:BBa_K5115011) | Composite | ribozyme+RBS+hoxF+stem-loop                   |
-| [BBa_K5115012](https://parts.igem.org/Part:BBa_K5115012) | Composite | ribozyme+RBS+hoxU+stem-loop                   |
-| [BBa_K5115013](https://parts.igem.org/Part:BBa_K5115013) | Composite | ribozyme+RBS+hoxY+stem-loop                   |
-| [BBa_K5115014](https://parts.igem.org/Part:BBa_K5115014) | Composite | ribozyme+RBS+hoxH+stem-loop                   |
-| [BBa_K5115015](https://parts.igem.org/Part:BBa_K5115015) | Composite | ribozyme+RBS+hoxW+stem-loop                   |
-| [BBa_K5115016](https://parts.igem.org/Part:BBa_K5115016) | Composite | ribozyme+RBS+hoxI+stem-loop                   |
-| [BBa_K5115017](https://parts.igem.org/Part:BBa_K5115017) | Composite | ribozyme+RBS+hypA+stem-loop                   |
-| [BBa_K5115018](https://parts.igem.org/Part:BBa_K5115018) | Composite | ribozyme+RBS+hypB+stem-loop                   |
-| [BBa_K5115018](https://parts.igem.org/Part:BBa_K5115018) | Composite | ribozyme+RBS+hypB+stem-loop                   |
-| [BBa_K5115019](https://parts.igem.org/Part:BBa_K5115019) | Composite | ribozyme+RBS+hypF+stem-loop                   |
-| [BBa_K5115020](https://parts.igem.org/Part:BBa_K5115020) | DNA       | hox and hyp operon                            |
-| [BBa_K5115021](https://parts.igem.org/Part:BBa_K5115021) | DNA       | linker1 for hox and hyp                       |
-| [BBa_K5115022](https://parts.igem.org/Part:BBa_K5115022) | DNA       | linker2 for hox and hyp                       |
-| [BBa_K5115023](https://parts.igem.org/Part:BBa_K5115023) | DNA       | linker3 for hox and hyp                       |
-| [BBa_K5115024](https://parts.igem.org/Part:BBa_K5115024) | DNA       | linker4 for hox and hyp                       |
-| [BBa_K5115025](https://parts.igem.org/Part:BBa_K5115025) | DNA       | linker5 for hox and hyp                       |
-| [BBa_K5115051](https://parts.igem.org/Part:BBa_K5115051) | Composite | ribozyme connected hox and hyp               |
-| [BBa_K5115052](https://parts.igem.org/Part:BBa_K5115052) | Composite | ribozyme connected hox and hyp, without hoxF |
-| [BBa_K5115053](https://parts.igem.org/Part:BBa_K5115053) | Composite | ribozyme connected hox and hyp, without hoxU |
-
-<br>
-
-### &alpha;-Carboxysome Compartmentalization
-
-We incorporate a carboxysome module to enhance the efficiency of nickel fixation and support nickel ion reduction processes. The carboxysome-related parts are essential for the formation of this specialized compartments.
-
-The csoS1A ([BBa_K5115030](https://parts.igem.org/Part:BBa_K5115030)), csoS1B ([BBa_K5115031](https://parts.igem.org/Part:BBa_K5115031)), csoS1C ([BBa_K5115030](https://parts.igem.org/Part:BBa_K5115031)), csoS1D ([BBa_K5115032](https://parts.igem.org/Part:BBa_K5115032)), csoS2 ([BBa_K5115026](https://parts.igem.org/Part:BBa_K5115026)), and csoS3 ([BBa_K5115027](https://parts.igem.org/Part:BBa_K5115027)) proteins are integral to the structural integrity of carboxysomes. These proteins form the shell of the carboxysome, providing a stable platform for enzymes.
-
-Specifically, csoS1A, csoS1B, and csoS1C contribute to the outer layer of the carboxysome, while csoS2 and csoS3 play roles in stabilizing the shell structure, ensuring that the carboxysome remains intact under various cellular conditions. The inclusion of csoS4A ([BBa_K5115055](https://parts.igem.org/Part:BBa_K5115055)) and csoS4B ([BBa_K5115028](https://parts.igem.org/Part:BBa_K5115028)) further enhances the structural assembly and functionality of the carboxysome, facilitating the encapsulation of carbon fixation enzymes like RuBisCO in cyanobacteria.
-
-In our design, we omitted the *csoS3* ([BBa_K5115027](https://parts.igem.org/Part:BBa_K5115027)) gene, as previous studies have shown that it is not essential for carboxysome assembly or function. While it does enhance carboxysome stability, its absence does not significantly affect shell formation. To reduce the final plasmid size, we chose to excluding this component while retaining the other structural proteins needed for effective carboxysome formation.
-
-The components of the carboxysome module are derived from [a plasmid reported in the literature](https://addgene.org/140856), which contains the genetic sequences necessary for the assembly and function of carboxysomes in *E. coli*. We removed the csoS3 and wrapped its sequence with pRAP[^2].
-
-<div style="text-align:left;padding-left:7em;">
-   <p>Table 6: Parts for &alpha;-Carboxysome Compartmentalization</p>
-</div>
-
-| Part Name        | Type   | Description    |
-| ---------------- | ------ | ---------------|
-| [BBa_K5115026](https://parts.igem.org/Part:BBa_K5115026) | Coding | csoS2              |
-| [BBa_K5115027](https://parts.igem.org/Part:BBa_K5115027) | Coding | csoS3              |
-| [BBa_K5115028](https://parts.igem.org/Part:BBa_K5115028) | Coding | csoS4B             |
-| [BBa_K5115029](https://parts.igem.org/Part:BBa_K5115029) | Coding | csoS1C             |
-| [BBa_K5115030](https://parts.igem.org/Part:BBa_K5115030) | Coding | csoS1A             |
-| [BBa_K5115031](https://parts.igem.org/Part:BBa_K5115031) | Coding | csoS1B             |
-| [BBa_K5115032](https://parts.igem.org/Part:BBa_K5115032) | Coding | csoS1D             |
-| [BBa_K5115034](https://parts.igem.org/Part:BBa_K5115034) | DNA    | csoS operon        |
-| [BBa_K5115044](https://parts.igem.org/Part:BBa_K5115044) | DNA    | linker1            |
-| [BBa_K5115045](https://parts.igem.org/Part:BBa_K5115045) | DNA    | linker2            |
-| [BBa_K5115046](https://parts.igem.org/Part:BBa_K5115046) | DNA    | linker3            |
-| [BBa_K5115047](https://parts.igem.org/Part:BBa_K5115047) | DNA    | linker4            |
-| [BBa_K5115048](https://parts.igem.org/Part:BBa_K5115048) | DNA    | linker5            |
-| [BBa_K5115049](https://parts.igem.org/Part:BBa_K5115049) | DNA    | linker6            |
-| [BBa_K5115055](https://parts.igem.org/Part:BBa_K5115055) | Coding | csoS4A             |
-| [BBa_K5115065](https://parts.igem.org/Part:BBa_K5115065) | DNA    | cso, without csoS3 |
-
-<br>
-
-### Peptide Encapsulation
-
-The Peptide Encapsulation (EP) module is designed to facilitate the effective encapsulation of enzymes to the carboxysome structure, enhancing the efficiency of biochemical reactions. EP ([BBa_K5115002](https://parts.igem.org/Part:BBa_K5115002))  serves as a linker that connects the target enzymes to the carboxysome, ensuring proper localization. We test its targeting efficienty with stayGold fused with EP ([BBa_K5115057](https://parts.igem.org/Part:BBa_K5115057)).
-
-In our design, EP is integrated into several composite parts: the part hoxF fused with EP ([BBa_K5115058](https://parts.igem.org/Part:BBa_K5115058), and its ribozyme-connected version [BBa_K5115061](https://parts.igem.org/Part:BBa_K5115061)) or hoxU fused with EP ([BBa_K5115059](https://parts.igem.org/Part:BBa_K5115059), and its ribozyme-connected version [BBa_K5115062](https://parts.igem.org/Part:BBa_K5115062)) combines the hoxF or hoxU coding sequence, responsible for encoding a hydrogenase subunit, inframe with EP, facilitating the targeted delivery of the hydrogenase into the carboxysome.
-
-Additionally, the parts hox and hyp with EP targeted hoxF ([BBa_K5115063](https://parts.igem.org/Part:BBa_K5115063)) and hox and hyp with EP targeted hoxU ([BBa_K5115064](https://parts.igem.org/Part:BBa_K5115064)) contain the hox and hyp genes, with EP specifically targeting hoxF and hoxU, respectively, for encapsulation. This design allows for the coordinated expression and delivery of both hydrogenase and helper proteins to the carboxysome shell, promoting efficient nickel ion reduction processes.
-
-<div style="text-align: center;" id="fig-2">
-<img src="https://static.igem.wiki/teams/5115/part-collection/parts-carboxysomes-ep.png" style="height:480px">
-<div>
-   <span style="color:gray">Figure 5: Overview of  &alpha;-Carboxysome Compartmentalization Mechanisms.<br><small>
-     This diagram illustrates the interaction and functions of Cso operon and Ep in warpping Hydrogenase in <em>E. coli</em></small>
-   </span><br><br>
-</div>
-</div>
-
-<br>
-
-<div style="text-align: center;">
-   <p>Table 7: Parts for Peptide Encapsulation</p>
-</div>
-
-| Part Name        | Type   | Description    |
-| ---------------- | ------ | ---------------|
-| [BBa_K5115002](https://parts.igem.org/Part:BBa_K5115002) | Coding    | EP                                 |
-| [BBa_K5115057](https://parts.igem.org/Part:BBa_K5115057) | Composite | stayGold fused with EP |
-| [BBa_K5115058](https://parts.igem.org/Part:BBa_K5115058) | Coding    | hoxF fused with EP                 |
-| [BBa_K5115059](https://parts.igem.org/Part:BBa_K5115059) | Composite | hoxU fused with EP                 |
-| [BBa_K5115061](https://parts.igem.org/Part:BBa_K5115061) | Composite | ribozyme+RBS+hoxF-GS-EP+stem-loop  |
-| [BBa_K5115062](https://parts.igem.org/Part:BBa_K5115062) | Composite | ribozyme+RBS+hoxU-GS-EP+stem-loop  |
-| [BBa_K5115063](https://parts.igem.org/Part:BBa_K5115063) | Composite | hox and hyp, with EP targeted hoxF |
-| [BBa_K5115064](https://parts.igem.org/Part:BBa_K5115064) | Composite | hox and hyp, with EP targeted hoxU |
-
-<br>
-
-In summary, the microparticle module harnesses the collaborative power of hydrogenase enzymes, carboxysome compartments, and encapsulation peptides to drive an innovative approach for nickel reduction in *E. coli*. This integrated module not only advances the biotechnological potential of engineered microorganisms but also addresses environmental concerns related to nickel contamination by converting harmful ions into less toxic particles.
-
-## Hydrogen Supply
-
-To ensure an adequate supply of hydrogen for our engineered *E. coli* bacteria, we have employed a symbiotic system that leverages cyanobacteria for hydrogen production. This approach is vital for providing the necessary hydrogen for hydrogenase-mediated nickel reduction. We are immensely grateful for the plasmids provided by [Fudan 2023](https://2023.igem.wiki/fudan/results/#_2-symbiotic-system), as well as *CscB* ([BBa_K4115045](https://parts.igem.org/Part:BBa_K4115045)) and *SacC* ([BBa_K4115017](https://parts.igem.org/Part:BBa_K4115017)) provided by [ShanghaiTech-China 2022](https://2024.igem.wiki/shanghaitech-china/).
-
-Please note that when we test our microparticle U module ([BBa_K5115066](https://parts.igem.org/Part:BBa_K5115066)) or F module ([BBa_K5115067](https://parts.igem.org/Part:BBa_K5115067)), for [TEM](/fudan/experiments/#other-experimental-methods) clarity, we bubbled 5.6% H~2~ gas into the bacteria culture, rather using cyanobacteria coculture.
 
 ----
-For research articles inspired our parts design, please visit our [Description](/fudan/description/) page.
 
-[^2]: Liu, Y., Wu, Z., Wu, D., Gao, N., & Lin, J. (2023). Reconstitution of Multi-Protein Complexes through Ribozyme-Assisted Polycistronic Co-Expression. *ACS Synthetic Biology*, *12*(1), 136–143.[https://doi.org/10.1021/acssynbio.2c00416](https://doi.org/10.1021/acssynbio.2c00416)
+[^1]: Hodgins-Davis, Andrea et al. “Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*.” *Proceedings of the National Academy of Sciences of the United States of America* vol. 116,42 (2019): 21085-21093. doi:10.1073/pnas.1902823116
+[^2]:Shaw, William M et al. “A Multiplex MoClo Toolkit for Extensive and Flexible Engineering of *Saccharomyces cerevisiae*.” *ACS synthetic biology* vol. 12,11 (2023): 3393-3405. doi:10.1021/acssynbio.3c00423

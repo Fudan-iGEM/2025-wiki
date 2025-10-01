@@ -1,15 +1,16 @@
 ---
 title: Parts
-author:
-- name: Liyue Chen
-  url: /fudan/team/#liyue-chen
-- name: Yi Shi
-  url: /fudan/team/#yi-shi
+authors:
+  - name: Peining Wu
+    url: /team/#wu-peining
+    avatar: （头像，先不填）
+  - name: Zhiqin Wang
+    url: /team/#wang-zhiqin
+    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jp
 layout: igem
-heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
+heroImage: （拍摄并且选取页面图像，作为顶部展示）
+description: On this page, we
 ---
-<!-- NO SIDEBAR ON THIS PAGE -->
 
 <pre>
 ## Common Forward Primer for ribozyme connected parts: 5-tcagcaaattgtgaacatcatcacg-3
@@ -40,12 +41,12 @@ R_csoS1D  5-GCACGCTCGACTACCTG-3
 ## Forward Primer paired with R_cso: 5-atggggtcaaacatgcct-3
 </pre>
 
-Our favourite parts are [BBa_K5115067](https://parts.igem.org/Part:BBa_K5115067) and [BBa_K5115068](https://parts.igem.org/Part:BBa_K5115068).
+Our favourite parts are BBa_K5115067
 
-These two parts are outstanding examples of our expanding ribozyme-connected parts [collection](/fudan/part-collection). Promoters and terminators are not included in these parts, and they were built in our plasmid backbones: [BBa_K4765027](http://parts.igem.org/Part:BBa_K4765027) (T7 promoter with lac operator, T7 and rrnB T1 dual-terminator) and [BBa_K5115069](https://parts.igem.org/Part:BBa_K5115069) (J23107, T7 and rrnB T1 dual-terminator). This flexible design enables all our ribozyme-connected parts easily transfer to other prokaryotic expression vectors, even shuttle vectors. 
+This part
 
-Visit our [Improve](/fudan/improve/) page for parts we improved this year.
+Visit our [Improve](/improve/) page for parts we improved this year.
 
-Vist our [Part Collection](/fudan/part-collection/) page for parts we made in 2024. Links to all parts available at [gitlab](https://gitlab.igem.org/2024/fudan/-/blob/main/groupparts.md) and the [Registry](https://parts.igem.org/partsdb/search_1000.cgi?q=K5115000).
+Vist our [Part Collection](/part-collection/) page for parts we made in 2025. Links to all parts available at [gitlab](https://gitlab.igem.org/2025/fudan/-/blob/main/groupparts.md) and the [Registry](https://registry.igem.org/).
 
 Please check [our promotion video](https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe), from [Team Fudan](https://2025.igem.wiki/fudan/).

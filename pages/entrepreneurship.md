@@ -2,14 +2,12 @@
 title: entrepreneurship
 authors:
   - name: Xiuqi Tian
-    url: （先不填）
+    url: /team/#tian-xiuqi
     avatar: （头像，先不填）
 layout: igem 
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
 description: How we commercialize Dr.sTraTeGY into a product for CROs.
 ---
-
-
 
 ## Summary
 
@@ -34,13 +32,13 @@ description: How we commercialize Dr.sTraTeGY into a product for CROs.
 
 - Backed by expert validation (Shanghai Stock Exchange Cup, SoftBank China CEO), prioritizing **IP protection, CRO partnerships, and targeted market segmentation.**
 
-  
 
 ## Our pre-research: What's happening in the Antifungal medication market?
 
-####  One:  Take a look at the business landscape 
+#### One:  Take a look at the business landscape
 
- According to Fortune Business Insights, the global antifungal drugs market size is projected to reach **USD** **13.17 billion by 2027**, with a compound annual growth rate (CAGR) of **3.3%** during the forecast period*[1]*. With our estimation,the chinese antifungal drugs market accounts for 25% of the global share（3.29billion）.
+
+ According to Fortune Business Insights, the global antifungal drugs market size is projected to reach **USD** **13.17 billion by 2027**, with a compound annual growth rate (CAGR) of **3.3%** during the forecast period[1]. With our estimation,the chinese antifungal drugs market accounts for 25% of the global share (3.29 billion).
 
  Since the advent of echinocandins, the worsening drug resistance crisis has made the development of antifungal drugs with entirely new mechanisms an urgent global need. 
 
@@ -59,7 +57,7 @@ description: How we commercialize Dr.sTraTeGY into a product for CROs.
 
   
 
-####  Two: why and who needs to study AMR ？
+#### Two: why and who needs to study AMR ？
 
 Currently, the preclinical R&D pipeline for antifungal drugs remains insufficiently robust. This is attributed to the lack of efficient and effective drug screening, which results in a relatively high attrition rate during early-stage drug innovation. Specifically, many drugs that appear promising in the preclinical phase fail in subsequent clinical trials due to various reasons, such as safety concerns and inadequate efficacy. The existing preclinical R&D pipeline is unable to offset the losses caused by these high attrition rates.
 
@@ -71,16 +69,16 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 
 
 
-##  Making our solution possible，scalable and inventive
+## Making our solution possible，scalable and inventive
 
 
-####  Core Technology
+#### Core Technology
 
 At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture.
 
 ![core tech](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
 
-####  MVP (Minimum Viable Product)
+#### MVP (Minimum Viable Product)
 
  Our will deliver **Dr.sTraTeGY** to our clients as a **“Reagent Kit + Companion Software”** tool package, consisting of three parts.
 
@@ -108,9 +106,9 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 
 
-##  Where our market is located: Unmet needs in the Yangtze Delta region
+## Where our market is located: Unmet needs in the Yangtze Delta region
 
-####  The gap in Critical Genetic Screening Approaches for Drug Resistance
+#### The gap in Critical Genetic Screening Approaches for Drug Resistance
 
  Currently, the escalation of fungal drug resistance and the lag in chassis organism models have led to a 24-year stagnation in the development of new classes of antifungal drugs.
 
@@ -120,7 +118,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
  The prerequisite for developing anti-resistance drugs is the **precise identification of resistance mutation sites.** However, traditional whole-genome sequencing (WGS) is costly, analytically complex, and faces four major challenges: lack of standardization, resource dependency, high expense, and ambiguous results. Therefore, we aim to leverage our technology to develop a toolkit that can track the evolutionary dynamics of fungal resistance under drug pressure.
 
-####  Benchhead market
+#### Benchhead market
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic8.webp)
 
@@ -144,7 +142,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
   
 
-####  TAM, SAM, SOM Analysis 
+#### TAM, SAM, SOM Analysis
 
  **TAM Analysis** The Yangtze River Delta accounts for 39.7% of China’s antifungal resistance testing market. Given that the national fungal infection diagnostics market is projected to reach **USD 3.29 billion** by 2027, and assuming antifungal resistance testing represents **5%**, the total national market would be approximately **USD 164.5 million**. Based on the regional share, the TAM in the Yangtze Delta is about **USD 65.3 million**.
 
@@ -154,17 +152,17 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic9.webp)
 
-##  Crafting Our Strategic Path：analyzing our resources and stakeholders
+## Crafting Our Strategic Path：analyzing our resources and stakeholders
 
-####  Product Advantages
+#### Product Advantages
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
 
-####  PEST analysis
+#### PEST analysis
 
 ![Pest analysis](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic10.webp)
 
-####  Our stakeholders
+#### Our stakeholders
 
  The stakeholder matrix is a widely used strategic tool to differentiate partners by their value contribution and engagement priority. Applying this framework, we identified three tiers:
 
@@ -183,7 +181,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 
 
-####  Team Members' capability
+#### Team Members' capability
 
  As a team with diverse backgrounds, we have members specialized in different areas，including: biology，Clinical Medical Science，software development，commercialization，public relations.
 
@@ -193,7 +191,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic12.webp)
 
-####  SWOT Analysis
+#### SWOT Analysis
 
 Based on SWOT，we will take the SO strategy: where we will leverage **internal strengths** to capitalize on **external opportunities**.
 
@@ -211,13 +209,13 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 
 
-##  Going to market ：Strategies and roadmap
+## Going to market ：Strategies and roadmap
 
-####  Our mission
+#### Our mission
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic14.webp)
 
-####  Pricing Strategy
+#### Pricing Strategy
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic15.webp)
 
@@ -239,7 +237,7 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 
 
-####  Marketing Strategy 
+#### Marketing Strategy
 
  **Target Segments**
 
@@ -298,11 +296,11 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
   
 
-####  IP Protection Strategy
+#### IP Protection Strategy
 
  **Possible** **IP** **assets**
 
-- Patents: key recombinant yeast strain with fluorescent clock + GPCR circuit; mutation probes; software algorithms (modeling, branch prediction, mutation rate computation).
+- Patents: key recombinant yeast strain with fluorescent clock + GPCR circuit; mutation probes; software algorithms (pMYTodeling, branch prediction, mutation rate computation).
 - Trade secrets: specific probe designs / sequences; software source code; data from lineage tracking (unique datasets).
 - Copyright / licensing: software, manuals, user interfaces.
 
@@ -320,9 +318,9 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
   
 
-####  Business Exit Strategy
+#### Business Exit Strategy
 
-We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from first commercial sales to either acquisition or IPO if all goes well (market traction, regulatory compliance, scaling).
+We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from first commercial sales to either acquisition or IPO if all goes well (pMYTarket traction, regulatory compliance, scaling).
 
 | Exit Path                                               | Description                                                  | Pros / Cons                                                  | Likely Valuation Drivers                                     |
 | :------------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -331,15 +329,15 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 | **IPO / public listing**                                | Float on a Chinese board (e.g., Zhujiang Delta Market) or an overseas biotech-friendly market. | **Pros:** Potential for high valuation if growth is strong; brand and resource expansion.<br>**Cons:** Burdensome regulations, public reporting, dilution, market risk; dependent on favorable market conditions. | Proof of scale, documented revenue growth, recurring contracts, a clear path to profitability. |
 | **M&A by CRO / service company**                        | A large CRO might acquire DR、r.sTraTeGY to internalize the resistance-tracking capability. | **Pros:** Logical buyer with direct benefit from the technology; potential for strong synergies.<br>**Cons:** Purchase price negotiation challenges; may command a lower premium than a product company. | Integration potential, cost-saving synergies, ability to scale the technology, overlap with the acquirer's customer base. |
 
-####  Business model canvas
+#### Business model canvas
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic17.webp)
 
 
 
-##  Overlooking to the long-term：how we impact the future 
+## Overlooking to the long-term：how we impact the future
 
-####  Expansion Timeline
+#### Expansion Timeline
 
  With our product planning to exit in 5years，we planned the business timeline since 2026： 
 | Phase                                               | Timeline     | Key Activities                                               |
@@ -354,7 +352,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 
 
-####  Impact Assessment **Scientific / Healthcare Impact**
+#### Impact Assessment **Scientific / Healthcare Impact**
 
 - Improved detection of resistance evolution in fungi; better understanding of mutation emergence & selection.
 - Faster diagnostics & resistance surveillance → better patient outcomes, more rational antifungal usage.
@@ -379,7 +377,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
   
 
-####  **Financial Planning**
+#### **Financial Planning**
 
 **Financial Projections & Assumptions**
 
@@ -420,7 +418,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
   
 
-##  Our Action
+## Our Action
 
  In March 2025, we participated in the National Innovation Competition, where we refined our business model and product presentation for the first time. 
 
@@ -450,10 +448,8 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action5.webp)
 
 
-
-#  References 
+# References
 
 [^1]: Fortunebusinessinsights. (2020). *Anti Fungal Drugs Market Size, Share & Industry Analysis*. https://www.fortunebusinessinsights.com/zh/industry-reports/antifungal-drugs-market-101188
 [^2]: Lai CC, Yu WL. COVID-19 associated with pulmonary aspergillosis: A literature review. J Microbiol Immunol Infect. 2021 Feb;54(1):46-53
 [^3]: Rao, H., Choo, S., Rajeswari Mahalingam, S. R., Adisuri, D. S., Madhavan, P., Md. Akim, A., & Chong, P. P. (2021). *Approaches for mitigating microbial biofilm-related drug resistance: A focus on micro- and nanotechnologies.* *Molecules, 26*(7), 1870.
-

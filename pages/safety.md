@@ -2,11 +2,11 @@
 title: Safety
 authors:
   - name: Yue Yue
-    url: （先不填）
+    url: /team/#yue-yue
     avatar: （头像，先不填）
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: （页面描述）
+description: On this page, we
 ---
 
 ### Introduction
@@ -17,7 +17,7 @@ Since our experimental design and application scenarios take place entirely with
 
 ![TOC](https://i.mji.rip/2025/09/15/7c90edd8684b81aa40153f109784331c.png)
 
-> 参考igem fudan 2023，放一个类似于这样的图 
+参考igem fudan 2023，放一个类似于这样的图 
 
 ### Laboratory Safety
 
@@ -176,7 +176,7 @@ Our circuit integrates three core modules: a riboregulatory system, a biotin aux
 
 - **Riboregulatory module:** The pLtetO promoter is repressed by TetR and activated by aTc to express trans-activating RNA (taRNA). Meanwhile, the pLlacO promoter is repressed by LacI and activated by IPTG to drive cis-repressing RNA (crRNA) along with an essential gene. The taRNA and crRNA interact through a looped intermediate structure that exposes the crRNA’s ribosome binding site (RBS), enabling expression of the downstream essential gene.
 - **Biotin auxotrophy module:** Here, the *bioAB* operon is replaced with the **ampicillin resistance gene (*bla*)**. Normally, *bioA* produces the precursor of biotin’s heterocyclic ring, while *bioB* catalyzes the final ring closure to generate active biotin. Disruption of both genes creates an auxotrophic strain that requires exogenous biotin for growth.
-- **Nuclease kill-switch module:** Constitutive expression of EcoRI nuclease (magenta) kills cells unless protected by EcoRI methyltransferase (yellow), which is itself placed under aTc regulation.
+- **Nuclease kill-switch module:** Constitutive expression of EcoRI nuclease (pMYTagenta) kills cells unless protected by EcoRI methyltransferase (yellow), which is itself placed under aTc regulation.
 
 Together, these modules ensure that *E. coli* can only survive when all three inputs—**aTc, IPTG, and exogenous biotin**—are present simultaneously. This layered safeguard prevents accidental survival caused by the leakage of any single module.
 

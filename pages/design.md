@@ -2,11 +2,14 @@
 title: design
 authors:
   - name: Yining Zhao
-    url: （先不填）
-    avatar: （头像，先不填）
-layout: igem 
+    url: /team/#zhao-yining
+    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
+  - name: Zhiqin Wang
+    url: /team/#wang-zhiqin
+    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
+layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: Design of DR. sTraTeGY
+description: On this page, we relfect on how our project started.
 ---
 
 ## Overview

@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Zhiqin Wang",
     title: "Team Leader",
-    handle: "Zhiqin Wang",
+    handle: "Zhiqin",
     status: "INTP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
@@ -23,110 +23,110 @@ const teamMembers = [
     description: "I'm honored to be the captain of this igem team, responsible for design and experiments. I'm a bit of a nerd who enjoys watching anime, reading comics, and listening to music. I love exploring the unknown and look forward to facing challenges together with everyone at iGEM to create a new kind of synthetic biology!"
   },
   {
-    name: "Alex Chen",
-    title: "Project Manager",
-    handle: "Alex Chen",
-    status: "ENTJ",
+    name: "Yue Yue",
+    title: "Team Member",
+    handle: "Yue",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Passionate about synthetic biology and project coordination. I love organizing complex workflows and ensuring our team achieves its goals efficiently. In my free time, I enjoy hiking and reading science fiction novels."
   },
   {
-    name: "Sarah Johnson",
-    title: "Research Scientist",
-    handle: "Sarah Johnson", 
-    status: "ISFJ",
+    name: "Huizhen Du",
+    title: "Team Member",
+    handle: "Huizhen",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Dedicated researcher with expertise in molecular biology and protein engineering. I'm fascinated by the potential of engineered biological systems to solve real-world problems. When not in the lab, I enjoy cooking and photography."
   },
   {
-    name: "Michael Davis",
-    title: "Lab Technician",
-    handle: "Michael Davis",
-    status: "ISTP",
+    name: "Peining Wu",
+    title: "Team Member",
+    handle: "Peining",
+    status: "...",
     contactText: "Detail", 
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Expert in laboratory techniques and equipment maintenance. I ensure our experiments run smoothly and help troubleshoot technical issues. I'm passionate about precision and attention to detail in scientific work."
   },
   {
-    name: "Emma Wilson",
-    title: "Bioinformatics Specialist",
-    handle: "Emma Wilson",
-    status: "INTJ",
+    name: "Yufan Han",
+    title: "Team Member",
+    handle: "Yufan",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Computational biologist specializing in data analysis and modeling. I love transforming complex biological data into meaningful insights. Outside of work, I enjoy playing chess and learning new programming languages."
   },
   {
-    name: "James Lee",
-    title: "Design Engineer",
-    handle: "James Lee",
-    status: "ENFP",
+    name: "Zhongyi Huang",
+    title: "Team Member",
+    handle: "Zhongyi",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Creative engineer focused on designing innovative biological systems. I bridge the gap between theoretical concepts and practical implementations. I'm also passionate about 3D printing and sustainable design."
   },
   {
-    name: "Lisa Rodriguez",
-    title: "Communications Lead",
-    handle: "Lisa Rodriguez",
-    status: "ESFJ",
+    name: "Yining Zhao",
+    title: "Team Member",
+    handle: "Yining",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Responsible for outreach and science communication. I love making complex scientific concepts accessible to diverse audiences. In my spare time, I volunteer at local science museums and write science blogs."
   },
   {
-    name: "David Kim",
-    title: "Quality Assurance",
-    handle: "David Kim",
-    status: "ISTJ",
+    name: "Xiuqi Tian",
+    title: "Team Member",
+    handle: "Xiuqi",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Ensures our research meets the highest standards of quality and reproducibility. I'm meticulous about documentation and protocol validation. I enjoy playing board games and studying historical science discoveries."
   },
   {
-    name: "Rachel Green",
-    title: "Ethics Advisor",
-    handle: "Rachel Green", 
-    status: "INFJ",
+    name: "Yixuan Lu",
+    title: "Team Member",
+    handle: "Yixuan",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Guides our team on ethical considerations in synthetic biology research. I'm passionate about ensuring our work benefits society while addressing potential risks. I love reading philosophy and practicing meditation."
   },
   {
-    name: "Tom Anderson",
-    title: "Hardware Specialist",
-    handle: "Tom Anderson",
-    status: "ESTP",
+    name: "Zuyao Wu",
+    title: "Team Member",
+    handle: "Zuyao",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Develops and maintains our custom laboratory equipment and automation systems. I love building things and solving practical engineering challenges. In my free time, I race remote-controlled cars and tinker with electronics."
   },
   {
-    name: "Maria Santos",
-    title: "Data Analyst",
+    name: "Jihua Tang",
+    title: "Team Member",
     handle: "Maria Santos",
-    status: "INTP",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
     description: "Specializes in statistical analysis and experimental design. I help optimize our research protocols and interpret complex datasets. I'm also interested in machine learning applications in biology and enjoy playing violin."
   },
   {
-    name: "Chris Taylor",
-    title: "Safety Officer",
-    handle: "Chris Taylor",
-    status: "ESFP",
+    name: "Yuxin Duan",
+    title: "Team Member",
+    handle: "Yuxin",
+    status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp", 
     barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
@@ -222,7 +222,7 @@ onUnmounted(() => {
 <div class="member-page">
   <div class="members-grid">
     <div 
-      v-for="(member, index) in visibleMembers" 
+      v-for="(pMYTember, index) in visibleMembers" 
       :key="`member-${member.name}-${index}`"
       class="member-card-wrapper"
     >
@@ -279,7 +279,7 @@ onUnmounted(() => {
 }
 
 /* 小屏幕：显示一个 */
-@media (max-width: 944px) {
+@media (pMYTax-width: 944px) {
   .member-page {
     padding: 3rem 1rem;
   }
@@ -296,7 +296,7 @@ onUnmounted(() => {
 }
 
 /* 中屏幕：显示两个 */
-@media (min-width: 945px) and (max-width: 1339px) {
+@media (pMYTin-width: 945px) and (pMYTax-width: 1339px) {
   .member-page {
     padding: 3.5rem 1.5rem;
   }
@@ -313,7 +313,7 @@ onUnmounted(() => {
 }
 
 /* 大屏幕：显示三个 */
-@media (min-width: 1340px) {
+@media (pMYTin-width: 1340px) {
   .member-page {
     padding: 4rem 2rem;
   }

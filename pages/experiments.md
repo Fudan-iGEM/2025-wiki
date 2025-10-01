@@ -2,13 +2,14 @@
 Title: Experiments
 Author: 
   - name: Yixuan Lu
-    url: （先不填）
+    url: /team/#lu-yixuan
     avatar: （头像，先不填）
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: （页面描述）
+description: On this page, we 
 ---
-## Grape Yeast Settling Selection 
+
+## Grape Yeast Settling Selection
 
 1. Grow the diploid and tetraploid yeast with *ACE2* deletion in 3 mL of YPD media with and without G418 at 30 °C with shaking at 250 rpm for 24 h.
 2. Transfer 1 mL of the culture into a 1.5-mL Ep tube.
@@ -26,7 +27,7 @@ description: （页面描述）
 2. Inoculate each strain into 10 mL of YPD media. Grow at 30°C with 250 rpm shaking for 3 days, performing daily settling selection before transferring to fresh media.
 3. On the last day, after settling selection and transfer, grow the cultures for 24 hours. Sample them at 4 hours (exponential phase) and 24 hours (stationary phase) for measuring cluster size.
 
-###  Sample Preparation for Imaging
+### Sample Preparation for Imaging
 
 1. Gently shake each culture by hand. In a 24-well plate, add an appropriate volume of the culture (1–250 µL) to H<sub>2</sub>O containing 10 µL of 16% (w/v) formaldehyde, making a final volume of 510 µL per well. 
 2. For macroscopic strains, use wide-bore 1-mL tips and sample twice from each culture into two separate wells.
@@ -58,7 +59,7 @@ Use ImageJ for a semi-automated image analysis pipeline:
 2. Inoculate each strain into 10 mL of YPD media and grow at 30°C with 250 rpm shaking for 3 days. Perform daily settling selection before transferring to fresh media each day.
 3. On the last day, transfer 100 µL of culture (without settling selection) to 10 mL of fresh media and grow for 12 hours.
 
-###  Sample Preparation for Imaging
+### Sample Preparation for Imaging
 
 1. Transfer 25 µL of each culture to a 1.5-mL microcentrifuge tube. 
 2. For macroscopic strains, use 100-µL wide-bore tips to sample the culture and break clusters into tiny pieces by pipetting with 100-µL regular-bore tips.
@@ -137,7 +138,7 @@ We stained cells with **calcofluor white** according to the following protocol.
 
 ## Yeast Transformation from Frozen Cell Stocks
 
-### Yeast Frozen Cell Preparation 
+### Yeast Frozen Cell Preparation
 
 1. Pick colony from plate into 5 mL growth medium for overnight growth at 30°C, 250 rpm.
 
@@ -255,14 +256,9 @@ If the routine genotyping above fails, the following protocol can be used to qui
 
 ## Other Experimental Methods
 
+[Bateria plasmid transformation](https://2023.igem.wiki/fudan/experiments/#plasmid-transformation) was conducted as described on our 2023 page.
 
-
-[Bateria plasmid transformation](https://2023.igem.wiki/fudan/experiments/#plasmid-transformation) was conducted as described previously.
-
-[Plasmid miniprep](https://2022.igem.wiki/fudan/experiments#plasmid-miniprep) was conducted as described previously.
-
-[Bacteria colony PCR](https://2022.igem.wiki/fudan/experiments#colony-pcr) was conducted as described previously.
-
+[Plasmid miniprep](https://2022.igem.wiki/fudan/experiments#plasmid-miniprep) and [bacteria colony PCR](https://2022.igem.wiki/fudan/experiments#colony-pcr) were conducted as described on our 2022 page.
 
 
 ## References
@@ -276,6 +272,3 @@ If the routine genotyping above fails, the following protocol can be used to qui
 [4] Sorida, M., & Bonasio, R. (2023). An efficient cloning method to expand vector and restriction site compatibility of Golden Gate Assembly. *Cell reports methods*, *3*(8), 100564. https://doi.org/10.1016/j.crmeth.2023.100564
 
 [5] Lõoke, M., Kristjuhan, K., & Kristjuhan, A. (2011). Extraction of genomic DNA from yeasts for PCR-based applications. *BioTechniques*, *50*(5), 325–328. https://doi.org/10.2144/000113672
-
-
-

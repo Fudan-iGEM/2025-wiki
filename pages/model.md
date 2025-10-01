@@ -1,13 +1,14 @@
 ---
 title: Model
 authors:
-  - name: Tang Jihua
-    url: （先不填）
+  - name: Jihua Tang
+    url: /team/#tang-jihua
     avatar: （头像，先不填）
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: （页面描述）
+description: On this page, we
 ---
+
 ## Why This Model?
 
 In synthetic biology and cellular timing studies, constructing a reliable and readable intracellular timer is crucial for understanding cellular life cycles, lineage relationships, and dynamic processes. Fluorescent Timer (FT) proteins, which change color over time, have become a powerful tool for achieving this goal. However, in practical applications, the performance of FT proteins is influenced by multiple factors, including expression strategies, maturation dynamics, cell division inheritance, and environmental conditions. To systematically evaluate and optimize these factors before conducting experiments, we have developed this mathematical model. It aims to theoretically screen feasible parameter ranges, validate the reasonableness of promoter selection and expression control, and provide clear design guidelines for subsequent wet-lab experiments.
@@ -253,7 +254,7 @@ C_inherit = p.inherit_frac_C * C_T
 
 ## Results
 
-### Single-cell time series	
+### Single-cell time series
 
 **Objective match:** We verify whether the chosen maturation constants $(\tau_B, \tau_I, \tau_R)$ yield the expected phase ordering (blue rises first, red later), and whether the readout $r(t)=\dfrac{R}{B+R}$ is monotonic.
 
@@ -624,7 +625,7 @@ The entire model is built with a modular design, ensuring good readability and e
 
 ## Code Accessibility
 
-Periodic Promoter vs Constitutive Promoter Part：ft_compare_promoters.py
+Periodic Promoter vs Constitutive Promoter Part：ft_compare_promoters.py 链接在哪里
 
 Strong Promoter vs Weak Promoter Part：df_strength.py
 

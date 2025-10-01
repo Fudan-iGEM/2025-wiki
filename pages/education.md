@@ -2,7 +2,7 @@
 title: Education
 authors:
   - name: Huizhen Du
-    url: （先不填）
+    url: /team/#du-huizhen
     avatar: （头像，先不填）
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
@@ -123,7 +123,7 @@ We held in-depth conversations with [CJUH-JLU-China](https://2025.igem.wiki/cjuh
 ###### What We Learned From It
 
 - The discussion reinforced our strategy of using playful methods to engage a broad audience.
-- We decided to focus “Play” activities on widespread participation, while reserving “Practice” sessions for older students (middle and high school) who possess the necessary foundational knowledge and operational skills.
+- We decided to focus “Play” activities on widespread participation, while reserving “Practice” sessions for older students (pMYTiddle and high school) who possess the necessary foundational knowledge and operational skills.
 - The feedback also prompted us to refine our activity design using official iGEM criteria, enhancing both relevance and quality.
 
 #### Practical Frontline - Dialogue with School Teacher
@@ -169,7 +169,7 @@ People：All team members
 
 We aimed to understand how individuals outside STEM perceive synthetic biology, in order to develop more accessible and inclusive educational content. By engaging students from humanities, social sciences, and the arts, we sought to identify common misconceptions, communication barriers, and ethical considerations—ensuring our outreach resonates across diverse backgrounds.
 
-###### How We Conducted It 
+###### How We Conducted It
 
 We designed a series of semi-structured interviews with students from non-STEM disciplines across multiple universities. The conversations explored their prior knowledge of biology, awareness of synthetic biology, and general attitudes toward emerging biotechnologies. Using open-ended questions, we encouraged reflective and honest responses. Additionally, we discussed the limitations of current science communication approaches and gathered suggestions for improvement.
 
@@ -757,7 +757,7 @@ Date：September 12th，2025
 
 Organizers：Yining Zhao，Yuxin Duan，Zhiqin Wang，Huizhen Du
 
-##### Overview 
+##### Overview
 
 Hands-on experience is essential for building confidence in experimental science. To help participants overcome initial apprehensions about lab work, we designed **Microbial Painting**—an activity that merges microbiology with visual art, making the first encounter with microorganisms both engaging and creatively stimulating. 
 
@@ -821,7 +821,7 @@ Additionally, some students identified *Aspergillus brunneus*, a microbial speci
 
 
 
-#### Activity2. Practice + X 
+#### Activity2. Practice + X
 
 Date：From July to August，2025
 
@@ -1031,7 +1031,7 @@ From the outset, every activity and resource in our Play-Practice-Produce initia
 
   These reusable resources form a growing **open educational archive** for synthetic biology. Our lesson plans have already been applied in community science programs; our fermentation experiments were adopted by campus culture festivals. This intentional design ensures our project’s impact extends far beyond iGEM, supporting ongoing synthetic biology education and inspiring future initiatives.
 
-### Our Own Education: The Team's Learning Journey 
+### Our Own Education: The Team's Learning Journey
 
 #### Self-education
 

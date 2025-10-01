@@ -2,11 +2,11 @@
 title: Attributions
 authors:
   - name: Duan Yuxin
-    url: /fudan/team/#duan-yuxin
+    url: /team/#duan-yuxin
     avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
 layout: igem
 heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: Vestibulum faucibus eget erat eget pretium. Donec commodo convallis ligula, eget suscipit orci.
+description: On this page, we concisely acknowledges all contributors and transparently display each individual's specific work on the project.
 ---
 
 # Specially thank to

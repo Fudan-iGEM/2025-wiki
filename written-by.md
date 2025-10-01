@@ -22,11 +22,11 @@
 | Measurement        | Yuxin Duan                           |
 | Notebook           | Yuxin Duan                           |
 | Part Collection    | Peining Wu                           |
-| Parts              | Peining Wu                           |
+| Parts              | Peining Wu, Zhiqin Wang              |
 | Plant              | none                                 |
 | Presentation Video | Yuxin Duan                           |
 | Promotion Video    | Yuxin Duan                           |
-| Results            | Yixuan Lu, Yue Yue                   |
+| Results            | Zhiqin Wang, Yixuan Lu, Yue Yue      |
 | Safety             | Yue Yue                              |
 | Software           | Yufan Han                            |
 | Sustainbale        | Yixuan Lu                            |
