@@ -4,7 +4,7 @@ authors:
   - name: Yuxin Duan
     url: （先不填）
     avatar: （头像，先不填）
-layout: igem 
+layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
 description: The Attributions page aims to concisely acknowledge all contributors and transparently display each individual's specific work on the project.
 ---
