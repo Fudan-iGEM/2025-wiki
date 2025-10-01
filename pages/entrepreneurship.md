@@ -114,7 +114,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
  The root cause of the inability to address the drug resistance issue lies in the lack of suitable chassis organisms, specifically because existing models have flaws. Single-cell systems cannot simulate the drug-resistant behaviors of biofilms or fungal populations.
 
-![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic7.webp)
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-data.webp)
 
  The prerequisite for developing anti-resistance drugs is the **precise identification of resistance mutation sites.** However, traditional whole-genome sequencing (WGS) is costly, analytically complex, and faces four major challenges: lack of standardization, resource dependency, high expense, and ambiguous results. Therefore, we aim to leverage our technology to develop a toolkit that can track the evolutionary dynamics of fungal resistance under drug pressure.
 
