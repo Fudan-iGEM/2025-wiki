@@ -13,7 +13,7 @@ description: How we commercialize Dr.sTraTeGY into a product for CROs.
 
 ## Summary
 
-### `Why`
+### **Why**
 
 - The problem of antifungal resistance is rising fast in China, especially in the **Yangtze Delta region (a market share of  65.3 million)**.
 - Current tools like WGS are **expensive, slow, and static**—they miss the **real-time process** of resistance evolution.
