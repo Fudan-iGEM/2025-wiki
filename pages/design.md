@@ -1,5 +1,5 @@
 ---
-title: design
+title: Design
 authors:
   - name: Yining Zhao
     url: 

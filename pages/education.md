@@ -2,11 +2,11 @@
 title: Education
 authors:
   - name: Huizhen Du
-    url: （先不填）
-    avatar: （头像，先不填）
+    url: 
+    avatar: 
 layout: igem
-heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: （页面描述）
+heroImage: 
+description: Design of DR. sTraTeGY.
 ---
 
 ## Overview
