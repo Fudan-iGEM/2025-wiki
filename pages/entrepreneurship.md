@@ -73,11 +73,12 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 
 ##  Making our solution possible，scalable and inventive
 
+
 ####  Core Technology
 
 At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture.
 
-![img](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
+![core tech](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
 
 ####  MVP (Minimum Viable Product)
 
@@ -103,7 +104,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 - Standard Operating Manual;
 - Technical Support Service.
 
-![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic6.webp)
+![client journey](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic6.webp)
 
 
 
@@ -172,7 +173,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 - **Tier 1 (CROs):** Our primary focus. They hold the strongest purchasing power, have an urgent need for precise resistance tracking, and can rapidly validate our approach through pilot studies—making them ideal for early case studies.
 - **Tier 2 (*R&D* pharma** **and research institutions):** Critical for credibility and downstream influence. They strengthen intellectual property, support publications, and broaden application scenarios, creating mid-term strategic value.
 - **Tier 3 (Public health, regulators, and policy stakeholders):** Their benefits are societal and systemic, helping to drive market access, regulatory acceptance, reimbursement, and policy alignment. They typically come into play later or via partnerships.
-- 
+
 
 | Tier                           | Stakeholder Type                                             | Representative Example                                       | Interests / Needs                                            | How DR.sTraTeGY Can Serve Them                               | Risks & Considerations                                       |
 | :----------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -349,7 +350,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 | **Phase 4: Geographic Expansion & Licensing**       | 36-48 months | Enter other provinces in China; possibly Southeast Asia; license or partnership in non-China jurisdictions; consider export/IVD registration overseas; build brand internationally. |
 | **Phase 5: Exit Preparation & Growth Optimization** | 48-60 months | Solidify recurring revenue streams; profitability or path to it; clean financials; prepare for M&A or IPO; investor relations; possibly raise growth-stage capital. |
 
-![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic16.webp-business-pic16.webp)
+![business timeline](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-timeline.webp-business-pic16.webp)
 
 
 
