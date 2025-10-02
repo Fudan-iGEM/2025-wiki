@@ -108,7 +108,6 @@ const buttonClasses = computed(() => {
 
 .rainbow-button:focus-visible {
   outline: none;
-  ring: 1px;
 }
 
 .rainbow-button:disabled {
