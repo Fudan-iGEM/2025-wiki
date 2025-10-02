@@ -1,14 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import ProfileCard from './ProfileCard/ProfileCard.vue'
-import ExpandableGallery from './ExpandableGallery.vue'
 
-const handleContactClick = () => {
-  // 处理联系点击事件
-  console.log('Contact clicked');
-};
-const images = [
-];
 
 // 团队成员数据
 const teamMembers = [
@@ -18,49 +11,49 @@ const teamMembers = [
     handle: "Zhiqin",
     status: "INTP",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzq.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp",
     description: "I'm honored to be the captain of this igem team, responsible for design and experiments. I'm a bit of a nerd who enjoys watching anime, reading comics, and listening to music. I love exploring the unknown and look forward to facing challenges together with everyone at iGEM to create a new kind of synthetic biology!"
   },
   {
     name: "Yue Yue",
     title: "Team Member",
     handle: "Yue",
-    status: "...",
+    status: "INTJ",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp",
     description: "Passionate about synthetic biology and project coordination. I love organizing complex workflows and ensuring our team achieves its goals efficiently. In my free time, I enjoy hiking and reading science fiction novels."
   },
   {
     name: "Huizhen Du",
     title: "Team Member",
     handle: "Huizhen",
-    status: "...",
+    status: "ESFP",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp",
     description: "Dedicated researcher with expertise in molecular biology and protein engineering. I'm fascinated by the potential of engineered biological systems to solve real-world problems. When not in the lab, I enjoy cooking and photography."
   },
   {
     name: "Peining Wu",
     title: "Team Member",
     handle: "Peining",
-    status: "...",
+    status: "INTJ",
     contactText: "Detail", 
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
-    description: "Expert in laboratory techniques and equipment maintenance. I ensure our experiments run smoothly and help troubleshoot technical issues. I'm passionate about precision and attention to detail in scientific work."
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp",
+    description: "In our iGEM team, I’m mainly responsible for design and experiments. I love to explore new things, reach out to new areas and try to put ideas into practice. Let us find the dopamine in life and be the first to stand in line!"
   },
   {
     name: "Yufan Han",
     title: "Team Member",
     handle: "Yufan",
-    status: "...",
+    status: "INTP",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
-    description: "Computational biologist specializing in data analysis and modeling. I love transforming complex biological data into meaningful insights. Outside of work, I enjoy playing chess and learning new programming languages."
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hyf.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hyf-a.webp",
+    description: "I contribute to our project's success by involving the wiki and software development, and actively participating in wet lab and Human Practices initiatives. I am motivated by the challenge of complex problems and am always eager to debate and refine concepts to push our team's vision forward."
   },
   {
     name: "Zhongyi Huang",
@@ -68,69 +61,69 @@ const teamMembers = [
     handle: "Zhongyi",
     status: "...",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy-a.webp",
     description: "Creative engineer focused on designing innovative biological systems. I bridge the gap between theoretical concepts and practical implementations. I'm also passionate about 3D printing and sustainable design."
   },
   {
     name: "Yining Zhao",
     title: "Team Member",
     handle: "Yining",
-    status: "...",
+    status: "INTJ",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn-a.webp",
     description: "Responsible for outreach and science communication. I love making complex scientific concepts accessible to diverse audiences. In my spare time, I volunteer at local science museums and write science blogs."
   },
   {
     name: "Xiuqi Tian",
     title: "Team Member",
     handle: "Xiuqi",
-    status: "...",
+    status: "ISFP",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
-    description: "Ensures our research meets the highest standards of quality and reproducibility. I'm meticulous about documentation and protocol validation. I enjoy playing board games and studying historical science discoveries."
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/txq.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp",
+    description: "I'm an art enthusiast who's passionate about musicals and mystery novels. On this project, I am responsible for entrepreneurship. I'm absolutely thrilled to dive into iGEM and excited to explore new fields with the team."
   },
   {
     name: "Yixuan Lu",
     title: "Team Member",
     handle: "Yixuan",
-    status: "...",
+    status: "ENFP",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp",
     description: "Guides our team on ethical considerations in synthetic biology research. I'm passionate about ensuring our work benefits society while addressing potential risks. I love reading philosophy and practicing meditation."
   },
   {
     name: "Zuyao Wu",
     title: "Team Member",
     handle: "Zuyao",
-    status: "...",
+    status: "ENTJ",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy-a.webp",
     description: "Develops and maintains our custom laboratory equipment and automation systems. I love building things and solving practical engineering challenges. In my free time, I race remote-controlled cars and tinker with electronics."
   },
   {
     name: "Jihua Tang",
     title: "Team Member",
-    handle: "Maria Santos",
-    status: "...",
+    handle: "Jihua",
+    status: "INFJ",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh-a.webp",
     description: "Specializes in statistical analysis and experimental design. I help optimize our research protocols and interpret complex datasets. I'm also interested in machine learning applications in biology and enjoy playing violin."
   },
   {
     name: "Yuxin Duan",
     title: "Team Member",
     handle: "Yuxin",
-    status: "...",
+    status: "INTJ",
     contactText: "Detail",
-    avatarUrl: "https://static.igem.wiki/teams/5643/img/2ff20be0-c51d-4fef-b602-32f2067f7657-removebg-preview.webp", 
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/img/output-removebg-preview.webp",
-    description: "Ensures our laboratory operates safely and in compliance with regulations. I'm committed to maintaining a secure environment for innovative research. Outside work, I enjoy rock climbing and teaching first aid courses."
+    avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx.webp", 
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp",
+    description: "Hello, everyone! I am Duan Yuxin, from Shanghai Medical College, Fudan University, a student of the five-year clinical medicine. Participating in iGEM has taught me a lot of new knowledge and skills; it is not only full of the challenges and fun of doing experiments, but also provides wonderful memories of our joint efforts. Let us explore the mysteries of synthetic biology together!"
   }
 ]
 
@@ -151,82 +144,52 @@ const membersPerPage = 6;
 const currentPage = ref(1);
 const isLoading = ref(false);
 
-// 懒加载更多成员
-const loadMoreMembers = () => {
-  if (isLoading.value) return;
-  
-  isLoading.value = true;
-  const start = (currentPage.value - 1) * membersPerPage;
-  const end = start + membersPerPage;
-  const newMembers = randomizedMembers.value.slice(start, end);
-  
-  // 模拟加载延迟以改善用户体验
-  setTimeout(() => {
-    if (currentPage.value === 1) {
-      visibleMembers.value = newMembers;
-    } else {
-      visibleMembers.value.push(...newMembers);
-    }
-    
-    currentPage.value++;
-    isLoading.value = false;
-  }, 300);
-};
-
-// 防抖的滚动处理
-let scrollTimeout = null;
-const handleScroll = () => {
-  if (scrollTimeout) return;
-  
-  scrollTimeout = setTimeout(() => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    
-    if (scrollTop + windowHeight >= documentHeight - 1000) {
-      if (visibleMembers.value.length < randomizedMembers.value.length) {
-        loadMoreMembers();
-      }
-    }
-    
-    scrollTimeout = null;
-  }, 100);
-};
-
-// 组件挂载时随机排列并初始化
+// 初始化随机成员列表
 onMounted(() => {
   randomizedMembers.value = shuffleArray(teamMembers);
-  loadMoreMembers(); // 加载第一批
-  
-  // 添加滚动监听
-  window.addEventListener('scroll', handleScroll, { passive: true });
+  loadMoreMembers();
 });
 
-// 组件卸载时清理
+// 加载更多成员
+const loadMoreMembers = () => {
+  const startIndex = (currentPage.value - 1) * membersPerPage;
+  const endIndex = startIndex + membersPerPage;
+  const newMembers = randomizedMembers.value.slice(startIndex, endIndex);
+  visibleMembers.value.push(...newMembers);
+  currentPage.value++;
+};
+
+// 无限滚动监听
+const handleScroll = () => {
+  if (isLoading.value) return;
+
+  const scrollPosition = window.innerHeight + window.scrollY;
+  const pageHeight = document.documentElement.scrollHeight;
+
+  if (scrollPosition >= pageHeight - 200 && visibleMembers.value.length < randomizedMembers.value.length) {
+    isLoading.value = true;
+    setTimeout(() => {
+      loadMoreMembers();
+      isLoading.value = false;
+    }, 300);
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
-  if (scrollTimeout) {
-    clearTimeout(scrollTimeout);
-  }
 });
 </script>
 
-
 <template>
-
-<ExpandableGallery
-    :images="images"
-    class="p-5"
-  />
-
-<div class="member-page">
-  <div class="members-grid">
-    <div 
-      v-for="(pMYTember, index) in visibleMembers" 
-      :key="`member-${member.name}-${index}`"
-      class="member-card-wrapper"
-    >
+  <div class="member-page">
+    <div class="member-grid">
       <ProfileCard
+        v-for="(member, index) in visibleMembers"
+        :key="index"
         :name="member.name"
         :title="member.title"
         :handle="member.handle"
@@ -234,153 +197,77 @@ onUnmounted(() => {
         :contact-text="member.contactText"
         :avatar-url="member.avatarUrl"
         :bar-avatar-url="member.barAvatarUrl"
-        icon-url="https://static.igem.wiki/teams/5643/img/iconpattern.webp"
-        grain-url="https://static.igem.wiki/teams/5643/img/grain.webp"
-        :show-user-info="true"
-        :show-behind-gradient="true"
-        :enable-tilt="true"
         :description="member.description"
-        @contact-click="handleContactClick"
+        :show-user-info="true"
+        :enable-tilt="true"
       />
     </div>
+    <div v-if="isLoading" class="loading">Loading more members...</div>
   </div>
-  
-  <!-- 加载指示器 -->
-  <div v-if="isLoading" class="loading-indicator">
-    <div class="loading-spinner"></div>
-    <p>Loading more members...</p>
-  </div>
-</div>
-
 </template>
 
 <style scoped>
 .member-page {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  min-height: 100vh;
-}
-
-
-.members-grid {
-  display: grid;
-  gap: 0;
+  padding: 40px 20px;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0;
 }
 
-.member-card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 450px;
-  padding: 1rem;
+.member-grid {
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+  /* 默认：1380px以上一行三个 */
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* 小屏幕：显示一个 */
-@media (pMYTax-width: 944px) {
-  .member-page {
-    padding: 3rem 1rem;
-  }
-  
-  .members-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  
-  .member-card-wrapper {
-    min-height: 400px;
-    padding: 0.75rem;
-  }
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #666;
 }
 
-/* 中屏幕：显示两个 */
-@media (pMYTin-width: 945px) and (pMYTax-width: 1339px) {
-  .member-page {
-    padding: 3.5rem 1.5rem;
-  }
-  
-  .members-grid {
+/* 1380px以下850px以上：一行两个 */
+@media (max-width: 1379px) and (min-width: 851px) {
+  .member-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-  }
-  
-  .member-card-wrapper {
-    min-height: 450px;
-    padding: 1rem;
+    gap: 35px;
   }
 }
 
-/* 大屏幕：显示三个 */
-@media (pMYTin-width: 1340px) {
+/* 850px以下720px以上：小尺寸的两个 */
+@media (max-width: 850px) and (min-width: 721px) {
+  .member-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
   .member-page {
-    padding: 4rem 2rem;
-  }
-  
-  .members-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-  }
-  
-  .member-card-wrapper {
-    min-height: 500px;
-    padding: 1.25rem;
+    padding: 30px 15px;
   }
 }
 
-/* 确保图片和内容在所有屏幕上正常显示 */
-.member-card-wrapper :deep(.pc-card) {
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
+/* 720px以下：一个 */
+@media (max-width: 720px) {
+  .member-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .member-page {
+    padding: 20px 10px;
+  }
 }
 
-/* 加载指示器样式 */
-.loading-indicator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  margin-top: 2rem;
-}
+/* 移动端优化 */
+@media (max-width: 480px) {
+  .member-grid {
+    gap: 20px;
+  }
 
-.loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #008794;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 1rem;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.loading-indicator p {
-  color: #64748b;
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-/* 性能优化 */
-.member-card-wrapper {
-  contain: layout;
-  transform: translateZ(0);
-}
-
-/* 减少重绘和回流 */
-.members-grid {
-  contain: layout style paint;
-}
-
-/* 优化滚动性能 */
-.member-page {
-  contain: layout style;
-  transform: translateZ(0);
+  .member-page {
+    padding: 15px 8px;
+  }
 }
 </style>

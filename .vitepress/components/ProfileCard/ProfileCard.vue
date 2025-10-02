@@ -97,9 +97,9 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  avatarUrl: '<Placeholder for avatar URL>',
-  iconUrl: '<Placeholder for icon URL>',
-  grainUrl: '<Placeholder for grain URL>',
+  avatarUrl: '',
+  iconUrl: 'https://static.igem.wiki/teams/5643/img/iconpattern.webp',
+  grainUrl: 'https://static.igem.wiki/teams/5643/img/grain.webp',
   behindGradient: undefined,
   innerGradient: undefined,
   showBehindGradient: true,
@@ -110,7 +110,7 @@ const props = withDefaults(defineProps<Props>(), {
   name: 'Javi A. Torres',
   title: 'Software Engineer',
   handle: 'javicodes',
-  status: 'Online',
+  status: '',
   contactText: 'Contact',
   showUserInfo: true,
   description: ''
@@ -126,7 +126,7 @@ const wrapRef = useTemplateRef<HTMLDivElement>('wrapRef');
 const cardRef = useTemplateRef<HTMLElement>('cardRef');
 
 const DEFAULT_BEHIND_GRADIENT =
-  'radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y),hsla(180,70%,85%,var(--card-opacity)) 4%,hsla(180,50%,75%,calc(var(--card-opacity)*0.75)) 10%,hsla(180,30%,65%,calc(var(--card-opacity)*0.5)) 50%,hsla(180,0%,60%,0) 100%),radial-gradient(35% 52% at 55% 20%,#5dcac6aa 0%,#008794000 100%),radial-gradient(100% 100% at 50% 50%,#0e9f99ff 1%,#062570000 76%),conic-gradient(from 124deg at 50% 50%,#008794ff 0%,#5dcac6ff 40%,#b2eeebff 60%,#008794ff 100%)';
+  'radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y),hsla(180,70%,85%,var(--card-opacity)) 4%,hsla(180,50%,75%,calc(var(--card-opacity)*0.75)) 10%,hsla(180,30%,65%,calc(var(--card-opacity)*0.5)) 50%,hsla(180,0%,60%,0) 100%),radial-gradient(35% 52% at 55% 20%,#5dcac6aa 0%,#008794000 100%),radial-gradient(100% 100% at 50% 50%,#0e9f99ff 1%,#062570000 76%),conic-gradient(from 124deg at 50% 50%,#008794ff 0%,#5dcac6ff 40%,#b2eeebff 60%,#008794ff 100%))';
 
 const DEFAULT_INNER_GRADIENT = 'linear-gradient(145deg,#e6f2fedd 0%,#b2eeebbb 50%,#5dcac688 100%)';
 
@@ -149,7 +149,7 @@ const easeInOutCubic = (x: number): number => (x < 0.5 ? 4 * x * x * x : 1 - Mat
 let rafId: number | null = null;
 let isAnimating = false;
 let lastUpdateTime = 0;
-const THROTTLE_DELAY = 16; // ~60fps
+const THROTTLE_DELAY = 32; // ~30fps instead of 60fps for better performance
 
 // 可见性与合帧更新控制
 const isVisible = ref(false);
@@ -161,28 +161,59 @@ let pointerClientY = 0;
 let cachedRect: DOMRect | null = null;
 let hasRunInitialAnimation = false;
 
-const startRafLoop = () => {
-  if (rafLoopId != null) return;
-  const loop = () => {
-    if (needsUpdate && cardRef.value && wrapRef.value && cachedRect) {
-      updateCardTransform(
-        pointerClientX - cachedRect.left,
-        pointerClientY - cachedRect.top,
-        cardRef.value,
-        wrapRef.value
-      );
-      needsUpdate = false;
+// 全局RAF管理器 - 避免每个卡片独立RAF循环
+const globalRafManager = {
+  callbacks: new Set<() => void>(),
+  rafId: null as number | null,
+  
+  add(callback: () => void) {
+    this.callbacks.add(callback);
+    if (!this.rafId) {
+      this.start();
     }
-    rafLoopId = requestAnimationFrame(loop);
-  };
-  rafLoopId = requestAnimationFrame(loop);
+  },
+  
+  remove(callback: () => void) {
+    this.callbacks.delete(callback);
+    if (this.callbacks.size === 0 && this.rafId) {
+      cancelAnimationFrame(this.rafId);
+      this.rafId = null;
+    }
+  },
+  
+  start() {
+    const loop = () => {
+      this.callbacks.forEach(callback => callback());
+      if (this.callbacks.size > 0) {
+        this.rafId = requestAnimationFrame(loop);
+      }
+    };
+    this.rafId = requestAnimationFrame(loop);
+  }
+};
+
+const rafCallback = () => {
+  const now = performance.now();
+  if (now - lastUpdateTime < THROTTLE_DELAY) return;
+  
+  if (needsUpdate && cardRef.value && wrapRef.value && cachedRect) {
+    updateCardTransform(
+      pointerClientX - cachedRect.left,
+      pointerClientY - cachedRect.top,
+      cardRef.value,
+      wrapRef.value
+    );
+    needsUpdate = false;
+    lastUpdateTime = now;
+  }
+};
+
+const startRafLoop = () => {
+  globalRafManager.add(rafCallback);
 };
 
 const stopRafLoop = () => {
-  if (rafLoopId != null) {
-    cancelAnimationFrame(rafLoopId);
-    rafLoopId = null;
-  }
+  globalRafManager.remove(rafCallback);
 };
 
 const updateCardTransform = (offsetX: number, offsetY: number, card: HTMLElement, wrap: HTMLElement) => {
@@ -252,16 +283,20 @@ const cancelAnimation = () => {
 
 const handlePointerMove = (event: PointerEvent) => {
   if (!cardRef.value || !wrapRef.value || !props.enableTilt || isAnimating) return;
+  // 只响应鼠标事件，忽略触摸事件
+  if (event.pointerType === 'touch') return;
   pointerClientX = event.clientX;
   pointerClientY = event.clientY;
   needsUpdate = true;
 };
 
-const handlePointerEnter = () => {
+const handlePointerEnter = (event: PointerEvent) => {
   const card = cardRef.value;
   const wrap = wrapRef.value;
 
   if (!card || !wrap || !props.enableTilt) return;
+  // 只响应鼠标事件，忽略触摸事件
+  if (event.pointerType === 'touch') return;
 
   cachedRect = card.getBoundingClientRect();
   cancelAnimation();
@@ -275,6 +310,8 @@ const handlePointerLeave = (event: PointerEvent) => {
   const wrap = wrapRef.value;
 
   if (!card || !wrap || !props.enableTilt) return;
+  // 只响应鼠标事件，忽略触摸事件
+  if (event.pointerType === 'touch') return;
 
   createSmoothAnimation(ANIMATION_CONFIG.SMOOTH_DURATION, event.offsetX, event.offsetY, card, wrap);
   wrap.classList.remove('active');
@@ -377,7 +414,10 @@ onMounted(() => {
       cancelAnimation();
       cachedRect = null;
     }
-  }, { rootMargin: '200px' });
+  }, { 
+    rootMargin: '50px',
+    threshold: [0, 0.1, 0.5, 1.0]
+  });
 
   io.observe(wrap);
 });
@@ -466,8 +506,7 @@ onUnmounted(() => {
   aspect-ratio: 0.718;
   border-radius: var(--card-radius);
   position: relative;
-  background-blend-mode: color-dodge, normal, normal, normal;
-  animation: glow-bg 12s linear infinite;
+  background-blend-mode: normal, normal;
   box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px)
     calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
   transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), 
@@ -476,11 +515,7 @@ onUnmounted(() => {
   transform-style: preserve-3d;
   will-change: transform;
   background-size: 100% 100%;
-  background-position:
-    0 0,
-    0 0,
-    50% 50%,
-    0 0;
+  background-position: 0 0, 50% 50%;
   background-image:
     radial-gradient(
       farthest-side circle at var(--pointer-x) var(--pointer-y),
@@ -489,8 +524,6 @@ onUnmounted(() => {
       hsla(180, 30%, 65%, calc(var(--card-opacity) * 0.5)) 50%,
       hsla(180, 0%, 60%, 0) 100%
     ),
-    radial-gradient(35% 52% at 55% 20%, #5dcac6aa 0%, #00879400 100%),
-    radial-gradient(100% 100% at 50% 50%, #0e9f99ff 1%, #06257000 76%),
     conic-gradient(from 124deg at 50% 50%, #008794ff 0%, #5dcac6ff 40%, #b2eeebff 60%, #008794ff 100%);
   overflow: hidden;
   contain: layout style paint;
@@ -553,7 +586,6 @@ onUnmounted(() => {
   -webkit-mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
   transition: filter 0.6s ease;
   filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.5);
-  animation: holo-bg 18s linear infinite;
   mix-blend-mode: color-dodge;
 }
 
@@ -577,31 +609,10 @@ onUnmounted(() => {
       var(--sunpillar-clr-5) calc(var(--space) * 5),
       var(--sunpillar-clr-6) calc(var(--space) * 6),
       var(--sunpillar-clr-1) calc(var(--space) * 7)
-    ),
-    repeating-linear-gradient(
-      var(--angle),
-      #0e152e 0%,
-      hsl(180, 10%, 60%) 3.8%,
-      hsl(180, 29%, 66%) 4.5%,
-      hsl(180, 10%, 60%) 5.2%,
-      #0e152e 10%,
-      #0e152e 12%
-    ),
-    radial-gradient(
-      farthest-corner circle at var(--pointer-x) var(--pointer-y),
-      hsla(0, 0%, 0%, 0.1) 12%,
-      hsla(0, 0%, 0%, 0.15) 20%,
-      hsla(0, 0%, 0%, 0.25) 120%
     );
-  background-position:
-    0 var(--background-y),
-    var(--background-x) var(--background-y),
-    center;
-  background-blend-mode: color, hard-light;
-  background-size:
-    500% 500%,
-    300% 300%,
-    200% 200%;
+  background-position: 0 var(--background-y);
+  background-blend-mode: color;
+  background-size: 500% 500%;
   background-repeat: repeat;
 }
 
@@ -617,7 +628,6 @@ onUnmounted(() => {
 .pc-card:hover .pc-shine,
 .pc-card.active .pc-shine {
   filter: brightness(0.85) contrast(1.5) saturate(0.5);
-  animation: none;
 }
 
 .pc-card:hover .pc-shine::before,
@@ -637,17 +647,9 @@ onUnmounted(() => {
       var(--sunpillar-1),
       var(--sunpillar-2),
       var(--sunpillar-3)
-    ),
-    radial-gradient(circle at var(--pointer-x) var(--pointer-y), hsl(0, 0%, 70%) 0%, hsla(0, 0%, 30%, 0.2) 90%),
-    var(--grain);
-  background-size:
-    250% 250%,
-    100% 100%,
-    220px 220px;
-  background-position:
-    var(--pointer-x) var(--pointer-y),
-    center,
-    calc(var(--pointer-x) * 0.01) calc(var(--pointer-y) * 0.01);
+    );
+  background-size: 250% 250%;
+  background-position: var(--pointer-x) var(--pointer-y);
   background-blend-mode: color-dodge;
   filter: brightness(calc(2 - var(--pointer-from-center))) contrast(calc(var(--pointer-from-center) + 2))
     saturate(calc(0.5 + var(--pointer-from-center)));
@@ -666,30 +668,9 @@ onUnmounted(() => {
       var(--sunpillar-clr-5) calc(5% * 5),
       var(--sunpillar-clr-6) calc(5% * 6),
       var(--sunpillar-clr-1) calc(5% * 7)
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      #0e152e 0%,
-      hsl(180, 10%, 60%) 3.8%,
-      hsl(180, 29%, 66%) 4.5%,
-      hsl(180, 10%, 60%) 5.2%,
-      #0e152e 10%,
-      #0e152e 12%
-    ),
-    radial-gradient(
-      farthest-corner circle at var(--pointer-x) var(--pointer-y),
-      hsla(0, 0%, 0%, 0.1) 12%,
-      hsla(0, 0%, 0%, 0.15) 20%,
-      hsla(0, 0%, 0%, 0.25) 120%
     );
-  background-position:
-    0 var(--background-y),
-    calc(var(--background-x) * 0.4) calc(var(--background-y) * 0.5),
-    center;
-  background-size:
-    200% 300%,
-    700% 700%,
-    100% 100%;
+  background-position: 0 var(--background-y);
+  background-size: 200% 300%;
   mix-blend-mode: difference;
   filter: brightness(0.8) contrast(1.5);
 }
@@ -1142,5 +1123,8 @@ onUnmounted(() => {
     font-size: 9px;
     border-radius: 50px;
   }
+}.avatar {
+  max-height: 80%;
+  object-fit: contain;
 }
 </style>

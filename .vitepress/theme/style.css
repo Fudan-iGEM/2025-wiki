@@ -486,7 +486,7 @@ a:hover {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.vp-doc img {
+.vp-doc img:not(.avatar, .pc-mini-avatar img) {
   max-width: 70%;
   margin: 2rem auto;
   display: block;
