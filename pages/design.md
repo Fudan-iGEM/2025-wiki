@@ -17,7 +17,7 @@ description: On this page, we relfect on how our project started.
 On this page, we introduce **DR. sTraTeGY**, a Drug Resistance Mutation **Tracking** Technology based on Grape Yeast. Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
 
 - **The Problem:** The rapid rise of drug-resistant pathogens poses a serious threat to global health.
-- **Our Solution:**DR. sTraTeGY, a modular, **multicellular yeast platform**, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a **physical, spatio-temporal lineage tree**, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
+- **Our Solution:** DR. sTraTeGY, a modular, **multicellular yeast platform**, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a **physical, spatio-temporal lineage tree**, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
 - **Key Innovations:** The platform consists of a "Grape Yeast" chassis, the "Timer & Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
 
 ## How It Started?
