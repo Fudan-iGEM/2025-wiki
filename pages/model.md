@@ -464,6 +464,7 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
         <span style="color:gray">Figure9. Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
+
 ## AI-Aided Validation of Model Predictions
 
 To further validate the robustness and generalizability of our model, we leveraged the reasoning capabilities of two state-of-the-art Chinese large language models, **DeepSeek** and **Qwen**, both of which have demonstrated strong, comprehensive capabilities. These two AI models were independently prompted with specific design parameters for fluorescent timers (FT) optimized for tracking yeast cell lineage and age. The prompts were structured to guide the models toward biological first principles, specifically targeting the selection of FT variants, promoter strategies, pulse characteristics, and expression levels in the context of the yeast cell cycle.
