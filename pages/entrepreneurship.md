@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#tian-xiuqi
     avatar: （头像，先不填）
 layout: igem 
-heroImage: ![headmap](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-headmap.webp)
+heroImage: https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-headmap.webp
 description: How we commercialize Dr.sTraTeGY into a product for CROs.
 ---
 

@@ -41,16 +41,21 @@
         </svg>
       </div>
     </div>
-    
     <!-- 错误信息 -->
-    <h1 class="error-title">404</h1>
+    <div class="error-title">404</div>
+    <Noise 
+    :pattern-refresh-interval="1" 
+    :pattern-alpha="25"
+    mix-blend-mode="multiply"
+    />
     <div class="error-message">
       Oops! The page you're looking for doesn't exist.
     </div>
-    
     <!-- 返回按钮 -->
-Please check <a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target=_blank>our promotion video</a>.<br>
-<a href="/" class="back-button">Team Fudan</a>
+     Please check <a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target=_blank>our promotion video</a>.<br>
+     <RainbowButton is="a" href="/" class="mt-4">Team Fudan</RainbowButton>
+
+
 
   </div>
 </template>
@@ -58,6 +63,8 @@ Please check <a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target=_b
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { gsap } from 'gsap'
+import Noise from './Noise.vue'
+import RainbowButton from './RainbowButton.vue'
 
 const svgContainer = ref(null)
 const svg404 = ref(null)
@@ -190,7 +197,10 @@ onUnmounted(() => {
 /* 主容器样式 */
 .error-container {
   min-height: 100vh;
-  background-color: #f9fafb;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #e6f8f7 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,37 +210,44 @@ onUnmounted(() => {
 
 /* SVG容器样式 */
 .svg-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
 }
 
 .svg-container {
-  width: 20rem;
-  height: 20rem;
+  width: 12rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 /* 响应式设计 */
 @media (min-width: 768px) {
   .svg-container {
-    width: 24rem;
-    height: 24rem;
+    width: 16rem;
+    height: 10rem;
   }
 }
 
 .svg-404 {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
 }
 
 /* 错误标题样式 */
 .error-title {
   font-size: 3.75rem;
   font-weight: 700;
-  color: #3b82f6;
-  margin-bottom: 1rem;
-  margin: 0;
+  background-clip: text;
+  margin-bottom: 4rem;
+  text-shadow: 0 4px 20px rgba(0, 135, 148, 0.3);
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -242,7 +259,7 @@ onUnmounted(() => {
 /* 错误消息样式 */
 .error-message {
   font-size: 1.25rem;
-  color: #374151;
+  color: #062570;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -256,18 +273,21 @@ onUnmounted(() => {
 /* 返回按钮样式 */
 .back-button {
   padding: 1rem 2rem;
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
   color: white;
   border-radius: 0.5rem;
   text-decoration: none;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 135, 148, 0.3), 0 4px 6px -2px rgba(0, 135, 148, 0.1);
   font-size: 1.125rem;
   font-weight: 500;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(93, 202, 198, 0.2);
 }
 
 .back-button:hover {
-  background-color: #1d4ed8;
+  background: linear-gradient(135deg, #0e9f99 0%, #5dcac6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px -3px rgba(0, 135, 148, 0.4), 0 8px 12px -2px rgba(0, 135, 148, 0.2);
 }
 
 /* SVG样式类 */
