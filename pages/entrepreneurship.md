@@ -1,5 +1,5 @@
 ---
-title: entrepreneurship
+title: Entrepreneurship
 authors:
   - name: Xiuqi Tian
     url: /fudan/team/#tian-xiuqi
