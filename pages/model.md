@@ -628,14 +628,14 @@ The entire model is built with a modular design, ensuring good readability and e
 
 ## Code Accessibility
 
-Periodic Promoter vs Constitutive Promoter Part：ft_compare_promoters.py 链接在哪里
+Periodic Promoter vs Constitutive Promoter Part：[ft_compare_promoters.py](../model/ft_compare_promoters.py)
 
-Strong Promoter vs Weak Promoter Part：df_strength.py
+Strong Promoter vs Weak Promoter Part：[df_strength.py](../model/df_strength.py)
 
-Result Part：FT.py
+Result Part：[FT.py](../model/FT.py)
 
 ## References
 
-[1] Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature Chemical Biology*, *5*(2), 118–126.
+[1] Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. Nature Chemical Biology, 5(2), 118–126. https://doi.org/10.1038/nchembio.138
 
-[2] Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, *4*, 975–986.
+[2] Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, *4*, 975–986. https://doi.org/10.1021/sb500366v
