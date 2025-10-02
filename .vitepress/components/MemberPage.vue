@@ -113,7 +113,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh-a.webp",
-    description: "Specializes in statistical analysis and experimental design. I help optimize our research protocols and interpret complex datasets. I'm also interested in machine learning applications in biology and enjoy playing violin."
+    description: "Hi! I’m Jihua, a junior majoring in Integrated Circuits. In our team, I focus on dry-lab modeling, helping to understand and predict the behavior of our multicellular yeast system. My engineering background enables me to tackle computational challenges efficiently. For me, Fudan iGEM 2025 is where silicon meets cells—and curiosity grows into collaboration!"
   },
   {
     name: "Yuxin Duan",
