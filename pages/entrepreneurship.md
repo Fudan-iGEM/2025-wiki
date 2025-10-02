@@ -76,7 +76,7 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 
 At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture.
 
-![core tech](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
+![core tech](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-core-tech.webp)
 
 #### MVP (Minimum Viable Product)
 
@@ -114,7 +114,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
  The root cause of the inability to address the drug resistance issue lies in the lack of suitable chassis organisms, specifically because existing models have flaws. Single-cell systems cannot simulate the drug-resistant behaviors of biofilms or fungal populations.
 
-![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-data.webp)
+![The data for global drug resistance issues](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic7.webp)
 
  The prerequisite for developing anti-resistance drugs is the **precise identification of resistance mutation sites.** However, traditional whole-genome sequencing (WGS) is costly, analytically complex, and faces four major challenges: lack of standardization, resource dependency, high expense, and ambiguous results. Therefore, we aim to leverage our technology to develop a toolkit that can track the evolutionary dynamics of fungal resistance under drug pressure.
 
@@ -348,7 +348,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 | **Phase 4: Geographic Expansion & Licensing**       | 36-48 months | Enter other provinces in China; possibly Southeast Asia; license or partnership in non-China jurisdictions; consider export/IVD registration overseas; build brand internationally. |
 | **Phase 5: Exit Preparation & Growth Optimization** | 48-60 months | Solidify recurring revenue streams; profitability or path to it; clean financials; prepare for M&A or IPO; investor relations; possibly raise growth-stage capital. |
 
-![business timeline](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-timeline.webp-business-pic16.webp)
+![business timeline](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-timeline.webp)
 
 
 
@@ -422,7 +422,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
  In March 2025, we participated in the National Innovation Competition, where we refined our business model and product presentation for the first time. 
 
- Later, in May 2025, we took part in the he Biopharmaceutical Track of the Shanghai College Student Innovation and Entrepreneurship Competition (Shanghai Stock Exchange Cup), aiming to raise initial funding from potential investors through roadshows. Industry experts and judges provided valuable feedback in discussion sessions—— for instance, experts recommended that we further segment our target customer groups in market sizing and strengthen the alignment of our product applications with clinical needs. Investors also highlighted the importance of early planning for intellectual property protection and building strong competitive barriers. Overall, these experiences sharpened our understanding of both our strengths and weaknesses, laying a solid foundation for product iteration, market expansion, and fundraising strategies in the future.
+ Later, in May 2025, we took part in the **Biopharmaceutical Track of the Shanghai College Student Innovation and Entrepreneurship Competition (Shanghai Stock Exchange Cup),** aiming to raise initial funding from potential investors through roadshows. Industry experts and judges provided valuable feedback in discussion sessions—— for instance, experts recommended that we further segment our target customer groups in market sizing and strengthen the alignment of our product applications with clinical needs. Investors also highlighted the importance of early planning for intellectual property protection and building strong competitive barriers. Overall, these experiences sharpened our understanding of both our strengths and weaknesses, laying a solid foundation for product iteration, market expansion, and fundraising strategies in the future.
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action1.webp)
 
@@ -432,7 +432,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action3.webp)
 
- On September 18, our team held a constructive meeting with the iGEM team from East China University of Science and Technology (ECUST) to discuss the commercialization plans of our respective projects. The dialogue covered business alignment, progress updates, and marketing strategies, while also clarifying each team's commercial focus and strategic logic.
+ On September 18, our team held a constructive meeting with the iGEM team from **East China University of Science and Technology (ECUST)** to discuss the commercialization plans of our respective projects. The dialogue covered business alignment, progress updates, and marketing strategies, while also clarifying each team's commercial focus and strategic logic.
 
  We introduced our multi-cellular yeast tracking tool, targeting CROs in the Yangtze River Delta, along with the designed yeast strains and software package. Our exit strategy involves licensing the toolkit to CROs by the fifth year.ECUST shared their project centered on gout prevention through functional food, aimed at easing the burden on healthcare and patients. They addressed challenges such as public skepticism toward functional products and safety concerns regarding engineered bacteria, highlighting outreach as key to gaining acceptance.
 
