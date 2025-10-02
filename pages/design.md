@@ -3,10 +3,10 @@ title: Design
 authors:
   - name: Yining Zhao
     url: /fudan/team/#zhao-yining
-    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzy-a.webp
   - name: Zhiqin Wang
     url: /fudan/team/#wang-zhiqin
-    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
 description: On this page, we relfect on how our project started.
