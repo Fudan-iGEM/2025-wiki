@@ -12,6 +12,14 @@ heroImage: （拍摄并且选取页面图像，作为顶部展示）
 description: On this page, we
 ---
 
+## Highlights — A New Paradigm for Synthetic Biology in the AI Era
+
+Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
+
+Our work reimagines this cycle by introducing an **AI-augmented modeling framework** that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as ASH1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models (DeepSeek and Qwen), which—when prompted only with biological first principles—converged on the same optimal design choices.
+
+This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach *supercharges the “Design” phase*, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
+
 ## Why This Model?
 
 In synthetic biology and cellular timing studies, constructing a reliable and readable intracellular timer is crucial for understanding cellular life cycles, lineage relationships, and dynamic processes. Fluorescent Timer (FT) proteins, which change color over time, have become a powerful tool for achieving this goal. However, in practical applications, the performance of FT proteins is influenced by multiple factors, including expression strategies, maturation dynamics, cell division inheritance, and environmental conditions. To systematically evaluate and optimize these factors before conducting experiments, we have developed this mathematical model. It aims to theoretically screen feasible parameter ranges, validate the reasonableness of promoter selection and expression control, and provide clear design guidelines for subsequent wet-lab experiments.
@@ -34,7 +42,7 @@ The color change reflects the time elapsed since the cell's birth.
 This model is based on the following experimental settings:
 
 - Cell cycle: approximately **87 minutes** (source: BioNumbers);
-- Fluorescent protein: **Fast-FT**^[1]^ is selected;
+- Fluorescent protein: **Fast-FT**[^1] is selected;
 - Expression trigger: using a single pulse (based on the later comparison of periodic and constitutive promoters).
 
 ## Parameters
@@ -236,7 +244,7 @@ def f(t: float, y: np.ndarray) -> np.ndarray:
 
 Only the immature C-state protein is inherited, while B, I, and R are not inherited. The initial conditions for daughter cells are:
 $$
-C_{\text{子细胞}}(0) = C_{\text{母细胞}}(\text{分裂时}) \times inherit_{frac,C}\\B_{\text{子细胞}}(0) = 0,\quad I_{\text{子细胞}}(0) = 0, \quad R_{\text{子细胞}}(0) = 0
+C_{\text{子细胞}}(0) = C_{\text{母细胞}}(\text{分裂时}) \times inherit_{frac,C}, \quad B_{\text{子细胞}}(0) = 0,\quad I_{\text{子细胞}}(0) = 0, \quad R_{\text{子细胞}}(0) = 0
 $$
 
 ```python
@@ -424,7 +432,7 @@ In this model, the red-to-blue ratio $r(t)$ is used as the key indicator for eva
 $$
 r(t) = \frac{R(t)}{B(t) + R(t)}
 $$
-This ratio reflects the maturation process and transition dynamics of the protein, serving as a crucial representation of the time evolution. The strength of the promoter has a different impact on the timer performance depending on the pulse amplitude and pulse width. Changing the pulse amplitude affects the overall protein expression level in the system, while the pulse width directly influences the time distribution of protein production. To balance these two factors, we compare the performance of strong and weak promoters.
+This ratio reflects the maturation process and transition dynamics of the protein, serving as a crucial representation of the time evolution. The strength of the promoter has a different impact on the timer performance depending on the pulse amplitude and pulse width. [^2]Changing the pulse amplitude affects the overall protein expression level in the system, while the pulse width directly influences the time distribution of protein production. To balance these two factors, we compare the performance of strong and weak promoters.
 
 **1.  Advantages and Limitations of Strong Promoters**
 
@@ -456,6 +464,20 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
         <span style="color:gray">Figure9. Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
+## AI-Aided Validation of Model Predictions
+
+To further validate the robustness and generalizability of our model, we leveraged the reasoning capabilities of two state-of-the-art Chinese large language models, **DeepSeek** and **Qwen**, both of which have demonstrated strong, comprehensive capabilities. These two AI models were independently prompted with specific design parameters for fluorescent timers (FT) optimized for tracking yeast cell lineage and age. The prompts were structured to guide the models toward biological first principles, specifically targeting the selection of FT variants, promoter strategies, pulse characteristics, and expression levels in the context of the yeast cell cycle.
+
+Remarkably, the answers provided by both AI models converged with the key conclusions drawn from our mathematical model, reinforcing the credibility of our findings. The models independently highlighted the following optimal choices:
+
+1. **Fast-FT** as the preferred timer variant, aligning with our analysis of maturation times relative to the yeast cell cycle (~87 minutes).
+2. A **periodic promoter** strategy, exemplified by the **ASH1** promoter, which naturally expresses during late in the cell cycle and enables precise "timestamping" of daughter cells at division.
+3. The necessity for **short pulse widths (≈10–15 min)**, which ensures optimal temporal resolution within a single cell cycle.
+4. A **medium-strength promoter**, which provides the best balance between signal intensity and biological burden, ensuring reliable signal detection without saturating the fluorescence detectors.
+
+This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful co-scientist in hypothesis-driven research. [^3]Notably, the use of models like **DeepSeek** and **Qwen**, with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology.
+
+The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#Code and Data Accessibility).
 
 ## Conclusion
 
@@ -626,7 +648,7 @@ def additional_regulation(t, y, p):
 
 The entire model is built with a modular design, ensuring good readability and extensibility. Users can flexibly adjust parameters or modify functional modules according to their specific needs. It is recommended to conduct a systematic virtual screening before major experimental investments, as this can save valuable experimental resources and time and significantly improve research efficiency by "failing on silicon" rather than in the laboratory.
 
-## Code Accessibility
+## Code and Data Accessibility
 
 Periodic Promoter vs Constitutive Promoter Part：[ft_compare_promoters.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/ft_compare_promoters.py)
 
@@ -634,8 +656,12 @@ Strong Promoter vs Weak Promoter Part：[df_strength.py](https://gitlab.igem.org
 
 Result Part：[FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py)
 
+AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/model_deepseek_assistant.json), [Qwen Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/model_qwen_assistant.json)
+
 ## References
 
-[1] Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. Nature Chemical Biology, 5(2), 118–126. https://doi.org/10.1038/nchembio.138
+[^1] Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature Chemical Biology*, 5(2), 118–126. https://doi.org/10.1038/nchembio.138
 
-[2] Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, *4*, 975–986. https://doi.org/10.1021/sb500366v
+[^2] Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, *4*, 975–986. https://doi.org/10.1021/sb500366v
+
+[^3] Penadés, J. R., Gottweis, J., He, L., Patkowski, J. B., Daryin, A., Weng, W.-H., Tu, T., Palepu, A., Myaskovsky, A., Pawlosky, A., Natarajan, V., Karthikesalingam, A., & Costa, T. R. D. (2025). AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution. *Cell, 188*(5), 1–12. https://doi.org/10.1016/j.cell.2025.08.018
