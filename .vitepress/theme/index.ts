@@ -13,11 +13,10 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
       'not-found': () => h(Custom404)
     })
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app }) {
     app.component('HomePage', HomePage)
     // Register Custom404 component if needed elsewhere
     app.component('Custom404', Custom404)

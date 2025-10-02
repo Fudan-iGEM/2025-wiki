@@ -1,9 +1,3 @@
-/* Import Tailwind directives */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Import Josefin Sans Font */
 @font-face {
   font-family: 'Josefin Sans';
   src: url('https://static.igem.wiki/teams/5643/fonts/josefinsans-thin.ttf') format('truetype');
@@ -189,11 +183,6 @@
   --vp-c-highlight: #fff771;
   --vp-c-warning: #ffd237;
   --vp-c-success: #6fbe02;
-  
-  --vp-c-default-1: var(--vp-c-gray-1);
-  --vp-c-default-2: var(--vp-c-gray-2);
-  --vp-c-default-3: var(--vp-c-gray-3);
-  --vp-c-default-soft: var(--vp-c-gray-soft);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -209,8 +198,7 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
-  
-  /* 新主题色彩变量 */
+
   --tech-primary: #008794;
   --tech-secondary: #0e9f99;
   --tech-accent: #5dcac6;
@@ -239,18 +227,6 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
 }
 
-/**
- * Component: Home
- * -------------------------------------------------------------------------- */
-
-/**
- * Component: Algolia
- * -------------------------------------------------------------------------- */
-
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand-1) !important;
-}
-
 .VPNav, .ModernNavbar {
   position: fixed !important;
   z-index: 100 !important; /* 高z-index确保在最上层 */
@@ -262,7 +238,6 @@
   box-shadow: 0 2px 20px rgba(0, 135, 148, 0.08), 
               0 1px 0 rgba(255, 255, 255, 0.1) inset;
 }
-
 
 /* 使下拉菜单可点击 */
 .dropdown-menu.is-active {
@@ -333,7 +308,6 @@ h1, h2, h3, h4, h5, h6, .vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc 
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* 增强链接过渡效果 */
 a {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -343,7 +317,6 @@ a:hover {
   text-decoration-color: var(--tech-orange);
 }
 
-/* 现代焦点样式 */
 :focus-visible {
   outline: 2px solid var(--tech-highlight);
   outline-offset: 2px;
@@ -351,7 +324,6 @@ a:hover {
   box-shadow: 0 0 0 4px rgba(255, 247, 113, 0.2);
 }
 
-/* 增强标题样式 */
 .vp-doc h1 {
   background: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 50%, var(--tech-accent) 100%);
   -webkit-background-clip: text;
@@ -498,6 +470,5 @@ a:hover {
 .VPContent, .VPDoc, .content {
   position: relative !important;
   z-index: 10 !important; /* 低于导航栏的z-index */
-  pointer-events: auto !important; /* 确保能接收鼠标事件 */
   padding : 0 !important;
 }

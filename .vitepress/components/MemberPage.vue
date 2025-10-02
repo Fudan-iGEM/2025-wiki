@@ -2,8 +2,6 @@
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import ProfileCard from './ProfileCard/ProfileCard.vue'
 
-
-// 团队成员数据
 const teamMembers = [
   {
     name: "Zhiqin Wang",
@@ -127,7 +125,6 @@ const teamMembers = [
   }
 ]
 
-// 随机打乱数组的函数
 const shuffleArray = (array) => {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -137,7 +134,6 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-// 响应式的随机排列成员数据
 const randomizedMembers = ref([]);
 const visibleMembers = ref([]);
 const membersPerPage = 6;
@@ -145,25 +141,20 @@ const currentPage = ref(1);
 const isLoading = ref(false);
 const highlightedMember = ref('');
 
-// 初始化随机成员列表
 onMounted(() => {
   randomizedMembers.value = shuffleArray(teamMembers);
   loadMoreMembers();
   
-  // 检查URL hash并处理跳转
   handleHashNavigation();
   
-  // 监听hash变化
   window.addEventListener('hashchange', handleHashNavigation);
 });
 
-// 处理hash导航
 const handleHashNavigation = () => {
-  const hash = window.location.hash.substring(1); // 移除#号
+  const hash = window.location.hash.substring(1); 
   if (hash) {
     const targetMember = teamMembers.find(member => member.handle === hash);
     if (targetMember) {
-      // 确保目标成员在可见列表中
       ensureMemberVisible(hash);
     }
   }
@@ -173,8 +164,6 @@ const handleHashNavigation = () => {
 const ensureMemberVisible = async (handle) => {
   const targetMember = teamMembers.find(member => member.handle === handle);
   if (!targetMember) return;
-  
-  // 如果成员不在当前可见列表中，加载更多直到找到
   while (!visibleMembers.value.find(member => member.handle === handle) && 
          visibleMembers.value.length < randomizedMembers.value.length) {
     loadMoreMembers();
@@ -274,7 +263,6 @@ onUnmounted(() => {
   display: grid;
   gap: 40px;
   justify-items: center;
-  /* 默认：1380px以上一行三个 */
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -285,7 +273,6 @@ onUnmounted(() => {
   color: #666;
 }
 
-/* 1380px以下850px以上：一行两个 */
 @media (max-width: 1379px) and (min-width: 851px) {
   .member-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -293,7 +280,6 @@ onUnmounted(() => {
   }
 }
 
-/* 850px以下720px以上：小尺寸的两个 */
 @media (max-width: 850px) and (min-width: 721px) {
   .member-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -305,7 +291,6 @@ onUnmounted(() => {
   }
 }
 
-/* 720px以下：一个 */
 @media (max-width: 720px) {
   .member-grid {
     grid-template-columns: 1fr;
@@ -317,7 +302,6 @@ onUnmounted(() => {
   }
 }
 
-/* 移动端优化 */
 @media (max-width: 480px) {
   .member-grid {
     gap: 20px;
