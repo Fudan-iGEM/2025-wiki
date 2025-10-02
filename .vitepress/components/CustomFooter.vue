@@ -8,7 +8,7 @@
     </div>
     <div class="footer-sponsors">
       <a href="https://life.fudan.edu.cn/" target="_blank" class="sponsor-link">
-        <img src="https://static.igem.wiki/teams/5643/img/sky.svg" alt="Fudan Life Science School" />
+        <img src="https://static.igem.wiki/teams/5643/img/sky.svg" alt="Fudan Life Science School" class="sky"/>
       </a>
       <a href="https://www.fudan.edu.cn/en/" target="_blank" class="sponsor-link">
         <img src="https://static.igem.wiki/teams/5643/img/fudan.svg" alt="Fudan University" />
@@ -69,13 +69,16 @@
   transform: scale(1.05);
 }
 
-.sponsor-link img {
-  height: clamp(40px, 6vw, 80px);
+.sponsor-link img:not(.sky) {
+  height: clamp(40px, 6vw, 70px);
   width: auto;
   max-width: 100%;
   object-fit: contain;
 }
 
+.sky {
+  height: clamp(45px, 6.8vw, 80px);
+}
 .footer-logo img {
   width: clamp(460px, 40vw, 680px);
   height: auto;
@@ -140,11 +143,15 @@
   }
 
   .footer-sponsors {
-    gap: 12px;
+    gap: 15px;
   }
 
-  .sponsor-link img {
-    height: clamp(30px, 8vw, 60px);
+  .sponsor-link img:not(.sky) {
+    height: clamp(45px, 8vw, 70px);
+  }
+
+  .sky {
+    height: clamp(51px, 9vw, 79px);
   }
 
   .copyright-left,
