@@ -31,14 +31,6 @@ To achieve this, we applied the **24Model systems framework**, systematically id
 
 As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis Report**, available in the PDF below. We hope it will offer future iGEM teams and laboratory practitioners a systematic perspective on lab safety, as well as fresh insights for building safer research environments.
 
-<div style="position: relative; width: 100%; height: 600px;">
-  <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="100%" style="border: none;">
-  </iframe>
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none;" id="pdf-fallback-1">
-    Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf">Download the PDF</a>.
-  </div>
-</div>
-
 #### Comprehensive Table of Laboratory Safety Evaluation Dimensions (24Model Framework)
 
 | Dimension Level          | Main Categories                 | Key Evaluation Areas                                         | Description                                                  |
