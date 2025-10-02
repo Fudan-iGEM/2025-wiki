@@ -628,11 +628,11 @@ The entire model is built with a modular design, ensuring good readability and e
 
 ## Code Accessibility
 
-Periodic Promoter vs Constitutive Promoter Part：[ft_compare_promoters.py](../model/ft_compare_promoters.py)
+Periodic Promoter vs Constitutive Promoter Part：[ft_compare_promoters.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/ft_compare_promoters.py)
 
-Strong Promoter vs Weak Promoter Part：[df_strength.py](../model/df_strength.py)
+Strong Promoter vs Weak Promoter Part：[df_strength.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/df_strength.py)
 
-Result Part：[FT.py](../model/FT.py)
+Result Part：[FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py)
 
 ## References
 
