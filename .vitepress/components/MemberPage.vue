@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import ProfileCard from './ProfileCard/ProfileCard.vue'
 
 
@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Yue Yue",
     title: "Team Member",
-    handle: "Yue",
+    handle: "yue-yue",
     status: "INTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy.webp",
@@ -28,7 +28,7 @@ const teamMembers = [
   {
     name: "Huizhen Du",
     title: "Team Member",
-    handle: "Huizhen",
+    handle: "du-huizhen",
     status: "ESFP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz.webp",
@@ -38,17 +38,17 @@ const teamMembers = [
   {
     name: "Peining Wu",
     title: "Team Member",
-    handle: "Peining",
+    handle: "wu-peining",
     status: "INTJ",
     contactText: "Detail", 
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp",
-    description: "In our iGEM team, I’m mainly responsible for design and experiments. I love to explore new things, reach out to new areas and try to put ideas into practice. Let us find the dopamine in life and be the first to stand in line!"
+    description: "In our iGEM team, I'm mainly responsible for design and experiments. I love to explore new things, reach out to new areas and try to put ideas into practice. Let us find the dopamine in life and be the first to stand in line!"
   },
   {
     name: "Yufan Han",
     title: "Team Member",
-    handle: "Yufan",
+    handle: "han-yufan",
     status: "INTP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hyf.webp",
@@ -58,7 +58,7 @@ const teamMembers = [
   {
     name: "Zhongyi Huang",
     title: "Team Member",
-    handle: "Zhongyi",
+    handle: "huang-zhongyi",
     status: "...",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy.webp",
@@ -68,7 +68,7 @@ const teamMembers = [
   {
     name: "Yining Zhao",
     title: "Team Member",
-    handle: "Yining",
+    handle: "zhao-yining",
     status: "INTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn.webp",
@@ -78,7 +78,7 @@ const teamMembers = [
   {
     name: "Xiuqi Tian",
     title: "Team Member",
-    handle: "Xiuqi",
+    handle: "tian-xiuqi",
     status: "ISFP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/txq.webp",
@@ -88,7 +88,7 @@ const teamMembers = [
   {
     name: "Yixuan Lu",
     title: "Team Member",
-    handle: "Yixuan",
+    handle: "lu-yixuan",
     status: "ENFP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx.webp",
@@ -98,7 +98,7 @@ const teamMembers = [
   {
     name: "Zuyao Wu",
     title: "Team Member",
-    handle: "Zuyao",
+    handle: "wu-zuyao",
     status: "ENTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy.webp",
@@ -108,17 +108,17 @@ const teamMembers = [
   {
     name: "Jihua Tang",
     title: "Team Member",
-    handle: "Jihua",
+    handle: "tang-jihua",
     status: "INFJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh-a.webp",
-    description: "Hi! I’m Jihua, a junior majoring in Integrated Circuits. In our team, I focus on dry-lab modeling, helping to understand and predict the behavior of our multicellular yeast system. My engineering background enables me to tackle computational challenges efficiently. For me, Fudan iGEM 2025 is where silicon meets cells—and curiosity grows into collaboration!"
+    description: "Hi! I'm Jihua, a junior majoring in Integrated Circuits. In our team, I focus on dry-lab modeling, helping to understand and predict the behavior of our multicellular yeast system. My engineering background enables me to tackle computational challenges efficiently. For me, Fudan iGEM 2025 is where silicon meets cells—and curiosity grows into collaboration!"
   },
   {
     name: "Yuxin Duan",
     title: "Team Member",
-    handle: "Yuxin",
+    handle: "duan-yuxin",
     status: "INTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx.webp", 
@@ -143,12 +143,63 @@ const visibleMembers = ref([]);
 const membersPerPage = 6;
 const currentPage = ref(1);
 const isLoading = ref(false);
+const highlightedMember = ref('');
 
 // 初始化随机成员列表
 onMounted(() => {
   randomizedMembers.value = shuffleArray(teamMembers);
   loadMoreMembers();
+  
+  // 检查URL hash并处理跳转
+  handleHashNavigation();
+  
+  // 监听hash变化
+  window.addEventListener('hashchange', handleHashNavigation);
 });
+
+// 处理hash导航
+const handleHashNavigation = () => {
+  const hash = window.location.hash.substring(1); // 移除#号
+  if (hash) {
+    const targetMember = teamMembers.find(member => member.handle === hash);
+    if (targetMember) {
+      // 确保目标成员在可见列表中
+      ensureMemberVisible(hash);
+    }
+  }
+};
+
+// 确保指定成员可见并滚动到该成员
+const ensureMemberVisible = async (handle) => {
+  const targetMember = teamMembers.find(member => member.handle === handle);
+  if (!targetMember) return;
+  
+  // 如果成员不在当前可见列表中，加载更多直到找到
+  while (!visibleMembers.value.find(member => member.handle === handle) && 
+         visibleMembers.value.length < randomizedMembers.value.length) {
+    loadMoreMembers();
+  }
+  
+  // 等待DOM更新
+  await nextTick();
+  
+  // 高光显示目标成员
+  highlightedMember.value = handle;
+  
+  // 滚动到目标成员
+  const memberElement = document.querySelector(`[data-member-handle="${handle}"]`);
+  if (memberElement) {
+    memberElement.scrollIntoView({ 
+      behavior: 'smooth', 
+      block: 'center' 
+    });
+    
+    // 2秒后移除高光效果
+    setTimeout(() => {
+      highlightedMember.value = '';
+    }, 2000);
+  }
+};
 
 // 加载更多成员
 const loadMoreMembers = () => {
@@ -181,26 +232,32 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('hashchange', handleHashNavigation);
 });
 </script>
 
 <template>
   <div class="member-page">
     <div class="member-grid">
-      <ProfileCard
+      <div
         v-for="(member, index) in visibleMembers"
         :key="index"
-        :name="member.name"
-        :title="member.title"
-        :handle="member.handle"
-        :status="member.status"
-        :contact-text="member.contactText"
-        :avatar-url="member.avatarUrl"
-        :bar-avatar-url="member.barAvatarUrl"
-        :description="member.description"
-        :show-user-info="true"
-        :enable-tilt="true"
-      />
+        :data-member-handle="member.handle"
+      >
+        <ProfileCard
+          :name="member.name"
+          :title="member.title"
+          :handle="member.handle"
+          :status="member.status"
+          :contact-text="member.contactText"
+          :avatar-url="member.avatarUrl"
+          :bar-avatar-url="member.barAvatarUrl"
+          :description="member.description"
+          :show-user-info="true"
+          :enable-tilt="true"
+          :is-highlighted="highlightedMember === member.handle"
+        />
+      </div>
     </div>
     <div v-if="isLoading" class="loading">Loading more members...</div>
   </div>

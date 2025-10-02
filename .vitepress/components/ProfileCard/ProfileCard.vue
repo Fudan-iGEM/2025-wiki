@@ -3,7 +3,7 @@
 -->
 
 <template>
-  <div ref="wrapRef" :class="`pc-card-wrapper ${className}`.trim()" :style="cardStyle">
+  <div ref="wrapRef" :class="`pc-card-wrapper ${className} ${props.isHighlighted ? 'highlighted' : ''}`.trim()" :style="cardStyle">
     <section ref="cardRef" class="pc-card">
       <div class="pc-inside" :class="{ 'flipped': isFlipped }">
         <div class="pc-shine" />
@@ -94,6 +94,7 @@ interface Props {
   contactText?: string;
   showUserInfo?: boolean;
   description?: string;
+  isHighlighted?: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -113,7 +114,8 @@ const props = withDefaults(defineProps<Props>(), {
   status: '',
   contactText: 'Contact',
   showUserInfo: true,
-  description: ''
+  description: '',
+  isHighlighted: false
 });
 
 const emit = defineEmits<{
@@ -1126,5 +1128,30 @@ onUnmounted(() => {
 }.avatar {
   max-height: 80%;
   object-fit: contain;
+}
+
+/* 高光效果样式 */
+.pc-card-wrapper.highlighted {
+  animation: subtleHighlight 1.5s ease-out;
+  transition: all 0.3s ease;
+}
+
+.pc-card-wrapper.highlighted .pc-card {
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3), 
+              0 4px 16px rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  transform: translateY(-4px);
+}
+
+@keyframes subtleHighlight {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>
