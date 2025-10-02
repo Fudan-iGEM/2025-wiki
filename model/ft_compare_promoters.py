@@ -41,7 +41,6 @@ def save_figure(fig, title: str):
 
 @dataclass
 class Params:
-
     Tcc_min: float = 87.0
     t_end_min: float = 180.0
     dt_min: float = 0.2
@@ -72,15 +71,11 @@ class Params:
     def k_D(self): return np.log(2)/(self.t12_R_hours*60.0)
 
 def u_input(t, p: Params):
-    """Return input u(t) based on promoter mode (pulse or constant)."""
     if p.pulse_mode == "const":
         return p.pulse_amp
     return p.pulse_amp if (0.0 <= t < p.pulse_width_min) else 0.0
 
 def f_rhs(t, y, p: Params):
-    """
-    y = [m, C, B, I, R]
-    """
     m, C, B, I, R = y
     u = u_input(t, p)
     dm = p.k_tx*u - p.k_dm*m
@@ -98,14 +93,12 @@ def rk4_step(t, y, h, p: Params):
     return y + (h/6.0)*(k1 + 2*k2 + 2*k3 + k4)
 
 def simulate_single_cell(p: Params, y0=None, t_end_min=None):
-    """Simulate single cell; returns time array and dict of m, C, B, I, R, r."""
     if t_end_min is None: t_end_min = p.t_end_min
     h = p.dt_min
     t = np.arange(0.0, t_end_min+h*0.5, h)
     y = np.zeros((t.size, 5), dtype=float)
     if y0 is not None:
         y[0] = y0
-
     for i in range(t.size-1):
         y[i+1] = rk4_step(t[i], y[i], h, p)
 
@@ -129,14 +122,6 @@ def metrics_delta_r_and_monotonicity(t, r, t1=10.0, t2=90.0):
     return delta_r, min_slope, pos_frac
 
 def simulate_lineage_birth_aligned(p: Params, generations=8):
-    """
-    Simulate multiple generations, each birth-aligned (0..Tcc minutes).
-    Returns:
-      - t_line: time within a cell cycle (0..Tcc)
-      - Rmat, Bmat, rmat: matrices of R, B, r (shape: generations x time)
-      - rmat_baseline: baseline-corrected r' per generation
-      - R0_list: initial R value per generation
-    """
     h = p.dt_min
     t_line = np.arange(0.0, p.Tcc_min + h*0.5, h)
     nT = t_line.size
@@ -148,7 +133,6 @@ def simulate_lineage_birth_aligned(p: Params, generations=8):
 
     R_inherit = 0.0
     for g in range(generations):
-
         y0 = np.array([0,0,0,0,R_inherit], dtype=float)
         t, out = simulate_single_cell(p, y0=y0, t_end_min=p.Tcc_min)
         R = out["R"]; B = out["B"]; r = out["r"]
@@ -169,12 +153,6 @@ def simulate_lineage_birth_aligned(p: Params, generations=8):
     return t_line, Rmat, Bmat, rmat, rmat_baseline, R0_list
 
 def simulate_chain_absolute_time(p: Params, generations=4):
-    """
-    Simulate chain over absolute time by concatenating 0..Tcc windows.
-    Returns:
-      - t_abs_list: list of absolute-time arrays per generation
-      - r_list, rprime_list: corresponding r and r' arrays per generation
-    """
     t_abs_list, r_list, rprime_list = [], [], []
     R_inherit = 0.0
     t0 = 0.0
@@ -196,11 +174,6 @@ def simulate_chain_absolute_time(p: Params, generations=4):
     return t_abs_list, r_list, rprime_list
 
 def set_amp_for_mode(p: Params, tau_value, base_amp=1.0, fairness=FAIRNESS_MODE):
-    """
-    Set (pulse_mode, tau, pulse_amp) according to fairness policy.
-      - pulse: tau_value is effective
-      - const: tau_value=None
-    """
     if tau_value == "ON":
         mode = "const"
         if fairness == "equal_intensity":
@@ -259,30 +232,26 @@ def main():
     fig, ax = plt.subplots(figsize=(7,5))
     ax.plot(x_pos, delta_vals, marker="o")
     ax.set_xticks(x_pos); ax.set_xticklabels(all_labels)
-    ax.set_xlabel("Pulse width tau (min) / ON")
+    ax.set_xlabel("Pulse width τ (min) / ON")
     ax.set_ylabel("Delta r = r(90) - r(10)")
-
     ax.axhline(0.09, ls="--", lw=1.6, color="gray", alpha=0.8)
-
-    ax.text(x_pos[-1]-0.2, 0.09+0.002, "3-sigma ~ 0.09", color="gray", fontsize=18,
+    ax.text(x_pos[-1]-0.2, 0.09+0.002, "3σ≈0.09", color="gray", fontsize=18,
             ha='right', va='bottom')
     ax.tick_params(axis='both', labelsize=20, width=2.0, length=8)
     for s in ax.spines.values():
         s.set_linewidth(2.0)
     plt.tight_layout()
-    save_figure(fig, f"Delta r vs tau (10-90 min window)")
+    save_figure(fig, f"Delta r vs τ (10-90 min window)")
 
     df = pd.DataFrame(rows)
     df = df[["label","mode","tau","amp","delta_r","min_slope","pos_frac","fairness"]]
     df_sorted = df.copy()
-
     df_sorted = df_sorted.sort_values(by=["tau"])
-    print("\n=== Metrics table (10-90 min window) ===")
+    print("\n=== Metrics table (10�C90 min window) ===")
     print(df_sorted.to_string(index=False))
     df_sorted.to_csv(f"{SAVE_PREFIX}_metrics_{FAIRNESS_MODE}.csv", index=False)
 
     reps = []
-
     rep_good = 12 if 12 in TAU_LIST else (15 if 15 in TAU_LIST else TAU_LIST[0])
     reps.append(("pulse", rep_good))
     if 50 in TAU_LIST:
@@ -295,7 +264,6 @@ def main():
     for mode, tau_eff in reps:
         p.pulse_mode = mode
         if tau_eff is not None: p.pulse_width_min = tau_eff
-
         _, _, amp = set_amp_for_mode(p, "ON" if mode=="const" else tau_eff, base_amp=1.0, fairness=FAIRNESS_MODE)
         p.pulse_amp = amp
 
@@ -312,7 +280,7 @@ def main():
         ax.tick_params(axis='both', labelsize=20, width=2.0, length=8)
         for s in ax.spines.values():
             s.set_linewidth(2.0)
-        tag = "on" if mode=="const" else f"tau{int(tau_eff)}"
+        tag = "on" if mode=="const" else f"τ{int(tau_eff)}"
         title_r = f"Lineage r heatmap - {tag} - fairness {FAIRNESS_MODE}"
         plt.title(title_r, fontsize=14)
         plt.tight_layout()
@@ -344,8 +312,7 @@ def main():
         t_abs_list, r_list, rprime_list = simulate_chain_absolute_time(p, generations=4)
 
         for g, (tt, rp) in enumerate(zip(t_abs_list, rprime_list)):
-
-            lbl = f"{'ON' if mode=='const' else f'tau={tau_eff}'} - G{g}"
+            lbl = f"{'ON' if mode=='const' else f'τ={tau_eff}'} - G{g}"
             plt.plot(tt, rp, lw=1.6, label=lbl, alpha=0.9)
 
     plt.xlabel("Absolute time (min)")
