@@ -10,6 +10,7 @@ export default defineConfig({
   base: '/fudan/',
   srcDir: './pages',
   ignoreDeadLinks: true,
+  appearance: false,
   markdown: {
     config: (md) => {
       md.use(mathjax3)

@@ -1,3 +1,8 @@
+html.dark {
+  /* 强制将 color-scheme 设置为 light */
+  color-scheme: light;
+}
+
 @font-face {
   font-family: 'Josefin Sans';
   src: url('https://static.igem.wiki/teams/5643/fonts/josefinsans-thin.ttf') format('truetype');
