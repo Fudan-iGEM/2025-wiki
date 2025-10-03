@@ -3,10 +3,10 @@ title: Safety
 authors:
   - name: Yue Yue
     url: /fudan/team/#yue-yue
-    avatar: （头像，先不填）
-    layout: igem
-    heroImage: （拍摄并且选取页面图像，作为顶部展示）
-    description: On this page, we elaborated on laboratory safety analysis methods systematically and established a multi-layered genetic circuit to prevent laboratory safety issues.
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
+layout: igem
+heroImage: （拍摄并且选取页面图像，作为顶部展示）
+description: On this page, we elaborated on laboratory safety analysis methods systematically and established a multi-layered genetic circuit to prevent laboratory safety issues.
 ---
 
 ## Introduction
