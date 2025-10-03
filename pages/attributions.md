@@ -11,9 +11,8 @@ description: On this page, we concisely acknowledges all contributors and transp
 
 # Specially thank to
 
-logos of Tsingke, Twist, IDT, Snapgene, GeneScript, etc
+图标加链接 Tsingke, Twist, IDT, Snapgene, GeneScript 是否有遗漏
 
-# Attribution Form
 The content below is fetched from [https://attributions.igem.org?team=Fudan&year=2025](https://attributions.igem.org?team=Fudan&year=2025).
 
 <iframe style="border:0;width:100%;height:800px !important;"
