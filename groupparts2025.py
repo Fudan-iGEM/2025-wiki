@@ -69,6 +69,7 @@ z += ['BBa_K5441013',
 'BBa_254K9906',
 'BBa_25RCU5CB',
 'BBa_25FOVO4C',
+'BBa_25FQBGJW',
 'BBa_K3748015',
 'BBa_251I2TLJ',
 'BBa_252BO17G',
@@ -147,7 +148,11 @@ z += ['BBa_K5441013',
 'BBa_25B7ZBSD',
 'BBa_25Q3F2B3',
 'BBa_25RRB2RQ',
-'BBa_25U7CTYJ' ]
+'BBa_25U7CTYJ',
+'BBa_25B3A6Z8',
+'BBa_25N9YOTD',
+'BBa_25KYY8AI',
+'BBa_25EI9P2P' ]
 # XXXXYYY no longer used by registry.igem.org z += range(0, 10)
 subparts = []
 sub_is_NOT_basic = []
@@ -219,7 +224,16 @@ known_basic_parts = ['BBa_B0030',
 'BBa_K5115084',
 'BBa_K5115085',
 'BBa_K5115088',
-'BBa_K5115089' ]
+'BBa_K5115089',
+'BBa_K2753051',
+'BBa_K3190001',
+'BBa_K3748013',
+'BBa_K3748015',
+'BBa_K3944000',
+'BBa_K3944010',
+'BBa_K5441013',
+'BBa_K5470009',
+'BBa_K5470011' ]
 
 
 table_th = ('Part Name', 'Short Description', 'Part Type', 'Designer(s)')
@@ -376,10 +390,18 @@ fff.close()
 
 if subparts:
     print('\n\n====\nBelow are subparts in composite parts:\n')
-    print('\n'.join(["'%s'," % x for x in sorted(subparts) ]))
+    for x in subparts:
+        if x in z:
+            print("'%s',\n" % x )
+        else:
+            print("'%s',\tNOT in List\n" % x )
 if basic_parts:
     print('\n====\nBelow are basic parts:\n')
-    print('\n'.join(["'%s'," % x for x in sorted(basic_parts) ]))
+    for x in basic_parts:
+        if x in z:
+            print("'%s',\n" % x )
+        else:
+            print("'%s',\tNOT in List\n" % x )
 if sub_is_NOT_basic:
     print('\n====\nSubparts are Not basic, and not white listed:\n')
     print('\n'.join(["'%s'," % x for x in sorted(sub_is_NOT_basic) ]))
