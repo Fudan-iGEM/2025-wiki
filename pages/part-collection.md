@@ -3,9 +3,9 @@ title: Part Collection
 authors:
   name: Peining Wu
   url: /fudan/team/#wu-peining
-  avatar: 
+  avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
+heroImage: fff
 description: On this page, we describe 3 part collections used in our program-Grape Yeast, the optimal promoter–fluorescent protein combination screening collection and the homologous arms integration collection for *Saccharomyces cerevisiae*.
 ---
 ## Part Collection
