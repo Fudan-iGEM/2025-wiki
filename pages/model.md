@@ -16,7 +16,7 @@ description: On this page, we describe our models in detail.
 
 Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
 
-Our work reimagines this cycle by introducing an [**AI-augmented modeling framework**](#AI-Aided%20Validation%20of%20Model%20Predictions) that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as ASH1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models (DeepSeek and Qwen), which—when prompted only with biological first principles—converged on the same optimal design choices.
+Our work reimagines this cycle by introducing an [**AI-augmented modeling framework**](#AI-Aided-Validation-of-Model-Predictions) that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as ASH1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models (DeepSeek and Qwen), which—when prompted only with biological first principles—converged on the same optimal design choices.
 
 This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach *supercharges the “Design” phase*, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
 
@@ -182,7 +182,7 @@ $$
 \begin{aligned} \dot m &= k_{tx}\,u(t)-k_{dm}\,m,\\ \dot C &= k_{tl}\,m - k_B\,C,\\ \dot B &= k_B\,C - k_I\,\,B,\\ \dot I &= k_I\,B - k_R\,I,\\ \dot R &= k_R\,I - k_{DR}\,R. \end{aligned}
 $$
 
-These equations are computed in the inline function `f(t, y)` in `simulate_single_cell`, and then advanced using a numerical integration method (such as RK4).
+These equations are computed in the inline function `f(t, y)` in `simulate_single_cell`, and then advanced using a numerical integration method (such as RK4)[^4][^5].
 
 ```python
 def f(t: float, y: np.ndarray) -> np.ndarray:
@@ -464,6 +464,8 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
         <span style="color:gray">Figure9. Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
+
+
 ## AI-Aided Validation of Model Predictions
 
 To further validate the robustness and generalizability of our model, we leveraged the reasoning capabilities of two state-of-the-art Chinese large language models, **DeepSeek** and **Qwen**, both of which have demonstrated strong, comprehensive capabilities. These two AI models were independently prompted with specific design parameters for fluorescent timers (FT) optimized for tracking yeast cell lineage and age. The prompts were structured to guide the models toward biological first principles, specifically targeting the selection of FT variants, promoter strategies, pulse characteristics, and expression levels in the context of the yeast cell cycle.
@@ -477,7 +479,7 @@ Remarkably, the answers provided by both AI models converged with the key conclu
 
 This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful co-scientist in hypothesis-driven research. [^3]Notably, the use of models like **DeepSeek** and **Qwen**, with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology.
 
-The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#Code%20and%20Data%20Accessibility).
+The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#Code-and-Data-Accessibility).
 
 ## Conclusion
 
@@ -660,6 +662,8 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 
 ## References
 
-[^1]: Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature Chemical Biology*, 5(2), 118–126. https://doi.org/10.1038/nchembio.138
-[^2]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, *4*, 975–986. https://doi.org/10.1021/sb500366v
-[^3]: Penadés, J. R., Gottweis, J., He, L., Patkowski, J. B., Daryin, A., Weng, W.-H., Tu, T., Palepu, A., Myaskovsky, A., Pawlosky, A., Natarajan, V., Karthikesalingam, A., & Costa, T. R. D. (2025). AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution. *Cell, 188*(5), 1–12. https://doi.org/10.1016/j.cell.2025.08.018
+[^1]: Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature Chemical Biology*, 5(2), 118–126. DOI: 10.1038/nchembio.138
+[^2]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, *4*, 975–986. DOI: 10.1021/sb500366v
+[^3]: Penadés, J. R., Gottweis, J., He, L., Patkowski, J. B., Daryin, A., Weng, W.-H., Tu, T., Palepu, A., Myaskovsky, A., Pawlosky, A., Natarajan, V., Karthikesalingam, A., & Costa, T. R. D. (2025). AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution. *Cell, 188*(5), 1–12. DOI: 10.1016/j.cell.2025.08.018
+[^4]: Kutta, W. (1901). Beitrag zur näherungsweisen Integration totaler Differentialgleichungen. Teubner.
+[^5]: Butcher, J. C. (2000). Numerical methods for ordinary differential equations in the 20th century. Journal of Computational and Applied Mathematics, 125(1-2), 1-29. DOI: 10.1016/S0377-0427(00)00455-6
