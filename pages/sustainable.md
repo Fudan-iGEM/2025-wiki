@@ -4,9 +4,10 @@ authors:
   - name: Zuyao Wu
     url: （先不填）
     avatar: （头像，先不填）
-layout: igem
+layout: igem （勿动）
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: On this page, we
+description: （页面描述）
+
 ---
 
 ## Overview
@@ -19,16 +20,18 @@ We identified the **long-term social, economic, and environmental implications**
 - **Deliver** quality education (SDG 4) through playful, practice-based, and production-oriented activities reaching diverse communities.
 - **Grow** partnerships for the goals (SDG 17) across borders, collaborating with universities, NGOs, and civil society to build open resources and lasting impact.
 
-----
+------
 
 ## **Safeguard**
 
 **SDG 3: GOOD HEALTH AND WELL-BEING**
  *Ensure healthy lives and promote well-being for all at all ages*
 
+![](https://static.igem.wiki/teams/5643/pageimage/sustainable/e-web-03.webp)
+
 Fungal infections are a growing global health threat. Our project seeks to reduce the health burden of fungal resistance through creating new platforms for anti-fungal resistance study and by amplifying the voices of vulnerable groups, building an inclusive community for those related.
 
-----
+------
 
 ### Problem Identification
 
@@ -38,7 +41,7 @@ Patients with EB and other rare conditions frequently suffer fungal infections, 
 **Problem 2 – Psychosocial and economic burdens**
 Beyond the physical disease, patients encounter stigma, emotional isolation, and heavy financial costs, which remain under-addressed in healthcare systems.
 
-----
+------
 
 ### Our Actions and Solutions
 
@@ -52,7 +55,7 @@ To confront the stigma, emotional isolation, and financial strain faced by EB fa
 
 For more information, please check our [Inclusivity page](/Inclusivity/).
 
-----
+------
 
 ### Long-term Positive Impacts
 
@@ -60,7 +63,7 @@ For more information, please check our [Inclusivity page](/Inclusivity/).
 - **Economic**: Highlighted antifungal drug cost barriers, promoting awareness of the need for more affordable solutions.
 - **Scientific**: Patient feedback reshaped our synthetic biology design, ensuring that future antifungal tools align with real-world needs.
 
-----
+------
 
 ### Possible Negative Impacts
 
@@ -68,7 +71,7 @@ For more information, please check our [Inclusivity page](/Inclusivity/).
 - Visibility campaigns alone may raise awareness but not guarantee improved treatment access.
 - Managing sensitive narratives (rare disease, children) requires strong ethical safeguards.
 
-----
+------
 
 ### Stakeholder Feedback
 
@@ -79,9 +82,11 @@ Participants affirmed the value of our sensory-friendly research methods. They n
 **SDG 4: QUALITY EDUCATION**
  *Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all*
 
+![](https://static.igem.wiki/teams/5643/pageimage/sustainable/e-web-04.webp)
+
 Fungal infections and synthetic biology are both areas where public awareness remains limited. To achieve sustainable health solutions, it is essential not only to advance science in the lab, but also to foster a society that understands, values, and engages with these innovations.
 
-----
+------
 
 ### Problem Identification
 
@@ -94,7 +99,7 @@ Knowledge of synthetic biology is concentrated in elite institutions. Primary an
 **Problem #3 – Low engagement formats**
 Traditional lectures and texts fail to engage young learners or general audiences, creating barriers to effective science communication.
 
-----
+------
 
 ### Our Actions and Solutions
 
@@ -110,7 +115,7 @@ To overcome limited access to synthetic biology education, we reached out to und
 
 To tackle the issue of low attractiveness of traditional education formats, we transformed learning into interactive experiences. We created games such as “Microbial Squat,” adapted from a popular children’s activity, to help students internalize microbial diversity through movement, and role-playing exercises to demonstrate how genes become proteins. Together with ShanghaiTech and Shanghai Jiao Tong University, we launched SynbioSH, a city-wide orienteering game in which participants solved biology puzzles at urban landmarks, turning the city into a living classroom. Additionally, through the Torch Plan, we partnered with education students to co-develop interactive slide decks for young learners, translating complex topics like anti-fungal resistance into playful and accessible formats. These approaches significantly enhanced engagement, transforming abstract knowledge into memorable experiences.
 
-----
+---
 
 ### Long-term Positive Impacts
 
@@ -118,7 +123,7 @@ To tackle the issue of low attractiveness of traditional education formats, we t
 - **Educational:** Provides novel, creative learning tools (illustrative storybooks, games, workshops) that can be adopted by schools and iGEM teams globally.
 - **Global:** Strengthens cross-border science communication and nurtures a generation of students who see biology as collaborative and socially embedded.
 
-----
+------
 
 ### Possible Negative Impacts
 
@@ -126,7 +131,7 @@ To tackle the issue of low attractiveness of traditional education formats, we t
 - Games and books, if not updated, may lag behind scientific advances and inadvertently spread outdated concepts.
 - Language barriers may limit accessibility across non-English-speaking communities.
 
-----
+------
 
 ### Stakeholder Feedback
 
@@ -134,16 +139,18 @@ To tackle the issue of low attractiveness of traditional education formats, we t
 - **Students (surveyed n=103)** reported that the board game helped them “feel” the struggle of antifungal resistance, making abstract concepts tangible.
 - **International partners** encouraged us to document and share all materials openly, leading us to publish both the book and board game instructions online.
 
-----
+------
 
 ## **Grow**
 
 **SDG 17: PARTNERSHIPS FOR THE GOALS**
  *Strengthen the means of implementation and revitalize the global partnership for sustainable development*
 
+![](https://static.igem.wiki/teams/5643/pageimage/sustainable/e-web-17.webp)
+
 Our project has long realized that addressing global challenges requires strong partnerships across borders, disciplines, and sectors. Therefore, we positioned partnership not as an auxiliary activity, but as a central methodology, to ensure that fungal health research is inclusive, trans-disciplinary, and socially embedded.
 
-----
+------
 
 ### Problem Identification
 
@@ -153,7 +160,7 @@ Rare-disease groups such as EB (epidermolysis bullosa) families are often treate
 **Problem #2 – Limited cross-sector dialogue:****
 Academic teams frequently miss the chance to partner with civil society, educators, and artists who could help transform complex science into inclusive narratives.
 
-----
+------
 
 ### Our Actions and Partnerships
 
@@ -165,7 +172,7 @@ Through our Intersectional Echoes framework, we worked closely with EB patients 
 
 Our project partnered with artists, social workers, and educators to co-create activities such as art fundraising fairs, the *Science of Healing* exhibition, and interactive toolkits. We also collaborated with Georgia Institute of Technology in the outreach education of multicellular yeast growth and the usage of yeasts in our daily life. These collaborations allowed synthetic biology to intersect with art, education, and advocacy, ensuring that knowledge circulates outside the lab and reaches wider publics.
 
-----
+------
 
 ## Long-term Positive Impacts
 
@@ -173,7 +180,7 @@ Our project partnered with artists, social workers, and educators to co-create a
 - **Social:** By involving EB communities as partners, not subjects, we developed sustainable practices for inclusive science.
 - **Educational:** Cross-sector collaborations produced open-access storybooks, games, and participatory toolkits that can be reused by future iGEM teams and NGOs.
 
-----
+------
 
 ## Stakeholder Feedback
 
@@ -181,7 +188,7 @@ Our project partnered with artists, social workers, and educators to co-create a
 - **Collaboration partners**  highlighted that our yeast chassis could serve both as a research tool and as an educational case, encouraging us to share documentation openly.
 - **Artists and educators** stressed that creative formats (PhotoVoice, exhibitions) enabled broader audiences to understand fungal health, shaping how we designed future outreach.
 
-----
+------
 
 ## Conclusion
 
