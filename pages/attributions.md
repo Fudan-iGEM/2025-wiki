@@ -28,10 +28,6 @@ We gratefully acknowledge the generous support from our partners.
   </figure>
 </div>
 
-
-
-## Attribution Form
-
 The content below is fetched from [https://attributions.igem.org?team=Fudan&year=2025](https://attributions.igem.org?team=Fudan&year=2025).
 
 <iframe style="border:0;width:100%; height:2500px !important;"
