@@ -4,20 +4,24 @@ authors:
   - name: Yue Yue
     url: /fudan/team/#yue-yue
     avatar: （头像，先不填）
-layout: igem
-heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: On this page, we
+    layout: igem
+    heroImage: （拍摄并且选取页面图像，作为顶部展示）
+    description: On this page, we
 ---
 
 ### Introduction
 
-Synthetic biology, as promoted by the iGEM competition, is an emerging interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment that must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance. [^5]Guided by this principle, the Fudan iGEM 2025 team has developed its project around [**Grape Yeast**, a multicellular yeast platform](design link), integrating safety considerations into every stage to help shape a more responsible future for synthetic biology.
+Synthetic biology, as promoted by the iGEM competition, is an emerging interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment that must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance. [^5]Guided by this principle, the Fudan iGEM 2025 team has developed its project around Grape Yeast[(see our Design page)](https://2025.igem.wiki/fudan/design.html), integrating safety considerations into every stage to help shape a more responsible future for synthetic biology.
 
 Since our experimental design and application scenarios take place entirely within the laboratory, we have placed a strong emphasis on laboratory safety. Beyond standard safety measures, we conduct project-specific biosafety assessments and implement tailored risk-mitigation strategies, embedding a culture of responsible science throughout our design process.
 
-![TOC](https://i.mji.rip/2025/09/15/7c90edd8684b81aa40153f109784331c.png)
-
-参考igem fudan 2023，放一个类似于这样的图 
+<div style="text-align: center;" id="fig1">
+    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/safety-in-design.webp" style="width:80%">
+    <div>
+        <span style="color:gray">Figure 1: Safety in design</span>
+        <br><br>
+    </div>
+</div>
 
 ### Laboratory Safety
 
@@ -25,28 +29,22 @@ Laboratory safety is an essential part of every iGEM project, underscoring its c
 
 Through our literature review, we became convinced that lab safety is a field that deserves far more systematic attention. Every year, accidents occur in laboratories worldwide—some causing minor injuries, others posing serious risks to life. Yet, we were surprised to see that while many iGEM teams touch on this topic, they often limit their discussion to listing safety trainings or regulations, without providing a structured or holistic perspective on lab safety.
 
-At Fudan iGEM 2025, we set out to go beyond this. Our aim is to develop **practical models and solutions** that can improve laboratory safety and serve as a lasting reference for future teams working in this important area.
+At Fudan iGEM 2025, we set out to go beyond this. Our aim is to develop practical models and solutions that can improve laboratory safety and serve as a lasting reference for future teams working in this important area.
 
 To achieve this, we applied the **24Model systems framework**, systematically identifying potential risks in our *Grape Yeast* project and addressing them through multi-level oversight and layered management. To extend our impact beyond our own lab, we also conducted a university-wide survey on laboratory safety awareness and developed an SOP-based solution package that can be adopted by other institutions.
 
-As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis Report**, available in the PDF below. We hope it will offer future iGEM teams and laboratory practitioners a systematic perspective on lab safety, as well as fresh insights for building safer research environments.
+In the 24Model framework, safety evaluation is conducted systematically across multiple dimensions, as outlined in the table below.
 
-<div style="position: relative; width: 100%; height: 600px;">
-  <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="100%" style="border: none;">
-  </iframe>
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none;" id="pdf-fallback-1">
-    Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf">Download the PDF</a>.
-  </div>
-</div>
-
-#### Comprehensive Table of Laboratory Safety Evaluation Dimensions (24Model Framework)
+#### Comprehensive Table of Laboratory Safety Evaluation Dimensions
 
 | Dimension Level          | Main Categories                 | Key Evaluation Areas                                         | Description                                                  |
 | ------------------------ | ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Individual Level**     | One-time Behaviors & Conditions | - Unsafe Human Behaviors (Unsafe Acts) - Unsafe Physical Conditions | **Direct causes** of accidents. These are immediate unsafe actions or hazardous conditions that can directly trigger incidents. |
-|                          | Habitual Behaviors              | - Deficiencies in Safety Knowledge - Weak Safety Awareness - Unsafe Laboratory Habits - Unfavorable Psychological/Physiological States | **Indirect causes** of accidents. Long-term unsafe habits or persistent weaknesses that, under certain circumstances, transform into unsafe acts or conditions. |
-| **Organizational Level** | Safety Management System (SMS)  | - Organizational Structure Gaps - Responsibility Allocation Gaps - Procedural/Documentation Deficiencies - Resource Management Deficiencies - Training Deficiencies | **Root causes** of accidents. These reflect systematic weaknesses in management, regulations, procedures, and resources. |
-|                          | Safety Culture                  | - Value of Safety - Belief that Accidents Are Preventable - Safety as Good Practice - Leadership & Oversight Responsibility - Personnel Safety Performance | **Fundamental root causes** of accidents. Safety culture represents the deepest level of influence, shaping whether safety is prioritized, embedded, and sustained across the organization. |
+| **Individual Level**     | One-time Behaviors & Conditions | - Unsafe Human Behaviors (Unsafe Acts)<br> - Unsafe Physical Conditions | **Direct causes** of accidents. These are immediate unsafe actions or hazardous conditions that can directly trigger incidents. |
+|                          | Habitual Behaviors              | - Deficiencies in Safety Knowledge <br>- Weak Safety Awareness <br>- Unsafe Laboratory Habits <br>- Unfavorable Psychological/Physiological States | **Indirect causes** of accidents. Long-term unsafe habits or persistent weaknesses that, under certain circumstances, transform into unsafe acts or conditions. |
+| **Organizational Level** | Safety Management System (SMS)  | - Organizational Structure Gaps <br>- Responsibility Allocation Gaps <br>- Procedural/Documentation Deficiencies <br>- Resource Management Deficiencies <br>- Training Deficiencies | **Root causes** of accidents. These reflect systematic weaknesses in management, regulations, procedures, and resources. |
+|                          | Safety Culture                  | - Value of Safety - Belief that Accidents Are Preventable <br>- Safety as Good Practice <br>- Leadership & Oversight Responsibility <br>- Personnel Safety Performance | **Fundamental root causes** of accidents. Safety culture represents the deepest level of influence, shaping whether safety is prioritized, embedded, and sustained across the organization. |
+
+As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis Report**, available in the PDF below. We hope it will offer future iGEM teams and laboratory practitioners a systematic perspective on lab safety, as well as fresh insights for building safer research environments.
 
 <div style="position: relative; width: 100%; height: 600px;">
   <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="100%" style="border: none;">
@@ -58,14 +56,12 @@ As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis
 
 ### Our Laboratory Safety
 
-Following a comprehensive risk assessment, we recognized that **structured training and tiered management** are essential for creating a robust safety culture. By ensuring that every member is both well-prepared and forward-thinking, we can sustain a culture of safety. To achieve this, we developed a top-down system spanning **University → School → Laboratory**, providing all members with progressive training and ample resources.
-
-------
+Following a comprehensive risk assessment, we recognized that structured training and tiered management are essential for creating a robust safety culture. By ensuring that every member is both well-prepared and forward-thinking, we can sustain a culture of safety. To achieve this, we developed a top-down system spanning **University → School → Laboratory**, providing all members with progressive training and ample resources.
 
 #### 1. A Tiered Training Program
 
 **University-Level Training**
- Before entering the lab, every member completes [**Fudan University’s mandatory laboratory safety course and examination**](https://static.igem.wiki/teams/5643/pageimage/safety/.pdf). This program covers:
+ Before entering the lab, every member completes [Fudan University’s mandatory laboratory safety course and examination](https://static.igem.wiki/teams/5643/pageimage/safety/.pdf). This program covers:
 
 - Proper use of personal protective equipment (PPE)
 - Safe operation of common laboratory instruments
@@ -75,7 +71,7 @@ Following a comprehensive risk assessment, we recognized that **structured train
 Passing the course ensures all participants have the baseline skills and awareness to respond effectively to safety issues.
 
 **School-Level Training**
- Students working on wet-lab experiments must also pass the **School of Life Sciences’ specialized safety examination** before gaining lab access. Training topics include:
+ Students working on wet-lab experiments must also pass the School of Life Sciences’ specialized safety examination before gaining lab access. Training topics include:
 
 - Prohibited laboratory practices
 - Safe storage and handling of hazardous chemicals
@@ -106,20 +102,17 @@ New members also complete a [Good Practice Quiz](https://wiki.actin.cn/Good_prac
 - Laboratory policies and regulations
 - Online training modules and assessments
 
-![TOC](https://static.igem.wiki/teams/5643/pageimage/safety/2025-09-13-194838.webp)
-
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/2025-09-13-194838.webp" style="width:80%">
+    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/2025-09-13-194838.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure: Fudan University Laboratory Safety Education and Management Platform</span>
         <br><br>
     </div>
 </div>
-
 **Laboratory-Level Resources**
  Our lab supplements university resources with its own [Emergency Response and Safety Guidelines](), providing detailed instructions for preventing and managing incidents.
 
-We also rely on the [Cai-Lab website](https://wiki.actin.cn/Protocols) as a one-stop training hub, offering:
+We also rely on the [Cai-Lab website](https://wiki.actin.cn/Protocols?utm_source=chatgpt.com) as a one-stop training hub, offering:
 
 - Beginner-friendly introductions to molecular biology
 - Step-by-step experimental protocols
@@ -127,8 +120,6 @@ We also rely on the [Cai-Lab website](https://wiki.actin.cn/Protocols) as a one-
 - Laboratory safety manuals
 
 This platform helps new members build good habits, refine experimental skills, and develop an instinct for safety.
-
-![TOC](https://static.igem.wiki/teams/5643/pageimage/safety/rules-about-laboratory-safety.webp)
 
 <div style="text-align: center;" id="fig1">
     < img src="https://static.igem.wiki/teams/5643/pageimage/safety/rules-about-laboratory-safety.webp" style="width:80%">
@@ -140,7 +131,7 @@ This platform helps new members build good habits, refine experimental skills, a
 
 #### Building a Culture of Safety
 
-By layering **University, School, and Laboratory** safety programs, we’ve created a **comprehensive, continuous, and proactive** safety framework. This ensures all members receive the training and resources they need to work safely while advancing responsible and sustainable science.
+By layering **University, School, and Laboratory** safety programs, we’ve created a comprehensive, continuous, and proactive safety framework. This ensures all members receive the training and resources they need to work safely while advancing responsible and sustainable science.
 
 ## Part II: Project-Specific Biosafety Assessment & Measures
 
@@ -175,12 +166,18 @@ Building on the inspiration from [Fudan iGEM 2021](https://2022.igem.wiki/fudan/
 Our circuit integrates three core modules: a riboregulatory system, a biotin auxotrophy strategy, and a nuclease-based kill switch.
 
 - **Riboregulatory module:** The pLtetO promoter is repressed by TetR and activated by aTc to express trans-activating RNA (taRNA). Meanwhile, the pLlacO promoter is repressed by LacI and activated by IPTG to drive cis-repressing RNA (crRNA) along with an essential gene. The taRNA and crRNA interact through a looped intermediate structure that exposes the crRNA’s ribosome binding site (RBS), enabling expression of the downstream essential gene.
-- **Biotin auxotrophy module:** Here, the *bioAB* operon is replaced with the **ampicillin resistance gene (*bla*)**. Normally, *bioA* produces the precursor of biotin’s heterocyclic ring, while *bioB* catalyzes the final ring closure to generate active biotin. Disruption of both genes creates an auxotrophic strain that requires exogenous biotin for growth.
-- **Nuclease kill-switch module:** Constitutive expression of EcoRI nuclease (pMYTagenta) kills cells unless protected by EcoRI methyltransferase (yellow), which is itself placed under aTc regulation.
+- **Biotin auxotrophy module:** Here, the *bioAB* operon is replaced with the ampicillin resistance gene (*bla*). Normally, *bioA* produces the precursor of biotin’s heterocyclic ring, while *bioB* catalyzes the final ring closure to generate active biotin. Disruption of both genes creates an auxotrophic strain that requires exogenous biotin for growth.
+- **Nuclease kill-switch module:** Constitutive expression of EcoRI nuclease (magenta) kills cells unless protected by EcoRI methyltransferase (yellow), which is itself placed under aTc regulation.
 
 Together, these modules ensure that *E. coli* can only survive when all three inputs—**aTc, IPTG, and exogenous biotin**—are present simultaneously. This layered safeguard prevents accidental survival caused by the leakage of any single module.
 
-![TOC](https://i.mji.rip/2025/08/13/9e3b56779634b83f7d99f21b673df3ea.jpeg)
+<div style="text-align: center;" id="fig1">
+    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/transcriptional-translational-riboregulation-og-essential-genes.webp" style="width:80%">
+    <div>
+        <span style="color:gray">Figure 3: Design of multilayered safeguards</span>
+        <br><br>
+    </div>
+</div>
 
 The circuit was originally designed in *E. coli*, but since our chassis is *Saccharomyces cerevisiae*, we adapted the system to function in yeast.
 
@@ -205,47 +202,34 @@ Building on this framework, we substituted the 3′ HDV ribozyme with an Aptazym
 - **Without small molecules:** The Aptazyme’s ribozyme remains active and cleaves as normal. This removes the poly(A) tail and asRNA, producing functional gRNA. The system stays in a **repressed state (GFP OFF)**.
 - **With small molecules  theophylline:** Binding of the ligand alters the Aptazyme’s structure, shutting down ribozyme activity. Without cleavage, both the poly(A) tail and asRNA remain. The poly(A) tail directs the transcript for degradation, while the asRNA pairs with the gRNA backbone, blocking dCas9 binding. Together, these mechanisms render the gRNA inactive, dCas9 is no longer guided to its target, repression is lifted, and the system flips to a **de-repressed state (GFP ON)**.
 
-------
-
-**Module II: Engineering Uracil Auxotrophy**
+**Module II: Nuclease-Based Kill Switch**
 
 To restrict growth of our chassis, we replaced the traditional biotin auxotrophy with a **URA3-based marker**. This modification ensures that Grape Yeast can only survive on media supplemented with uracil, effectively confining its growth to tightly controlled laboratory conditions.
 
-------
-
 **Module III: Nuclease-Based Kill Switch**
 
-In our literature review, we identified the **CamOff-RelE system** as a promising, highly controllable “suicide switch.” This design combines the camphor-responsive CamOff regulator from *Pseudomonas putida* with the bacterial toxin **RelE**, creating an inducible genetic circuit that tightly couples survival to the presence of camphor. [^15]
+According to the literature, the CamOff-RelE system functions as a highly tunable “suicide switch.”[^15] In this design, camphor acts as the central regulatory molecule. Camphor is an aromatic terpenone that occurs naturally in the bark of camphor trees, but is now easily synthesized and inexpensive. The CamOff system harnesses the natural transcriptional regulation of the Cam repressor from *Pseudomonas putida*. The toxin component, RelE, is a type II ribonuclease that cleaves actively translating mRNA. When expressed in *Saccharomyces cerevisiae*, RelE has been demonstrated to be lethal.
 
-Here’s how the system works:
+This system is characterized by three main features:
 
-- **With camphor present**, the camphor transcriptional activator (cam-TA) cannot bind to the Cam promoter (*camPr*). As a result, **RelE is not expressed**, and the cells grow normally.
-- **Without camphor**, cam-TA activates *camPr*, triggering **RelE expression**. RelE acts as an endoribonuclease, cleaving mRNAs that are actively being translated and thereby shutting down essential protein synthesis.
+1. **Target:** RelE specifically acts on mRNA.
+2. **Mode of Action:** In the absence of camphor, the CamOff switch drives strong expression of RelE. RelE binds to the ribosome’s A-site—the entry point for aminoacyl-tRNA during translation. Once bound, it catalyzes cleavage of the mRNA positioned at the A-site. Rather than fully degrading the transcript, this blocks ribosomal progression and halts protein synthesis. The truncated mRNA fragments also lack proper stop codons, becoming trapped on ribosomes. This ribosome stalling leads to “traffic jams” across the translation machinery, intensifying the shutdown of global protein production.
+3. **Escape Rate:** Experimental data show that the median escape frequency of a CamOff-RelE construct in the *S. cerevisiae* BY4741 diploid strain is 8.33 × 10−6.[^15]
 
-**Mechanism in detail:**
-
-1. **Target** — Unlike many toxins that damage DNA, RelE specifically targets **mRNA** during translation.
-2. **Mode of action** — RelE binds to the ribosome’s A site, where tRNA normally decodes mRNA. Once bound, it cleaves the mRNA positioned at this site, stalling ribosomes mid-translation. This disruption leads to:
-   - **Protein synthesis failure**, as cleaved mRNAs can no longer produce functional proteins.
-   - **Ribosome stalling**, since the truncated mRNA fragments lack stop codons, creating “traffic jams” that further collapse translation across the cell.
-3. **Outcome** — By simultaneously halting global translation, RelE quickly drives cells into growth arrest and eventual death, making it an extremely rapid kill switch.
-
-In short, the CamOff-RelE system provides a precise, tunable survival control: **cells live when camphor is present, and die in its absence**.
+Thus, by simply adding or withholding camphor, the survival of the engineered system can be tightly controlled.
 
 ------
 
-After completing our design, we consulted Professor Li Tang, a leading expert in biosafety and ethics in synthetic biology [(See our integrated human practices page)](HP link). We asked for her perspective on our circuit design—whether it meets industrial needs, and what challenges it might face in moving from laboratory proof-of-concept to real-world application.
+After completing our design, we consulted Professor Li Tang, a leading expert in biosafety and ethics in synthetic biology [(See our integrated human practices page)](https://2025.igem.wiki/fudan/human-practices.html). We asked for her perspective on our circuit design—whether it meets industrial needs, and what challenges it might face in moving from laboratory proof-of-concept to real-world application.
 
 Our discussion with Professor Tang was eye-opening. We realized that genetic safeguards exist within a complex web of stakeholders, each with their own priorities. For synthetic biologists, safeguards are primarily proof-of-concept tools designed to restrict the growth of engineered strains or prevent horizontal gene transfer. Regulators and policymakers often treat them as data sources for risk assessment and policy-making, while actual regulatory adoption remains distant and highly context-dependent. From an industry standpoint, safeguards are often seen as unnecessary in physically contained applications already covered by infrastructure and regulation; meanwhile, novel applications are still considered too theoretical to fit within existing risk assessment frameworks. Civil society is barely represented in these discussions, yet both developers and end users remain cautious about how the public might perceive new safeguard technologies.
 
 This divergence in perspectives highlights a deeper issue: the lack of collective reflection on the actual needs and expectations surrounding safeguards. As academic researchers, we cannot rely on an idealistic outlook. Instead, we must actively engage stakeholders early on in conversations about the relevance and practicality of safeguards. Frameworks like Responsible Research and Innovation (RRI) can help ensure that research remains aligned with broader socio-economic realities, while also guiding the balance of social and economic forces needed to bring innovation into practice.
 
-![TOC](https://static.igem.wiki/teams/5643/pageimage/safety/talk-with-li-tang.webp)
-
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/talk-with-li-tang.webp" style="width:80%">
+    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/talk-with-li-tang.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure: Talk with Professor Li</span>
+        <span style="color:gray">Figure 4: Talk with Professor Li</span>
         <br><br>
     </div>
 </div>
@@ -272,9 +256,9 @@ After discussion, we identified two specific countermeasures for our *Grape Yeas
 
 ##### I. Genetic Barcode
 
-To ensure traceability, we introduced **unique, irreversible DNA barcodes** into the genome of *Saccharomyces cerevisiae*. These short (~20 bp) sequences are easily identified by PCR or high-throughput sequencing (Bar-seq), allowing us to rapidly detect and track engineered strains if they escape or appear in environmental samples. By linking the barcode directly to engineered loci or placing it at stable chromosomal positions, the barcode serves as a permanent “identity tag” for the strain. [^9]
+To ensure traceability, we introduced unique, irreversible DNA barcodes into the genome of *Saccharomyces cerevisiae*. These short (~20 bp) sequences are easily identified by PCR or high-throughput sequencing (Bar-seq), allowing us to rapidly detect and track engineered strains if they escape or appear in environmental samples. By linking the barcode directly to engineered loci or placing it at stable chromosomal positions, the barcode serves as a permanent “identity tag” for the strain. [^9]
 
-During the assembly of Level 1 plasmids into Level 2 multigene constructs in Grape Yeast, we used **Golden Gate Assembly connectors**. Each connector carries 4-bp sticky ends generated by BsmBI digestion, which can also function as programmable barcodes when incorporated into the genome.
+During the assembly of Level 1 plasmids into Level 2 multigene constructs in Grape Yeast, we used Golden Gate Assembly connectors. Each connector carries 4-bp sticky ends generated by BsmBI digestion, which can also function as programmable barcodes when incorporated into the genome.
 
 This connector-based strategy offers several advantages:
 
@@ -284,22 +268,20 @@ This connector-based strategy offers several advantages:
 
 Together, these features make connector sequences a robust and scalable approach for high-throughput strain tracking and lineage tracing.
 
-------
-
 ##### II. Genomic Integration over Plasmids
 
-To minimize biosafety risks, we chose **chromosomal integration** as the primary method for implementing engineered functions, rather than relying on plasmids.
+To minimize biosafety risks, we chose chromosomal integration as the primary method for implementing engineered functions, rather than relying on plasmids.
 
 Plasmids are among the main carriers of horizontal gene transfer (HGT) in microbial communities. Although yeast has relatively few self-transmissible plasmids, plasmids can still vary in copy number and stability, and under certain conditions exchange DNA with bacteria or other microbes. This poses ecological risks if engineered strains were released. By integrating genetic circuits into the genome as single copies, we improve stability and reduce the likelihood of horizontal transmission or long-term persistence in the environment. Comparative studies also support that genome integration offers more reliable expression and control for complex, multigene pathways. [^8]
 
 **Implementation**
- Using the **Modular Yeast Toolkit (MYT)**, we integrated promoters, resistance markers, terminators, and other functional elements directly into the genome. This approach decreases plasmid loss and enhances long-term stability. [^10]
+ Using the Modular Yeast Toolkit (MYT), we integrated promoters, resistance markers, terminators, and other functional elements directly into the genome. This approach decreases plasmid loss and enhances long-term stability. [^10]
 
 ### 2. Ensuring the Safety of *BAX*-Mediated Apoptosis in Yeast
 
 The apoptosis gene *BAX*, which we introduced from mammals, has been reported to function in yeast for controlling cluster size. However, its use also raises concerns about potential unintended side effects or incomplete termination.
 
-To address this, we placed *BAX* under the control of an inducible **Tet promoter**. This promoter has a low level of basal (leaky) expression when no inducer is present, which helps minimize risks by preventing unintended activation.
+To address this, we placed *BAX* under the control of an inducible Tet2 promoter. This promoter has a low level of basal (leaky) expression when no inducer is present, which helps minimize risks by preventing unintended activation.
 
 ### 3. Minimizing the Use of Hazardous Reagents
 
