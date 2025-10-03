@@ -6,12 +6,12 @@ authors:
     avatar: （头像，先不填）
     layout: igem
     heroImage: （拍摄并且选取页面图像，作为顶部展示）
-    description: On this page, we
+    description: On this page, we elaborated on laboratory safety analysis methods systematically and established a multi-layered genetic circuit to prevent laboratory safety issues.
 ---
 
-### Introduction
+## Introduction
 
-Synthetic biology, as promoted by the iGEM competition, is an emerging interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment that must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance. [^5]Guided by this principle, the Fudan iGEM 2025 team has developed its project around Grape Yeast[(see our Design page)](https://2025.igem.wiki/fudan/design.html), integrating safety considerations into every stage to help shape a more responsible future for synthetic biology.
+Synthetic biology, as promoted by the iGEM competition, is an emerging interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment which must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance. [^5]Guided by this principle, the Fudan iGEM 2025 team has developed its project around Grape Yeast[(see our Design page)](https://2025.igem.wiki/fudan/design.html), integrating safety considerations into every stage to help shape a more responsible future for synthetic biology.
 
 Since our experimental design and application scenarios take place entirely within the laboratory, we have placed a strong emphasis on laboratory safety. Beyond standard safety measures, we conduct project-specific biosafety assessments and implement tailored risk-mitigation strategies, embedding a culture of responsible science throughout our design process.
 
@@ -23,11 +23,11 @@ Since our experimental design and application scenarios take place entirely with
     </div>
 </div>
 
-### Laboratory Safety
+## Part I: Laboratory Safety
 
-Laboratory safety is an essential part of every iGEM project, underscoring its critical importance.
+Laboratory safety is an essential part of every iGEM project, which underscores its critical importance.
 
-Through our literature review, we became convinced that lab safety is a field that deserves far more systematic attention. Every year, accidents occur in laboratories worldwide—some causing minor injuries, others posing serious risks to life. Yet, we were surprised to see that while many iGEM teams touch on this topic, they often limit their discussion to listing safety trainings or regulations, without providing a structured or holistic perspective on lab safety.
+Through our literature research, we became convinced that lab safety is a field that deserves far more systematic attention. Every year, accidents occur in laboratories worldwide—some causing minor injuries, others posing serious risks to life. Yet, we were surprised to see that while many iGEM teams touch on this topic, they often limit their discussion to listing safety trainings or regulations, without providing a structured or holistic perspective on lab safety.
 
 At Fudan iGEM 2025, we set out to go beyond this. Our aim is to develop practical models and solutions that can improve laboratory safety and serve as a lasting reference for future teams working in this important area.
 
@@ -35,7 +35,7 @@ To achieve this, we applied the **24Model systems framework**, systematically id
 
 In the 24Model framework, safety evaluation is conducted systematically across multiple dimensions, as outlined in the table below.
 
-#### Comprehensive Table of Laboratory Safety Evaluation Dimensions
+**Table 1: Comprehensive Table of Laboratory Safety Evaluation Dimensions**
 
 | Dimension Level          | Main Categories                 | Key Evaluation Areas                                         | Description                                                  |
 | ------------------------ | ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -78,7 +78,7 @@ Passing the course ensures all participants have the baseline skills and awarene
 - Waste management and daily lab operations
 - Equipment guidelines and fire safety measures
 
-Weekly safety inspections by the School of Life Sciences reinforce compliance and create a culture of accountability.
+The School of Life Sciences' weekly safety inspections by the School of Life Sciences reinforce compliance and create a culture of accountability.
 
 **Laboratory-Level Training**
  Upon joining the lab, members receive hands-on safety orientation from instructors and teaching assistants. Safety measures include:
@@ -89,9 +89,7 @@ Weekly safety inspections by the School of Life Sciences reinforce compliance an
 - Removing PPE and washing hands before leaving
 - Regular UV-light disinfection of lab spaces
 
-New members also complete a [Good Practice Quiz](https://wiki.actin.cn/Good_practices) tailored to our lab’s workflows, helping them master essential skills while protecting both themselves and the equipment.
-
-------
+New members also need to complete a [Good Practice Quiz](https://wiki.actin.cn/Good_practices) , helping them master essential skills while protecting both themselves and the equipment.
 
 #### 2. Safety Resources and Documentation
 
@@ -124,12 +122,13 @@ This platform helps new members build good habits, refine experimental skills, a
 <div style="text-align: center;" id="fig1">
     < img src="https://static.igem.wiki/teams/5643/pageimage/safety/rules-about-laboratory-safety.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure: Laboratory Safety Management Regulations</span>
+        <span style="color:gray">Figure 2: Laboratory Safety Management Regulations</span>
         <br><br>
     </div>
 </div>
 
-#### Building a Culture of Safety
+
+#### Summary: Building a Culture of Safety
 
 By layering **University, School, and Laboratory** safety programs, we’ve created a comprehensive, continuous, and proactive safety framework. This ensures all members receive the training and resources they need to work safely while advancing responsible and sustainable science.
 
@@ -147,9 +146,9 @@ Our approach is structured around three key areas:
 2. Ensuring the biosafety of the apoptotic element *BAX* in yeast
 3. Reducing reliance on hazardous reagents
 
-### I. Multilayered Genetic Circuits
+### 1. Multilayered Genetic Circuits
 
-In synthetic biology, biocontainment strategies are generally built around three principles: **toxin expression**, **auxotrophy**, and **essential gene regulation**.
+In synthetic biology, biocontainment strategies are generally built around three principles: **toxin expression**, **auxotrophy**, and **essential gene regulation**.	[^12]
 
 While these approaches can be highly effective — with the best safeguards reaching the NIH benchmark of an escape frequency as low as 10⁻⁸ — each comes with limitations. Auxotrophic strains may regain growth ability through cross-feeding of metabolites or the presence of required molecules in the environment. Essential genes can sometimes exhibit leaky expression, allowing unintended survival. Meanwhile, mutations may disable toxin systems. Redundancy can lower escape risks, but often at the cost of reduced fitness, giving escape mutants a growth advantage.
 
@@ -163,11 +162,11 @@ Building on the inspiration from [Fudan iGEM 2021](https://2022.igem.wiki/fudan/
 
 **Genetic Circuit Overview:**[^12]
 
-Our circuit integrates three core modules: a riboregulatory system, a biotin auxotrophy strategy, and a nuclease-based kill switch.
+The circuit integrates three core modules: a riboregulatory system, a biotin auxotrophy strategy, and a nuclease-based kill switch.
 
 - **Riboregulatory module:** The pLtetO promoter is repressed by TetR and activated by aTc to express trans-activating RNA (taRNA). Meanwhile, the pLlacO promoter is repressed by LacI and activated by IPTG to drive cis-repressing RNA (crRNA) along with an essential gene. The taRNA and crRNA interact through a looped intermediate structure that exposes the crRNA’s ribosome binding site (RBS), enabling expression of the downstream essential gene.
-- **Biotin auxotrophy module:** Here, the *bioAB* operon is replaced with the ampicillin resistance gene (*bla*). Normally, *bioA* produces the precursor of biotin’s heterocyclic ring, while *bioB* catalyzes the final ring closure to generate active biotin. Disruption of both genes creates an auxotrophic strain that requires exogenous biotin for growth.
-- **Nuclease kill-switch module:** Constitutive expression of EcoRI nuclease (magenta) kills cells unless protected by EcoRI methyltransferase (yellow), which is itself placed under aTc regulation.
+- **Biotin auxotrophy module:** The *bioAB* operon is replaced with the ampicillin resistance gene (*bla*). Normally, *bioA* produces the precursor of biotin’s heterocyclic ring, while *bioB* catalyzes the final ring closure to generate active biotin. Disruption of both genes creates an auxotrophic strain that requires exogenous biotin for growth.
+- **Nuclease kill-switch module:** Constitutive expression of EcoRI nuclease  kills cells unless protected by EcoRI methyltransferase, which is itself placed under aTc regulation.
 
 Together, these modules ensure that *E. coli* can only survive when all three inputs—**aTc, IPTG, and exogenous biotin**—are present simultaneously. This layered safeguard prevents accidental survival caused by the leakage of any single module.
 
@@ -183,11 +182,13 @@ The circuit was originally designed in *E. coli*, but since our chassis is *Sacc
 
 The table below summarizes the modifications across the three modules:
 
-| Module                              | Original *E. coli* Design                                    | Adapted *S. cerevisiae* Design                               | Key Modifications                                            |
-| ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Module I: Riboregulatory System** | - Controlled by pLtetO + TetR and pLlacO + LacI   <br>- crRNA and taRNA interact through a loop structure to regulate essential gene expression | - Replaced with a CRISPRi-based Rz–gRNA–Rz construct, where ribozymes self-cleave to process functional gRNA   <br>- The 3′ HDV ribozyme was substituted with an Aptazyme, which responds to small molecules. Binding prevents cleavage, leading to gRNA inactivation and de-repression of the target | - Transitioned from RNA–RNA interaction to CRISPRi precision control   <br>- Introduced a small-molecule-responsive Aptazyme to add a conditional regulatory layer |
-| **Module II: Auxotrophy**           | - *bioAB* deleted and replaced with bla; <br>- loss of *bioAB* prevents biotin synthesis, making growth dependent on exogenous biotin | - Switched to URA3 auxotrophy, restricting yeast growth to media supplemented with uracil | - Shifted from biotin dependency in *E. coli* to uracil dependency in yeast, aligning with yeast’s common auxotrophic markers |
-| **Module III: Kill Switch**         | - Based on EcoRI endonuclease, with EcoRI methyltransferase under aTc control   <br>- Without methylation, EcoRI cuts DNA, causing cell death | - Implemented the CamOff-RelE system:   RelE, an mRNA endonuclease, cleaves translating mRNA to halt protein synthesis, leading to cell death   <br>- Camphor serves as the external inducer, controlling the CamOff switch | - Replaced a DNA-targeting enzyme with an mRNA-targeting toxin (RelE)   <br>- Applied the CamOff inducible switch for precise, small-molecule-regulated control |
+**Table 2: Summary of Modifications to Multilayered Safeguards**
+
+| Module                               | Original *E. coli* Design                                    | Adapted *S. cerevisiae* Design                               | Key Modifications                                            |
+| ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Module I: Riboregulatory Circuit** | - Controlled by pLtetO + TetR and pLlacO + LacI   <br>- crRNA and taRNA interact through a loop structure to regulate essential gene expression | - Replaced with a CRISPRi-based Rz–gRNA–Rz construct, where ribozymes self-cleave to process functional gRNA   <br>- The 3′ HDV ribozyme was substituted with an Aptazyme, which responds to small molecules. Binding prevents cleavage, leading to gRNA inactivation and de-repression of the target | - Transitioned from RNA–RNA interaction to CRISPRi precision control   <br>- Introduced a small-molecule-responsive Aptazyme to add a conditional regulatory layer |
+| **Module II: Auxotrophy**            | - *bioAB* deleted and replaced with bla; <br>- loss of *bioAB* prevents biotin synthesis, making growth dependent on exogenous biotin | - Switched to URA3 auxotrophy, restricting yeast growth to media supplemented with uracil | - Shifted from biotin dependency in *E. coli* to uracil dependency in yeast, aligning with yeast’s common auxotrophic markers |
+| **Module III: Kill Switch**          | - Based on EcoRI endonuclease, with EcoRI methyltransferase under aTc control   <br>- Without methylation, EcoRI cuts DNA, causing cell death | - Implemented the CamOff-RelE system:   RelE, an mRNA endonuclease, cleaves translating mRNA to halt protein synthesis, leading to cell death   <br>- Camphor serves as the external inducer, controlling the CamOff switch | - Replaced a DNA-targeting enzyme with an mRNA-targeting toxin (RelE)   <br>- Applied the CamOff inducible switch for precise, small-molecule-regulated control |
 
 #### Circuit Iteration 1: Adapting from *E. coli* to *Saccharomyces cerevisiae*
 
@@ -195,9 +196,9 @@ The table below summarizes the modifications across the three modules:
 
 To replace the crRNA/taRNA system, we turned to CRISPRi, which enables precise control of gene expression using dCas9 and gRNA. Importantly, CRISPRi only activates in response to specific triggers—exactly matching the conditional control we aimed for.[^13]
 
-Our design links ribozymes to both ends of the gRNA (**Rz–gRNA–Rz**). These ribozymes self-cleave after transcription, trimming the gRNA into a clean, functional form. Any disruption to this process prevents proper maturation, effectively “switching off” the gRNA.
+The design links ribozymes to both ends of the gRNA (**Rz–gRNA–Rz**). These ribozymes self-cleave after transcription, trimming the gRNA into a clean, functional form. Any disruption to this process prevents proper maturation, effectively “switching off” the gRNA.
 
-Building on this framework, we substituted the 3′ HDV ribozyme with an Aptazyme—a hybrid RNA molecule that combines a ribozyme with a small-molecule-binding aptamer. Downstream, we retained the poly(A) tail and inserted an antisense RNA (asRNA) sequence.
+Building on this framework, the literature substituted the 3′ HDV ribozyme with an Aptazyme—a hybrid RNA molecule that combines a ribozyme with a small-molecule-binding aptamer. Downstream, the retained the poly(A) tail and inserted an antisense RNA (asRNA) sequence.
 
 - **Without small molecules:** The Aptazyme’s ribozyme remains active and cleaves as normal. This removes the poly(A) tail and asRNA, producing functional gRNA. The system stays in a **repressed state (GFP OFF)**.
 - **With small molecules  theophylline:** Binding of the ligand alters the Aptazyme’s structure, shutting down ribozyme activity. Without cleavage, both the poly(A) tail and asRNA remain. The poly(A) tail directs the transcript for degradation, while the asRNA pairs with the gRNA backbone, blocking dCas9 binding. Together, these mechanisms render the gRNA inactive, dCas9 is no longer guided to its target, repression is lifted, and the system flips to a **de-repressed state (GFP ON)**.
@@ -214,7 +215,7 @@ This system is characterized by three main features:
 
 1. **Target:** RelE specifically acts on mRNA.
 2. **Mode of Action:** In the absence of camphor, the CamOff switch drives strong expression of RelE. RelE binds to the ribosome’s A-site—the entry point for aminoacyl-tRNA during translation. Once bound, it catalyzes cleavage of the mRNA positioned at the A-site. Rather than fully degrading the transcript, this blocks ribosomal progression and halts protein synthesis. The truncated mRNA fragments also lack proper stop codons, becoming trapped on ribosomes. This ribosome stalling leads to “traffic jams” across the translation machinery, intensifying the shutdown of global protein production.
-3. **Escape Rate:** Experimental data show that the median escape frequency of a CamOff-RelE construct in the *S. cerevisiae* BY4741 diploid strain is 8.33 × 10−6.[^15]
+3. **Escape Rate:** Experimental data show that the median escape frequency of a CamOff-RelE construct in the *S. cerevisiae* BY4741 diploid strain is 8.33 × 10<sup>-6</sup>.[^15]
 
 Thus, by simply adding or withholding camphor, the survival of the engineered system can be tightly controlled.
 
@@ -241,7 +242,7 @@ Building on our laboratory design, we began to ask ourselves: what additional ch
 
 Current literature highlights a significant gap—although many biosafety safeguard systems have been proposed in synthetic biology (such as genetic switches, kill switches, and auxotrophy-based dependencies), there is still no standardized way to test whether these systems are truly reliable. The most pressing question remains: *how can we measure and evaluate their long-term effectiveness?*
 
-Efforts to advance genetic safeguards are further slowed by three practical barriers: (i) knowledge gaps in how to conduct evaluations; (ii) the lack of standardized assessment frameworks for safeguards themselves; and (iii) challenges in ensuring accountability for implementing safeguards.
+Efforts to advance genetic safeguards are further slowed by three practical barriers: (i) knowledge gaps in how to conduct evaluations; (ii) the lack of standardized assessment frameworks for safeguards themselves; (iii) challenges in ensuring accountability for implementing safeguards.
 
 A core challenge for the field is our limited ability to monitor and control synthetic organisms once they are released. Equally important is the need to understand how these organisms behave in real ecosystems. Once introduced, they may compete with native species for resources, spread disease, act as predators, or themselves be preyed upon. Anticipating and evaluating such interactions is critical.
 
@@ -256,9 +257,9 @@ After discussion, we identified two specific countermeasures for our *Grape Yeas
 
 ##### I. Genetic Barcode
 
-To ensure traceability, we introduced unique, irreversible DNA barcodes into the genome of *Saccharomyces cerevisiae*. These short (~20 bp) sequences are easily identified by PCR or high-throughput sequencing (Bar-seq), allowing us to rapidly detect and track engineered strains if they escape or appear in environmental samples. By linking the barcode directly to engineered loci or placing it at stable chromosomal positions, the barcode serves as a permanent “identity tag” for the strain. [^9]
+To ensure traceability, we hope to introduce unique, irreversible DNA barcodes into the genome of *Saccharomyces cerevisiae*. These short (~20 bp) sequences are easily identified by PCR or high-throughput sequencing (Bar-seq), allowing us to rapidly detect and track engineered strains if they escape or appear in environmental samples. By linking the barcode directly to engineered loci or placing it at stable chromosomal positions, the barcode serves as a permanent “identity tag” for the strain. [^9]
 
-During the assembly of Level 1 plasmids into Level 2 multigene constructs in Grape Yeast, we used Golden Gate Assembly connectors. Each connector carries 4-bp sticky ends generated by BsmBI digestion, which can also function as programmable barcodes when incorporated into the genome.
+During the assembly of Level 1 plasmids into Level 2 multigene constructs in *Grape Yeast*, we used Golden Gate Assembly connectors. Each connector carries 4-bp sticky ends generated by BsmBI digestion, which can also function as programmable barcodes when incorporated into the genome.
 
 This connector-based strategy offers several advantages:
 
@@ -285,7 +286,7 @@ To address this, we placed *BAX* under the control of an inducible Tet2 promoter
 
 ### 3. Minimizing the Use of Hazardous Reagents
 
-To protect researchers during laboratory work, we deliberately avoided the use of hazardous reagents such as **phenol-chloroform**. These chemicals are toxic and pose serious health risks, including carcinogenicity and central nervous system depression through inhalation. By eliminating their use, we reduce potential harm to experimenters.
+To protect researchers during laboratory work, we avoided the use of hazardous reagents such as **phenol-chloroform**. These chemicals are toxic and pose serious health risks, including carcinogenicity and central nervous system depression through inhalation. By eliminating their use, we reduce potential harm to experimenters.
 
 
 
