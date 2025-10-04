@@ -1,16 +1,15 @@
 ---
 title: Part Collection
 authors:
-  name: Peining Wu
-  url: /fudan/team/#wu-peining
-  avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
+  - name: Peining Wu
+    url: /fudan/team/#Peining
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
 layout: igem
-heroImage: fff
+heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
 description: On this page, we describe 3 collections built around Grape Yeast, foundamentally advaced the power of <i>Saccharomyces cerevisiae</i>.
 ---
 
 Based on our team’s project **DR.sTraTeGY (Drug Resistance mutation Tracking Technology based on Grape Yeast)**, we designed three collections: Grape Yeast, the optimal promoter–fluorescent protein combination screening collection, and the homologous arms integration collection for *Saccharomyces cerevisiae*.
-
 
 
 ### Collection 1: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)

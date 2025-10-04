@@ -2,11 +2,11 @@
 title: Contribution
 authors:
   - name: Duan Yuxin
-    url: /fudan/team/#duan-yuxin
-    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
+    url: /fudan/team/#Yuxin
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
 layout: igem
-heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
-description: On this page, we 
+heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+description: Below is what we put in the judging form
 ---
 
 ## Medal Criteria

@@ -11,12 +11,12 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzq.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp",
-    description: "I'm honored to be the captain of this igem team, responsible for design and experiments. I'm a bit of a nerd who enjoys watching anime, reading comics, and listening to music. I love exploring the unknown and look forward to facing challenges together with everyone at iGEM to create a new kind of synthetic biology!"
+    description: "I'm honored to be the captain of this fantastic team, responsible for design and experiments. I'm a bit of a nerd who enjoys watching anime, reading comics, and listening to music. I love exploring the unknown and look forward to facing challenges together with everyone at iGEM to create a new kind of synthetic biology!"
   },
   {
     name: "Yue Yue",
     title: "Team Member",
-    handle: "yue-yue",
+    handle: "Yue",
     status: "INTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy.webp",
@@ -26,7 +26,7 @@ const teamMembers = [
   {
     name: "Huizhen Du",
     title: "Team Member",
-    handle: "du-huizhen",
+    handle: "Huizhen",
     status: "ESFP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz.webp",
@@ -36,7 +36,7 @@ const teamMembers = [
   {
     name: "Peining Wu",
     title: "Team Member",
-    handle: "wu-peining",
+    handle: "Peining",
     status: "INTJ",
     contactText: "Detail", 
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn.webp",
@@ -46,7 +46,7 @@ const teamMembers = [
   {
     name: "Yufan Han",
     title: "Team Member",
-    handle: "han-yufan",
+    handle: "Yufan",
     status: "INTP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hyf.webp",
@@ -56,8 +56,8 @@ const teamMembers = [
   {
     name: "Zhongyi Huang",
     title: "Team Member",
-    handle: "huang-zhongyi",
-    status: "...",
+    handle: "Zhongyi",
+    status: "To be determined",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy-a.webp",
@@ -66,7 +66,7 @@ const teamMembers = [
   {
     name: "Yining Zhao",
     title: "Team Member",
-    handle: "zhao-yining",
+    handle: "Yining",
     status: "INTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn.webp",
@@ -76,7 +76,7 @@ const teamMembers = [
   {
     name: "Xiuqi Tian",
     title: "Team Member",
-    handle: "tian-xiuqi",
+    handle: "Xiuqi",
     status: "ISFP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/txq.webp",
@@ -86,7 +86,7 @@ const teamMembers = [
   {
     name: "Yixuan Lu",
     title: "Team Member",
-    handle: "lu-yixuan",
+    handle: "Yixuan",
     status: "ENFP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx.webp",
@@ -96,7 +96,7 @@ const teamMembers = [
   {
     name: "Zuyao Wu",
     title: "Team Member",
-    handle: "wu-zuyao",
+    handle: "Zuyao",
     status: "ENTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy.webp",
@@ -106,7 +106,7 @@ const teamMembers = [
   {
     name: "Jihua Tang",
     title: "Team Member",
-    handle: "tang-jihua",
+    handle: "Jihua",
     status: "INFJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh.webp",
@@ -116,7 +116,7 @@ const teamMembers = [
   {
     name: "Yuxin Duan",
     title: "Team Member",
-    handle: "duan-yuxin",
+    handle: "Yuxin",
     status: "INTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx.webp", 
