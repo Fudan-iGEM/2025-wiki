@@ -2,10 +2,11 @@
   <section class="prize-page">
     <div class="pill-row">
       <article
-        v-for="item in palette"
+        v-for="(item, index) in palette"
         :key="item.name"
         class="pill-card"
         :style="{ color: item.textColor }"
+        :ref="(el) => setCardRef(el, index)"
       >
         <div class="pill" :style="{ backgroundColor: item.color }">
           <header class="pill-title">{{ item.name }}</header>
@@ -21,6 +22,8 @@
 </template>
 
 <script setup>
+import { onMounted, onBeforeUnmount, ref, nextTick } from 'vue';
+
 const palette = [
   {
     name: 'White',
@@ -55,6 +58,139 @@ const palette = [
     cmyk: 'CMYK 20 24 32 00',
   },
 ];
+
+const cardRefs = ref([]);
+let entranceTimeline = null;
+let animatedCards = [];
+let animatedShells = [];
+let animatedMetaLines = [];
+
+const setCardRef = (el, index) => {
+  if (el) {
+    cardRefs.value[index] = el;
+  } else {
+    cardRefs.value[index] = null;
+  }
+};
+
+const cleanupInlineStyles = () => {
+  animatedCards.forEach((card) => {
+    card?.style.removeProperty('transform');
+    card?.style.removeProperty('filter');
+    card?.style.removeProperty('opacity');
+  });
+
+  animatedShells.forEach((shell) => {
+    shell?.style.removeProperty('clip-path');
+  });
+
+  animatedMetaLines.forEach((line) => {
+    line?.style.removeProperty('transform');
+    line?.style.removeProperty('opacity');
+  });
+};
+
+onMounted(async () => {
+  await nextTick();
+  const cards = cardRefs.value.filter(Boolean);
+  if (!cards.length) {
+    return;
+  }
+
+  const gsapModule = await import('gsap');
+  const gsap = gsapModule.gsap || gsapModule.default;
+  if (!gsap) {
+    return;
+  }
+
+  entranceTimeline?.kill();
+
+  const shellElements = cards
+    .map((card) => card.querySelector('.pill'))
+    .filter(Boolean);
+
+  const metaLines = cards.reduce((acc, card) => {
+    const lines = card.querySelectorAll('.pill-meta_line');
+    if (lines.length) {
+      acc.push(...Array.from(lines));
+    }
+    return acc;
+  }, []);
+
+  animatedCards = cards.slice();
+  animatedShells = shellElements.slice();
+  animatedMetaLines = metaLines.slice();
+
+  gsap.set(animatedCards, {
+    transformOrigin: 'center top',
+    opacity: 0,
+    y: 96,
+    scale: 0.84,
+    rotateX: 12,
+    filter: 'blur(16px)',
+  });
+
+  if (animatedShells.length) {
+    gsap.set(animatedShells, {
+      clipPath: 'inset(28% 0 28% 0 round 999px)',
+    });
+  }
+
+  if (animatedMetaLines.length) {
+    gsap.set(animatedMetaLines, { opacity: 0, y: 16 });
+  }
+
+  entranceTimeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+  entranceTimeline.to(animatedCards, {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotateX: 0,
+    filter: 'blur(0px)',
+    duration: 1.05,
+    stagger: { each: 0.18 },
+  });
+
+  if (animatedShells.length) {
+    entranceTimeline.to(
+      animatedShells,
+      {
+        clipPath: 'inset(0% 0 0% 0 round 999px)',
+        duration: 1,
+        stagger: { each: 0.18 },
+      },
+      '<'
+    );
+  }
+
+  if (animatedMetaLines.length) {
+    entranceTimeline.to(
+      animatedMetaLines,
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.55,
+        stagger: { each: 0.04 },
+        ease: 'power2.out',
+      },
+      '-=0.55'
+    );
+  }
+
+  entranceTimeline.eventCallback('onComplete', () => {
+    cleanupInlineStyles();
+  });
+});
+
+onBeforeUnmount(() => {
+  entranceTimeline?.kill();
+  cleanupInlineStyles();
+  entranceTimeline = null;
+  animatedCards = [];
+  animatedShells = [];
+  animatedMetaLines = [];
+});
 </script>
 
 <style scoped>
@@ -72,6 +208,7 @@ const palette = [
   gap: clamp(1rem, 3vw, 2.5rem);
   width: min(1100px, 100%);
   justify-items: center;
+  perspective: 1400px;
 }
 
 .pill-card {
@@ -84,27 +221,15 @@ const palette = [
   width: clamp(220px, 19vw, 240px);
   min-height: clamp(360px, 60vh, 520px);
   padding: clamp(2.5rem, 5vw, 4.5rem) clamp(2rem, 4vw, 3rem) clamp(2rem, 4vw, 3rem);
-  border-radius: 220px;
+  border-radius: 999px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  box-shadow: 0 30px 60px rgba(15, 13, 13, 0.15);
   overflow: hidden;
+  box-shadow: 0 22px 40px rgba(17, 17, 17, 0.18);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.pill::after {
-  content: '';
-  position: absolute;
-  top: 12%;
-  right: 18%;
-  width: 50%;
-  height: 22%;
-  background: rgba(255, 255, 255, 0.22);
-  filter: blur(28px);
-  transform: rotate(-18deg);
 }
 
 .pill:hover {
