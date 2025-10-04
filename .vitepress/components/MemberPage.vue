@@ -57,11 +57,11 @@ const teamMembers = [
     name: "Zhongyi Huang",
     title: "Team Member",
     handle: "Zhongyi",
-    status: "To be determined",
+    status: "INFP",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy-a.webp",
-    description: "Creative engineer focused on designing innovative biological systems. I bridge the gap between theoretical concepts and practical implementations. I'm also passionate about 3D printing and sustainable design."
+    description: "Coming from a Literature background,I help our team build a bridge between science and the broader community through Inclusivity and visual design.I stay curious about both the elevated and the everyday aspects of culture.I've been on a bit of a nostalgia kick recently."
   },
   {
     name: "Yining Zhao",
