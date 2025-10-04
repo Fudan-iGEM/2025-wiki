@@ -9,16 +9,16 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we relfect on how our project started.
+description:  On this page, we describe DR. sTraTeGY, a Drug Resistance Mutation Tracking Technology based on a multicellular Grape Yeast platform for visualizing the spatio-temporal evolution of drug resistance.
 ---
 
 ## Overview
 
-On this page, we introduce **DR. sTraTeGY**, a Drug Resistance Mutation **Tracking** Technology based on Grape Yeast. Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
+On this page, we introduce DR. sTraTeGY, a Drug Resistance Mutation Tracking Technology based on Grape Yeast. Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
 
-- **The Problem:** The rapid rise of drug-resistant pathogens poses a serious threat to global health.
-- **Our Solution:** DR. sTraTeGY, a modular, **multicellular yeast platform**, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a **physical, spatio-temporal lineage tree**, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
-- **Key Innovations:** The platform consists of a "Grape Yeast" chassis, the "Timer & Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
+- The Problem: The rapid rise of drug-resistant pathogens poses a serious threat to global health.
+- Our Solution: DR. sTraTeGY, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
+- Key Innovations: The platform consists of a "Grape Yeast" chassis, the "Timer & Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
 
 ## How It Started?
 
@@ -26,14 +26,14 @@ Fungal pathogens cause a wide range of diseases that have a significant impact o
 
 To address this challenge, we developed DR. sTraTeGY, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three key components:
 
-1. **Grape Yeast:** The core chassis engineered to be multicellular and responsive to external signals.
-2. **Timer & Recorder:** A visualization toolkit to track the evolutionary history and selective pressure in real-time.
-3. **YeastVerse:** A virtual experiment platform to guide our wet lab designs and simulate evolutionary processes.
+1. Grape Yeast: The core chassis engineered to be multicellular and responsive to external signals.
+2. Timer & Recorder: A visualization toolkit to track the evolutionary history and selective pressure in real-time.
+3. YeastVerse: A virtual experiment platform to guide our wet lab designs and simulate evolutionary processes.
 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig1-dr-strategy.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1: DR. sTraTeGY overview</span>
+        <span style="color:gray">Figure 1.DR. sTraTeGY overview</span>
         <br><br>
     </div>
 </div>
@@ -46,14 +46,14 @@ To address this challenge, we developed DR. sTraTeGY, an innovative platform bui
 
 To study fungal evolution, we focused on *Saccharomyces cerevisiae*, a classic model organism for eukaryotes and a widely used chassis in synthetic biology. It offers significant advantages, including a fully sequenced genome, mature genetic tools[^2], and a non-pathogenic nature with conserved resistance mechanisms[^3].  However, traditional methods that based on unicellular yeast like bulk sequencing provide only a static endpoint snapshot of evolving populations, making it challenging to capture low-frequency mutations or the real-time emergence of complex traits[^4].
 
-To overcome this, we designed the **Grape Yeast**—a new modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates **DR. sTraTeGY** from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex traits would mask in a conventional bulk culture.
+To overcome this, we designed the Grape Yeast—a new modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates DR. sTraTeGY from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex traits would mask in a conventional bulk culture.
 
 We engineered this chassis through a simple four-module approach that allows us to achieve key functions: multicellularity development, external signal response, cluster size control, and individual diversity control.  In essence, these designs provide synthetic biology with a new chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient, controllable, and scalable engineered biological system. It functions more like an organized multicellular body—with spatial structure and division of labor among cells—similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a production platform but also as a foundational model for exploring multicellular engineering.
 
 <div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig2-grapeyeast.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 2:  Constructing the Grape Yeast</span>
+        <span style="color:gray">Figure 2.Constructing the Grape Yeast</span>
         <br><br>
     </div>
 </div>
@@ -61,35 +61,38 @@ We engineered this chassis through a simple four-module approach that allows us 
 
 
 
-### *Module 1—Multicellularity Development*
+### Module 1—Multicellularity Development
 
 To ensure the stability of the introduced genes in our chassis, we decided to integrate the modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we chose to rely on this endogenous mechanism instead of introducing the additional CRISPR-Cas9 system(which might cause safety problems ) this year. This approach was adapted from the yeast modular DNA assembly methods described by Lee et al. [^6] and Shaw et al. [^7].
 
-#### ***ACE2*** Deletion
+#### *ACE2* Deletion
 
 To validate the feasibility of a multifunctional multicellular chassis, we first used homologous recombination to knock out the  *ACE2* gene in the Y55 strain (a unicellular yeast). *ACE2* encodes a transcription factor that, when disrupted, prevents mother-daughter cell separation after budding[^8], leading to the formation of a multicellular yeast system. We confirmed the successful knockout by observing the formation of multicellular clusters, clearly visualized through cell wall staining under a microscope.
 
-It is indicated that during gravity-based selection, the Y55 (*ACE2*Δ) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. For a synthetic biology chassis like Grape Yeast to be reliable, it must maintain stable genetic properties and consistent protein expression. Building on these findings, we specifically investigated the ploidy stability of the tetraploid Y55 during gravity-based passaging under G418 selection pressure. Furthermore, to isolate the effect of the antibiotic, we included a comparative passage study under both selective (G418) and non-selective (G418-free) conditions.
+It is indicated that during gravity-based selection, the Y55 (*ACE2* &Delta;) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. For a synthetic biology chassis like Grape Yeast to be reliable, it must maintain stable genetic properties and consistent protein expression. Building on these findings, we specifically investigated the ploidy stability of the tetraploid Y55 during gravity-based passaging under G418 selection pressure. Furthermore, to isolate the effect of the antibiotic, we included a comparative passage study under both selective (G418) and non-selective (G418-free) conditions.
 
-### *Module2— External Signal Response*
+### Module2— External Signal Response
 
 Endogenous signaling pathway play central roles in regulating efflux pumps, cell wall remodeling, and stress responses, thereby shaping fungal drug resistance[^10]. This underscores the critical importance of external signal perception and membrane context in fungal biology. Building on this understanding, we introduced two key modifications into the Grape Yeast chassis: (1) the HsDOR-PRP signaling pathway, and (2) the substitution of ergosterol with cholesterol in the membrane. The first one endows the chassis with the ability to respond to external signals, while the second not only facilitates proper insertion and function of human GPCRs but also mimics drug-resistant fungal membrane changes and enhances its comparability with mammalian cells. In this way, Grape Yeast emerges as more than an engineered system for synthetic biology—it is also a novel multicellular chassis with value for drug resistance studies and cross-species translatability.
 
-#### 1) Replace ***ACE2*** with HsDOR
+#### 1) Replace *ACE2* with HsDOR
 
 Responding to external environmental signals is crucial for both fungal adaptation and synthetic control. Thus, in this module we expanded the signal transduction pathway, creating an interface that can be further utilized to respond to signals from other organisms or the environment by the community. GPCRs are among the most common drug targets in humans, highlighting their physiological relevance. We linked G-protein coupled receptors (GPCRs) to the yeast pheromone response pathway (PRP) which can activate a mitogen-activated protein kinase (MAPK) signaling cascade, leading to the upregulation of Ste12-regulated genes. 
 
-While a complete modification of the GPCR system would require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused our efforts on modifying only the most critical genes.  We replaced ***ACE2*** with the human δ opioid receptor (*HsDOR*) (BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera(BBa_254K9906) with five residues replaced by Giα3.We validated this pathway using the small molecule agonist SNC80 [^11].
+While a complete modification of the GPCR system would require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused our efforts on modifying only the most critical genes.  We replaced *ACE2* with the human &delta; opioid receptor (*HsDOR*) (BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera(BBa_254K9906) with five residues replaced by Giα3.We validated this pathway using the small molecule agonist SNC80 [^11].
 
 <div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig4-gpcr.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 3: Mechanism of external signal response.We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and validated by the agonist SNC80</span>
+        <span style="color:gray">Figure 3.Mechanism of external signal response.We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and validated by the agonist SNC80</span>
         <br><br>
     </div>
 </div>
 
-We verified the successful insertion of the module by qPCR using the following primers:
+<div style="text-align: center;">
+        <span style="color:gray">Table 1.Primers used for the qPCR validation</span>
+        <br>
+    </div>
 | Gene/Reference Gene | Forward Primer (5’→3’)   | Reverse Primer (5’→3’)   |
 | ------------------- | ------------------------ | ------------------------ |
 | FUS3                | GAGCTAATGCAGACAGATTTA    | CACTTTCACTGCTCTCAAG      |
@@ -108,20 +111,20 @@ To leverage this for our application, we deleted *ERG5/6* and added TDH3p-driven
 
 
 
-### *Module 3—Controlling Cluster Size*
+### Module 3—Controlling Cluster Size
 
 To enhance controllability and safety, we introduced *BAX*(BBa_K5441013), an apoptosis-inducing protein, under the control of a pTet2 promoter. Bax is a pro-apoptotic member of the Bcl-2 protein family. When expressed in *S. cerevisiae*, it induces cell apoptosis via a mitochondria-related pathway[^13]. This mechanism allows us to control the size of our clusters and, if necessary, induce the apoptosis of the entire system. We verified the module's effectiveness by observing and analyzing the cluster size under a confocal microscope .
 
 <div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-bax-compressed.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 4: Use BAX to control the cluter size</span>
+        <span style="color:gray">Figure 4.Use BAX to control the cluter size</span>
         <br><br>
     </div>
 </div>
 
 
-### *Module* 4—*Controlling Individual Diversity*
+### Module 4—Controlling Individual Diversity
 
 Genomic instability can lead to cells acquiring multiple drug resistances in a short period. For example, changes in chromosome ploidy (e.g. from diploid to haploid) can result in the loss of sensitive genes, contributing to multi-drug resistance. This suggests a strong link between ploidy and resistance[^14].
 
@@ -130,7 +133,7 @@ To control individual diversity within the cluster, we introduced the meiosis-in
 <div style="text-align: center;" id="fig5">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-ime1-compressed.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 5: Use Ime1 to control individual diversity</span>
+        <span style="color:gray">Figure 5. Use Ime1 to control individual diversity</span>
         <br><br>
     </div>
 </div>
@@ -138,25 +141,20 @@ To control individual diversity within the cluster, we introduced the meiosis-in
 
 ## Visualize the Evolution: The Timer & Recorder Extension
 
-Our project features two simple yet powerful visualization tools designed to track evolutionary history and mutations. They can be directly integrated into the Grape Yeast chassis by replacing  **ACE2** or inserted at other desired locations.
+Our project features two simple yet powerful visualization tools designed to track evolutionary history and mutations. They can be directly integrated into the Grape Yeast chassis by replacing  *ACE2* or inserted at other desired locations.
 
-### **Timer: Tracking Cell Lineage**
+### Timer: Tracking Cell Lineage
 
-Microscopic observation alone cannot determine the chronological relationship between two neighboring cells. To address this, we developed the **Timer** module, which visually records a single cell's life cycle in real-time. The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro), a modified-mCherry fluorescent protein, the Ash1 3'UTR, and the ScENO1terminator.
+Microscopic observation alone cannot determine the chronological relationship between two neighboring cells. To address this, we developed the Timer module, which visually records a single cell's life cycle in real-time. The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro), a modified-mCherry fluorescent protein, the Ash1 3'UTR, and the ScENO1terminator.
 
-Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the DeePromClass deep learning algorithm[^16], which initiates transcription during the late M phase[^17].Modified mCherry is a mutant that changes color over time from blue ( which has excitation/emission peaks of 403/466nm) to red (which has excitation/emission peaks of 583/606)[^18]. To ensure it is only expressed in daughter cells, we used the Ash1 3'UTR, which localizes the mRNA to the bud tip of dividing daughter cells[^19].Thus,the Timer begins to mature in the daughter cells produced after a cell division, thereby visualizing the life cycle.
+Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the DeePromClass deep learning algorithm[^16], which initiates transcription during the late M phase[^17].Modified mCherry(BBa_25TQG9WZ) is a mutant that changes color over time from blue (which has excitation/emission peaks of 403/466nm) to red (which has excitation/emission peaks of 583/606)[^18]. To ensure it is only expressed in daughter cells, we used the Ash1 3'UTR, which localizes the mRNA to the bud tip of dividing daughter cells[^19].Thus,the Timer begins to mature in the daughter cells produced after a cell division, thereby visualizing the life cycle.
 
-**Table: Spectral Properties of Modified mCherry**
 
-| State (Color) | Excitation Peak (nm) | Emission Peak (nm) | Description                    |
-| ------------- | -------------------- | ------------------ | ------------------------------ |
-| Blue          | 403                  | 466                | Initial state after expression |
-| Red           | 583                  | 606                | Matured state after conversion |
 
 <div style="text-align: center;" id="fig6">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-timer-compressed.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 6: Design of the Timer.The Timer module enables real-time visualization of a cell’s life cycle, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
+        <span style="color:gray">Figure 6.Design of the Timer.The Timer module enables real-time visualization of a cell’s life cycle, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
         <br><br>
     </div>
 </div>
@@ -167,10 +165,13 @@ Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the Dee
 
 <h3 id="recorder">Recorder: Recording Selective Pressure</h3>
 
-#### **1) Building the  Recorder**
+#### 1) Building the  Recorder
 
-To intuitively record the pressure at different chromosomal loci during evolution, we developed the **Recorder** module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20]. We screened 28 combinations of four promoters[^21] and seven optimized fluorescent proteins after EMS mutagenesis (For more details of EMS-resistant proteins, please check our [software](/software/)) by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
-
+To intuitively record the pressure at different chromosomal loci during evolution, we developed the Recorder module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20]. We screened 28 combinations of four promoters[^21] and seven optimized fluorescent proteins after EMS mutagenesis (For more details of EMS-resistant proteins, please check our [software](/software/)) by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
+<div style="text-align: center;">
+        <span style="color:gray">Table 2.Optimized Fluorescent Proteins and Promoters for the Recorder Module</span>
+        <br>
+    </div>
 | DNA NAME | DESCRIPTION                          | EXCITATION WAVELENGTH (NM) | EMISSION WAVELENGTH (NM) | Part ID  |
 | -------- | ------------------------------------ | -------------------------- | ------------------------ | ------------ |
 | EMSfp383 | Optimized eBFP2 to resist EMS.       | 383                        | 448                      | BBa_25F6RD26 |
@@ -188,33 +189,31 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 
 
 
+#### 2) Long-Term Natural Evolution Tracking
 
-
-#### 2) **Long-Term Natural Evolution Tracking**
-
-To study its stability and performance in different genomic environments., we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes (with the recorder replacing **ACE2** on chromosome 12). For this iteration, we no longer relied on EMS mutagenesis. Instead, we used **long-term cultivation and selective pressure** to induce the natural evolution of the strain to a diploid state. By utilizing **FACS analysis**, we were able to track changes in fluorescence over a period of seven days or more, allowing us to reconstruct the population's dynamics like reading a flight recorder.
+To study its stability and performance in different genomic environments., we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes (with the recorder replacing *ACE2* on chromosome 12). For this iteration, we no longer relied on EMS mutagenesis. Instead, we used long-term cultivation and selective pressure to induce the natural evolution of the strain to a diploid state. By utilizing FACS analysis, we were able to track changes in fluorescence over a period of seven days or more, allowing us to reconstruct the population's dynamics like reading a flight recorder.
 
 
 
-## **YeastVerse: Our Virtual Experiment Platform**
+## YeastVerse: Our Virtual Experiment Platform
 
-Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating **YeastVerse**, our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [model page](/model/) for more details.
+Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [model page](/model/) for more details.
 
 <div style="text-align: center;" id="fig7">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 7: se digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
+        <span style="color:gray">Figure 7.Use digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
         <br><br>
     </div>
 </div>
 
 
 
-## **Summary**
+## Summary
 
-  - We successfully engineered a novel yeast chassis, the **Grape Yeast**, for studying fungal mutation and evolution under drug pressure. The modular design, including control modules and external signal interfaces, gives it unlimited potential for further modifications.
-  - We developed two powerful extension modules, the **Timer** and **Recorder**, to visualize cell lineage and evolutionary pressure, respectively. These modules are designed as flexible plugins that can be widely used by the iGEM community.
-  - We built the **YeastVerse** virtual simulation platform to guide our wet lab experiments. As the ""zero-th machine" for Grape Yeast, YeastVerse can be widely used for various experimental tests, providing crucial support for wet lab works.
+  - We successfully engineered a novel yeast chassis, the Grape Yeast, for studying fungal mutation and evolution under drug pressure. The modular design, including control modules and external signal interfaces, gives it unlimited potential for further modifications.
+  - We developed two powerful extension modules, the Timer and Recorder, to visualize cell lineage and evolutionary pressure, respectively. These modules are designed as flexible plugins that can be widely used by the iGEM community.
+  - We built the YeastVerse virtual simulation platform to guide our wet lab experiments. As the ""zero-th machine" for Grape Yeast, YeastVerse can be widely used for various experimental tests, providing crucial support for wet lab works.
 
 
 
