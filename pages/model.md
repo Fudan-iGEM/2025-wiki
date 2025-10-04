@@ -16,7 +16,7 @@ description: On this page, we describe a model of dynamic protein timers in yeas
 
 Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
 
-Our work reimagines this cycle by introducing an [**AI-augmented modeling framework**](#AI-Aided-Validation-of-Model-Predictions) that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models (DeepSeek and Qwen), which—when prompted only with biological first principles—converged on the same optimal design choices.
+Our work reimagines this cycle by introducing an [AI-augmented modeling framework](#ai-aided-validation-of-model-predictions) that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models ([DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/)), which—when prompted only with biological first principles—converged on the same optimal design choices.
 
 This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach *supercharges the “Design” phase*, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
 
@@ -492,18 +492,18 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
 
 ## AI-Aided Validation of Model Predictions
 
-To further validate the robustness and generalizability of our model, we leveraged the reasoning capabilities of two state-of-the-art Chinese large language models, **DeepSeek** and **Qwen**, both of which have demonstrated strong, comprehensive capabilities. These two AI models were independently prompted with specific design parameters for fluorescent timers (FT) optimized for tracking yeast cell lineage and age. The prompts were structured to guide the models toward biological first principles, specifically targeting the selection of FT variants, promoter strategies, pulse characteristics, and expression levels in the context of the yeast cell cycle.
+To further validate the robustness and generalizability of our model, we leveraged the reasoning capabilities of two state-of-the-art Chinese large language models, [DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/), both of which have demonstrated strong, comprehensive capabilities. These two AI models were independently prompted with specific design parameters for fluorescent timers (FT) optimized for tracking yeast cell lineage and age. The prompts were structured to guide the models toward biological first principles, specifically targeting the selection of FT variants, promoter strategies, pulse characteristics, and expression levels in the context of the yeast cell cycle.
 
 Remarkably, the answers provided by both AI models converged with the key conclusions drawn from our mathematical model, reinforcing the credibility of our findings. The models independently highlighted the following optimal choices:
 
-1. **Fast-FT** as the preferred timer variant, aligning with our analysis of maturation times relative to the yeast cell cycle (~87 minutes).
-2. A **periodic promoter** strategy, exemplified by the **Ash1** promoter, which naturally expresses during late in the cell cycle and enables precise "timestamping" of daughter cells at division.
-3. The necessity for **short pulse widths (≈10–15 min)**, which ensures optimal temporal resolution within a single cell cycle.
-4. A **medium-strength promoter**, which provides the best balance between signal intensity and biological burden, ensuring reliable signal detection without saturating the fluorescence detectors.
+1. Fast-FT as the preferred timer variant, aligning with our analysis of maturation times relative to the yeast cell cycle (~87 minutes).
+2. A periodic promoter strategy, exemplified by the Ash1 promoter, which naturally expresses during late in the cell cycle and enables precise "timestamping" of daughter cells at division.
+3. The necessity for short pulse widths (≈10–15 min), which ensures optimal temporal resolution within a single cell cycle.
+4. A medium-strength promoter, which provides the best balance between signal intensity and biological burden, ensuring reliable signal detection without saturating the fluorescence detectors.
 
-This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful reasoning partner in hypothesis-driven research. [^3]Notably, the use of models like **DeepSeek** and **Qwen**, with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology.
+This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful reasoning partner in hypothesis-driven research. [^3]Notably, the use of models like [DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/), with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology.
 
-The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#Code-and-Data-Accessibility).
+The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#code-and-data-accessibility).
 
 ## Conclusion
 
@@ -511,7 +511,7 @@ The full AI conversation logs, including model reasoning and conclusions, are av
 2. **Comparison of Different Promoters:** Based on the current model, periodic promoters (e.g., Ash1) are much more effective than constitutive promoters for time tracking. The periodic promoters restrict the expression window, preventing excessive new protein generation, which helps maintain the accuracy of the timer signal.
 3. **Promoter Strength Selection:** The strength of the promoter directly influences the protein expression level, thereby affecting the timer's performance. Strong promoters (e.g., Factor 3x, 5x) lead to rapid changes in the red-blue ratio and quickly saturate the signal, losing the ability to track time accurately. In contrast, weak promoters (e.g., Factor 0.5x, 0.75x) provide slower changes but suffer from weak signals, leading to higher noise sensitivity. The 1x medium-strength promoter offers the best balance, providing optimal response speed, higher signal-to-noise ratio, and better stability, making it ideal for precise time tracking applications.
 
-In summary, the model successfully validates the importance of **periodic promoters**, **pulse width control**, and **promoter strength** in enhancing timer performance. The 1x medium-strength promoter strikes the best balance between dynamic response and signal-to-noise ratio, providing the most suitable timer functionality. Meanwhile, controlling the pulse width ensures high temporal resolution while avoiding the risk of excessive saturation. Therefore, the combination of **1x promoter and short pulses (10–15 min)** theoretically offers the best timer performance in experiments, making it ideal for applications such as cell lifespan measurement or time tracking.
+In summary, the model successfully validates the importance of periodic promoters, pulse width control, and promoter strength in enhancing timer performance. The 1x medium-strength promoter strikes the best balance between dynamic response and signal-to-noise ratio, providing the most suitable timer functionality. Meanwhile, controlling the pulse width ensures high temporal resolution while avoiding the risk of excessive saturation. Therefore, the combination of 1x promoter and short pulses (10–15 min) theoretically offers the best timer performance in experiments, making it ideal for applications such as cell lifespan measurement or time tracking.
 
 ## Improvement Log
 
@@ -536,7 +536,7 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 
 #### Integration of Wet-Lab Data and Model Validation
 
-Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#Highlights — A-New-Paradigm-for-Synthetic-Biology-in-the-AI-Era) through [data from wet-lab experiment](#).
+Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiment](#).
 
 - **Design (2025.08):**
 
@@ -547,9 +547,9 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
   - AI-Assisted Reasoning: We prompted two large language models ([DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/)) with the core design problem—optimizing a fluorescent timer for yeast lineage tracking—guiding them with biological first principles but without providing our model's interim results. This served as an independent validation of our design logic.
 
 - **Build (2025.08):**
-  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#Fast-FT-Time-Parameter-Calculation) and these data are later supported by our [wet-lab yeast experiments](#). This included:
+  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab yeast experiments](#). This included:
 
-  - Using temperature-dependent maturation kinetics derived from [Q₁₀](#Fast-FT-Time-Parameter-Calculation) calculations to adjust Fast-FT[^1] times for 30°C.
+  - Using temperature-dependent maturation kinetics derived from [Q₁₀](#fast-ft-time-parameter-calculation) calculations to adjust Fast-FT[^1] times for 30°C.
   - Adjusting the Ash1 promoter to express during the late M phase[^7] in our model to match biological evidence.
   - Revising protein inheritance logic to allow immature C-state proteins to be almost fully transferred to daughter cells, and mature in the daughter cells produced after a cell division[^8].
   
@@ -561,7 +561,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
   - The corrected inheritance logic was validated, as daughter cells showed the expected timing signal that was distinct from the mother cell's baseline.
 
 - **Learn (2025.10):**
-  The convergence between our [AI-augmented model predictions](#Highlights — A-New-Paradigm-for-Synthetic-Biology-in-the-AI-Era) and the [experimental outcomes](#) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
+  The convergence between our [AI-augmented model predictions](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) and the [experimental outcomes](#) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
 
 ## How to use our model
 
