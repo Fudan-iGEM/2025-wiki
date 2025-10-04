@@ -41,7 +41,7 @@ const teamMembers = [
     contactText: "Detail", 
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp",
-    description: "In our iGEM team, I'm mainly responsible for design and experiments. I love to explore new things, reach out to new areas and try to put ideas into practice. Let us find the dopamine in life and be the first to stand in line!"
+    description: "Hello everyone! I'm from the School of Stomatology. It's a pleasure to be part of iGEM Fudan 2025, where I contributed to the Part-related work. In my daily life, I'm a big fan of movies, comics, and novels. I'm always excited to meet new friends — let's explore the wonders of both biology and life together!"
   },
   {
     name: "Yufan Han",
@@ -71,7 +71,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn-a.webp",
-    description: "Responsible for outreach and science communication. I love making complex scientific concepts accessible to diverse audiences. In my spare time, I volunteer at local science museums and write science blogs."
+    description: "In our team, I participated in the Design and Experimental work, helping to build the logic behind our synthetic biology system — decoding life, and exploring what comes next."
   },
   {
     name: "Xiuqi Tian",
@@ -111,7 +111,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/tjh-a.webp",
-    description: "Hi! I'm Jihua, a junior majoring in Integrated Circuits. In our team, I focus on dry-lab modeling, helping to understand and predict the behavior of our multicellular yeast system. My engineering background enables me to tackle computational challenges efficiently. For me, Fudan iGEM 2025 is where silicon meets cells—and curiosity grows into collaboration!"
+    description: "Hi! I'm Jihua, a junior majoring in Integrated Circuits. In our team, I focus on dry-lab modeling, helping to understand and predict the behavior of our multicellular yeast system. My engineering background enables me to tackle computational challenges efficiently. For me, Fudan iGEM 2025 is where silicon meets cells — and curiosity grows into collaboration!"
   },
   {
     name: "Yuxin Duan",
@@ -121,7 +121,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx.webp", 
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp",
-    description: "Hello, everyone! I am Duan Yuxin, from Shanghai Medical College, Fudan University, a student of the five-year clinical medicine. Participating in iGEM has taught me a lot of new knowledge and skills; it is not only full of the challenges and fun of doing experiments, but also provides wonderful memories of our joint efforts. Let us explore the mysteries of synthetic biology together!"
+    description: "Hello, everyone! I am Yuxin, from Shanghai Medical College, Fudan University, major in Clinical Medicine. Participating in iGEM has taught me a lot of new knowledge and skills; it is not only full of the challenges and fun of doing experiments, but also provides wonderful memories of our joint efforts. Let us explore the mysteries of synthetic biology together!"
   }
 ]
 
