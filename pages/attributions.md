@@ -9,10 +9,6 @@ heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-
 description: On this page, we concisely acknowledges all contributors and transparently display each individual's specific work on the project.
 ---
 
-## Specially thank to
-
-Twist, IDT, GenScript 
-
 We gratefully acknowledge the generous support from the following companies.
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.75rem;align-items:stretch;justify-items:center;margin:2rem 0;">
