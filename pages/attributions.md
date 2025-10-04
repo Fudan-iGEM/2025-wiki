@@ -19,19 +19,19 @@ We gratefully acknowledge the generous support from the following companies.
     <figcaption style="margin-bottom:1rem;font-size:0.95rem;color:#ffffff;font-weight:600;letter-spacing:0.01em;text-align:center;">擎科 (Tsingke)</figcaption>
   </figure>
   <figure style="width:100%;max-width:260px;margin:0;padding:1.75rem;border-radius:1rem;background:linear-gradient(135deg,var(--vp-c-brand-1,#008794),rgba(0,135,148,0.72));box-shadow:0 14px 32px rgba(0,70,80,0.22);display:flex;flex-direction:column;align-items:center;justify-content:space-between;min-height:260px;">
-    <div style="width:100%;height:120px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.5);border-radius:0.75rem;">
+    <div style="width:100%;height:120px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.05);border-radius:0.75rem;">
       <div role="img" aria-label="GenScript logo" style="width:90%;height:90%;background-image:url('https://static.igem.org/websites/common/2025/sponsors/logos/genscript-primary.png');background-repeat:no-repeat;background-position:center;background-size:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.25));"></div>
     </div>
     <figcaption style="margin-bottom:1rem;font-size:0.95rem;color:#ffffff;font-weight:600;letter-spacing:0.01em;text-align:center;">金斯瑞 (GenScript)</figcaption>
   </figure>
   <figure style="width:100%;max-width:260px;margin:0;padding:1.75rem;border-radius:1rem;background:linear-gradient(135deg,var(--vp-c-brand-1,#008794),rgba(0,135,148,0.72));box-shadow:0 14px 32px rgba(0,70,80,0.22);display:flex;flex-direction:column;align-items:center;justify-content:space-between;min-height:260px;">
-    <div style="width:100%;height:120px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.5);border-radius:0.75rem;">
+    <div style="width:100%;height:120px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.05);border-radius:0.75rem;">
       <div role="img" aria-label="Twist logo" style="width:90%;height:90%;background-image:url('https://static.igem.org/websites/jamboree/2022/2023/photos/sponsors/twist-bioscience.svg');background-repeat:no-repeat;background-position:center;background-size:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.25));"></div>
     </div>
     <figcaption style="margin-bottom:1rem;font-size:0.95rem;color:#ffffff;font-weight:600;letter-spacing:0.01em;text-align:center;">Twist</figcaption>
   </figure>
   <figure style="width:100%;max-width:260px;margin:0;padding:1.75rem;border-radius:1rem;background:linear-gradient(135deg,var(--vp-c-brand-1,#008794),rgba(0,135,148,0.72));box-shadow:0 14px 32px rgba(0,70,80,0.22);display:flex;flex-direction:column;align-items:center;justify-content:space-between;min-height:260px;">
-    <div style="width:100%;height:120px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.5);border-radius:0.75rem;">
+    <div style="width:100%;height:120px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.05);border-radius:0.75rem;">
       <div role="img" aria-label="IDT logo" style="width:90%;height:90%;background-image:url('https://static.igem.org/websites/common/2025/sponsors/logos/integrated-dna-technologies-logo.svg');background-repeat:no-repeat;background-position:center;background-size:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.25));"></div>
     </div>
     <figcaption style="margin-bottom:1rem;font-size:0.95rem;color:#ffffff;font-weight:600;letter-spacing:0.01em;text-align:center;">IDT</figcaption>
