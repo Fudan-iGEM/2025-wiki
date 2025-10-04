@@ -2,11 +2,11 @@
 title: Education
 authors:
   - name: Huizhen Du
-    url: /fudan/team/#du-huizhen
-    avatar: （头像，先不填）
+    url: /fudan/team/#Huizhen
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp
 layout: igem
-heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: （页面描述）
+heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+description: On this page, we 
 ---
 
 ## Overview

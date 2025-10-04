@@ -2,14 +2,14 @@
 title: Model
 authors:
   - name: Jihua Tang
-    url: /fudan/team/#tang-jihua
+    url: /fudan/team/#Jihua
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/tjh-a.webp
   - name: Yue Yue
-    url: /fudan/team/#yue-yue
-    avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jp
+    url: /fudan/team/#Yue
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
-heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: On this page, we describe a model of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning.
+heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+description: On this page, we describe a model of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
 ---
 
 ## Highlights — A New Paradigm for Synthetic Biology in the AI Era

@@ -2,11 +2,11 @@
 title: Entrepreneurship
 authors:
   - name: Xiuqi Tian
-    url: /fudan/team/#tian-xiuqi
-    avatar: （头像，先不填）
+    url: /fudan/team/#Xiuqi
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp
 layout: igem 
 heroImage: https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-headmap.webp
-description: How we commercialize Dr.sTraTeGY into a product for CROs.
+description: How we commercialize Dr.sTraTeGY into a product for CRO ???
 ---
 
 ## Summary

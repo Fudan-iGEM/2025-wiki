@@ -8,14 +8,21 @@
         :style="{ color: item.textColor }"
         :ref="(el) => setCardRef(el, index)"
       >
-        <div class="pill" :style="{ backgroundColor: item.color }">
+        <component
+          :is="item.url ? 'a' : 'div'"
+          class="pill"
+          :style="{ backgroundColor: item.color }"
+          v-bind="item.url ? linkAttrs : null"
+          :href="item.url || undefined"
+          :aria-label="item.url ? `Open ${item.name} color reference` : undefined"
+        >
           <header class="pill-title">{{ item.name }}</header>
           <footer class="pill-meta">
             <span class="pill-meta_line">{{ item.pantone }}</span>
             <span class="pill-meta_line">{{ item.hex }}</span>
             <span class="pill-meta_line">{{ item.cmyk }}</span>
           </footer>
-        </div>
+        </component>
       </article>
     </div>
   </section>
@@ -23,6 +30,11 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount, ref, nextTick } from 'vue';
+
+const linkAttrs = {
+  target: '_blank',
+  rel: 'noopener noreferrer',
+};
 
 const palette = [
   {
@@ -32,6 +44,7 @@ const palette = [
     pantone: 'PANTONE 489 C',
     hex: 'HEX F4F0F0',
     cmyk: 'CMYK 05 06 08 00',
+    url: 'https://www.pantone.com/color-finder/489-C',
   },
   {
     name: 'Black',
@@ -40,6 +53,7 @@ const palette = [
     pantone: 'PANTONE 419 C',
     hex: 'HEX 080808',
     cmyk: 'CMYK 75 68 67 90',
+    url: 'https://www.pantone.com/color-finder/419-C',
   },
   {
     name: 'Poppy',
@@ -48,6 +62,7 @@ const palette = [
     pantone: 'PANTONE 1855 C',
     hex: 'HEX CC2F3B',
     cmyk: 'CMYK 00 92 81 05',
+    url: 'https://www.pantone.com/color-finder/1855-C',
   },
   {
     name: 'Sand',
@@ -56,6 +71,7 @@ const palette = [
     pantone: 'PANTONE 7520 C',
     hex: 'HEX B9ABA0',
     cmyk: 'CMYK 20 24 32 00',
+    url: 'https://www.pantone.com/color-finder/7520-C',
   },
 ];
 
@@ -230,6 +246,8 @@ onBeforeUnmount(() => {
   overflow: hidden;
   box-shadow: 0 22px 40px rgba(17, 17, 17, 0.18);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .pill:hover {

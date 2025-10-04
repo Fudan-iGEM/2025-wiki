@@ -2,10 +2,10 @@
 title: Collaborations
 layout: igem
 authors:
-  name: Huizhen Du
-  url: /fudan/team/#du-huizhen
-  avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jpg
-heroImage: "https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp"
+  - name: Huizhen Du
+    url: /fudan/team/#Huizhen
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
+heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
 description: On this page, we 
 ---
 
