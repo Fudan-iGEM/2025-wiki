@@ -9,14 +9,14 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/img/team-member-2.jp
 layout: igem
 heroImage: （拍摄并且选取页面图像，作为顶部展示）
-description: On this page, we describe our models in detail.
+description: On this page, we describe a model of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning.
 ---
 
 ## Highlights — A New Paradigm for Synthetic Biology in the AI Era
 
 Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
 
-Our work reimagines this cycle by introducing an [**AI-augmented modeling framework**](#AI-Aided-Validation-of-Model-Predictions) that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as ASH1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models (DeepSeek and Qwen), which—when prompted only with biological first principles—converged on the same optimal design choices.
+Our work reimagines this cycle by introducing an [**AI-augmented modeling framework**](#AI-Aided-Validation-of-Model-Predictions) that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models (DeepSeek and Qwen), which—when prompted only with biological first principles—converged on the same optimal design choices.
 
 This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach *supercharges the “Design” phase*, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
 
@@ -26,7 +26,7 @@ In synthetic biology and cellular timing studies, constructing a reliable and re
 
 ## Introduction
 
-This model is centered around the "single pulse → three-step irreversible maturation chain (C→B→I→R)" and simulates the entire process from promoter expression to the complete maturation of the fluorescent protein. It uses $r(t) = \frac{R}{B + R}$ and $\Delta r$ as criteria to evaluate the readability and monotonicity of the timer. By adjusting the pulse width (the duration of ASH1 pulses), maturation time constants ($\tau_B, \tau_I, \tau_R$), and pulse intensity (adjusting promoter strength), we first screen for "usable intervals" mathematically, and then provide reproducible target conditions for wet experiments. The model compares periodic promoters (ASH1) with constitutive promoters: the former provides short and clean expression windows, improving $\Delta r$ and monotonicity; the latter, under the same maturation parameters, tends to dilute time resolution due to continuous new molecule generation, and thus is used as a control to demonstrate the necessity of pulse gating. To address cases where promoter expression is either too high or too low, the model incorporates promoter strength ($pulse_{amp}$) and intergenerational inheritance (inheritance fraction, $pp$) into sensitivity analysis. By controlling promoter strength, we ensure that the system provides an appropriate level of protein expression while avoiding premature saturation or insufficient signaling. In summary, the model systematically examines and quantifies two critical factors: promoter selection and promoter strength, validating the reasonableness of selecting the ASH1 promoter and an appropriate promoter strength from both the mathematical and model perspectives before conducting wet experiments.
+This model is centered around the "single pulse → three-step irreversible maturation chain (C→B→I→R)" and simulates the entire process from promoter expression to the complete maturation of the fluorescent protein. It uses $r(t) = \frac{R}{B + R}$ and $\Delta r$ as criteria to evaluate the readability and monotonicity of the timer. By adjusting the pulse width (the duration of Ash1 pulses), maturation time constants ($\tau_B, \tau_I, \tau_R$), and pulse intensity (adjusting promoter strength), we first screen for "usable intervals" mathematically, and then provide reproducible target conditions for wet experiments. The model compares periodic promoters (Ash1) with constitutive promoters: the former provides short and clean expression windows, improving $\Delta r$ and monotonicity; the latter, under the same maturation parameters, tends to dilute time resolution due to continuous new molecule generation, and thus is used as a control to demonstrate the necessity of pulse gating. To address cases where promoter expression is either too high or too low, the model incorporates promoter strength ($pulse_{amp}$) and intergenerational inheritance (inheritance fraction, $pp$) into sensitivity analysis. By controlling promoter strength, we ensure that the system provides an appropriate level of protein expression while avoiding premature saturation or insufficient signaling. In summary, the model systematically examines and quantifies two critical factors: promoter selection and promoter strength, validating the reasonableness of selecting the Ash1 promoter and an appropriate promoter strength from both the mathematical and model perspectives before conducting wet experiments.
 
 ## Model Design
 
@@ -41,11 +41,16 @@ The color change reflects the time elapsed since the cell's birth.
 
 This model is based on the following experimental settings:
 
-- Cell cycle: approximately **87 minutes** (source: BioNumbers);
-- Fluorescent protein: **Fast-FT**[^1] is selected;
+- Cell cycle: approximately 87 minutes[^6] (source: [BioNumbers]([Average total cell cycle period for haploid m - Budding yeast Saccharomyces ce - BNID 104360](https://bionumbers.hms.harvard.edu/bionumber.aspx?id=104360&ver=15)));
+- Fluorescent protein: *Fast-FT*[^1] is selected;
 - Expression trigger: using a single pulse (based on the later comparison of periodic and constitutive promoters).
 
 ## Parameters
+
+<div style="text-align: center;">
+        <span style="color:gray">Table 1.Parameters for the model</span>
+        <br>
+    </div>
 
 | **Parameter** | **Meaning**                                | **Default Value**       | **Unit** |
 | ------------------- | ---------------------------------------------- | -------------------------------- | -------- |
@@ -65,7 +70,7 @@ This model is based on the following experimental settings:
 | **$k_R$**           | I to R rate constant         | \($1 / \tau_R$\)                 | min⁻¹    |
 | **$k_{DR}$**       | Red protein degradation rate | \($\ln 2 / (t_{12}^{(R)} \cdot 60)$\) | min⁻¹    |
 
-### Fast-FT Time Parameter Calculation at 30°C
+### Fast-FT Time Parameter Calculation
 
 #### 1. Basis for Calculation and Core Logic
 
@@ -74,6 +79,11 @@ The fluorescence maturation of Fast-FT (from blue to red) is essentially a chemi
 ##### 1.1 Literature Data Summary
 
 The core data for the calculation is derived from literature on Fast-FT key time parameters at 25°C (in vitro purified + intracellular, Drosophila S2 cells) and 37°C (in vitro purified + intracellular, HeLa cells). Specific data are shown below:
+
+<div style="text-align: center;">
+        <span style="color:gray">Table 2.Data summary for Fast-FT time parameter</span>
+        <br>
+    </div>
 
 | Temperature | Experimental System        | Blue Fluorescence Peak Time (h) | Red Fluorescence Half-Peak Time (h) | Remarks                                                      |
 | ----------- | -------------------------- | ------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
@@ -120,8 +130,12 @@ $$
 \text{30°C time} = \frac{\text{25°C intracellular time}}{\text{Rate increase factor}}
 $$
 
-
 ###### (2) Specific Parameter Calculation
+
+<div style="text-align: center;">
+        <span style="color:gray">Table 3.Specific parameter calculation at 30°C</span>
+        <br>
+    </div>
 
 | Metric                          | 25°C Intracellular Time (h) | 30°C Estimated Time (h) | Calculation Logic                                            |
 | ------------------------------- | --------------------------- | ----------------------- | ------------------------------------------------------------ |
@@ -144,7 +158,7 @@ $$
 
 ## Model Establishment
 
-### 1) **Input (Single Birth Pulse)**
+### 1) Input
 
 The input function $u(t)$ represents a "pulse starting at the birth time, lasting for $\tau$ minutes" with an amplitude $A$:
 $$
@@ -282,11 +296,12 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure1-single-cell-b-r-left-r-right.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure1. Single-cell- B-R (left) & r (right)</span>
+        <span style="color:gray">Figure 1.Single-cell- B-R (left) & r (right)</span>
         <br><br>
     </div>
 
-### Pulse width versus $\Delta r$
+
+### Pulse width vs $\Delta r$
 
 **Objective match:** For the $65\text{–}145\mathrm{min}$ window under the current maturation times, assess how temporal resolvability varies with pulse width $\tau$.
 
@@ -306,9 +321,10 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure2. Δr(65→145 min) vs pulse width τ</span>
+        <span style="color:gray">Figure 2.Δr(65→145 min) vs pulse width τ</span>
         <br><br>
     </div>
+
 
 ### Lineage analysis
 
@@ -317,16 +333,18 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure3-lineage-r-heatmap-birth-aligned.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure3. Lineage r heatmap (birth-aligned)</span>
+        <span style="color:gray">Figure 3.Lineage r heatmap (birth-aligned)</span>
         <br><br>
     </div>
+
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure4-lineage-r-heatmap-baseline-corrected.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure4. Lineage r' heatmap (baseline-corrected)</span>
+        <span style="color:gray">Figure 4.Lineage r' heatmap (baseline-corrected)</span>
         <br><br>
     </div>
+
 
 ## Analysis
 
@@ -357,9 +375,10 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure5-delta-r-vs-10-90-min-window.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure5. Delta r vs τ (10-90 min window)</span>
+        <span style="color:gray">Figure 5.Delta r vs τ (10-90 min window)</span>
         <br><br>
     </div>
+
 
 #### $r(t)$ Overlaid Curves
 
@@ -374,9 +393,10 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure6-rt-t-overlay-fairness-equal-intensity.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure6. rt(t) overlay (fairness- equal_intensity)</span>
+        <span style="color:gray">Figure 6.rt(t) overlay (fairness- equal_intensity)</span>
         <br><br>
     </div>
+
 
 #### Lineage Heatmap Comparison
 
@@ -404,9 +424,10 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure7-lineage-heatmap-comparison.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure7. Lineage Heatmap Comparison</span>
+        <span style="color:gray">Figure 7.Lineage Heatmap Comparison</span>
         <br><br>
     </div>
+
 
 #### Single-Chain Four-Generation $r'$ Overlaid Curves
 
@@ -420,11 +441,12 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure8-four-generation-rprime-chains-fairness-equal-intensity.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure8. Four-generation rprime chains - fairness equal_intensity</span>
+        <span style="color:gray">Figure 8.Four-generation rprime chains - fairness equal_intensity</span>
         <br><br>
     </div>
 
-In summary, using a periodic promoter (ASH1) with a pulse width controlled between 10–15 minutes provides a reliable and distinguishable timing signal; in contrast, a constitutive promoter is not suitable for use as a timer input.
+
+In summary, using a periodic promoter (Ash1) with a pulse width controlled between 10–15 minutes provides a reliable and distinguishable timing signal; in contrast, a constitutive promoter is not suitable for use as a timer input.
 
 ### Strong Promoter vs Weak Promoter
 
@@ -434,15 +456,15 @@ r(t) = \frac{R(t)}{B(t) + R(t)}
 $$
 This ratio reflects the maturation process and transition dynamics of the protein, serving as a crucial representation of the time evolution. The strength of the promoter has a different impact on the timer performance depending on the pulse amplitude and pulse width. [^2]Changing the pulse amplitude affects the overall protein expression level in the system, while the pulse width directly influences the time distribution of protein production. To balance these two factors, we compare the performance of strong and weak promoters.
 
-**1.  Advantages and Limitations of Strong Promoters**
+#### 1.  Advantages and Limitations of Strong Promoters
 
 Strong promoters (such as Factor 3x and Factor 5x) exhibit rapid dynamic responses in the red-to-blue ratio $r(t)$, allowing the system to quickly reach equilibrium (close to 1) within a short time. This is because stronger promoters provide higher protein expression, enabling the rapid conversion of blue-state protein (B) to red-state protein (R). However, strong promoters may lead to rapid saturation of the system, which is a drawback for their function as timers. A timer needs to maintain the variation in the red-to-blue ratio over a longer period, but strong promoters may cause the system to stabilize at the saturation point too quickly, resulting in $r(t)$ reaching 1 too soon and losing the ability to track time changes effectively.
 
-**2. Advantages and Limitations of Weak Promoters**
+#### 2. Advantages and Limitations of Weak Promoters
 
 In contrast, weak promoters (such as Factor 0.5x and Factor 0.75x) produce lower expression levels, but they drive the red-to-blue ratio change more gradually. Under these conditions, the rise in the red-to-blue ratio is slower, allowing the system to provide continuous dynamic changes over a longer period, making $r(t)$ more suitable for use as a timer. Weak promoters effectively prevent rapid saturation and can steadily reflect the cell's time evolution, providing enough variation to infer the cell’s age or state. However, weak promoters have clear limitations. First, lower protein expression results in weaker signals, which affects the signal-to-noise ratio (SNR). In low-signal conditions, measurement noise significantly impacts $r(t)$, especially over longer experimental durations, where signal fluctuations may become more pronounced, potentially causing noise to obscure the real signal and affect the accuracy and readability of the timer. Additionally, weak promoters are more prone to interference from experimental noise due to their lower expression levels. The weak response makes the system more sensitive to noise, leading to larger fluctuations in $r(t)$, thus decreasing the system's stability and repeatability. Therefore, although weak promoters provide smoother dynamic changes, their higher noise sensitivity makes them less suitable than strong or medium-strength promoters for high-precision timer applications.
 
-**3. Balance of Medium Strength Promoters (1x)**
+#### 3. Balance of Medium Strength Promoters (1x)
 
 After comparing various promoter strengths, a medium-strength promoter (such as the 1x promoter, shown by the green curve in the graph) demonstrates the best balance:
 
@@ -450,7 +472,7 @@ After comparing various promoter strengths, a medium-strength promoter (such as 
 - **Higher Signal-to-Noise Ratio (SNR):** The 1x promoter provides a higher SNR, meaning the experimental results are clearer and more reliable, making it ideal for high-precision timer applications.
 - **Avoidance of Excessive Inheritance Effects:** Strong promoters (like Factor 3x and 5x) can cause significant inheritance effects, resulting in high baseline red-state protein levels in the previous generation, which may affect the measurement accuracy in the next generation. The 1x promoter provides better control over this issue.
 
-**4. Conclusion**
+#### 4. Conclusion
 
 - **Weak Promoters (0.5x and 0.75x):** These are better suited for timers requiring slower and continuous changes, but they may perform poorly in high-precision applications due to their weak signal.
 - **Strong Promoters (3x and 5x):** While strong promoters have advantages in fast response and high expression, their rapid saturation makes them unsuitable for precise timers, as they lose the ability to maintain continuous variation.
@@ -461,9 +483,10 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure9-strong-promoter-vs-weak-promoter.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure9. Strong Promoter vs Weak Promoter</span>
+        <span style="color:gray">Figure 9.Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
+
 
 
 ## AI-Aided Validation of Model Predictions
@@ -473,49 +496,79 @@ To further validate the robustness and generalizability of our model, we leverag
 Remarkably, the answers provided by both AI models converged with the key conclusions drawn from our mathematical model, reinforcing the credibility of our findings. The models independently highlighted the following optimal choices:
 
 1. **Fast-FT** as the preferred timer variant, aligning with our analysis of maturation times relative to the yeast cell cycle (~87 minutes).
-2. A **periodic promoter** strategy, exemplified by the **ASH1** promoter, which naturally expresses during late in the cell cycle and enables precise "timestamping" of daughter cells at division.
+2. A **periodic promoter** strategy, exemplified by the **Ash1** promoter, which naturally expresses during late in the cell cycle and enables precise "timestamping" of daughter cells at division.
 3. The necessity for **short pulse widths (≈10–15 min)**, which ensures optimal temporal resolution within a single cell cycle.
 4. A **medium-strength promoter**, which provides the best balance between signal intensity and biological burden, ensuring reliable signal detection without saturating the fluorescence detectors.
 
-This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful co-scientist in hypothesis-driven research. [^3]Notably, the use of models like **DeepSeek** and **Qwen**, with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology.
+This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful reasoning partner in hypothesis-driven research. [^3]Notably, the use of models like **DeepSeek** and **Qwen**, with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology.
 
 The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#Code-and-Data-Accessibility).
 
 ## Conclusion
 
 1. **Pulse Duration Control:** The pulse duration $(\tau)$ directly impacts the dynamic range of the timer. When controlled within the range of $10\text{–}15\mathrm{min}$, the timer provides sufficient dynamic range ($\Delta r > 3\sigma$), meeting the readability requirements.
-2. **Comparison of Different Promoters:** Based on the current model, periodic promoters (e.g., ASH1) are much more effective than constitutive promoters for time tracking. The periodic promoters restrict the expression window, preventing excessive new protein generation, which helps maintain the accuracy of the timer signal.
+2. **Comparison of Different Promoters:** Based on the current model, periodic promoters (e.g., Ash1) are much more effective than constitutive promoters for time tracking. The periodic promoters restrict the expression window, preventing excessive new protein generation, which helps maintain the accuracy of the timer signal.
 3. **Promoter Strength Selection:** The strength of the promoter directly influences the protein expression level, thereby affecting the timer's performance. Strong promoters (e.g., Factor 3x, 5x) lead to rapid changes in the red-blue ratio and quickly saturate the signal, losing the ability to track time accurately. In contrast, weak promoters (e.g., Factor 0.5x, 0.75x) provide slower changes but suffer from weak signals, leading to higher noise sensitivity. The 1x medium-strength promoter offers the best balance, providing optimal response speed, higher signal-to-noise ratio, and better stability, making it ideal for precise time tracking applications.
 
 In summary, the model successfully validates the importance of **periodic promoters**, **pulse width control**, and **promoter strength** in enhancing timer performance. The 1x medium-strength promoter strikes the best balance between dynamic response and signal-to-noise ratio, providing the most suitable timer functionality. Meanwhile, controlling the pulse width ensures high temporal resolution while avoiding the risk of excessive saturation. Therefore, the combination of **1x promoter and short pulses (10–15 min)** theoretically offers the best timer performance in experiments, making it ideal for applications such as cell lifespan measurement or time tracking.
 
-## Bug Fix Log
+## Improvement Log
 
-1. **Data Source Correction:** Incorrect use of in vitro data for modeling under cellular conditions led to underestimations in protein maturation times. Parameters were recalculated based on intracellular environments (2025.08).
+To systematically improve our model, we adopted the Design–Build–Test–Learn (DBTL) cycle, a core methodology in synthetic biology. This iterative process allowed us to refine model parameters and mechanisms based on both literature and values obtained from our own wet-lab experiments. Below, we describe two rounds of DBTL cycles that led to the current robust model.
 
-- **Issue:** The fluorescence protein maturation time parameters (e.g., blue peak time, red half-peak time) were mistakenly based on in vitro purified protein data (without cellular environment). This led to a significant underestimation of the maturation time for fluorescence proteins (e.g., the blue peak time was initially set to 15 minutes, which is much shorter than the actual time in the cellular environment). In vitro conditions lack cellular translation delays, molecular chaperone regulation, and metabolic context, causing a mismatch in the "blue-to-red" conversion dynamics compared to experimental observations.   
-- **Fix:** Removed in vitro data and recalculated parameters based on intracellular environments, specifically using the Fast-FT maturation dynamics for eukaryotic cells (which are temperature-dependent), and applied the Q₁₀ temperature coefficient (≈2.0) derived from literature on 25°C and 37°C data for intracellular conditions.
-- **Impact:** The revised model now aligns with yeast cell cycle and protein dynamics (e.g., polarity transport and intergenerational transmission), avoiding the "signal compression" caused by overly rapid maturation, thus providing a reasonable basis for subsequent temporal resolution.
+### Round1 DBTL:
 
-2. **Modeling Mechanism Fix:** Adjustments to Ash1 promoter expression timing and protein allocation logic (2025.07).
+#### Literature-Based Initial Model and Identification of Gaps
 
-- **Issue:** The original model had two mechanism errors: ① Ash1 promoter expression timing was set to "start at the beginning of the cell cycle," which conflicts with the biological characteristic of "expression near the end of the cell cycle"; ② The protein allocation logic assumed "mature proteins stay in the mother cell," and the $inherit_{frac} \approx 0.2$ assumption limited the amount inherited by daughter cells, which contradicted the actual process where proteins enter the daughter cells during division and mature there.
-- **Fix:** ① Adjusted the promoter expression timing: the pulse start time was changed from "0 min of the cell cycle" to "near the end of the cell cycle (e.g., $T_{cc}-30$ min, where $T_{cc}$ is the cell cycle length)" to reflect the quick expression of Ash1 before cell division. We also changed transcription and translation rate values to be dependent on the cell cycle stage, incorporating the significant differences in activity across the cycle. ② Recalibrated the protein allocation logic: Set the $inherit_{frac,C}$ parameter to ≈1, meaning that almost all newly synthesized fluorescent proteins enter the daughter cells during division and initiate the "blue-to-red" maturation process there.  
-- **Impact:** This fix accurately models the sequential process of "protein inheritance to daughter cells → maturation in daughter cells," resolving the issue of "mother cell maturation signal interfering with daughter cell lineage," and improving the specificity of lineage tracking by tightly linking fluorescence signal changes with the cell division cycle and developmental stages of daughter cells.
+Objective: Develop a preliminary model using literature-derived parameters to simulate fluorescent timer (FT) dynamics in yeast.
 
-3. **Environmental Factors Added:** Introduced growth conditions (30°C, YPD 6.0-6.5) into the model parameters, clarifying 30°C as a core variable and YPD 6.0-6.5 as a non-core variable (2025.08).
+- **Design (2025.06):**
+  The initial model was designed based on published data for Fast-FT proteins, including maturation kinetics from in vitro studies (e.g., blue peak time and red half-peak time at 25°C and 37°C). Parameters such as maturation time constants ($\tau_B, \tau_I, \tau_R$) were sourced from literature [^1], and the model assumed a generic promoter expression pattern without cell-cycle specificity.
+- **Build (2025.06):**
+  We implemented the model using ordinary differential equations (ODEs) to describe the irreversible maturation chain (C→B→I→R). Key parameters were set based on in vitro values, such as $\tau_B$=12 min and $\tau_R$=720 min, and the Ash1 promoter was initially erroneously modeled to express at the start of the cell cycle.
+- **Test (2025.07):**
+  Simulation results revealed discrepancies with expected cellular behaviors. The in vitro-based maturation kinetics caused the fluorescent proteins to mature from blue to red far too rapidly. This led to a premature saturation of the red signal, where the r(t) ratio approached its maximum too quickly within a single cell cycle, influencing the time gradient needed for resolution. Consequently, over just one or two generations, all cells accumulated a similarly high red signal, making it impossible to distinguish young daughter cells from old mother cells and causing the timer to lose its core function.
+- **Learn (2025.07):**
+  We identified that in vitro data did not account for cellular factors like translation delays, chaperone interactions, and metabolic context. This highlighted the need for intracellular-specific parameters and better alignment with yeast physiology. Additionally, the promoter expression timing and protein inheritance logic required biological validation from our [wet-lab experiments](#).
 
-- **Issue:** The original model did not include environmental parameters, leading to a lack of connection between maturation times and the actual experimental conditions, which could introduce system errors.   
-- **Fix:** ① Core variable (30°C): We used literature data to quantify its effect on maturation rates (as described in Fix 1), and confirmed that 30°C is the key factor in regulating the "blue-to-red" transition rate, requiring a temperature coefficient to quantify the shortening effect on maturation time. ② Non-core variable (YPD 6.0-6.5): This condition maintains the pH of Fast-FT within its stable fluorescence range (pH 5.4–7.4). Since the YPD medium only provides nutrients and does not directly influence the chromophore chemical maturation process, its effect on protein maturation dynamics is negligible.   
-- **Impact:** By distinguishing between core and non-core environmental variables, we ensured that core parameters (temperature) are accurately accounted for while avoiding interference from unnecessary variables. This makes the model more closely aligned with actual experimental conditions and improves its reproducibility.  
+### Round2 DBTL:
 
-**Summary:** The fixes above address data accuracy, biological mechanism consistency, and the inclusion of environmental factors, establishing a more reliable model foundation for determining specific parameters and verifying "protein maturation in daughter cells" in future experiments.
+#### Integration of Wet-Lab Data and Model Validation
 
-## Model Usage Guide
+Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#Highlights — A-New-Paradigm-for-Synthetic-Biology-in-the-AI-Era) through [data from wet-lab experiment](#).
+
+- **Design (2025.08):**
+
+  Informed by the failures of Round 1, we initiated a redesigned DBTL cycle centered on computational prediction. We employed two independent pathways to converge on optimal parameters:
+
+  - Mechanistic Modeling: We refined the model structure to correct the identified biological inaccuracies. This included setting the Ash1 promoter pulse to occur near the end of the cell cycle and revising the protein inheritance logic to allow for near-complete transfer of immature protein to the daughter cell.
+
+  - AI-Assisted Reasoning: We prompted two large language models ([DeepSeek]([DeepSeek - 探索未至之境](https://chat.deepseek.com/)) and [Qwen]([Qwen](https://chat.qwen.ai/))) with the core design problem—optimizing a fluorescent timer for yeast lineage tracking—guiding them with biological first principles but without providing our model's interim results. This served as an independent validation of our design logic.
+
+- **Build (2025.08):**
+  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#Fast-FT-Time-Parameter-Calculation) and these data are later supported by our [wet-lab yeast experiments](#). This included:
+
+  - Using temperature-dependent maturation kinetics derived from [Q₁₀](#Fast-FT-Time-Parameter-Calculation) calculations to adjust Fast-FT[^1] times for 30°C.
+  - Adjusting the Ash1 promoter to express during the late M phase[^7] in our model to match biological evidence.
+  - Revising protein inheritance logic to allow immature C-state proteins to be almost fully transferred to daughter cells, and mature in the daughter cells produced after a cell division[^8].
+  
+- **Test (2025.08–09):**
+  The predictions of the refined model were subsequently tested through [wet-lab experiments](#). The results confirmed the computational forecasts:
+
+  - The experimentally observed blue-to-red transition timeline closely matched the model's prediction, providing a clear r(t) gradient.
+  - The chosen pulse width and promoter strength yielded a strong and distinguishable signal, enabling precise lineage tracking over multiple generations.
+  - The corrected inheritance logic was validated, as daughter cells showed the expected timing signal that was distinct from the mother cell's baseline.
+
+- **Learn (2025.10):**
+  The convergence between our [AI-augmented model predictions](#Highlights — A-New-Paradigm-for-Synthetic-Biology-in-the-AI-Era) and the [experimental outcomes](#) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
+
+## How to use our model
 
 This model provides a complete theoretical framework and computational implementation for simulating the dynamic behavior of fluorescent timer proteins (FT) in yeast cells. Through systematic parameter scanning and virtual experiments, users can optimize experimental designs, verify hypotheses, and predict potential outcomes before conducting actual wet-lab experiments. Below are the detailed usage guidelines:
 
-### 1. Basic Simulation: Single-cell Dynamics Analysis
+### 1. Basic Simulation: 
+
+#### Single-cell Dynamics Analysis
 
 **Use Case:** Understand the fundamental behavior of the timer within a single cell cycle and validate the core dynamics of the model.
 
@@ -547,7 +600,9 @@ R_red = out["R"]            # Red-state protein concentration
   - $B(t)$ should peak early and then decline, while $R(t)$ should show a delayed increase. This phase relationship is critical for the proper functioning of the timer.
   - Ensure the curve reaches a stable state within a reasonable time scale; premature saturation may limit the effective time window for the timer.
 
-### 2. Parameter Optimization: Pulse Width Screening Analysis
+### 2. Parameter Optimization: 
+
+#### Pulse Width Screening Analysis
 
 **Use Case:** Identify the optimal promoter expression window to achieve maximum temporal resolution and provide quantifiable guidelines for experimental design.
 
@@ -575,11 +630,13 @@ optimal_tau = max([tau for tau, dr in zip(tau_values, delta_r_results) if dr > t
   - $0.06 < \Delta r \leq 0.09$: Borderline, indicating a need for further parameter optimization or acceptance of lower temporal resolution.
   - $\Delta r \leq 0.06$: Undistinguishable, avoid using these parameter settings.
 
-### 3. Promoter Strategy Comparison: Periodic vs Constitutive Expression
+### 3. Promoter Strategy Comparison: 
+
+#### Periodic vs Constitutive Expression
 
 **Use Case:** Evaluate the impact of different expression strategies on timer performance and provide theoretical justification for promoter selection.
 
-The choice of expression strategy directly affects the core performance of the timer. Periodic promoters (such as ASH1) produce short bursts of expression at specific stages of the cell cycle, creating a clear "express-silence" alternating pattern that is beneficial for generating a sharp age gradient. In contrast, constitutive promoters express continuously throughout the cell cycle, producing new blue proteins constantly, which may "dilute" the changes in the red-to-blue ratio, reducing temporal resolution.
+The choice of expression strategy directly affects the core performance of the timer. Periodic promoters (such as Ash1) produce short bursts of expression at specific stages of the cell cycle, creating a clear "express-silence" alternating pattern that is beneficial for generating a sharp age gradient. In contrast, constitutive promoters express continuously throughout the cell cycle, producing new blue proteins constantly, which may "dilute" the changes in the red-to-blue ratio, reducing temporal resolution.
 
 By comparing the $\Delta r$ values, lineage heatmap patterns, and intergenerational behaviors under different strategies, users can gain an intuitive understanding of whether periodic promoters are more suitable for timer applications. This comparative analysis is valuable because it not only shows "which strategy is better," but also explains "why it is better," making it particularly useful for educational purposes or for explaining design choices to collaborators unfamiliar with synthetic biology.
 
@@ -594,10 +651,12 @@ By comparing the $\Delta r$ values, lineage heatmap patterns, and intergeneratio
 ```
 
 **Selection Recommendations:**
-  - **Periodic Promoters (ASH1):** Provide clear age signals and good intra-generational contrast, highly recommended for precise time-tracking applications.
+  - **Periodic Promoters (Ash1):** Provide clear age signals and good intra-generational contrast, highly recommended for precise time-tracking applications.
   - **Constitutive Promoters:** Provide smooth signals with lower temporal resolution, typically used as a negative control or for validating the advantages of periodic expression.
 
-### 4. Lineage Tracking Analysis: Multi-generational Cell Behavior Study
+### 4. Lineage Tracking Analysis: 
+
+#### Multi-generational Cell Behavior Study
 
 **Use Case:** Study the behavior of the timer across multiple generations, verify the inheritance logic, and assess the feasibility of long-term culture.
 
@@ -667,3 +726,6 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 [^3]: Penadés, J. R., Gottweis, J., He, L., Patkowski, J. B., Daryin, A., Weng, W.-H., Tu, T., Palepu, A., Myaskovsky, A., Pawlosky, A., Natarajan, V., Karthikesalingam, A., & Costa, T. R. D. (2025). AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution. *Cell, 188*(5), 1–12. DOI: 10.1016/j.cell.2025.08.018
 [^4]: Kutta, W. (1901). Beitrag zur näherungsweisen Integration totaler Differentialgleichungen. Teubner.
 [^5]: Butcher, J. C. (2000). Numerical methods for ordinary differential equations in the 20th century. Journal of Computational and Applied Mathematics, 125(1-2), 1-29. DOI: 10.1016/S0377-0427(00)00455-6
+[^6]: Di Talia, S., Skotheim, J. M., Bean, J. M., Siggia, E. D., & Cross, F. R. (2007). The effects of molecular noise and size control on variability in the budding yeast cell cycle. *Nature*, *448*(7156), 947–951. DOI: 10.1038/nature06072
+[^7]: Yu, Y., Yarrington, R. M., & Stillman, D. J. (2020). FACT and Ash1 promote long-range and bidirectional nucleosome eviction at the HO promoter. *Nucleic acids research*, *48*(19), 10877–10889. DOI: 10.1093/nar/gkaa819
+[^8]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
