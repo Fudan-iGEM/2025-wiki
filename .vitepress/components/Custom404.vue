@@ -42,21 +42,34 @@
       </div>
     </div>
     <!-- 错误信息 -->
-    <div class="error-title">404</div>
-    <Noise 
-    :pattern-refresh-interval="1" 
-    :pattern-alpha="25"
-    mix-blend-mode="multiply"
-    />
-    <div class="error-message">
-      Oops! The page you're looking for doesn't exist.
+    <div class="noise-layer">
+      <Noise
+        :pattern-refresh-interval="1"
+        :pattern-alpha="25"
+        mix-blend-mode="multiply"
+      />
     </div>
-    <!-- 返回按钮 -->
-     Please check <a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target=_blank>our promotion video</a>.<br>
-     <RainbowButton is="a" href="/" class="mt-4">Team Fudan</RainbowButton>
+    <div class="error-title">404</div>
+    <div class="error-cta">
+      <RainbowButton is="a" href="/" class="error-cta_button">Team Fudan</RainbowButton>
+    </div>
 
-
-
+    <div class="recommendation">
+      <p class="recommendation_label">Maybe you were looking for</p>
+      <div class="recommended-links">
+        <a
+          v-for="item in recommendedLinks"
+          :key="item.href"
+          class="recommended-card"
+          :href="item.href"
+        >
+          <span class="recommended-card_tag">{{ item.tag }}</span>
+          <span class="recommended-card_title">{{ item.title }}</span>
+          <span class="recommended-card_desc">{{ item.description }}</span>
+          <span class="recommended-card_arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+     </div>
   </div>
 </template>
 
@@ -69,6 +82,33 @@ import RainbowButton from './RainbowButton.vue'
 const svgContainer = ref(null)
 const svg404 = ref(null)
 let animationTimeline = null
+
+const recommendedLinks = [
+  {
+    href: '/project/',
+    title: 'Project Overview',
+    description: 'Understand the main idea and goals behind our 2025 project.',
+    tag: 'Project',
+  },
+  {
+    href: '/team/',
+    title: 'Meet the Team',
+    description: 'Get to know the students and mentors making this happen.',
+    tag: 'Team',
+  },
+  {
+    href: '/lab-notebook/',
+    title: 'Lab Notebook',
+    description: 'Follow our experimental journey week by week.',
+    tag: 'Notebook',
+  },
+  {
+    href: '/safety/',
+    title: 'Safety Strategy',
+    description: 'Learn how we keep our research safe and compliant.',
+    tag: 'Safety',
+  },
+]
 
 onMounted(() => {
   initAnimations()
@@ -205,12 +245,18 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: clamp(2.5rem, 6vw, 4rem) 1.5rem 2.75rem;
+  padding-top: calc(var(--vp-nav-height, 60px) + clamp(2.5rem, 6vw, 4rem));
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
 }
 
 /* SVG容器样式 */
 .svg-wrapper {
   margin-bottom: 0.2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .svg-container {
@@ -245,9 +291,10 @@ onUnmounted(() => {
   font-size: 3.75rem;
   font-weight: 700;
   background-clip: text;
-  margin-bottom: 4rem;
+  margin-bottom: clamp(1.5rem, 5vw, 3.5rem);
   text-shadow: 0 4px 20px rgba(0, 135, 148, 0.3);
   position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -262,6 +309,43 @@ onUnmounted(() => {
   color: #062570;
   margin-bottom: 2rem;
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.error-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  position: relative;
+  z-index: 1;
+  color: #062570;
+  text-align: center;
+}
+
+.error-cta_text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.error-cta_text a {
+  color: #0e9f99;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.error-cta_button {
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .error-cta_text {
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -271,18 +355,7 @@ onUnmounted(() => {
 }
 
 /* 返回按钮样式 */
-.back-button {
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, #008794 0%, #0e9f99 100%);
-  color: white;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  box-shadow: 0 10px 15px -3px rgba(0, 135, 148, 0.3), 0 4px 6px -2px rgba(0, 135, 148, 0.1);
-  font-size: 1.125rem;
-  font-weight: 500;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(93, 202, 198, 0.2);
-}
+
 
 .back-button:hover {
   background: linear-gradient(135deg, #0e9f99 0%, #5dcac6 100%);
@@ -312,13 +385,123 @@ svg {
   overflow: visible;
 }
 
-/* 为动画元素添加平滑过渡 */
 .foot, .tail-dot, .yellow-dot, .eye, .triangle, .eye-center, .eye-pupil {
   transform-origin: center center;
 }
 
-/* 葡萄元素保持静止 */
 .grape {
   transform-origin: center center;
+}
+
+.noise-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.noise-layer :deep(canvas) {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+.recommendation {
+  width: min(1080px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.recommendation_label {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(6, 37, 112, 0.7);
+}
+
+.recommended-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: clamp(1rem, 3vw, 1.75rem);
+  position: relative;
+  z-index: 1;
+}
+
+.recommended-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(233, 248, 247, 0.92));
+  border: 1px solid rgba(93, 202, 198, 0.25);
+  box-shadow: 0 12px 30px -12px rgba(0, 135, 148, 0.35);
+  text-decoration: none;
+  color: #062570;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.recommended-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px -12px rgba(0, 135, 148, 0.4);
+  border-color: rgba(14, 159, 153, 0.45);
+}
+
+.recommended-card_tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(6, 37, 112, 0.56);
+}
+
+.recommended-card_title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.recommended-card_desc {
+  font-size: 0.95rem;
+  color: rgba(6, 37, 112, 0.72);
+  line-height: 1.45;
+}
+
+.recommended-card_arrow {
+  font-size: 1.4rem;
+  margin-left: auto;
+  opacity: 0.65;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.recommended-card:hover .recommended-card_arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+@media (max-width: 960px) {
+  .recommended-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .recommendation {
+    width: min(620px, 100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .recommendation {
+    width: 100%;
+  }
+
+  .recommended-links {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 </style>
