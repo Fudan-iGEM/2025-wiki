@@ -41,16 +41,17 @@ The color change reflects the time elapsed since the cell's birth.
 
 This model is based on the following experimental settings:
 
-- Cell cycle: approximately 87 minutes[^6] (source: [BioNumbers]([Average total cell cycle period for haploid m - Budding yeast Saccharomyces ce - BNID 104360](https://bionumbers.hms.harvard.edu/bionumber.aspx?id=104360&ver=15)));
+- Cell cycle: approximately 87 minutes[^6] (source: [BioNumbers](https://bionumbers.hms.harvard.edu/bionumber.aspx?id=104360&ver=15));
 - Fluorescent protein: *Fast-FT*[^1] is selected;
 - Expression trigger: using a single pulse (based on the later comparison of periodic and constitutive promoters).
 
 ## Parameters
 
-<div style="text-align: center;">
+<div style="text-align: left;">
         <span style="color:gray">Table 1.Parameters for the model</span>
         <br>
     </div>
+
 
 | **Parameter** | **Meaning**                                | **Default Value**       | **Unit** |
 | ------------------- | ---------------------------------------------- | -------------------------------- | -------- |
@@ -516,7 +517,7 @@ In summary, the model successfully validates the importance of **periodic promot
 
 To systematically improve our model, we adopted the Design–Build–Test–Learn (DBTL) cycle, a core methodology in synthetic biology. This iterative process allowed us to refine model parameters and mechanisms based on both literature and values obtained from our own wet-lab experiments. Below, we describe two rounds of DBTL cycles that led to the current robust model.
 
-### Round1 DBTL:
+### Round1 DBTL
 
 #### Literature-Based Initial Model and Identification of Gaps
 
@@ -531,7 +532,7 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 - **Learn (2025.07):**
   We identified that in vitro data did not account for cellular factors like translation delays, chaperone interactions, and metabolic context. This highlighted the need for intracellular-specific parameters and better alignment with yeast physiology. Additionally, the promoter expression timing and protein inheritance logic required biological validation from our [wet-lab experiments](#).
 
-### Round2 DBTL:
+### Round2 DBTL
 
 #### Integration of Wet-Lab Data and Model Validation
 
@@ -543,7 +544,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
 
   - Mechanistic Modeling: We refined the model structure to correct the identified biological inaccuracies. This included setting the Ash1 promoter pulse to occur near the end of the cell cycle and revising the protein inheritance logic to allow for near-complete transfer of immature protein to the daughter cell.
 
-  - AI-Assisted Reasoning: We prompted two large language models ([DeepSeek]([DeepSeek - 探索未至之境](https://chat.deepseek.com/)) and [Qwen]([Qwen](https://chat.qwen.ai/))) with the core design problem—optimizing a fluorescent timer for yeast lineage tracking—guiding them with biological first principles but without providing our model's interim results. This served as an independent validation of our design logic.
+  - AI-Assisted Reasoning: We prompted two large language models ([DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/)) with the core design problem—optimizing a fluorescent timer for yeast lineage tracking—guiding them with biological first principles but without providing our model's interim results. This served as an independent validation of our design logic.
 
 - **Build (2025.08):**
   Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#Fast-FT-Time-Parameter-Calculation) and these data are later supported by our [wet-lab yeast experiments](#). This included:
@@ -566,7 +567,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
 
 This model provides a complete theoretical framework and computational implementation for simulating the dynamic behavior of fluorescent timer proteins (FT) in yeast cells. Through systematic parameter scanning and virtual experiments, users can optimize experimental designs, verify hypotheses, and predict potential outcomes before conducting actual wet-lab experiments. Below are the detailed usage guidelines:
 
-### 1. Basic Simulation: 
+### 1. Basic Simulation
 
 #### Single-cell Dynamics Analysis
 
@@ -600,7 +601,7 @@ R_red = out["R"]            # Red-state protein concentration
   - $B(t)$ should peak early and then decline, while $R(t)$ should show a delayed increase. This phase relationship is critical for the proper functioning of the timer.
   - Ensure the curve reaches a stable state within a reasonable time scale; premature saturation may limit the effective time window for the timer.
 
-### 2. Parameter Optimization: 
+### 2. Parameter Optimization
 
 #### Pulse Width Screening Analysis
 
@@ -630,7 +631,7 @@ optimal_tau = max([tau for tau, dr in zip(tau_values, delta_r_results) if dr > t
   - $0.06 < \Delta r \leq 0.09$: Borderline, indicating a need for further parameter optimization or acceptance of lower temporal resolution.
   - $\Delta r \leq 0.06$: Undistinguishable, avoid using these parameter settings.
 
-### 3. Promoter Strategy Comparison: 
+### 3. Promoter Strategy Comparison
 
 #### Periodic vs Constitutive Expression
 
@@ -654,7 +655,7 @@ By comparing the $\Delta r$ values, lineage heatmap patterns, and intergeneratio
   - **Periodic Promoters (Ash1):** Provide clear age signals and good intra-generational contrast, highly recommended for precise time-tracking applications.
   - **Constitutive Promoters:** Provide smooth signals with lower temporal resolution, typically used as a negative control or for validating the advantages of periodic expression.
 
-### 4. Lineage Tracking Analysis: 
+### 4. Lineage Tracking Analysis
 
 #### Multi-generational Cell Behavior Study
 
