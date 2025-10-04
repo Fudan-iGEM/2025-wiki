@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from "vitepress";
-import { computed, watch, onMounted, nextTick } from "vue";
+import { computed, watch, onMounted, nextTick, ref, onUnmounted } from "vue";
 import { useData } from "vitepress/dist/client/theme-default/composables/data.js";
 
 import TitleInfo from "./TitleInfo.vue";
@@ -19,6 +19,12 @@ const hasAside = computed(() => {
          !route.path.includes('/proof-of-concept') ;
 });
 const leftAside = computed(() => true); 
+
+const isMobile = ref(false);
+let resizeTimer: number | null = null;
+
+const showDesktopTOC = computed(() => hasAside.value && !isMobile.value);
+const showMobileTOC = computed(() => hasAside.value && isMobile.value);
 
 const pageName = computed(() => route.path.replace(/[./]+/g, "_").replace(/_html$/, ""));
 const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.jpg");
@@ -89,10 +95,21 @@ const processContent = () => {
 
 // 监听路由变化和内容更新
 onMounted(() => {
+  updateViewportState();
+  window.addEventListener('resize', handleResize);
+
   // 延迟执行，确保内容已完全渲染
   setTimeout(() => {
     processContent();
   }, 100);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+  if (resizeTimer) {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = null;
+  }
 });
 
 // 路由切换后强制重新处理内容
@@ -110,6 +127,19 @@ watch(
     }, 100);
   }
 );
+
+function updateViewportState() {
+  isMobile.value = window.matchMedia('(max-width: 900px)').matches;
+}
+
+function handleResize() {
+  if (resizeTimer) {
+    window.clearTimeout(resizeTimer);
+  }
+  resizeTimer = window.setTimeout(() => {
+    updateViewportState();
+  }, 200);
+}
 </script>
 
 <template>
@@ -164,7 +194,7 @@ watch(
 
     <div class="container">
       <!-- TOC Bar (left sidebar) with improved styling -->
-      <div v-if="hasAside" class="aside" :class="{ 'left-aside': leftAside }">
+      <div v-if="showDesktopTOC" class="aside" :class="{ 'left-aside': leftAside }">
         <div class="aside-curtain" />
         <div class="aside-container">
           <div class="aside-content">
@@ -202,6 +232,7 @@ watch(
     <div class="page-bottom-spacing"></div>
 
     <slot name="doc-bottom" />
+    <CustomTOC v-if="showMobileTOC" />
   </div>
 </template>
 

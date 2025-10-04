@@ -1,25 +1,55 @@
 <template>
-  <div class="custom-toc">
-    <ul class="toc-list">
-      <li
-        v-for="(heading, index) in headings"
-        :key="index"
-        class="toc-item"
-        :class="{ 'h3-item': heading.level === 3 }"
+  <div
+    class="custom-toc"
+    :class="{ 'is-mobile': isMobile, open: isPanelOpen && headings.length }"
+  >
+    <button
+      v-if="isMobile && headings.length"
+      type="button"
+      class="toc-toggle"
+      :aria-expanded="isPanelOpen"
+      :aria-controls="panelId"
+      @click="togglePanel"
+    >
+      <span class="sr-only">{{ isPanelOpen ? 'Hide table of contents' : 'Show table of contents' }}</span>
+      <span class="toggle-icon" aria-hidden="true">
+        <span v-if="isPanelOpen">×</span>
+        <span v-else>TOC</span>
+      </span>
+    </button>
+
+    <transition name="toc-panel">
+      <div
+        v-if="(!isMobile || isPanelOpen) && headings.length"
+        :id="panelId"
+        class="toc-panel"
       >
-        <a
-          :href="`#${heading.id}`"
-          class="toc-link"
-          :class="{ active: heading.isActive }"
-          @click.prevent="scrollToHeading(heading.id)"
-        >
-          <span v-if="heading.level === 2" class="h2-marker"></span>
-          <span v-else class="h3-marker"></span>
-          {{ heading.text }}
-        </a>
-      </li>
-    </ul>
-    <div v-if="headings.length === 0" class="no-headings">
+        <ul class="toc-list">
+          <li
+            v-for="(heading, index) in headings"
+            :key="index"
+            class="toc-item"
+            :class="{ 'h3-item': heading.level === 3 }"
+          >
+            <a
+              :href="`#${heading.id}`"
+              class="toc-link"
+              :class="{ active: heading.isActive }"
+              @click.prevent="scrollToHeading(heading.id)"
+            >
+              <span v-if="heading.level === 2" class="h2-marker"></span>
+              <span v-else class="h3-marker"></span>
+              {{ heading.text }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </transition>
+
+    <div
+      v-if="(!isMobile || isPanelOpen) && !headings.length"
+      class="toc-panel no-headings"
+    >
       No headers found on this page
     </div>
   </div>
@@ -32,19 +62,31 @@ import { useRoute } from "vitepress";
 const headings = ref([]);
 const observer = ref(null);
 const route = useRoute();
+const isMobile = ref(false);
+const isPanelOpen = ref(false);
+const panelId = "custom-toc-panel";
+let resizeTimer = null;
 
 onMounted(() => {
+  updateViewportState();
+  isPanelOpen.value = isMobile.value ? false : true;
+
   // Give the page content time to render fully
   setTimeout(() => {
     updateHeadings();
     initIntersectionObserver();
-    window.addEventListener("resize", handleResize);
   }, 300);
+
+  window.addEventListener("resize", handleResize);
 });
 
 onUnmounted(() => {
   if (observer.value) {
     observer.value.disconnect();
+  }
+  if (resizeTimer) {
+    clearTimeout(resizeTimer);
+    resizeTimer = null;
   }
   window.removeEventListener("resize", handleResize);
 });
@@ -57,16 +99,35 @@ watch(
     setTimeout(() => {
       updateHeadings();
       initIntersectionObserver();
+      if (isMobile.value) {
+        isPanelOpen.value = false;
+      }
     }, 500);
   }
 );
 
+watch(isMobile, (mobile) => {
+  isPanelOpen.value = mobile ? false : true;
+});
+
+function togglePanel() {
+  isPanelOpen.value = !isPanelOpen.value;
+}
+
 function handleResize() {
   // Debounce the resize handling
-  clearTimeout(window.resizeTimer);
-  window.resizeTimer = setTimeout(() => {
+  if (resizeTimer) {
+    clearTimeout(resizeTimer);
+  }
+  resizeTimer = setTimeout(() => {
+    updateViewportState();
     updateHeadings();
   }, 200);
+}
+
+function updateViewportState() {
+  const mobile = window.matchMedia("(max-width: 900px)").matches;
+  isMobile.value = mobile;
 }
 
 function updateHeadings() {
@@ -159,6 +220,10 @@ function scrollToHeading(id) {
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: "smooth" });
+
+    if (isMobile.value) {
+      isPanelOpen.value = false;
+    }
   }
 }
 </script>
@@ -168,6 +233,109 @@ function scrollToHeading(id) {
   width: 100%;
   position: relative;
   /* 简化结构，直接展示内容 */
+}
+
+.custom-toc.is-mobile {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  width: auto;
+  max-width: min(80vw, 320px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  z-index: 990;
+}
+
+.toc-panel {
+  width: 100%;
+  border-radius: 16px;
+  background: transparent;
+  padding: 0;
+}
+
+.custom-toc.is-mobile .toc-panel {
+  order: -1;
+  position: relative;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  padding: 1.1rem 1.1rem 1.3rem;
+  border-radius: 20px;
+  box-shadow: 0 18px 34px rgba(0, 135, 148, 0.12);
+  border: 1px solid rgba(0, 135, 148, 0.18);
+  max-height: min(70vh, 420px);
+  overflow-y: auto;
+}
+
+.custom-toc:not(.is-mobile) .toc-panel {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.toc-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #d7f5f6 100%);
+  color: #008794;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 135, 148, 0.2);
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.toc-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(0, 135, 148, 0.28);
+}
+
+.toc-toggle:active {
+  transform: scale(0.96);
+}
+
+.custom-toc.open .toc-toggle {
+  background: linear-gradient(135deg, #bff1f3 0%, #7edcd9 100%);
+  box-shadow: 0 16px 30px rgba(0, 135, 148, 0.28);
+  color: #036d74;
+}
+
+.toggle-icon {
+  font-size: 0.82rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-icon span {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.custom-toc.open .toggle-icon span {
+  font-size: 1.1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .toc-list {
@@ -289,7 +457,7 @@ function scrollToHeading(id) {
 .toc-link.active .h3-marker {
   border-color: #008794;
   background: rgba(0, 135, 148, 0.3);
-    box-shadow: 0 0 8px rgba(0, 135, 148, 0.3);
+  box-shadow: 0 0 8px rgba(0, 135, 148, 0.3);
 }
 
 .no-headings {
@@ -312,5 +480,16 @@ function scrollToHeading(id) {
     padding: 5px 8px;
     font-size: 0.9rem;
   }
+}
+
+:deep(.toc-panel-enter-active),
+:deep(.toc-panel-leave-active) {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+:deep(.toc-panel-enter-from),
+:deep(.toc-panel-leave-to) {
+  opacity: 0;
+  transform: translateY(14px) scale(0.96);
 }
 </style>
