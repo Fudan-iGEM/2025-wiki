@@ -8,7 +8,7 @@ authors:
     url: /fudan/team/#Yue
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+heroImage: （拍摄并且选取页面图像，作为顶部展示）
 description: On this page, we describe a model of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
 ---
 
@@ -259,7 +259,7 @@ def f(t: float, y: np.ndarray) -> np.ndarray:
 
 Only the immature C-state protein is inherited, while B, I, and R are not inherited. The initial conditions for daughter cells are:
 $$
-C_{\text{子细胞}}(0) = C_{\text{母细胞}}(\text{分裂时}) \times inherit_{frac,C}, \quad B_{\text{子细胞}}(0) = 0,\quad I_{\text{子细胞}}(0) = 0, \quad R_{\text{子细胞}}(0) = 0
+C_{\text{daughter cell}}(0) = C_{\text{mother cell}}(\text{at division}) \times inherit_{frac,C}, \quad B_{\text{daughter cell}}(0) = 0, \quad I_{\text{daughter cell}}(0) = 0, \quad R_{\text{daughter cell}}(0) = 0
 $$
 
 ```python
@@ -497,11 +497,11 @@ To further validate the robustness and generalizability of our model, we leverag
 Remarkably, the answers provided by both AI models converged with the key conclusions drawn from our mathematical model, reinforcing the credibility of our findings. The models independently highlighted the following optimal choices:
 
 1. Fast-FT as the preferred timer variant, aligning with our analysis of maturation times relative to the yeast cell cycle (~87 minutes).
-2. A periodic promoter strategy, exemplified by the Ash1 promoter, which naturally expresses during late in the cell cycle and enables precise "timestamping" of daughter cells at division.
+2. A periodic promoter strategy, exemplified by the Ash1 promoter, which naturally expresses during the late M phase[^7] and enables precise "timestamping" of daughter cells at division.
 3. The necessity for short pulse widths (≈10–15 min), which ensures optimal temporal resolution within a single cell cycle.
 4. A medium-strength promoter, which provides the best balance between signal intensity and biological burden, ensuring reliable signal detection without saturating the fluorescence detectors.
 
-This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful reasoning partner in hypothesis-driven research. [^3]Notably, the use of models like [DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/), with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology.
+This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful reasoning partner in hypothesis-driven research. [^3]Notably, the use of models like [DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/), with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology. However, this is not a one-size-fits-all AI solution, but one use case demonstrating its value in targeted validation.
 
 The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#code-and-data-accessibility).
 
@@ -517,7 +517,7 @@ In summary, the model successfully validates the importance of periodic promoter
 
 To systematically improve our model, we adopted the Design–Build–Test–Learn (DBTL) cycle, a core methodology in synthetic biology. This iterative process allowed us to refine model parameters and mechanisms based on both literature and values obtained from our own wet-lab experiments. Below, we describe two rounds of DBTL cycles that led to the current robust model.
 
-### Round1 DBTL
+### DBTL Round1
 
 #### Literature-Based Initial Model and Identification of Gaps
 
@@ -532,13 +532,13 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 - **Learn (2025.07):**
   We identified that in vitro data did not account for cellular factors like translation delays, chaperone interactions, and metabolic context. This highlighted the need for intracellular-specific parameters and better alignment with yeast physiology. Additionally, the promoter expression timing and protein inheritance logic required biological validation from our [wet-lab experiments](#).
 
-### Round2 DBTL
+### DBTL Round2
 
 #### Integration of Wet-Lab Data and Model Validation
 
 Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiment](#).
 
-- **Design (2025.08):**
+- **Design (2025.07-08):**
 
   Informed by the failures of Round 1, we initiated a redesigned DBTL cycle centered on computational prediction. We employed two independent pathways to converge on optimal parameters:
 
