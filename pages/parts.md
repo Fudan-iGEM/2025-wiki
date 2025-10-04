@@ -20,11 +20,11 @@ End-of-CmR      5-gcttaatgaattacaacagtactgcg-3
 BR322ori-F      5-gggaaacgcctggtatcttt-3
 t0terminator_R  5-ttcagaacgctcggttgcc-3</pre>
 
-All of our Golden Gate assembled plasmids, were verified by restriction enzyme digestion ([NotI](https://www.neb.com/en/products/r3189-noti-hf) or [HindIII](https://www.neb.com/en/products/r3104-hindiii-hf)) and whole-plasmid sequencing.
+All of our [Golden Gate](/experiments.html#golden-gate-assembly) assembled plasmids, were verified by restriction enzyme digestion ([NotI](https://www.neb.com/en/products/r3189-noti-hf) or [HindIII](https://www.neb.com/en/products/r3104-hindiii-hf)) and whole-plasmid sequencing.
 
 Our favourite parts are BBa_25
 
-This part
+This part xxxx
 
 Please visit our [Improve](/improve/) page for parts we improved this year.
 
