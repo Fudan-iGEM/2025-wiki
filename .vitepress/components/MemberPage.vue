@@ -41,7 +41,7 @@ const teamMembers = [
     contactText: "Detail", 
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp",
-    description: "Hello everyone! I'm from the School of Stomatology. It's a pleasure to be part of iGEM Fudan 2025, where I contributed to the Part-related work. In my daily life, I'm a big fan of movies, comics, and novels. I'm always excited to meet new friends — let's explore the wonders of both biology and life together!"
+    description: "Hello everyone! I'm from the School of Stomatology. It's a pleasure to be part of Fudan iGEM 2025, where I contributed to the Part-related work. In my daily life, I'm a big fan of movies, comics, and novels. I'm always excited to meet new friends — let's explore the wonders of both biology and life together!"
   },
   {
     name: "Yufan Han",
@@ -100,8 +100,7 @@ const teamMembers = [
     status: "ENTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy-a.webp",
-    description: "Develops and maintains our custom laboratory equipment and automation systems. I love building things and solving practical engineering challenges. In my free time, I race remote-controlled cars and tinker with electronics."
+    barAvatarUrl: "Hi everyone! My name is Zuyao, you can also call me Sophie. I'm studying clinical medicine and I’m really interested in the topic of life on earth. In our team, I’m mainly responsible for design and experiments. I love to explore new things, reach out to new areas and try to put ideas into practice. Let us find the treasures in life and be the first to stand in line!"
   },
   {
     name: "Jihua Tang",

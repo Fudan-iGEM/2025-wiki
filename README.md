@@ -31,6 +31,8 @@ The static site output is generated in `.vitepress/dist`.
 - Page authorship is tracked in `written-by.md`.
 - Unless otherwise noted, the content of this repository is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 - iGEM and iGEM Foundation are trademarks of the iGEM Foundation; all third-party trademarks are the property of their respective owners.
+- We placed the source code of our model inside the `model` folder.
 
 ----
-`Code by: Yufan Han`
+`Wiki Code by: Yufan Han
+Model by: Jihua Tang`

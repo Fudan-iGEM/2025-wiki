@@ -289,16 +289,12 @@ To address this, we placed *BAX* under the control of an inducible Tet2 promoter
 To protect researchers during laboratory work, we avoided the use of hazardous reagents such as **phenol-chloroform**. These chemicals are toxic and pose serious health risks, including carcinogenicity and central nervous system depression through inhalation. By eliminating their use, we reduce potential harm to experimenters.
 
 
+## Alignment with iGEM's Safety Recommendations
 
-## Alignment with iGEM Medal Criteria
+- We have applied a systems-thinking approach to lab safety
+- We used homologous recombination to stably integrate DNA fragment into desinated loci of the yeast genome, and all mistargeted yeast strains were discarded, reducing risks of genetic leakage and horizontal transfer
+- We ensured all members completed lab safety training before any wet-lab experiment
 
-| Evaluation Criteria                                          | Our Implementation                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1. Did the team make a contribution to biosafety and/or biosecurity?** | - We developed a comprehensive safety training program  <br>- Applied a systems-thinking approach to lab safety  <br>- Designed multilayered genetic safeguard circuits |
-| **2. Is their contribution well-characterized and/or well-validated?** | We used Golden Gate Assembly to stably integrate plasmids into the yeast genome, reducing risks of genetic leakage and horizontal transfer |
-| **3. Did the team build upon existing knowledge, understanding, tools or approaches?** | We combined insights from the literature, established biocontainment systems, and past iGEM practices to design robust, multilayered safety strategies |
-| **4. In addition to broader safety work, has the team managed risks from their own project appropriately?** | - We ensured all members completed and documented lab safety training  <br>- We favored genomic integration over plasmid systems  <br>- Engineered auxotrophic yeast strains for added containment |
-| **5. Has the team addressed the use of synthetic biology in the real world?** | - Explored the role of nuclease-based kill switches and multilayered containment in the context of environmental release  <br>- Framed lab safety evaluation using a systems-level perspective, making it more accessible and applicable |
 
 ## Reference
 
