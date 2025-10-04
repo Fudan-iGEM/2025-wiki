@@ -526,11 +526,9 @@ Structural change is hard, but it begins with localized, lived efforts of inclus
 
 [^7]: Photovoice.org. (n.d.). Participatory photography. Retrieved October 26, 2023, from https://photovoice.org/participatoryphotography/
 
-### Additional References
-
 [^8]: The landscape for rare diseases in 2024. (2024). *The Lancet Global Health*, *12*(3), e341.
 
-[^9]: NIHR. (2024, April). Starting Out Guide - Why and how to get involved in research. Retrieved from https://www.hra.nhs.uk/planning-and-improving-research/best-practice/public-involvement/resources/ (Accessed on: 2025/10/4)
+[^9]: NIHR. 2024, April. Starting Out Guide - Why and how to get involved in research. Retrieved from https://www.hra.nhs.uk/planning-and-improving-research/best-practice/public-involvement/resources/ (Accessed on: 2025/10/4)
 
 [^10]: Gao, H., & Chen, J. (2025). Sinicization of the Quality of Life Evaluation in Epidermolysis Bullosa and its reliability and validity test. *Nursing Research*, *39*(5).
 
