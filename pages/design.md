@@ -195,7 +195,7 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 
 To study its stability and performance in different genomic environments., we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes (with the recorder replacing *ACE2* on chromosome 12). For this iteration, we no longer relied on EMS mutagenesis. Instead, we used long-term cultivation and selective pressure to induce the natural evolution of the strain to a diploid state. By utilizing FACS analysis, we were able to track changes in fluorescence over a period of seven days or more, allowing us to reconstruct the population's dynamics like reading a flight recorder.
 
-
+<ChromosomeVisualization />
 
 ## YeastVerse: Our Virtual Experiment Platform
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonial-slider">
+  <div class="testimonial-slider" data-skip-content-processing>
     <div class="slider-figure">
       <div class="slider-glow">
         <div class="slider-image-mask">

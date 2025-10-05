@@ -1,5 +1,5 @@
 <template>
-  <div class="chromosome-visualization">
+  <div class="chromosome-visualization" data-skip-content-processing>
     <!-- Simple Header -->
     <div class="header">
       <h3 class="title">Saccharomyces cerevisiae Genome</h3>
@@ -437,7 +437,10 @@ function formatLength(length) {
 }
 
 function showTooltip(event, chromosome, type) {
-  const rect = event.target.getBoundingClientRect()
+  const target = event.currentTarget || event.target
+  if (!target) return
+
+  const rect = target.getBoundingClientRect()
   
   // 使用固定定位，直接使用viewport坐标
   tooltip.x = rect.left + rect.width / 2
@@ -717,10 +720,16 @@ function hideTooltip() {
   font-family: 'Inter', sans-serif;
 }
 
-/* 确保可交互元素能够接收鼠标事件 */
-.chromosome-svg circle,
-.chromosome-svg polygon {
-  pointer-events: auto;
+/* Ensure decorative shapes do not block the transparent interactive markers */
+.chromosome-svg .insertion-shape,
+.chromosome-svg .ace2-shape,
+.chromosome-svg .pointer-events-none {
+  pointer-events: none;
+}
+
+.chromosome-svg .insertion-shape,
+.chromosome-svg .ace2-shape {
+  transition: fill 0.2s ease;
 }
 
 .interactive-marker {
@@ -728,10 +737,10 @@ function hideTooltip() {
 }
 
 .interactive-marker:hover ~ .insertion-shape {
-  fill: #0f766e; /* hover:fill-teal-600 */
+  fill: #0a8d94;
 }
 
 .interactive-marker:hover ~ .ace2-shape {
-  fill: #c2410c; /* hover:fill-orange-600 */
+  fill: #d16821;
 }
 </style>

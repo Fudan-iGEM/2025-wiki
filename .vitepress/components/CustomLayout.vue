@@ -29,67 +29,129 @@ const showMobileTOC = computed(() => hasAside.value && isMobile.value);
 const pageName = computed(() => route.path.replace(/[./]+/g, "_").replace(/_html$/, ""));
 const heroImage = computed(() => frontmatter.value.heroImage || "/default-hero.jpg");
 
+// 需要排除动态组件的选择器
+const skipProcessingSelector = '[data-skip-content-processing]';
+const commonLatinPatterns = /^(Escherichia coli|Bacillus subtilis|Saccharomyces cerevisiae|Arabidopsis thaliana|Drosophila melanogaster|Caenorhabditis elegans|Mus musculus|Homo sapiens|Rattus norvegicus|Danio rerio|Xenopus laevis|Gallus gallus|Bos taurus|Sus scrofa|Ovis aries|Capra hircus|Equus caballus|Canis familiaris|Felis catus|Macaca mulatta|Pan troglodytes|Gorilla gorilla|Pongo pygmaeus|Chlorella vulgaris|Spirulina platensis|Pseudomonas aeruginosa|Staphylococcus aureus|Streptococcus pyogenes|Mycobacterium tuberculosis|Salmonella enterica|Vibrio cholerae|Clostridium botulinum|Listeria monocytogenes|Campylobacter jejuni|Helicobacter pylori|Neisseria gonorrhoeae|Treponema pallidum|Borrelia burgdorferi|Plasmodium falciparum|Trypanosoma brucei|Leishmania major|Toxoplasma gondii|Candida albicans|Aspergillus niger|Penicillium chrysogenum|Neurospora crassa|Schizosaccharomyces pombe|Pichia pastoris|Kluyveromyces lactis|Yarrowia lipolytica|Trichoderma reesei|Fusarium graminearum|Magnaporthe oryzae|Ustilago maydis|Cryptococcus neoformans|Pneumocystis jirovecii)$/i;
+
+type PatternHandler = (match: string, ...groups: string[]) => string;
+
 // 内容处理函数
 const processContent = () => {
   nextTick(() => {
     const contentElement = document.querySelector('.vp-doc');
     if (!contentElement || contentElement.hasAttribute('data-processed')) return;
-    
-    // 标记为已处理，避免重复处理
-    contentElement.setAttribute('data-processed', 'true');
 
-    try {
-      // 直接处理innerHTML，更安全高效
-      let html = contentElement.innerHTML;
-      let hasChanges = false;
+    const skipTags = new Set(['A', 'CODE', 'PRE', 'SCRIPT', 'STYLE']);
 
-      // 1. BBa_25开头的文本 -> 自动链接
-      const bbaRegex = /(?<!<[^>]*?)BBa_25[A-Za-z0-9]+(?![^<]*?>)/g;
-      if (bbaRegex.test(html)) {
-        hasChanges = true;
-        html = html.replace(bbaRegex, (match) => {
+    const patterns: { regex: RegExp; handler: PatternHandler }[] = [
+      {
+        regex: /BBa_25[A-Za-z0-9]+/g,
+        handler: (match: string) => {
           const lowercaseMatch = match.toLowerCase().replace('_', '-');
           return `<a href="https://registry.igem.org/parts/${lowercaseMatch}" target="_blank" rel="noopener noreferrer">${match}</a>`;
-        });
-      }
-
-      // 2. DOI格式 -> 自动链接
-      const doiRegex = /(?<!<[^>]*?)(?:doi:|DOI:)?\s*(10\.\d+\/[^\s<]+)(?![^<]*?>)/g;
-      if (doiRegex.test(html)) {
-        hasChanges = true;
-        html = html.replace(doiRegex, (match, doi) => {
-          return `<a href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI: ${doi}</a>`;
-        });
-      }
-
-      // 3. PMID格式 -> 自动链接
-      const pmidRegex = /(?<!<[^>]*?)PMID:\s*(\d+)(?![^<]*?>)/g;
-      if (pmidRegex.test(html)) {
-        hasChanges = true;
-        html = html.replace(pmidRegex, (match, pmid) => {
-          return `<a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank" rel="noopener noreferrer">PMID: ${pmid}</a>`;
-        });
-      }
-
-      // 4. 学名斜体
-      const scientificNameRegex = /(?<!<[^>]*?)(?<!<em>)\b([A-Z][a-z]+ [a-z]+)\b(?![^<]*?>)(?!<\/em>)/g;
-      const commonLatinPatterns = /^(Escherichia coli|Bacillus subtilis|Saccharomyces cerevisiae|Arabidopsis thaliana|Drosophila melanogaster|Caenorhabditis elegans|Mus musculus|Homo sapiens|Rattus norvegicus|Danio rerio|Xenopus laevis|Gallus gallus|Bos taurus|Sus scrofa|Ovis aries|Capra hircus|Equus caballus|Canis familiaris|Felis catus|Macaca mulatta|Pan troglodytes|Gorilla gorilla|Pongo pygmaeus|Chlorella vulgaris|Spirulina platensis|Pseudomonas aeruginosa|Staphylococcus aureus|Streptococcus pyogenes|Mycobacterium tuberculosis|Salmonella enterica|Vibrio cholerae|Clostridium botulinum|Listeria monocytogenes|Campylobacter jejuni|Helicobacter pylori|Neisseria gonorrhoeae|Treponema pallidum|Borrelia burgdorferi|Plasmodium falciparum|Trypanosoma brucei|Leishmania major|Toxoplasma gondii|Candida albicans|Aspergillus niger|Penicillium chrysogenum|Neurospora crassa|Schizosaccharomyces pombe|Pichia pastoris|Kluyveromyces lactis|Yarrowia lipolytica|Trichoderma reesei|Fusarium graminearum|Magnaporthe oryzae|Ustilago maydis|Cryptococcus neoformans|Pneumocystis jirovecii)$/i;
-      
-      html = html.replace(scientificNameRegex, (match, name) => {
-        if (commonLatinPatterns.test(name)) {
-          hasChanges = true;
-          return `<em>${name}</em>`;
         }
-        return match;
-      });
-
-      // 如果有变化，更新内容
-      if (hasChanges) {
-        contentElement.innerHTML = html;
+      },
+      {
+        regex: /(?:doi:|DOI:)?\s*(10\.\d+\/[^\s<]+)/g,
+        handler: (_match: string, doi: string) => {
+          return `<a href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI: ${doi}</a>`;
+        }
+      },
+      {
+        regex: /PMID:\s*(\d+)/g,
+        handler: (_match: string, pmid: string) => {
+          return `<a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank" rel="noopener noreferrer">PMID: ${pmid}</a>`;
+        }
+      },
+      {
+        regex: /\b([A-Z][a-z]+ [a-z]+)\b/g,
+        handler: (match: string, name: string) => {
+          if (commonLatinPatterns.test(name)) {
+            return `<em>${match}</em>`;
+          }
+          return match;
+        }
       }
+    ];
+
+    try {
+      const walker = document.createTreeWalker(
+        contentElement,
+        NodeFilter.SHOW_TEXT,
+        {
+          acceptNode(node) {
+            if (!node?.textContent || !node.textContent.trim()) {
+              return NodeFilter.FILTER_REJECT;
+            }
+
+            const parentElement = node.parentElement;
+            if (!parentElement) {
+              return NodeFilter.FILTER_REJECT;
+            }
+
+            if (parentElement.closest(skipProcessingSelector)) {
+              return NodeFilter.FILTER_REJECT;
+            }
+
+            let ancestor: HTMLElement | null = parentElement;
+            while (ancestor && ancestor !== contentElement) {
+              if (skipTags.has(ancestor.tagName) || ancestor.classList.contains('vp-code')) {
+                return NodeFilter.FILTER_REJECT;
+              }
+              ancestor = ancestor.parentElement;
+            }
+
+            return NodeFilter.FILTER_ACCEPT;
+          }
+        }
+      );
+
+      const textNodes: Text[] = [];
+      while (walker.nextNode()) {
+        const current = walker.currentNode;
+        if (current && current.nodeType === Node.TEXT_NODE) {
+          textNodes.push(current as Text);
+        }
+      }
+
+      textNodes.forEach((textNode) => {
+        const originalText = textNode.nodeValue;
+        if (!originalText) return;
+
+        let transformedText = originalText;
+        let hasChanged = false;
+
+        patterns.forEach(({ regex, handler }) => {
+          transformedText = transformedText.replace(regex, (...args) => {
+            const match = args[0] as string;
+            const lastArg = args[args.length - 1];
+            const hasGroupsObject = typeof lastArg === 'object' && lastArg !== null;
+            const captures = hasGroupsObject
+              ? (args.slice(1, -3) as string[])
+              : (args.slice(1, -2) as string[]);
+            const result = handler(match, ...captures);
+            if (result !== match) {
+              hasChanged = true;
+            }
+            return result;
+          });
+        });
+
+        if (hasChanged && textNode.parentNode) {
+          const temp = document.createElement('span');
+          temp.innerHTML = transformedText;
+          const fragment = document.createDocumentFragment();
+          while (temp.firstChild) {
+            fragment.appendChild(temp.firstChild);
+          }
+          textNode.parentNode.replaceChild(fragment, textNode);
+        }
+      });
     } catch (error) {
       console.warn('Content processing error:', error);
     }
+
+    contentElement.setAttribute('data-processed', 'true');
   });
 };
 
