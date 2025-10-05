@@ -5,7 +5,6 @@
       <h3 class="title">Saccharomyces cerevisiae Genome</h3>
       <p class="subtitle">Hover over markers to view distance from centromere</p>
     </div>
-    
     <!-- Chromosomes Grid -->
     <div class="chromosomes-grid">
       <div 
