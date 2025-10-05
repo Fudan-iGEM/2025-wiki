@@ -92,7 +92,8 @@ While a complete modification of the GPCR system would require the knockout of a
 <div style="text-align: center;">
         <span style="color:gray">Table 1.Primers used for the qPCR validation</span>
         <br>
-    </div>
+</div>
+
 | Gene/Reference Gene | Forward Primer (5’→3’)   | Reverse Primer (5’→3’)   |
 | ------------------- | ------------------------ | ------------------------ |
 | FUS3                | GAGCTAATGCAGACAGATTTA    | CACTTTCACTGCTCTCAAG      |
@@ -171,7 +172,8 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 <div style="text-align: center;">
         <span style="color:gray">Table 2.Optimized Fluorescent Proteins and Promoters for the Recorder Module</span>
         <br>
-    </div>
+</div>
+
 | DNA NAME | DESCRIPTION                          | EXCITATION WAVELENGTH (NM) | EMISSION WAVELENGTH (NM) | Part ID  |
 | -------- | ------------------------------------ | -------------------------- | ------------------------ | ------------ |
 | EMSfp383 | Optimized eBFP2 to resist EMS.       | 383                        | 448                      | BBa_25F6RD26 |
