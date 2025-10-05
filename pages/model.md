@@ -486,6 +486,8 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
         <span style="color:gray">Figure 9.Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
+
+
 ## Visualization Modules
 
 To enhance the interpretability and accessibility of our modeling framework, we developed two interactive 3D visualization tools as part of the YeastVerse virtual experiment platform. These tools simulate key aspects of the multicellular yeast chassis and fluorescent timer dynamics, providing intuitive insights into system behavior under various parameters. Built using React.js and Three.js, they allow users to explore spatial growth patterns and temporal fluorescence changes in real-time, bridging abstract mathematical predictions with visual, biologically grounded representations.
@@ -506,7 +508,9 @@ This module simulates the three-dimensional growth of the multicellular "grape y
 | produceTwoCells prob | Probability of multi-bud formation (bipolar mode)            | 0.3–0.6 (estimated)                 | -      |
 | maxAngle             | Budding cone angle limit                                     | Grape: 20°; normal: 60° (estimated) | degree |
 
-Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.
+<div style="text-align: left;">
+        <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
+    </div>
 
 Other minor parameters are detailed in the [code](#).
 
