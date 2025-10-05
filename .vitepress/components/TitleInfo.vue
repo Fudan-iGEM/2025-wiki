@@ -1,7 +1,7 @@
 <template>
-  <div class="title-info" ref="titleInfoRef">
+  <div class="title-info">
     <!-- Add back the title that floats between image and content -->
-    <div class="hero-title-container" ref="titleRef">
+    <div class="hero-title-container">
       <SplitText
         :text="pageTitle || 'Suspendisse'"
         :style="titleStyles"
@@ -44,32 +44,14 @@
       </div>
     </div>
 
-    <!-- Scroll down animation -->
-    <div class="scroll-down-container" @click="scrollToContent">
-      <div class="mouse">
-        <div class="scroller"></div>
-      </div>
-      <span class="scroll-down-text">Scroll Down</span>
-    </div>
   </div>
 </template>
 
 <script setup>
 import { useData } from "vitepress";
-import { computed, ref, onMounted, onUnmounted, reactive } from "vue";
+import { computed } from "vue";
 import { useWindowSize } from "@vueuse/core";
 import SplitText from "./SplitText.vue";
-
-const titleInfoRef = ref(null);
-
-const scrollToContent = () => {
-  if (titleInfoRef.value) {
-    window.scrollTo({
-      top: titleInfoRef.value.offsetHeight,
-      behavior: 'smooth'
-    });
-  }
-};
 
 // 获取当前页面的数据
 const { frontmatter } = useData();
@@ -189,8 +171,6 @@ function formatUrl(url) {
 const heroImage = computed(() => frontmatter.value.heroImage);
 
 
-
-const titleRef = ref(null);
 
 // 标题动画完成回调
 const handleTitleAnimationComplete = () => {
@@ -462,77 +442,6 @@ const handleTitleAnimationComplete = () => {
   .hero-button {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
-  }
-}
-
-/* Scroll down animation */
-.scroll-down-container {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #062570;
-  opacity: 0.6;
-  cursor: pointer;
-  z-index: 10;
-  transition: opacity 0.3s ease;
-}
-
-.scroll-down-text {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  display: none; /* Hide by default, show on larger screens */
-}
-
-.mouse {
-  width: 25px;
-  height: 40px;
-  border: 2px solid #062570;
-  border-radius: 20px;
-  position: relative;
-}
-
-.scroller {
-  width: 4px;
-  height: 8px;
-  background-color: #062570;
-  border-radius: 2px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: scroll 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes scroll {
-  0% {
-    top: 8px;
-    opacity: 1;
-  }
-  50% {
-    top: 20px;
-    opacity: 0;
-  }
-  100% {
-    top: 8px;
-    opacity: 1;
-  }
-}
-
-/* Responsive adjustments for scroll-down */
-@media (min-width: 768px) {
-  .scroll-down-text {
-    display: block; /* Show text on larger screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .scroll-down-container {
-    display: none; /* Hide on mobile devices */
   }
 }
 

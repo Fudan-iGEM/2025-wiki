@@ -1,6 +1,5 @@
 <template>
   <div class="footer">
-    <!-- 上方的 Logo 和赞助商部分保持不变 -->
     <div class="footer-top">
       <div class="footer-logo">
         <img src="https://static.igem.wiki/teams/5643/img/footer-logo.svg" alt="logo" />
@@ -23,8 +22,6 @@
         <img src="https://static.igem.wiki/teams/5643/img/kq.svg" alt="KeQin" />
       </a>
     </div>
-
-    <!-- 版权信息区域 -->
     <div class="footer-copyright">
       <!-- 左侧内容 -->
       <div class="copyright-left">
@@ -62,10 +59,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.sponsor-link img {
   transition: transform 0.3s ease;
+  display: block;
 }
 
-.sponsor-link:hover {
+.sponsor-link:hover img {
   transform: scale(1.05);
 }
 
@@ -79,11 +79,27 @@
 .sky {
   height: clamp(45px, 6.8vw, 80px);
 }
+
+.footer-logo img,
+.footer-sponsors img {
+  display: block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 .footer-logo img {
   width: clamp(460px, 40vw, 680px);
   height: auto;
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.02);
 }
 
 .footer-copyright {
