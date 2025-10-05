@@ -512,7 +512,7 @@ This module simulates the three-dimensional growth of the multicellular "grape y
         <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
     </div>
 
-Other minor parameters are detailed in the [code](#).
+Other minor parameters are detailed in the [code](#code-and-data-accessibility).
 
 ### 3D Fluorescent Timer Maturation Visualization
 
@@ -748,6 +748,8 @@ Strong Promoter vs Weak Promoter Part：[df_strength.py](https://gitlab.igem.org
 Result Part：[FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py)
 
 AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/model_deepseek_assistant.json), [Qwen Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/model_qwen_assistant.json)
+
+3D Visualization Modules: [iGEMmodel](https://gitlab.igem.org/2025/fudan/-/tree/main/model?ref_type=heads)
 
 ## References
 
