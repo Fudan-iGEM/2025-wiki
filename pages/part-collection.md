@@ -1,11 +1,11 @@
 ---
 title: Part Collection
 authors:
-  - name: Peining Wu
-    url: /fudan/team/#Peining
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
+  name: Peining Wu
+  url: /fudan/team/#wu-peining
+  avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+heroImage: fff
 description: On this page, we describe 3 collections built around Grape Yeast, foundamentally advaced the power of <i>Saccharomyces cerevisiae</i>.
 ---
 
@@ -157,7 +157,7 @@ Using the dataset from Puddu *et al.* (2019) [^8], we examined indicators such a
 
 These locus represent genomic regions prone to rearrangement and serve as a useful contrast to the Safe Integration Sites described by Shaw *et al.* (2023) .[^7] Although our constructs act as *recorders* rather than mutagenic drivers, including these instability-prone locus broadens the system’s chromosomal coverage and allows exploration of how genomic context impacts mutation capture and recording fidelity.
 
-To support this rationale, we provide an reorganized summary table derived from Puddu *et al.* (2019) supplementary information showing chromosomal copy number changes and genome stability indices for *CAF*, *SWI4*, *DPB3*, *FEN2*, *SOD1*, and *BDF1*. [^8]The fully processed dataset s available in the supplementary table file. [Supplementary Table](https://static.igem.wiki/teams/5643/pageimage/part/copy-of-supplementary-table-of-collection-3.csv)
+To support this rationale, we provide an reorganized summary table derived from Puddu *et al.* (2019) supplementary information showing chromosomal copy number changes and genome stability indices for *CAF*, *SWI4*, *DPB3*, *FEN2*, *SOD1*, and *BDF1*. [^8]The fully processed dataset s available in the supplementary table file.（插入附件）
 
 Below is the table of parts for our Collection 3:  [Sites of Integration to Assess Chromosomal Instability](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) in *Saccharomyces cerevisiae*
 
