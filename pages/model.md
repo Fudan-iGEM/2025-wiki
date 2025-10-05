@@ -8,7 +8,7 @@ authors:
     url: /fudan/team/#Yue
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
-heroImage: ttps://static.igem.wiki/teams/5643/pageimage/model/heroimage-model.webp
+heroImage: https://static.igem.wiki/teams/5643/pageimage/model/heroimage-model.webp
 description: On this page, we describe a model of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
 ---
 
@@ -16,9 +16,9 @@ description: On this page, we describe a model of dynamic protein timers in yeas
 
 Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
 
-Our work reimagines this cycle by introducing an [AI-augmented modeling framework](#ai-aided-validation-of-model-predictions) that dramatically increases the predictive accuracy of in silico design—enabling *first-attempt success* in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models ([DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/)), which—when prompted only with biological first principles—converged on the same optimal design choices.
+Our work reimagines this cycle by introducing an [AI-augmented modeling framework](#ai-aided-validation-of-model-predictions) that dramatically increases the predictive accuracy of in silico design—enabling first-attempt success in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models ([DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/)), which—when prompted only with biological first principles—converged on the same optimal design choices.
 
-This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach *supercharges the “Design” phase*, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
+This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach supercharges the “Design” phase, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
 
 ## Why This Model?
 
