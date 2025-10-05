@@ -77,7 +77,7 @@ Endogenous signaling pathway play central roles in regulating efflux pumps, cell
 
 #### 1) Replace *ACE2* with HsDOR
 
-Responding to external environmental signals is crucial for both fungal adaptation and synthetic control. Thus, in this module we expanded the signal transduction pathway, creating an interface that can be further utilized to respond to signals from other organisms or the environment by the community. GPCRs are among the most common drug targets in humans, highlighting their physiological relevance. We linked G-protein coupled receptors (GPCRs) to the yeast pheromone response pathway (PRP) which can activate a mitogen-activated protein kinase (MAPK) signaling cascade, leading to the upregulation of Ste12-regulated genes. 
+Sensing and responding to environmental cues is essential for fungal adaptation and for enabling synthetic regulation. In this module, we extended the signal transduction network to create a versatile interface that the community can later use to detect signals from other organisms or the environment. Given that GPCRs are among the most frequent drug targets in humans, they are particularly physiologically relevant.Based on previous studies (Bean et al., 2022)[^11], we designed GPCRs and engineered yeast so that their pheromone response pathway could be activated, triggering a MAPK signaling cascade and enhancing the expression of Ste12-regulated genes.
 
 While a complete modification of the GPCR system would require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused our efforts on modifying only the most critical genes.  We replaced *ACE2* with the human &delta; opioid receptor (*HsDOR*) (BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera(BBa_254K9906) with five residues replaced by Giα3.We validated this pathway using the small molecule agonist SNC80 [^11].
 
@@ -103,7 +103,7 @@ While a complete modification of the GPCR system would require the knockout of a
 
 #### 2)Yeast Membrane Engineering
 
-The ergosterol biosynthesis pathway is crucial, with *ERG6* and *ERG5* defining membrane sterol composition and influencing the expression and functionality of heterologously expressed human GPCRs. High ergosterol levels impair the proper insertion and activity of GPCRs in the yeast membrane. Consequently, deleting *ERG5/6* and redirecting sterol flux toward cholesterol significantly enhances receptor efficiency[^11]. Furthermore, the resulting reduced ergosterol content mimics a phenotype associated with antifungal drug resistance[^12], offering a platform to investigate the impact of membrane composition on drug sensitivity and to identify non-ergosterol-related targets.
+The ergosterol biosynthesis pathway is crucial, with *ERG6* and *ERG5* defining membrane sterol composition and influencing the expression and functionality of heterologously expressed human GPCRs. Elevated ergosterol levels disrupt the proper integration and function of GPCRs in the yeast membrane. Consequently, deleting *ERG5/6* and redirecting sterol flux toward cholesterol significantly enhances receptor efficiency[^11]. Furthermore, the resulting reduced ergosterol content mimics a phenotype associated with antifungal drug resistance[^12], offering a platform to investigate the impact of membrane composition on drug sensitivity and to identify non-ergosterol-related targets.
 
 To leverage this for our application, we deleted *ERG5/6* and added TDH3p-driven zebrafish genes (*DHCR7/24*:BBa_25RCU5CB and BBa_25FOVO4C). This modification blocks ergosterol production and redirects zymosterol to cholesterol, which is necessary for the human receptor to function properly[^11]. We confirmed this modification using cholesterol staining.
 
@@ -168,26 +168,26 @@ Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the Dee
 
 #### 1) Building the  Recorder
 
-To intuitively record the pressure at different chromosomal loci during evolution, we developed the Recorder module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20]. We screened 28 combinations of four promoters[^21] and seven optimized fluorescent proteins after EMS mutagenesis (For more details of EMS-resistant proteins, please check our [software](/software/)) by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
+To intuitively record the pressure at different chromosomal loci during evolution, we developed the Recorder module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20]. To identify the optimal reporter configuration, we created a combinatorial library, testing four distinct promoters[^21] with six of our EMS-optimized fluorescent proteins(For more details of EMS-resistant proteins, please check our [software](/software/)). This promoter set was specifically chosen to capture a range of expression dynamics under EMS mutagenesis.Menawhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6] [^23]. We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
 <div style="text-align: center;">
         <span style="color:gray">Table 2.Optimized Fluorescent Proteins and Promoters for the Recorder Module</span>
         <br>
 </div>
 
-| DNA NAME | DESCRIPTION                          | EXCITATION WAVELENGTH (NM) | EMISSION WAVELENGTH (NM) | Part ID  |
-| -------- | ------------------------------------ | -------------------------- | ------------------------ | ------------ |
-| EMSfp383 | Optimized eBFP2 to resist EMS.       | 383                        | 448                      | BBa_25F6RD26 |
-| EMSfp399 | Optimized Bluebonnet2 to resist EMS. | 399                        | 454                      | BBa_25M2Z9H7 |
-| EMSfp499 | Optimized mSG to resist EMS.         | 499                        | 510                      | BBa_25IB5O7X |
-| EMSfp506 | Optimized NeolGreen to resist EMS.   | 506                        | 517                      | BBa_25FAVHQY |
-| EMSfp569 | Optimized mScarlet to resist EMS.    | 569                        | 594                      | BBa_25TYRLM9 |
-| EMSfp642 | Optimized smURFP to resist EMS.      | 642                        | 670                      | BBa_25GARG3E |
-| EMSfp643 | Optimized miRFP670-2 to resist EMS.  | 643                        | 670                      | BBa_2599SI53 |
-| **Promoters**[^21]          |                                      |                            |                          |              |
-|   pOST1        |                                      |                            |                          | BBa_259JX52V |
-|  pRNR2        |                                      |                            |                          | BBa_K3748013 |
-|  pSTM1         |                                      |                            |                          | BBa_K530004 |
-|pTDH3  |  | | | BBa_K3190001 |
+| DNA NAME           | DESCRIPTION                              | EXCITATION WAVELENGTH (NM) | EMISSION WAVELENGTH (NM) | Part ID      |
+| ------------------ | ---------------------------------------- | -------------------------- | ------------------------ | ------------ |
+| EMSfp383           | Optimized eBFP2 to resist EMS.           | 383                        | 448                      | BBa_25F6RD26 |
+| EMSfp399           | Optimized Bluebonnet2 to resist EMS.     | 399                        | 454                      | BBa_25M2Z9H7 |
+| EMSfp499           | Optimized mSG to resist EMS.             | 499                        | 510                      | BBa_25IB5O7X |
+| EMSfp506           | Optimized NeolGreen to resist EMS.       | 506                        | 517                      | BBa_25FAVHQY |
+| EMSfp569           | Optimized mScarlet to resist EMS.        | 569                        | 594                      | BBa_25TYRLM9 |
+| EMSfp642           | Optimized smURFP to resist EMS.          | 642                        | 670                      | BBa_25GARG3E |
+| EMSfp643           | Optimized miRFP670-2 to resist EMS.      | 643                        | 670                      | BBa_2599SI53 |
+| **Promoters**[^21] |                                          |                            |                          |              |
+| pOST1              | Remains stable                           |                            |                          | BBa_259JX52V |
+| pRNR2              | Tends to decrease expression             |                            |                          | BBa_K3748013 |
+| pSTM1              | Tends to increase expression             |                            |                          | BBa_K530004  |
+| pTDH3              | A strong constitutive benchmark promoter |                            |                          | BBa_K3190001 |
 
 
 
@@ -266,4 +266,6 @@ Throughout this project, we fully embraced the "dry lab guiding wet lab" approac
 
 [^21]:Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. DOI: 10.1073/pnas.1902823116
 
-[^22]:Puddu, F., Herzog, M., Selivanova, A., Wang, S., Zhu, J., Klein-Lavi, S., Gordon, M., Meirman, R., Millan-Zambrano, G., Ayestaran, I., Salguero, I., Sharan, R., Li, R., Kupiec, M., & Jackson, S. P. (2019). *Genome architecture and stability in the Saccharomyces cerevisiae knockout collection. Nature*, *573*(7774), 416–420. DOI: 10.1038/s41586-019-1549-9
+[^22]:Puddu, F., Herzog, M., Selivanova, A., Wang, S., Zhu, J., Klein-Lavi, S., Gordon, M., Meirman, R., Millan-Zambrano, G., Ayestaran, I., Salguero, I., Sharan, R., Li, R., Kupiec, M., & Jackson, S. P. (2019). Genome architecture and stability in the Saccharomyces cerevisiae knockout collection. *Nature*, *573*(7774), 416–420. DOI: 10.1038/s41586-019-1549-9
+
+[^23]:Niederau, P. A., Eglé, P., Willig, S., Parsons, J., Hoernstein, S. N. W., Decker, E. L., & Reski, R. (2024). Multifactorial analysis of terminator performance on heterologous gene expression in Physcomitrella. *Plant cell reports*, *43*(2), 43. DOI: 10.1007/s00299-023-03088-5
