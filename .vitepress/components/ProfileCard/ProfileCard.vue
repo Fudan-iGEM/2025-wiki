@@ -468,7 +468,7 @@ onUnmounted(() => {
   perspective: 500px;
   transform: translate3d(0, 0, 0.1px);
   position: relative;
-  touch-action: none;
+  touch-action: pan-y pinch-zoom;
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
