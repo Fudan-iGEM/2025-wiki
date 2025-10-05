@@ -25,7 +25,6 @@ Virtually anyone can become vulnerable to fungal infections. We aim to co-create
 
 - Fungal infections are a widespread global health concern, potentially affecting almost everyone. Fungal diseases cause more than 1.5 million deaths each year and affect over 1 billion people[^1]. For instance, dermatophytosis—the most common superficial fungal disease—affects 20–25% of the global population[^2]. Within these broad populations, there exists a group who not only endure recurrent skin lesions but also face fungal infections as a severe complication: **patients with Epidermolysis bullosa ("Butterfly Children")**.
 - Epidermolysis bullosa (EB) is a group of rare genetic disorders characterized by profoundly fragile skin.  Clinically, individuals with EB experience chronic blistering and wound formation, with certain subtypes also involving mucous membranes and other organs.  As a result of this loss of the skin’s natural protective barrier, patients are highly vulnerable to infections.  Among these, fungal infections pose a particular risk due to persistent skin breakdown and compromised immunity.  Furthermore, the lifelong nature of EB and the current lack of curative treatments increase their susceptibility to antifungal drug resistance, underscoring the urgent need for more effective therapeutic options.
-- 
 
 ### Systemic Scientific Barriers
 
@@ -99,15 +98,14 @@ This insight encouraged us: although the division between *EB patients* and *non
 </div>
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-4.webp" alt="inclusivity1-4" style="zoom:80%;" />
 
-
-
 - ### **Details**
-
   - **Art as a medium**
+
      The campus-based “Butterfly Children Charity Sale” was our first attempt. The event combined a *public-welfare + commercial* model, offering over 20 charity products (postcards, bracelets, knitted items, cardholders, paintings, etc.) created by patients and their families. It attracted over 200 participants .
+
 - Through this, we hoped rare disease patients could act as knowledge producers, actively participating in the process and generating income through their creative work — transforming one-way *assistance* into two-way *healing*.
-  
 - **Q&A Posters** {#qa-posters}
+
      Before the event, our iGEM team had conducted three months of systematic fieldwork. We contacted a well-known EB patient blogger, "Prince Superman," whose documentary received over 25 million views. With his support, we invited over 10 EB families to join. To break down biomedical knowledge barriers, the team designed Q&A posters that translated scientific information into accessible language, aiming to broaden public engagement.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-eb1.webp" alt="inclusivity1-eb1" style="zoom:26%;" />
@@ -122,6 +120,7 @@ This insight encouraged us: although the division between *EB patients* and *non
 </div>
 
 - **Price Contrast Cards**
+
    To strengthen public empathy for rare disease patients, we designed *price contrast cards*. For instance, a patient’s drawing printed as a postcard was priced at 3 RMB, whereas one piece of medical dressing they needed daily costs 100 RMB. This design choice resonated with participants, helping them grasp the economic challenges faced by rare disease patients and prompting reflection on how even small gestures of kindness can accumulate into real hope.
 
 ### **Theoretical Framework: Intersectionality**
@@ -205,8 +204,6 @@ This highlights that “fungus-susceptible groups,” including EB patients, fac
 Therefore, our goal is to **empower fungus-susceptible individuals** to articulate their valuable scientific experiences in their own language, and to create pathways for translating and amplifying these voices.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity2map2.webp" alt="inclusivity2map2" style="zoom:33%;" />
-
-
 
 #### Sensory-friendly research design
 
@@ -307,10 +304,15 @@ We worked with **Dr. Zihan Zhou**, a psychologist with a STEM background, to des
 The PhotoVoice workshop unfolded around three progressively layered themes:
 
 1. **Rooms and Windows**
+
     Exploring how spaces (workplace, community, hospital) shape our experiences and identities.
+
 2. **Cocoons and Spotlights**
+
     Using images to capture the dual faces of illness and science, reflecting on personal struggles in interacting with medicine and research.
+
 3. **Healing and Recovery**
+
     Focusing on emotional and humanistic support beyond biomedical treatment, and exploring possibilities of being “healed” in body and mind.
 
 After each theme, we implemented a **structured feedback mechanism** to ensure every participant’s voice was heard. Guided by prompts such as *“I feel that…”* or *“This reminds me of…”*, the discussion emphasized empathy and understanding rather than evaluation, enabling deep exchanges.
@@ -334,13 +336,9 @@ The workshop climaxed in a **co-creation exercise based on medical settings**. D
 **"Ideal Solutions" from Collective Wisdom**
 
 * Adopt soft color schemes for waiting halls.
-
 * Add AI navigation/voice registration services to assist elderly patients.
-
 * Set up children’s interactive corners to ease waiting anxiety.
-
 * Optimize space zoning and ground guide routes, while reducing noise and chaos.
-
 * Smooth, low seats provide convenience, especially for older adults and children.
 
 Participants brainstormed improvements to color, lighting, seating, and signage systems, eventually forming a collectively negotiated *“ideal solution.”* We then created a redesigned hospital space plan and shared it with earlier mapping participants, inviting them to evaluate how well it addressed their concerns. Most of the people who participated in the previous round of activities gave our plan a good review, believing that it would to some extent enhance their willingness to seek medical treatment.
@@ -454,11 +452,15 @@ Importantly, the participant’s dual identity as both a researcher and a patien
 Our laboratory-assistive web tool is not merely an efficiency software, but a support system embedded with the理念 of **inclusivity**. Its core functional design directly responds to the needs revealed through our research and dialogues with individuals affected by fungal conditions:
 
 1. **Visualized Experimental Guidance**
+
    【动图123】
+
    - **Function**: Users can import or write their own experimental protocols, which the software automatically parses into a clear, visual step-by-step flowchart. Each step is accompanied by a progress bar, estimated duration, key precaution notes, and corresponding tool components. At the end, a tagged experimental report can be generated.
    - **Design Rationale**: This reduces the cognitive load and anxiety caused by lengthy, text-heavy instructions, alleviating psychological pressure for lab members susceptible to fungal infections. It also helps experimenters with attention deficits or reading difficulties to better grasp both the overall workflow and the details. Built-in widgets such as timers and calculators minimize task-switching and reduce the risk of errors.
 2. **Built-in Mental Health Self-Assessment Module**
+
    【动图45】
+
    - **Function**: After completing an experiment, the software prompts the user to record their current mood via quick options, and guides them to a self-assessment questionnaire for stress evaluation. All data remains private to the user, and results are accompanied by stress-relief suggestions based on principles of Cognitive Behavioral Therapy (CBT).
    - **Design Rationale**: This normalizes and destigmatizes attention to mental health, encouraging experimenters to proactively monitor their own condition and prevent the accumulation of chronic stress. It echoes our focus on supporting the **whole person** rather than treating them as “research machines.”
 
@@ -475,8 +477,6 @@ These results suggest that our tool not only improves efficiency but also meanin
 This inspired us to launch a **“Lab Mental Health Week” check-in campaign**, complete with posters that teams can download and use to foster collective awareness and care.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-7.webp" alt="Lab Mental Health Week” check-in campaign" style="zoom:33%;" />
-
-
 
 ### Intersectionality — A Methodology for Inclusive Scientific Practice
 
@@ -535,3 +535,4 @@ Structural change is hard, but it begins with localized, lived efforts of inclus
 <script setup lang="ts">
 import Interview from '../.vitepress/components/Interview.vue'
 </script>
+
