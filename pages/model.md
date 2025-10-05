@@ -51,8 +51,6 @@ This model is based on the following experimental settings:
         <span style="color:gray">Table 1.Parameters for the model</span>
         <br>
     </div>
-
-
 | **Parameter** | **Meaning**                                | **Default Value**       | **Unit** |
 | ------------------- | ---------------------------------------------- | -------------------------------- | -------- |
 | **$Tcc_{min}$**      | Cell cycle length | 87                               | min      |
@@ -487,7 +485,17 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
         <span style="color:gray">Figure 9.Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
+## Visualization Modules
 
+To enhance the interpretability and accessibility of our modeling framework, we developed two interactive 3D visualization tools as part of the YeastVerse virtual experiment platform. These tools simulate key aspects of the multicellular yeast chassis and fluorescent timer dynamics, providing intuitive insights into system behavior under various parameters. Built using React.js and Three.js, they allow users to explore spatial growth patterns and temporal fluorescence changes in real-time, bridging abstract mathematical predictions with visual, biologically grounded representations.
+
+### 3D Yeast Growth Simulation
+
+This module simulates the three-dimensional growth of the multicellular "grape yeast" cluster, modeling cell division, elongation, and cluster formation under controlled environmental conditions (e.g. temperature at 30°C, YPD medium). Starting from a single ancestral cell, the simulation applies deterministic branching rules inspired by Pascal’s triangle developmental pattern[^9], incorporating asynchronous division to generate geometrically defined, clonal clusters. Users can toggle between "grape" and "normal" yeast types, adjusting simulation speed (0.5–3×) to observe morphological transitions and cluster expansion. This interactive visualization gives us a more graphic understanding of "grape yeast's'' growth, thereby guiding the design of our multicellular chassis to enable precise, real-time tracking of drug resistance evolution in the [DR. sTraTeGY platform](/design/).
+
+### 3D Fluorescent Timer Maturation Visualization
+
+This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "grape yeast" cluster, integrating the core ODE framework for mRNA transcription, protein synthesis, and state transitions (C → B → I → R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
 
 
 ## AI-Aided Validation of Model Predictions
@@ -730,3 +738,4 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 [^6]: Di Talia, S., Skotheim, J. M., Bean, J. M., Siggia, E. D., & Cross, F. R. (2007). The effects of molecular noise and size control on variability in the budding yeast cell cycle. *Nature*, *448*(7156), 947–951. DOI: 10.1038/nature06072
 [^7]: Yu, Y., Yarrington, R. M., & Stillman, D. J. (2020). FACT and Ash1 promote long-range and bidirectional nucleosome eviction at the HO promoter. *Nucleic acids research*, *48*(19), 10877–10889. DOI: 10.1093/nar/gkaa819
 [^8]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
+[^9]: Ratcliff, W., Fankhauser, J., Rogers, D. *et al.* Origins of multicellular evolvability in snowflake yeast. *Nat Commun* **6**, 6102 (2015). DOI: 10.1038/ncomms7102
