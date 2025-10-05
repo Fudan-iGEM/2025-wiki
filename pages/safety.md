@@ -16,12 +16,13 @@ Synthetic biology, as promoted by the iGEM competition, is an emerging interdisc
 Since our experimental design and application scenarios take place entirely within the laboratory, we have placed a strong emphasis on laboratory safety. Beyond standard safety measures, we conduct project-specific biosafety assessments and implement tailored risk-mitigation strategies, embedding a culture of responsible science throughout our design process.
 
 <div style="text-align: center;" id="fig1">
-    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/safety-in-design.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/safety-in-design.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure 1: Safety in design</span>
         <br><br>
     </div>
 </div>
+
 
 ## Part I: Laboratory Safety
 
@@ -37,12 +38,12 @@ In the 24Model framework, safety evaluation is conducted systematically across m
 
 **Table 1: Comprehensive Table of Laboratory Safety Evaluation Dimensions**
 
-| Dimension Level          | Main Categories                 | Key Evaluation Areas                                         | Description                                                  |
-| ------------------------ | ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Individual Level**     | One-time Behaviors & Conditions | - Unsafe Human Behaviors (Unsafe Acts)<br> - Unsafe Physical Conditions | **Direct causes** of accidents. These are immediate unsafe actions or hazardous conditions that can directly trigger incidents. |
-|                          | Habitual Behaviors              | - Deficiencies in Safety Knowledge <br>- Weak Safety Awareness <br>- Unsafe Laboratory Habits <br>- Unfavorable Psychological/Physiological States | **Indirect causes** of accidents. Long-term unsafe habits or persistent weaknesses that, under certain circumstances, transform into unsafe acts or conditions. |
-| **Organizational Level** | Safety Management System (SMS)  | - Organizational Structure Gaps <br>- Responsibility Allocation Gaps <br>- Procedural/Documentation Deficiencies <br>- Resource Management Deficiencies <br>- Training Deficiencies | **Root causes** of accidents. These reflect systematic weaknesses in management, regulations, procedures, and resources. |
-|                          | Safety Culture                  | - Value of Safety - Belief that Accidents Are Preventable <br>- Safety as Good Practice <br>- Leadership & Oversight Responsibility <br>- Personnel Safety Performance | **Fundamental root causes** of accidents. Safety culture represents the deepest level of influence, shaping whether safety is prioritized, embedded, and sustained across the organization. |
+| **Dimension Level**      | **Main Categories**                 | **Key Evaluation Areas**                                     | **Description**                                              |
+| ------------------------ | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Individual Level**     | **One-time Behaviors & Conditions** | - Unsafe Human Behaviors- Unsafe Physical Conditions         | Direct causes of accidents that are immediate unsafe actions or hazardous conditions triggering incidents. |
+|                          | **Habitual Behaviors**              | - Deficiencies in Safety Knowledge- Weak Safety Awareness- Unsafe Laboratory Habits- Unfavorable Psychological/Physiological States | Indirect causes due to long-term unsafe habits or persistent weaknesses that under specific circumstances lead to unsafe acts or conditions. |
+| **Organizational Level** | **Safety Management System (SMS)**  | - Organizational Structure Gaps- Responsibility Allocation Gaps- Procedural/Documentation Deficiencies- Resource Management Deficiencies- Training Deficiencies | Root causes related to systemic weaknesses in management, regulations, procedures, and resources. |
+|                          | **Safety Culture**                  | - Value of Safety- Belief that Accidents Are Preventable- Safety as Good Practice- Leadership & Oversight Responsibility- Personnel Safety Performance | Fundamental root causes shaped by safety culture, impacting how safety is prioritized and integrated across the organization. |
 
 As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis Report**, available in the PDF below. We hope it will offer future iGEM teams and laboratory practitioners a systematic perspective on lab safety, as well as fresh insights for building safer research environments.
 
@@ -50,9 +51,10 @@ As part of this effort, we compiled a comprehensive **Laboratory Safety Analysis
   <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="100%" style="border: none;">
   </iframe>
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none;" id="pdf-fallback-2">
-    Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf">Download the PDF</a>.
+    Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/1.pdf">Download the PDF</a>.
   </div>
 </div>
+
 
 ### Our Laboratory Safety
 
@@ -120,7 +122,7 @@ We also rely on the [Cai-Lab website](https://wiki.actin.cn/Protocols?utm_source
 This platform helps new members build good habits, refine experimental skills, and develop an instinct for safety.
 
 <div style="text-align: center;" id="fig1">
-    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/rules-about-laboratory-safety.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/rules-about-laboratory-safety.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure 2: Laboratory Safety Management Regulations</span>
         <br><br>
@@ -128,9 +130,10 @@ This platform helps new members build good habits, refine experimental skills, a
 </div>
 
 
+
 #### Summary: Building a Culture of Safety
 
-By layering **University, School, and Laboratory** safety programs, we’ve created a comprehensive, continuous, and proactive safety framework. This ensures all members receive the training and resources they need to work safely while advancing responsible and sustainable science.
+By layering University, School, and Laboratory safety programs, we’ve created a comprehensive, continuous, and proactive safety framework. This ensures all members receive the training and resources they need to work safely while advancing responsible and sustainable science.
 
 ## Part II: Project-Specific Biosafety Assessment & Measures
 
@@ -148,11 +151,11 @@ Our approach is structured around three key areas:
 
 ### 1. Multilayered Genetic Circuits
 
-In synthetic biology, biocontainment strategies are generally built around three principles: **toxin expression**, **auxotrophy**, and **essential gene regulation**.	[^12]
+In synthetic biology, biocontainment strategies are generally built around three principles: toxin expression**, **auxotrophy, and essential gene regulation.	[^12]
 
 While these approaches can be highly effective — with the best safeguards reaching the NIH benchmark of an escape frequency as low as 10⁻⁸ — each comes with limitations. Auxotrophic strains may regain growth ability through cross-feeding of metabolites or the presence of required molecules in the environment. Essential genes can sometimes exhibit leaky expression, allowing unintended survival. Meanwhile, mutations may disable toxin systems. Redundancy can lower escape risks, but often at the cost of reduced fitness, giving escape mutants a growth advantage.
 
-To address these challenges, we believe that robust genetic safeguards should meet three key criteria: **low escape frequency**, **robustness**, and **modularity**.
+To address these challenges, we believe that robust genetic safeguards should meet three key criteria: **low escape frequency, robustness, and modularity.**
 
 - **Low escape frequency** ensures that mutants cannot thrive outside of controlled media and prevents their spread in natural environments.
 - **Robustness** maintains wild-type fitness levels while ensuring containment across different growth conditions, even in nutrient-rich or complex environments where other organisms may supply missing metabolites.
@@ -168,15 +171,16 @@ The circuit integrates three core modules: a riboregulatory system, a biotin aux
 - **Biotin auxotrophy module:** The *bioAB* operon is replaced with the ampicillin resistance gene (*bla*). Normally, *bioA* produces the precursor of biotin’s heterocyclic ring, while *bioB* catalyzes the final ring closure to generate active biotin. Disruption of both genes creates an auxotrophic strain that requires exogenous biotin for growth.
 - **Nuclease kill-switch module:** Constitutive expression of EcoRI nuclease  kills cells unless protected by EcoRI methyltransferase, which is itself placed under aTc regulation.
 
-Together, these modules ensure that *E. coli* can only survive when all three inputs—**aTc, IPTG, and exogenous biotin**—are present simultaneously. This layered safeguard prevents accidental survival caused by the leakage of any single module.
+Together, these modules ensure that *E. coli* can only survive when all three inputs—aTc, IPTG, and exogenous biotin—are present simultaneously. This layered safeguard prevents accidental survival caused by the leakage of any single module.
 
 <div style="text-align: center;" id="fig1">
-    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/transcriptional-translational-riboregulation-og-essential-genes.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/transcriptional-translational-riboregulation-og-essential-genes.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure 3: Design of multilayered safeguards</span>
         <br><br>
     </div>
 </div>
+
 
 The circuit was originally designed in *E. coli*, but since our chassis is *Saccharomyces cerevisiae*, we adapted the system to function in yeast.
 
@@ -196,7 +200,7 @@ The table below summarizes the modifications across the three modules:
 
 To replace the crRNA/taRNA system, we turned to CRISPRi, which enables precise control of gene expression using dCas9 and gRNA. Importantly, CRISPRi only activates in response to specific triggers—exactly matching the conditional control we aimed for.[^13]
 
-The design links ribozymes to both ends of the gRNA (**Rz–gRNA–Rz**). These ribozymes self-cleave after transcription, trimming the gRNA into a clean, functional form. Any disruption to this process prevents proper maturation, effectively “switching off” the gRNA.
+The design links ribozymes to both ends of the gRNA (Rz–gRNA–Rz). These ribozymes self-cleave after transcription, trimming the gRNA into a clean, functional form. Any disruption to this process prevents proper maturation, effectively “switching off” the gRNA.
 
 Building on this framework, the literature substituted the 3′ HDV ribozyme with an Aptazyme—a hybrid RNA molecule that combines a ribozyme with a small-molecule-binding aptamer. Downstream, the retained the poly(A) tail and inserted an antisense RNA (asRNA) sequence.
 
@@ -205,7 +209,7 @@ Building on this framework, the literature substituted the 3′ HDV ribozyme wit
 
 **Module II: Nuclease-Based Kill Switch**
 
-To restrict growth of our chassis, we replaced the traditional biotin auxotrophy with a **URA3-based marker**. This modification ensures that Grape Yeast can only survive on media supplemented with uracil, effectively confining its growth to tightly controlled laboratory conditions.
+To restrict growth of our chassis, we replaced the traditional biotin auxotrophy with a URA3-based marker. This modification ensures that Grape Yeast can only survive on media supplemented with uracil, effectively confining its growth to tightly controlled laboratory conditions.
 
 **Module III: Nuclease-Based Kill Switch**
 
@@ -228,12 +232,13 @@ Our discussion with Professor Tang was eye-opening. We realized that genetic saf
 This divergence in perspectives highlights a deeper issue: the lack of collective reflection on the actual needs and expectations surrounding safeguards. As academic researchers, we cannot rely on an idealistic outlook. Instead, we must actively engage stakeholders early on in conversations about the relevance and practicality of safeguards. Frameworks like Responsible Research and Innovation (RRI) can help ensure that research remains aligned with broader socio-economic realities, while also guiding the balance of social and economic forces needed to bring innovation into practice.
 
 <div style="text-align: center;" id="fig1">
-    < img src="https://static.igem.wiki/teams/5643/pageimage/safety/talk-with-li-tang.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/talk-with-li-tang.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure 4: Talk with Professor Li</span>
         <br><br>
     </div>
 </div>
+
 
 
 #### Circuit Iteration 2: Towards Real-World Applications
