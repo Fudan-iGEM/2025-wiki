@@ -48,9 +48,10 @@ This model is based on the following experimental settings:
 ## Parameters
 
 <div style="text-align: left;">
-        <span style="color:gray">Table 1.Parameters for the model</span>
+        <span style="color:gray">Table 1.Parameters (global variables) for the model</span>
         <br>
     </div>
+
 | **Parameter** | **Meaning**                                | **Default Value**       | **Unit** |
 | ------------------- | ---------------------------------------------- | -------------------------------- | -------- |
 | **$Tcc_{min}$**      | Cell cycle length | 87                               | min      |
@@ -493,6 +494,22 @@ To enhance the interpretability and accessibility of our modeling framework, we 
 
 This module simulates the three-dimensional growth of the multicellular "grape yeast" cluster, modeling cell division, elongation, and cluster formation under controlled environmental conditions (e.g. temperature at 30°C, YPD medium). Starting from a single ancestral cell, the simulation applies deterministic branching rules inspired by Pascal’s triangle developmental pattern[^9], incorporating asynchronous division to generate geometrically defined, clonal clusters. Users can toggle between "grape" and "normal" yeast types, adjusting simulation speed (0.5–3×) to observe morphological transitions and cluster expansion. This interactive visualization gives us a more graphic understanding of "grape yeast's'' growth, thereby guiding the design of our multicellular chassis to enable precise, real-time tracking of drug resistance evolution in the [DR. sTraTeGY platform](/design/).
 
+<div style="text-align: center;">
+        <span style="color:gray">Table 4.Parameters (local variables) for 3D Yeast Growth Simulation</span>
+        <br>
+    </div>
+
+| Parameter            | Meaning                                                      | **Default Value***                  | Unit   |
+| -------------------- | ------------------------------------------------------------ | ----------------------------------- | ------ |
+| MAX_LENGTH_RATIO     | long/short axis ratio for cell elongation under low oxygen/stress | 1.8 (estimated)[^9][^10]            | -      |
+| nucleus size         | Relative nucleus radius in cell model                        | 0.3 (estimated)                     | -      |
+| produceTwoCells prob | Probability of multi-bud formation (bipolar mode)            | 0.3–0.6 (estimated)                 | -      |
+| maxAngle             | Budding cone angle limit                                     | Grape: 20°; normal: 60° (estimated) | degree |
+
+Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.
+
+Other minor parameters are detailed in the [code](#).
+
 ### 3D Fluorescent Timer Maturation Visualization
 
 This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "grape yeast" cluster, integrating the core ODE framework for mRNA transcription, protein synthesis, and state transitions (C → B → I → R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
@@ -739,3 +756,4 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 [^7]: Yu, Y., Yarrington, R. M., & Stillman, D. J. (2020). FACT and Ash1 promote long-range and bidirectional nucleosome eviction at the HO promoter. *Nucleic acids research*, *48*(19), 10877–10889. DOI: 10.1093/nar/gkaa819
 [^8]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
 [^9]: Ratcliff, W., Fankhauser, J., Rogers, D. *et al.* Origins of multicellular evolvability in snowflake yeast. *Nat Commun* **6**, 6102 (2015). DOI: 10.1038/ncomms7102
+[^10]: Fukuda, N. Apparent diameter and cell density of yeast strains with different ploidy. *Sci Rep* **13**, 1513 (2023). DOI: 10.1038/s41598-023-28800-z
