@@ -8,7 +8,7 @@ authors:
     url: /fudan/team/#Yue
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
-heroImage: （拍摄并且选取页面图像，作为顶部展示）
+heroImage: ttps://static.igem.wiki/teams/5643/pageimage/model/heroimage-model.webp
 description: On this page, we describe a model of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
 ---
 
