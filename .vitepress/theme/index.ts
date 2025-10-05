@@ -3,7 +3,6 @@ import { h } from 'vue'
 import HomePage from '../components/HomePage.vue';
 import Custom404 from '../components/Custom404.vue';
 import CustomLayout from '../components/CustomLayout.vue';
-import ChromosomeVisualization from '../components/ChromosomeVisualization.vue';
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
@@ -22,7 +21,6 @@ export default {
     // Register Custom404 component if needed elsewhere
     app.component('Custom404', Custom404)
     app.component('igem', CustomLayout)
-    app.component('ChromosomeVisualization', ChromosomeVisualization)
     
 
   },
