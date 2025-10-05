@@ -518,6 +518,23 @@ Other minor parameters are detailed in the [code](#code-and-data-accessibility).
 
 This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "grape yeast" cluster, integrating the core ODE framework for mRNA transcription, protein synthesis, and state transitions (C → B → I → R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
 
+Below is our interactive 3D model:
+
+<div style="width: 100%; height: 800px; border: 1px solid #ccc; position: relative;">
+    <div id="loading" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+        🌀 Loading 3D Model...
+    </div>
+    <iframe
+        src="https://fudan-2025.gitlab.io/fudan/model/iGEMmodel/"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+        onload="document.getElementById('loading').style.display = 'none';"
+    ></iframe>
+</div>
+
 
 ## AI-Aided Validation of Model Predictions
 
