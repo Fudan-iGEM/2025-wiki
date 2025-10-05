@@ -500,7 +500,8 @@ function handleResize() {
 
 .toc-title {
   font-weight: 700;
-  padding: 1rem 0.75rem; /* 减少内边距 */
+  padding: 1rem 1rem 1rem 1.25rem; 
+  margin: -0.75rem -0.75rem 0 -0.75rem;
   text-align: left;
   border-bottom: 1px solid rgba(0, 152, 161, 0.1);
   color: #0098a1;
@@ -845,7 +846,8 @@ function handleResize() {
   }
 
   .toc-title {
-    padding: 0.8rem 0.6rem;
+    padding: 0.8rem 0.8rem 0.8rem 1rem; /* 增加左边距 */
+    margin: -0.6rem -0.6rem 0 -0.6rem; /* 负margin来充满容器宽度 */
     font-size: 0.95rem;
   }
 
@@ -925,7 +927,8 @@ function handleResize() {
   }
 
   .toc-title {
-    padding: 1rem 0.75rem;
+    padding: 1rem 1rem 1rem 1.25rem; /* 增加左边距 */
+    margin: -0.75rem -0.75rem 0 -0.75rem; /* 负margin来充满容器宽度 */
     font-size: 0.95rem;
   }
 
