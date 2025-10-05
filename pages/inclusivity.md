@@ -330,23 +330,25 @@ This exchange highlighted the complexity of real-world implementation. It also r
 ---
 ##### Establishing Feedback Mechanisms {#establishing-feedback-mechanisms}
 
-> 注：开发同学请保留该标题作为按钮，并将下方问题内容实现折叠。
-
-1. **On Visibility**
+<CollapsibleSection button-text="1. On Visibility">
 
    - Did this activity help you feel that people with your background/experience are *seen* in science discussions?
 
-   - Were your personal experiences treated as valuable contributions (beyond “storytelling”)?
+   - Were your personal experiences treated as valuable contributions (beyond "storytelling")?
 
-2. **On Expression**
+</CollapsibleSection>
+
+<CollapsibleSection button-text="2. On Expression">
 
    - Did the provided methods (art creation, mapping, group discussion) allow you to express yourself more authentically than traditional surveys or interviews?
 
-   - Did you feel you could articulate otherwise “unspeakable” experiences (pain, embarrassment, inconvenience)?
+   - Did you feel you could articulate otherwise "unspeakable" experiences (pain, embarrassment, inconvenience)?
 
    - Did you feel truly listened to and understood—rather than merely pitied or judged?
 
-3. On Dialogue and Co-Creation
+</CollapsibleSection>
+
+<CollapsibleSection button-text="3. On Dialogue and Co-Creation">
 
    - To what extent did the activity foster equal dialogue across backgrounds (patients, scientists, students) rather than one-way transmission?
 
@@ -354,11 +356,15 @@ This exchange highlighted the complexity of real-world implementation. It also r
 
    - Do you consider the outcomes (artworks, question lists, design proposals) as *co-created* by all, not just by organizers?
 
-4. On Impact and Future
+</CollapsibleSection>
 
-   - Did the activity change how you see your role in science (e.g., from “research subject” to “co-researcher” or “advisor”)?
+<CollapsibleSection button-text="4. On Impact and Future">
+
+   - Did the activity change how you see your role in science (e.g., from "research subject" to "co-researcher" or "advisor")?
 
    - Based on this experience, would you feel confident participating in deeper collaborations (e.g., co-designing experiments, reviewing research proposals)? Why or why not?
+
+</CollapsibleSection>
 
 ---
 #### Conclusion
@@ -518,4 +524,5 @@ Structural change is hard, but it begins with localized, lived efforts of inclus
 
 <script setup lang="ts">
 import Interview from '../.vitepress/components/Interview.vue'
+import CollapsibleSection from '../.vitepress/components/CollapsibleSection.vue'
 </script>
