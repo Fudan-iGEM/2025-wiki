@@ -23,6 +23,7 @@
         v-if="(!isMobile || isPanelOpen) && headings.length"
         :id="panelId"
         class="toc-panel"
+        ref="tocPanelRef"
       >
         <ul class="toc-list">
           <li
@@ -64,10 +65,97 @@ const observer = ref(null);
 const route = useRoute();
 const isMobile = ref(false);
 const isPanelOpen = ref(false);
+const tocPanelRef = ref(null);
 const panelId = "custom-toc-panel";
 let resizeTimer = null;
+let scrollUpdateRaf = null;
+let gsapInstance = null;
+let gsapImportPromise = null;
+let activeLinkTween = null;
+let componentUnmounted = false;
 
-onMounted(() => {
+const scrollTweens = new WeakMap();
+const activeScrollTweens = new Set();
+
+function primeGsap() {
+  if (gsapInstance) {
+    return Promise.resolve(gsapInstance);
+  }
+  if (typeof window === "undefined") {
+    return Promise.resolve(null);
+  }
+  if (!gsapImportPromise) {
+    gsapImportPromise = import("gsap")
+      .then((module) => {
+        const gsap = module?.gsap || module?.default || module;
+        gsapInstance = gsap || null;
+        return gsapInstance;
+      })
+      .catch((error) => {
+        console.warn("Failed to load GSAP:", error);
+        gsapInstance = null;
+        return null;
+      });
+  }
+  return gsapImportPromise;
+}
+
+function isReducedMotionPreferred() {
+  if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
+    return false;
+  }
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function smoothScrollTo(element, top) {
+  if (!element) {
+    return;
+  }
+
+  const existingTween = scrollTweens.get(element);
+  if (existingTween) {
+    existingTween.kill();
+    activeScrollTweens.delete(existingTween);
+    scrollTweens.delete(element);
+  }
+
+  const gsap = gsapInstance;
+  if (!gsap || isReducedMotionPreferred()) {
+    primeGsap();
+    element.scrollTop = top;
+    return;
+  }
+
+  const current = element.scrollTop;
+  if (Math.abs(current - top) < 1) {
+    element.scrollTop = top;
+    return;
+  }
+
+  const tween = gsap.to(element, {
+    scrollTop: top,
+    duration: 0.45,
+    ease: "power2.out",
+    onComplete: () => {
+      activeScrollTweens.delete(tween);
+      if (scrollTweens.get(element) === tween) {
+        scrollTweens.delete(element);
+      }
+    },
+    onInterrupt: () => {
+      activeScrollTweens.delete(tween);
+      if (scrollTweens.get(element) === tween) {
+        scrollTweens.delete(element);
+      }
+    },
+  });
+
+  scrollTweens.set(element, tween);
+  activeScrollTweens.add(tween);
+}
+
+onMounted(async () => {
+  await primeGsap();
   updateViewportState();
   isPanelOpen.value = isMobile.value ? false : true;
 
@@ -75,12 +163,15 @@ onMounted(() => {
   setTimeout(() => {
     updateHeadings();
     initIntersectionObserver();
+    updateActiveHeadingFromScroll();
   }, 300);
 
   window.addEventListener("resize", handleResize);
+  window.addEventListener("scroll", handleScrollSpy, { passive: true });
 });
 
 onUnmounted(() => {
+  componentUnmounted = true;
   if (observer.value) {
     observer.value.disconnect();
   }
@@ -89,6 +180,17 @@ onUnmounted(() => {
     resizeTimer = null;
   }
   window.removeEventListener("resize", handleResize);
+  window.removeEventListener("scroll", handleScrollSpy);
+  if (scrollUpdateRaf !== null) {
+    cancelAnimationFrame(scrollUpdateRaf);
+    scrollUpdateRaf = null;
+  }
+  if (activeLinkTween) {
+    activeLinkTween.kill();
+    activeLinkTween = null;
+  }
+  activeScrollTweens.forEach((tween) => tween.kill());
+  activeScrollTweens.clear();
 });
 
 // 监听路由变化，页面切换时重新获取标题
@@ -102,16 +204,31 @@ watch(
       if (isMobile.value) {
         isPanelOpen.value = false;
       }
+      updateActiveHeadingFromScroll();
     }, 500);
   }
 );
 
 watch(isMobile, (mobile) => {
   isPanelOpen.value = mobile ? false : true;
+  if (!mobile && headings.value.length) {
+    primeGsap();
+    nextTick(() => {
+      scrollActiveHeadingIntoView();
+      animateActiveHeading();
+    });
+  }
 });
 
 function togglePanel() {
   isPanelOpen.value = !isPanelOpen.value;
+  if (isPanelOpen.value) {
+    primeGsap();
+    nextTick(() => {
+      scrollActiveHeadingIntoView();
+      animateActiveHeading();
+    });
+  }
 }
 
 function handleResize() {
@@ -161,10 +278,15 @@ function updateHeadings() {
   // Reinitialize the intersection observer
   nextTick(() => {
     initIntersectionObserver();
+    updateActiveHeadingFromScroll();
   });
 }
 
 function initIntersectionObserver() {
+  if (observer.value) {
+    observer.value.disconnect();
+  }
+
   const headingElements = headings.value
     .map((h) => document.getElementById(h.id))
     .filter(Boolean);
@@ -182,14 +304,10 @@ function initIntersectionObserver() {
         .map((entry) => entry.target.id);
 
       if (visibleHeadings.length > 0) {
-        // Mark all headings as inactive
-        headings.value.forEach((h) => (h.isActive = false));
-
-        // Find the first visible heading in our list
-        const activeHeadingId = visibleHeadings[0];
-        const activeHeading = headings.value.find((h) => h.id === activeHeadingId);
-        if (activeHeading) {
-          activeHeading.isActive = true;
+        // Pick the first visible heading in document order
+        const activeHeadingId = headings.value.find((h) => visibleHeadings.includes(h.id))?.id;
+        if (activeHeadingId) {
+          setActiveHeading(activeHeadingId);
         }
       }
     },
@@ -208,12 +326,7 @@ function initIntersectionObserver() {
 function scrollToHeading(id) {
   const element = document.getElementById(id);
   if (element) {
-    // Deactivate all headings
-    headings.value.forEach((h) => (h.isActive = false));
-
-    // Activate the clicked heading
-    const heading = headings.value.find((h) => h.id === id);
-    if (heading) heading.isActive = true;
+    setActiveHeading(id);
 
     // Scroll to the element with offset for fixed headers
     const yOffset = -100;
@@ -224,6 +337,206 @@ function scrollToHeading(id) {
     if (isMobile.value) {
       isPanelOpen.value = false;
     }
+  }
+}
+
+function setActiveHeading(targetId) {
+  if (!headings.value.length) {
+    return;
+  }
+
+  const currentActiveId = headings.value.find((h) => h.isActive)?.id;
+
+  if (!targetId) {
+    if (!currentActiveId) {
+      return;
+    }
+    headings.value.forEach((h) => (h.isActive = false));
+    return;
+  }
+
+  if (currentActiveId === targetId) {
+    return;
+  }
+
+  headings.value.forEach((h) => {
+    h.isActive = h.id === targetId;
+  });
+
+  primeGsap();
+  nextTick(() => {
+    scrollActiveHeadingIntoView();
+    animateActiveHeading();
+  });
+}
+
+function scrollActiveHeadingIntoView() {
+  requestAnimationFrame(() => {
+    const panel = tocPanelRef.value || document.querySelector(".custom-toc .toc-panel");
+    const activeLink = panel?.querySelector(".toc-link.active");
+    if (!activeLink) {
+      return;
+    }
+
+    const scrollableAncestors = [];
+    let ancestor = activeLink.parentElement;
+    while (ancestor && ancestor !== document.body) {
+      const style = window.getComputedStyle(ancestor);
+      const canScrollY = /(auto|scroll)/.test(style.overflowY);
+      if (canScrollY && ancestor.scrollHeight > ancestor.clientHeight) {
+        scrollableAncestors.push(ancestor);
+      }
+      ancestor = ancestor.parentElement;
+    }
+
+    if (scrollableAncestors.length === 0) {
+      activeLink.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+      return;
+    }
+
+    const padding = 24;
+    const linkRect = activeLink.getBoundingClientRect();
+    const tocItem = activeLink.closest(".toc-item");
+    const isFirstLink = tocItem ? !tocItem.previousElementSibling : false;
+    const isLastLink = tocItem ? !tocItem.nextElementSibling : false;
+
+    scrollableAncestors.forEach((container) => {
+      if (isFirstLink && container.scrollTop > 0) {
+        smoothScrollTo(container, 0);
+        return;
+      }
+
+      if (isLastLink) {
+        const maxScrollTop = container.scrollHeight - container.clientHeight;
+        if (maxScrollTop > 0 && container.scrollTop < maxScrollTop) {
+          smoothScrollTo(container, maxScrollTop);
+          return;
+        }
+      }
+
+      const containerRect = container.getBoundingClientRect();
+      const isAbove = linkRect.top < containerRect.top + padding;
+      const isBelow = linkRect.bottom > containerRect.bottom - padding;
+
+      if (isAbove) {
+        const rawTarget = container.scrollTop + (linkRect.top - containerRect.top) - padding;
+        const maxScrollTop = container.scrollHeight - container.clientHeight;
+        const target = Math.min(Math.max(rawTarget, 0), maxScrollTop);
+        smoothScrollTo(container, target);
+      } else if (isBelow) {
+        const rawTarget = container.scrollTop + (linkRect.bottom - containerRect.bottom) + padding;
+        const maxScrollTop = container.scrollHeight - container.clientHeight;
+        const target = Math.min(Math.max(rawTarget, 0), maxScrollTop);
+        smoothScrollTo(container, target);
+      }
+    });
+  });
+}
+
+function animateActiveHeading() {
+  if (componentUnmounted || isReducedMotionPreferred()) {
+    return;
+  }
+
+  const panel = tocPanelRef.value || document.querySelector(".custom-toc .toc-panel");
+  const activeLink = panel?.querySelector(".toc-link.active");
+  if (!activeLink) {
+    return;
+  }
+
+  const gsap = gsapInstance;
+  if (!gsap) {
+    primeGsap().then((loaded) => {
+      if (!loaded || componentUnmounted) {
+        return;
+      }
+      requestAnimationFrame(() => animateActiveHeading());
+    });
+    return;
+  }
+
+  if (activeLinkTween) {
+    activeLinkTween.kill();
+    activeLinkTween = null;
+  }
+
+  const marker = activeLink.querySelector(".h2-marker, .h3-marker");
+  activeLinkTween = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+  activeLinkTween.fromTo(
+    activeLink,
+    { x: -14, opacity: 0.85 },
+    { x: 0, opacity: 1, duration: 0.32 }
+  );
+
+  if (marker) {
+    activeLinkTween.fromTo(
+      marker,
+      { scale: 0.85 },
+      { scale: 1.12, duration: 0.38, ease: "back.out(2.1)" },
+      "<"
+    );
+    activeLinkTween.to(marker, { scale: 1, duration: 0.2, ease: "power1.out" }, "-=0.18");
+  }
+
+  activeLinkTween.eventCallback("onComplete", () => {
+    if (activeLinkTween) {
+      activeLinkTween.kill();
+      activeLinkTween = null;
+    }
+  });
+
+  activeLinkTween.eventCallback("onInterrupt", () => {
+    if (activeLinkTween) {
+      activeLinkTween.kill();
+      activeLinkTween = null;
+    }
+  });
+}
+
+function handleScrollSpy() {
+  if (scrollUpdateRaf !== null) {
+    return;
+  }
+
+  scrollUpdateRaf = requestAnimationFrame(() => {
+    scrollUpdateRaf = null;
+    updateActiveHeadingFromScroll();
+  });
+}
+
+function updateActiveHeadingFromScroll() {
+  if (!headings.value.length) {
+    return;
+  }
+
+  const scrollY = window.scrollY || window.pageYOffset;
+  if (scrollY < 120) {
+    setActiveHeading(headings.value[0]?.id);
+    return;
+  }
+
+  const offset = 140;
+  let candidate = headings.value[0];
+
+  for (const heading of headings.value) {
+    const element = document.getElementById(heading.id);
+    if (!element) {
+      continue;
+    }
+
+    const rect = element.getBoundingClientRect();
+    if (rect.top <= offset) {
+      candidate = heading;
+    } else if (!candidate) {
+      candidate = heading;
+    } else {
+      break;
+    }
+  }
+
+  if (candidate) {
+    setActiveHeading(candidate.id);
   }
 }
 </script>
