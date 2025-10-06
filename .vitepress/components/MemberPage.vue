@@ -21,7 +21,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp",
-    description: "Passionate about synthetic biology and project coordination. I love organizing complex workflows and ensuring our team achieves its goals efficiently. In my free time, I enjoy hiking and reading science fiction novels."
+    description: "I take part in experiment design and safety, always on the lookout for inspiration in the everyday moments around me. My heart beats for music and books, with an endless curiosity not only for knowledge but also for the joy of sport."
   },
   {
     name: "Huizhen Du",
@@ -31,7 +31,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp",
-    description: "Dedicated researcher with expertise in molecular biology and protein engineering. I'm fascinated by the potential of engineered biological systems to solve real-world problems. When not in the lab, I enjoy cooking and photography."
+    description: "Hello everyone, I'm Huizhen. As a free-spirited thinker, I'm excited to channel my creativity into our iGEM project, where I focus on education. I look forward to collaborating with everyone to bring fun, imaginative science communication to life!"
   },
   {
     name: "Peining Wu",
@@ -61,7 +61,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy-a.webp",
-    description: "Coming from a Literature background,I help our team build a bridge between science and the broader community through Inclusivity and visual design.I stay curious about both the elevated and the everyday aspects of culture.I've been on a bit of a nostalgia kick recently."
+    description: "Coming from a Literature background,I help our team build a bridge between science and the broader community through Inclusivity and visual design. I stay curious about both the elevated and the everyday aspects of culture. I've been on a bit of a nostalgia kick recently."
   },
   {
     name: "Yining Zhao",
@@ -91,7 +91,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp",
-    description: "Guides our team on ethical considerations in synthetic biology research. I'm passionate about ensuring our work benefits society while addressing potential risks. I love reading philosophy and practicing meditation."
+    description: "A light chaser: always moving forward and enbracing all possibilities. I pretty enjoy communication and collaboration during the journey of iGEM. For me, life is like a game called *Earth Online* and there's always something to explore!"
   },
   {
     name: "Zuyao Wu",

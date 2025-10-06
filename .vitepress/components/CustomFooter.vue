@@ -7,7 +7,7 @@
     </div>
     <div class="footer-sponsors">
       <a href="https://life.fudan.edu.cn/" target="_blank" class="sponsor-link">
-        <img src="https://static.igem.wiki/teams/5643/img/sky.svg" alt="Fudan Life Science School" class="sky"/>
+        <img src="https://static.igem.wiki/teams/5643/img/sky.svg" alt="Fudan, School of Life Sciences" class="sky"/>
       </a>
       <a href="https://www.fudan.edu.cn/en/" target="_blank" class="sponsor-link">
         <img src="https://static.igem.wiki/teams/5643/img/fudan.svg" alt="Fudan University" />
