@@ -17,27 +17,19 @@ description: On this page, we present a promotional video highlighting the key f
 > Step into the Wonderful World of Dr. Strategy! 🌿
 >In our promotion video, we've brought synthetic biology to life with an *Animal Crossing*-inspired adventure! Explore a vibrant island and meet its adorable animated villagers.
 
-
-
 ### Severe Status Quo
 
 The overuse of antifungal agents is driving resistance, a crisis exacerbated by global warming, which enables once-harmless environmental fungi to infect people. A drug-resistant Candida auris infection is spreading through the island's villages, leaving doctors with few options.
 
 ![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/beginning.webp)
 
-
-
 Candida auris on the island is not the only case. An increasing number of clinical infections are surging, resisting common antifungals like azoles, echinocandins, 5-FC, allylamines, and even polyenes.
 
 ![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/issue.webp)
 
-
-
 Whole-genome sequencing struggles to pinpoint key resistance mutations, restricting the efficiency of lineage tracing, which severely hinders effective treatment. Tragically, Sasha's strain was pan-resistant. No potent drugs were available.
 
 ![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/antifungal-reason.webp)
-
-
 
 ### **Our** Solution
 
