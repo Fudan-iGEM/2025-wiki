@@ -9,7 +9,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description:  On this page, we describe DR. sTraTeGY, a Drug Resistance Mutation Tracking Technology based on a multicellular Grape Yeast platform for visualizing the spatio-temporal evolution of drug resistance.
+description: On this page, we describe DR. sTraTeGY, a Drug Resistance Mutation Tracking Technology based on Grape Yeast.
 ---
 
 <script setup>

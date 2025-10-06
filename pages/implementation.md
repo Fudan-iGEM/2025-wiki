@@ -9,8 +9,6 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description:
 ---
 
-
-
 ## [Overview](/implementation/#overview)
 
 Antimicrobial resistance (AMR) poses a critical global health threat. Despite this, clinical antifungal options have remained limited to just five major drug classes for the past century. The widespread misuse of these agents has escalated fungal adaptability, leading to more difficult to treat infections and preventable deaths. 
