@@ -13,7 +13,7 @@ description: On this page, we
 
 Fungal infections are an increasing public health concern with common infections growing increasingly resistant to treatment. Everyone is a potential stakeholder, yet immuno-compromised individuals and rare disease patients bear a disproportionate risk.
 
-We identified the **long-term social, economic, and environmental implications** of fungal resistance and reshaped our actions based on continuous dialogue with multiple stakeholders. With the Sustainable Development Goals (SDGs) as our guiding framework, we aligned our project to **SDG from DR. sTraTeGY**, meaning that we:
+We identified the long-term social, economic, and environmental implications of fungal resistance and reshaped our actions based on continuous dialogue with multiple stakeholders. With the Sustainable Development Goals (SDGs) as our guiding framework, we aligned our project to SDG from DR. sTraTeGY, meaning that we:
 
 - **Safeguard** health and well-being (SDG 3) through new models to study anti-fungal resistance and by amplifying vulnerable voices.
 - **Deliver** quality education (SDG 4) through playful, practice-based, and production-oriented activities reaching diverse communities.
@@ -50,7 +50,13 @@ To address the absence of patient perspectives in biomedical research, we create
 
 **Solution to Problem 2– Diverse Engagement**
 
-To confront the stigma, emotional isolation, and financial strain faced by EB families, we facilitated creative, community-driven engagements. At a charity art fair, patients contributed handmade artworks and crafts, raising over 500 RMB while transforming their role from “patients” into “creators.” This act of visibility not only generated modest economic support but also fostered dignity and recognition within society. The PhotoVoice narratives and interactive exhibitions further helped dismantle stigma by making hidden struggles visible to broader audiences, while participatory mapping created safe spaces for expression. Together, these initiatives addressed the psychosocial dimensions of EB, offering families both material support and the affirmation that their voices matter in shaping healthcare solutions.
+To confront the stigma, emotional isolation, and financial strain faced by EB families, we facilitated creative, community-driven engagements. At a charity art fair (Fig.1), patients contributed handmade artworks and crafts, raising over 500 RMB while transforming their role from “patients” into “creators.” This act of visibility not only generated modest economic support but also fostered dignity and recognition within society. The PhotoVoice narratives and interactive exhibitions further helped dismantle stigma by making hidden struggles visible to broader audiences, while participatory mapping created safe spaces for expression. Together, these initiatives addressed the psychosocial dimensions of EB, offering families both material support and the affirmation that their voices matter in shaping healthcare solutions.
+
+
+
+![](https://static.igem.wiki/teams/5643/pageimage/sustainable/charity-fair-compressed.webp)
+
+Fig.1 The Charity Fair where handmade artworks are contributed by 
 
 For more information, please check our [Inclusivity page](/Inclusivity/).
 
@@ -74,7 +80,7 @@ For more information, please check our [Inclusivity page](/Inclusivity/).
 
 ### Stakeholder Feedback
 
-Participants affirmed the value of our sensory-friendly research methods. They noted that the use of colors allowed them to “express more precisely,”  and articulate aspects of their illness that were previously “hard to put into words.” Building on this feedback, we developed a **Sensory-Friendly Research Toolkit**, designed to make such participatory approaches replicable in broader contexts.
+Participants affirmed the value of our sensory-friendly research methods. They noted that the use of colors allowed them to “express more precisely,”  and articulate aspects of their illness that were previously “hard to put into words.” Building on this feedback, we developed a [Sensory-Friendly Research Toolkit](/Inclusivity/), designed to make such participatory approaches replicable in broader contexts.
 
 ## **Deliver**
 
@@ -104,15 +110,27 @@ Traditional lectures and texts fail to engage young learners or general audience
 
 **Solution to Problem 1– Spreading knowledge to every age group**
 
-To address the inadequate knowledge of fungal threats, we developed innovative educational tools tailored to different age groups. Together with AFMU-China, we co-created a children’s picture book *My Microbial Friend*, which personifies microbes such as yeast, *E. coli*, and viruses to make microbiology approachable for young readers. The book was accompanied by a parent’s guide that encourages intergenerational learning by linking microbes to daily life. In parallel, we designed “Rumor Stopping” workshops for seniors and, in collaboration with Jilin University, produced a science handbook to help the public recognize and debunk misinformation about biotechnology.
+To address the inadequate knowledge of fungal threats, we developed innovative educational tools tailored to different age groups. Together with AFMU-China, we co-created a children’s picture book *My Microbial Friend*, which personifies microbes such as yeast, *E. coli*, and viruses to make microbiology approachable for young readers. Through these activities, we aim to bring scientific dialogues into daily lives while young readers actively involve their parents and friends in the learning process. In parallel, we designed “Rumor Stopping” workshops for seniors and, in collaboration with Jilin University, produced a science handbook to help the public recognize and debunk misinformation about biotechnology.
+
+![](https://static.igem.wiki/teams/5643/pageimage/sustainable/my-microbial-friend.webp)
+
+Fig.1 Showing the children’s picture book *My Microbial Friend* to young kids and discussing the content.
 
 **Solution to Problem 2– Equal and accessible education**
 
-To overcome limited access to synthetic biology education, we reached out to underprivileged communities that are often excluded from advanced science education. Partnering with the Sunflower education center, we designed two hands-on classes for migrant children—one on genes and proteins, and another on fermentation—delivered through storytelling, simple experiments, and games. We also collaborated with the Communist Youth League to bring synthetic biology classes to remote rural schools, directly addressing the education gap faced by students in under-resourced areas. By lowering entry barriers and ensuring inclusivity, we helped empower children who rarely have the chance to encounter synthetic biology in their regular curriculum.
+To overcome limited access to synthetic biology education, we reached out to underprivileged communities that are often excluded from advanced science education. Partnering with the Sunflower education center, we designed two hands-on classes for migrant children—one on genes and proteins, and another on fermentation—delivered through storytelling, simple experiments, and games. We brought synthetic biology classes to remote rural schools, directly addressing the education gap faced by students in under-resourced areas. By lowering entry barriers and ensuring inclusivity, we helped empower children who rarely have the chance to encounter synthetic biology in their regular curriculum.
+
+![](https://static.igem.wiki/teams/5643/pageimage/sustainable/sunflower.webp)
+
+Fig2. Partnering with Sunflower education to deliver science through storytelling, simple experiments, and games.
 
 **Solution to Problem 3– Interactive Engagement**
 
 To tackle the issue of low attractiveness of traditional education formats, we transformed learning into interactive experiences. We created games such as “Microbial Squat,” adapted from a popular children’s activity, to help students internalize microbial diversity through movement, and role-playing exercises to demonstrate how genes become proteins. Together with ShanghaiTech and Shanghai Jiao Tong University, we launched SynbioSH, a city-wide orienteering game in which participants solved biology puzzles at urban landmarks, turning the city into a living classroom. Additionally, through the Torch Plan, we partnered with education students to co-develop interactive slide decks for young learners, translating complex topics like anti-fungal resistance into playful and accessible formats. These approaches significantly enhanced engagement, transforming abstract knowledge into memorable experiences.
+
+![](https://static.igem.wiki/teams/5643/pageimage/sustainable/torch-run.webp)
+
+Fig3. Participants engaging in the Torch Run while exploring formats to enhance awareness of anti-fungal resistance.
 
 ---
 
@@ -134,9 +152,7 @@ To tackle the issue of low attractiveness of traditional education formats, we t
 
 ### Stakeholder Feedback
 
-- **Teachers (n=12)** noted that interactive formats (story + play) significantly improved student engagement compared to standard lectures.
-- **Students (surveyed n=103)** reported that the board game helped them “feel” the struggle of antifungal resistance, making abstract concepts tangible.
-- **International partners** encouraged us to document and share all materials openly, leading us to publish both the book and board game instructions online.
+Teachers (n=12) noted that interactive formats (story + play) significantly improved student engagement compared to standard lectures. Students (surveyed n=103) reported that the board game helped them “feel” the struggle of antifungal resistance, making abstract concepts tangible. International partners encouraged us to document and share all materials openly, leading us to publish both the book and board game instructions online.
 
 ------
 
@@ -169,26 +185,22 @@ Through our Intersectional Echoes framework, we worked closely with EB patients 
 
 **Solution to Problem 2– Cross-sector Collaborations**
 
-Our project partnered with artists, social workers, and educators to co-create activities such as art fundraising fairs, the *Science of Healing* exhibition, and interactive toolkits. We also collaborated with Georgia Institute of Technology in the outreach education of multicellular yeast growth and the usage of yeasts in our daily life. These collaborations allowed synthetic biology to intersect with art, education, and advocacy, ensuring that knowledge circulates outside the lab and reaches wider publics.
+Our project partnered with artists, social workers, and educators to co-create activities such as art charity fairs, the *Science of Healing* exhibition, and interactive toolkits. We also collaborated with Georgia Institute of Technology in the outreach education of multicellular yeast growth and the usage of yeasts in our daily life. These collaborations allowed synthetic biology to intersect with art, education, and advocacy, ensuring that knowledge circulates outside the lab and reaches wider publics.
 
 ------
 
-## Long-term Positive Impacts
+### Long-term Positive Impacts
 
 - **Scientific:** International and local iGEM partnerships enriched the design of our multicellular yeast model by situating it in a well-discussed research atmosphere.
 - **Social:** By involving EB communities as partners, not subjects, we developed sustainable practices for inclusive science.
 - **Educational:** Cross-sector collaborations produced open-access storybooks, games, and participatory toolkits that can be reused by future iGEM teams and NGOs.
 
-------
+### Stakeholder Feedback
 
-## Stakeholder Feedback
-
-- **EB families** affirmed that our participatory mapping toolkit captured struggles (like swallowing antifungal pills) often invisible in standard surveys, validating the value of co-creation.
-- **Collaboration partners**  highlighted that our yeast chassis could serve both as a research tool and as an educational case, encouraging us to share documentation openly.
-- **Artists and educators** stressed that creative formats (PhotoVoice, exhibitions) enabled broader audiences to understand fungal health, shaping how we designed future outreach.
+EB families affirmed that our participatory mapping toolkit captured subtle struggles often invisible in standard surveys, validating the value of co-creation. Collaboration partners highlighted that our yeast chassis could serve both as a research tool and as an educational case, encouraging us to share documentation openly. Educators stressed that creative formats (PhotoVoice, exhibitions) enabled broader audiences to understand fungal health, shaping how we designed future outreach.
 
 ------
 
 ## Conclusion
 
-Our project demonstrates that fighting anti-fungal resistance requires more than science alone. It demands empathy, education, and broad cooperation. By safeguarding health, delivering education, and growing partnerships, **SDG from DR. sTraTeGY** embodies iGEM’s responsibility to help achieve the SDGs—creating not only innovative tools but also inclusive and lasting impact. With SDGs in mind, we believe that the science community will always be endeavoring on the journey of building bridges from the lab to lives, from classrooms to communities and from local to global.
+Our project demonstrates that fighting anti-fungal resistance requires more than science alone. It demands empathy, education, and broad cooperation. By safeguarding health, delivering education, and growing partnerships, SDG from DR. sTraTeGY embodies iGEM’s responsibility to help achieve the SDGs—creating not only innovative tools but also inclusive and lasting impact. With SDGs in mind, we believe that the science community will always be endeavoring on the journey of building bridges from the lab to lives, from classrooms to communities and from local to global.
