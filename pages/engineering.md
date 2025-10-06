@@ -79,7 +79,7 @@ To solve the low near-infrared fluorescence, we designed a modification to the T
 
 #### Build
 
-We implemented the new standard operating procedure: yeast cultures were incubated with PCB for 1 hour prior to fluorescence measurement. See details on our [Experiment page](/experiment/).
+We implemented the new standard operating procedure: yeast cultures were incubated with PCB for 1 hour prior to fluorescence measurement. See details on our [Experiment page](/experiments/).
 
 #### Test
 
