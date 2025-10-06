@@ -52,6 +52,12 @@ const processContent = () => {
         }
       },
       {
+        regex: /BBa_K[0-9]+/g,
+        handler: (match: string) => {
+          return `<a href="https://parts.igem.org/Part:${match}" target="_blank" rel="noopener noreferrer">${match}</a>`;
+        }
+      },
+      {
         regex: /(?:doi:|DOI:)?\s*(10\.\d+\/[^\s<]+)/g,
         handler: (_match: string, doi: string) => {
           return `<a href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI: ${doi}</a>`;

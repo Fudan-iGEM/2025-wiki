@@ -37,7 +37,7 @@ While a single activity may not transform a participant into an expert, it can p
 
 
 
-This idea of learning through cycles of curiosity, engagement, and reflection connects directly to our educational philosophy.We root our approach in [**Constructionism**](https://en.wikipedia.org/wiki/Constructionism_(learning_theory)), which posits that people learn most effectively when actively engaged in constructing tangible and shareable objects in the real world[^1-]. It emphasizes meaningful, hands-on experiences, where active and social participation helps learners build a deeper understanding of the world around themm[^6][^7]. 
+This idea of learning through cycles of curiosity, engagement, and reflection connects directly to our educational philosophy.We root our approach in [**Constructionism**](https://en.wikipedia.org/wiki/Constructionism_(learning_theory)), which posits that people learn most effectively when actively engaged in constructing tangible and shareable objects in the real world[^3]. It emphasizes meaningful, hands-on experiences, where active and social participation helps learners build a deeper understanding of the world around themm[^6][^7]. 
 
 The constructionist learning process often follows a cyclical pattern:
 
@@ -640,7 +640,7 @@ You can enjoy it [click here](https://gd.games/instant-builds/837df4ba-8e96-4e18
 
 
 
-##### **SynbioSH** 
+##### **SynbioSH**
 
 > A City-Wide Synthetic Biology Adventure
 
@@ -804,7 +804,7 @@ Additionally, some students identified *Aspergillus brunneus*, a microbial speci
 
 
 
-#### Practice + X 
+#### Practice + X
 
 >I can learn from how it works
 
@@ -1089,7 +1089,7 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 
 
-#### Rural Students 
+#### Rural Students
 
 > Bringing Science to Remote Villages
 
@@ -1140,7 +1140,7 @@ From the outset, every activity and resource in our Play-Practice-Produce initia
 
   These reusable resources form a growing **open educational archive** for synthetic biology. Our lesson plans have already been applied in community science programs; our fermentation experiments were adopted by campus culture festivals. This intentional design ensures our project’s impact extends far beyond iGEM, supporting ongoing synthetic biology education and inspiring future initiatives.
 
-### Our Own Education: The Team's Learning Journey 
+### Our Own Education: The Team's Learning Journey
 
 >This is what we experience, and it is also our education
 
@@ -1185,8 +1185,8 @@ We hope to inspire everyone to understand the face of synthetic biology through 
 
 [^1]: Muñoz-Losa, A., Corbacho-Cuello, I. Impact of Interactive Science Workshops Participation on Primary School Children's Emotions and Attitudes Towards Science. *Int J of Sci and Math Educ* (2025). https://doi.org/10.1007/s10763-024-10539-2
 [^2]: Master A, Cheryan S, Moscatelli A, Meltzoff AN. Programming experience promotes higher STEM motivation among first-grade girls. J Exp Child Psychol. 2017 Aug;160:92-106. doi: 10.1016/j.jecp.2017.03.013. Epub 2017 Apr 21. PMID: 28433822.
-[^1-]:Gutiérrez Posada, J. (2017). Tangible and Shared Storytelling: Searching for the Social Dimension of Constructionism. https://doi.org/10.1145/3078072.3079743
-[^6]:Papavlasopoulou, S., Giannakos, M. N., & Jaccheri, L. (2019). Exploring children's learning experience in constructionism-based coding activities through design-based research. Computers in Human Behavior, 99, 415-427. https://doi.org/https://doi.org/10.1016/j.chb.2019.01.008
-[^7]:Downey, R. J., Youmans, K., Villanueva Alarcón, I., Nadelson, L., & Bouwma-Gearhart, J. (2022). Building Knowledge Structures in Context: An Exploration of How Constructionism Principles Influence Engineering Student Learning Experiences in Academic Making Spaces Education Sciences (12, pp.).
-[^8]:Ma, G., & Wu, Q. (2019). Social capital and educational inequality of migrant children in contemporary China: A multilevel mediation analysis. Children and Youth Services Review, 99, 165-171. https://doi.org/https://doi.org/10.1016/j.childyouth.2019.02.002
+[^3]: Gutiérrez Posada, J. (2017). Tangible and Shared Storytelling: Searching for the Social Dimension of Constructionism. https://doi.org/10.1145/3078072.3079743
+[^6]: Papavlasopoulou, S., Giannakos, M. N., & Jaccheri, L. (2019). Exploring children's learning experience in constructionism-based coding activities through design-based research. Computers in Human Behavior, 99, 415-427. https://doi.org/https://doi.org/10.1016/j.chb.2019.01.008
+[^7]: Downey, R. J., Youmans, K., Villanueva Alarcón, I., Nadelson, L., & Bouwma-Gearhart, J. (2022). Building Knowledge Structures in Context: An Exploration of How Constructionism Principles Influence Engineering Student Learning Experiences in Academic Making Spaces Education Sciences (12, pp.).
+[^8]: Ma, G., & Wu, Q. (2019). Social capital and educational inequality of migrant children in contemporary China: A multilevel mediation analysis. Children and Youth Services Review, 99, 165-171. https://doi.org/https://doi.org/10.1016/j.childyouth.2019.02.002
 

@@ -48,7 +48,7 @@ This model is based on the following experimental settings:
 ## Parameters
 
 <div style="text-align: left;">
-        <span style="color:gray">Table 1.Parameters (global variables) for the model</span>
+        <span style="color:gray">Table 1. Parameters (global variables) for the model</span>
         <br>
     </div>
 
@@ -81,7 +81,7 @@ The fluorescence maturation of Fast-FT (from blue to red) is essentially a chemi
 The core data for the calculation is derived from literature on Fast-FT key time parameters at 25°C (in vitro purified + intracellular, Drosophila S2 cells) and 37°C (in vitro purified + intracellular, HeLa cells). Specific data are shown below:
 
 <div style="text-align: center;">
-        <span style="color:gray">Table 2.Data summary for Fast-FT time parameter</span>
+        <span style="color:gray">Table 2. Data summary for Fast-FT time parameter</span>
         <br>
     </div>
 
@@ -133,7 +133,7 @@ $$
 ###### (2) Specific Parameter Calculation
 
 <div style="text-align: center;">
-        <span style="color:gray">Table 3.Specific parameter calculation at 30°C</span>
+        <span style="color:gray">Table 3. Specific parameter calculation at 30°C</span>
         <br>
     </div>
 
@@ -296,7 +296,7 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure1-single-cell-b-r-left-r-right.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 1.Single-cell- B-R (left) & r (right)</span>
+        <span style="color:gray">Figure 1. Single-cell- B-R (left) & r (right)</span>
         <br><br>
     </div>
 
@@ -321,7 +321,7 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 2.Δr(65→145 min) vs pulse width τ</span>
+        <span style="color:gray">Figure 2. &delta;r(65→145 min) vs pulse width τ</span>
         <br><br>
     </div>
 
@@ -333,7 +333,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure3-lineage-r-heatmap-birth-aligned.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 3.Lineage r heatmap (birth-aligned)</span>
+        <span style="color:gray">Figure 3. Lineage r heatmap (birth-aligned)</span>
         <br><br>
     </div>
 
@@ -341,7 +341,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure4-lineage-r-heatmap-baseline-corrected.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 4.Lineage r' heatmap (baseline-corrected)</span>
+        <span style="color:gray">Figure 4. Lineage r' heatmap (baseline-corrected)</span>
         <br><br>
     </div>
 
@@ -375,7 +375,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure5-delta-r-vs-10-90-min-window.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 5.Delta r vs τ (10-90 min window)</span>
+        <span style="color:gray">Figure 5. &Delta;r vs τ (10-90 min window)</span>
         <br><br>
     </div>
 
@@ -393,7 +393,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure6-rt-t-overlay-fairness-equal-intensity.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 6.r(t) overlay (fairness- equal_intensity)</span>
+        <span style="color:gray">Figure 6. r(t) overlay (fairness- equal_intensity)</span>
         <br><br>
     </div>
 
@@ -425,7 +425,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure7-lineage-heatmap-comparison.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 7.Lineage Heatmap Comparison</span>
+        <span style="color:gray">Figure 7. Lineage Heatmap Comparison</span>
         <br><br>
     </div>
 
@@ -442,7 +442,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure8-four-generation-rprime-chains-fairness-equal-intensity.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 8.Four-generation rprime chains - fairness equal_intensity</span>
+        <span style="color:gray">Figure 8. Four-generation rprime chains - fairness equal_intensity</span>
         <br><br>
     </div>
 
@@ -484,7 +484,7 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure9-strong-promoter-vs-weak-promoter.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 9.Strong Promoter vs Weak Promoter</span>
+        <span style="color:gray">Figure 9. Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
 
@@ -498,7 +498,7 @@ To enhance the interpretability and accessibility of our modeling framework, we 
 This module simulates the three-dimensional growth of the multicellular "grape yeast" cluster, modeling cell division, elongation, and cluster formation under controlled environmental conditions (e.g. temperature at 30°C, YPD medium). Starting from a single ancestral cell, the simulation applies deterministic branching rules inspired by Pascal’s triangle developmental pattern[^9], incorporating asynchronous division to generate geometrically defined, clonal clusters. Users can toggle between "grape" and "normal" yeast types, adjusting simulation speed (0.5–3×) to observe morphological transitions and cluster expansion. This interactive visualization gives us a more graphic understanding of "grape yeast's'' growth, thereby guiding the design of our multicellular chassis to enable precise, real-time tracking of drug resistance evolution in the [DR. sTraTeGY platform](/design/).
 
 <div style="text-align: center;">
-        <span style="color:gray">Table 4.Parameters (local variables) for 3D Yeast Growth Simulation</span>
+        <span style="color:gray">Table 4. Parameters (local variables) for 3D Yeast Growth Simulation</span>
         <br>
     </div>
 
@@ -519,7 +519,7 @@ Other minor parameters are detailed in the [code](#code-and-data-accessibility).
 ![](https://static.igem.wiki/teams/5643/pageimage/model/visual1.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 10.Animation demo of 3D Yeast Growth Simulation</span>
+        <span style="color:gray">Figure 10. Animation demo of 3D Yeast Growth Simulation</span>
         <br><br>
     </div>
 
@@ -532,7 +532,7 @@ This module visualizes the spatiotemporal maturation of Fast-FT proteins within 
 <img src="https://static.igem.wiki/teams/5643/pageimage/model/visual2-480p.webp" style="zoom:150%;" />
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 11.Animation demo of 3D Fluorescent Timer Maturation</span>
+        <span style="color:gray">Figure 11. Animation demo of 3D Fluorescent Timer Maturation</span>
         <br><br>
     </div>
 
@@ -572,7 +572,7 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 - **Design (2025.06):**
   The initial model was designed based on published data for Fast-FT proteins, including maturation kinetics from in vitro studies (e.g., blue peak time and red half-peak time at 25°C and 37°C). Parameters such as maturation time constants ($\tau_B, \tau_I, \tau_R$) were sourced from literature [^1], and the model assumed a generic promoter expression pattern without cell-cycle specificity.
 - **Build (2025.06):**
-  We implemented the model using ordinary differential equations (ODEs) to describe the irreversible maturation chain (C→B→I→R). Key parameters were set based on in vitro values, such as $\tau_B$=12 min and $\tau_R$=720 min, and the Ash1 promoter was initially erroneously modeled to express at the start of the cell cycle.
+  We implemented the model using ordinary differential equations (ODEs) to describe the irreversible maturation chain (C→B→I→R). Key parameters were set based on in vitro values, such as $\tau_B$=12 min and $\tau_R$=720 min, and the Ash1 promoter was initially erroneously modeled to express at the start of the cell cycle.
 - **Test (2025.07):**
   Simulation results revealed discrepancies with expected cellular behaviors. The in vitro-based maturation kinetics caused the fluorescent proteins to mature from blue to red far too rapidly. This led to a premature saturation of the red signal, where the r(t) ratio approached its maximum too quickly within a single cell cycle, influencing the time gradient needed for resolution. Consequently, over just one or two generations, all cells accumulated a similarly high red signal, making it impossible to distinguish young daughter cells from old mother cells and causing the timer to lose its core function.
 - **Learn (2025.07):**
