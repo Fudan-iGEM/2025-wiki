@@ -66,7 +66,7 @@ Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collection
 | BBa_252BO17G |            promoter            |                     pTet2                     |
 | BBa_K5441013 |             coding             |                     *BAX*                     |
 | BBa_250R9OVR |             coding             |                    *IME1*                     |
-| BBa_K5470011 |             coding             |                    GSG-E2A                    |
+| BBa_K5470009 |             coding             |                    GSG-E2A                    |
 | BBa_25IB5O7X |             coding             |                      mSG                      |
 | BBa_25MTFXKO |       Translational_Unit       |         pTet2 driven *BAX*-*E2A*-mSG          |
 | BBa_25N811P5 |       Translational_Unit       |         pTet2 driven *IME1*-*E2A*-mSG         |
