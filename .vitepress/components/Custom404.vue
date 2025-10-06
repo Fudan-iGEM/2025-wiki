@@ -51,7 +51,7 @@
     </div>
     <div class="error-title">404</div>
     <div class="error-cta">
-      <RainbowButton is="a" href="/" class="error-cta_button">Team Fudan</RainbowButton>
+      <RainbowButton is="a" href="/fudan/" class="error-cta_button">Team Fudan</RainbowButton>
     </div>
 
     <div class="recommendation">
@@ -85,28 +85,28 @@ let animationTimeline = null
 
 const recommendedLinks = [
   {
-    href: '/project/',
-    title: 'Project Overview',
-    description: 'Understand the main idea and goals behind our 2025 project.',
-    tag: 'Project',
+    href: 'https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe',
+    title: 'Project Video',
+    description: 'Our project promotional video',
+    tag: 'Community',
   },
   {
-    href: '/team/',
+    href: '/fudan/team/',
     title: 'Meet the Team',
-    description: 'Get to know the students and mentors making this happen.',
+    description: 'To know everyone making this happen',
     tag: 'Team',
   },
   {
-    href: '/lab-notebook/',
-    title: 'Lab Notebook',
-    description: 'Follow our experimental journey week by week.',
-    tag: 'Notebook',
+    href: '/fudan/design/',
+    title: 'Project Design',
+    description: 'Why we designed Grape Yeast',
+    tag: 'Project',
   },
   {
-    href: '/safety/',
-    title: 'Safety Strategy',
-    description: 'Learn how we keep our research safe and compliant.',
-    tag: 'Safety',
+    href: '/fudan/results/',
+    title: 'Project Results',
+    description: 'Our findings around Grape Yeast',
+    tag: 'Project',
   },
 ]
 
