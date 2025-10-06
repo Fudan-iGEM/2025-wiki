@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp
 layout: igem 
 heroImage: https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-headmap.webp
-description: On this page, we present a commercially viable solution addressing the critical challenge of antifungal resistance—a multi-billion-dollar global health threat. Dr.sTraTeGY's innovative platform is specifically designed for CROs in the Yangtze River Delta. With a strategic pricing model and scalable business framework, we are positioned to capture substantial market share in China's rapidly growing biopharmaceutical sector.
+description: On this page, we present a commercially viable solution addressing the critical challenge of antifungal resistance—a multi-billion-dollar global health threat. Dr.sTraTeGY's innovative platform is specifically designed for CROs in the Yangtze River Delta with a strategic pricing model and scalable business framework.
 ---
 
 ## Summary
