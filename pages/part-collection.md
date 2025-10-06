@@ -22,12 +22,12 @@ The construction of Grape Yeast is the foundational engineering of our program. 
 Plasmid carrying ACE2HRs and G418 resistence (BBa_25EI9P2P) is the vector of TUs that were integrated in *ACE2* loci. In the modular yeast assembly system described by Lee *et al.* (2015)[^3] , the construction of  this vector was obtained by replacing the GFP dropout cassette in a Type-234 vector (*e.g.*, pYTK047) through BsaI-mediated Golden Gate assembly. Because the BsaI sites in Type-234 vectors are oriented in reverse relative to standard parts, performing a final high-temperature digestion or 80 °C heat-inactivation would undesirably re-cut or damage the assembled product. Therefore, the reaction should end with ligation — cycling between 37 °C and 16 °C for about 30 cycles — without any subsequent 55 °C digestion or 80 °C heat-inactivation steps. After cycling, the mixture is directly transformed into *E. coli*, and correct clones are identified by loss of GFP fluorescence or appropriate antibiotic resistance, followed by PCR or sequencing confirmation. This “end-on-ligation” method successfully yields constructs like 234r-ACE2HRs-G418R, though it carries a higher misassembly rate, so careful screening is required.
 
 
-#### Controlled Expression of *IME1* and *BAX* to Modulate Yeast Morphology 
+#### Controlled Expression of *IME1* and *BAX* to Modulate Yeast Morphology
 
 To stimulate the differentiation potential of our multicellular yeast system, we introduced the *IME1* (BBa_250R9OVR) and *BAX* (BBa_K5441013) genes to generate morphological diversity. *IME1*, a key regulator of meiosis (Smith *et al.*,1990), was integrated into the yeast genome via homologous recombination, which resulted in changes to the size and morphology of daughter cells.[^4] *BAX*, a regulator of apoptosis（Greenhalf, Stephan, & Chaudhuri, 1995）, was expressed in the multicellular yeast to accelerate cell death, producing branches of varying sizes and altering the overall morphology of the clusters.[^5] To tightly control the expression of these genes, we implemented the Tet-on/off system. In the presence of doxycycline, the system activates the transcription of *IME1* and *BAX* by binding to the pTet2 promoter, thereby precisely regulating their expression.
 
 
-#### Replacing Ergosterol with Cholesterol to Mimic Pathogens 
+#### Replacing Ergosterol with Cholesterol to Mimic Pathogens
 
 Pathogenic fungi differ significantly from *Saccharomyces cerevisiae* in their membrane lipid composition. The presence of cholesterol components in the cell membranes of pathogenic fungi, which resemble those of human cells, is a key factor in their invasiveness. Therefore, in addition to morphological engineering, we aimed to modify the membrane structure of Grape Yeast by replacing ergosterol with cholesterol to more closely mimic the cell membranes of clinically relevant pathogenic fungi, such as *Candida albicans*. The products of the *ERG5* and *ERG6* genes are key enzymes in the *S. cerevisiae* ergosterol biosynthesis pathway, responsible for catalyzing the formation of the C-22(23) double bond and the C-24 methyl transfer reaction, respectively. We replaced *ERG5* and *ERG6* with *DrDHCR7* (BBa_25RCU5CB) and *DrDHCR24* (BBa_25FOVO4C) respectively, as described in Bean et al.(2022).[^6] This redirection of the metabolic pathway enabled the substitution of ergosterol with cholesterol on the Grape Yeast cell membrane surface.
 
@@ -36,15 +36,15 @@ Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collection
 
 | Part Number  |              Type              |                  Part Name                   |
 | :----------: | :----------------------------: | :------------------------------------------: |
-| BBa_25MIG4EW | Homologous Region [SO:0000853] |             HR5'\_*ACE2*\_Chr12L             |
-| BBa_259HCU8C | Homologous Region [SO:0000853] |             HR3'\_*ACE2*\_Chr12R             |
+| BBa_25MIG4EW | Homologous Region |             HR5'\_*ACE2*\_Chr12L             |
+| BBa_259HCU8C | Homologous Region |             HR3'\_*ACE2*\_Chr12R             |
 | BBa_25EI9P2P |            Plasmid             | Plasmid carrying ACE2HRs and G418 resistence |
 | BBa_256S6J1M |             coding             |                    HsDOR                     |
 | BBa_25AKJ83S |       Translational_Unit       |              pREV1 driven HsDOR              |
-| BBa_25XKAUNH | Homologous Region [SO:0000853] |             HR5'\_*ERG5*\_Chr13L             |
-| BBa_25E9K479 | Homologous Region [SO:0000853] |             HR3'\_*ERG5*\_Chr13R             |
-| BBa_25U7DH3R | Homologous Region [SO:0000853] |             HR5'\_*ERG6*\_Chr13L             |
-| BBa_25O1ZVOU | Homologous Region [SO:0000853] |             HR3'\_*ERG6*\_Chr13R             |
+| BBa_25XKAUNH | Homologous Region |             HR5'\_*ERG5*\_Chr13L             |
+| BBa_25E9K479 | Homologous Region |             HR3'\_*ERG5*\_Chr13R             |
+| BBa_25U7DH3R | Homologous Region |             HR5'\_*ERG6*\_Chr13L             |
+| BBa_25O1ZVOU | Homologous Region |             HR3'\_*ERG6*\_Chr13R             |
 | BBa_25RCU5CB |             coding             |                   DrDHCR7                    |
 | BBa_25FOVO4C |             coding             |                   DrDHCR24                   |
 | BBa_25FU0JM9 |       Translational_Unit       |            pREV1 driven *DrDHCR7*            |
@@ -215,7 +215,7 @@ This multi-layered design not only expands the experimental versatility of yeast
 
 
 
-## Reference 
+## Reference
 
 [^1]:Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. *Nature*, *639*(8055), 691–699. https://doi.org/10.1038/s41586-025-08689-6
 [^2]:Brown, A. J., Dyos, S. L., Whiteway, M. S., White, J. H., Watson, M. A., Marzioch, M., Clare, J. J., Cousens, D. J., Paddon, C., Plumpton, C., Romanos, M. A., & Dowell, S. J. (2000). Functional coupling of mammalian receptors to the yeast mating pathway using novel yeast/mammalian G protein alpha-subunit chimeras. *Yeast (Chichester, England)*, *16*(1), 11–22. https://doi.org/10.1002/(SICI)1097-0061(20000115)16:1[11::AID-YEA502](11::AID-YEA502)3.0.CO;2-K
