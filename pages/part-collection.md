@@ -15,9 +15,9 @@ Our project **DR.sTraTeGY** (Drug Resistance mutation Tracking Technology based 
 
 ### *ACE2* Knockout and Functional Human GPCR Integration
 
-To create Grape Yeast, we first knocked out the transcription factor gene *ACE2*, whose function is essential for septum degradation during yeast cell division. The resulting strain fails to release daughter cells after cytokinesis, instead forming multicellular clusters that resemble grape bunches (Tong *et al*, 2025)[^1]. And its morphology and characteristics closely mimic those of pathogenic fungi 缺参考文献. Next, we introduced the human &delta;-opioid receptor - HsDOR (BBa_256S6J1M) to the *ACE2* deletion locus. Applying SNC80, which is an extracellular ligand that capable of binding to HsDOR, could activate the downstream signaling pathway. As human-derived HsDOR, which is on the membrane, cannot transduce signals inside yeast cells, we introduced Gpa1 (BBa_254K9906), described previously in Brown *et al* (2000)[^2]. Introduced Gpa1 will serve as the intracellular messenger for HsDOR, thereby achieving a functional human GPCR-yeast coupling. This modification not only endowed the multicellular yeast chassis with drug-ensing capabilities but also demonstrated the feasibility of transplanting human receptors into yeast.
+To create Grape Yeast, we first knocked out the transcription factor gene *ACE2*, whose function is essential for septum degradation during yeast cell division. The resulting strain fails to release daughter cells after cytokinesis, instead forming multicellular clusters that resemble grape bunches (@@@@; Tong *et al*, 2025)[^1]. And its morphology and characteristics closely mimic those of pathogenic fungi 缺参考文献. Next, we introduced the human &delta;-opioid receptor - HsDOR (BBa_256S6J1M) to the *ACE2* deletion locus. Applying SNC80, which is an extracellular ligand that capable of binding to HsDOR, could activate the downstream signaling pathway. As human-derived HsDOR, which is on the membrane, cannot transduce signals inside yeast cells, we introduced Gpa1 (BBa_254K9906), described previously in Brown *et al* (2000)[^2]. Introduced Gpa1 will serve as the intracellular messenger for HsDOR, thereby achieving a functional human GPCR-yeast coupling. This modification not only endowed the multicellular yeast chassis with drug-ensing capabilities but also demonstrated the feasibility of transplanting human receptors into yeast.
 
-We used [the modular assembly yeast toolkit](https://www.addgene.org/kits/moclo-ytk/), described by Lee *et al* (2015)[^3], to construct the parts in our project. An intermediate plasmid (BBa_25EI9P2P) was constructed to integrate different translational units (TU) in *ACE2* locus, which is very similar to [pYTK096](https://www.addgene.org/kits/moclo-ytk/) for URA3 locus integration. The GFP dropout cassette in BBa_25EI9P2P has the BsaI sites oriented in reverse relative to standard parts. When performing the [Golden Gate Assembly](/experiments/#golden-gate-assembly) to produce BBa_25EI9P2P no 55°C digestion nor 80°C heat-inactivation, only ligation — cycling between 37°C and 16°C for 30 cycles. After cycling, the mixture is directly transformed into *E. coli*, and correct clones are identified by gain of GFP fluorescence with kanamycin 检查这个单词 resistance, followed by whole-plasmid sequencing confirmation.
+We used [the modular assembly yeast toolkit](https://www.addgene.org/kits/moclo-ytk/), described by Lee *et al* (2015)[^3], to construct the parts in our project. An intermediate plasmid (BBa_25EI9P2P) was constructed to integrate different translational units (TU) in *ACE2* locus, which is very similar to [pYTK096](https://www.addgene.org/kits/moclo-ytk/) for URA3 locus integration. The GFP dropout cassette in BBa_25EI9P2P has the BsaI sites oriented in reverse relative to standard parts. When performing the [Golden Gate Assembly](/experiments/#golden-gate-assembly) to produce BBa_25EI9P2P no 55°C digestion nor 80°C heat-inactivation, only ligation — cycling between 37°C and 16°C for 30 cycles. After cycling, the mixture is directly transformed into *E. coli*, and correct clones are identified by gain of GFP fluorescence with kanamycin resistance, followed by whole-plasmid sequencing confirmation.
 
 This “end-on-ligation” method successfully yielded BBa_25EI9P2P internally we called it *234r-ACE2HRs-G418R*. Then, we use it to generate the integration plasmid to put pREV1 driven HsDOR (BBa_25AKJ83S) into *ACE2* locus.
 
@@ -29,16 +29,15 @@ To tightly control the expression of these genes, we implemented the Tet-on/off 
 
 ### Replacing Ergosterol with Cholesterol to Mimic Pathogens
 
-Pathogenic fungi differ significantly from *Saccharomyces cerevisiae* in their membrane lipid composition. The presence of cholesterol components in the cell membranes of pathogenic fungi, which resemble those of human cells, is a key factor in their invasiveness. Therefore, in addition to morphological engineering, we aimed to modify the membrane structure of [Grape Yeast](/design/) by replacing ergosterol with cholesterol to more closely mimic the cell membranes of clinically relevant pathogenic fungi, such as *Candida albicans*. The products of the *ERG5* and *ERG6* genes are key enzymes in the *S. cerevisiae* ergosterol biosynthesis pathway, responsible for catalyzing the formation of the C-22(23) double bond and the C-24 methyl transfer reaction, respectively. We replaced *ERG5* and *ERG6* with *DrDHCR7* (BBa_25RCU5CB) and *DrDHCR24* (BBa_25FOVO4C) respectively, as described in Bean et al (2022).[^6] This redirection of the metabolic pathway enabled the substitution of ergosterol with cholesterol on the Grape Yeast cell membrane surface.
+Pathogenic fungi differ significantly from *Saccharomyces cerevisiae* in their membrane lipid composition. The presence of cholesterol components in the cell membranes of pathogenic fungi, which resemble those of human cells, is a key factor in their invasiveness. Therefore, in addition to morphological engineering, we aimed to modify the membrane structure of [Grape Yeast](/design/) by replacing ergosterol with cholesterol to more closely mimic the cell membranes of clinically relevant pathogenic fungi, such as *Candida albicans*. The products of the *ERG5* and *ERG6* genes are key enzymes in the *S. cerevisiae* ergosterol biosynthesis pathway, responsible for catalyzing the formation of the C-22(23) double bond and the C-24 methyl transfer reaction (Bean *et al*, 2022)[^6]. We replaced *ERG5* and *ERG6* with *DrDHCR7* (BBa_25RCU5CB) and *DrDHCR24* (BBa_25FOVO4C) respectively, using BBa_25XKAUNH and BBa_25E9K479, BBa_25U7DH3R and BBa_25O1ZVOU for targeted yeast genome integration. This redirection of the metabolic pathway enabled the substitution of ergosterol with cholesterol on the Grape Yeast cell membrane surface.
 
 #### Fluorescent Timer
 
-Grape Yeast forms complex multicellular clusters as mother cells continuously bud to generate new daughter cell branches. After a period of incubation, this repetitive budding leads to intricate, tangled three-dimensional clusters. This structural complexity makes it extremely difficult to trace the genealogical relationship among individual yeast cells. Consequently, we cannot precisely determine the timing and sequence of drug-resistance mutations within the cluster. To resolve this critical limitation, we introduced a sophisticated genetic circuit: the fluorescent timer. By expressing this fluorescent timer within the multicellular yeast system, we can accurately determine the time elapsed since a given yeast cell underwent cytokinesis. This enables us to precisely track the temporal accumulation of resistance mutations across different cells and time points.
+Grape Yeast forms complex multicellular clusters as mother cells continuously bud to generate new daughter cell branches. After a period of incubation, this repetitive budding leads to intricate, tangled three-dimensional clusters. This structural complexity makes it extremely difficult to trace the genealogical relationship among individual yeast cells. Consequently, we cannot precisely determine the timing and sequence of drug-resistance mutations within the cluster. To resolve this critical limitation, we introduced a fluorescent timer (BBa_25AT6YR4). By expressing this fluorescent timer within the multicellular yeast system, we can accurately determine the time elapsed since a given yeast cell underwent cell division. This enables us to precisely track the temporal accumulation of resistance mutations across different cells and time points.
 
-The core component of our system is modified mCherry, a monomeric derivative of mCherry whose fluorescence spectrum gradually shifts from blue to red over time. This chromophore maturation rate is temperature-dependent, based on the finding of the article and our [Model](/model/), at 30∘C, the blue fluorescence reaches its maximum at approximately 0.41h, while the red fluorescence half-maximum appears at around 12 h.[^7] 
+The core component of the fluorescent timer is modified mCherry (BBa_25TQG9WZ), a monomeric derivative of mCherry whose fluorescence spectrum gradually shifts from blue to red over time. This chromophore maturation rate is temperature-dependent, based on previous finding[^7] and our [modeling results](/model/): at yeast's culture temperature 30∘C, the blue fluorescence reaches its maximum at approximately 0.4 h, while the red fluorescence half-maximum appears at around 12 h. 
 
-Leveraging these spectral dynamics, we constructed the fluorescent timer by flanking Modified mCherry with the ASH1 AIpro promoter and the ASH1 3′UTR. ASH1 AIpro was designed using AI−assisted optimization to be a periodic promoter that drives the rhythmic transcription of Modified mCherry. Because the promoter's choice and strength critically affect the accuracy of time measurement, we developed a mathematical model to systematically evaluate and quantify these two key factors. This modeling step verified the rationality of using the ASH1 promoter and an appropriate transcriptional strength prior to wet-lab experiments (see [Model Page](/model/)  for more details) . ASH1 3′UTR is crucial for spatial regulation; it ensures that the resulting mRNA is guided to the daughter cells. [^8][^9] This mechanism maintains the continuous and uninterrupted expression of the fluorescent protein in the progeny, guaranteeing the continuity and accuracy of fluorescence-based timing throughout successive cell divisions.
-
+Leveraging these spectral dynamics, we constructed the fluorescent timer by flanking modified mCherry (BBa_25TQG9WZ) with the ASH1 promoter (BBa_25VHXKNL) and the ASH1 3' UTR (BBa_25AIDL8P). A periodic promoter that drives the rhythmic transcription of color-changing mCherry is needed, otherwise all cells would be mixed with blue and red fluoresence. Because the promoter's choice critically affects the accuracy of time measurement, we developed a mathematical model to evaluate key characters of the promoter. Consistent with a previous study @@@@, [our modeling](/model/) verified the rationality of using the ASH1 promoter prior to any wet-lab experiments (see our [Model](/model/) page for more details). In addition, ASH1 3' UTR is crucial for spatial regulation. It ensures that the color-changing mCherry mRNA is guided to the daughter cells, and only translated in the daugther cells.[^8][^9] Together, the continuous and uninterrupted expression of the fluorescent protein in the progeny, guarantees the continuity and accuracy of fluorescence-based timing throughout successive cell divisions.
 
 Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)
 
@@ -76,21 +75,36 @@ Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collection
 | BBa_25VHXKNL | promoter          |      ASH1 AIpro      |
 | BBa_25AT6YR4 |       Translational Unit | ASH1 AIpro driven modified mCherry-ASH1 3'UTR |
 
+We use the following primers to verify the yeast genome intergration
+
+<pre>ACE2_5H_F59     5-GCACTTTGGGAAAATTTCAGGACAC
+common_5H_R56   5-ccatctagatgcgaattcaggg    # paired with any _5H_Forward
+common_3H_F58   5-gtgaatgctggtcgctatactg    # paired with any _3H_Reverse
+ACE2_3H_R58     5-GACCTGCGTGCCCATTGTA
+
+ERG5_5H_F58   5-GCAGCTGCTCGTTCGC
+ERG5_3H_R57   5-GAAGAACATCCTTCTTGGATTGC
+
+ERG6_5H_F57   5-CCAAACAGCTAGGGCTGG
+ERG6_3H_R57   5-CGCAAGAAATCCAATGGCTTTC</pre>
+
 
 ## Collection 2: [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) using EMS-insensitive Fluorescent Protein
 
 Under the induction of the EMS mutagen, the sequence of the promoter undergoes G/C to A/T base mutations, causing a change in the expression level of the fluorescent protein it regulates. This change reflects the degree of promoter sequence mutation. We aim to use this as a gene mutation recorder. However, the fluorescent protein's sequence itself can also change under EMS mutagenesis, leading to alterations in its fluorescence and interfering with the accurate assessment of the promoter's mutation degree. To solve this problem and make the fluorescent protein as stable as possible under EMS, we developed a [Software Tool](/software/) to optimize the fluorescent protein sequence. The tool replaces as many G/C bases with A/T bases as possible to enhance the fluorescent protein's resistance to mutagenesis under EMS induction. Thereby, we have EMS-resist fluorescent proteins and mutagenic promoters combinations as [TU recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30).
 
-To identify the optimal mutation-tracking [TU recorder](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) for our project, we selected 4 promoters: pOST1 (BBa_259JX52V), pRNR2 (BBa_K3748013), pSTM1 (BBa_25FQBGJW) and pTDH3 (BBa_K3190001); 7 EMSfps (the number in the name represents the central excitation wavelength of the fluorescent protein): EMSfp383 (BBa_25F6RD26), EMSfp399 (BBa_25M2Z9H7), EMSfp499 (BBa_25IB5O7X), EMSfp506 (BBa_25FAVHQY), EMSfp569 (BBa_25TYRLM9), EMSfp642 (BBa_25GARG3E), EMSfp643 (BBa_2599SI53), and 1 common terminator tENO1 (BBa_K2753051) - yielding a total of 28 TU Recorders. Please note 3 out 4 promoters were inspired by Hodgins-Davis *et al* (2019)[^7]. By comparing fluorescence changes between the EMS-treated group and the control group, we screened out the combination with the most significant variation as the optimal pair, which was then integrated into the 16 chromosomes of yeast using [our homologous arms collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0).
+To identify the optimal mutation-tracking [TU recorder](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) for our project, we selected 4 promoters: pOST1 (BBa_259JX52V), pRNR2 (BBa_K3748013), pSTM1 (BBa_25FQBGJW) and pTDH3 (BBa_K3190001); 7 EMSfps (the number in the name represents the central excitation wavelength of the fluorescent protein): EMSfp383 (BBa_25F6RD26), EMSfp399 (BBa_25M2Z9H7), EMSfp499 (BBa_25IB5O7X), EMSfp506 (BBa_25FAVHQY), EMSfp569 (BBa_25TYRLM9), EMSfp642 (BBa_25GARG3E), EMSfp643 (BBa_2599SI53), and 1 common terminator tENO1 (BBa_K2753051) - yielding a total of 28 TU Recorders. Please note 3 out 4 promoters were inspired by Hodgins-Davis *et al* (2019)[^7], the other pTDH3 (BBa_K3190001) is the strongest promoter test by Lee *et al* (2015)[^3]. By comparing fluorescence changes between the EMS-treated group and the control group, we [screened out](/measurement/) the combination with the most significant variation as the optimal pair, which was then integrated into the 16 chromosomes of yeast using [our homologous arms collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0).
 
-In the YTK toolkit by Lee *et al* (2015), pYTK096 is a *URA3* integration vector pre-assembled from the following parts: Type 7 (the URA3 3′ homology arm) , Type 8a (the *E. coli* replication origin + resistance marker + flanking *Not*I sites) , and Type 8b (the URA3 5′ homology arm) .[^3] This design allows the vector to be linearized prior to transformation. This standardized design (Type 7 + 8a + 8b module combination) makes pYTK096 a versatile vector within the YTK system for stable, single-copy chromosomal integration. In this collection, the integration of all TU Recorders is achieved via:
+In [the YTK Toolkit](https://www.addgene.org/kits/moclo-ytk/) developed by Lee *et al* (2015)[^3], pYTK096 is a *URA3* integration vector pre-assembled from the following parts: Type 7 (the URA3 3' homology arm), Type 8a (the *E. coli* replication origin + kanamycin resistance marker + flanking [NotI](https://www.neb.com/en/products/r3189-noti-hf) sites), and Type 8b (the URA3 5' homology arm). This design allows the vector to be linearized by [NotI](https://www.neb.com/en/products/r3189-noti-hf) digestion prior to transformation. Any TU (Type 2+3+4) put into pYTK096, would be stable, single-copy chromosomal integration at *URA3* locus.
 
-1. Assembly using the pYTK096 integration vector;
-2. Linearization by NotI restriction digest, which exposes the *URA3* homology arms;
-3. Transformation into yeast, followed by integration into the chromosomal *URA3* locus via *URA3* homologous recombination;
-4. Confirmation of correct integration either through *URA3* phenotypic selection or PCR verification (a fragment of approximately 500 bp can be amplified upon correct integration) .
+All 28 [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) expressing yeast strains were made with the following steps:
 
-In the part collection of our registry, we showcase the results of the *Not*I digest and phire amplification. For these information, please read our documentation of [TU Recorders using EMS-insensitive Fluorescent Protein](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30)
+1. Assembly into pYTK096 integration vector;
+2. Linearize by [NotI](https://www.neb.com/en/products/r3189-noti-hf) digestion, which exposes the *URA3* homology arms;
+3. Transform yeast strain [BY4741](https://www.yeastgenome.org/strain/by4741), followed by integration into the chromosomal *URA3* locus via homologous recombination;
+4. Confirm integration through *URA3* phenotypic selection and PCR verification (a fragment of approximately 500 bp can be amplified upon correct integration).
+
+We showcase the results of [NotI]((https://www.neb.com/en/products/r3189-noti-hf)) digest and Phire ([a commercial PCR Master Mix](https://www.thermofisher.com/order/catalog/product/F160S)) amplification on corressponding [iGEM Registry pages](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30).
 
 Table 2. Parts for 28 [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30)
 
@@ -128,46 +142,43 @@ Table 2. Parts for 28 [TU Recorders](https://registry.igem.org/collections/65943
 
 ## Collection 3:  [Sites of Integration to Assess Chromosomal Instability](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) in *Saccharomyces cerevisiae*
 
-In synthetic biology, efficient and predictable genome integration is fundamental for constructing complex biological systems and accelerating the engineering cycle. To address this need, our team developed a robust Homologous Arms Integration Collection for Saccharomyces cerevisiae. This collection not only incorporates validated safe integration sites but also extends to novel replacement-based strategies, providing future iGEM teams with a powerful, flexible, and standardized solution.
+In synthetic biology, efficient and predictable genome integration is fundamental for constructing complex biological systems and accelerating the engineering cycle. To address this need, we have assembled the [Homologous Arms Integration Collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) for *Saccharomyces cerevisiae*, covering all 16 chromosomes. This collection not only incorporates previously validated safe integration sites, but also extends to novel replacement-based strategies to another 6 dangerous integration sites, providing future [iGEM teams](https://teams.igem.org/) with a powerful, flexible, and standardized solution.
 
-The core of this collection consists of two parts of homologous arms :
+There two groups homologous arms in [this collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0):
 
+### 10 Safe Integration Sites
 
-#### 10 Safe Integration Sites
+Shaw *et al* (2023) designed 10 sets of safe integration sites located on different chromosomes of the [S288C](https://www.yeastgenome.org/strain/s288c) strain *Saccharomyces cerevisiae*. The selection and design of these integration sites were rigorously based on four standards[^11]:
 
-In the article by Shaw *et al.* (2023) , the authors designed 10 sets of safe integration sites located on different chromosomes of the S288C strain *Saccharomyces cerevisiae*. The selection and design of these integration sites were rigorously based on four standards[^11] :
+1. **Minimize Host Cell Impact:** To ensure that the integration of the foreign DNA into the host genome has the least possible disruptive effect on the yeast cell's essential physiology.
+2. **Maximize Integration Efficiency and Stability:** To increase the likelihood of achieving highly efficient and stable integration of the genetic constructs.
+3. **Highly Conserved in Common Strains:** To guarantee that the loci are well-conserved across common laboratory strains of *S. cerevisiae*, thereby ensuring the broad utility and portability of the toolkit.
+4. **Directly Amenable to CRISPR-Cas9 Manipulation:** To make these sites readily accessible and targetable for precise editing using CRISPR-Cas9 technology. Please note in our project, no gRNA nor Cas9 were introduced into yeast.
 
-1. Minimize Host Cell Impact: To ensure that the integration of the foreign DNA into the host genome has the least possible disruptive effect on the yeast cell's essential physiology.
-2. Maximize Integration Efficiency and Stability: To increase the likelihood of achieving highly efficient and stable integration of the genetic constructs.
-3. Highly Conserved in Common Strains: To guarantee that the loci are well-conserved across common laboratory strains of *S. cerevisiae*, thereby ensuring the broad utility and portability of the toolkit.
-4. Directly Amenable to CRISPR-Cas9 Manipulation: To make these sites readily accessible and targetable for precise editing using CRISPR-Cas9 technology.
+To uphold these principles, Shaw *et al* (2023) picked 10 sites because they reside in true intergenic regions (non-coding DNA), being located more than 1 kb from any known gene's start codon and more than 0.5 kb from its stop codon.
 
-To uphold these principles, the final 10 sites were selected specifically because they reside in true intergenic regions (non-coding DNA), being located more than 1 kb from any known gene's start codon and more than 0.5 kb from its stop codon.
+Furthermore, we recognized that these integration sites exhibit varying distances from the centromere across the chromosomes. We hypothsize that during yeast growth, sites located farther from the centromere undergo more frequent recombination events, leading to greater genetic variation. The question of whether these variations can be recorded was part of the inspiration behind our [design](/design/) of the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30).
 
-Furthermore, we recognized that these integration sites exhibit varying distances from the centromere across the chromosomes. There is a hypothesis suggesting that during yeast growth, sites located farther from the centromere undergo more frequent recombination events, leading to greater genetic variation. The question of whether these variations can be recorded was part of the inspiration behind our design of the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30).
+@@@@ Table 3. Integration Sites with varying distances to the centromere
 
+### 6 Dangerous Integration Sites
 
-#### 6 Dangerous Integration Sites
+To provide comprehensive coverage across the yeast genome, we analyzed genome-wide stability data to identify locus whose perturbation could potentially disrupt chromosomal integrity. The rationale for selecting these six dangerous integration sites was guided by quantitative findings from Puddu *et al* (2019)[^12], which systematically characterized genomic instability across *Saccharomyces cerevisiae* deletion strains.
 
-To provide comprehensive coverage across the yeast genome, we analyzed genome-wide stability data to identify locus whose perturbation could potentially disrupt chromosomal integrity. The rationale for selecting these six Dangerous Integration Sites was guided by quantitative findings from Puddu *et al.* (2019) , which systematically characterized genomic instability across *Saccharomyces cerevisiae* deletion strains.[^12]
+In this landmark work, the authors analyzed over one thousand yeast isolates and knockout mutants to explore the causes of chromosomal aneuploidy and genome instability. Their results showed that deletion of certain genes markedly increases genome instability, often leading to chromosomal gain or loss, genome duplication, and altered karyotypes.[^12] These rearrangements were strongly associated with antifungal drug resistance. Their finding indicates that perturbations leading to genome duplication can also create opportunities for evolutionary innovation, as the extra genomic content allows cells to rewire gene expression and acquire new functions. Consistently, a recent study by Tong *et al* (2025)[^1], observed whole-genome duplication upon daily selection for larger size, over 1000 days.
 
-In this landmark work, the authors analyzed over one thousand yeast isolates and knockout mutants to explore the causes of chromosomal aneuploidy and genome instability. Their results showed that deletion of certain genes markedly increases genome instability, often leading to chromosomal gain or loss, genome duplication, and altered karyotypes.[^12] These rearrangements were strongly associated with stress adaptation of environmental stress and antifungal drug resistance. This finding indicates that perturbations leading to *genome duplication* can also create opportunities for evolutionary innovation, as the extra genomic content allows cells to rewire gene expression and acquire new functions.
+Building on these insight, we hypothesized that integrating [our TU Recorders](#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein) into locus associated with genome instability could allow us to record mutational events while simultaneously observing the potential emergence of adaptive phenotypes. In other words, while [the 10 safe integration sites](#10-safe-integration-sites) reported by Shaw *et al* (2023) ensure genome stability[^11], [the 6 dangerous integration sites](#6-dangerous-integration-sites) we picked, provide a complementary perspective — a framework to study how instability itself may drive mutation, adaptation, and genomic evolution.
 
-Building on this insight, we hypothesized that integrating our TU Recorders into locus associated with genome instability could allow us to record mutational events while simultaneously observing the potential emergence of adaptive phenotypes. In other words, while the Safe Integration Sites described by Shaw *et al.* (2023) ensure stability and predictability[^11] , the Dangerous Integration Sites provide a complementary perspective—a framework to study how instability itself may drive mutation, adaptation, and genomic evolution.
-
-Using the dataset from Puddu *et al.* (2019)[^12] , we examined indicators such as chromosomal copy number variation, genome duplication frequency, and inter-chromosomal effects. Based on these parameters, we selected 6 representative locus — *CAF*, *SWI4*, *DPB3*, *FEN2*, *SOD1*, and *BDF1* — each located on a distinct chromosome, where gene knockout was correlated with either :
+Using the dataset from Puddu *et al* (2019)[^12], we examined indicators such as chromosomal copy number variation, genome duplication frequency, and inter-chromosomal effects. Based on these parameters, we selected 6 representative locus — *CAF*, *SWI4*, *DPB3*, *FEN2*, *SOD1*, and *BDF1* — each located on a distinct chromosome, where gene knockout was correlated with either:
 
 1. Instability of other chromosomes;
 2. Aneuploidy of the affected chromosome itself.
 
-These locus represent genomic regions prone to rearrangement and serve as a useful contrast to the Safe Integration Sites described by Shaw *et al.* (2023) .[^11] Although our constructs act as *recorders* rather than mutagenic drivers, including these instability-prone locus broadens the system’s chromosomal coverage and allows exploration of how genomic context impacts mutation capture and recording fidelity.
+These loci represent genomic regions prone to rearrangement and serve as a useful contrast to [the safe integration sites](#10-safe-integration-sites) described by Shaw *et al* (2023)[^11]. Although we integrate [TU Recorders](#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein) rather than mutagenic drivers, including these instability-prone loci completes whole-genome chromosomal coverage and allows exploration of how genomic context impacts mutation capture and recording fidelity.
 
-To support this rationale, we provide an reorganized summary table derived from Puddu *et al.* (2019) supplementary information showing chromosomal copy number changes and genome stability indices for *CAF*, *SWI4*, *DPB3*, *FEN2*, *SOD1*, and *BDF1*.[^12] The fully processed dataset s available in the supplementary table file. [Supplementary Table](https://static.igem.wiki/teams/5643/pageimage/part/copy-of-supplementary-table-of-collection-3.csv)
+To support this rationale, we provide an reorganized summary table derived from Puddu *et al* (2019)[^12] supplementary information showing chromosomal copy number changes and genome stability indicators for *CAF*, *SWI4*, *DPB3*, *FEN2*, *SOD1*, and *BDF1* ([Supplementary Table](https://static.igem.wiki/teams/5643/pageimage/part/copy-of-supplementary-table-of-collection-3.csv)).
 
-Below is the table of parts for our Collection 3:  [Sites of Integration to Assess Chromosomal Instability](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) in *Saccharomyces cerevisiae*
-
-
-Table 3. [Sites of Integration to Assess Chromosomal Instability](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0)
+Table 4. [Sites of Integration to Assess Chromosomal Instability](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) in *Saccharomyces cerevisiae*
 
 | Part number  |      Part name       |     Integration Loci     |
 | :----------: | :------------------: | :----------------------: |
@@ -204,26 +215,42 @@ Table 3. [Sites of Integration to Assess Chromosomal Instability](https://regist
 | BBa_25RRB2RQ |     HR5'\_Chr16L     | ChrXVI: 569,995-570,541  |
 | BBa_25U7CTYJ |     HR3'\_Chr16R     | ChrXVI: 570,542-571,023  |
 
+In addition to [Shaw's primers](https://pubs.acs.org/doi/10.1021/acssynbio.3c00423#_i26) for verifying genome integration, we use the following primers as well
 
+<pre>SOD1_5H_F56     5-CTGCACAAGATAAACTGAGATGACT
+common_5H_R56   5-ccatctagatgcgaattcaggg    # paired with any _5H_Forward
+common_3H_F58   5-gtgaatgctggtcgctatactg    # paired with any _3H_Reverse
+SOD1_3H_R56     5-CAGTTCTACAGAATTTTTGGACGAG
 
+CAF_5H_F56      5-CCAAGTGCATTTATTGAATGTTTTTGG
+CAF_3H_R57      5-CTTTTGTCCTATCCGTATTTGTTTAGTTATTTTG
+
+SWI4_5H_F56     5-CGCGTTTGAAGTGACGC
+SWI4_3H_R58     5-CAAAGTTTGCTCAAGTTGACTTAGAAATTG
+
+DPB3_5H_F56     5-CAGGTATCGCCCTCTCTATGAA
+DPB3_3H_R57     5-CTGTTGAATTAGATTAGTGACGTTTGTTTTG
+
+FEN2_5H_F58     5-CTTCAGAATAATTGTAATATTTACGCTTGCTTATTT
+FEN2_3H_R57     5-CTTTTCATGGCCTGGCAATT
+
+BDF1_5H_F59     5-GAATCTCGCAAGTCGCCT
+BDF1_3H R58     5-GAACTGCTACTGAATCCCTCAGAC</pre>
 
 
 ### Summary
 
-Together, these three collections establish a comprehensive toolkit for engineering, recording, and evaluating genomic behavior in *Saccharomyces cerevisiae*.
+Together, these three collections establish a comprehensive toolkit for engineering, recording, and evaluating genomic behavior in multicellular *Saccharomyces cerevisiae*.
 
- Starting from the Grape Yeast chassis, which mimics pathogenic fungal morphology and membrane composition, we created a biologically relevant and modular foundation for synthetic design. Building on this, the TU Recorders enable direct visualization and quantification of mutation events through EMS-resistant fluorescent protein reporters, forming the core of our mutation-tracking system. Finally, by integrating these recorders into both Safe and Dangerous Integration Sites, we extended our investigation to the chromosomal level — examining how genome stability, duplication, and structural variation influence mutation recording and adaptive evolution.
+Starting from the [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141) chassis, which mimics pathogenic fungal morphology and membrane composition, we created a medically relevant and modular foundation for synthetic design. Building on this, the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) enable direct visualization and quantification of mutation events through EMS sensitive promoters driven EMS-resistant fluorescent proteins, forming the core of our mutation-tracking system. Finally, by integrating these recorders into both [safe](#10-safe-integration-sites) and [dangerous](#6-dangerous-integration-sites) integration sites, we extended our investigation to the chromosomal level — examining how genome stability, duplication, and structural variation influence multicellular yeasts' adaptive evolution.
 
-This multi-layered design not only expands the experimental versatility of yeast synthetic biology but also bridges the gap between stable genetic engineering and dynamic evolutionary processes, providing future iGEM communities with a powerful framework for studying mutation, adaptation, and genomic resilience.
-
-
-
+This multi-layered design not only expands the experimental versatility of yeast synthetic biology but also bridges the gap between stable genetic engineering and dynamic evolutionary processes, providing future [iGEM teams](https://teams.igem.org/) with a powerful framework for studying mutation, adaptation, and genomic resilience.
 
 
 ## Reference
 
 [^1]:Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. *Nature*, *639*(8055), 691–699. https://doi.org/10.1038/s41586-025-08689-6
-[^2]:Brown, A. J., Dyos, S. L., Whiteway, M. S., White, J. H., Watson, M. A., Marzioch, M., Clare, J. J., Cousens, D. J., Paddon, C., Plumpton, C., Romanos, M. A., & Dowell, S. J. (2000). Functional coupling of mammalian receptors to the yeast mating pathway using novel yeast/mammalian G protein alpha-subunit chimeras. *Yeast (Chichester, England)*, *16*(1), 11–22. https://doi.org/10.1002/(SICI)1097-0061(20000115)16:1[11::AID-YEA502](11::AID-YEA502)3.0.CO;2-K
+[^2]:Brown, A. J., Dyos, S. L., Whiteway, M. S., White, J. H., Watson, M. A., Marzioch, M., Clare, J. J., Cousens, D. J., Paddon, C., Plumpton, C., Romanos, M. A., & Dowell, S. J. (2000). Functional coupling of mammalian receptors to the yeast mating pathway using novel yeast/mammalian G protein alpha-subunit chimeras. *Yeast (Chichester, England)*, *16*(1), 11–22. PMID: 10620771
 [^3]:Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. https://doi.org/10.1021/sb500366v
 [^4]:Smith, H. E., Su, S. S., Neigeborn, L., Driscoll, S. E., & Mitchell, A. P. (1990). Role of IME1 expression in regulation of meiosis in Saccharomyces cerevisiae. *Molecular and cellular biology*, *10*(12), 6103–6113. https://doi.org/10.1128/mcb.10.12.6103-6113.1990
 [^5]:Greenhalf, W., Stephan, C., & Chaudhuri, B. (1996). Role of mitochondria and C-terminal membrane anchor of Bcl-2 in Bax induced growth arrest and mortality in Saccharomyces cerevisiae. *FEBS letters*, *380*(1-2), 169–175. https://doi.org/10.1016/0014-5793(96)00044-0
@@ -232,5 +259,5 @@ This multi-layered design not only expands the experimental versatility of yeast
 [^8]:Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. https://doi.org/10.1017/s1355838200001059
 [^9]:Bertrand, E., Chartrand, P., Schaefer, M., Shenoy, S. M., Singer, R. H., & Long, R. M. (1998). Localization of ASH1 mRNA particles in living yeast. *Molecular cell*, *2*(4), 437–445. https://doi.org/10.1016/s1097-2765(00)80143-4
 [^10]:Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. https://doi.org/10.1073/pnas.1902823116
-[^11]:Shaw, W. M., Khalil, A. S., & Ellis, T. (2023). A Multiplex MoClo Toolkit for Extensive and Flexible Engineering of *Saccharomyces cerevisiae*. *ACS synthetic biology*, *12*(11), 3393–3405. https://doi.org/10.1021/acssynbio.3c00423 ↩
+[^11]:Shaw, W. M., Khalil, A. S., & Ellis, T. (2023). A Multiplex MoClo Toolkit for Extensive and Flexible Engineering of *Saccharomyces cerevisiae*. *ACS synthetic biology*, *12*(11), 3393–3405. https://doi.org/10.1021/acssynbio.3c00423
 [^12]:Puddu, F., Herzog, M., Selivanova, A., Wang, S., Zhu, J., Klein-Lavi, S., Gordon, M., Meirman, R., Millan-Zambrano, G., Ayestaran, I., Salguero, I., Sharan, R., Li, R., Kupiec, M., & Jackson, S. P. (2019). Genome architecture and stability in the Saccharomyces cerevisiae knockout collection. *Nature*, *573*(7774), 416–420. https://doi.org/10.1038/s41586-019-1549-9

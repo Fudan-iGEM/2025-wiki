@@ -221,7 +221,7 @@ This step linearizes plasmid DNA prior to transformation to increase integration
    | :---: | :-----------------: | :---------------------------: |
    | **1** |       NotI-HF       |              0.1              |
    | **2** | 10x CutSmart Buffer |               2               |
-   | **3** |  ddH­<sub>2</sub>O  |     Bring up to 20 &mu;L      |
+   | **3** |  ddH<sub>2</sub>O  |     Bring up to 20 &mu;L      |
    | **4** |         DNA         | Variable Amount (600-1000 ng) |
    |       |      **Total**      |            **20**             |
 
@@ -382,7 +382,7 @@ As described in Tong et al. (2025)[^6], briefly:
 
 ## Flow Cytometry of Single Cell Yeast
 
-Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/#recorder) transformed into BY4741 or BY4742.
+Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/#recorder) transformed into [BY4741](https://www.yeastgenome.org/strain/by4741) or [BY4742](https://www.yeastgenome.org/strain/by4741).
 
 1. Pick strains into 3 mL synthetic complete (SC) medium and grow them at 30°C with 250 rpm shaking overnight.
 
