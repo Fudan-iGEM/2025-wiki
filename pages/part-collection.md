@@ -50,6 +50,9 @@ Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collection
 | BBa_25EI9P2P |            Plasmid             | Plasmid carrying ACE2HRs and G418 resistence  |
 | BBa_256S6J1M |             coding             |                     HsDOR                     |
 | BBa_25AKJ83S |       Translational_Unit       |              pREV1 driven HsDOR               |
+| BBa_254K9906 |             coding             |                 Modified Gpa1                 |
+| BBa_K3944000 |            promoter            |                     pCUP1                     |
+| BBa_255U7XC8 |       Translational_Unit       |          pCUP1 driven modified Gpa1           |
 | BBa_25XKAUNH | Homologous Region [SO:0000853] |             HR5'\_*ERG5*\_Chr13L              |
 | BBa_25E9K479 | Homologous Region [SO:0000853] |             HR3'\_*ERG5*\_Chr13R              |
 | BBa_25U7DH3R | Homologous Region [SO:0000853] |             HR5'\_*ERG6*\_Chr13L              |
@@ -58,9 +61,6 @@ Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collection
 | BBa_25FOVO4C |             coding             |                   DrDHCR24                    |
 | BBa_25FU0JM9 |       Translational_Unit       |            pREV1 driven *DrDHCR7*             |
 | BBa_25JA9ZHO |       Translational_Unit       |            pREV1 driven *DrDHCR24*            |
-| BBa_254K9906 |             coding             |                Modified *Gpa1*                |
-| BBa_K3944000 |            promoter            |                     pCUP1                     |
-| BBa_255U7XC8 |       Translational_Unit       |          pCUP1 driven modified Gpa1           |
 | BBa_K3944010 |           regulatory           |                     rtTA                      |
 | BBa_25JOF7TY |       Translational_Unit       |               pREV1 driven rtTA               |
 | BBa_252BO17G |            promoter            |                     pTet2                     |
