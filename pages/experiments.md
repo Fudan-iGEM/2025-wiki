@@ -86,7 +86,9 @@ As described in Shaw et al. (2023)[^1], briefly:
 6.  Add 950 &mu;L of SOC or LB medium (pre-warmed to 37°C).
 7.  Incubate at 37°C with shaking (250 rpm) for 1 h.
 8.  Plate 100-200 &mu;L of the culture onto an LB agar plate containing the appropriate antibiotic.
+
     `Ensure the antibiotic on the plate matches the resistance marker of the destination plasmid backbone.`
+    
 9.  Incubate plates overnight at 37°C.
 
 ### Colony Screening and Validation
