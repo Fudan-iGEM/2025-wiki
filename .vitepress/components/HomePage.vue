@@ -34,7 +34,9 @@ const animations = ref([
   { name: '5-2.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/5-2.json', data: null },
   { name: '5-3.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/5-3.json', data: null },
   { name: '6-1.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/6-1.json', data: null },
-  { name: '6-3.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/6-3.json', data: null }
+  { name: '6-3.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/6-3.json', data: null },
+  { name: '6-4.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/6-4.json', data: null },
+  { name: 'crisis.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/crisis.json', data: null },
 ])
 
 onMounted(async () => {
