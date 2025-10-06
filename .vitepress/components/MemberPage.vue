@@ -11,6 +11,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzq.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/parts-design-safety.webp",
     description: "I'm honored to be the captain of this fantastic team, responsible for design and experiments. I'm a bit of a nerd who enjoys watching anime, reading comics, and listening to music. I love exploring the unknown and look forward to facing challenges together with everyone at iGEM to create a new kind of synthetic biology!"
   },
   {
@@ -241,6 +242,7 @@ onUnmounted(() => {
           :contact-text="member.contactText"
           :avatar-url="member.avatarUrl"
           :bar-avatar-url="member.barAvatarUrl"
+          :icon-url="member.iconUrl"
           :description="member.description"
           :show-user-info="true"
           :enable-tilt="true"
