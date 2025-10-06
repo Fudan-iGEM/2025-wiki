@@ -35,9 +35,9 @@ t0terminator_R  5-ttcagaacgctcggttgcc-3</pre>
 | BBa_25FQBGJW | promoter          |        pSTM1         | |
 | BBa_259JX52V | promoter          |        pOST1         | DOI: 10.5281/zenodo.17274792 |
 | BBa_K3748013 | promoter          |        pRNR2         | |
-| BBa_25AIDL8P | 3'UTR             |      ASH1 3'UTR      | DOI: 10.5281/zenodo. |
-| BBa_25TQG9WZ | coding            |   modified mCherry   | DOI: 10.5281/zenodo. |
-| BBa_25VHXKNL | promoter          |      ASH1 AIpro      | DOI: 10.5281/zenodo. |
+| BBa_25AIDL8P | 3'UTR             |      ASH1 3'UTR      | DOI: 10.5281/zenodo.17274570 |
+| BBa_25TQG9WZ | coding            |   modified mCherry   | DOI: 10.5281/zenodo.17274695 |
+| BBa_25VHXKNL | promoter          |      ASH1 AIpro      | DOI: 10.5281/zenodo.17274719 |
 
 
 All of our [Golden Gate](/experiments.html#golden-gate-assembly) assembled plasmids, were verified by restriction enzyme digestion ([NotI](https://www.neb.com/en/products/r3189-noti-hf) or [HindIII](https://www.neb.com/en/products/r3104-hindiii-hf)) and whole-plasmid sequencing.

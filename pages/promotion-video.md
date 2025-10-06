@@ -9,70 +9,59 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we present a promotional video highlighting the key features and benefits of our antifungal drug development platform, Dr.sTraTeGY.
+description: On this page, we highlight key frames in <a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target=_blank>our promotional video</a>
 ---
 
-## Highlights of Our PV
+## Highlights of our PV
 
-> Step into the Wonderful World of Dr. Strategy! 🌿
->In our promotion video, we've brought synthetic biology to life with an *Animal Crossing*-inspired adventure! Explore a vibrant island and meet its adorable animated villagers.
+Step into the Wonderful World of Dr. Strategy 🌿
+
+In our promotion video, we've brought synthetic biology to life with an *Animal Crossing*-inspired adventure! Explore a vibrant island and meet its adorable animated villagers.
 
 ### Severe Status Quo
 
-The overuse of antifungal agents is driving resistance, a crisis exacerbated by global warming, which enables once-harmless environmental fungi to infect people. A drug-resistant Candida auris infection is spreading through the island's villages, leaving doctors with few options.
+The overuse of antifungal agents is driving resistance, a crisis exacerbated by global warming, which enables once-harmless environmental fungi to infect people. A drug-resistant *Candida auris* infection is spreading through the island's villages, leaving doctors with few options.
 
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/beginning.webp)
+![severe status quo 1](https://static.igem.wiki/teams/5643/pageimage/promotion-video/beginning.webp)
 
-Candida auris on the island is not the only case. An increasing number of clinical infections are surging, resisting common antifungals like azoles, echinocandins, 5-FC, allylamines, and even polyenes.
+*Candida auris* on the island is not the only case. An increasing number of clinical infections are surging, resisting common antifungals like azoles, echinocandins, 5-FC, allylamines, and even polyenes.
 
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/issue.webp)
+![severe status quo 2](https://static.igem.wiki/teams/5643/pageimage/promotion-video/issue.webp)
 
 Whole-genome sequencing struggles to pinpoint key resistance mutations, restricting the efficiency of lineage tracing, which severely hinders effective treatment. Tragically, Sasha's strain was pan-resistant. No potent drugs were available.
 
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/antifungal-reason.webp)
+![severe status quo 3](https://static.igem.wiki/teams/5643/pageimage/promotion-video/antifungal-reason.webp)
 
-### **Our** Solution
+### Our Solution
 
-Driven to locate major mutations, we developed DR.sTraTeGY. We design **a multicellular yeast system** capable of recording mutational history and tracking mutation sites, aiming to integrate synthetic biology with medical research to provide a more convenient platform for antifungal drug development.
+Driven to locate major mutations, we developed DR.sTraTeGY. We [design](/design/) a multicellular yeast system capable of recording mutational history and indicating mutation sites, aiming to integrate synthetic biology with medical research to provide a more convenient platform for antifungal drug development.
 
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/experiment.webp)
+![our solution](https://static.igem.wiki/teams/5643/pageimage/promotion-video/experiment.webp)
 
-
-
-#### Module One
+### Multicellular Yeast
 
 By knocking out Ace2 in Saccharomyces cerevisiae, we hindered the separation of mother and daughter cell walls and obtained grape-like multicellular clusters, which we call these 'grape yeasts.'
 
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/module1.webp)
+![grape yeasts](https://static.igem.wiki/teams/5643/pageimage/promotion-video/module1.webp)
 
+### Enable differentiation
 
+To explore their differentiation potential, we introduced *IME1* to induce meiosis or *BAX* to trigger apoptosis, yielding diverse morphologies in grape yeasts.
 
-#### Module Two and Three
+![differentiated yeasts](https://static.igem.wiki/teams/5643/pageimage/promotion-video/module23.webp)
 
-To explore their differentiation potential, we introduced IME1 to induce meiosis or BAX to trigger apoptosis, yielding diverse morphologies in grape yeasts.
+### TU Timer
 
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/module23.webp)
+Using this heterogeneous multicellular system, we are able to track evolutionary trajectories with [our Timer module](/part-collection/#collection-1-grape-yeast), while tracer probes integrated in different chromosomes detect mutations under intensifying selective pressure.
 
+![timer driven by ASH1 promoter](https://static.igem.wiki/teams/5643/pageimage/promotion-video/module4.webp)
 
+Leveraging synthetic biology and visualization, we experimentally reconstruct fungal resistance evolution to enable precise mutation mapping and assist rational drug design.
 
-#### Module Four
+This foundamental advance enables the rational design of effective drugs, offering hope for countless affected villagers and a new path to treatment for all.
 
-Using this heterogeneous multicellular system, we are able to track evolutionary trajectories with our timer module, while tracer probes integrated in different chromosomes detect mutations under intensifying selective pressure.
+![foundamental advance](https://static.igem.wiki/teams/5643/pageimage/promotion-video/ending.webp)
 
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/module4.webp)
+## Watch our PV!
 
-
-
-Leveraging synthetic biology and visualization, we will experimentally reconstruct fungal resistance evolution to enable precise mutation mapping and assist rational drug design. 
-This breakthrough enables the rational design of effective drugs, offering hope for countless affected villagers and a new path to treatment for all.
-
-![antifungal reason](https://static.igem.wiki/teams/5643/pageimage/promotion-video/ending.webp)
-
-
-
-## Watch Our PV!
-
-Want to learn more?
-Watch the Fudan iGEM 2025 Promotion Video now! Click the link below!
-
-[Fudan: DR sTraTeGY (2025) - Project Promotion-Video](https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe)
+Want to learn more? Watch [our Promotion Video](https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe) now at [https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe](https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe)

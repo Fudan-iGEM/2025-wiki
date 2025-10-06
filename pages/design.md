@@ -9,7 +9,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we describe DR. sTraTeGY, a Drug Resistance Mutation Tracking Technology based on Grape Yeast.
+description: On this page, we describe DR. sTraTeGY, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
 ---
 
 <script setup>
@@ -18,7 +18,7 @@ import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualiz
 
 ## Overview
 
-On this page, we introduce DR. sTraTeGY, a Drug Resistance Mutation Tracking Technology based on Grape Yeast. Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
+On this page, we introduce DR. sTraTeGY, a Drug Resistance mutation Tracking Technology based on Grape Yeast. Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
 
 - The Problem: The rapid rise of drug-resistant pathogens poses a serious threat to global health.
 - Our Solution: DR. sTraTeGY, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.

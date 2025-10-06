@@ -9,70 +9,72 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we describe 3 collections built around Grape Yeast, foundamentally advaced the power of <i>Saccharomyces cerevisiae</i>.
 ---
 
-Based on our team’s project **DR.sTraTeGY (Drug Resistance mutation Tracking Technology based on Grape Yeast)**, we designed three collections: Grape Yeast, the optimal promoter–fluorescent protein combination screening collection, and the homologous arms integration collection for *Saccharomyces cerevisiae*.
+Our project **DR.sTraTeGY** (Drug Resistance mutation Tracking Technology based on Grape Yeast) has developed and test three part collections: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141), [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) (the optimal promoter–fluorescent protein combination screening collection), and [the homologous arms integration collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) for *Saccharomyces cerevisiae*.
 
+## Collection 1: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)
 
-### Collection 1: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)
+### *ACE2* Knockout and Functional Human GPCR Integration
 
-#### ACE2 Knockout and Functional Human GPCR Integration
+To create Grape Yeast, we first knocked out the transcription factor gene *ACE2*, whose function is essential for septum degradation during yeast cell division. The resulting strain fails to release daughter cells after cytokinesis, instead forming multicellular clusters that resemble grape bunches (Tong *et al*, 2025)[^1]. And its morphology and characteristics closely mimic those of pathogenic fungi 缺参考文献. Next, we introduced the human &delta;-opioid receptor - HsDOR (BBa_256S6J1M) to the *ACE2* deletion locus. Applying SNC80, which is an extracellular ligand that capable of binding to HsDOR, could activate the downstream signaling pathway. As human-derived HsDOR, which is on the membrane, cannot transduce signals inside yeast cells, we introduced Gpa1 (BBa_254K9906), described previously in Brown *et al* (2000)[^2]. Introduced Gpa1 will serve as the intracellular messenger for HsDOR, thereby achieving a functional human GPCR-yeast coupling. This modification not only endowed the multicellular yeast chassis with drug-ensing capabilities but also demonstrated the feasibility of transplanting human receptors into yeast.
 
-The construction of Grape Yeast is the foundational engineering of our program. To create this chassis, we knocked out the transcription factor gene *ACE2*, which is essential for septum degradation during yeast cell division. The resulting strain fails to release daughter cells after cytokinesis, instead forming multicellular clusters that resemble grape bunches. (Tong *et al*., 2025)[^1] And its morphology and characteristics closely mimic those of pathogenic fungi. To expand the functionality of the strain, we introduced the human δ-opioid receptor - HsDOR (BBa_256S6J1M) to the *ACE2* deletion locus. Additionally, we add SNC80, which is extracellular ligand that capable of binding to HsDOR, thereby activating the downstream signaling pathway. As human-derived HsDOR cannot transduce signals inside yeast cells upon ligand binding, we introduced Modified Gpa1 (BBa_254K9906) downstream of HsDOR, as described in Brown, A. J. *et al.* (2000)[^2] . This allowed Modified Gpa1 to serve as the intracellular ligand for HsDOR, thereby achieving a functional human GPCR-yeast coupling. This modification not only endowed the multicellular yeast chassis with drug-ensing capabilities but also demonstrated the feasibility of transplanting human receptor proteins into this system.
+We used [the modular assembly yeast toolkit](https://www.addgene.org/kits/moclo-ytk/), described by Lee *et al* (2015)[^3], to construct the parts in our project. An intermediate plasmid (BBa_25EI9P2P) was constructed to integrate different translational units (TU) in *ACE2* locus, which is very similar to [pYTK096](https://www.addgene.org/kits/moclo-ytk/) for URA3 locus integration. The GFP dropout cassette in BBa_25EI9P2P has the BsaI sites oriented in reverse relative to standard parts. When performing the [Golden Gate Assembly](/experiments/#golden-gate-assembly) to produce BBa_25EI9P2P no 55°C digestion nor 80°C heat-inactivation, only ligation — cycling between 37°C and 16°C for 30 cycles. After cycling, the mixture is directly transformed into *E. coli*, and correct clones are identified by gain of GFP fluorescence with kanamycin 检查这个单词 resistance, followed by whole-plasmid sequencing confirmation.
 
-Plasmid carrying ACE2HRs and G418 resistence (BBa_25EI9P2P) is the vector of TUs that were integrated in *ACE2* loci. In the modular yeast assembly system described by Lee *et al.* (2015)[^3] , the construction of  this vector was obtained by replacing the GFP dropout cassette in a Type-234 vector (*e.g.*, pYTK047) through BsaI-mediated Golden Gate assembly. Because the BsaI sites in Type-234 vectors are oriented in reverse relative to standard parts, performing a final high-temperature digestion or 80 °C heat-inactivation would undesirably re-cut or damage the assembled product. Therefore, the reaction should end with ligation — cycling between 37 °C and 16 °C for about 30 cycles — without any subsequent 55 °C digestion or 80 °C heat-inactivation steps. After cycling, the mixture is directly transformed into *E. coli*, and correct clones are identified by loss of GFP fluorescence or appropriate antibiotic resistance, followed by PCR or sequencing confirmation. This “end-on-ligation” method successfully yields constructs like 234r-ACE2HRs-G418R, though it carries a higher misassembly rate, so careful screening is required.
+This “end-on-ligation” method successfully yielded BBa_25EI9P2P internally we called it *234r-ACE2HRs-G418R*. Then, we use it to generate the integration plasmid to put pREV1 driven HsDOR (BBa_25AKJ83S) into *ACE2* locus.
 
+### Controlled Expression of *IME1* and *BAX* to Modulate Yeast Morphology
 
-#### Controlled Expression of *IME1* and *BAX* to Modulate Yeast Morphology
+To generate morphological diversity of our multicellular yeast system, we introduced the *IME1* (BBa_250R9OVR) and *BAX* (BBa_K5441013) genes. *IME1*, a key regulator of meiosis (Smith *et al*,1990), was integrated into the yeast genome via homologous recombination, which resulted in changes to the size and morphology of daughter cells.[^4] *BAX*, a regulator of apoptosis (Greenhalf *et al*, 1995), was expressed in the multicellular yeast to accelerate cell death, producing branches of varying sizes and altering the overall morphology of the clusters.[^5]
 
-To stimulate the differentiation potential of our multicellular yeast system, we introduced the *IME1* (BBa_250R9OVR) and *BAX* (BBa_K5441013) genes to generate morphological diversity. *IME1*, a key regulator of meiosis (Smith *et al.*,1990), was integrated into the yeast genome via homologous recombination, which resulted in changes to the size and morphology of daughter cells.[^4] *BAX*, a regulator of apoptosis（Greenhalf, Stephan, & Chaudhuri, 1995）, was expressed in the multicellular yeast to accelerate cell death, producing branches of varying sizes and altering the overall morphology of the clusters.[^5] To tightly control the expression of these genes, we implemented the Tet-on/off system. In the presence of doxycycline, the system activates the transcription of *IME1* and *BAX* by binding to the pTet2 promoter, thereby precisely regulating their expression.
+To tightly control the expression of these genes, we implemented the Tet-on/off system. In the presence of doxycycline or aTc, the pTet2 promoter is active, and transcribes *IME1* and *BAX*, thereby leading to either meiosis or apoptosis, which could be the first reported differentiation events in multicellular yeasts. We also developed pCUP1 driven *IME1* (BBa_25N9YOTD) or *BAX* (BBa_25KYY8AI) which could be induced just adding CuSO<sub>4</sub>.
 
+### Replacing Ergosterol with Cholesterol to Mimic Pathogens
 
-#### Replacing Ergosterol with Cholesterol to Mimic Pathogens
-
-Pathogenic fungi differ significantly from *Saccharomyces cerevisiae* in their membrane lipid composition. The presence of cholesterol components in the cell membranes of pathogenic fungi, which resemble those of human cells, is a key factor in their invasiveness. Therefore, in addition to morphological engineering, we aimed to modify the membrane structure of Grape Yeast by replacing ergosterol with cholesterol to more closely mimic the cell membranes of clinically relevant pathogenic fungi, such as *Candida albicans*. The products of the *ERG5* and *ERG6* genes are key enzymes in the *S. cerevisiae* ergosterol biosynthesis pathway, responsible for catalyzing the formation of the C-22(23) double bond and the C-24 methyl transfer reaction, respectively. We replaced *ERG5* and *ERG6* with *DrDHCR7* (BBa_25RCU5CB) and *DrDHCR24* (BBa_25FOVO4C) respectively, as described in Bean et al.(2022).[^6] This redirection of the metabolic pathway enabled the substitution of ergosterol with cholesterol on the Grape Yeast cell membrane surface.
+Pathogenic fungi differ significantly from *Saccharomyces cerevisiae* in their membrane lipid composition. The presence of cholesterol components in the cell membranes of pathogenic fungi, which resemble those of human cells, is a key factor in their invasiveness. Therefore, in addition to morphological engineering, we aimed to modify the membrane structure of [Grape Yeast](/design/) by replacing ergosterol with cholesterol to more closely mimic the cell membranes of clinically relevant pathogenic fungi, such as *Candida albicans*. The products of the *ERG5* and *ERG6* genes are key enzymes in the *S. cerevisiae* ergosterol biosynthesis pathway, responsible for catalyzing the formation of the C-22(23) double bond and the C-24 methyl transfer reaction, respectively. We replaced *ERG5* and *ERG6* with *DrDHCR7* (BBa_25RCU5CB) and *DrDHCR24* (BBa_25FOVO4C) respectively, as described in Bean et al (2022).[^6] This redirection of the metabolic pathway enabled the substitution of ergosterol with cholesterol on the Grape Yeast cell membrane surface.
 
 
 Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)
 
-| Part Number  |              Type              |                  Part Name                   |
-| :----------: | :----------------------------: | :------------------------------------------: |
+| Part Number  |              Type        |                  Part Name            |
+| :----------: | :----------------------: | :-----------------------------------: |
 | BBa_25MIG4EW | Homologous Region |             HR5'\_*ACE2*\_Chr12L             |
 | BBa_259HCU8C | Homologous Region |             HR3'\_*ACE2*\_Chr12R             |
-| BBa_25EI9P2P |            Plasmid             | Plasmid carrying ACE2HRs and G418 resistence |
-| BBa_256S6J1M |             coding             |                    HsDOR                     |
-| BBa_25AKJ83S |       Translational_Unit       |              pREV1 driven HsDOR              |
+| BBa_25EI9P2P |            Plasmid       | Plasmid carrying ACE2HRs and G418 resistence |
+| BBa_256S6J1M |             coding       |                    HsDOR              |
+| BBa_25AKJ83S |       Translational_Unit |              pREV1 driven HsDOR       |
 | BBa_25XKAUNH | Homologous Region |             HR5'\_*ERG5*\_Chr13L             |
 | BBa_25E9K479 | Homologous Region |             HR3'\_*ERG5*\_Chr13R             |
 | BBa_25U7DH3R | Homologous Region |             HR5'\_*ERG6*\_Chr13L             |
 | BBa_25O1ZVOU | Homologous Region |             HR3'\_*ERG6*\_Chr13R             |
-| BBa_25RCU5CB |             coding             |                   DrDHCR7                    |
-| BBa_25FOVO4C |             coding             |                   DrDHCR24                   |
-| BBa_25FU0JM9 |       Translational_Unit       |            pREV1 driven *DrDHCR7*            |
-| BBa_25JA9ZHO |       Translational_Unit       |           pREV1 driven *DrDHCR24*            |
-| BBa_254K9906 |             coding             |               Modified *Gpa1*                |
-| BBa_K3944000 |            promoter            |                    pCUP1                     |
-| BBa_255U7XC8 |       Translational_Unit       |          pCUP1 driven modified Gpa1          |
-| BBa_K3944010 |           regulatory           |                     rtTA                     |
-| BBa_25JOF7TY |       Translational_Unit       |              pREV1 driven rtTA               |
-| BBa_252BO17G |            promoter            |                    pTet2                     |
-| BBa_K5441013 |             coding             |                    *BAX*                     |
-| BBa_250R9OVR |             coding             |                    *IME1*                    |
-| BBa_K5470011 |             coding             |                   GSG-E2A                    |
-| BBa_25IB5O7X |             coding             |                     mSG                      |
-| BBa_25MTFXKO |       Translational_Unit       |         pTet2 driven *BAX*-*E2A*-mSG         |
-| BBa_25N811P5 |       Translational_Unit       |        pTet2 driven *IME1*-*E2A*-mSG         |
-| BBa_25KYY8AI |       Translational_Unit       |         pCUP1 driven *BAX*-*E2A*-mSG         |
-| BBa_25N9YOTD |       Translational_Unit       |        pCUP1 driven *IME1*-*E2A*-mSG         |
+| BBa_25RCU5CB |             coding       |                   DrDHCR7             |
+| BBa_25FOVO4C |             coding       |                   DrDHCR24            |
+| BBa_25FU0JM9 |       Translational_Unit |            pREV1 driven *DrDHCR7*     |
+| BBa_25JA9ZHO |       Translational_Unit |           pREV1 driven *DrDHCR24*     |
+| BBa_254K9906 |             coding       |               Modified *Gpa1*         |
+| BBa_K3944000 |            promoter      |                    pCUP1              |
+| BBa_255U7XC8 |       Translational_Unit |          pCUP1 driven modified Gpa1   |
+| BBa_K3944010 |           regulatory     |                     rtTA              |
+| BBa_25JOF7TY |       Translational_Unit |              pREV1 driven rtTA        |
+| BBa_252BO17G |            promoter      |                    pTet2              |
+| BBa_K5441013 |             coding       |                    *BAX*              |
+| BBa_250R9OVR |             coding       |                    *IME1*             |
+| BBa_K5470011 |             coding       |                   GSG-E2A             |
+| BBa_25IB5O7X |             coding       |                     mSG               |
+| BBa_25MTFXKO |       Translational_Unit |         pTet2 driven *BAX*-E2A-mSG    |
+| BBa_25N811P5 |       Translational_Unit |        pTet2 driven *IME1*-E2A-mSG    |
+| BBa_25KYY8AI |       Translational_Unit |         pCUP1 driven *BAX*-E2A-mSG    |
+| BBa_25N9YOTD |       Translational_Unit |        pCUP1 driven *IME1*-E2A-mSG    |
+| BBa_25AIDL8P | 3'UTR             |      ASH1 3'UTR      |
+| BBa_25TQG9WZ | coding            |   modified mCherry   |
+| BBa_25VHXKNL | promoter          |      ASH1 AIpro      |
 
 
+## Collection 2: [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) using EMS-insensitive Fluorescent Protein
 
+Under the induction of the EMS mutagen, the sequence of the promoter undergoes G/C to A/T base mutations, causing a change in the expression level of the fluorescent protein it regulates. This change reflects the degree of promoter sequence mutation. We aim to use this as a gene mutation recorder. However, the fluorescent protein's sequence itself can also change under EMS mutagenesis, leading to alterations in its fluorescence and interfering with the accurate assessment of the promoter's mutation degree. To solve this problem and make the fluorescent protein as stable as possible under EMS, we developed a [Software Tool](/software/) to optimize the fluorescent protein sequence. The tool replaces as many G/C bases with A/T bases as possible to enhance the fluorescent protein's resistance to mutagenesis under EMS induction. Thereby, we have EMS-resist fluorescent proteins and mutagenic promoters combinations as [TU recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30).
 
-### Collection 2: [TU Recorders using EMS-insensitive Fluorescent Protein](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30)
+To identify the optimal mutation-tracking [TU recorder](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) for our project, we selected 4 promoters: pOST1 (BBa_259JX52V), pRNR2 (BBa_K3748013), pSTM1 (BBa_25FQBGJW) and pTDH3 (BBa_K3190001); 7 EMSfps (the number in the name represents the central excitation wavelength of the fluorescent protein): EMSfp383 (BBa_25F6RD26), EMSfp399 (BBa_25M2Z9H7), EMSfp499 (BBa_25IB5O7X), EMSfp506 (BBa_25FAVHQY), EMSfp569 (BBa_25TYRLM9), EMSfp642 (BBa_25GARG3E), EMSfp643 (BBa_2599SI53), and 1 common terminator tENO1 (BBa_K2753051) - yielding a total of 28 TU Recorders. Please note 3 out 4 promoters were inspired by Hodgins-Davis *et al* (2019)[^7]. By comparing fluorescence changes between the EMS-treated group and the control group, we screened out the combination with the most significant variation as the optimal pair, which was then integrated into the 16 chromosomes of yeast using [our homologous arms collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0).
 
-Under the induction of the EMS mutagen, the sequence of the promoter undergoes G/C to A/T base mutations, causing a change in the expression level of the fluorescent protein it regulates. This change reflects the degree of promoter sequence mutation. Our program aims to use this principle as a yeast gene mutation recorder. However, the fluorescent protein's sequence itself can also change under EMS mutagenesis, leading to alterations in its fluorescence and interfering with the accurate assessment of the promoter's mutation degree. To solve this problem and make the fluorescent protein as stable as possible under EMS, we developed a [Software](https://2025.igem.wiki/fudan/software.html) to optimize the fluorescent protein sequence. Based on codon degeneracy, we replaced as many G/C bases with A/T bases as possible to enhance the fluorescent protein's resistance to mutagenesis under EMS induction. Thereby, we have EMS-resist fluorescent proteins and mutagenic promoters combinations as TU recorders of yeast mutation.
-
-To identify the optimal mutation-tracking TU recorder for our program, we selected: 4 promoters : pOST1 (BBa_259JX52V) , pRNR2 (BBa_K3748013) , pSTM1 (BBa_25FQBGJW) and pTDH3 (BBa_K3190001) , 7 EMSfps (the number in the name represents the excitation wavelength of the fluorescent protein under EMS) : EMSfp383 (BBa_25F6RD26) , EMSfp399 (BBa_25M2Z9H7) , EMSfp499 (BBa_25IB5O7X) , EMSfp506 (BBa_25FAVHQY) , EMSfp569 (BBa_25TYRLM9) , EMSfp642 (BBa_25GARG3E) , EMSfp643 (BBa_2599SI53) , and 1 fixed terminator tENO1 (BBa_K2753051) , yielding a total of 28 TU modules (Hodgins-Davis *et al.*, 2019) .[^7] By comparing fluorescence changes between the EMS-treated group and the control group, we screened out the combination with the most significant variation as the optimal pair, which was then integrated into the 16 chromosomes of yeast via homologous arms.
-
-According to the YTK toolkit by Lee *et al.* (2015), pYTK096 is a *URA3* integration vector pre-assembled from the following parts: Type 7 (the URA3 3′ homology arm) , Type 8a (the *E. coli* replication origin + resistance marker + flanking *Not*I sites) , and Type 8b (the URA3 5′ homology arm) .[^3] This design allows the vector to be linearized prior to transformation. This standardized design (Type 7 + 8a + 8b module combination) makes pYTK096 a versatile vector within the YTK system for stable, single-copy chromosomal integration. In this collection, the integration of all TU Recorders is achieved via:
+In the YTK toolkit by Lee *et al* (2015), pYTK096 is a *URA3* integration vector pre-assembled from the following parts: Type 7 (the URA3 3′ homology arm) , Type 8a (the *E. coli* replication origin + resistance marker + flanking *Not*I sites) , and Type 8b (the URA3 5′ homology arm) .[^3] This design allows the vector to be linearized prior to transformation. This standardized design (Type 7 + 8a + 8b module combination) makes pYTK096 a versatile vector within the YTK system for stable, single-copy chromosomal integration. In this collection, the integration of all TU Recorders is achieved via:
 
 1. Assembly using the pYTK096 integration vector;
 2. Linearization by NotI restriction digest, which exposes the *URA3* homology arms;
@@ -80,8 +82,6 @@ According to the YTK toolkit by Lee *et al.* (2015), pYTK096 is a *URA3* integra
 4. Confirmation of correct integration either through *URA3* phenotypic selection or PCR verification (a fragment of approximately 500 bp can be amplified upon correct integration) .
 
 In the part collection of our registry, we showcase the results of the *Not*I digest and phire amplification. For these information, please read our documentation of [TU Recorders using EMS-insensitive Fluorescent Protein](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30)
-
-
 
 Table 2. Parts for 28 [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30)
 
@@ -117,10 +117,7 @@ Table 2. Parts for 28 [TU Recorders](https://registry.igem.org/collections/65943
 | BBa_25RJG3B2 | Translational_Unit | pTDH3 driven EMSfp643 (miRFP670-2)  |
 
 
-
-
-
-### Collection 3:  [Sites of Integration to Assess Chromosomal Instability](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) in *Saccharomyces cerevisiae*
+## Collection 3:  [Sites of Integration to Assess Chromosomal Instability](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) in *Saccharomyces cerevisiae*
 
 In synthetic biology, efficient and predictable genome integration is fundamental for constructing complex biological systems and accelerating the engineering cycle. To address this need, our team developed a robust Homologous Arms Integration Collection for Saccharomyces cerevisiae. This collection not only incorporates validated safe integration sites but also extends to novel replacement-based strategies, providing future iGEM teams with a powerful, flexible, and standardized solution.
 
