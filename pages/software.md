@@ -35,7 +35,7 @@ Directed evolution through EMS (ethyl methanesulfonate) mutagenesis is powerful 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/software/software.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1: The GUI of the EMS-Optimizer.</span>
+        <span style="color:gray">Figure 1. The GUI of the EMS-Optimizer.</span>
         <br><br>
     </div>
 </div>
@@ -55,7 +55,7 @@ To maintain a balance between mutagenesis and protein expression, our software i
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/software/cai.webp" style="width:30%">
     <div>
-        <span style="color:gray">Figure 2: Translation Efficiency Tracking Panel</span>
+        <span style="color:gray">Figure 2. Translation Efficiency Tracking Panel</span>
         <br><br>
     </div>
 </div>
@@ -73,7 +73,7 @@ Our software is designed with the user in mind. As a web-based application, it r
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/software/algorithm.webp" style="width:30%">
     <div>
-        <span style="color:gray">Figure 3: How the algorithm works</span>
+        <span style="color:gray">Figure 3. How the algorithm works</span>
         <br><br>
     </div>
 </div>

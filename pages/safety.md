@@ -11,14 +11,14 @@ description: On this page, we elaborated on laboratory safety analysis methods a
 
 ## Introduction
 
-Synthetic biology, as promoted by the iGEM competition, is an emerging interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment which must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance. [^5]Guided by this principle, the Fudan iGEM 2025 team has developed its project around Grape Yeast[(see our Design page)](https://2025.igem.wiki/fudan/design.html), integrating safety considerations into every stage to help shape a more responsible future for synthetic biology.
+Synthetic biology, not only in the iGEM competition but also in industry revolution, is an interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment which must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance.[^5] We have developed our project around Grape Yeast [(detailed on our Design page)](/design/), and integrated safety considerations into every stage to help shape a more responsible future for synthetic biology.
 
-Since our experimental design and application scenarios take place entirely within the laboratory, we have placed a strong emphasis on laboratory safety. Beyond standard safety measures, we conduct project-specific biosafety assessments and implement tailored risk-mitigation strategies, embedding a culture of responsible science throughout our design process.
+Since our [experimental design](/design/) and [application scenarios](/implementation/) take place entirely within the laboratory, we emphasize on laboratory safety. Beyond standard laboratory safety measures, we conduct project-specific biosafety assessments and implement tailored risk-mitigation strategies.
 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/safety/safety-in-design.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1: Safety in design</span>
+        <span style="color:gray">Figure 1. Safety in design</span>
         <br><br>
     </div>
 </div>
@@ -36,7 +36,7 @@ To achieve this, we applied the **24Model systems framework**, systematically id
 
 In the 24Model framework, safety evaluation is conducted systematically across multiple dimensions, as outlined in the table below.
 
-**Table 1: Comprehensive Table of Laboratory Safety Evaluation Dimensions**
+### Table 1. Comprehensive Table of Laboratory Safety Evaluation Dimensions
 
 | **Dimension Level**      | **Main Categories**                 | **Key Evaluation Areas**                                     | **Description**                                              |
 | ------------------------ | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -124,7 +124,7 @@ This platform helps new members build good habits, refine experimental skills, a
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/safety/rules-about-laboratory-safety.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 2: Laboratory Safety Management Regulations</span>
+        <span style="color:gray">Figure 2. Laboratory Safety Management Regulations</span>
         <br><br>
     </div>
 </div>
@@ -176,7 +176,7 @@ Together, these modules ensure that *E. coli* can only survive when all three in
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/safety/transcriptional-translational-riboregulation-og-essential-genes.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 3: Design of multilayered safeguards</span>
+        <span style="color:gray">Figure 3. Design of multilayered safeguards</span>
         <br><br>
     </div>
 </div>
@@ -186,7 +186,7 @@ The circuit was originally designed in *E. coli*, but since our chassis is *Sacc
 
 The table below summarizes the modifications across the three modules:
 
-**Table 2: Summary of Modifications to Multilayered Safeguards**
+### Table 2. Summary of Modifications to Multilayered Safeguards
 
 | Module                               | Original *E. coli* Design                                    | Adapted *S. cerevisiae* Design                               | Key Modifications                                            |
 | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -225,7 +225,7 @@ Thus, by simply adding or withholding camphor, the survival of the engineered sy
 
 ------
 
-After completing our design, we consulted Professor Li Tang, a leading expert in biosafety and ethics in synthetic biology [(See our integrated human practices page)](https://2025.igem.wiki/fudan/human-practices.html). We asked for her perspective on our circuit design—whether it meets industrial needs, and what challenges it might face in moving from laboratory proof-of-concept to real-world application.
+After completing our design, we consulted Professor Li Tang, a leading expert in biosafety and ethics in synthetic biology [(See our integrated human practices page)](/human-practices/). We asked for her perspective on our circuit design—whether it meets industrial needs, and what challenges it might face in moving from laboratory proof-of-concept to real-world application.
 
 Our discussion with Professor Tang was eye-opening. We realized that genetic safeguards exist within a complex web of stakeholders, each with their own priorities. For synthetic biologists, safeguards are primarily proof-of-concept tools designed to restrict the growth of engineered strains or prevent horizontal gene transfer. Regulators and policymakers often treat them as data sources for risk assessment and policy-making, while actual regulatory adoption remains distant and highly context-dependent. From an industry standpoint, safeguards are often seen as unnecessary in physically contained applications already covered by infrastructure and regulation; meanwhile, novel applications are still considered too theoretical to fit within existing risk assessment frameworks. Civil society is barely represented in these discussions, yet both developers and end users remain cautious about how the public might perceive new safeguard technologies.
 
@@ -234,7 +234,7 @@ This divergence in perspectives highlights a deeper issue: the lack of collectiv
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/safety/talk-with-li-tang.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 4: Talk with Professor Li</span>
+        <span style="color:gray">Figure 4. Talk with Professor Li</span>
         <br><br>
     </div>
 </div>
@@ -303,10 +303,6 @@ To protect researchers during laboratory work, we avoided the use of hazardous r
 
 ## Reference
 
-[^1]: Xu, C., Guo, L., Wang, K., Yang, T., Feng, Y., Wang, H., Li, D., & Fu, G. (2023). Current challenges of university laboratory: Characteristics of human factors and safety management system deficiencies based on accident statistics. *Journal of safety research*, *86*, 318–335. https://doi.org/10.1016/j.jsr.2023.07.010
-[^2]: Bond, M. R., Gammie, A. E., & Lorsch, J. R. (2020). Developing a culture of safety in biomedical research training. *Molecular biology of the cell*, *31*(22), 2409–2414. https://doi.org/10.1091/mbc.E20-03-0167
-[^3]: Ménard, A.D., Trant, J.F. A review and critique of academic lab safety research. *Nat. Chem.* **12**, 17–25 (2020). https://doi.org/10.1038/s41557-019-0375-x
-[^4]: Kwon, W., Kim, D., Kim, H. Y., Jeong, S. W., Lee, S. G., Kim, H. C., Lee, Y. J., Kwon, M. K., Hwang, J. S., Han, J. E., Park, J. K., Lee, S. J., & Choi, S. K. (2022). Microglial phagocytosis of polystyrene microplastics results in immune alteration and apoptosis in vitro and in vivo. *The Science of the total environment*, *807*(Pt 2), 150817. https://doi.org/10.1016/j.scitotenv.2021.150817
 [^5]: Yu, Y., Ding, J., Zhou, Y., Xiao, H., & Wu, G. (2022). Biosafety chemistry and biosafety materials: A new perspective to solve biosafety problems. *Biosafety and health*, *4*(1), 15–22. https://doi.org/10.1016/j.bsheal.2022.01.001
 [^6]: Tao Sun, Jie Song, Meng Wang, Chao Zhao, Weiwen Zhang,Challenges and recent progress in the governance of biosecurity risks in the era of synthetic biology,*Journal of Biosafety and Biosecurity*,https://doi.org/10.1016/j.jobb.2022.02.002.
 [^7]: World Health Organization. (2021, November 17). *Antimicrobial resistance*. World Health Organization. https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance

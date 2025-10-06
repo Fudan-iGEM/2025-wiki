@@ -37,7 +37,7 @@ To address this challenge, we developed DR. sTraTeGY, an innovative platform bui
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig1-dr-strategy.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1.DR. sTraTeGY overview</span>
+        <span style="color:gray">Figure 1. DR. sTraTeGY overview</span>
         <br><br>
     </div>
 </div>
@@ -57,7 +57,7 @@ We engineered this chassis through a simple four-module approach that allows us 
 <div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig2-grapeyeast.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 2.Constructing the Grape Yeast</span>
+        <span style="color:gray">Figure 2. Constructing the Grape Yeast</span>
         <br><br>
     </div>
 </div>
@@ -88,21 +88,21 @@ While a complete modification of the GPCR system would require the knockout of a
 <div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig4-gpcr.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 3.Mechanism of external signal response.We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and validated by the agonist SNC80</span>
+        <span style="color:gray">Figure 3. Mechanism of external signal response.We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and validated by the agonist SNC80</span>
         <br><br>
     </div>
 </div>
 
 <div style="text-align: center;">
-        <span style="color:gray">Table 1.Primers used for the qPCR validation</span>
+        <span style="color:gray">Table 1. Primers used for the qPCR validation</span>
         <br>
 </div>
 
-| Gene/Reference Gene | Forward Primer (5’→3’)   | Reverse Primer (5’→3’)   |
+| Gene/Reference Gene | Forward Primer (5’&rarr;3’)   | Reverse Primer (5’&rarr;3’)   |
 | ------------------- | ------------------------ | ------------------------ |
-| FUS3                | GAGCTAATGCAGACAGATTTA    | CACTTTCACTGCTCTCAAG      |
-| STE2                | CCTTCTTGTGGCTTCTATTG     | CGTCAGCATCAAACCTATC      |
-| 5S                  | GTTGCGGCCATATCTACCAGAAAG | CGTATGGTCACCCACTACACTACT |
+| FUS3                | 5-GAGCTAATGCAGACAGATTTA    | 5-CACTTTCACTGCTCTCAAG      |
+| STE2                | 5-CCTTCTTGTGGCTTCTATTG     | 5-CGTCAGCATCAAACCTATC      |
+| 5S                  | 5-GTTGCGGCCATATCTACCAGAAAG | 5-CGTATGGTCACCCACTACACTACT |
 
 
 #### 2)Yeast Membrane Engineering
@@ -123,7 +123,7 @@ To enhance controllability and safety, we introduced *BAX*(BBa_K5441013), an apo
 <div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-bax-compressed.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 4.Use BAX to control the cluter size</span>
+        <span style="color:gray">Figure 4. Use BAX to control the cluter size</span>
         <br><br>
     </div>
 </div>
@@ -159,7 +159,7 @@ Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the Dee
 <div style="text-align: center;" id="fig6">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-timer-compressed.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 6.Design of the Timer.The Timer module enables real-time visualization of a cell’s life cycle, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
+        <span style="color:gray">Figure 6. Design of the Timer.The Timer module enables real-time visualization of a cell’s life cycle, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
         <br><br>
     </div>
 </div>
@@ -174,7 +174,7 @@ Based on our modeling, we selected Ash1 AIpro, a promoter optimized with the Dee
 
 To intuitively record the pressure at different chromosomal loci during evolution, we developed the Recorder module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20]. To identify the optimal reporter configuration, we created a combinatorial library, testing four distinct promoters[^21] with six of our EMS-optimized fluorescent proteins(For more details of EMS-resistant proteins, please check our [software](/software/)). This promoter set was specifically chosen to capture a range of expression dynamics under EMS mutagenesis.Menawhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6] [^23]. We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
 <div style="text-align: center;">
-        <span style="color:gray">Table 2.Optimized Fluorescent Proteins and Promoters for the Recorder Module</span>
+        <span style="color:gray">Table 2. Optimized Fluorescent Proteins and Promoters for the Recorder Module</span>
         <br>
 </div>
 
@@ -190,7 +190,7 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 | **Promoters**[^21] |                                          |                            |                          |              |
 | pOST1              | Remains stable                           |                            |                          | BBa_259JX52V |
 | pRNR2              | Tends to decrease expression             |                            |                          | BBa_K3748013 |
-| pSTM1              | Tends to increase expression             |                            |                          | BBa_K530004  |
+| pSTM1              | Tends to increase expression             |                            |                          | BBa_K530004 |
 | pTDH3              | A strong constitutive benchmark promoter |                            |                          | BBa_K3190001 |
 
 
@@ -211,7 +211,7 @@ Throughout this project, we fully embraced the "dry lab guiding wet lab" approac
 <div style="text-align: center;" id="fig7">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 7.Use digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
+        <span style="color:gray">Figure 7. Use digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
         <br><br>
     </div>
 </div>
@@ -230,46 +230,46 @@ Throughout this project, we fully embraced the "dry lab guiding wet lab" approac
 
 [^1]: Brown, G. D., Denning, D. W., Gow, N. A., Levitz, S. M., Netea, M. G., & White, T. C. (2012). Hidden killers: human fungal infections. *Science translational medicine*, *4*(165), 165rv13. DOI: 10.1126/scitranslmed.3004404
 
-[^2]:Vanderwaeren, L., Dok, R., Voordeckers, K., Nuyts, S., & Verstrepen, K. J. (2022). *Saccharomyces cerevisiae* as a Model System for Eukaryotic Cell Biology, from Cell Cycle Control to DNA Damage Response. *International journal of molecular sciences*, *23*(19), 11665. DOI: 10.3390/ijms231911665
+[^2]: Vanderwaeren, L., Dok, R., Voordeckers, K., Nuyts, S., & Verstrepen, K. J. (2022). *Saccharomyces cerevisiae* as a Model System for Eukaryotic Cell Biology, from Cell Cycle Control to DNA Damage Response. *International journal of molecular sciences*, *23*(19), 11665. DOI: 10.3390/ijms231911665
 
-[^3]:Maneira, C., Chamas, A., & Lackner, G. (2025). Engineering Saccharomyces cerevisiae for medical applications. Microbial cell factories, 24(1), 12. DOI: 10.1186/s12934-024-02625-5
+[^3]: Maneira, C., Chamas, A., & Lackner, G. (2025). Engineering Saccharomyces cerevisiae for medical applications. Microbial cell factories, 24(1), 12. DOI: 10.1186/s12934-024-02625-5
 
-[^4]:Blundell, J. R., & Levy, S. F. (2014). Beyond genome sequencing: lineage tracking with barcodes to study the dynamics of evolution, infection, and cancer. Genomics, 104(6 Pt A), 417–430. DOI: 10.1016/j.ygeno.2014.09.005
+[^4]: Blundell, J. R., & Levy, S. F. (2014). Beyond genome sequencing: lineage tracking with barcodes to study the dynamics of evolution, infection, and cancer. Genomics, 104(6 Pt A), 417–430. DOI: 10.1016/j.ygeno.2014.09.005
 
 [^5]: Bozdag, G. O., Zamani-Dahaj, S. A., Day, T. C., Kahn, P. C., Burnetti, A. J., Lac, D. T., Tong, K., Conlin, P. L., Balwani, A. H., Dyer, E. L., Yunker, P. J., & Ratcliff, W. C. (2023). De novo evolution of macroscopic multicellularity. *Nature*, *617*(7962), 747–754. DOI: 10.1038/s41586-023-06052-1
 
-[^6]:Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v
+[^6]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v
 
 [^7]: Shaw, W. M., Khalil, A. S., & Ellis, T. (2023). A Multiplex MoClo Toolkit for Extensive and Flexible Engineering of *Saccharomyces cerevisiae*. *ACS synthetic biology*, *12*(11), 3393–3405. DOI: 10.1021/acssynbio.3c00423
 
 [^8]: Laabs, T. L., Markwardt, D. D., Slattery, M. G., Newcomb, L. L., Stillman, D. J., & Heideman, W. (2003). *ACE2* is required for daughter cell-specific G1 delay in Saccharomyces cerevisiae. *Proceedings of the National Academy of Sciences of the United States of America*, *100*(18), 10275–10280. DOI: 10.1073/pnas.1833999100
 
-[^9]:Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. Nature, 639(8055), 691–699. DOI: 10.1038/s41586-025-08689-6
+[^9]: Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. Nature, 639(8055), 691–699. DOI: 10.1038/s41586-025-08689-6
 
-[^10]:Després, P. C., Shapiro, R. S., & Cuomo, C. A. (2024). New approaches to tackle a rising problem: Large-scale methods to study antifungal resistance. PLoS pathogens, 20(9), e1012478. DOI: 10.1371/journal.ppat.1012478
+[^10]: Després, P. C., Shapiro, R. S., & Cuomo, C. A. (2024). New approaches to tackle a rising problem: Large-scale methods to study antifungal resistance. PLoS pathogens, 20(9), e1012478. DOI: 10.1371/journal.ppat.1012478
 
-[^11]:Bean, B. D. M., Mulvihill, C. J., Garge, R. K., Boutz, D. R., Rousseau, O., Floyd, B. M., Cheney, W., Gardner, E. C., Ellington, A. D., Marcotte, E. M., Gollihar, J. D., Whiteway, M., & Martin, V. J. J. (2022). Functional expression of opioid receptors and other human GPCRs in yeast engineered to produce human sterols. *Nature communications*, *13*(1), 2882. DOI: 10.1038/s41467-022-30570-7
+[^11]: Bean, B. D. M., Mulvihill, C. J., Garge, R. K., Boutz, D. R., Rousseau, O., Floyd, B. M., Cheney, W., Gardner, E. C., Ellington, A. D., Marcotte, E. M., Gollihar, J. D., Whiteway, M., & Martin, V. J. J. (2022). Functional expression of opioid receptors and other human GPCRs in yeast engineered to produce human sterols. *Nature communications*, *13*(1), 2882. DOI: 10.1038/s41467-022-30570-7
 
-[^12]:Young, L. Y., Hull, C. M., & Heitman, J. (2003). Disruption of ergosterol biosynthesis confers resistance to amphotericin B in Candida lusitaniae. Antimicrobial agents and chemotherapy, 47(9), 2717–2724. DOI: 10.1128/AAC.47.9.2717-2724.2003
+[^12]: Young, L. Y., Hull, C. M., & Heitman, J. (2003). Disruption of ergosterol biosynthesis confers resistance to amphotericin B in Candida lusitaniae. Antimicrobial agents and chemotherapy, 47(9), 2717–2724. DOI: 10.1128/AAC.47.9.2717-2724.2003
 
-[^13]:Zha, H., Fisk, H. A., Yaffe, M. P., Mahajan, N., Herman, B., & Reed, J. C. (1996). Structure-function comparisons of the proapoptotic protein Bax in yeast and mammalian cells. *Molecular and cellular biology*, *16*(11), 6494–6508. DOI: 10.1128/MCB.16.11.6494
+[^13]: Zha, H., Fisk, H. A., Yaffe, M. P., Mahajan, N., Herman, B., & Reed, J. C. (1996). Structure-function comparisons of the proapoptotic protein Bax in yeast and mammalian cells. *Molecular and cellular biology*, *16*(11), 6494–6508. DOI: 10.1128/MCB.16.11.6494
 
-[^14]:Ksiezopolska, E., & Gabaldón, T. (2018). Evolutionary Emergence of Drug Resistance in Candida Opportunistic Pathogens. *Genes*, *9*(9), 461. DOI: 10.3390/genes9090461
+[^14]: Ksiezopolska, E., & Gabaldón, T. (2018). Evolutionary Emergence of Drug Resistance in Candida Opportunistic Pathogens. *Genes*, *9*(9), 461. DOI: 10.3390/genes9090461
 
-[^15]:Kassir, Y., Granot, D., & Simchen, G. (1988). IME1, a positive regulator gene of meiosis in S. cerevisiae. *Cell*, *52*(6), 853–862. DOI: 10.1016/0092-8674(88)90427-8
+[^15]: Kassir, Y., Granot, D., & Simchen, G. (1988). IME1, a positive regulator gene of meiosis in S. cerevisiae. *Cell*, *52*(6), 853–862. DOI: 10.1016/0092-8674(88)90427-8
 
-[^16]:Kari, H., Bandi, S. M. S., Kumar, A., & Yella, V. R. (2023). DeePromClass: Delineator for Eukaryotic Core Promoters Employing Deep Neural Networks. *IEEE/ACM transactions on computational biology and bioinformatics*, *20*(1), 802–807. 
+[^16]: Kari, H., Bandi, S. M. S., Kumar, A., & Yella, V. R. (2023). DeePromClass: Delineator for Eukaryotic Core Promoters Employing Deep Neural Networks. *IEEE/ACM transactions on computational biology and bioinformatics*, *20*(1), 802–807. 
 
-[^17]:Yu, Y., Yarrington, R. M., & Stillman, D. J. (2020). FACT and Ash1 promote long-range and bidirectional nucleosome eviction at the HO promoter. *Nucleic acids research*, *48*(19), 10877–10889. DOI: 10.1093/nar/gkaa819
+[^17]: Yu, Y., Yarrington, R. M., & Stillman, D. J. (2020). FACT and Ash1 promote long-range and bidirectional nucleosome eviction at the HO promoter. *Nucleic acids research*, *48*(19), 10877–10889. DOI: 10.1093/nar/gkaa819
 
-[^18]:Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature chemical biology*, *5*(2), 118–126. DOI: 10.1038/nchembio.138
+[^18]: Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature chemical biology*, *5*(2), 118–126. DOI: 10.1038/nchembio.138
 
-[^19]:Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
+[^19]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
 
-[^20]:Peter, J., De Chiara, M., Friedrich, A., Yue, J. X., Pflieger, D., Bergström, A., Sigwalt, A., Barre, B., Freel, K., Llored, A., Cruaud, C., Labadie, K., Aury, J. M., Istace, B., Lebrigand, K., Barbry, P., Engelen, S., Lemainque, A., Wincker, P., Liti, G., … Schacherer, J. (2018). Genome evolution across 1,011 Saccharomyces cerevisiae isolates. *Nature*, *556*(7701), 339–344. DOI: 10.1038/s41586-018-0030-5
+[^20]: Peter, J., De Chiara, M., Friedrich, A., Yue, J. X., Pflieger, D., Bergström, A., Sigwalt, A., Barre, B., Freel, K., Llored, A., Cruaud, C., Labadie, K., Aury, J. M., Istace, B., Lebrigand, K., Barbry, P., Engelen, S., Lemainque, A., Wincker, P., Liti, G., … Schacherer, J. (2018). Genome evolution across 1,011 Saccharomyces cerevisiae isolates. *Nature*, *556*(7701), 339–344. DOI: 10.1038/s41586-018-0030-5
 
-[^21]:Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. DOI: 10.1073/pnas.1902823116
+[^21]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. DOI: 10.1073/pnas.1902823116
 
-[^22]:Puddu, F., Herzog, M., Selivanova, A., Wang, S., Zhu, J., Klein-Lavi, S., Gordon, M., Meirman, R., Millan-Zambrano, G., Ayestaran, I., Salguero, I., Sharan, R., Li, R., Kupiec, M., & Jackson, S. P. (2019). Genome architecture and stability in the Saccharomyces cerevisiae knockout collection. *Nature*, *573*(7774), 416–420. DOI: 10.1038/s41586-019-1549-9
+[^22]: Puddu, F., Herzog, M., Selivanova, A., Wang, S., Zhu, J., Klein-Lavi, S., Gordon, M., Meirman, R., Millan-Zambrano, G., Ayestaran, I., Salguero, I., Sharan, R., Li, R., Kupiec, M., & Jackson, S. P. (2019). Genome architecture and stability in the Saccharomyces cerevisiae knockout collection. *Nature*, *573*(7774), 416–420. DOI: 10.1038/s41586-019-1549-9
 
-[^23]:Niederau, P. A., Eglé, P., Willig, S., Parsons, J., Hoernstein, S. N. W., Decker, E. L., & Reski, R. (2024). Multifactorial analysis of terminator performance on heterologous gene expression in Physcomitrella. *Plant cell reports*, *43*(2), 43. DOI: 10.1007/s00299-023-03088-5
+[^23]: Niederau, P. A., Eglé, P., Willig, S., Parsons, J., Hoernstein, S. N. W., Decker, E. L., & Reski, R. (2024). Multifactorial analysis of terminator performance on heterologous gene expression in Physcomitrella. *Plant cell reports*, *43*(2), 43. DOI: 10.1007/s00299-023-03088-5
