@@ -511,12 +511,15 @@ This module simulates the three-dimensional growth of the multicellular "grape y
 <div style="text-align: left;">
         <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
     </div>
-
 Other minor parameters are detailed in the [code](#code-and-data-accessibility).
+
+![](https://static.igem.wiki/teams/5643/pageimage/model/visual1.webp)
 
 ### 3D Fluorescent Timer Maturation Visualization
 
 This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "grape yeast" cluster, integrating the core ODE framework for mRNA transcription, protein synthesis, and state transitions (C → B → I → R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
+
+<img src="https://static.igem.wiki/teams/5643/pageimage/model/visual2-480p.webp" style="zoom:150%;" />
 
 
 ## AI-Aided Validation of Model Predictions
