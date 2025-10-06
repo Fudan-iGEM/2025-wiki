@@ -12,7 +12,6 @@ description: On this page, we describe 3 collections built around Grape Yeast, f
 Based on our team’s project **DR.sTraTeGY (Drug Resistance mutation Tracking Technology based on Grape Yeast)**, we designed three collections: Grape Yeast, the optimal promoter–fluorescent protein combination screening collection, and the homologous arms integration collection for *Saccharomyces cerevisiae*.
 
 
-
 ### Collection 1: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)
 
 #### ACE2 Knockout and Functional Human GPCR Integration

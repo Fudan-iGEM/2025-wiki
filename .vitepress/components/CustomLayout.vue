@@ -15,6 +15,7 @@ const hasAside = computed(() => {
          !route.path.includes('/heritage') &&
          !route.path.includes('/communication') &&
          !route.path.includes('/hardware') &&
+         !route.path.includes('/parts') &&
          !route.path.includes('/plant') &&
          !route.path.includes('/proof-of-concept') ;
 });
