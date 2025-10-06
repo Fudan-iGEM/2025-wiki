@@ -393,9 +393,10 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure6-rt-t-overlay-fairness-equal-intensity.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 6.rt(t) overlay (fairness- equal_intensity)</span>
+        <span style="color:gray">Figure 6.r(t) overlay (fairness- equal_intensity)</span>
         <br><br>
     </div>
+
 
 
 #### Lineage Heatmap Comparison
@@ -513,14 +514,27 @@ This module simulates the three-dimensional growth of the multicellular "grape y
     </div>
 Other minor parameters are detailed in the [code](#code-and-data-accessibility).
 
+
+
 ![](https://static.igem.wiki/teams/5643/pageimage/model/visual1.webp)
+
+<div style="text-align: center;" id="fig1">
+        <span style="color:gray">Figure 10.Animation demo of 3D Yeast Growth Simulation</span>
+        <br><br>
+    </div>
 
 ### 3D Fluorescent Timer Maturation Visualization
 
 This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "grape yeast" cluster, integrating the core ODE framework for mRNA transcription, protein synthesis, and state transitions (C → B → I → R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
 
+
+
 <img src="https://static.igem.wiki/teams/5643/pageimage/model/visual2-480p.webp" style="zoom:150%;" />
 
+<div style="text-align: center;" id="fig1">
+        <span style="color:gray">Figure 11.Animation demo of 3D Fluorescent Timer Maturation</span>
+        <br><br>
+    </div>
 
 ## AI-Aided Validation of Model Predictions
 
