@@ -30,6 +30,7 @@ import { ref, onMounted } from 'vue'
 import { Vue3Lottie } from 'vue3-lottie'
 
 const animations = ref([
+  { name: '1', url: 'https://static.igem.wiki/teams/5643/img/homepage/page1-2.json', data: null },
   { name: '5-1.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/5-1.json', data: null },
   { name: '5-2.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/5-2.json', data: null },
   { name: '5-3.json', url: 'https://static.igem.wiki/teams/5643/img/homepage/5-3.json', data: null },
