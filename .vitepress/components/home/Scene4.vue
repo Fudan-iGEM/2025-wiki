@@ -104,21 +104,23 @@ defineExpose({
 
 .scene4-title {
   margin: 0 0 0.75rem 0;
-  font-size: clamp(1.35rem, 1.8vw, 1.85rem);
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .scene4-subtitle {
   margin: 0;
-  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.65;
   border-top: 1px dashed rgba(255, 255, 255, 0.15);
   padding-top: 0.75rem;
   opacity: 0; /* 初始隐藏，待动画显示 */
   transform: translateY(8px);
+  font-family: 'Outfit', sans-serif;
 }
 
 .glowing-ball {
@@ -161,8 +163,9 @@ defineExpose({
   top: clamp(6rem, 18vh, 10rem);
   left: clamp(4rem, 12vw, 10rem);
   color: rgba(255, 255, 255, 0.75);
-  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
   letter-spacing: 0.04em;
+  font-family: 'Outfit', sans-serif;
 }
 
 @media (max-width: 768px) {

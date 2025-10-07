@@ -65,6 +65,7 @@ defineExpose({
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Outfit', sans-serif;
 }
 .scene2-content {
   display: flex;

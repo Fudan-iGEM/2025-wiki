@@ -84,15 +84,18 @@ defineExpose({
 .text-content {
   color: #f0f0f0;
   text-align: center;
+  font-family: 'Outfit', sans-serif;
 }
 
 .text-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   margin-bottom: 0.5rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .text-content p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   opacity: 0.8;
+  font-family: 'Outfit', sans-serif;
 }
 </style>

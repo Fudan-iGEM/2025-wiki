@@ -101,6 +101,7 @@ defineExpose({
 .subtitle {
   margin-top: 1.5rem;
   pointer-events: auto;
+  font-family: 'Outfit', sans-serif;
 }
 .subtitle,
 .subtitle :deep(*) {

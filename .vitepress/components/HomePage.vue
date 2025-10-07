@@ -454,7 +454,6 @@ const setupScrollAnimation = () => {
       scrub: 1, 
       start: 'top top', 
       end: '+=15000',
-       // 在第三幕未完成或圆球未放置前，强制将滚动位置钳制在“scene5Start”标签之前
        onUpdate: (self) => {
         if (mainTimeline && (!scene3AnimationComplete.value || !scene4BallPlaced.value)) {
           const labelTime = mainTimeline.labels?.scene5Start
@@ -505,6 +504,12 @@ const setupScrollAnimation = () => {
       scene4.glowingBallRef,
       scene4.scene4ContainerRef.querySelector('.drag-prompt')
     ], { x: '-120%', autoAlpha: 0, duration: 0.6, ease: 'power2.in' })
+    .call(() => {
+      // 第四幕完结时，直接删除第四幕的DOM内容
+      if (scene4.scene4ContainerRef) {
+        scene4.scene4ContainerRef.style.display = 'none';
+      }
+    }, [], '>')
     .to(homepageRef.value, { backgroundColor: '#1a2a45', duration: 1 }, '<')
     .to(scene5.scene5Ref, { autoAlpha: 1, duration: 1 }, '>-0.5')
     .from(scene5.columnWrapperRef.children, { autoAlpha: 0, x: 100, stagger: 0.2, duration: 0.8 }, '>-0.5')
@@ -516,7 +521,12 @@ const setupScrollAnimation = () => {
     .to({}, { duration: 5 }) // Duration for scene 5
     .addLabel('scene6Start')
     .to(scene5.scene5Ref, { x: '-100%', autoAlpha: 0, duration: 1 })
-    // 复位并显现 lottie 容器，避免之前的left-slide的 transform 残留导致不可见
+    // 重新显示第四幕的lottie容器用于后续场景
+    .call(() => {
+      if (scene4.scene4ContainerRef) {
+        scene4.scene4ContainerRef.style.display = '';
+      }
+    }, [], '<')
     .to(scene4.dropTargetRef, { x: 0, autoAlpha: 1, left: '1rem', right: 'auto', duration: 1, ease: 'power2.out' }, '<')
     .call(() => {
       scene4AnimationUrl.value = scene4Lotties.dog5;

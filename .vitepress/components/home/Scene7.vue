@@ -38,16 +38,19 @@ defineExpose({
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
+  font-family: 'Outfit', sans-serif;
 }
 
 .end-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .end-text p {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   opacity: 0.8;
   margin-top: 1rem;
+  font-family: 'Outfit', sans-serif;
 }
 </style>

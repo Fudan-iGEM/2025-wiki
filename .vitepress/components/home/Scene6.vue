@@ -92,16 +92,19 @@ defineExpose({
 
 .card-text-content {
   color: #f0f0f0;
+  font-family: 'Outfit', sans-serif;
 }
 
 .card-text-content h4 {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .card-text-content p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   opacity: 0.85;
+  font-family: 'Outfit', sans-serif;
 }
 
 .scroll-hint {
@@ -110,7 +113,7 @@ defineExpose({
   left: 50%;
   transform: translateX(-50%);
   padding: 0.4rem 0.75rem;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: rgba(255, 255, 255, 0.9);
   background: rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -118,6 +121,7 @@ defineExpose({
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
   pointer-events: none; /* 不干扰其他元素交互 */
   animation: hint-nudge 2.2s ease-in-out infinite;
+  font-family: 'Outfit', sans-serif;
 }
 
 @keyframes hint-nudge {

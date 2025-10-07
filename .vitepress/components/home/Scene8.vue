@@ -73,6 +73,7 @@ defineExpose({
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .card:hover {
