@@ -9,29 +9,33 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we describe how Fudan iGEM 2025 builds an inclusive scientific community through intersectional practices, bringing Groups Underrepresented in Science like those with rare disease Epidermolysis bullosa into science.
 ---
 
-## Summary: Intersectional Echoes
+## Summary： Intersectional Echoes
 
    > “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects.If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks." ——Kimberlé Crenshaw
 
+
+
 Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. This led us to recognize that, in real society, fungal challenges are not one-dimensional. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/summary.webp" alt="inclusivity1-1" style="zoom:45%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/content.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
-## **Our Primary Claim**
 
-### In One Sentence
+## **0.Forming our theory: Primary Claim**
 
-Virtually anyone can become vulnerable to fungal infections. We aim to co-create an inclusive scientific community to collectively address fungal challenges.
+### 0.1 In One Sentence
 
-### The Intersection of Scientific and Social Problems
+Virtually anyone can become vulnerable to fungal infection s. We aim to co-create an inclusive scientific community to collectively address fungal challenges.
+
+### 0.2 The Intersection of Scientific and Social Problems
 
 - Fungal infections are a widespread global health concern, potentially affecting almost everyone. Fungal diseases cause more than 1.5 million deaths each year and affect over 1 billion people[^1]. For instance, dermatophytosis—the most common superficial fungal disease—affects 20–25% of the global population[^2]. Within these broad populations, there exists a group who not only endure recurrent skin lesions but also face fungal infections as a severe complication: **patients with Epidermolysis bullosa ("Butterfly Children")**.
-- Epidermolysis bullosa (EB) is a group of rare genetic disorders characterized by profoundly fragile skin. Clinically, individuals with EB experience chronic blistering and wound formation, with certain subtypes also involving mucous membranes and other organs. As a result of this loss of the skin’s natural protective barrier, patients are highly vulnerable to infections. Among these, fungal infections pose a particular risk due to persistent skin breakdown and compromised immunity. Furthermore, the lifelong nature of EB and the current lack of curative treatments increase their susceptibility to antifungal drug resistance, underscoring the urgent need for more effective therapeutic options.
+- Epidermolysis bullosa (EB) is a group of rare genetic disorders characterized by profoundly fragile skin. Clinically, individuals with EB experience chronic blistering and wound formation, with certain subtypes also involving mucous membranes and other organs. As a result of this loss of the skin’s natural protective barrier, patients are highly vulnerable to infections. 
+- Among these, we have identified fungal infections as a critical concern for EB patients, given their persistent skin breakdown and compromised immunity. This vulnerability is exacerbated by the disease's lifelong course and the lack of curative treatments, which together intensify the risk of antifungal drug resistance and underline the pressing need for better therapeutic strategies.
 
-### Systemic Scientific Barriers
+### 0.3 Systemic Scientific Barriers
 
 - Financial strain arises from the high cost of ongoing medical care, compounded when parents or caregivers must leave their jobs to provide support, exacerbating economic hardship[^3]. The relentless physical and psychological demands of daily wound management lead to profound exhaustion, making sustained concentration in high-intensity fields like scientific research particularly challenging. Furthermore, inadequate accessibility support in educational institutions often forces students with EB to discontinue their studies, while pervasive social stigma and low expectations further limit opportunities for advanced scientific training and professional participation. These multifaceted barriers—physical, emotional, socioeconomic, and societal—highlight the urgent need for integrated support systems and increased awareness to improve the lives of those affected by EB.
 
-### Three layers of structural barriers in science
+### 0.4 Three layers of structural barriers in science
 
 Rare disease patients encounter **three layers of structural barriers** in science. These barriers not only exacerbate their difficulties but also deprive science of valuable perspectives and wisdom. We describe this condition as **“scientific voicelessness”**, which manifests in three dimensions:
 
@@ -44,7 +48,7 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 3. **Excluded: The Divide Between Science and the Body**
    Scientific practice usually assumes researchers have “standard” bodily functions. Yet the lived realities of rare disease patients—frequent care routines, physical limitations, mobility challenges—do not fit the rigid, high-intensity environments of laboratories. They face both physical and institutional exclusion from participating in study design, data collection, and even public science activities.
 
-### Our theory of inclusive science communities
+### 0.5 Our theory of inclusive science communities
 
 To address these barriers, we propose the **Visibility → Empowerment → Involvement** model of inclusive science.
 
@@ -58,32 +62,36 @@ Visibility creates a trusted environment for expression; adequate space for expr
 
 Through focusing on EB patients’ unique situation in the context of fungal challenges, **Fudan iGEM 2025 seeks to explore new approaches to building inclusive scientific communities—bringing rare disease groups into both the narratives and practices of science.**
 
-## Breaking the Silence: The First Glimpse of Visibility
 
-### Goals
 
-To address the issue of *invisibility* and bring the existence and needs of EB patients into the view of the public and the scientific community.
+## 1. Establishing Visibility: Ensuring marginalized groups receive attention.
 
-### Process
+**Goals**
+
+To address the issue of **invisibility** and bring the existence and needs of EB patients into the view of the public and the scientific community.
+
+**Process**
 
 - **Art charity sale**: Position patients as *artists* rather than merely *patients*, thereby discovering their intersectional identities.
 - **Problem identification**: Focusing on a single group easily creates a sense of difference. Therefore, the aim is to design intersectional activities that reduce pressure and foster multidirectional dialogues.
 - **Classification and data visualization**: Demonstrate the intersectionality between EB patients and other groups (such as diabetic foot patients, pregnant women, athletes, etc.) in relation to fungal problems.
 - **Theoretical contribution**: Propose a framework grounded in the principle of *intersectionality*.
 
-### Significance
+**Significance**
 
 To break the *isolation of labeling* and to seek modes of expression for rare disease patients within the shared identity of being “those troubled by fungal infections.”
 
-### Outcome
+**Outcome**
 
 A Public Science Art **Pop-up** with a Co-creation **Charity Sale**.
 
-### In One Sentence
+---
+
+### 1.1 In One Sentence
 
 Enable rare disease patients to increase visibility by presenting themselves as *artists*.
 
-### Motivation (Why We Do This)
+### 1.2 Motivation (Why We Do This)
 
 In our initial attempts to engage with the EB community, we realized the difficulty of implementing the grand goal of *co-creating an inclusive scientific community* on a practical level. One unavoidable fact is that EB patients face multiple barriers in the scientific domain. They possess the intellectual capacity to deeply engage in scientific work, just like anyone else, but the complications of their illness make even daily life difficult. It is not a lack of willingness to enter science, but rather that their motivation to participate is suppressed by both illness and social constraints.
 
@@ -95,7 +103,8 @@ This insight encouraged us: although the division between *EB patients* and *non
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" alt="inclusivity1-4" style="zoom:80%;" />
 
-- ### **Details**
+### 1.3 **Details**
+
 - **Art as a medium**
 
 The campus-based “Butterfly Children Charity Sale” was our first attempt. The event combined a *public-welfare + commercial* model, offering over 20 charity products (postcards, bracelets, knitted items, cardholders, paintings, etc.) created by patients and their families. It attracted over 200 participants .
@@ -122,7 +131,7 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
   
   
 
-### Theoretical Framework: Intersectionality
+### 1.4 Theoretical Framework: Intersectionality
 
    > “Intersectionality has given many advocates a way to frame their circumstances and to fight for their visibility and inclusion."——Kimberlé Crenshaw
 
@@ -142,23 +151,32 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-1.webp" alt="inclusivity1-1" style="zoom:45%;" />
 
-## Beyond Words: Mapping the Unspoken Truths
+## 2. Beyond Words: Mapping the Unspoken Truths
 
-- **Objective:** To address the problem of *inexpressibility* by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.
-- **Process:**
-  - Through classification and data visualization, demonstrate the *intersectionality* of EB patients with other groups (e.g., diabetic foot patients, pregnant women, athletes) regarding fungal issues.
-  - Develop a **Participatory Mapping Toolkit** to guide them in describing care-seeking pathways, pain points, and medication-related challenges.
-  - Design **sensory-friendly research methods**: using metaphors, drawings, and embodied descriptions to help participants articulate experiences that are often “hard to put into words.”
-  - Identify barriers in fungal treatment from patient narratives, and reveal misunderstandings caused by the lack of integration with the broader scientific community.
-  - Lay the groundwork for the next stage of activities that emphasize *dialogue*.
-- **Significance:** Create channels that translate the unique experiences of scientifically marginalized groups, uncover authentic needs, and provide a foundation for designing subsequent activities.
-- **Outcome:** **Participatory Mapping Toolkit**
+**Objective**
+To address the problem of *inexpressibility* by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.
 
-### In One Sentence
+**Process**
+
+- Through classification and data visualization, demonstrate the *intersectionality* of EB patients with other groups (e.g., diabetic foot patients, pregnant women, athletes) regarding fungal issues.
+- Develop a **Participatory Mapping Toolkit** to guide them in describing care-seeking pathways, pain points, and medication-related challenges.
+- Design **sensory-friendly research methods**: using metaphors, drawings, and embodied descriptions to help participants articulate experiences that are often “hard to put into words.”
+- Identify barriers in fungal treatment from patient narratives, and reveal misunderstandings caused by the lack of integration with the broader scientific community.
+- Lay the groundwork for the next stage of activities that emphasize *dialogue*.
+
+**Significance** 
+Create channels that translate the unique experiences of scientifically marginalized groups, uncover authentic needs, and provide a foundation for designing subsequent activities.
+
+**Outcome** 
+Participatory Mapping Toolkit
+
+---
+
+### 2.1 In One Sentence
 
 **Sensory-friendly research design** helps individuals affected by fungal problems to identify struggles they previously *could not articulate*, thereby empowering marginalized groups to voice their perspectives.
 
-### Motivation (Why We Do This)
+### 2.2 Motivation (Why We Do This)
 
 Building on insights from our first activity, we aimed to invite individuals who share similar lived circumstances with EB patients at certain moments, in order to reduce the inequitable pressure produced by the binary divide between “healthy” and “ill.” Starting from our project’s focus on fungal issues and based on literature review, we delineated a broad group of **“fungus-susceptible individuals.”**
 
@@ -173,23 +191,28 @@ Building on insights from our first activity, we aimed to invite individuals who
 In other words, although an HIV patient, a diabetic with foot ulcers, a young athlete with athlete’s foot, and a pregnant woman with vaginitis may seem vastly different in identity, at a deeper level they are all *“allies affected by fungal problems”*—sharing with EB patients the identity of *living with a recurrent, chronic condition*.
 
 ---
-### Details
+### 2.3 Details
 
 Through broad recruitment, we identified **10 individuals in Shanghai** who had sought medical care due to fungal susceptibility factors. This included:
 
    - those with confirmed fungal infections such as *aspergillosis, jock itch, athlete’s foot*;
+
 - those with underlying conditions predisposing them to fungal complications (*EB, diabetes, eczema*);
+
 - children and elderly individuals with lower immunity;
+
 - those living or working in humid environments.
 
-#### Preliminary discovery
+  
+
+#### 2.3.1 Preliminary discovery
 
 We first conducted a **quantitative questionnaire survey**, Participants answer the following questions using a slider with a score of 0 to 5. The key findings are summarized below:
 
 | Question Average                                             | Average Score |
 | ------------------------------------------------------------ | ------------- |
 | Overall, how would you rate your previous healthcare experience related to fungal issues? | 3.41 |
-| As someone affected by fungal issues, I believe my voice is important in the scientific field and I am willing to participate in it. | 4.31 |
+| As someone affected by fungal issues, I believe my voice is important in the scientific field, and I am willing to participate in it. | 4.31 |
 | As someone affected by fungal issues, how important is it for you to participate in and contribute to scientific endeavors? | 2.91 |
 | I believe the complexity of symptoms and physical sensations I experienced are not adequately captured in current healthcare processes, scientific research, and drug development. | 1.93 |
 | In my studies, work, and daily life, I have felt misunderstood, judged, or needed to hide my physical condition due to fungal issues in order to participate in certain activities. | 2.20 |
@@ -204,7 +227,7 @@ Therefore, our goal is to **empower fungus-susceptible individuals** to articula
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity2map2.webp" alt="inclusivity2map2" style="zoom:33%;" />
 
-#### Sensory-friendly research design
+#### 2.3.2 Sensory-friendly research design
 
 Through literature review and our personal experience, we have realized that the existing research methods centered on "medical experience" are insufficient, and patients have more in-depth information worth exploring during the treatment process[^6]. Therefore, we designed a [**Participatory Mapping & Illness Experience Atlas**](https://static.igem.wiki/teams/5643/pageimage/inclusivity/participatory-mapping-research-materials.pdf) as a sensory-friendly research activity. Participants—including EB patients—were invited to use one medical encounter as an example, and to describe their journey through care not only in words, but also through drawings, symbols, and embodied metaphors.
 
@@ -230,7 +253,7 @@ Participants expressed appreciation for our sensory-friendly approach.
 This enabled us to develop a [**Sensory-Friendly Research Toolkit**](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf), which can be applied in broader contexts.
 
 ---
-#### Two powerful moments
+#### 2.3.3 Two powerful moments
 
 1. A woman undergoing *over a year of antifungal treatment* faced workplace discrimination and nearly lost her job. When asked, “If you could describe fungal infection with one color, what would it be?” she answered:
 
@@ -243,7 +266,7 @@ Both accounts challenge simplistic narratives of “patient as passive sufferer.
 This case underscores the core advantage of sensory-friendly methods: creating a safe space for complex, even contradictory experiences. Tools like colors and doodles allowed us to capture *dialectical narratives of illness* beyond binary framings, inspiring healthcare practices rooted in **respect for patients’ interpretive agency**.
 
 ---
-### Conclusion (Value & Significance)
+### 2.4 Conclusion (Value & Significance)
 
 From this study, we learned that fungus-susceptible individuals demand more convenient antifungal treatments. Topical medication was reported as inconvenient and had low adherence, while participants called for faster-acting oral drugs with greater resistance profiles. EB patients, in particular, emphasized the need for smaller pills due to esophageal strictures. These insights informed the **experimental antifungal drug screening** part of our project.
 
@@ -256,25 +279,36 @@ Key barriers identified include:
 
 These insights directly shaped our follow-up activities: **Photovoice (“Image-based Storytelling”)** and a **Co-Creation Art Exhibition**, designed to amplify marginalized voices in science and reimagine inclusive community-building.
 
-## A Chorus of Voices: Science in Shared Dialogue
 
-- **Objective:** To address the challenge of *“difficulty in participation”* by creating opportunities for multi-stakeholder dialogue on scientific issues.
-- **Actions:**
-  - **PhotoVoice:** Enable patients to narrate their everyday lives through images, while inviting researchers, doctors, and the public to engage in dialogue about improving medical experiences identified in the previous section.
-  - **Co-Creation Art Exhibition:** Simulate laboratory settings (e.g., operational difficulties, sensory barriers) to allow the public to experience the challenges of EB patients, while listening directly to their narratives in the exhibition.
-  - **Improved Feedback Model.**
-- **Significance:** Marginalized groups shift from being mere *“subjects of research”* to *“voices in dialogue,”* fostering mutual understanding and cross-building of scientific issues with society.
-- **Outcomes:**
-  - Improved Feedback Model
-  - Toolkit: *Ten Questions for Post-Activity Reflection*
+
+## 3. **Encouraging Participation: Let the vulnerable dialogue with researchers.**
+
+**Objective** 
+
+To address the challenge of *“difficulty in participation”* by creating opportunities for multi-stakeholder dialogue on scientific issues.
+
+**Actions**
+
+- **PhotoVoice:** Enable patients to narrate their everyday lives through images, while inviting researchers, doctors, and the public to engage in dialogue about improving medical experiences identified in the previous section.
+- **Co-Creation Art Exhibition:** Simulate laboratory settings (e.g., operational difficulties, sensory barriers) to allow the public to experience the challenges of EB patients, while listening directly to their narratives in the exhibition.
+- **Improved Feedback Model.**
+
+**Significance** 
+
+Marginalized groups shift from being mere *“subjects of research”* to *“voices in dialogue,”* fostering mutual understanding and cross-building of scientific issues with society.
+
+**Outcomes**
+
+- Improved Feedback Model
+- Toolkit: *Ten Questions for Post-Activity Reflection*
 
 ---
-### In One Sentence
+### 3.1 In One Sentence
 
 Through online multi-stakeholder activities and offline experiential events, we empowered marginalized groups to gain confidence in public affairs discussions and fostered dialogue among diverse stakeholders in science.
 
 ---
-### Facilitating Dialogue: PhotoVoice
+### 3.2 Facilitating Dialogue: PhotoVoice
 
 #### Motivation (Why We Do This)
 
@@ -315,7 +349,7 @@ The workshop climaxed in a **co-creation exercise based on medical settings**. D
 
 <Interview />
 
-### "Ideal Solutions" from Collective Wisdom
+####  "Ideal Solutions" from Collective Wisdom
 
 - Adopt soft color schemes for waiting halls.
 - Add AI navigation/voice registration services to assist elderly patients.
@@ -377,7 +411,7 @@ This multi-stakeholder dialogue not only helped us better understand the real ne
 
 Most importantly, participants transformed from *“respondents”* into *“co-designers”*. Instead of us *doing for them*, they exercised agency in shaping scientific dialogue and public affairs. Dialogue not only empowered expression and eliminated misunderstandings—it also functioned as an **evaluative feedback mechanism**, helping us reflect and improve upon previous activities.
 
-### Co-Creation in Action: The Art Experience Exhibition
+### 3.3 Co-Creation in Action: The Art Experience Exhibition
 
 #### Motivation (Why We Do This)
 
@@ -403,9 +437,7 @@ This space showcased the **self-initiated expressions** of the patient community
 
 After having experienced the difficulties of EB patients firsthand, visitors could approach these works with deeper resonance. Participants were invited to write messages on sticky notes and place them beneath the respective artworks. Later, these notes were mailed back to the corresponding EB patients, establishing a **reciprocal dialogue** between creator and audience.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-2eb2.webp" alt="inclusivity3-2eb2" style="zoom:20%;" />
-
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-2eb3.webp" alt="inclusivity3-2eb3" style="zoom:15%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
 #### Conclusion (Significance and Value)
 
@@ -419,18 +451,28 @@ It suggests that **true inclusivity does not lie in designing a “perfect solut
 
 Future inclusive practices should focus more on creating **“points of identity intersection”**, where people connect naturally through **shared interests, co-creation, and collective concerns**. In this way, inclusivity transcends labels, enabling **deeper recognition and understanding**.
 
-## Echoes of Inclusion: Learning from the Margins
 
-- **Objective:** Draw inspiration from the experiences of marginalized groups and channel these insights into improving inclusivity in laboratory design and scientific practice.
-- **Actions:**
-  - Develop laboratory-assistive software
-  - Conduct reflection and long-term planning
-- **Significance:** Summarize a transferable methodology: **building inclusive scientific communities through the lens of intersectionality**.
-- **Outcomes:**
-  - Laboratory-assistive software — *ProtocolFlow*
-  - Weekly mental health check-in posters for laboratories
+## 4. **Building an inclusive science community: Learn from the margins.**
 
-### Laboratory-assistive software — *ProtocolFlow*
+**Objective**
+ Draw inspiration from the experiences of marginalized groups and channel these insights into improving inclusivity in laboratory design and scientific practice.
+
+**Actions**
+
+- Develop laboratory-assistive software
+- Conduct reflection and long-term planning
+
+**Significance** 
+Summarize a transferable methodology: **building inclusive scientific communities through the lens of intersectionality**.
+
+**Outcomes**
+
+- Laboratory-assistive software — *ProtocolFlow*
+- Weekly mental health check-in posters for laboratories
+
+---
+
+### 4.1 Laboratory-assistive software — *ProtocolFlow*
 
 #### Motivation (Why We Do This)
 
@@ -472,6 +514,8 @@ In a two-week pilot with 30 researchers, we collected encouraging quantitative f
 
 These results suggest that our tool not only improves efficiency but also meaningfully enhances researcher well-being. In today’s climate of rising concern over mental health in science, inclusivity efforts like this can strengthen the resilience of research.
 
+### 4.2 **“Lab Mental Health Week” check-in campaign**
+
 This inspired us to launch a **“Lab Mental Health Week” check-in campaign**, complete with posters that teams can download and use to foster collective awareness and care.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-7.webp" alt="inclusivity3-2eb3" style="zoom:38%;" />
@@ -484,7 +528,7 @@ From May to September, we have continued our science communication efforts on me
 
 
 
-### Intersectionality — A Methodology for Inclusive Scientific Practice
+### 4.3 Intersectionality — A Methodology for Inclusive Scientific Practice
 
 **Core Principle**: Sustainable inclusivity stems from responding to the most marginalized and sensitive needs, which ultimately benefits all participants in science.
 
