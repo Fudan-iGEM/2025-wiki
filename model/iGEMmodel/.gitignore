@@ -1,0 +1,18 @@
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Logs and caches
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+
+# Env files
+.env
+.env.*
+
+# OS cruft
+.DS_Store
