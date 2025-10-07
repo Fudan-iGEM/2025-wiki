@@ -255,7 +255,7 @@ By linking these five strategic pillars, we will build a complete marketing funn
 
 - **Logo:** Features a line-art puppy inspired by the shape of multicellular yeast clusters, creating an approachable yet scientifically grounded brand symbol.
 
-- **Color Palette: **Primary Colors are Cyan and Orange; accent color is purple (echoing the grape yeast theme).
+- **Color Palette:** Primary Colors are Cyan and Orange; accent color is purple (echoing the grape yeast theme).
 
 **Typography & Imagery:** Maintains clean, modern sans-serif fonts while continuing to utilize dynamic graphs, microphotography, and clean interface illustrations in a unified "scientific visualization" style.
 
