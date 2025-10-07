@@ -7,7 +7,28 @@
       :aria-controls="contentId"
     >
       <span class="button-text">{{ buttonText }}</span>
-      <span class="arrow" :class="{ 'expanded': isExpanded }">▼</span>
+      <span
+        class="collapse-icon"
+        :class="{ expanded: isExpanded }"
+        aria-hidden="true"
+      >
+        <svg
+          class="collapse-icon-svg"
+          viewBox="0 0 117 117"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <circle cx="58.5" cy="58.5" r="58.5" fill="#484f75" />
+          <path
+            d="m47.75,69.87l39.16-39.15m-38.05,40.91l8.88,17.76c2.15,4.29,3.22,6.44,4.57,7.01,1.17.5,2.51.41,3.61-.24,1.26-.75,2.04-3.02,3.59-7.56l16.78-49.14c1.35-3.96,2.03-5.94,1.56-7.24-.4-1.14-1.3-2.03-2.44-2.44-1.31-.46-3.29.21-7.24,1.56l-49.14,16.78c-4.54,1.55-6.81,2.33-7.56,3.59-.65,1.1-.74,2.44-.24,3.61.58,1.35,2.72,2.43,7.01,4.57l17.76,8.88c.71.35,1.06.53,1.37.77.27.21.52.45.73.73.24.31.41.66.77,1.37Z"
+            fill="none"
+            stroke="#b3b3b3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="5"
+          />
+        </svg>
+      </span>
     </button>
     
     <div 
@@ -104,14 +125,24 @@ onMounted(() => {
   flex: 1;
 }
 
-.arrow {
+.collapse-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-left: 0.75rem;
+  flex-shrink: 0;
   transition: transform 0.3s ease;
-  font-size: 0.8rem;
-  color: #6c757d;
 }
 
-.arrow.expanded {
+.collapse-icon.expanded {
   transform: rotate(180deg);
+}
+
+.collapse-icon-svg {
+  width: 100%;
+  height: 100%;
 }
 
 .collapsible-content {
@@ -143,8 +174,12 @@ onMounted(() => {
     background: #1a1a1a;
   }
   
-  .arrow {
-    color: #a0a0a0;
+  .collapse-icon-svg circle {
+    fill: #2f4b59;
+  }
+
+  .collapse-icon-svg path {
+    stroke: #d0d0d0;
   }
 }
 
