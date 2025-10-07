@@ -46,7 +46,7 @@ We actively participated in this regional conference at Xi'an Jiaotong-Liverpool
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/yangtze.webp" style="width:80%">
     <div>
         <span style="color:gray">group photo at Yangtze River Delta iGEM Conference </span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -58,7 +58,7 @@ We attended this integrated event, which attracted over 1,000 synthetic biology 
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/ccic.webp" style="width:80%">
     <div>
         <span style="color:gray">group photo at Beijing CCiC</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -103,7 +103,7 @@ Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://20
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/game-interface.webp" style="width:80%">
     <div>
         <span style="color:gray">Game interface</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -117,7 +117,7 @@ Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://20
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/microbial-painting.webp" style="width:80%">
     <div>
         <span style="color:gray">Group photo</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -132,7 +132,7 @@ We established a recurring presence at community centers ([Shanghai Sunflower](h
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/community-centers.webp" style="width:80%">
     <div>
         <span style="color:gray">Our group photo in the community</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -144,6 +144,9 @@ With [Lingqiao No.7 Residents’ Committee , Gaoqiao Town](https://mp.weixin.qq.
     <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/record-photo2-rumor-stopping.webp" style="width:80%">
     <div>
         <span style="color:gray">We luanched the rumor stopping activity</span>
+        <br/>
+    </div>
+</div>
 
 
 
@@ -155,7 +158,7 @@ With [Lingqiao No.7 Residents’ Committee , Gaoqiao Town](https://mp.weixin.qq.
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/my-microbe-friends.webp" style="width:80%">
     <div>
         <span style="color:gray">My microbe friends</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -166,9 +169,8 @@ In collaboration with multiple universities, primarily CJUH-JLU, we produced the
 <div style="position: relative; width: 100%; height: 600px;">
   <iframe src="https://static.igem.wiki/teams/5643/pageimage/collaboration/smashing-synthetic-biology-rumours-science-brochure-compressed.pdf" width="100%" height="100%" style="border: none;">
   </iframe>
-</div>
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none;" id="pdf-fallback-1">
-    Your browser does not support PDFs. <a href=" ">Download the PDF</a >.
+    Your browser does not support PDFs. <a href=" ">Download the PDF</a>.
   </div>
 </div>
 
@@ -184,7 +186,7 @@ We contacted a well-known EB patient blogger, ["Prince Superman"](https://www.do
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/our-exhibition.webp" style="width:80%">
     <div>
         <span style="color:gray">Our exhibition</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -196,7 +198,7 @@ Using the "Photovoice" methodology with [Club Tang Xin Dan](https://mp.weixin.qq
     <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-1.webp" style="width:80%">
     <div>
         <span style="color:gray">Dialogues with patients</span>
-        <br><br>
+       <br/>
     </div>
 </div>
 
@@ -210,7 +212,7 @@ Using the "Photovoice" methodology with [Club Tang Xin Dan](https://mp.weixin.qq
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/decoding-life-with-algorithms.webp" style="width:80%">
     <div>
         <span style="color:gray">Decoding Life with Algorithms</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -224,7 +226,7 @@ On March 28th, we collaborated with [Club—Yiluzhiyin](https://mp.weixin.qq.com
     <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/our-event-booths.webp" style="width:80%">
     <div>
         <span style="color:gray">Decoding Life with Algorithms</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -240,7 +242,7 @@ We had the privilege of engaging in a face-to-face discussion with Mr. Jie Chen,
     <img src="https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action2.webp" style="width:80%">
     <div>
         <span style="color:gray">We communicate with Mr. Jie Chen</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
@@ -252,7 +254,7 @@ We took part in the [Biopharmaceutical Track of the Shanghai College Student Inn
     <img src="https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action1.webp" style="width:80%">
     <div>
         <span style="color:gray">A group photo of our competition</span>
-        <br><br>
+        <br/>
     </div>
 </div>
 
