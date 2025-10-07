@@ -178,11 +178,11 @@ Our project has long realized that addressing global challenges requires strong 
 
 Solution to Problem 1 – **Partnerships with Rare Disease Communities**
 
-Through our @@@@ [Intersectional Echoes](#) framework, we worked closely with EB patients and families. These partnerships were bidirectional: patients shared lived experiences (treatment pain points, stigma, economic barriers), while we co-developed participatory mapping and PhotoVoice toolkits that gave their voices scientific and social visibility.
+Through our [Intersectional Echoes](/inclusivity/#theoretical-framework-intersectionality) framework, we worked closely with EB patients and families. These partnerships were bidirectional: patients shared lived experiences (treatment pain points, stigma, economic barriers), while we co-developed participatory mapping and PhotoVoice toolkits that gave their voices scientific and social visibility.
 
 Solution to Problem 2 – **Cross-sector Collaborations**
 
-Our project partnered with artists, social workers, and educators to co-create activities such as art charity fairs, the *Science of Healing* exhibition, and interactive toolkits. We also collaborated with @@@@ [Georgia Institute of Technology](#) in the outreach education of multicellular yeast growth and the usage of yeasts in our daily life. These collaborations allowed synthetic biology to intersect with art, education, and advocacy, ensuring that knowledge circulates outside the lab and reaches wider publics.
+Our project partnered with artists, social workers, and educators to co-create activities such as art charity fairs, the *Science of Healing* exhibition, and interactive toolkits. We also collaborated with [Georgia Institute of Technology](http://www.snowflakeyeastlab.com/) in the outreach education of multicellular yeast growth and the usage of yeasts in our daily life. These collaborations allowed synthetic biology to intersect with art, education, and advocacy, ensuring that knowledge circulates outside the lab and reaches wider publics.
 
 ------
 
