@@ -45,7 +45,7 @@ Table 1. Parts for [Grape Yeast Collection](https://registry.igem.org/collection
 | :----------: | :----------------------: | :-----------------------------------: |
 | BBa_25MIG4EW | Homologous Region |             HR5'\_*ACE2*\_Chr12L             |
 | BBa_259HCU8C | Homologous Region |             HR3'\_*ACE2*\_Chr12R             |
-| BBa_25EI9P2P |            Plasmid       | Plasmid carrying ACE2HRs and G418 resistence |
+| BBa_25EI9P2P | Plasmid | GFP dropout carrying ACE2HRs and G418 resistence       |
 | BBa_256S6J1M |             coding       |                    HsDOR              |
 | BBa_25AKJ83S |       Translational_Unit |              pREV1 driven HsDOR       |
 | BBa_25XKAUNH | Homologous Region |             HR5'\_*ERG5*\_Chr13L             |

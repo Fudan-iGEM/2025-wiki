@@ -32,7 +32,9 @@ The static site output is generated in `.vitepress/dist`.
 - Unless otherwise noted, the content of this repository is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 - iGEM and iGEM Foundation are trademarks of the iGEM Foundation; all third-party trademarks are the property of their respective owners.
 - We placed the source code of our model inside the `model` folder.
+- We placed the scripts for data quantification inside the `measurement` folder.
 
 ----
 `Wiki Code by: Yufan Han
-Model by: Jihua Tang`
+Model by: Jihua Tang
+Quantification by: Zhiqin Wang`
