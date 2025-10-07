@@ -71,13 +71,13 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin, Draggable)
 const scene1 = { animationUrl: 'https://static.igem.wiki/teams/5643/img/homepage/page1.json', titleSrc: 'https://static.igem.wiki/teams/5643/img/homepage/title.webp' }
 const scene2Lotties = { crisis1: 'https://static.igem.wiki/teams/5643/img/homepage/crisis.json', crisis2: 'https://static.igem.wiki/teams/5643/img/homepage/crisis2.json' }
 const scene4Lotties = { 
-  dog1: 'https://static.igem.wiki/teams/5643/img/homepage/dog1.json', 
-  dog2: 'https://static.igem.wiki/teams/5643/img/homepage/dog2.json', 
-  dog3: 'https://static.igem.wiki/teams/5643/img/homepage/dog3.json',
-  dog4: 'https://static.igem.wiki/teams/5643/img/homepage/dog4.json',
-  dog5: 'https://static.igem.wiki/teams/5643/img/homepage/dog5.json',
-  dog6: 'https://static.igem.wiki/teams/5643/img/homepage/dog6.json',
-  dog7: 'https://static.igem.wiki/teams/5643/img/homepage/dog7.json'
+  dog1: 'https://static.igem.wiki/teams/5643/img/homepage/dog1n.json', 
+  dog2: 'https://static.igem.wiki/teams/5643/img/homepage/dog2n.json', 
+  dog3: 'https://static.igem.wiki/teams/5643/img/homepage/dog3n.json',
+  dog4: 'https://static.igem.wiki/teams/5643/img/homepage/dog4n.json',
+  dog5: 'https://static.igem.wiki/teams/5643/img/homepage/dog5n.json',
+  dog6: 'https://static.igem.wiki/teams/5643/img/homepage/dog6n.json',
+  dog7: 'https://static.igem.wiki/teams/5643/img/homepage/dog7n.json'
 }
 const scene5Lotties = { 
   item1: 'https://static.igem.wiki/teams/5643/img/homepage/5-1.json',
@@ -111,10 +111,10 @@ const scene6Items = ref([
 ]);
 
 const scene8Cards = ref([
-  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.svg', color: '#4ECDC4', link: '/design/', alt: 'Design', title: 'Design' },
-  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.svg', color: '#1E3A8A', link: '/parts/', alt: 'Parts', title: 'Parts' },
-  { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.svg', color: '#FF6B35', link: '/model/', alt: 'Model', title: 'Model' },
-  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.svg', color: '#000000', link: '/inclusivity/', alt: 'Inclusivity', title: 'Inclusivity' }
+  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.webp', color: '#4ECDC4', link: '/design/', alt: 'Design', title: 'Design' },
+  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.webp', color: '#1E3A8A', link: '/parts/', alt: 'Parts', title: 'Parts' },
+  { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.webp', color: '#FF6B35', link: '/model/', alt: 'Model', title: 'Model' },
+  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.webp', color: '#000000', link: '/inclusivity/', alt: 'Inclusivity', title: 'Inclusivity' }
 ]);
 
 // --- Component & Template Refs ---
@@ -158,6 +158,24 @@ watch(scene4AnimationUrl, (url) => {
 })
 
 const getSendButtonEl = () => scene2ComponentRef.value?.scene2Ref?.querySelector('.crisis-dialog__send')
+
+const setScene4Animation = (url, { loop = true, autoplay = true, restart = true } = {}) => {
+  scene4AnimationUrl.value = url
+  scene4Loop.value = loop
+  scene4Autoplay.value = autoplay
+
+  if (!restart) return
+
+  nextTick(() => {
+    const lottieInstance = scene4ComponentRef.value?.lottie4Ref
+    if (!lottieInstance) return
+
+    lottieInstance.stop()
+    if (autoplay) {
+      lottieInstance.play()
+    }
+  })
+}
 
 const activateSendPrompt = () => {
   if (hasSendTriggered.value) return
@@ -291,9 +309,7 @@ const setupScene4 = () => {
   gsap.from(target, { autoAlpha: 0, scale: 0.5, duration: 1, ease: 'back.out(1.7)', delay: 0.7 })
   gsap.from(scene4.scene4ContainerRef.querySelector('.drag-prompt'), { autoAlpha: 0, delay: 1.5 })
 
-  scene4AnimationUrl.value = scene4Lotties.dog1
-  scene4Loop.value = false
-  scene4Autoplay.value = true
+  setScene4Animation(scene4Lotties.dog1, { loop: false, autoplay: true, restart: false })
 
   Draggable.create(ball, {
     bounds: scene4.scene4ContainerRef,
@@ -316,9 +332,7 @@ const setupScene4 = () => {
         gsap.to(this.target, { autoAlpha: 0, delay: 0.3 })
         gsap.to(scene4.scene4ContainerRef.querySelector('.drag-prompt'), { autoAlpha: 0 })
         
-        scene4AnimationUrl.value = scene4Lotties.dog3
-        scene4Loop.value = true
-        scene4Autoplay.value = true
+        setScene4Animation(scene4Lotties.dog3, { loop: true, autoplay: true })
 
         // 左侧卡片：标题打字动画 + 副标题显现
         gsap.to(scene4.scene4TitleRef, { duration: 2, text: 'And now we introduce-- DR. sTraTeGY!', ease: 'none', delay: 0.5 })
@@ -339,16 +353,7 @@ const setupScene4 = () => {
 
 const handleDog1Complete = () => {
   if (scene4AnimationUrl.value === scene4Lotties.dog1) {
-    scene4AnimationUrl.value = scene4Lotties.dog2
-    scene4Loop.value = true
-    scene4Autoplay.value = true
-    nextTick(() => {
-        const lottie4 = scene4ComponentRef.value?.lottie4Ref
-        if (lottie4) {
-          lottie4.stop()
-          lottie4.play()
-        }
-    })
+    setScene4Animation(scene4Lotties.dog2, { loop: true, autoplay: true })
   }
 }
 
@@ -514,9 +519,7 @@ const setupScrollAnimation = () => {
     .to(scene5.scene5Ref, { autoAlpha: 1, duration: 1 }, '>-0.5')
     .from(scene5.columnWrapperRef.children, { autoAlpha: 0, x: 100, stagger: 0.2, duration: 0.8 }, '>-0.5')
     .call(() => {
-      scene4AnimationUrl.value = scene4Lotties.dog4;
-      scene4Loop.value = true;
-      scene4Autoplay.value = true;
+      setScene4Animation(scene4Lotties.dog4, { loop: true, autoplay: true })
     }, [], '>')
     .to({}, { duration: 5 }) // Duration for scene 5
     .addLabel('scene6Start')
@@ -529,8 +532,7 @@ const setupScrollAnimation = () => {
     }, [], '<')
     .to(scene4.dropTargetRef, { x: 0, autoAlpha: 1, left: '1rem', right: 'auto', duration: 1, ease: 'power2.out' }, '<')
     .call(() => {
-      scene4AnimationUrl.value = scene4Lotties.dog5;
-      scene4Loop.value = true;
+      setScene4Animation(scene4Lotties.dog5, { loop: true, autoplay: true })
     }, [], '<')
     .to(scene6.scene6Ref, { autoAlpha: 1, duration: 1 }, '<')
     .to({}, { duration: 5 }) // Duration for scene 6
@@ -538,8 +540,7 @@ const setupScrollAnimation = () => {
     .to(scene6.scene6Ref, { autoAlpha: 0, duration: 0.5 })
     .to(homepageRef.value, { backgroundColor: '#FFFFFF', duration: 1 }, '<')
     .call(() => { 
-      scene4AnimationUrl.value = scene4Lotties.dog6;
-      scene4Loop.value = true;
+      setScene4Animation(scene4Lotties.dog6, { loop: true, autoplay: true })
     }, [], '<')
     .to(scene4.dropTargetRef, { 
       left: '50%', 
@@ -549,8 +550,7 @@ const setupScrollAnimation = () => {
       duration: 1.5, 
       ease: 'power2.inOut',
       onComplete: () => {
-        scene4AnimationUrl.value = scene4Lotties.dog7;
-        scene4Loop.value = true;
+        setScene4Animation(scene4Lotties.dog7, { loop: true, autoplay: true })
       }
     }, '>')
     .to(scene7.textRef, { autoAlpha: 1, duration: 1 }, '>-0.5')
