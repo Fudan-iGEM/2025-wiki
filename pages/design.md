@@ -12,9 +12,9 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we describe DR. sTraTeGY, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
 ---
 
-<script setup>
+<!-- script setup>
 import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualization.vue'
-</script>
+</script -->
 
 ## Overview
 
