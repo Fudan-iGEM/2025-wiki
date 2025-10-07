@@ -14,18 +14,16 @@ description: On this page, we describe how Fudan iGEM 2025 builds an inclusive s
    > “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects.If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks." ——Kimberlé Crenshaw
 
 
-
 Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. This led us to recognize that, in real society, fungal challenges are not one-dimensional. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/content.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
 
-## **0.Forming our theory: Primary Claim**
+## **0.Forming our theory from the pre-research**
 
-### 0.1 In One Sentence
+   > **In One Sentence:** We aim to co-create an inclusive scientific community to collectively address fungal challenges.
 
-Virtually anyone can become vulnerable to fungal infection s. We aim to co-create an inclusive scientific community to collectively address fungal challenges.
 
-### 0.2 Our Initial Framework from the pre-research
+### 0.1 Our Initial Framework and target audience
 
 Our social structure exhibits a profound similarity to the "multicellular yeast" model: the group relies on diverse individuals, and individuals, in turn, benefit from the group. However, while integrating into the collective, individuals also experience additional pressures that isolated individuals do not face. The inclusive initiatives we promote aim precisely to resolve this kind of structural pressure—precisely for this reason, our social advocacy and experimental research are fundamentally interconnected.
 
@@ -56,7 +54,7 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 3. **Excluded: The Divide Between Science and the Body**
    Scientific practice usually assumes researchers have “standard” bodily functions. Yet the lived realities of rare disease patients—frequent care routines, physical limitations, mobility challenges—do not fit the rigid, high-intensity environments of laboratories. They face both physical and institutional exclusion from participating in study design, data collection, and even public science activities.
 
-### 0.3 Our theory of inclusive science communities
+### 0.2 Our **Visibility → Empowerment → Involvement** model
 
 To address these barriers, we propose the **Visibility → Empowerment → Involvement** model of inclusive science.
 
@@ -73,6 +71,45 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
 
 
 ## 1. Establishing Visibility: Ensuring marginalized groups receive attention.
+
+   > **In One Sentence:** Enable rare disease patients to increase visibility by presenting themselves as *artists*.
+
+---
+
+
+
+<div class="card">
+  <h3><strong>In One Sentence:</strong> Enable rare disease patients to increase visibility by presenting themselves as *artists*.</h3>
+  <p><strong>Goals</strong>:To address the issue of **invisibility** and bring the existence and needs of EB patients into the view of the public and the scientific community.<br/>
+**Process**:<br/>
+- **Art charity sale**: Position patients as *artists* rather than merely *patients*, thereby discovering their intersectional identities.<br/>
+- **Problem identification**: Focusing on a single group easily creates a sense of difference. Therefore, the aim is to design intersectional activities that reduce pressure and foster multidirectional dialogues.<br/>
+- **Classification and data visualization**: Demonstrate the intersectionality between EB patients and other groups (such as diabetic foot patients, pregnant women, athletes, etc.) in relation to fungal problems.<br/>
+- **Theoretical contribution**: Propose a framework grounded in the principle of *intersectionality*.<br/>
+**Significance**:<br/>
+To break the *isolation of labeling* and to seek modes of expression for rare disease patients within the shared identity of being “those troubled by fungal infections.”<br/>
+**Outcome**:<br/>
+A Public Science Art **Pop-up** with a Co-creation **Charity Sale**.</p>
+
+
+
+<style>
+.card {
+  background: orange;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+</style>
+
+
 
 **Goals**
 
@@ -95,11 +132,9 @@ A Public Science Art **Pop-up** with a Co-creation **Charity Sale**.
 
 ---
 
-### 1.1 In One Sentence
 
-Enable rare disease patients to increase visibility by presenting themselves as *artists*.
 
-### 1.2 Art **Pop-up** and Co-creation **Charity with EB Patients
+### 1.1 Art **Pop-up** and Co-creation Charity with EB Patients
 
 
 
