@@ -11,8 +11,9 @@ description: On this page, we describe how Fudan iGEM 2025 builds an inclusive s
 
 ## Summary: Intersectional Echoes
 
-Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. This led us to recognize that, in real society, fungal challenges are not one-dimensional. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
+   > “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects.If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks." ——Kimberlé Crenshaw
 
+Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. This led us to recognize that, in real society, fungal challenges are not one-dimensional. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
 
 
 ## **Our Primary Claim**
@@ -76,7 +77,7 @@ To break the *isolation of labeling* and to seek modes of expression for rare di
 
 ### Outcome
 
-An **art charity sale event**.
+A Public Science Art **Pop-up** with a Co-creation **Charity Sale**.
 
 ### In One Sentence
 
@@ -90,7 +91,7 @@ Given this systemic dilemma, our first step was to draw public attention to thei
 
 During the process of inviting patients to participate, we noticed that many expressed an intangible psychological distance from the scientific community. It became urgent to find a mode of participation that could empower them to exercise their agency. A drawing by 16-year-old JING JING provided us inspiration — a *Genshin Impact* fanart. This revealed dimensions of their identities and aspirations beyond being “patients.”
 
-This insight encouraged us: although the division between *EB patients* and *non-EB patients* exists, common ground can still be found on other levels to unite us. Such psychological recognition is the first step to connect marginalized groups in science with STEM practices.
+This insight encouraged us: although the division between *EB patients* and *non-EB patients* exists, common ground can still be found on other levels to unite us. Such psychological recognition is the first step to connecting marginalized groups in science with STEM practices.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" alt="inclusivity1-4" style="zoom:80%;" />
 
@@ -122,6 +123,8 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
   
 
 ### Theoretical Framework: Intersectionality
+
+   > “Intersectionality has given many advocates a way to frame their circumstances and to fight for their visibility and inclusion."——Kimberlé Crenshaw
 
 Initially, we sought to focus on a single *target group* to quickly identify needs. However, this approach risked unintentionally reproducing the same labeling pressures that patients face in daily life.
 
@@ -183,7 +186,7 @@ Through broad recruitment, we identified **10 individuals in Shanghai** who had 
 
 We first conducted a **quantitative questionnaire survey**, Participants answer the following questions using a slider with a score of 0 to 5. The key findings are summarized below:
 
-| Question | Average Score |
+| Question Average                                             | Average Score |
 | ------------------------------------------------------------ | ------------- |
 | Overall, how would you rate your previous healthcare experience related to fungal issues? | 3.41 |
 | As someone affected by fungal issues, I believe my voice is important in the scientific field and I am willing to participate in it. | 4.31 |
@@ -298,8 +301,9 @@ After each theme, we implemented a **structured feedback mechanism** to ensure e
 
 During this process, participants’ diverse identities shaped distinct perspectives on the same scene. For example:
 
-   - An ER head nurse described the hospital as a bustling workplace.
-- A patient voiced frustration and fear about their visits.
+   - An ER head nurse described using the hospital's Rainbow Passage during a night shift to transfer a patient to the ICU.
+   - A surgeon reflects on the story of their young patient: bearing witness not just to the child's medical journey through multiple visits, but to their personal growth.
+- A patient voiced frustration and fear about their chronic skin condition and turned to DeepSeek for comfort and support.
 - An EB patient, however, described the hospital as a “familiar space,” bringing her warmth and safety.
 
 This dialogue naturally extended into broader discussions of the boundaries of science and life education, enabling mutual understanding. Patients integrated into the wider community in a safe atmosphere, while doctors and researchers gained greater awareness of other stakeholders’ perspectives—making them more conscious of inclusivity in daily practice.
@@ -321,9 +325,9 @@ The workshop climaxed in a **co-creation exercise based on medical settings**. D
 
 Participants brainstormed improvements to color, lighting, seating, and signage systems, eventually forming a collectively negotiated *“ideal solution.”* We then created a redesigned hospital space plan and shared it with earlier mapping participants, inviting them to evaluate how well it addressed their concerns. Most of the people who participated in the previous round of activities gave our plan a good review, believing that it would to some extent enhance their willingness to seek medical treatment.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3map.webp" alt="inclusivity3map" style="zoom:40%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-hospital.webp" alt="inclusivity3map" style="zoom:40%;" />
 
-We also consulted **Tang Xirong**, Deputy Chief Architect and Director of the Medical Institute at Shanghai Architectural Design & Research Institute Co., Ltd. She affirmed our approach but also provided professional feedback—for instance, emphasizing antimicrobial upholstery for hospital seating.
+We also consulted Tang Xirong, Deputy Chief Architect and Director of the Medical Institute at Shanghai Architectural Design & Research Institute Co., Ltd. She endorsed our core approach—integrating AI-guided navigation and digital concierge services as emerging trends—alongside the philosophy of creating "less clinical, more social" healthcare spaces. She also offered expert recommendations: 1) prioritizing antimicrobial upholstery for seating, 2) introducing micro-environments such as small atriums and play corners, and 3) ensuring visual designs prioritize the needs of elderly users.
 
 This exchange highlighted the complexity of real-world implementation. It also revealed that long-term and sustained community engagement is essential, beyond one-time events. To support this, we developed **“Ten Questions for Reflection after Inclusive Science Community Activities”**, helping us and future practitioners sustain improvement.
 
@@ -390,6 +394,8 @@ To go beyond passive observation, we designed an interactive experience. Visitor
 This setup simulated the everyday challenges faced by EB patients—fragile skin and restricted joint mobility—and the barriers these bring to scientific work. After the experience, participants were encouraged to reflect on the **limitations embedded in the “standard researcher” model** of science.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-2eb.webp" alt="inclusivity3-2eb" style="zoom:10%;" />
+
+
 
 ##### Exhibition Area: A Distant Yet Reciprocal Dialogue
 
@@ -507,6 +513,8 @@ Our **Visibility–Empowerment–Involvement cycle** seeks to challenge this div
 A truly inclusive scientific community should not present people as fixed, single-identity figures. Rather, it must embrace individuals’ complexity and plurality, transforming them into genuine agents of change. Such a community becomes a **catalyst for dialogue, mutual understanding, and systemic transformation**.
 
 Structural change is hard, but it begins with localized, lived efforts of inclusive community-building. *Any time you can give will make a difference.*
+
+
 
 ## References
 
