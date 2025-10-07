@@ -18,18 +18,17 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
 
 ## **0.Forming our theory from the pre-research**
 
-
-
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
   color: black;
   padding: 20px;
   border-radius: 12px;
   margin: 16px 0;
-            "> <h5 style="margin: 0; color:#e97628;"><strong>✅ In One Sentence:</strong> We aim to co-create an inclusive scientific community to collectively address fungal challengesEnable rare disease patients to increase visibility by presenting themselves as artists.
-    </h5></div>
-
-
+">
+  <h5 style="margin: 0; color:#e97628;">
+    <strong>✅ In One Sentence:</strong> We aim to co-create an inclusive scientific community to collectively address fungal challenges.
+  </h5>
+</div>
 
 
 ### 0.1 Our Initial Framework and target audience
@@ -87,34 +86,43 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   padding: 20px;
   border-radius: 12px;
   margin: 16px 0;
-            "> <h5 style="margin: 0; color:#e97628;" ><strong>✅In One Sentence: </strong>Enable rare disease patients to increase visibility by presenting themselves as artists..
-    </h5>
-<br/>
+">
+  <h5 style="margin: 0; color:#e97628;">
+    <strong>✅In One Sentence: </strong>
+    Enable rare disease patients to increase visibility by presenting themselves as artists.
+  </h5>
+  
+  <br/>
+  
   <div class="section">
-      <div class="section-title"><strong>Objective</strong></div>
-            <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
-        </div>
+    <div class="section-title"><strong>Objective</strong></div>
+    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+  </div>
+  
   <div class="section">
-            <div class="section-title"><Strong>Process</Strong></div>
-      <p>1) Art charity sale:Position patients as artists rather than merely patients, thereby discovering their intersectional identities.
-<br/>2) Problem identification: Focusing on a single group easily creates a sense of difference. Therefore, the aim is to design intersectional activities that reduce pressure and foster multidirectional dialogues.<br/> 3) Classification and data visualization:Demonstrate the intersectionality between EB patients and other groups (such as diabetic foot patients, pregnant women, athletes, etc.) in relation to fungal problems.</p>
-        </div>
- <div class="section">
-            <div class="section-title"><strong>Theoretical contribution</strong></div>
-            <p>Propose a framework grounded in the principle of intersectionality.</p>
-        </div> 
- <div class="section">
-            <div class="section-title"><strong>Significance</strong></div>
-            <p>To break the isolation of labeling and to seek modes of expression for rare disease patients within the shared identity of being “those troubled by fungal infections</p>
-        </div> 
-<div class="section">
-            <div class="section-title"><strong>Outcome</strong></div>
-            <p>A Public Science Art Pop-up with a Co-creation Charity Sale.</p>
-        </div>
-
-
-
-
+    <div class="section-title"><strong>Process</strong></div>
+    <p>
+      1) Art charity sale: Position patients as artists rather than merely patients, thereby discovering their intersectional identities.<br>
+      2) Problem identification: Focusing on a single group easily creates a sense of difference. Therefore, the aim is to design intersectional activities that reduce pressure and foster multidirectional dialogues.<br>
+      3) Classification and data visualization: Demonstrate the intersectionality between EB patients and other groups (such as diabetic foot patients, pregnant women, athletes, etc.) in relation to fungal problems.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Theoretical contribution</strong></div>
+    <p>Propose a framework grounded in the principle of intersectionality.</p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Significance</strong></div>
+    <p>To break the isolation of labeling and to seek modes of expression for rare disease patients within the shared identity of being "those troubled by fungal infections".</p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Outcome</strong></div>
+    <p>A Public Science Art Pop-up with a Co-creation Charity Sale.</p>
+  </div>
+</div>
 ---
 
 ### 1.1 Art **Pop-up** and Co-creation Charity with EB Patients
@@ -187,31 +195,40 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
   padding: 20px;
   border-radius: 12px;
   margin: 16px 0;
-            "> <h5 style="margin: 0; color:#e97628;" ><strong>✅In One Sentence: </strong>Sensory-friendly research design helps individuals affected by fungal problems to identify struggles they previously *could not articulate*, thereby empowering marginalized groups to voice their perspectives.
-    </h5>
-<br/>
+">
+  <h5 style="margin: 0; color:#e97628;">
+    <strong>✅In One Sentence: </strong>
+    Sensory-friendly research design helps individuals affected by fungal problems to identify struggles they previously <em>could not articulate</em>, thereby empowering marginalized groups to voice their perspectives.
+  </h5>
+  
+  <br/>
+  
   <div class="section">
-      <div class="section-title"><strong>Objective</strong></div>
-            <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
-        </div>
+    <div class="section-title"><strong>Objective</strong></div>
+    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+  </div>
+  
   <div class="section">
-            <div class="section-title"><Strong>Process</Strong></div>
-      <p>1) Through classification and data visualization, demonstrate the intersectionality of EB patients with other groups (e.g., diabetic foot patients, pregnant women, athletes) regarding fungal issues.</br>
-    2) Develop a Participatory Mapping Toolkit to guide them in describing care-seeking pathways, pain points, and medication-related challenges.</br>
-3) Design ensory-friendly research methods: using metaphors, drawings, and embodied descriptions to help participants articulate experiences that are often “hard to put into words.”</br>
-4) Identify barriers in fungal treatment from patient narratives, and reveal misunderstandings caused by the lack of integration with the broader scientific community.</br>
-5) Lay the groundwork for the next stage of activities that emphasize dialogue.</p>
-        </div>
- <div class="section">
-            <div class="section-title"><strong>Significance</strong></div>
-            <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
-        </div> 
-<div class="section">
-            <div class="section-title"><strong>Outcome</strong></div>
-            <p>Participatory Mapping Toolkit.</p>
-        </div>
-
-
+    <div class="section-title"><strong>Process</strong></div>
+    <p>
+      1) Through classification and data visualization, demonstrate the intersectionality of EB patients with other groups (e.g., diabetic foot patients, pregnant women, athletes) regarding fungal issues.<br>
+      2) Develop a Participatory Mapping Toolkit to guide them in describing care-seeking pathways, pain points, and medication-related challenges.<br>
+      3) Design sensory-friendly research methods: using metaphors, drawings, and embodied descriptions to help participants articulate experiences that are often "hard to put into words."<br>
+      4) Identify barriers in fungal treatment from patient narratives, and reveal misunderstandings caused by the lack of integration with the broader scientific community.<br>
+      5) Lay the groundwork for the next stage of activities that emphasize dialogue.
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Significance</strong></div>
+    <p>Create channels that translate the unique experiences of scientifically marginalized groups, uncover authentic needs, and provide a foundation for designing subsequent activities.</p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Outcome</strong></div>
+    <p>Participatory Mapping Toolkit</p>
+  </div>
+</div>
 ---
 
 
@@ -330,31 +347,41 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
   padding: 20px;
   border-radius: 12px;
   margin: 16px 0;
-            "> <h5 style="margin: 0; color:#e97628;" ><strong>✅In One Sentence: </strong>To address the challenge of “difficulty in participation” by creating opportunities for multi-stakeholder dialogue on scientific issues.
-    </h5>
-<br/>
+">
+  <h5 style="margin: 0; color:#e97628;">
+    <strong>✅In One Sentence: </strong>
+    To address the challenge of "difficulty in participation" by creating opportunities for multi-stakeholder dialogue on scientific issues.
+  </h5>
+  
+  <br/>
+  
   <div class="section">
-      <div class="section-title"><strong>Objective</strong></div>
-            <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
-        </div>
+    <div class="section-title"><strong>Objective</strong></div>
+    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+  </div>
+  
   <div class="section">
-            <div class="section-title"><Strong>Process</Strong></div>
-      <p>1) PhotoVoice:Enable patients to narrate their everyday lives through images, while inviting researchers, doctors, and the public to engage in dialogue about improving medical experiences identified in the previous section.
-      </br>2) Co-Creation Art Exhibition: Simulate laboratory settings (e.g., operational difficulties, sensory barriers) to allow the public to experience the challenges of EB patients, while listening directly to their narratives in the exhibition.
-    </br> 3) Improved Feedback Model.</p>
-        </div>
- <div class="section">
-            <div class="section-title"><strong>Significance</strong></div>
-            <p>Marginalized groups shift from being mere “subjects of research” to “voices in dialogue,” fostering mutual understanding and cross-building of scientific issues with society.</p>
-        </div> 
-<div class="section">
-            <div class="section-title"><strong>Outcomes</strong></div>
-            <p>Improved Feedback Model
-    </br>Toolkit: Ten Questions for Post-Activity Reflection</p>
-        </div>
-
-
-
+    <div class="section-title"><strong>Process</strong></div>
+    <p>
+      1) PhotoVoice: Enable patients to narrate their everyday lives through images, while inviting researchers, doctors, and the public to engage in dialogue about improving medical experiences identified in the previous section.<br>
+      2) Co-Creation Art Exhibition: Simulate laboratory settings (e.g., operational difficulties, sensory barriers) to allow the public to experience the challenges of EB patients, while listening directly to their narratives in the exhibition.<br>
+      3) Improved Feedback Model
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Significance</strong></div>
+    <p>Marginalized groups shift from being mere "subjects of research" to "voices in dialogue," fostering mutual understanding and cross-building of scientific issues with society.</p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Outcomes</strong></div>
+    <p>
+      - Improved Feedback Model<br>
+      - Toolkit: Ten Questions for Post-Activity Reflection
+    </p>
+  </div>
+</div>
 
 ---
 ### 3.1 Facilitating Dialogue: PhotoVoice
@@ -503,36 +530,46 @@ Future inclusive practices should focus more on creating **“points of identity
 ## 4. **Building an inclusive science community: Learn from the margins.**
 
 
-
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
   color: black;
   padding: 20px;
   border-radius: 12px;
   margin: 16px 0;
-            "> <h5 style="margin: 0; color:#e97628;" ><strong>✅In One Sentence: </strong> The design of our lab mental health campaigns and assistive software showed that our dialogues with minority groups have deepened our understanding of intersectionality in scientific research.
-    </h5>
-<br/>
+">
+  <h5 style="margin: 0; color:#e97628;">
+    <strong>✅In One Sentence: </strong> 
+    The design of our lab mental health campaigns and assistive software showed that our dialogues with minority groups have deepened our understanding of intersectionality in scientific research.
+  </h5>
+  
+  <br/>
+  
   <div class="section">
-      <div class="section-title"><strong>Objective</strong></div>
-            <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
-        </div>
+    <div class="section-title"><strong>Objective</strong></div>
+    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+  </div>
+  
   <div class="section">
-            <div class="section-title"><Strong>Action</Strong></div>
-      <p>- Develop laboratory-assistive software
-</br> Conduct reflection and long-term planning</br>
-</p>
-        </div>
- <div class="section">
-            <div class="section-title"><strong>Significance</strong></div>
-            <p>Summarize a transferable methodology: **building inclusive scientific communities through the lens of intersectionality.</p>
-        </div> 
-<div class="section">
-            <div class="section-title"><strong>Outcome</strong></div>
-    <p>- Laboratory-assistive software — ProtocolFlow</br>
-- Weekly mental health check-in posters for laboratories</p>
-        </div>
-
+    <div class="section-title"><strong>Action</strong></div>
+    <p>
+      - Develop laboratory-assistive software<br>
+      - Conduct reflection and long-term planning<br>
+    </p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Significance</strong></div>
+    <p>Summarize a transferable methodology: <strong>building inclusive scientific communities through the lens of intersectionality.</strong></p>
+  </div>
+  
+  <div class="section">
+    <div class="section-title"><strong>Outcome</strong></div>
+    <p>
+      - Laboratory-assistive software — ProtocolFlow<br>
+      - Weekly mental health check-in posters for laboratories
+    </p>
+  </div>
+</div>
 ---
 
 ### 4.1 Laboratory-assistive software — *ProtocolFlow*
