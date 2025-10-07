@@ -239,8 +239,6 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 #### Marketing Strategy
 
-**Public relations**
-
 By linking these five strategic pillars, we will build a complete marketing funnel from **brand awareness → interest generation → value validation → trust building → conversion & payment → word-of-mouth propagation**. This integrated online and offline approach efficiently drives the commercial success of Dr.sTraTeGY, achieving brand building, lead generation, and sales conversion in a closed loop.
 
 **I. Brand & Corporate Image**
@@ -334,7 +332,7 @@ By linking these five strategic pillars, we will build a complete marketing funn
 
 
 **Other marketing strategies**
-![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-mkt.webp)
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-mkt.webp)
 
 
 
