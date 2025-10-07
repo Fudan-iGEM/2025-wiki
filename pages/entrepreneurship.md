@@ -498,6 +498,6 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 # References
 
 [^1]: Fortunebusinessinsights. (2020). *Anti Fungal Drugs Market Size, Share & Industry Analysis*. https://www.fortunebusinessinsights.com/zh/industry-reports/antifungal-drugs-market-101188
-[^2]: Lai CC, Yu WL. COVID-19 associated with pulmonary aspergillosis: A literature review. J Microbiol Immunol Infect. 2021 Feb;54(1):46-53
-[^3]: Rao, H., Choo, S., Rajeswari Mahalingam, S. R., Adisuri, D. S., Madhavan, P., Md. Akim, A., & Chong, P. P. (2021). *Approaches for mitigating microbial biofilm-related drug resistance: A focus on micro- and nanotechnologies.* *Molecules, 26*(7), 1870.
-[^4]: Belbin, R. M., & Brown, V. (2022). *Team roles at work*. Routledge.
+[^2]: Lai CC, Yu WL. COVID-19 associated with pulmonary aspergillosis: A literature review. J Microbiol Immunol Infect. 2021 Feb;54(1):46-53.DOI:10.1016/j.jmii.2020.09.004
+[^3]: Rao, H., Choo, S., Rajeswari Mahalingam, S. R., Adisuri, D. S., Madhavan, P., Md. Akim, A., & Chong, P. P. (2021). *Approaches for mitigating microbial biofilm-related drug resistance: A focus on micro- and nanotechnologies.* *Molecules, 26*(7), 1870.DOI: 10.3390/molecules26071870
+[^4]: Belbin, R. M., & Brown, V. (2022). *Team roles at work*. Routledge.DOI:10.1016/B978-1-85617-800-6.10003-7
