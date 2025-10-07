@@ -332,42 +332,9 @@ By linking these five strategic pillars, we will build a complete marketing funn
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-marketing.webp)
 
- Other marketing strategies include：
-**Target Segments**
 
-- Primary: CROs in Yangtze River Delta (especially those doing antifungal drug development / resistance studies).
-
-- Secondary: Hospital labs, diagnostic centers, academic research labs focusing on infectious disease / mycology.
-
- **Channels**
-
-- Direct sales / business development to CROs in Shanghai, Suzhou, Hangzhou, Nanjing etc.
-
-- Collaborations with academic mycology / infectious disease departments in local universities.
-
-- Conferences, workshops in China (biomed conferences) to promote proof-of-concept / case studies.
-
- **Partnerships**
-
-- Partner with CROs for pilot studies.
-
-- Possibly co-develop with diagnostic companies or reagent distributors for broader reach.
-
-- Engage with government / public health labs for surveillance projects.
-
- **Regulatory / Compliance Strategy**
-
-- Design product & validation to meet NMPA IVD standards; classify appropriately.
-
-- Ensure quality systems (GMP / QC for reagents; software ISO / cybersecurity where needed).
-
- **Geographic Focus / Expansion**
-
- **Phase 1**: Yangtze River Delta — dense client base, efficient logistics.
-
- **Phase 2**: Beijing-Tianjin-Hebei region
-
- **Phase 3**: Pearl River Delta (Guangdong-Hong Kong-Macau) 
+**Other marketing strategies**
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-mkt.webp)
 
 
 
