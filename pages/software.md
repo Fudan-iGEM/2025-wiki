@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Yufan
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/hyf-a.webp
 layout: igem
-heroImage: （拍摄并且选取页面图像，作为顶部展示）
+heroImage: https://static.igem.wiki/teams/5643/pageimage/software/header-software.webp
 description: EMS Sequence Optimizer -- A web-based tool for optimizing gene sequences to control EMS mutagenesis sensitivity through synonymous codon substitution
 ---
 
