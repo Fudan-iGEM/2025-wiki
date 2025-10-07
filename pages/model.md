@@ -512,7 +512,7 @@ This module simulates the three-dimensional growth of the multicellular "grape y
 <div style="text-align: left;">
         <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
     </div>
-Other minor parameters are detailed in the [code](#code-and-data-accessibility).
+Other minor parameters are detailed in the [code](https://gitlab.igem.org/2025/fudan/-/blob/main/model/iGEMmodel/src/YeastSimulation.jsx).
 
 
 
@@ -766,7 +766,7 @@ Result Part：[FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py
 
 AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_DeepSeek_Assistant.json), [Qwen Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_Qwen_Assistant.json)
 
-3D Visualization Modules: [iGEMmodel](https://gitlab.igem.org/2025/fudan/-/tree/main/model?ref_type=heads)
+3D Visualization Modules: [iGEMmodel](https://gitlab.igem.org/2025/fudan/-/tree/main/model/iGEMmodel)
 
 ## References
 
