@@ -31,7 +31,7 @@ t0terminator_R  5-ttcagaacgctcggttgcc-3</pre>
 | BBa_25FOVO4C | coding            | Type 3  |       DrDHCR24       | DOI: 10.5281/zenodo.17274626 |
 | BBa_K5441013 | coding            | Type 3  |        *BAX*         | DOI: 10.5281/zenodo.17276880 |
 | BBa_250R9OVR | coding            | Type 3  |        *IME1*        | DOI: 10.5281/zenodo.17274737 |
-| BBa_K5470011 | coding            |   |       GSG-E2A        | DOI: 10.5281/zenodo.17272256 |
+| BBa_K5470009 | coding            |   |       GSG-E2A        | DOI: 10.5281/zenodo.17272256 |
 | BBa_25FQBGJW | promoter          | Type 2  |        pSTM1         | DOI: 10.5281/zenodo.17276264 |
 | BBa_259JX52V | promoter          | Type 2  |        pOST1         | DOI: 10.5281/zenodo.17274792 |
 | BBa_K3748013 | promoter          | Type 2  |        pRNR2         | DOI: 10.5281/zenodo.17276585 |
