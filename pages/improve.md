@@ -28,7 +28,7 @@ mCherry consists of 236 amino acids. According to previous studies, the M23V / E
 
 <div style="text-align: center;" id="fig1">    <img src="https://static.igem.wiki/teams/5643/pageimage/improved-part/sequence-compressed.webp" style="width:80%">    <div>        <span style="color:gray">Figure 1: Sequence alignment of mCherry and modified mCherry</span>        <br><br>    </div></div>
 
-This color change primarily results from the oxidation of the Cα2–Cβ2 bond in Tyr72.The roles of other key residues are summarized below[^2]:
+Modified mCherry exhibits a color transition from blue (excitation/emission peaks: 403/466 nm) to red (excitation/emission peaks: 583/606 nm). This color change primarily results from the oxidation of the Cα2–Cβ2 bond in Tyr72. The roles of other key residues are summarized below[^2]:
 
 | Residue    | Functional Description                                       |
 | ---------- | ------------------------------------------------------------ |
@@ -63,7 +63,7 @@ We recognize that extending fluorescent proteins into the temporal dimension has
 
 Our modified mCherry  is a core part of Timer based on color maturation kinetics. Its main advantages include:
 
-- **Broad temporal range**: Capable of recording **long-term** (multi-hour) biological events such as cell cycle progression and lineage evolution.
+- **Broad temporal range**: Capable of recording **long-term** (multi-hour to days) biological events such as cell cycle progression and lineage evolution.
 - **Easy integration**: Readily observable under standard fluorescence microscopy, offering low experimental barriers and broad application potential.
 
 Historically, fluorescent protein engineering has focused on enhancing color diversity and brightness stability. However, recent breakthroughs have demonstrated the feasibility and vast potential of expanding applications into the temporal dimension.
