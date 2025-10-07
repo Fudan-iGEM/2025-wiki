@@ -44,11 +44,11 @@ description: On this page, we present a commercially viable solution addressing 
 
  Moreover, current fungal infection treatments still face the following challenges, contributing to a significant market demand for new antifungal drugs:
 
-![The main causes of Antifungal  Drug Resistance](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic1.webp)
+<img src="https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic1.webp" alt="The main causes of Antifungal  Drug Resistance" style="zoom:70%;" />
 
  In addition, the continuous growth of the elderly population, the rising prevalence of chronic diseases, and the increasing number of immunocompromised patients are all closely linked to the high disease burden and demand for antifungal drugs within these target groups:
 
-![High-Incidence Global Fungal Diseases in 2025](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic2.webp)
+<img src="https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic2.webp" alt="High-Incidence Global Fungal Diseases in 2025" style="zoom:70%;" />
 
 - According to a study published in the *Journal of Microbiology, Immunology and Infection [^2], patients who have recovered from COVID-19 face a significantly elevated risk of developing fungal respiratory infections. The incidence of invasive pulmonary aspergillosis (IPA) within the studied population ranged from 19.6% to 33.3%. Consequently, since 2021, there has been a sharp increase in demand for antifungal medications.
 - Based on data updated in September 2022 by the U.S. Centers for Disease Control and Prevention (CDC), onychomycosis (fungal infection of the fingernails and toenails) may affect up to 14% of the global population, with diabetic patients being particularly vulnerable. Among this group, dermatophytes (50%) and yeasts (30.8%) were identified as the most common cultured strains [^3].
