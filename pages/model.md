@@ -764,7 +764,7 @@ Strong Promoter vs Weak Promoter Part：[df_strength.py](https://gitlab.igem.org
 
 Result Part：[FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py)
 
-AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/model_deepseek_assistant.json), [Qwen Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/model_qwen_assistant.json)
+AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_DeepSeek_Assistant.json), [Qwen Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_Qwen_Assistant.json)
 
 3D Visualization Modules: [iGEMmodel](https://gitlab.igem.org/2025/fudan/-/tree/main/model?ref_type=heads)
 
