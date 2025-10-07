@@ -23,7 +23,7 @@
 | [Model](https://2025.igem.wiki/fudan/model)              | Jihua Tang, Yue Yue                  |
 | [Notebook](https://2025.igem.wiki/fudan/notebook/)           | Yuxin Duan                           |
 | [Part Collection](https://2025.igem.wiki/fudan/part-collection/)    | Peining Wu                           |
-| [Parts](https://2025.igem.wiki/fudan/parts/)              | Peining Wu, Zhiqin Wang              |
+| [Parts](https://2025.igem.wiki/fudan/parts/)              | Zhiqin Wang, Peining Wu              |
 | Plant                     | none                                 |
 | [Presentation Video](https://2025.igem.wiki/fudan/presentation-video/) | Yuxin Duan                           |
 | [Promotion Video](https://2025.igem.wiki/fudan/promotion-video/)    | Yuxin Duan, Xiuqi Tian               |

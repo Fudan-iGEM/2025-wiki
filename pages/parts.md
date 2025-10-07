@@ -1,15 +1,15 @@
 ---
 title: Parts
 authors:
-  - name: Peining Wu
-    url: /fudan/team/#Peining
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
   - name: Zhiqin Wang
     url: /fudan/team/#Zhiqin
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
+  - name: Peining Wu
+    url: /fudan/team/#Peining
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we
+description:
 ---
 
 All of our level 0 plasmids (chloramphenicol resistance) were verified by Sanger sequencing (we attached electropherogram raw data as ab1 file with those parts), using one of the primers below.
@@ -22,7 +22,7 @@ t0terminator_R  5-ttcagaacgctcggttgcc-3</pre>
 
 ## We made the following level 0 parts
 
-| Level 0 Part | [SBOL](https://sbolstandard.org/) Type | Lee[^1] Type | Part Name | Sequencing Verified |
+| Level 0 Part | <a href="https://sbolstandard.org/" target=_blank style="color:white">SBOL</a> Type | Lee Type | Part Name | Sequencing Verified |
 | :----------: | :---------------:| :-------:| :-----------: | :------------------ |
 | BBa_25MIG4EW | Homologous Region | Type 8b | HR5'\_*ACE2*\_Chr12L | DOI: 10.5281/zenodo.17274640 |
 | BBa_259HCU8C | Homologous Region | Type 7  | HR3'\_*ACE2*\_Chr12R | DOI: 10.5281/zenodo.17274769 |
@@ -49,4 +49,4 @@ Please visit our [Improve](/improve/) page for parts we improved this year.
 Vist our [Part Collection](/part-collection/) page for all parts we made in 2025.
 
 ----
-[^1]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v
+Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v
