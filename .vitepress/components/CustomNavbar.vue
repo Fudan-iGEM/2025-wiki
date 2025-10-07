@@ -13,7 +13,7 @@
     <div class="container">
       <a href="/fudan" class="title">
         <!-- Add Logo SVG or Image here if available -->
-        <img src="https://static.igem.wiki/teams/5643/img/logo-top.svg" style="height: 43px" />
+        <img src="https://static.igem.wiki/teams/5643/img/logowiki.svg" style="height: 43px" />
       </a>
       <!-- Desktop Navigation -->
       <div class="nav-links-desktop">
