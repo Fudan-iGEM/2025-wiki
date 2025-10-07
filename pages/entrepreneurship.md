@@ -21,7 +21,7 @@ description: On this page, we present a commercially viable solution addressing 
 
 - **Dr.sTraTeGY = Kit + Software** for dynamic resistance tracking.
 - **Kit:** engineered yeast strains with fluorescent clocks + mutation probes + reagents.
-- **Software:** quantifies fluorescence, models resistance evolution, exports ready-to-publish reports.
+- **Software:** quantifies fluorescence, models resistance evolution, and exports ready-to-publish reports.
 - **Pricing:** USD 18,000–38,000 per package; optional customization & service contracts.
 
 ### **How**
@@ -38,7 +38,7 @@ description: On this page, we present a commercially viable solution addressing 
 #### One:  Take a look at the business landscape
 
 
- According to Fortune Business Insights, the global antifungal drugs market size is projected to reach **USD** **13.17 billion by 2027**, with a compound annual growth rate (CAGR) of **3.3%** during the forecast period[1]. With our estimation,the chinese antifungal drugs market accounts for 25% of the global share (3.29 billion).
+ According to Fortune Business Insights, the global antifungal drugs market size is projected to reach **USD** **13.17 billion by 2027**, with a compound annual growth rate (CAGR) of **3.3%** during the forecast period [^1]. With our estimation, the Chinese antifungal drugs market accounts for 25% of the global share (3.29 billion).
 
  Since the advent of echinocandins, the worsening drug resistance crisis has made the development of antifungal drugs with entirely new mechanisms an urgent global need. 
 
@@ -50,22 +50,22 @@ description: On this page, we present a commercially viable solution addressing 
 
 ![High-Incidence Global Fungal Diseases in 2025](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic2.webp)
 
-- According to a study published in the *Journal of Microbiology, Immunology and Infection[2]*, patients who have recovered from COVID-19 face a significantly elevated risk of developing fungal respiratory infections. The incidence of invasive pulmonary aspergillosis (IPA) within the studied population ranged from 19.6% to 33.3%. Consequently, since 2021, there has been a sharp increase in demand for antifungal medications.
-- Based on data updated in September 2022 by the U.S. Centers for Disease Control and Prevention (CDC), onychomycosis (fungal infection of the fingernails and toenails) may affect up to 14% of the global population, with diabetic patients being particularly vulnerable. Among this group, dermatophytes (50%) and yeasts (30.8%) were identified as the most common cultured strains.
+- According to a study published in the *Journal of Microbiology, Immunology and Infection [^2], patients who have recovered from COVID-19 face a significantly elevated risk of developing fungal respiratory infections. The incidence of invasive pulmonary aspergillosis (IPA) within the studied population ranged from 19.6% to 33.3%. Consequently, since 2021, there has been a sharp increase in demand for antifungal medications.
+- Based on data updated in September 2022 by the U.S. Centers for Disease Control and Prevention (CDC), onychomycosis (fungal infection of the fingernails and toenails) may affect up to 14% of the global population, with diabetic patients being particularly vulnerable. Among this group, dermatophytes (50%) and yeasts (30.8%) were identified as the most common cultured strains [^3].
 
  While these factors underscore the rising strategic importance of antifungal drug development, it is necessary to examine **the practical process of antifungal drug** **R&D** in greater detail to better evaluate the market landscape and opportunities.
 
   
 
-#### Two: why and who needs to study AMR ？
+#### Two: Why and who needs to study AMR？
 
 Currently, the preclinical R&D pipeline for antifungal drugs remains insufficiently robust. This is attributed to the lack of efficient and effective drug screening, which results in a relatively high attrition rate during early-stage drug innovation. Specifically, many drugs that appear promising in the preclinical phase fail in subsequent clinical trials due to various reasons, such as safety concerns and inadequate efficacy. The existing preclinical R&D pipeline is unable to offset the losses caused by these high attrition rates.
 
- Through our desk research, the R&D of a drug pipeline usually has five stages: Drug Discovery；Pharmaceutical Research；Preclinical Research；Clinical Trial；Approval and Marketing. AMR testing typically focuses on the phase of **pharmaceutical research.**
+ Through our desk research, the R&D of a drug pipeline usually has five stages: Drug Discovery, Pharmaceutical Research, Preclinical Research, Clinical Trial, Approval and Marketing. AMR testing typically focuses on the phase of **pharmaceutical research.**
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic3.webp)
 
- In this stage, CRO usually take the responsibility of drug screening for Drug manufacturers. CRO stands for Contract Research Organization，companies that provides outsourced research services to pharmaceutical, biotechnology, and medical device firms. Therefore, they usually conduct specialized works including AMR tests that allow drug developers to reduce costs, accelerate timelines, and access specialized expertise without building everything in-house.
+ In this stage, CRO usually takes the responsibility of drug screening for Drug manufacturers. CRO stands for Contract Research Organization， companies that provide outsourced research services to pharmaceutical, biotechnology, and medical device firms. Therefore, they usually conduct specialized works including AMR tests that allow drug developers to reduce costs, accelerate timelines, and access specialized expertise without building everything in-house.
 
 
 
@@ -74,13 +74,13 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 
 #### Core Technology
 
-At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture.
+At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture. The unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
 
 ![core tech](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-core-tech.webp)
 
 #### MVP (Minimum Viable Product)
 
- Our will deliver **Dr.sTraTeGY** to our clients as a **“Reagent Kit + Companion Software”** tool package, consisting of three parts.
+ We will deliver **Dr.sTraTeGY** to our clients as a **“Reagent Kit + Companion Software”** tool package, consisting of three parts.
 
 ![toolkit of Dr.sTraTeGY](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic5.webp)
 
@@ -114,7 +114,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
  The root cause of the inability to address the drug resistance issue lies in the lack of suitable chassis organisms, specifically because existing models have flaws. Single-cell systems cannot simulate the drug-resistant behaviors of biofilms or fungal populations.
 
-![The data for global drug resistance issues](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic7.webp)
+![The data for global drug resistance issues](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-issue.webp)
 
  The prerequisite for developing anti-resistance drugs is the **precise identification of resistance mutation sites.** However, traditional whole-genome sequencing (WGS) is costly, analytically complex, and faces four major challenges: lack of standardization, resource dependency, high expense, and ambiguous results. Therefore, we aim to leverage our technology to develop a toolkit that can track the evolutionary dynamics of fungal resistance under drug pressure.
 
@@ -152,11 +152,11 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic9.webp)
 
-## Crafting Our Strategic Path：analyzing our resources and stakeholders
+## Crafting Our Strategic Path: analyzing our resources and stakeholders
 
 #### Product Advantages
 
-![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
+![key advantages](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
 
 #### PEST analysis
 
@@ -183,9 +183,9 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 #### Team Members' capability
 
- As a team with diverse backgrounds, we have members specialized in different areas，including: biology，Clinical Medical Science，software development，commercialization，public relations.
+ As a team with diverse backgrounds, we have members specialized in different areas， including: biology，Clinical Medical Science，software development， commercialization，public relations.
 
- Dr. Meredith Belbin，the famous British management psychologist develop **the Belbin Team Roles Theory** in the 1970s. His framework identifies nine distinct roles individuals naturally adopt in teamwork. The core premise of the theory is that no single person possesses all the skills or traits needed for a team to succeed. And it is essential to ensure each iGEM team members’ roles align, complement each other in the commericalization of our product.
+ Dr. Meredith Belbin，the famous British management psychologist develop **the Belbin Team Roles Theory** in the 1980s [^4]. His framework identifies nine distinct roles individuals naturally adopt in teamwork. The core premise of the theory is that no single person possesses all the skills or traits needed for a team to succeed. And it is essential to ensure each iGEM team member’s roles align, complements each other in the commercialization of our product.
 
  Here is the visualization of our distribution of team roles of the 12 members:
 
@@ -239,15 +239,112 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 #### Marketing Strategy
 
- **Target Segments**
+**Public relations**
+
+By linking these five strategic pillars, we will build a complete marketing funnel from **brand awareness → interest generation → value validation → trust building → conversion & payment → word-of-mouth propagation**. This integrated online and offline approach efficiently drives the commercial success of Dr.sTraTeGY, achieving brand building, lead generation, and sales conversion in a closed loop.
+
+**I. Brand & Corporate Image**
+
+**Brand Positioning & Core Messaging:**
+
+- **Positioning:** The leader in dynamic antifungal resistance research solutions for drug development.
+- **Core Slogan:** **From Static Snapshot to Dynamic Evolution.**
+- **Value Proposition:** We provide the only integrated Kit + Software platform that enables real-time, visual tracking of the dynamic evolution of fungal resistance, helping CRO clients elevate their R&D efficiency to a new dimension.
+
+**Visual Identity System:**
+
+- **Logo:** Features a line-art puppy inspired by the shape of multicellular yeast clusters, creating an approachable yet scientifically grounded brand symbol.
+
+- **Color Palette: **Primary Colors are Cyan and Orange; accent color is purple (echoing the grape yeast theme).
+
+**Typography & Imagery:** Maintains clean, modern sans-serif fonts while continuing to utilize dynamic graphs, microphotography, and clean interface illustrations in a unified "scientific visualization" style.
+
+
+
+**II. Digital Marketing Strategy**
+
+**Official Website – Integrated Interaction Hub**
+
+- **Positioning:** Not just an information portal, but the core platform for immersive product experience and sales lead conversion.
+- **Key Modules:**
+  - **Interactive Product Tour:** Embed an interactive module that simulates the software interface, allowing visitors to adjust parameters (e.g., drug concentration, time) and intuitively see simulated generated evolution maps and reports, strongly conveying product value.
+  - **Resource Center with Smart Gating:** Place whitepapers, case studies, and other content behind forms to capture high-quality potential customer information.
+  - **Clear Calls-to-Action (CTAs):** Prominently feature CTAs like "Schedule a Demo," "Apply for a Pilot Project," and "Contact Sales" across the site.
+
+**Precision Digital Advertising & Marketing Automation**
+
+- **Ad Placement:**
+  - **Platforms:** Focus on LinkedIn and WeChat Official Account Ads.
+  - **Targeting:** Precisely target users in CROs and pharma companies in the Yangtze River Delta with job titles like "R&D Director," "Project Lead," "Head of Biology."
+  - **Content:** Use the "Dynamic Antifungal Resistance Tracking Whitepaper" download and online webinar invitations as core lead magnets.
+- **Marketing Automation:**
+  - After capturing leads via the website and ads, automatically trigger a nurturing email sequence. Content should progress from industry insights to deep product introductions, finally guiding towards a sales conversation.
+
+
+
+**III. Content & PR Strategy**
+
+**Content Marketing:**
+
+- **Expert Content:** Publish the authoritative "Dynamic Resistance Tracking Whitepaper" to establish industry thought leadership.
+- **Case Study Content:** Produce video versions of Customer Success Stories, featuring testimonials from 1-2 benchmark CRO clients, highlighting cost savings and reduced R&D timelines.
+- **Educational Content:** Create the "Dr.sTraTeGY Academy" online video series for new customer training and potential client education.
+
+**Public Relations & Media:**
+
+- Systematically publicize milestone events like participation in the Shanghai Stock Exchange Cup competition and the meeting with SoftBank China CEO.
+- Plan feature stories like "How an iGEM Team Solved a Billion-Dollar Market Pain Point" for placement in tech and biopharma media outlets like RedNote, 36Kr, and VCBeat.
+
+
+
+**IV. Event Marketing**
+
+**Industry Summits:**
+
+- **Goal:** Go beyond exhibiting; lead the conversation. Strive for keynote speaking opportunities at all major industry conferences (e.g., China Drug R&D Annual Conference).
+- **Booth Design:** Set up a "Live Dynamic Tracking Demo Zone" with a large screen broadcasting the experimental process live to attract traffic and create buzz.
+
+**High-Level Closed-Door Seminars:**
+
+- Regularly host "New Frontiers in Antifungal Drug R&D" closed-door seminars in Shanghai, Suzhou, etc., inviting no more than 20 decision-makers from target customers for in-depth technical exchanges and relationship building.
+
+**Online Webinars:**
+
+- Regularly host webinars focusing on specific technical challenges (e.g., "How to Quantitatively Analyze Resistance Mutation Rates") as a key method for acquiring lead lists and nurturing prospects.
+
+  
+
+**V. Private Domain Marketing**
+
+**WeChat Ecosystem Operation:**
+
+- **WeChat Official Accounts:**
+  - **Service Account:** Used for important product updates, event notifications, and hosting functions like "Technical Support" and "Schedule a Demo," emphasizing service attributes.
+  - **Subscription Account:** Used for daily content pushes to maintain brand activity and professional image.
+- **Enterprise WeChat:**
+  - Connect all inquiring customers and users who submitted forms on the website via Enterprise WeChat.
+  - The sales and technical support teams use Enterprise WeChat for 1-on-1 professional communication and sharing expert content in their Moments (e.g., latest experimental data, technical tips), building an "expert" persona and establishing deep trust.
+
+**Customer Community Building:**
+
+- Establish an exclusive "Dr.sTraTeGY Pioneer User Club" community for customers who have made purchases.
+- Within the community, prioritize releasing product updates, provide expert Q&A, host online exchanges, and encourage users to share experiences, fostering word-of-mouth and user stickiness to pave the way for upsells and renewals.
+
+![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-marketing.webp)
+
+ Other marketing strategies include：
+**Target Segments**
 
 - Primary: CROs in Yangtze River Delta (especially those doing antifungal drug development / resistance studies).
+
 - Secondary: Hospital labs, diagnostic centers, academic research labs focusing on infectious disease / mycology.
 
  **Channels**
 
 - Direct sales / business development to CROs in Shanghai, Suzhou, Hangzhou, Nanjing etc.
+
 - Collaborations with academic mycology / infectious disease departments in local universities.
+
 - Conferences, workshops in China (biomed conferences) to promote proof-of-concept / case studies.
 
  **Partnerships**
@@ -258,15 +355,11 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 - Engage with government / public health labs for surveillance projects.
 
-  
-
  **Regulatory / Compliance Strategy**
 
 - Design product & validation to meet NMPA IVD standards; classify appropriately.
 
 - Ensure quality systems (GMP / QC for reagents; software ISO / cybersecurity where needed).
-
-  
 
  **Geographic Focus / Expansion**
 
@@ -278,45 +371,27 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 
 
- **Public relations**
-
- Core message
-
-- Emphasize **real-time** **evolutionary dynamics** vs end-point measurement.
-- Show **quantitative metrics**: mutation rates per locus; selection pressure under drug; generational mapping.
-- Highlight **cost / time efficiency** vs WGS + downstream analysis.
-
- Campaigns
-
-- Corporate Social Responsibility activities
-
- **Media channels**: 
-
-- WeChat, official website, Rednote, targeted Chinese biotech media outlets.
-
-  
-
 #### IP Protection Strategy
 
- **Possible** **IP** **assets**
+**Potential Intellectual Property Assets**
 
-- Patents: key recombinant yeast strain with fluorescent clock + GPCR circuit; mutation probes; software algorithms (pMYTodeling, branch prediction, mutation rate computation).
-- Trade secrets: specific probe designs / sequences; software source code; data from lineage tracking (unique datasets).
-- Copyright / licensing: software, manuals, user interfaces.
+- **Patents:** Core recombinant yeast strains (with fluorescent molecular clock + GPCR circuit); mutation probes; software algorithms (evolutionary modeling, branch prediction, mutation rate calculation).
+- **Trade Secrets:** Specific probe designs/sequences; software source code; lineage tracking data (unique datasets).
+- **Copyright/Licensing:** Software programs, operation manuals, user interfaces.
 
- **Protection Actions**
+**Protection Measures**
 
-- File patents in China and optionally in other key jurisdictions (e.g. USA, Europe) for core innovations (probes, yeast strain design, algorithmic modeling method).
-- Use non-disclosure agreements (NDAs / NNN agreements) with partners and customers.
-- Use copyright / license terms for software; possibly obfuscate or protect the software modeling part (copyright + possibly pat‐pending for significant algorithmic innovations).
-- Monitor for infringement; have enforcement plan. Use China’s strengthening IP regime (WIPO, patent courts) to register and defend rights. WIPO data shows China has many PCT applications (70,000+ in 2024) and is emphasizing global IP layout.
+- Deposit biological materials with designated depository institutions (e.g., China Center for Type Culture Collection - CCTCC). Submit patent applications via the electronic system of the China National Intellectual Property Administration (CNIPA), with claims covering the product, preparation methods, and applications in drug resistance research. Submit the deposit receipt and viability proof to CNIPA within four months of the application date.
+- Leverage China's trend of strengthening IP judicial protection (utilizing the WIPO framework, patent courts) to safeguard rights. Simultaneously file PCT international applications via CNIPA, entering China and other target countries within 30 months to secure time for global layout.
+- For pure software algorithms, consider copyright registration as supplementary protection, and employ trade secret measures such as source code encryption and licensing agreements.
+- Protect lineage tracking datasets as trade secrets, supplemented by strict access controls and contractual agreements.
 
- **Commercial** **IP** **Strategy**
+**Commercial IP Strategy**
 
-- Licensing: for labs or CROs that prefer not to buy full kit, license software / probe use.
-- Exclusive / co-exclusive agreements for high-volume clients.
+- **Licensing Authorization:** Grant software/probe usage licenses to laboratories or CROs preferring not to purchase the full kit. Offer exclusive/co-exclusive licensing agreements to high-volume clients.
+- **Infringement Monitoring:** Conduct regular market monitoring and promptly enforce rights through administrative or judicial pathways upon detecting infringement.
 
-  
+
 
 #### Business Exit Strategy
 
@@ -335,7 +410,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 
 
-## Overlooking to the long-term：how we impact the future
+## Overlooking to the long-term: how we impact the future
 
 #### Expansion Timeline
 
@@ -352,30 +427,36 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 
 
-#### Impact Assessment **Scientific / Healthcare Impact**
+#### Impact Assessment 
 
-- Improved detection of resistance evolution in fungi; better understanding of mutation emergence & selection.
-- Faster diagnostics & resistance surveillance → better patient outcomes, more rational antifungal usage.
+**Scientific Impact**
 
- **Economic / Market Impact**
+| Specific Impact Description                                  | Likelihood  | Mitigation & Solution Strategies                             |
+| :----------------------------------------------------------- | :---------- | :----------------------------------------------------------- |
+| **Positive:** Provides dynamic, visualized data on resistance evolution, significantly enhancing understanding of fungal resistance mechanisms and potentially catalyzing new drug target discovery. | High        | Continuously iterate technology; collaborate with top research institutions to publish high-impact papers; establish technical standards. |
+| **Negative:** Risk of data misinterpretation. Model predictions might be overinterpreted, leading to erroneous research conclusions. | Medium      | Provide detailed SOPs, data analysis guidelines, and user training; embed clear disclaimers and result interpretation notes within the software. |
+| **Negative:** Technology imitation or circumvention. Competitors may develop more advanced or cheaper alternatives. | Medium-High | Build a robust patent portfolio; maintain technological leadership through ongoing R&D; establish brand reputation and customer loyalty. |
 
-- Help CROs reduce the cost/time of R&D (faster read-outs, less wasted drug candidates).
-- Enable local Chinese biotech/diagnostic industry to capture more of the value chain.
+**Medical and Clinical Impact**
 
- **Social & Regulatory Impact**
+| Specific Impact Description                                  | Likelihood | Mitigation & Solution Strategies                             |
+| :----------------------------------------------------------- | :--------- | :----------------------------------------------------------- |
+| **Positive:** Accelerates R&D of novel antifungal drugs, potentially providing patients with more effective treatment options and improving clinical outcomes in the future. | High       | Collaborate closely with pharmaceutical companies, using real-world data to demonstrate the platform's ability to shorten preclinical timelines. |
+| **Negative:** If R&D decisions based on platform data fail, it could lead to resource waste and delay the development of truly effective therapies. | Medium     | Clearly define the platform's scope and limitations, emphasizing its role as a "tool", not a "decision-maker"; integrate findings with other preclinical data for comprehensive judgment. |
+| **Negative:** Biosafety risks. Accidental release of engineered yeast strains or probes could pose unknown risks to the environment or lab personnel. | Medium     | Low	Strictly adhere to biosafety level regulations; genetically engineer strains to reduce environmental survivability; develop and drill emergency response plans. |
 
-- Contributes to public health efforts on antimicrobial resistance (AMR).
-- Supports policy goals: China’s plans to strengthen diagnostics, biotech, IVD capacity.
+**Economic & Social Impact**
 
- **Risks & Mitigations**
+| **Impact Category**        | **Specific Impact Description**                              | **Likelihood**     | **Mitigation & Solution Strategies**                         |
+| :------------------------- | :----------------------------------------------------------- | :----------------- | :----------------------------------------------------------- |
+| **Economic/Market Impact** | **Positive:** Saves significant R&D costs and time for CROs and pharma, creating direct economic value; generates substantial revenue through sales and licensing. | High               | Execute phased market entry and expansion strategy; adopt flexible pricing models; demonstrate clear ROI through case studies. |
+|                            | **Positive:** Enables local Chinese biotech/diagnostic industry to capture more value in the global supply chain. | Medium             | Form strategic partnerships with local companies; actively participate in industry ecosystem development. |
+|                            | **Negative:** Market adoption slower than expected due to high switching costs and required infrastructure investment. | Medium             | Offer pilot programs and early-adopter discounts; provide comprehensive technical support and training services. |
+| **Social Impact**          | **Positive:** Contributes to combating the global AMR crisis, improves public health, and aligns with UN Sustainable Development Goals. | Medium (Long-term) | Participate in public health initiatives; publish white papers; raise awareness among public and policymakers about fungal resistance. |
+|                            | **Negative:** Societal controversy over GMOs. Public may have safety concerns about "genetic modification" of synbio products. | Low-Medium         | Practice responsible innovation, maintain transparency; conduct public science communication; proactively engage with regulators. |
+|                            | **Negative:** High prices may exclude resource-limited regions, potentially exacerbating healthcare disparities. | Medium             | Consider preferential pricing for academic institutions; explore tiered pricing strategies for developing regions. |
 
-- Potential for misinterpretation of data → require strong training / SOPs.
 
-- Patient/sample safety / biosafety issues: need containment, quality control.
-
-- Ethical/regulatory oversight especially if samples are clinical.
-
-  
 
 #### **Financial Planning**
 
@@ -453,3 +534,4 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 [^1]: Fortunebusinessinsights. (2020). *Anti Fungal Drugs Market Size, Share & Industry Analysis*. https://www.fortunebusinessinsights.com/zh/industry-reports/antifungal-drugs-market-101188
 [^2]: Lai CC, Yu WL. COVID-19 associated with pulmonary aspergillosis: A literature review. J Microbiol Immunol Infect. 2021 Feb;54(1):46-53
 [^3]: Rao, H., Choo, S., Rajeswari Mahalingam, S. R., Adisuri, D. S., Madhavan, P., Md. Akim, A., & Chong, P. P. (2021). *Approaches for mitigating microbial biofilm-related drug resistance: A focus on micro- and nanotechnologies.* *Molecules, 26*(7), 1870.
+[^4]: Belbin, R. M., & Brown, V. (2022). *Team roles at work*. Routledge.
