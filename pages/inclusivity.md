@@ -27,7 +27,8 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
   border-radius: 12px;
   margin: 16px 0;
             "> <h5 style="margin: 0; color:#e97628;"><strong>✅ In One Sentence:</strong> We aim to co-create an inclusive scientific community to collectively address fungal challengesEnable rare disease patients to increase visibility by presenting themselves as artists.
-    </h5>
+    </h5></div>
+
 
 
 
