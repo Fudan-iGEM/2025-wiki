@@ -9,9 +9,9 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we document our project's journey, tracking the key developments and significant progress we have made from inception to completion.
 ---
 
-## [January](https://2025.igem.wiki/fudan/notebook/#january)
+## [January](/notebook/#january)
 
-From January 6th to 15th, we held the ten-day [winter training](https://2025.igem.wiki/fudan/heritage/) on synthetic biology and the iGEM competition.
+From January 6th to 15th, we held the ten-day [winter training](/heritage/) on synthetic biology and the iGEM competition.
 
 The training was structured into three core components:
 
@@ -26,8 +26,6 @@ The training was structured into three core components:
         <br><br>
     </div>
 </div>
-
-
 Through these training programs, we ensured seamless transfer of knowledge and experience between alumni and new members, maintained team continuity, and fostered team growth. We also actively sought valuable feedback from faculty, inviting their suggestions on our brainstorming initiatives. Ultimately, inspired by the insights of alumnus [Kai Tong](https://pubmed.ncbi.nlm.nih.gov/37165189/) and under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading figure in experimental evolution, we selected multicellular yeast as our chassis organism and developed the initial concept for our subsequent project, [DR. sTraTeGY](/design/).
 
 <div style="text-align: center;" id="fig2">
@@ -47,7 +45,7 @@ Through these training programs, we ensured seamless transfer of knowledge and e
 </div>
 
 
-## [February](https://2025.igem.wiki/fudan/notebook/#february)
+## [February](/notebook/#february)
 
 During the Spring Festival, we organized into groups based on individual skills and interests to conduct modular research. We thoroughly studied previous iGEM projects and compiled our findings by the end of February, which significantly enhanced our understanding of the iGEM [Judging Handbook](https://competition.igem.org/judging/handbook). Concurrently, we clarified each team member's tasks and roles to advance the project through further literature investigation.
 
@@ -60,7 +58,7 @@ During the Spring Festival, we organized into groups based on individual skills 
 </div>
 
 
-## [March](https://2025.igem.wiki/fudan/notebook/#march)
+## [March](/notebook/#march)
 
 We held regular meetings to refine the design of both dry and wet lab experiments based on our winter break preparations. These collaborative sessions helped clarify team responsibilities and establish workflows for various experimental tasks. During the meetings, each team member reported on the progress of their assigned tasks. We developed [fluorescent molecular clock](/design/#timer-tracking-cell-lineage) as a real-time tracker to monitor the evolutionary history of multicellular yeast and uploaded clothing designs featuring our project logo to the Animal Crossing platform.
 
@@ -75,7 +73,7 @@ Additionally, we corresponded with Professor Ratcliff via email and received val
 </div>
 
 
-## [April](https://2025.igem.wiki/fudan/notebook/#april)
+## [April](/notebook/#april)
 
 On April 15th, we conducted an interview with Professor Huang to advance our investigation into fungal drug resistance mechanisms. Our discussion focused on the primary evolutionary pathways of fungal resistance and explored the application of multicellular systems in resistance monitoring.
 
@@ -89,7 +87,7 @@ This exchange clarified the crucial role of chromosomal aneuploidization in the 
     </div>
 </div>
 
-## [May](https://2025.igem.wiki/fudan/notebook/#may)
+## [May](/notebook/#may)
 
 On May 11th, our team secured the second prize at the Shanghai Stock Exchange Cup Haiju Yingcai Innovation and Entrepreneurship Competition.
 
@@ -107,13 +105,13 @@ On May 17th, we connected with middle school students in Henan Province through 
     </div>
 </div>
 
-## [June](https://2025.igem.wiki/fudan/notebook/#june)
+## [June](/notebook/#june)
 
 On June 27th - 28th, we attended The Chinese Biopharmaceutical Association (CBA-China) Annual Conference 2025 and engaged in project discussions with teams including Nanjing-China, ZJU-China, ShanghaiTech-China, and SJTU-BioX-Shanghai.
 
 On June 30th, we partnered with CSU-China to co-organize an online lecture focusing on synthetic biology as a cutting-edge interdisciplinary field, introducing high school students to career development paths and prospects in life sciences.
 
-We also jointly produced the children's [picture book "My Microbe Friends"](https://2025.igem.wiki/fudan/education.html#my-microb-friends%E2%80%94%E2%80%94picturebook) with AFMU-China.
+We also jointly produced the children's [picture book "My Microbe Friends"](/education.html#my-microb-friends%E2%80%94%E2%80%94picturebook) with AFMU-China.
 
 <div style="text-align: center;" id="fig8">
     <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/june-summary.webp" style="width:80%">
@@ -123,11 +121,11 @@ We also jointly produced the children's [picture book "My Microbe Friends"](http
     </div>
 </div>
 
-## [July](https://2025.igem.wiki/fudan/notebook/#july)
+## [July](/notebook/#july)
 
-On July 7th, we named our multicellular yeast "Grape Yeast" based on its morphological characteristics and officially designated the project as "DR. sTraTeGY". During the summer vacation, we conducted a series of wet lab experiments including yeast subculturing, competent cell preparation, plasmid extraction, and [NotI](https://www.neb.com/en/products/r3189-noti-hf) enzyme digestion.
+On July 7th, we named our multicellular yeast "Grape Yeast" based on its morphological characteristics and officially designated the project as "DR. sTraTeGY". During the summer vacation, we conducted a series of wet lab experiments including yeast subculturing, competent cell preparation, plasmid extraction, and NotI enzyme digestion.
 
-Furthermore, we collaborated with USTC, Nanjing-China, SJTU-BioX-Shanghai, and ZJU-China to organize educational initiatives, producing instructional videos on microbial painting. Throughout mid-to-late July, we conducted multiple [microbial science outreach activities](https://2025.igem.wiki/fudan/education.html#interactive-science-workshop) in various communities, successfully inspiring children's interest in scientific exploration.
+Furthermore, we collaborated with USTC, Nanjing-China, SJTU-BioX-Shanghai, and ZJU-China to organize educational initiatives, producing instructional videos on microbial painting. Throughout mid-to-late July, we conducted multiple [microbial science outreach activities](/education.html#interactive-science-workshop) in various communities, successfully inspiring children's interest in scientific exploration.
 
 <div style="text-align: center;" id="fig9">
     <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/july-wetlabandhp.webp" style="width:80%">
@@ -137,7 +135,7 @@ Furthermore, we collaborated with USTC, Nanjing-China, SJTU-BioX-Shanghai, and Z
     </div>
 </div>
 
-## [August](https://2025.igem.wiki/fudan/notebook/#august)
+## [August](/notebook/#august)
 
 From August 6th to 8th, we participated in the Conference of China iGEM Community (CCiC), where we engaged with over 100 teams in focused discussions on Human Practices and exchanged valuable project insights, witnessing firsthand the dynamic progress of synthetic biology in China.
 
@@ -153,7 +151,7 @@ Meanwhile, we collaborated with 33 iGEM teams to compile the ["Debunking Synthet
     </div>
 </div>
 
-## [September](https://2024.igem.wiki/fudan/notebook/#september)
+## [September](/notebook/#september)
 
 On September 3rd, we took part in the Star Forum and listened to Professor Ma Jianpeng's presentation on the deep integration of AI and life sciences. He analyzed how algorithms create value in biological fields and explored future trends and potential challenges.
 
@@ -173,7 +171,7 @@ Our laboratory team proceeded with wet experiments and analyzed the results usin
     </div>
 </div>
 
-## [October](https://2024.igem.wiki/fudan/notebook/#october)
+## [October](/notebook/#october)
 
 We finalized the authorship for different web pages and divided the tasks to start writing the pages and summarizing previous work. Meanwhile, all members worked in lab 24x7, analyzing wet lab data, further refining the dry lab work and optimizing the project presentation video until the final deadline.
 
@@ -184,4 +182,3 @@ We finalized the authorship for different web pages and divided the tasks to sta
         <br><br>
     </div>
 </div>
-

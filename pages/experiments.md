@@ -8,8 +8,6 @@ layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
 description: On this page, we describe detailed experimental protocols for vector construction based on Golden Gate assembly, yeast transformation and validation, as well as yeast imaging and flow cytometry analysis at al. serving for DR. sTraTeGY. 
 ---
-
-
 ## Golden Gate Assembly
 
 As described in Shaw et al. (2023)[^1], briefly: 
@@ -75,6 +73,8 @@ As described in Shaw et al. (2023)[^1], briefly:
      c. **Heat Inactivation:** 80°C for 10 min.
 
      d. **Hold:** 4°C
+   
+   > For inserts containing internal BsmBI and BsaI sites, we added a dedicated 30-minute incubation with additional T4 DNA Ligase at 16°C after the thermal cycles to maximize the repair and ligation of all ends, as described in [engineering](/engineering/#iteration-2-optimized-assembly-and-initial-functional-failure).
 
 ### Transformation and Plating
 
@@ -86,9 +86,7 @@ As described in Shaw et al. (2023)[^1], briefly:
 6.  Add 950 &mu;L of SOC or LB medium (pre-warmed to 37°C).
 7.  Incubate at 37°C with shaking (250 rpm) for 1 h.
 8.  Plate 100-200 &mu;L of the culture onto an LB agar plate containing the appropriate antibiotic.
-
     `Ensure the antibiotic on the plate matches the resistance marker of the destination plasmid backbone.`
-    
 9.  Incubate plates overnight at 37°C.
 
 ### Colony Screening and Validation
@@ -221,7 +219,7 @@ This step linearizes plasmid DNA prior to transformation to increase integration
    | :---: | :-----------------: | :---------------------------: |
    | **1** |       NotI-HF       |              0.1              |
    | **2** | 10x CutSmart Buffer |               2               |
-   | **3** |  ddH<sub>2</sub>O  |     Bring up to 20 &mu;L      |
+   | **3** |  ddH­<sub>2</sub>O  |     Bring up to 20 &mu;L      |
    | **4** |         DNA         | Variable Amount (600-1000 ng) |
    |       |      **Total**      |            **20**             |
 
@@ -382,7 +380,7 @@ As described in Tong et al. (2025)[^6], briefly:
 
 ## Flow Cytometry of Single Cell Yeast
 
-Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/#recorder) transformed into [BY4741](https://www.yeastgenome.org/strain/by4741) or [BY4742](https://www.yeastgenome.org/strain/by4741).
+Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/#recorder) transformed into BY4741 or BY4742.
 
 1. Pick strains into 3 mL synthetic complete (SC) medium and grow them at 30°C with 250 rpm shaking overnight.
 
@@ -394,7 +392,11 @@ Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/
 
 3. Wash the pellet with PBS and resuspend the cell in 1 mL PBS.
 
-4. Measure cell fluorescence using CytoFlex LX according to the following settings: FSC 300 V, SSC 350 V, gating for singlets using FSC-A vs SSC-H. Record 4 channels of fluorescence (Y585-A, B525-A, R660-A, V450-A) at the same time.
+4. Measure cell fluorescence using CytoFlex LX according to the following settings: FSC 300 V, SSC 350 V, gating for singlets using FSC-A vs FSC-H. Record 4 channels of fluorescence (Y585-A, B525-A, R660-A, V450-A) at the same time.
+
+   `For yeast, set FSC-A vs FSC-H with logarithmic axes (Log Axis), and adjust the axis scale as needed so that the cell population is centered in the plot.`
+
+   `Use a parallelogram gate in the plot to enclose the region where FSC-A and FSC-H are approximately proportional (this region represents single cells).`
 
 
 
@@ -591,6 +593,3 @@ As described in Tong et al. (2025)[^6], briefly:
 [^6]: Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. *Nature*, *639*(8055), 691–699. https://doi.org/10.1038/s41586-025-08689-6
 [^7]: Sakai, K., Kondo, Y., Fujioka, H., Kamiya, M., Aoki, K., & Goto, Y. (2021). Near-infrared imaging in fission yeast using a genetically encoded phycocyanobilin biosynthesis system. *Journal of cell science*, *134*(24), jcs259315. https://doi.org/10.1242/jcs.259315
 [^8]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. https://doi.org/10.1073/pnas.1902823116
-
-
-
