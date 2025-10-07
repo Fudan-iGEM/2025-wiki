@@ -21,11 +21,11 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
 
 ## **0.Forming our theory: Primary Claim**
 
-### In One Sentence
+### 0.1 In One Sentence
 
 Virtually anyone can become vulnerable to fungal infection s. We aim to co-create an inclusive scientific community to collectively address fungal challenges.
 
-### Our Initial Framework from the pre-research
+### 0.2 Our Initial Framework from the pre-research
 
 Our social structure exhibits a profound similarity to the "multicellular yeast" model: the group relies on diverse individuals, and individuals, in turn, benefit from the group. However, while integrating into the collective, individuals also experience additional pressures that isolated individuals do not face. The inclusive initiatives we promote aim precisely to resolve this kind of structural pressure—precisely for this reason, our social advocacy and experimental research are fundamentally interconnected.
 
@@ -56,7 +56,7 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 3. **Excluded: The Divide Between Science and the Body**
    Scientific practice usually assumes researchers have “standard” bodily functions. Yet the lived realities of rare disease patients—frequent care routines, physical limitations, mobility challenges—do not fit the rigid, high-intensity environments of laboratories. They face both physical and institutional exclusion from participating in study design, data collection, and even public science activities.
 
-### Our theory of inclusive science communities
+### 0.3 Our theory of inclusive science communities
 
 To address these barriers, we propose the **Visibility → Empowerment → Involvement** model of inclusive science.
 
@@ -66,7 +66,7 @@ To address these barriers, we propose the **Visibility → Empowerment → Invol
 
 Visibility creates a trusted environment for expression; adequate space for expression provides rich, equitable materials for dialogue; and the creative processes of problem-solving generate more diverse and profound narratives, which in turn further enhance visibility and recognition in the scientific community. Step by step, these interactions enable structural barriers in science to be gradually reshaped.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity0-1.webp" alt="包容性科学社区示意图" style="zoom:50%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-communities.webp" alt="包容性科学社区示意图" style="zoom:50%;" />
 
 Through focusing on EB patients’ unique situation in the context of fungal challenges, **Fudan iGEM 2025 seeks to explore new approaches to building inclusive scientific communities—bringing rare disease groups into both the narratives and practices of science.**
 
@@ -143,7 +143,7 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
   
   
 
-### 1.4 Theoretical Framework: Intersectionality
+### 1.3 Improving our Theoretical Framework: Intersectionality
 
    > “Intersectionality has given many advocates a way to frame their circumstances and to fight for their visibility and inclusion."——Kimberlé Crenshaw
 
@@ -486,7 +486,13 @@ Summarize a transferable methodology: **building inclusive scientific communitie
 
 ---
 
-### 4.1 Laboratory-assistive software — *ProtocolFlow*
+### 4.1 In One Sentence
+
+The design of our lab mental health campaigns and assistive software showed that our dialogues with minority groups have deepened our understanding of intersectionality in scientific research.
+
+---
+
+### 4.2 Laboratory-assistive software — *ProtocolFlow*
 
 #### Motivation (Why We Do This)
 
@@ -530,7 +536,7 @@ These results suggest that our tool not only improves efficiency but also meanin
 
 
 
-### 4.2 **“Lab Mental Health Week” check-in campaign**
+### 4.3 **“Lab Mental Health Week” check-in campaign**
 
 This inspired us to launch a **“Lab Mental Health Week” check-in campaign**, complete with posters that teams can download and use to foster collective awareness and care.
 
@@ -544,11 +550,11 @@ From May to September, we have continued our science communication efforts on me
 
 
 
-### 4.3 Intersectionality — A Methodology for Inclusive Scientific Practice
+### 4.4 A Methodology for Inclusive Scientific Practice into a sustain cycle
 
 **Core Principle**: Sustainable inclusivity stems from responding to the most marginalized and sensitive needs, which ultimately benefits all participants in science.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity5.webp" alt="inclusivity5" style="zoom:40%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/four-steps.webp" alt="inclusivity5" style="zoom:90%;" />
 
 **Practical Pathway of Intersectionality:**
 - **Visibility**: Identify individuals around you who face barriers in science; amplify their presence.
@@ -566,7 +572,7 @@ From May to September, we have continued our science communication efforts on me
 - *Methodological Innovation*: An operationalized, stepwise framework of "intersectionality in practice"
 
 ---
-### Conclusion
+## Conclusion: Into a replicable, scalable, self-evolving cycle.
 
 In today’s increasingly segmented society, people are routinely categorized as “children,” “elders,” “healthy individuals,” or “disabled populations.” Such labels—though administratively convenient—make cross-group understanding more difficult. Public speech and participation in science often remain reserved for the so-called “healthy,” pushing others further to the margins.
 
