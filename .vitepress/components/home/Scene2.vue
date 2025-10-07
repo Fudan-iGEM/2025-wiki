@@ -9,8 +9,9 @@
         @send-click="$emit('send-click')"
       />
       <div class="scene2-animation">
-        <Vue3Lottie
-          v-if="scene2AnimationUrl"
+        <component
+          v-if="lottieComponent && scene2AnimationUrl"
+          :is="lottieComponent"
           ref="lottie2Ref"
           :animationLink="scene2AnimationUrl"
           :height="'100%'"
@@ -24,8 +25,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits, defineExpose } from 'vue';
-import { Vue3Lottie } from 'vue3-lottie';
+import { ref, shallowRef, onMounted, defineProps, defineEmits, defineExpose } from 'vue';
 import CrisisDialog from '../CrisisDialog.vue';
 
 defineProps({
@@ -42,6 +42,12 @@ defineEmits(['send-click']);
 const scene2Ref = ref(null);
 const scene2ContentRef = ref(null);
 const lottie2Ref = ref(null);
+const lottieComponent = shallowRef(null);
+
+onMounted(async () => {
+  const { Vue3Lottie } = await import('vue3-lottie');
+  lottieComponent.value = Vue3Lottie;
+});
 
 defineExpose({
   scene2Ref,

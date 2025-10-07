@@ -28,6 +28,20 @@
       :scene4-autoplay="scene4Autoplay"
       @dog1-complete="handleDog1Complete"
     />
+
+    <Scene5
+      ref="scene5ComponentRef"
+      :items="scene5Items"
+    />
+
+    <Scene6
+      ref="scene6ComponentRef"
+      :items="scene6Items"
+    />
+
+    <Scene7
+      ref="scene7ComponentRef"
+    />
   </div>
 </template>
 
@@ -40,6 +54,9 @@ import { Draggable } from 'gsap/Draggable'
 import Scene1 from './home/Scene1.vue'
 import Scene2 from './home/Scene2.vue'
 import Scene4 from './home/Scene4.vue'
+import Scene5 from './home/Scene5.vue'
+import Scene6 from './home/Scene6.vue'
+import Scene7 from './home/Scene7.vue'
 import { useScene3 } from './home/useScene3.js'
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin, Draggable)
@@ -47,7 +64,26 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin, Draggable)
 // --- Scene Definitions ---
 const scene1 = { animationUrl: 'https://static.igem.wiki/teams/5643/img/homepage/page1.json', titleSrc: 'https://static.igem.wiki/teams/5643/img/homepage/title.webp' }
 const scene2Lotties = { crisis1: 'https://static.igem.wiki/teams/5643/img/homepage/crisis.json', crisis2: 'https://static.igem.wiki/teams/5643/img/homepage/crisis2.json' }
-const scene4Lotties = { dog1: 'https://static.igem.wiki/teams/5643/img/homepage/dog1.json', dog2: 'https://static.igem.wiki/teams/5643/img/homepage/dog2.json', dog3: 'https://static.igem.wiki/teams/5643/img/homepage/dog3.json' }
+const scene4Lotties = { 
+  dog1: 'https://static.igem.wiki/teams/5643/img/homepage/dog1.json', 
+  dog2: 'https://static.igem.wiki/teams/5643/img/homepage/dog2.json', 
+  dog3: 'https://static.igem.wiki/teams/5643/img/homepage/dog3.json',
+  dog4: 'https://static.igem.wiki/teams/5643/img/homepage/dog4.json',
+  dog5: 'https://static.igem.wiki/teams/5643/img/homepage/dog5.json',
+  dog6: 'https://static.igem.wiki/teams/5643/img/homepage/dog6.json',
+  dog7: 'https://static.igem.wiki/teams/5643/img/homepage/dog7.json'
+}
+const scene5Lotties = { 
+  item1: 'https://static.igem.wiki/teams/5643/img/homepage/5-1.json',
+  item2: 'https://static.igem.wiki/teams/5643/img/homepage/5-2.json',
+  item3: 'https://static.igem.wiki/teams/5643/img/homepage/5-3.json'
+}
+const scene6Lotties = {
+  item1: 'https://static.igem.wiki/teams/5643/img/homepage/6-1.json',
+  item2: 'https://static.igem.wiki/teams/5643/img/homepage/6-2.json',
+  item3: 'https://static.igem.wiki/teams/5643/img/homepage/6-3.json',
+  item4: 'https://static.igem.wiki/teams/5643/img/homepage/6-4.json'
+}
 
 const dialogs = ref([
   { id: 0, text: 'It’s the year of 2333, a formidable crisis has swept over the world—antimicrobial resistance.', isInput: false },
@@ -55,12 +91,28 @@ const dialogs = ref([
   { id: 2, text: 'Why is all this happening? How could I help?', isInput: true }
 ])
 
+const scene5Items = ref([
+  { id: 1, order: 'lottie-first', lottieUrl: scene5Lotties.item1, title: 'High-throughput Platform', description: 'A high-throughput platform for screening drug-resistant gene mutations.' },
+  { id: 2, order: 'text-first', lottieUrl: scene5Lotties.item2, title: 'Engineered Grape Yeast', description: 'Utilizing engineered grape yeast as a versatile and efficient chassis.' },
+  { id: 3, order: 'lottie-first', lottieUrl: scene5Lotties.item3, title: 'AI-Powered Analysis', description: 'An integrated AI model for analyzing mutation data and predicting resistance.' }
+])
+
+const scene6Items = ref([
+    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Description', description: 'Our project aims to address the growing threat of antimicrobial resistance.' },
+    { id: 2, lottieUrl: scene6Lotties.item2, title: 'Design', description: 'We designed a novel genetic circuit in grape yeast for high-throughput screening.' },
+    { id: 3, lottieUrl: scene6Lotties.item3, title: 'Engineering', description: 'Successful engineering cycles led to a robust and reliable biosensor.' },
+    { id: 4, lottieUrl: scene6Lotties.item4, title: 'Results', description: 'Our platform demonstrates high sensitivity and specificity in detecting mutations.' },
+]);
+
 // --- Component & Template Refs ---
 const homepageRef = ref(null)
 const glitchOverlayRef = ref(null)
 const scene1ComponentRef = ref(null)
 const scene2ComponentRef = ref(null)
 const scene4ComponentRef = ref(null)
+const scene5ComponentRef = ref(null)
+const scene6ComponentRef = ref(null)
+const scene7ComponentRef = ref(null)
 
 const dialogBoxRefs = reactive({})
 const isSendEnabled = ref(false)
@@ -238,8 +290,6 @@ const setupScene4 = () => {
 }
 
 const handleDog1Complete = () => {
-  // This logic might need adjustment if dog1->dog2 loop is no longer desired.
-  // For now, we keep it as a potential feature.
   if (scene4AnimationUrl.value === scene4Lotties.dog1) {
     scene4AnimationUrl.value = scene4Lotties.dog2
     scene4Loop.value = true
@@ -266,11 +316,16 @@ onMounted(() => {
 const setupInitialStates = () => {
   const scene1 = scene1ComponentRef.value
   const scene2 = scene2ComponentRef.value
-  if (!scene1 || !scene2) return
+  const scene5 = scene5ComponentRef.value
+  const scene6 = scene6ComponentRef.value
+  const scene7 = scene7ComponentRef.value
+  if (!scene1 || !scene2 || !scene5 || !scene6 || !scene7) return
 
   gsap.set(homepageRef.value, { backgroundColor: '#FFFFFF' })
-  gsap.set([scene1.scene1Ref, scene2.scene2Ref], { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' })
+  gsap.set([scene1.scene1Ref, scene2.scene2Ref, scene5.scene5Ref, scene6.scene6Ref, scene7.scene7Ref], { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' })
   gsap.set(scene2.scene2Ref, { autoAlpha: 0 })
+  gsap.set(scene5.scene5Ref, { autoAlpha: 0 })
+  gsap.set(scene6.scene6Ref, { autoAlpha: 0 })
   gsap.set(scene2.scene2ContentRef, { display: '' })
   gsap.set(scene1.titleImageRef, { x: '-120%', autoAlpha: 0 })
   gsap.set(scene1.subtitleWrapperRef, { y: 24, autoAlpha: 0 })
@@ -335,9 +390,13 @@ const playScene2Sequence = () => {
 const setupScrollAnimation = () => {
   const scene1 = scene1ComponentRef.value
   const scene2 = scene2ComponentRef.value
-  if (!scene1 || !scene2) return
+  const scene4 = scene4ComponentRef.value
+  const scene5 = scene5ComponentRef.value
+  const scene6 = scene6ComponentRef.value
+  const scene7 = scene7ComponentRef.value
+  if (!scene1 || !scene2 || !scene4 || !scene5 || !scene6 || !scene7) return
 
-  mainTimeline = gsap.timeline({ scrollTrigger: { trigger: homepageRef.value, pin: true, scrub: 1, start: 'top top', end: '+=4000' } })
+  mainTimeline = gsap.timeline({ scrollTrigger: { trigger: homepageRef.value, pin: true, scrub: 1, start: 'top top', end: '+=15000' } })
   mainTimeline
     .to({}, { duration: 1.0 }) // Pause after title is shown
     .set(glitchOverlayRef.value, { className: 'glitch-overlay active' })
@@ -345,10 +404,50 @@ const setupScrollAnimation = () => {
     .to(homepageRef.value, { backgroundColor: '#3a1667', duration: 1.2, ease: 'power2.inOut' }, '<')
     .set(glitchOverlayRef.value, { className: 'glitch-overlay' }, '>-0.5')
     .to(scene2.scene2Ref, { autoAlpha: 1, duration: 0.1 }, '-=0.8')
-    .addLabel('scene2Start')
-    .to({}, { duration: 0.5 })
+    .addLabel('scene2End')
     .call(playScene2Sequence, [], '>')
-    .to({}, { duration: 5 })
+    .to({}, { duration: 10 }) // Duration for scene 2, 3, 4
+    .addLabel('scene5Start')
+    .to([scene4.scene4LeftBoxRef, scene4.glowingBallRef, scene4.scene4ContainerRef.querySelector('.drag-prompt')], { autoAlpha: 0, duration: 0.5 })
+    .to(homepageRef.value, { backgroundColor: '#1a2a45', duration: 1 }, '<')
+    .to(scene5.scene5Ref, { autoAlpha: 1, duration: 1 }, '>-0.5')
+    .from(scene5.columnWrapperRef.children, { autoAlpha: 0, x: 100, stagger: 0.2, duration: 0.8 }, '>-0.5')
+    .call(() => {
+      scene4AnimationUrl.value = scene4Lotties.dog4;
+      scene4Loop.value = true;
+      scene4Autoplay.value = true;
+    }, [], '>')
+    .to({}, { duration: 5 }) // Duration for scene 5
+    .addLabel('scene6Start')
+    .to(scene5.scene5Ref, { x: '-100%', autoAlpha: 0, duration: 1 })
+    .to(scene4.dropTargetRef, { left: '1rem', right: 'auto', duration: 1 }, '<')
+    .call(() => {
+      scene4AnimationUrl.value = scene4Lotties.dog5;
+      scene4Loop.value = true;
+    }, [], '<')
+    .to(scene6.scene6Ref, { autoAlpha: 1, duration: 1 }, '<')
+    .to({}, { duration: 5 }) // Duration for scene 6
+    .addLabel('scene7Start')
+    .to(scene6.scene6Ref, { autoAlpha: 0, duration: 0.5 })
+    .to(homepageRef.value, { backgroundColor: '#FFFFFF', duration: 1 }, '<')
+    .call(() => { 
+      scene4AnimationUrl.value = scene4Lotties.dog6;
+      scene4Loop.value = true;
+    }, [], '<')
+    .to(scene4.dropTargetRef, { 
+      left: '50%', 
+      top: '65%', 
+      xPercent: -50, 
+      yPercent: -50, 
+      duration: 1.5, 
+      ease: 'power2.inOut',
+      onComplete: () => {
+        scene4AnimationUrl.value = scene4Lotties.dog7;
+        scene4Loop.value = true;
+      }
+    }, '>')
+    .to(scene7.textRef, { autoAlpha: 1, duration: 1 }, '>-0.5')
+    .to({}, { duration: 5 }) // Final pause
 }
 
 onBeforeUnmount(() => {

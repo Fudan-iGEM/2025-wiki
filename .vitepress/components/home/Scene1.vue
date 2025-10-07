@@ -1,7 +1,9 @@
 <template>
   <div ref="scene1Ref" class="scene scene-1">
     <div class="lottie-wrapper" ref="lottie1WrapperRef">
-      <Vue3Lottie
+      <component
+        v-if="lottieComponent"
+        :is="lottieComponent"
         ref="lottie1Ref"
         :animationLink="animationUrl"
         :height="'100%'"
@@ -32,8 +34,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits, defineExpose } from 'vue';
-import { Vue3Lottie } from 'vue3-lottie';
+import { ref, shallowRef, onMounted, defineProps, defineEmits, defineExpose } from 'vue';
 import TrueFocus from '../TrueFocus.vue';
 
 defineProps({
@@ -50,6 +51,12 @@ const lottie1Ref = ref(null);
 const titleWrapperRef = ref(null);
 const titleImageRef = ref(null);
 const subtitleWrapperRef = ref(null);
+const lottieComponent = shallowRef(null);
+
+onMounted(async () => {
+  const { Vue3Lottie } = await import('vue3-lottie');
+  lottieComponent.value = Vue3Lottie;
+});
 
 defineExpose({
   scene1Ref,

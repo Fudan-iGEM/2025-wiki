@@ -10,8 +10,9 @@
 
     <!-- Lottie animation (the dog) is the drop target in the bottom right -->
     <div ref="dropTargetRef" class="lottie-drop-target">
-      <Vue3Lottie
-        v-if="scene4AnimationUrl"
+      <component
+        v-if="lottieComponent && scene4AnimationUrl"
+        :is="lottieComponent"
         ref="lottie4Ref"
         :animationLink="scene4AnimationUrl"
         :height="'100%'"
@@ -27,8 +28,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits, defineExpose } from 'vue';
-import { Vue3Lottie } from 'vue3-lottie';
+import { ref, shallowRef, onMounted, defineProps, defineEmits, defineExpose } from 'vue';
 
 defineProps({
   scene4AnimationUrl: String,
@@ -43,6 +43,12 @@ const scene4LeftBoxRef = ref(null); // Still named this way to avoid breaking pa
 const glowingBallRef = ref(null);
 const dropTargetRef = ref(null);
 const lottie4Ref = ref(null);
+const lottieComponent = shallowRef(null);
+
+onMounted(async () => {
+  const { Vue3Lottie } = await import('vue3-lottie');
+  lottieComponent.value = Vue3Lottie;
+});
 
 defineExpose({
   scene4ContainerRef,
@@ -106,14 +112,17 @@ defineExpose({
 
 .lottie-drop-target {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: -2rem;
+  right: -2rem;
   width: clamp(280px, 30vw, 420px);
   height: clamp(280px, 30vw, 420px);
   pointer-events: auto;
   background: transparent;
   border: none;
+  overflow: hidden;
 }
+
+
 
 .drag-prompt {
   position: absolute;
@@ -143,9 +152,8 @@ defineExpose({
     left: auto;
   }
   .lottie-drop-target {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10rem;
+    right: -1rem;
+    bottom: 5rem;
     width: min(80vw, 300px);
     height: min(80vw, 300px);
   }
