@@ -76,36 +76,15 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
 
 ---
 
-
-
-<div class="card">
-  <h3><strong>In One Sentence:</strong> Enable rare disease patients to increase visibility by presenting themselves as *artists*.</h3>
-  <p><strong>Goals</strong>:To address the issue of **invisibility** and bring the existence and needs of EB patients into the view of the public and the scientific community.<br/>
-**Process**:<br/>
-- **Art charity sale**: Position patients as *artists* rather than merely *patients*, thereby discovering their intersectional identities.<br/>
-- **Problem identification**: Focusing on a single group easily creates a sense of difference. Therefore, the aim is to design intersectional activities that reduce pressure and foster multidirectional dialogues.<br/>
-- **Classification and data visualization**: Demonstrate the intersectionality between EB patients and other groups (such as diabetic foot patients, pregnant women, athletes, etc.) in relation to fungal problems.<br/>
-- **Theoretical contribution**: Propose a framework grounded in the principle of *intersectionality*.<br/>
-**Significance**:<br/>
-To break the *isolation of labeling* and to seek modes of expression for rare disease patients within the shared identity of being “those troubled by fungal infections.”<br/>
-**Outcome**:<br/>
-A Public Science Art **Pop-up** with a Co-creation **Charity Sale**.</p>
-
-
+<div class="card success">
+  <h4>✅ In One Sentence: Enable rare disease patients to increase visibility by presenting themselves as artists.</h4>
+  <p>Goals:To address the issue of invisibility and bring the existence and needs of EB patients into the view of the public and the scientific community.</p>
+</div>
 
 <style>
-.card {
-  background: orange;
-  border: 1px solid #e1e8ed;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 16px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-.card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  transform: translateY(-2px);
+.card.success {
+  background: #f8e5d9;
+  border-left: 4px solid #1890ff;
 }
 </style>
 
@@ -200,6 +179,8 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 
 ## 2. Beyond Words: Mapping the Unspoken Truths
 
+**In One Sentence: ** Sensory-friendly research design helps individuals affected by fungal problems to identify struggles they previously *could not articulate*, thereby empowering marginalized groups to voice their perspectives.
+
 **Objective**
 To address the problem of *inexpressibility* by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.
 
@@ -219,11 +200,9 @@ Participatory Mapping Toolkit
 
 ---
 
-### 2.1 In One Sentence
 
-**Sensory-friendly research design** helps individuals affected by fungal problems to identify struggles they previously *could not articulate*, thereby empowering marginalized groups to voice their perspectives.
 
-### 2.2 In-depth interview and Ethnographic fieldwork with patients
+### 2.1 In-depth interview and Ethnographic fieldwork with patients
 
 #### Motivation (Why We Do This)
 
