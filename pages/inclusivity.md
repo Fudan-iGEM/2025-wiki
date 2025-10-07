@@ -9,11 +9,13 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we describe how Fudan iGEM 2025 builds an inclusive scientific community through intersectional practices, bringing Groups Underrepresented in Science like those with rare disease Epidermolysis bullosa into science.
 ---
 
-## Summary
+## Summary: Intersectional Echoes
 
 Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. This led us to recognize that, in real society, fungal challenges are not one-dimensional. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
 
-## Background
+
+
+## **Our Primary Claim**
 
 ### In One Sentence
 
@@ -90,11 +92,7 @@ During the process of inviting patients to participate, we noticed that many exp
 
 This insight encouraged us: although the division between *EB patients* and *non-EB patients* exists, common ground can still be found on other levels to unite us. Such psychological recognition is the first step to connect marginalized groups in science with STEM practices.
 
-<div>
-  <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-2.webp" alt="inclusivity1-2" style="zoom: 40%;" />
-  <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-3.webp" alt="inclusivity1-3" style="zoom:40%;" />
-</div>
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-4.webp" alt="inclusivity1-4" style="zoom:80%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" alt="inclusivity1-4" style="zoom:80%;" />
 
 - ### **Details**
 - **Art as a medium**
@@ -120,6 +118,8 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
 - **Price Contrast Cards**
 
   To strengthen public empathy for rare disease patients, we designed *price contrast cards*. For instance, a patient’s drawing printed as a postcard was priced at 3 RMB, whereas one piece of medical dressing they needed daily costs 100 RMB. This design choice resonated with participants, helping them grasp the economic challenges faced by rare disease patients and prompting reflection on how even small gestures of kindness can accumulate into real hope.
+  
+  
 
 ### Theoretical Framework: Intersectionality
 
@@ -436,6 +436,8 @@ These experiences resonated with our concerns for *fungal-vulnerable populations
 
 Importantly, the participant’s dual identity as both a researcher and a patient embodied an **intersectional position**, reflecting our core framework: individuals’ needs and struggles are fluid and overlapping. Inclusivity in science should not be seen as a “special demand” of marginalized groups, but as a collective benefit for everyone involved in scientific practice.
 
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/protocol-in-lab.webp" alt="inclusivity3-2eb3" style="zoom:33%;" />
+
 #### Details
 
 ##### Core Functions
@@ -444,16 +446,15 @@ Our laboratory-assistive web tool is not merely an efficiency software, but a su
 
 1. **Visualized Experimental Guidance**
 
-   【动图123】
-
    - **Function**: Users can import or write their own experimental protocols, which the software automatically parses into a clear, visual step-by-step flowchart. Each step is accompanied by a progress bar, estimated duration, key precaution notes, and corresponding tool components. At the end, a tagged experimental report can be generated.
-   - **Design Rationale**: This reduces the cognitive load and anxiety caused by lengthy, text-heavy instructions, alleviating psychological pressure for lab members susceptible to fungal infections. It also helps experimenters with attention deficits or reading difficulties to better grasp both the overall workflow and the details. Built-in widgets such as timers and calculators minimize task-switching and reduce the risk of errors.
+- **Design Rationale**: This reduces the cognitive load and anxiety caused by lengthy, text-heavy instructions, alleviating psychological pressure for lab members susceptible to fungal infections. It also helps experimenters with attention deficits or reading difficulties to better grasp both the overall workflow and the details. Built-in widgets such as timers and calculators minimize task-switching and reduce the risk of errors.
 2. **Built-in Mental Health Self-Assessment Module**
 
-   【动图45】
-
    - **Function**: After completing an experiment, the software prompts the user to record their current mood via quick options, and guides them to a self-assessment questionnaire for stress evaluation. All data remains private to the user, and results are accompanied by stress-relief suggestions based on principles of Cognitive Behavioral Therapy (CBT).
+
    - **Design Rationale**: This normalizes and destigmatizes attention to mental health, encouraging experimenters to proactively monitor their own condition and prevent the accumulation of chronic stress. It echoes our focus on supporting the **whole person** rather than treating them as “research machines.”
+   
+     
 
 #### Initial Validation
 
@@ -467,7 +468,15 @@ These results suggest that our tool not only improves efficiency but also meanin
 
 This inspired us to launch a **“Lab Mental Health Week” check-in campaign**, complete with posters that teams can download and use to foster collective awareness and care.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-7.webp" alt="Lab Mental Health Week” check-in campaign" style="zoom:33%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-7.webp" alt="inclusivity3-2eb3" style="zoom:38%;" />
+
+
+
+From May to September, we have continued our science communication efforts on mental health in the laboratory setting on our social media, proposing actionable recommendations and establishing it as a long-term initiative.
+
+<div style="display: flex; overflow-x: auto; white-space: nowrap;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental1.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental2.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental3.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental4.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental5.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental6.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;"> </div>
+
+
 
 ### Intersectionality — A Methodology for Inclusive Scientific Practice
 
@@ -482,6 +491,7 @@ This inspired us to launch a **“Lab Mental Health Week” check-in campaign**,
 - **Feedback Loop**: Insights from co-creation feed back into visibility efforts, forming a cyclical and iterative practice model.
 
 **Transferable Outcomes:**
+
 - *Inclusive Practice Toolbox*:
   - For promoting popular science: A poster about the rare disease **Epidermolysis Bullosa** (see [Q&A Posters](#qa-posters) section)
   - For practical activities: [**Sensory-Friendly Research Toolkit**](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf)
@@ -513,8 +523,6 @@ Structural change is hard, but it begins with localized, lived efforts of inclus
 [^6]: Johnson, D. S., Bush, M. T., Brandzel, S., & Wernli, K. J. (2016). The patient voice in research—evolution of a role. *Research Involvement and Engagement*, *2*, Article 6. DOI: 10.1186/s40900-016-0020-4
 
 [^7]: Photovoice.org. (n.d.). Participatory photography. Retrieved October 26, 2023, from https://photovoice.org/participatoryphotography/
-
-## Other resources
 
 [^8]: The landscape for rare diseases in 2024. (2024). *The Lancet Global Health*, *12*(3), e341.
 
