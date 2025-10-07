@@ -29,8 +29,9 @@ defineExpose({
   position: absolute;
   inset: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 5% 5% 20% 20%;
   z-index: 6; /* Above other scenes */
   pointer-events: none;
   opacity: 0;
@@ -38,11 +39,11 @@ defineExpose({
 
 .cards-wrapper {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 800px;
   pointer-events: auto;
 }
 
@@ -55,6 +56,7 @@ defineExpose({
   border-radius: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 180px;
 }
 
 .card:hover {

@@ -19,7 +19,7 @@
         :width="'100%'"
         :loop="scene4Loop"
         :autoplay="scene4Autoplay"
-        @onComplete="$emit('dog1-complete')"
+        @onComplete="$emit('lottie-complete')"
       />
     </div>
 
@@ -36,7 +36,7 @@ defineProps({
   scene4Autoplay: Boolean,
 });
 
-defineEmits(['dog1-complete']);
+defineEmits(['lottie-complete']);
 
 const scene4ContainerRef = ref(null);
 const scene4LeftBoxRef = ref(null); // Still named this way to avoid breaking parent logic
@@ -75,6 +75,7 @@ defineExpose({
   left: clamp(2rem, 6vw, 5rem);
   transform: translateY(-50%);
   pointer-events: auto;
+  z-index: 5; /* ensure card sits above the orb initially */
 }
 
 .scene4-left-box {
@@ -93,8 +94,9 @@ defineExpose({
 
 .glowing-ball {
   position: absolute;
-  top: clamp(4rem, 10vh, 6rem);
-  left: clamp(4rem, 12vw, 10rem);
+  /* default fallback: peek from card's bottom-left vicinity; JS will refine */
+  bottom: clamp(2rem, 8vh, 3rem);
+  left: clamp(1rem, 4vw, 2rem);
   width: clamp(42px, 5.5vw, 62px);
   height: clamp(42px, 5.5vw, 62px);
   background: radial-gradient(circle at 35% 35%, #ffe37a 0%, #ff9a00 70%);
@@ -102,7 +104,7 @@ defineExpose({
   box-shadow: 0 0 30px 10px rgba(255, 154, 0, 0.55);
   pointer-events: auto;
   cursor: grab;
-  z-index: 10;
+  z-index: 1; /* behind the card, but still partially visible */
   transition: box-shadow 0.3s ease;
 }
 
@@ -111,7 +113,7 @@ defineExpose({
 }
 
 .lottie-drop-target {
-  position: absolute;
+  position: fixed;
   bottom: -2rem;
   right: -2rem;
   width: clamp(280px, 30vw, 420px);
@@ -120,6 +122,7 @@ defineExpose({
   background: transparent;
   border: none;
   overflow: hidden;
+  z-index: 5;
 }
 
 

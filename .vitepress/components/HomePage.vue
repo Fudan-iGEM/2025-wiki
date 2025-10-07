@@ -42,11 +42,16 @@
     <Scene7
       ref="scene7ComponentRef"
     />
+
+    <Scene8
+      ref="scene8ComponentRef"
+      :cards="scene8Cards"
+    />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, reactive, nextTick } from 'vue'
+import { ref, onMounted, onBeforeUnmount, reactive, nextTick, watch } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { TextPlugin } from 'gsap/TextPlugin'
@@ -57,6 +62,7 @@ import Scene4 from './home/Scene4.vue'
 import Scene5 from './home/Scene5.vue'
 import Scene6 from './home/Scene6.vue'
 import Scene7 from './home/Scene7.vue'
+import Scene8 from './home/Scene8.vue'
 import { useScene3 } from './home/useScene3.js'
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin, Draggable)
@@ -86,7 +92,7 @@ const scene6Lotties = {
 }
 
 const dialogs = ref([
-  { id: 0, text: 'It’s the year of 2333, a formidable crisis has swept over the world—antimicrobial resistance.', isInput: false },
+  { id: 0, text: 'It’s the year of 2333, a formidable Crisis has swept over the world—antimicrobial resistance.', isInput: false },
   { id: 1, text: 'Invasive fungal infections affecting billions of people worldwide are getting fatal while effective drugs are severely shrinking. ', isInput: false },
   { id: 2, text: 'Why is all this happening? How could I help?', isInput: true }
 ])
@@ -104,6 +110,13 @@ const scene6Items = ref([
     { id: 4, lottieUrl: scene6Lotties.item4, title: 'Results', description: 'Our platform demonstrates high sensitivity and specificity in detecting mutations.' },
 ]);
 
+const scene8Cards = ref([
+  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.svg', color: '#000000', link: '/pages/description', alt: 'Description' },
+  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.svg', color: '#4ECDC4', link: '/pages/design', alt: 'Design' },
+  { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.svg', color: '#FF6B35', link: '/pages/engineering', alt: 'Engineering' },
+  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.svg', color: '#1E3A8A', link: '/pages/results', alt: 'Results' }
+]);
+
 // --- Component & Template Refs ---
 const homepageRef = ref(null)
 const glitchOverlayRef = ref(null)
@@ -113,6 +126,7 @@ const scene4ComponentRef = ref(null)
 const scene5ComponentRef = ref(null)
 const scene6ComponentRef = ref(null)
 const scene7ComponentRef = ref(null)
+const scene8ComponentRef = ref(null)
 
 const dialogBoxRefs = reactive({})
 const isSendEnabled = ref(false)
@@ -122,6 +136,11 @@ const hasSendTriggered = ref(false)
 const scene4AnimationUrl = ref('')
 const scene4Loop = ref(false)
 const scene4Autoplay = ref(false)
+// 场景4：圆球是否已成功放置到目标上（用于滚动解锁）
+const scene4BallPlaced = ref(false)
+
+// 添加第三幕动画完成状态
+const scene3AnimationComplete = ref(false)
 
 const subtitleKey = ref(0)
 const scene2AnimationUrl = ref('')
@@ -131,6 +150,13 @@ let scene2Timeline = null
 
 // --- Composables ---
 const { triggerDoctorReplies } = useScene3()
+
+// 监听场景4的动画URL，当切换为dog3（球已放置）即解锁滚动
+watch(scene4AnimationUrl, (url) => {
+  if (url === scene4Lotties.dog3) {
+    scene4BallPlaced.value = true
+  }
+})
 
 const getSendButtonEl = () => scene2ComponentRef.value?.scene2Ref?.querySelector('.crisis-dialog__send')
 
@@ -203,6 +229,11 @@ const handleSendClick = () => {
 
   // --- SCENE 3: Doctor Replies ---
   triggerDoctorReplies(dialogs, dialogBoxRefs)
+  
+  // 标记第三幕动画完成 - 在第二段回复完成后
+  gsap.delayedCall(6.0, () => {
+    scene3AnimationComplete.value = true
+  })
 
   // --- TRANSITION TO SCENE 4 ---
   gsap.delayedCall(7.5, () => {
@@ -238,7 +269,17 @@ const setupScene4 = () => {
     gsap.set(scene4.scene4LeftBoxRef, { text: '' })
   }
 
-  gsap.set(ball, { x: 0, y: 0, autoAlpha: 1, boxShadow: originalBoxShadow })
+  // 动态把球定位到卡片左下角，稍微被卡片遮住但露出一点
+  const containerRect = scene4.scene4ContainerRef.getBoundingClientRect()
+  const boxRect = scene4.scene4LeftBoxRef?.getBoundingClientRect()
+  const ballRect = ball.getBoundingClientRect()
+  if (boxRect) {
+    const desiredLeft = boxRect.left - containerRect.left - ballRect.width * 0.35
+    const desiredTop = boxRect.bottom - containerRect.top - ballRect.height * 0.65
+    gsap.set(ball, { left: desiredLeft, top: desiredTop })
+  }
+  gsap.set(ball, { x: 0, y: 0, autoAlpha: 1, zIndex: 1, boxShadow: originalBoxShadow })
+  gsap.set(scene4.scene4LeftBoxRef, { zIndex: 5 })
 
   gsap.from(scene4.scene4LeftBoxRef, { autoAlpha: 0, x: -50, duration: 1, ease: 'power2.out', delay: 0.2 })
   gsap.from(ball, { autoAlpha: 0, scale: 0.5, duration: 1, ease: 'power2.out', delay: 0.5 })
@@ -319,13 +360,15 @@ const setupInitialStates = () => {
   const scene5 = scene5ComponentRef.value
   const scene6 = scene6ComponentRef.value
   const scene7 = scene7ComponentRef.value
-  if (!scene1 || !scene2 || !scene5 || !scene6 || !scene7) return
+  const scene8 = scene8ComponentRef.value
+  if (!scene1 || !scene2 || !scene5 || !scene6 || !scene7 || !scene8) return
 
   gsap.set(homepageRef.value, { backgroundColor: '#FFFFFF' })
-  gsap.set([scene1.scene1Ref, scene2.scene2Ref, scene5.scene5Ref, scene6.scene6Ref, scene7.scene7Ref], { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' })
+  gsap.set([scene1.scene1Ref, scene2.scene2Ref, scene5.scene5Ref, scene6.scene6Ref, scene7.scene7Ref, scene8.scene8Ref], { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' })
   gsap.set(scene2.scene2Ref, { autoAlpha: 0 })
   gsap.set(scene5.scene5Ref, { autoAlpha: 0 })
   gsap.set(scene6.scene6Ref, { autoAlpha: 0 })
+  gsap.set(scene8.scene8Ref, { autoAlpha: 0 })
   gsap.set(scene2.scene2ContentRef, { display: '' })
   gsap.set(scene1.titleImageRef, { x: '-120%', autoAlpha: 0 })
   gsap.set(scene1.subtitleWrapperRef, { y: 24, autoAlpha: 0 })
@@ -335,6 +378,7 @@ const setupInitialStates = () => {
   isSendActive.value = false
   hasSendTriggered.value = false
   scene2Loop.value = false
+  scene4BallPlaced.value = false
   gsap.set(getSendButtonEl(), { autoAlpha: 0, scale: 0.9 })
   gsap.set(scene2.scene2Ref.querySelector('.crisis-dialog__send-prompt'), { autoAlpha: 0 });
 }
@@ -394,9 +438,49 @@ const setupScrollAnimation = () => {
   const scene5 = scene5ComponentRef.value
   const scene6 = scene6ComponentRef.value
   const scene7 = scene7ComponentRef.value
-  if (!scene1 || !scene2 || !scene4 || !scene5 || !scene6 || !scene7) return
+  const scene8 = scene8ComponentRef.value
+  if (!scene1 || !scene2 || !scene4 || !scene5 || !scene6 || !scene7 || !scene8) return
 
-  mainTimeline = gsap.timeline({ scrollTrigger: { trigger: homepageRef.value, pin: true, scrub: 1, start: 'top top', end: '+=15000' } })
+  mainTimeline = gsap.timeline({ 
+    scrollTrigger: { 
+      trigger: homepageRef.value, 
+      pin: true, 
+      scrub: 1, 
+      start: 'top top', 
+      end: '+=15000',
+       // 在第三幕未完成或圆球未放置前，强制将滚动位置钳制在“scene5Start”标签之前
+       onUpdate: (self) => {
+        if (mainTimeline && (!scene3AnimationComplete.value || !scene4BallPlaced.value)) {
+          const labelTime = mainTimeline.labels?.scene5Start
+          if (typeof labelTime === 'number' && mainTimeline.duration()) {
+            const gatingProgress = labelTime / mainTimeline.duration()
+            if (self.progress > gatingProgress) {
+              const clampScroll = self.start + (self.end - self.start) * gatingProgress
+              self.scroll(clampScroll)
+            }
+          }
+        }
+        // 回退到scene2之前时，为scene4-left-box与lottie容器添加左滑退场
+        if (mainTimeline) {
+          const scene2EndTime = mainTimeline.labels?.scene2End
+          const total = mainTimeline.duration()
+          if (typeof scene2EndTime === 'number' && total) {
+            const scene2EndProgress = scene2EndTime / total
+            if (self.direction === -1 && self.progress < scene2EndProgress) {
+              const scene4 = scene4ComponentRef.value
+              if (scene4) {
+                gsap.to([
+                  scene4.scene4LeftBoxRef,
+                  scene4.dropTargetRef
+                ], { x: '-120%', autoAlpha: 0, duration: 0.45, ease: 'power2.in', overwrite: 'auto' })
+              }
+            }
+          }
+        }
+      }
+    } 
+  })
+  
   mainTimeline
     .to({}, { duration: 1.0 }) // Pause after title is shown
     .set(glitchOverlayRef.value, { className: 'glitch-overlay active' })
@@ -406,9 +490,15 @@ const setupScrollAnimation = () => {
     .to(scene2.scene2Ref, { autoAlpha: 1, duration: 0.1 }, '-=0.8')
     .addLabel('scene2End')
     .call(playScene2Sequence, [], '>')
-    .to({}, { duration: 10 }) // Duration for scene 2, 3, 4
+    // 预留第三幕播放的滚动段，但真实锁定由 ScrollTrigger.onUpdate 钳制实现
+    .to({}, { duration: 10 })
     .addLabel('scene5Start')
-    .to([scene4.scene4LeftBoxRef, scene4.glowingBallRef, scene4.scene4ContainerRef.querySelector('.drag-prompt')], { autoAlpha: 0, duration: 0.5 })
+    .to([
+      scene4.scene4LeftBoxRef,
+      scene4.dropTargetRef,
+      scene4.glowingBallRef,
+      scene4.scene4ContainerRef.querySelector('.drag-prompt')
+    ], { x: '-120%', autoAlpha: 0, duration: 0.6, ease: 'power2.in' })
     .to(homepageRef.value, { backgroundColor: '#1a2a45', duration: 1 }, '<')
     .to(scene5.scene5Ref, { autoAlpha: 1, duration: 1 }, '>-0.5')
     .from(scene5.columnWrapperRef.children, { autoAlpha: 0, x: 100, stagger: 0.2, duration: 0.8 }, '>-0.5')
@@ -420,7 +510,8 @@ const setupScrollAnimation = () => {
     .to({}, { duration: 5 }) // Duration for scene 5
     .addLabel('scene6Start')
     .to(scene5.scene5Ref, { x: '-100%', autoAlpha: 0, duration: 1 })
-    .to(scene4.dropTargetRef, { left: '1rem', right: 'auto', duration: 1 }, '<')
+    // 复位并显现 lottie 容器，避免之前的left-slide的 transform 残留导致不可见
+    .to(scene4.dropTargetRef, { x: 0, autoAlpha: 1, left: '1rem', right: 'auto', duration: 1, ease: 'power2.out' }, '<')
     .call(() => {
       scene4AnimationUrl.value = scene4Lotties.dog5;
       scene4Loop.value = true;
@@ -447,7 +538,29 @@ const setupScrollAnimation = () => {
       }
     }, '>')
     .to(scene7.textRef, { autoAlpha: 1, duration: 1 }, '>-0.5')
-    .to({}, { duration: 5 }) // Final pause
+    .to(scene4.dropTargetRef, { 
+      left: '2rem', 
+      bottom: '2rem', 
+      top: 'auto',
+      right: 'auto',
+      xPercent: 0, 
+      yPercent: 0, 
+      duration: 1.5, 
+      ease: 'power2.inOut'
+    }, '>-0.5')
+    .to({}, { duration: 2 }) // Duration for scene 7 with lottie in final position
+    .addLabel('scene8Start')
+    .to(scene7.textRef, { autoAlpha: 0, duration: 0.5 })
+    .to(scene8.scene8Ref, { autoAlpha: 1, duration: 1 }, '>-0.5')
+    .from(scene8.cardsWrapperRef.children, { 
+      autoAlpha: 0, 
+      y: 100, 
+      scale: 0.8,
+      stagger: 0.2, 
+      duration: 1, 
+      ease: 'back.out(1.7)' 
+    }, '>-0.5')
+    .to({}, { duration: 5 }) // Final pause for scene 8
 }
 
 onBeforeUnmount(() => {
