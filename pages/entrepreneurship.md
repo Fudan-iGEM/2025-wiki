@@ -331,8 +331,9 @@ By linking these five strategic pillars, we will build a complete marketing funn
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-marketing.webp)
 
 
-**Other marketing strategies**
-![other marketing strategies](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-mkt.webp)
+#### Other Strategies
+
+![other strategies](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-mkt.webp)
 
 
 
