@@ -11,6 +11,7 @@
         </div>
       </div>
     </div>
+    <div class="scroll-hint">Swipe right to see more →</div>
   </div>
 </template>
 
@@ -69,24 +70,24 @@ defineExpose({
 }
 
 .card {
-  flex: 0 0 clamp(320px, 90vw, 480px);
+  flex: 0 0 clamp(360px, 92vw, 560px);
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  padding: 1.5rem;
-  backdrop-filter: blur(10px);
+  gap: 1.75rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 26px;
+  padding: 1.75rem;
+  backdrop-filter: blur(10px) saturate(120%);
 }
 
 .card-lottie-wrapper {
-  flex: 0 0 120px;
-  width: 120px;
-  height: 120px;
+  flex: 0 0 140px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.22);
 }
 
 .card-text-content {
@@ -94,12 +95,33 @@ defineExpose({
 }
 
 .card-text-content h4 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin-bottom: 0.5rem;
 }
 
 .card-text-content p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.4rem 0.75rem;
   font-size: 0.95rem;
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  pointer-events: none; /* 不干扰其他元素交互 */
+  animation: hint-nudge 2.2s ease-in-out infinite;
+}
+
+@keyframes hint-nudge {
+  0%, 100% { transform: translateX(-50%); opacity: 0.9; }
+  50% { transform: translateX(calc(-50% + 6px)); opacity: 1; }
 }
 </style>

@@ -2,7 +2,12 @@
   <div ref="scene4ContainerRef" class="scene4-container">
     <!-- Text box positioned on the left -->
     <div class="scene4-left-box-wrapper">
-      <div ref="scene4LeftBoxRef" class="scene4-left-box"></div>
+      <div ref="scene4LeftBoxRef" class="scene4-left-box">
+        <h2 ref="scene4TitleRef" class="scene4-title"></h2>
+        <p ref="scene4SubtitleRef" class="scene4-subtitle">
+          DR. sTraTeGY——Drug Resistance mutation Tracking Technology based on Grape Yeast
+        </p>
+      </div>
     </div>
 
     <!-- Glowing ball starts at the top left, near the box -->
@@ -44,6 +49,8 @@ const glowingBallRef = ref(null);
 const dropTargetRef = ref(null);
 const lottie4Ref = ref(null);
 const lottieComponent = shallowRef(null);
+const scene4TitleRef = ref(null);
+const scene4SubtitleRef = ref(null);
 
 onMounted(async () => {
   const { Vue3Lottie } = await import('vue3-lottie');
@@ -56,6 +63,8 @@ defineExpose({
   glowingBallRef,
   dropTargetRef,
   lottie4Ref,
+  scene4TitleRef,
+  scene4SubtitleRef,
 });
 </script>
 
@@ -79,17 +88,37 @@ defineExpose({
 }
 
 .scene4-left-box {
-  width: clamp(320px, 35vw, 520px);
-  min-height: clamp(320px, 50vh, 450px);
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  border-radius: 20px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-  padding: clamp(1.75rem, 3.5vw, 2.75rem);
-  color: #f8f8f8;
-  font-size: clamp(1.1rem, 1.4vw, 1.45rem);
-  line-height: 1.5;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+  width: clamp(340px, 36vw, 560px);
+  min-height: clamp(320px, 50vh, 460px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%),
+    rgba(10, 12, 22, 0.45);
+  backdrop-filter: blur(8px) saturate(120%);
+  padding: clamp(1.75rem, 3.2vw, 2.5rem);
+  color: #eef2ff;
+  line-height: 1.6;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.scene4-title {
+  margin: 0 0 0.75rem 0;
+  font-size: clamp(1.35rem, 1.8vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.scene4-subtitle {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.65;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+  padding-top: 0.75rem;
+  opacity: 0; /* 初始隐藏，待动画显示 */
+  transform: translateY(8px);
 }
 
 .glowing-ball {
@@ -144,7 +173,7 @@ defineExpose({
     right: auto;
   }
   .scene4-left-box {
-    width: min(92vw, 420px);
+    width: min(92vw, 440px);
     min-height: auto;
     padding: 1.5rem;
   }

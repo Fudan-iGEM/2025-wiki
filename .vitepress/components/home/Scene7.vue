@@ -1,8 +1,8 @@
 <template>
   <div ref="scene7Ref" class="scene7-container">
     <div ref="textRef" class="end-text">
-      <h2>Thank You for Your Attention</h2>
-      <p>Our journey doesn't end here. Scroll down to explore the rest of our project.</p>
+      <h2>Let’s join DR. sTraTeGY</h2>
+      <p>in finding new strategies to wage the war against antimicrobial resistance.</p>
     </div>
   </div>
 </template>

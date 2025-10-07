@@ -104,17 +104,17 @@ const scene5Items = ref([
 ])
 
 const scene6Items = ref([
-    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Description', description: 'Our project aims to address the growing threat of antimicrobial resistance.' },
-    { id: 2, lottieUrl: scene6Lotties.item2, title: 'Design', description: 'We designed a novel genetic circuit in grape yeast for high-throughput screening.' },
-    { id: 3, lottieUrl: scene6Lotties.item3, title: 'Engineering', description: 'Successful engineering cycles led to a robust and reliable biosensor.' },
-    { id: 4, lottieUrl: scene6Lotties.item4, title: 'Results', description: 'Our platform demonstrates high sensitivity and specificity in detecting mutations.' },
+    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Rapid and Reduce-cost', description: 'DR.sTraTeGY provides a rapid, low-cost chassis system to validate mutations and drug effects, offering great potential to accelerate new drug discovery and screening.' },
+    { id: 2, lottieUrl: scene6Lotties.item2, title: 'Direct and demystify', description: 'Through programmable environments researchers can directly observe evolutionary divergences, deepening humanity’s understanding of the universal principles of life’s evolution.' },
+    { id: 3, lottieUrl: scene6Lotties.item3, title: 'Strategic and safeguarding', description: 'The application of DR.sTraTeGY implies that humanity can fortify defenses ahead of a full-scale outbreak of drug resistance, establishing a societal safeguard against superfungi.' },
+    { id: 4, lottieUrl: scene6Lotties.item4, title: 'Educational and enlightening', description: 'By making abstract genetic mutations and evolutionary processes “visual” through colors and different morphologies, it can advance public science education and foster social consensus.' },
 ]);
 
 const scene8Cards = ref([
-  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.svg', color: '#000000', link: '/pages/description', alt: 'Description' },
-  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.svg', color: '#4ECDC4', link: '/pages/design', alt: 'Design' },
-  { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.svg', color: '#FF6B35', link: '/pages/engineering', alt: 'Engineering' },
-  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.svg', color: '#1E3A8A', link: '/pages/results', alt: 'Results' }
+  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.svg', color: '#4ECDC4', link: '/design/', alt: 'Design', title: 'Design' },
+  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.svg', color: '#1E3A8A', link: '/parts/', alt: 'Parts', title: 'Parts' },
+  { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.svg', color: '#FF6B35', link: '/model/', alt: 'Model', title: 'Model' },
+  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.svg', color: '#000000', link: '/inclusivity/', alt: 'Inclusivity', title: 'Inclusivity' }
 ]);
 
 // --- Component & Template Refs ---
@@ -151,7 +151,6 @@ let scene2Timeline = null
 // --- Composables ---
 const { triggerDoctorReplies } = useScene3()
 
-// 监听场景4的动画URL，当切换为dog3（球已放置）即解锁滚动
 watch(scene4AnimationUrl, (url) => {
   if (url === scene4Lotties.dog3) {
     scene4BallPlaced.value = true
@@ -266,7 +265,13 @@ const setupScene4 = () => {
   const brighterBoxShadow = '0 0 50px 20px rgba(255, 180, 0, 0.75)'
 
   if (scene4.scene4LeftBoxRef) {
-    gsap.set(scene4.scene4LeftBoxRef, { text: '' })
+    // 清空标题内容并隐藏副标题，准备打字与显现动画
+    if (scene4.scene4TitleRef) {
+      gsap.set(scene4.scene4TitleRef, { text: '' })
+    }
+    if (scene4.scene4SubtitleRef) {
+      gsap.set(scene4.scene4SubtitleRef, { autoAlpha: 0, y: 8 })
+    }
   }
 
   // 动态把球定位到卡片左下角，稍微被卡片遮住但露出一点
@@ -315,7 +320,9 @@ const setupScene4 = () => {
         scene4Loop.value = true
         scene4Autoplay.value = true
 
-        gsap.to(scene4.scene4LeftBoxRef, { duration: 2, text: 'Protocol initiated. Dr. sTraTeGY is now active.', ease: 'none', delay: 0.5 })
+        // 左侧卡片：标题打字动画 + 副标题显现
+        gsap.to(scene4.scene4TitleRef, { duration: 2, text: 'And now we introduce-- DR. sTraTeGY!', ease: 'none', delay: 0.5 })
+        gsap.to(scene4.scene4SubtitleRef, { autoAlpha: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 2.7 })
       } else {
         gsap.to(this.target, {
           x: 0,
