@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/attribution.webp
-description: On this page, we concisely acknowledges all contributors and transparently display each individual's specific work on the project.
+description: On this page, we acknowledge all contributors to our project. THANK YOU!
 ---
 
 We gratefully acknowledge the generous support from the following companies.

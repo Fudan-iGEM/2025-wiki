@@ -1183,10 +1183,10 @@ We hope to inspire everyone to understand the face of synthetic biology through 
 
 
 
-[^1]: Muñoz-Losa, A., Corbacho-Cuello, I. Impact of Interactive Science Workshops Participation on Primary School Children's Emotions and Attitudes Towards Science. *Int J of Sci and Math Educ* (2025). https://doi.org/10.1007/s10763-024-10539-2
-[^2]: Master A, Cheryan S, Moscatelli A, Meltzoff AN. Programming experience promotes higher STEM motivation among first-grade girls. J Exp Child Psychol. 2017 Aug;160:92-106. doi: 10.1016/j.jecp.2017.03.013. Epub 2017 Apr 21. PMID: 28433822.
-[^3]: Gutiérrez Posada, J. (2017). Tangible and Shared Storytelling: Searching for the Social Dimension of Constructionism. https://doi.org/10.1145/3078072.3079743
-[^6]: Papavlasopoulou, S., Giannakos, M. N., & Jaccheri, L. (2019). Exploring children's learning experience in constructionism-based coding activities through design-based research. Computers in Human Behavior, 99, 415-427. https://doi.org/https://doi.org/10.1016/j.chb.2019.01.008
+[^1]: Muñoz-Losa, A., Corbacho-Cuello, I. Impact of Interactive Science Workshops Participation on Primary School Children's Emotions and Attitudes Towards Science. *Int J of Sci and Math Educ* (2025). DOI: 10.1007/s10763-024-10539-2
+[^2]: Master A, Cheryan S, Moscatelli A, Meltzoff AN. Programming experience promotes higher STEM motivation among first-grade girls. J Exp Child Psychol. 2017 Aug;160:92-106. DOI: 10.1016/j.jecp.2017.03.013. Epub 2017 Apr 21. PMID: 28433822.
+[^3]: Gutiérrez Posada, J. (2017). Tangible and Shared Storytelling: Searching for the Social Dimension of Constructionism. DOI: 10.1145/3078072.3079743
+[^6]: Papavlasopoulou, S., Giannakos, M. N., & Jaccheri, L. (2019). Exploring children's learning experience in constructionism-based coding activities through design-based research. Computers in Human Behavior, 99, 415-427. DOI: DOI: 10.1016/j.chb.2019.01.008
 [^7]: Downey, R. J., Youmans, K., Villanueva Alarcón, I., Nadelson, L., & Bouwma-Gearhart, J. (2022). Building Knowledge Structures in Context: An Exploration of How Constructionism Principles Influence Engineering Student Learning Experiences in Academic Making Spaces Education Sciences (12, pp.).
-[^8]: Ma, G., & Wu, Q. (2019). Social capital and educational inequality of migrant children in contemporary China: A multilevel mediation analysis. Children and Youth Services Review, 99, 165-171. https://doi.org/https://doi.org/10.1016/j.childyouth.2019.02.002
+[^8]: Ma, G., & Wu, Q. (2019). Social capital and educational inequality of migrant children in contemporary China: A multilevel mediation analysis. Children and Youth Services Review, 99, 165-171. DOI: DOI: 10.1016/j.childyouth.2019.02.002
 

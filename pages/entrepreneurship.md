@@ -393,7 +393,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 
 
-#### Impact Assessment 
+#### Impact Assessment
 
 **Scientific Impact**
 
@@ -461,7 +461,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
  **Return for Investors**
 
-- If exit in Year 4-5 at multiple revenues, investors in early rounds could see a 5-10× return, depending on dilution, growth.
+- If exit in Year 4-5 at multiple revenues, investors in early rounds could see a 5-10x return, depending on dilution, growth.
 
   
 

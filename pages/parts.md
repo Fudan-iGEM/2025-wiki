@@ -42,7 +42,7 @@ t0terminator_R  5-ttcagaacgctcggttgcc-3</pre>
 
 We gratefully acknowledge the following companies for synthesizing double-strand DNA fragments used in our project: [Tsingke](https://www.tsingke.com/), [GenScript](https://www.genscript.com/), [Twist Bioscience](https://www.twistbioscience.com/), and [Integrated DNA Technologies](https://www.idtdna.com/). All of our [Golden Gate](/experiments.html#golden-gate-assembly) assembled plasmids, were verified by restriction enzyme digestion ([NotI](https://www.neb.com/en/products/r3189-noti-hf) or [HindIII](https://www.neb.com/en/products/r3104-hindiii-hf)) and whole-plasmid sequencing.
 
-Our favourite part is BBa_25FQWVZE which belongs to the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) collection.
+Our favourite part is BBa_255T0PHY which belongs to the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) collection.
 
 Please visit our [Improve](/improve/) page for parts we improved this year.
 

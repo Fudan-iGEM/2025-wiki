@@ -231,15 +231,15 @@ We selected sixteen chromosomal integration sites (one per chromosome), includin
 
 The Yeast Toolkit (YTK) and MoClo systems facilitate the construction of transcriptional units (TUs) by using standardized Level 1 assembly methods, such as the 234r GFP dropout cassette (插入YTK047的BBa号) designed to accept  Type 2 (Promoter), Type 3 (CDS), and Type 4 (Terminator) parts. However, efficiently swapping or integrating different homologous arms (HAs) into the final assembled plasmid presents a separate challenge. 
 
-##### Homology Arm Entry Vector 
+##### Homology Arm Entry Vector
 
-To address this, we designed a dedicated Homology Arm Entry Vector (pHA-Entry应该可以写一个part？) based on pMTK078 (Shaw et al., 2023差引用) and inspired by Sorida et al. (2023差引用). Our design incorporates two distinct cloning strategies: 1) we introduced two Type IIP restriction enzymes sites, XhoI and XbaI, at the 5' end of the original 5' HA and the 3' end of the original 3' HA respectively, under whose digestion the whole 5'HA-Inserted Fragment-3'HA will be released; 2) at the other end of 5'/3' HA, BsmBI sites are designed to release original 5'/3' HA and generate 4-nt flanks. All the flanks produced in this section do not overlap with any standard ends in YTK or the Multiplex Yeast Toolkit (MYT), so they will not conflict with other assembly and therefore ensured specific and correct ligation.
+To address this, we designed a dedicated Homology Arm Entry Vector (pHA-Entry应该可以写一个part？) based on pMTK078 (Shaw et al., 2023差引用) and inspired by Sorida et al. (2023差引用). Our design incorporates two distinct cloning strategies: 1) we introduced two Type IIP restriction enzymes sites, XhoI and XbaI, at the 5' end of the original 5' HA and the 3' end of the original 3' HA respectively, under whose digestion the whole 5'HA-Inserted Fragment-3'HA will be released; 2) at the other end of 5'/3' HA, [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) sites are designed to release original 5'/3' HA and generate 4-nt flanks. All the flanks produced in this section do not overlap with any standard ends in YTK or the Multiplex Yeast Toolkit (MYT), so they will not conflict with other assembly and therefore ensured specific and correct ligation.
 
 ##### Standard preexisting 5'/3' Homology Arms
 
-To replace the original HA and to enable BsmBI assembly into the entry vector, primers for amplifying preexisting HA should be designed as illustrated in Fig.序号 . Please note that the 4-nt at the end of primers should not be omitted, for they are essential for effective enzyme cleaving.
+To replace the original HA and to enable [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) assembly into the entry vector, primers for amplifying preexisting HA should be designed as illustrated in Fig.序号 . Please note that the 4-nt at the end of primers should not be omitted, for they are essential for effective enzyme cleaving.
 
-For 3'HA, we specially introduced two reversed BbsI site, which can adapt to the MYT system in Shaw et al. (2023) （插入引用）for introducing selective marker. In addition, though not used in our project, we leave a PstI site, a design used in Shaw  et al. (2023)  for transposition of gRNA arrays, which could be utilized if further researchers require.
+For 3'HA, we specially introduced two reversed [BbsI](https://www.thermofisher.com/order/catalog/product/FD1014) site, which can adapt to the MYT system in Shaw et al. (2023) （插入引用）for introducing selective marker. In addition, though not used in our project, we leave a PstI site, a design used in Shaw  et al. (2023)  for transposition of gRNA arrays, which could be utilized if further researchers require.
 
 ![image-20251006220348644](C:\Users\12047\AppData\Roaming\Typora\typora-user-images\image-20251006220348644.png)
 
@@ -339,4 +339,4 @@ Throughout this project, we fully embraced the "dry lab guiding wet lab" approac
 
 [^24]: Ratcliff, W. C., Denison, R. F., Borrello, M., & Travisano, M. (2012). Experimental evolution of multicellularity. Proceedings of the National Academy of Sciences of the United States of America, 109(5), 1595–1600. DOI: 10.1073/pnas.1115323109
 
-[^25]: Ramos-Alonso, L., Garcia, I., Enserink, J. M., & Chymkowitch, P. (2022). Analysis of the pheromone signaling pathway by RT-qPCR in the budding yeast Saccharomyces cerevisiae. STAR protocols, 3(1), 101210. https://doi.org/10.1016/j.xpro.2022.101210
+[^25]: Ramos-Alonso, L., Garcia, I., Enserink, J. M., & Chymkowitch, P. (2022). Analysis of the pheromone signaling pathway by RT-qPCR in the budding yeast Saccharomyces cerevisiae. STAR protocols, 3(1), 101210. DOI: 10.1016/j.xpro.2022.101210

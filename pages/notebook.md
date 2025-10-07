@@ -123,7 +123,7 @@ We also jointly produced the children's [picture book "My Microbe Friends"](/edu
 
 ## [July](/notebook/#july)
 
-On July 7th, we named our multicellular yeast "Grape Yeast" based on its morphological characteristics and officially designated the project as "DR. sTraTeGY". During the summer vacation, we conducted a series of wet lab experiments including yeast subculturing, competent cell preparation, plasmid extraction, and NotI enzyme digestion.
+On July 7th, we named our multicellular yeast "Grape Yeast" based on its morphological characteristics and officially designated the project as "DR. sTraTeGY". During the summer vacation, we conducted a series of wet lab experiments including yeast subculturing, competent cell preparation, plasmid extraction, and [NotI](https://www.neb.com/en/products/r3189-noti-hf) enzyme digestion.
 
 Furthermore, we collaborated with USTC, Nanjing-China, SJTU-BioX-Shanghai, and ZJU-China to organize educational initiatives, producing instructional videos on microbial painting. Throughout mid-to-late July, we conducted multiple [microbial science outreach activities](/education.html#interactive-science-workshop) in various communities, successfully inspiring children's interest in scientific exploration.
 
