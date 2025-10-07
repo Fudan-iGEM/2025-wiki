@@ -397,10 +397,9 @@ const handleLottieComplete = () => {
 
   const titleTimeline = gsap.timeline({
     onComplete: () => {
-      if (!ScrollTrigger.isTouch) {
-        setupScrollAnimation()
-        document.body.style.overflow = ''
-      }
+      // 移除触摸设备检测，确保所有设备都能启用滚动动画
+      setupScrollAnimation()
+      document.body.style.overflow = ''
     }
   })
   titleTimeline
