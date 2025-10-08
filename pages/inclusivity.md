@@ -44,16 +44,16 @@ Not just “How can we help marginalized groups in science” but “How can par
 ### Our highlights ✨ 
 
 **1.   What systemic barriers did we identify?**
-We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face [three intertwined barriers](#### Three layers of structural barriers in science): they are unseen, voiceless, and excluded from participation. We have discovered the potential for their [intersectional](### 1.2 Improving our Theoretical Framework: Intersectionality) identities to engage in scientific affairs.
+We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face [three intertwined barriers](/inclusivity/#### Three layers of structural barriers in science): they are unseen, voiceless, and excluded from participation. We have discovered the potential for their [intersectional](/inclusivity/### 1.2 Improving our Theoretical Framework: Intersectionality) identities to engage in scientific affairs.
 
 **2.   How did we expand participation in science?**
-We co-created inclusive formats with EB patients, including [sensory-friendly surveys](## 2. Empowerment: Mapping the Unspoken Truths.), [Photovoice storytelling](### 3.1 Facilitating Dialogue: PhotoVoice), and [immersive exhibitions](### 3.2 Co-Creation in Action: The Art Experience Exhibition). These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
+We co-created inclusive formats with EB patients, including [sensory-friendly surveys](/inclusivity/## 2. Empowerment: Mapping the Unspoken Truths.), [Photovoice storytelling](/inclusivity/### 3.1 Facilitating Dialogue: PhotoVoice), and [immersive exhibitions](/inclusivity/### 3.2 Co-Creation in Action: The Art Experience Exhibition). These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
 
 **3.   How do we ensure dialogue and mutual learning?**
-Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped [improve the laboratory environment](## 4. Building an inclusive scientific community: Learn from the margins.)—benefiting other neurodiverse researchers as well.
+Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped [improve the laboratory environment](/inclusivity/## 4. Building an inclusive scientific community: Learn from the margins.)—benefiting other neurodiverse researchers as well.
 
 **4.   What replicable outcomes have emerged?**
-We developed a series of transferable tools and methods: [a sensory-friendly research toolkit](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf), [a post-event feedback and evaluation model](#### Establishing Feedback Mechanisms {#establishing-feedback-mechanisms}), [a collection of science posters](#### **Details**), and the assistive software “[ProtocolFlow](https://gitlab.igem.org/larryivanhan/protocolflow).” These resources can be readily adapted by other teams.
+We developed a series of transferable tools and methods: [a sensory-friendly research toolkit](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf), [a post-event feedback and evaluation model](/inclusivity/#### Establishing Feedback Mechanisms), [a collection of science posters](/inclusivity/#### **Details**), and the assistive software “[ProtocolFlow](https://gitlab.igem.org/larryivanhan/protocolflow).” These resources can be readily adapted by other teams.
 
 
 
