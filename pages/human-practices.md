@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Yixuan
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+heroImage: https://static.igem.wiki/teams/5643/header/hp.webp
 description: On this page, we document how we improve our project through discussions with experts in their fields.
 ---
 
@@ -441,10 +441,5 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 
 
 
-
-
-
-
 > “Concern for man himself and his fate must always form the chief interest of all technical endeavors… in order that the creations of our mind shall be a blessing and not a curse to mankind.”
 > ——Albert Einstein
-
