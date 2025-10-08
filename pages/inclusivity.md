@@ -11,7 +11,6 @@ layout: igem
 heroImage: https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-2.webp
 description: Through intersectional practices, we build an inclusive scientific community, bringing groups underrepresented in science like those with rare disease Epidermolysis Bullosa (EB patients) into science.
 ---
-
 ## Summary： Intersectional Echoes
 
 <div style="
@@ -87,7 +86,7 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
 
 Our social structure exhibits a profound similarity to the "multicellular yeast" model: the group relies on diverse individuals, and individuals, in turn, benefit from the group. However, while integrating into the collective, individuals also experience additional pressures that isolated individuals do not face. The inclusive initiatives we promote aim precisely to resolve this kind of structural pressure—precisely for this reason, our social advocacy and experimental research are fundamentally interconnected.
 
-On the other hand, starting from the clinical connection between fungal infections and skin health, we have directed our attention to the community of patients with Epidermolysis Bullosa (EB). They not only endure a lifetime of suffering and the reality of no curative treatment but also face multidimensional barriers when participating in scientific research due to dual physical-psychological burdens and economic pressures. As a result, they fall into a state of "scientific voicelessness" within the scientific system—being overlooked, struggling to be heard, and facing exclusion.
+On the other hand, starting from the clinical connection between fungal infections and skin health, we have directed our attention to the community of patients with **Epidermolysis Bullosa (EB)**. They not only endure a lifetime of suffering and the reality of no curative treatment but also face multidimensional barriers when participating in scientific research due to dual physical-psychological burdens and economic pressures. As a result, they fall into a state of "scientific voicelessness" within the scientific system—being overlooked, struggling to be heard, and facing exclusion.
 
 Therefore, we propose the establishment of an interdisciplinary and inclusive scientific community methodology, aimed at breaking down the structural barriers to scientific participation. This approach seeks to systematically empower marginalized groups, enabling their experiences and voices to genuinely influence the agenda and direction of scientific research through effective expression and action.
 
@@ -237,7 +236,9 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
 In our pop-up，we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
 
 Furthermore, to deepen public understanding of the daily realities for rare disease patients, we designed price comparison cards. For example, one card highlighted that while a postcard print of a patient's artwork was priced at just 3 RMB, a single daily medical dressing they required cost 100 RMB. This stark contrast help the participants to grasp the profound financial challenges faced by EB patients.
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-tag.webp" alt="inclusivity5" style="zoom:90%;" />
+
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-tag.webp" alt="inclusivity1-1" style="zoom:90%;" />
+
 
 
 ### 1.2 Improving our Theoretical Framework: Intersectionality
@@ -310,7 +311,7 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 
 #### Motivation:  **Breaking the binary divide between "healthy" and "ill"**
 
-Building on insights from our first activity, we aimed to invite individuals who share similar lived circumstances with EB patients at certain moments, in order to reduce the inequitable pressure produced by the binary divide between “healthy” and “ill.” Starting from our project’s focus on fungal issues and based on literature review[^6], we delineated a broad group of **“fungus-susceptible individuals.”**
+Building on insights from [our first activity](https://2025.igem.wiki/fudan/inclusivity.html#_1-1-art-pop-up-and-co-creation-charity-with-eb-patients), we aimed to invite individuals who share similar lived circumstances with EB patients at certain moments, in order to reduce the inequitable pressure produced by the binary divide between “healthy” and “ill.” Starting from our project’s focus on fungal issues and based on literature review[^6], we delineated a broad group of **“fungus-susceptible individuals.”**
 
 | **Category** | **Main populations** | **Common fungal problems** |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -579,7 +580,7 @@ Most importantly, participants transformed from *“respondents”* into *“co-
 
 The *“Fingertip Warmth · Science in Healing Together”* art co-creation exhibition was not an isolated attempt, but rather an iteration and elevation of our previous cycle of **Visibility – Expression – Co-Creation**.
 
-In the first *visibility-focused* charity sale, by inviting patients to appear as “artists,” we discovered their **intersectional identities** beyond illness. After subsequent research and dialogue activities that promoted expression, we reflected on the shortcomings of our first visibility event. We realized the need to **increase the leadership of EB patients in activities**, transforming their stories into tangible, publicly impactful expressions.
+In the [Art Pop-up and Co-creation Charity with EB Patients](https://2025.igem.wiki/fudan/inclusivity.html#_1-1-art-pop-up-and-co-creation-charity-with-eb-patients), by inviting patients to appear as “artists,” we discovered their **intersectional identities** beyond illness. After subsequent research and dialogue activities that promoted expression, we reflected on the shortcomings of our first visibility event. We realized the need to **increase the leadership of EB patients in activities**, transforming their stories into tangible, publicly impactful expressions.
 
 ---
 
@@ -603,9 +604,11 @@ This space showcased the **self-initiated expressions** of the patient community
 
 After having experienced the difficulties of EB patients firsthand, visitors could approach these works with deeper resonance. Participants were invited to write messages on sticky notes and place them beneath the respective artworks. Later, these notes were mailed back to the corresponding EB patients, establishing a **reciprocal dialogue** between creator and audience.
 
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-art.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
+
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-art.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
+
 ---
 
 #### Conclusion
@@ -764,7 +767,7 @@ From May to September, we have continued our science communication efforts on me
 ---
 ## Conclusion: Forming a replicable, scalable, self-evolving cycle.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/cycle.webp" alt="inclusivity5" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/cycle.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
 Based on systematic literature review and preliminary field research, we have not only diagnosed three key structural barriers but also designed targeted solutions:
 
@@ -777,7 +780,7 @@ Based on systematic literature review and preliminary field research, we have no
 
 In today’s increasingly segmented society, people are routinely categorized as “children,” “elders,” “healthy individuals,” or “disabled populations.” Such labels—though administratively convenient—make cross-group understanding more difficult. Public speech and participation in science often remain reserved for the so-called “healthy,” pushing others further to the margins.
 
-Our **Visibility–Empowerment–Involvement cycle** seeks to challenge this divide. Instead of reducing people to abstract categories, we restore the **fullness of each participant’s multi-identity**—as a researcher, a patient, an artist, a parent, or more.
+Our [**Visibility–Empowerment–Involvement cycle**](https://2025.igem.wiki/fudan/inclusivity.html#_0-2-the-three-step-model-visibility-→-empowerment-→-involvement) seeks to challenge this divide. Instead of reducing people to abstract categories, we restore the **fullness of each participant’s multi-identity**—as a researcher, a patient, an artist, a parent, or more.
 
 A truly inclusive scientific community should not present people as fixed, single-identity figures. Rather, it must embrace individuals’ complexity and plurality, transforming them into genuine agents of change. Such a community becomes a **catalyst for dialogue, mutual understanding, and systemic transformation**.
 
