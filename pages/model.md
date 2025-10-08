@@ -576,13 +576,13 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 - **Test (2025.07):**
   Simulation results revealed discrepancies with expected cellular behaviors. The in vitro-based maturation kinetics caused the fluorescent proteins to mature from blue to red far too rapidly. This led to a premature saturation of the red signal, where the r(t) ratio approached its maximum too quickly within a single cell cycle, influencing the time gradient needed for resolution. Consequently, over just one or two generations, all cells accumulated a similarly high red signal, making it impossible to distinguish young daughter cells from old mother cells and causing the timer to lose its core function.
 - **Learn (2025.07):**
-  We identified that in vitro data did not account for cellular factors like translation delays, chaperone interactions, and metabolic context. This highlighted the need for intracellular-specific parameters and better alignment with yeast physiology. Additionally, the promoter expression timing and protein inheritance logic required biological validation from our [wet-lab experiments](#).
+  We identified that in vitro data did not account for cellular factors like translation delays, chaperone interactions, and metabolic context. This highlighted the need for intracellular-specific parameters and better alignment with yeast physiology. Additionally, the promoter expression timing and protein inheritance logic required biological validation from our [wet-lab experiments](/experiments/).
 
 ### DBTL Round 2
 
 #### Integration of Wet-Lab Data and Model Validation
 
-Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiment](#).
+Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiment](/results/).
 
 - **Design (2025.07-08):**
 
@@ -593,21 +593,21 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
   - AI-Assisted Reasoning: We prompted two large language models ([DeepSeek](https://huggingface.co/deepseek-ai) and [Qwen](https://huggingface.co/Qwen)) with the core design problem—optimizing a fluorescent timer for yeast lineage tracking—guiding them with biological first principles but without providing our model's interim results. This served as an independent validation of our design logic.
 
 - **Build (2025.08):**
-  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab yeast experiments](#). This included:
+  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab yeast experiments](/result/). This included:
 
   - Using temperature-dependent maturation kinetics derived from [Q₁₀](#fast-ft-time-parameter-calculation) calculations to adjust Fast-FT[^1] times for 30°C.
   - Adjusting the Ash1_AIpro[^7] promoter to express during the late M phase in our model to match biological evidence.
   - Revising protein inheritance logic to allow immature C-state proteins to be almost fully transferred to daughter cells, and mature in the daughter cells produced after a cell division[^8][^13].
   
 - **Test (2025.08–09):**
-  The predictions of the refined model were subsequently tested through [wet-lab experiments](#). The results confirmed the computational forecasts:
+  The predictions of the refined model were subsequently tested through [wet-lab experiments](/experiments/). The results confirmed the computational forecasts:
 
   - The experimentally observed blue-to-red transition timeline closely matched the model's prediction, providing a clear r(t) gradient.
   - The chosen pulse width and promoter strength yielded a strong and distinguishable signal, enabling precise lineage tracking over multiple generations.
   - The corrected inheritance logic was validated, as daughter cells showed the expected timing signal that was distinct from the mother cell's baseline.
 
 - **Learn (2025.10):**
-  The convergence between our [AI-augmented model predictions](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) and the [experimental outcomes](#) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
+  The convergence between our [AI-augmented model predictions](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) and the [experimental outcomes](/results/) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
 
 ## How to Use our Model?
 
