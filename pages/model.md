@@ -415,7 +415,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 
 ##### $r'$ (Baseline Subtracted) Lineage Heatmap Comparison
 
-- **Observation:** After baseline subtraction, all three heatmaps show the "pure contemporary increment." The color scale upper limit reflects the dynamic range:
+- **Observation:** After baseline subtraction, all three heatmaps show the "pure contemporary increment". The color scale upper limit reflects the dynamic range:
   
   - **$\tau = 15$**: The upper limit is $\approx 0.09$ with the steepest gradient across generations.
   
@@ -595,7 +595,7 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 
 #### Integration of Wet-Lab Data and Model Validation
 
-Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiment](/results/).
+Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights-—-a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiment](/results/).
 
 - **Design (2025.07-08):**
 
