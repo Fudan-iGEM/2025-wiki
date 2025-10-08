@@ -369,7 +369,8 @@ const handleTitleAnimationComplete = () => {
 @media (max-width: 768px) {
   .hero-title-container {
     padding: 0 1.5rem;
-    transform: translateY(-30%); /* 减少向上偏移 */
+    transform: none;
+    margin-bottom: 1.5rem;
   }
 
   .hero-title-container::after {
@@ -378,6 +379,7 @@ const handleTitleAnimationComplete = () => {
 
   .hero-bottom-content {
     padding: 0rem 1.5rem 2rem;
+    margin-top: 0;
   }
 
   .hero-description {
@@ -389,8 +391,7 @@ const handleTitleAnimationComplete = () => {
 @media (max-width: 480px) {
   .hero-title-container {
     padding: 0 1rem;
-    transform: translateY(-20%); /* 进一步减少偏移 */
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 
   .hero-title-container::after {
@@ -401,7 +402,6 @@ const handleTitleAnimationComplete = () => {
 
   .hero-bottom-content {
     padding: 0rem 1rem 1.5rem;
-    margin-top: -0.5rem;
   }
 
   .hero-description {
@@ -423,7 +423,6 @@ const handleTitleAnimationComplete = () => {
 @media (max-width: 360px) {
   .hero-title-container {
     padding: 0 0.75rem;
-    transform: translateY(-15%); /* 最小屏幕最少偏移 */
   }
 
   .hero-title-container::after {

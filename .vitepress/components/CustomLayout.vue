@@ -841,21 +841,23 @@ function handleResize() {
   }
 
   .hero-container {
-    height: 80vh; /* 移动端减少高度 */
-    min-height: 500px;
+    height: auto;
+    min-height: unset;
+    margin-bottom: 1.5rem;
+    overflow: visible;
   }
 
   .hero-image-section {
-    height: 40vh; /* 移动端减少图片高度 */
-    min-height: 280px;
+    height: auto;
+    min-height: 300px;
   }
 
   .hero-content-section {
-    padding-top: 2.5rem;
+    padding: 2rem 1.5rem 2.5rem;
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -60px;
+    margin-top: 0;
   }
 
   .toc-title {
@@ -913,21 +915,15 @@ function handleResize() {
   }
 
   .hero-container {
-    height: 70vh; /* 小屏幕进一步减少 */
-    min-height: 450px;
+    margin-bottom: 1.25rem;
   }
 
   .hero-image-section {
-    height: 35vh;
-    min-height: 200px;
+    min-height: 260px;
   }
 
   .hero-content-section {
-    padding-top: 1.5rem;
-  }
-
-  .hero-container > :deep(.title-info) {
-    margin-top: -40px;
+    padding: 1.5rem 1rem 2rem;
   }
 
   .aside {
@@ -967,31 +963,25 @@ function handleResize() {
     font-size: 0.85rem;
   }
 
-  .hero-container {
-    height: 65vh; /* 最小屏幕 */
-    min-height: 420px;
-  }
-
   .hero-image-section {
-    height: 30vh;
-    min-height: 180px;
+    min-height: 240px;
   }
 
   .hero-container > :deep(.title-info) {
-    margin-top: -30px;
+    margin-top: 0;
   }
 }
 
 /* 横屏模式优化 */
 @media (max-width: 896px) and (orientation: landscape) {
   .hero-container {
-    height: 100vh;
-    min-height: 400px;
+    height: auto;
+    min-height: unset;
   }
 
   .hero-image-section {
-    height: 50vh;
-    min-height: 200px;
+    height: auto;
+    min-height: 240px;
   }
 
   .aside {

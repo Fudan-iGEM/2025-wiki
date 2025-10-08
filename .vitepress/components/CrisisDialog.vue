@@ -120,7 +120,7 @@ const handleSendClick = () => {
   transform: translateY(20px);
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-family: 'Outfit', sans-serif;
 }
 
@@ -145,7 +145,7 @@ const handleSendClick = () => {
 
 .crisis-dialog__send-prompt {
   color: #f0f0f0;
-  font-size: 0.98rem;
+  font-size: 0.8rem;
   font-weight: 500;
   opacity: 0;
   transform: translateY(10px);
