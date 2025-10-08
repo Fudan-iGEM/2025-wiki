@@ -156,7 +156,7 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Process</strong></div>
+    <div class="section-title"><strong>Process:</strong></div>
     <p>
       1) Art charity sale: Position patients as artists rather than merely patients, thereby discovering their intersectional identities.<br>
       2) Problem identification: Focusing on a single group easily creates a sense of difference. Therefore, the aim is to design intersectional activities that reduce pressure and foster multidirectional dialogues.<br>
@@ -165,17 +165,17 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Theoretical contribution</strong></div>
+    <div class="section-title"><strong>Theoretical contribution:</strong></div>
     <p>Propose a framework grounded in the principle of intersectionality.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Significance</strong></div>
+    <div class="section-title"><strong>Significance:</strong></div>
     <p>To break the isolation of labeling and to seek modes of expression for rare disease patients within the shared identity of being "those troubled by fungal infections".</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Outcome</strong></div>
+    <div class="section-title"><strong>Outcomes:</strong></div>
     <p>A Public Science Art Pop-up with a Co-creation Charity Sale.</p>
   </div>
 </div>
@@ -220,7 +220,7 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-eb7.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">
 </div>
 
-- **Price Contrast Cards**
+- **Price Contrast Cards and Backstories behind handicrafts**
 
   To strengthen public empathy for rare disease patients, we designed *price contrast cards*. For instance, a patient’s drawing printed as a postcard was priced at 3 RMB, whereas one piece of medical dressing they needed daily costs 100 RMB. This design choice resonated with participants, helping them grasp the economic challenges faced by rare disease patients and prompting reflection on how even small gestures of kindness can accumulate into real hope.
   
@@ -263,11 +263,11 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Objective</strong></div>
+    <div class="section-title"><strong>Objective:</strong></div>
     <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
   </div>
   <div class="section">
-    <div class="section-title"><strong>Process</strong></div>
+    <div class="section-title"><strong>Process:</strong></div>
     <p>
       1)  Through classification and data visualization, demonstrate the intersectionality of EB patients with other groups (e.g., diabetic foot patients, pregnant women, athletes) regarding fungal issues.<br>
       2)  Develop a Participatory Mapping Toolkit to guide them in describing care-seeking pathways, pain points, and medication-related challenges.<br>
@@ -279,12 +279,12 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 
 
   <div class="section">
-    <div class="section-title"><strong>Significance</strong></div>
+    <div class="section-title"><strong>Significance:</strong></div>
     <p>Create channels that translate the unique experiences of scientifically marginalized groups, uncover authentic needs, and provide a foundation for designing subsequent activities.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Outcome</strong></div>
+    <div class="section-title"><strong>Outcomes:</strong></div>
     <p>Participatory Mapping Toolkit</p>
   </div>
 </div>
@@ -325,7 +325,7 @@ Through broad recruitment, we identified **10 individuals in Shanghai** who had 
 
 - those living or working in humid environments.
 
-  
+---  
 
 #### Preliminary discovery
 
@@ -351,6 +351,7 @@ Therefore, our goal is to **empower fungus-susceptible individuals** to articula
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity2map2.webp" alt="inclusivity2map2" style="zoom:33%;" />
 
+---
 #### Sensory-friendly research design
 
 Through literature review and our previous questionnaire activities, we identified limitations in conventional healthcare surveys that rely predominantly on quantitative methods[^7]. For instance, several participants who reported in the quantitative questionnaire that "they had not been treated unfairly due to fungal issues" voiced related concerns while sharing their doodles. Participants expressed feeling pressured when conveying negative feedback in standard surveys. 
@@ -424,12 +425,12 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Objective</strong></div>
+    <div class="section-title"><strong>Objective:</strong></div>
     <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Process</strong></div>
+    <div class="section-title"><strong>Process:</strong></div>
     <p>
       1) PhotoVoice: Enable patients to narrate their everyday lives through images, while inviting researchers, doctors, and the public to engage in dialogue about improving medical experiences identified in the previous section.<br>
       2) Co-Creation Art Exhibition: Simulate laboratory settings (e.g., operational difficulties, sensory barriers) to allow the public to experience the challenges of EB patients, while listening directly to their narratives in the exhibition.<br>
@@ -438,12 +439,12 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Significance</strong></div>
+    <div class="section-title"><strong>Significance:</strong></div>
     <p>Marginalized groups shift from being mere "subjects of research" to "voices in dialogue," fostering mutual understanding and cross-building of scientific issues with society.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Outcomes</strong></div>
+    <div class="section-title"><strong>Outcomes:</strong></div>
     <p>
       - Improved Feedback Model<br>
       - Toolkit: Ten Questions for Post-Activity Reflection
@@ -614,12 +615,12 @@ Future inclusive practices should focus more on creating **“points of identity
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Objective</strong></div>
+    <div class="section-title"><strong>Objective:</strong></div>
     <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Action</strong></div>
+    <div class="section-title"><strong>Action:</strong></div>
     <p>
       - Develop laboratory-assistive software<br>
       - Conduct reflection and long-term planning<br>
@@ -627,15 +628,15 @@ Future inclusive practices should focus more on creating **“points of identity
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Significance</strong></div>
-    <p>Summarize a transferable methodology: <strong>building inclusive scientific communities through the lens of intersectionality.</strong></p>
+    <div class="section-title"><strong>Significance:</strong></div>
+    <p>Summarize a transferable methodology: building inclusive scientific communities through the lens of intersectionality.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><strong>Outcome</strong></div>
+    <div class="section-title"><strong>Outcomes:</strong></div>
     <p>
-      - Laboratory-assistive software — ProtocolFlow<br>
-      - Weekly mental health check-in posters for laboratories
+      1) Laboratory-assistive software — ProtocolFlow<br>
+      2) Promotional Campaigns with Weekly mental health checklist and guidance poster for laboratories
     </p>
   </div>
 </div>
