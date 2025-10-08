@@ -20,7 +20,7 @@ import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualiz
 
 On this page, we introduce DR. sTraTeGY, a Drug Resistance mutation Tracking Technology based on Grape Yeast. Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
 
-- The Problem: The rapid rise of drug-resistant pathogens poses a serious threat to global health.
+- The Problem: Antifungal resistance poses a serious threat to global health.
 - Our Solution: DR. sTraTeGY, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
 - Key Innovations: The platform consists of a "Grape Yeast" chassis, the "Timer &amp; Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
 
@@ -50,9 +50,9 @@ To address this challenge, we developed DR. sTraTeGY, an innovative platform bui
 
 To study fungal evolution, we focused on *Saccharomyces cerevisiae*, a classic model organism for eukaryotes and a widely used chassis in synthetic biology. It offers significant advantages, including a fully sequenced genome, mature genetic tools[^2], and a non-pathogenic nature with conserved resistance mechanisms[^3].  However, traditional methods that based on unicellular yeast like bulk sequencing provide only a static endpoint snapshot of evolving populations, making it challenging to capture low-frequency mutations or the real-time emergence of complex traits[^4].
 
-To overcome this, we designed the Grape Yeast—a new modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates DR. sTraTeGY from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex traits would mask in a conventional bulk culture.
+To overcome this, we designed the Grape Yeast—a new modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates DR. sTraTeGY from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex evolution trajectories would mask in a conventional bulk culture.
 
-We engineered this chassis through a simple four-module approach that allows us to achieve key functions: multicellularity development, external signal response, cluster size control, and individual diversity control.  In essence, these designs provide synthetic biology with a new chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient, controllable, and scalable engineered biological system. It functions more like an organized multicellular body—with spatial structure and division of labor among cells—similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a production platform but also as a foundational model for exploring multicellular engineering.
+We engineered this chassis through a simple four-module approach that allows us to achieve key functions: multicellularity development, external signal response, cluster size control, and individual diversity control. In essence, these designs provide synthetic biology with a new chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient, controllable, and scalable engineered biological system. It functions more like an organized multicellular body—with spatial structure and division of labor among cells—similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a production platform but also as a foundational model for exploring multicellular engineering.
 
 <div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/figure2-grapeyeast.webp" style="width:80%">
@@ -69,11 +69,11 @@ We engineered this chassis through a simple four-module approach that allows us 
 
 #### Inspiration and Mechanistic Basis
 
-The earliest description of multicellularity in yeast was reported by Ratcliff et al.[^24], which served as the primary inspiration for our project. In that seminal study, Saccharomyces cerevisiae (strain Y55) was subjected to gravity-based selection, favoring cells with a rapid sedimentation phenotype. Multicellular aggregates were observed after just 60 transfers.
+The earliest description of multicellularity in yeast was reported by Ratcliff et al.[^24], which served as the primary inspiration for our project. In that seminal study, *Saccharomyces cerevisiae* (strain Y55) was subjected to gravity-based selection, favoring cells with a rapid sedimentation phenotype. Multicellular aggregates were observed after just 60 transfers.
 
-Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the ACE2 gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.
+Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the *ACE2* gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.
 
-To ensure the stability of the introduced genes in our chassis, we decided to integrate the modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on this endogenous mechanism instead of introducing the additional CRISPR-Cas9 system(which might cause safety problems) this year. This approach was adapted from the yeast modular DNA assembly methods described by Lee et al. [^6] and Shaw et al. [^7].
+To ensure the stability of the introduced genes in our chassis, we decided to integrate the following modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on this endogenous mechanism instead of introducing the additional CRISPR-Cas9 system(which might cause safety problems) this year. This approach was adapted from the yeast modular DNA assembly methods described by Lee et al. [^6] and Shaw et al. [^7].
 
 #### *ACE2* Deletion
 
@@ -86,7 +86,7 @@ We confirmed the successful knockout by observing the formation of multicellular
 
 ### Module2— External Signal Response
 
-Endogenous signaling pathway play central roles in regulating efflux pumps, cell wall remodeling, and stress responses, thereby fundamentally shaping fungal drug resistance[^10]. This underscores the critical importance of external signal perception and membrane context in fungal biology. Building on this understanding, we introduced two key modifications into the Grape Yeast chassis: 
+Endogenous signaling pathway play central roles in regulating efflux pumps, cell wall remodeling, and stress responses, thereby fundamentally shaping antifungal resistance[^10]. This underscores the critical importance of external signal perception and membrane context in fungal biology. Building on this understanding, we introduced two key modifications into the Grape Yeast chassis: 
 
 (1) the HsDOR-PRP signaling pathway: The HsDOR-PRP system endows the chassis with the ability to respond to specific external chemical signals.
 
@@ -111,7 +111,7 @@ While a complete modification of the GPCR system would ideally require the knock
     </div>
 </div>
 
-We validated this pathway using the small molecule agonist SNC80 [^11].The system activates the MAPK cascade and the STE12 transcription factor to regulate downstream genes. To confirm this, we quantified FUS3 and STE2 expression by qPCR[^25] (Table 1), as both are well-known Ste12 targets that indicate pathway activation.
+We validated the activation of this signaling pathway using the small-molecule &delta;-opioid receptor agonist SNC80 [^11]. Upon ligand stimulation, the system triggered the canonical MAPK cascade and activated the Ste12 transcription factor, which in turn regulates downstream mating-responsive genes. To confirm pathway activation, we quantified the mRNA levels of FUS3 and STE2 by qPCR [^25] (Table 1), as both genes are established Ste12 transcriptional targets whose upregulation serves as a direct readout of pathway activity.
 
 
 <div style="text-align: center;">
@@ -142,7 +142,7 @@ Genomic instability can cause fungi to acquire multiple drug resistances in a sh
 
 To simulate this phenomenon, we introduced two strategies to control chromosomal ploidy.
 
-First, we introduced the meiosis-inducing gene IME1(BBa_250R9OVR) under the control of a pTet2 promoter or pCUP1 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size analysis and PI staining observed under a microscope.
+First, we introduced the meiosis-inducing gene *IME1*(BBa_250R9OVR) under the control of a pTet2 promoter or pCUP1 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size analysis and PI staining observed under a microscope.
 
 
 
@@ -154,7 +154,7 @@ First, we introduced the meiosis-inducing gene IME1(BBa_250R9OVR) under the cont
     </div>
 </div>
 
-Previous research has shown that during gravity-based selection, the Y55 (*ACE2* &Delta;) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. To mimic the liquid environment where drug resistance evolves in vivo, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 selection pressure. To isolate the specific effects of the antibiotic, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
+Previous research has shown that during gravity-based selection, the Y55 (*ACE2* &Delta;) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 selection pressure. To isolate the specific effects of the antibiotic, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
 
 
 ### Module 4—Controlling Cluster Size
@@ -210,7 +210,7 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 
 To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20].
 
-To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters[^21] with seven of our EMS-optimized fluorescent proteins(The sequences of these proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our Software page
+To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters[^21] with seven of our EMS-optimized fluorescent proteins(The sequences of these proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our [Software](/software/) page
 for details.). This promoter set was specifically chosen to capture a range of expression dynamics under EMS mutagenesis.Menawhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6] [^23].
 
 We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
@@ -245,7 +245,7 @@ To accurately reflect the natural genomic pressure during long-term evolution, t
 
 Following the reference dataset (Puddu et al., *Nature*, 2019)[^22], we introduced six risk loci whose deletion was reported to increase genome instability. In that study, 4,732 yeast knockout strains were sequenced to assess how the loss of each non-essential gene influences genome integrity, revealing frequent copy-number variations, nuclear–mitochondrial crosstalk, and adaptive chromosomal rearrangements.
 
-We were particularly interested in such genomic alterations, as chromosomal duplication and rearrangement are closely related to the emergence of drug resistance—yeast often adapts to the environment by duplicating or losing the function of parts of its chromosomes. Based on the supplementary information, we selected loci whose gene deletions affect the ploidy or number of chromosomal rearrangements detected (GCR) on other chromosomes. For instance, replacing *SWI4* on chromosome V—a key subunit of the cell-cycle–dependent transcription complex that binds CCB elements with *SWI6*—alters the ploidy of chromosome II (2 &rarr; 2.65) and increases GCR to 5. Further details can be found in the Supporting Information.
+We were particularly interested in such genomic alterations, as chromosomal duplication and rearrangement are closely related to the emergence of drug resistance--yeasts often adapt to the environment by duplicating or losing the function of parts of its chromosomes. Based on the supplementary information, we selected loci whose gene deletions affect the ploidy or number of gross chromosomal rearrangements(GCR) detected on other chromosomes. For instance, replacing *SWI4* on chromosome V—a key subunit of the cell-cycle–dependent transcription complex that binds CCB elements with *SWI6*—alters the ploidy of chromosome II (2 &rarr; 2.65) and increases GCR to 5. Further details can be found in the Supporting Information.
 
 In this iteration, we no longer relied on EMS mutagenesis. Instead, we used long-term cultivation and selective pressure to induce the natural evolution of the strain to a diploid state. By utilizing FACS analysis, we were able to track changes in fluorescence over a period of seven days or more, allowing us to reconstruct the population's dynamics like reading a flight recorder.
 
@@ -256,8 +256,8 @@ The Yeast Toolkit (YTK) and MoClo systems facilitate the construction of transcr
 ##### Homology Arm Entry Vector
 
 To address this, we designed a dedicated Homology Arm Entry Vector based on pMTK078 (Shaw et al., 2023)[^7] and inspired by Sorida et al. (2023)[^27]. Our design incorporates two distinct cloning strategies: 
-1) we introduced two Type IIP restriction enzymes sites, XhoI and XbaI, at the 5' end of the original 5' HA and the 3' end of the original 3' HA respectively, under whose digestion the whole 5'HA-Inserted Fragment-3'HA will be released; 
-2) at the other end of 5'/3' HA, [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) sites are designed to release original 5'/3' HA and generate 4-nt flanks. 
+1) We introduced two Type IIP restriction enzymes sites, XhoI and XbaI, at the 5' end of the original 5' HA and the 3' end of the original 3' HA respectively, under whose digestion the whole 5'HA-Inserted Fragment-3'HA will be released; 
+2) At the other end of 5'/3' HA, [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) sites are designed to release original 5'/3' HA and generate 4-nt flanks. 
 
 All the flanks produced in this section do not overlap with any standard ends in YTK or the Multiplex Yeast Toolkit (MYT), so they will not conflict with other assembly and therefore ensured specific and correct ligation.
 
