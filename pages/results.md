@@ -14,6 +14,9 @@ layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/screenshot-2025-10-08-at-23-13-36.avif
 description: On this page, we show the results of our experiments.
 ---
+
+## Characteristics of Grape Yeast
+
 ### Chitin Imaging Reveals the Morphology of Multicellularity
 
 We first confirmed the multicellular morphology of the *ACE2*-knockout grape yeast. As shown in Figure 1, the yeast cell wall was [stained](/experiemnts/#Chitin staining) with a chitin-specific dye calcofluor white and immediately imaged under both bright-field and fluorescence microscopy. The cells grew in grape-like clusters, and at the junctions—where the walls were markedly thicker—the corresponding fluorescence intensity was higher. This pattern allowed us to delineate familial clusters. Blue arrows highlight regions where cells appeared to contact each other in bright-field images but showed no connecting fluorescent signal, indicating that these were not true cellular junctions.
@@ -99,17 +102,17 @@ For more details, please refer to [Measurement](/measurement).
 ## What we learn
 
 ### Grape Yeast Characteristics
-
 - The multicellular Grape Yeast grows in grape-like clusters and was confirmed using chitin staining, which provides a great chassis for us to trace the growth and mutation of yeast.
-- Higher-ploidy tetraploid yeast exhibits a less stable genome than diploid yeast under gravity-based settling selection. This characteristic shows the potential for grape yeast to mimic pathogenic fungus under pressure.
+- Higher-ploidy tetraploid yeast exhibits a less stable genome than diploid yeast under gravity-based settling selection. This characteristic shows the potential for grape yeast to mimic pathogenic fungus under pressure. 
+- Meanwhile, as some studies have reported that certain fungi develop drug resistance by downregulating the expression of drug targets—potentially through mechanisms such as gene modification or genome ploidy reduction—we employed IME1 to induce meiosis in grape yeast as a model for this phenomenon. The corresponding results will be presented in our presentation video.
 - Both higher ploidy and increased passage number lead to faster sedimentation rates.
-  Future teams may easily sort out grape yeast based on this characteristic.
+Future teams may easily sort out grape yeast based on this characteristic.
 
 ### Evolution Tracing
-
-- The live-cell images give us confidence to track mother-daughter consequence utilizing our TU timer.
+- The live-cell images give us confidence to track mother-daughter sequence utilizing our TU timer.
 
 - An optimized fluorescent reporter, pSTM1 driven EMSfp499 was developed to effectively trace the evolutionary dynamics of the Grape Yeast under selective pressure. 
+- On the next stage, we will integrate pSTM1 driven EMSfp499 into sixteen chromosomes of yeast to find out the most unstable chromosome and even gene loci. This work would lay the foundation for advancing the understanding of fungal drug resistance mechanisms as well as the development of fungal drug targets.
 
 
 
