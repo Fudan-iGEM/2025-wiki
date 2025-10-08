@@ -59,7 +59,7 @@ We executed the Golden Gate reaction as normal, followed by a dedicated 30-minut
 
 #### Test
 
-Final plasmids were verified by [NotI](https://www.neb.com/en/products/r3189-noti-hf) digestion and gel electrophoresis. Successfully transformed yeast colonies were confirmed via colony PCR for integration. Functionally, promoter activity was observed using a confocal microscope, and quantified by Flow Cytometry. 
+Final plasmids were verified by [NotI](https://www.neb.com/en/products/r3189-noti-hf) digestion and gel electrophoresis. Successfully transformed yeast colonies were confirmed via colony PCR for integration. Functionally, promoter activity was observed using a microscope, and quantified by flow cytometry. 
 
 However, a new problem emerged: our near-infrared fluorescent proteins (EMSfp642(BBa_25GARG3E) and EMSfp643(BBa_2599SI53) ) exhibited very weak fluorescence and a low signal-to-noise ratio, making them ineffective as reporters.
 

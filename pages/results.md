@@ -83,7 +83,7 @@ As microscopic images of fixed yeast cells fail to capture the real-time, authen
     <small>Figure 3. Live-cell imaging of Grape Yeast.</small>
   </p>
   <p style="text-align:left; margin:0; color:gray;">
-    <small>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a confocal microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3h.</small>
+    <small>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3h.</small>
   </p>
 
 
@@ -91,7 +91,7 @@ As microscopic images of fixed yeast cells fail to capture the real-time, authen
 
 Having obtained the multicellular [Grape Yeast](/design/) and gained familiarity with the its properties, we initiated an evolutionary tracing study.
 
-In this section, we evaluated various combination of promoters and fluorescent protein from different perspectives, including [confocal imaging](/measurement/#microscopy-qualitative-observation-of-signal-variation), [flow cytometry](/measurement/#flow-cytometry-data-processing-and-composite-score-calculating) and [deep sequencing](/measurement/#deep-sequencing-molecular-validation-of-the-mechanism). Through this thorough assessment, we eventually come up with a optimized fluorescent reporter, pSTM1 driven EMSfp499 (BBa_255T0PHY), that can function effectively under stress conditions. For more details, please refer to our [Measurement](/measurement/) page.
+In this section, we evaluated various combination of promoters and fluorescent protein from different perspectives, including [fluoresence imaging](/measurement/#microscopy-qualitative-observation-of-signal-variation), [flow cytometry](/measurement/#flow-cytometry-data-processing-and-composite-score-calculating) and [deep sequencing](/measurement/#deep-sequencing-molecular-validation-of-the-mechanism). Through this thorough assessment, we eventually come up with a optimized fluorescent reporter, pSTM1 driven EMSfp499 (BBa_255T0PHY), that can function effectively under stress conditions. For more details, please refer to our [Measurement](/measurement/) page.
 
 ## What we learn
 

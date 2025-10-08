@@ -41,7 +41,7 @@ Not just “How can we help marginalized groups in science” but “How can par
 ------
 
 
-### Our highlights ✨ 
+### Our highlights ✨
 
 **1.   What systemic barriers did we identify?**
 
@@ -70,7 +70,7 @@ We developed a series of transferable tools and methods: [a sensory-friendly res
 
 Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. When conducting research on fungal infectious diseases, we recognize that, fungal challenges are not one-dimensional in real society,. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/content.webp" alt="inclusivity1-1" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/content.webp" alt="inclusivity1-1" style="width:90%;" />
 
 ## 0.Forming the theoretical framework
 
@@ -130,7 +130,7 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 
 
 
-### 0.2 The three-step model: Visibility → Empowerment → Involvement 
+### 0.2 The three-step model: Visibility → Empowerment → Involvement
 
 To address these barriers, we propose the **Visibility &rarr; Empowerment &rarr; Involvement** model of inclusive science.
 
@@ -140,7 +140,7 @@ To address these barriers, we propose the **Visibility &rarr; Empowerment &rarr;
 
 Visibility creates a trusted environment for expression; adequate space for expression provides rich, equitable materials for dialogue; and the creative processes of problem-solving generate more diverse and profound narratives, which in turn further enhance visibility and recognition in the scientific community. Step by step, these interactions enable structural barriers in science to be gradually reshaped.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-communities.webp" alt="包容性科学社区示意图" style="zoom:50%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-communities.webp" alt="包容性科学社区示意图" style="width:50%;" />
 
 Through focusing on EB patients’ unique situation in the context of fungal challenges, **Fudan iGEM 2025 seeks to explore new approaches to building inclusive scientific communities—bringing rare disease groups into both the narratives and practices of science.**
 
@@ -208,7 +208,7 @@ During the process of inviting patients to participate, we noticed that many exp
 
 This insight encouraged us: although the division between *EB patients* and *non-EB patients* exists, common ground can still be found on other levels to unite us. Such psychological recognition is the first step to connecting marginalized groups in science with STEM practices.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" alt="inclusivity1-4" style="zoom:80%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" alt="inclusivity1-4" style="width:80%;" />
 
 ---
 
@@ -223,7 +223,7 @@ Through this, we hoped rare disease patients could act as knowledge producers, a
 
 Before the event, our iGEM team had conducted three months of systematic fieldwork. We contacted a well-known EB patient blogger, "Prince Superman," whose documentary received over 25 million views. With his support, we invited over 10 EB families to join. To break down biomedical knowledge barriers, the team designed Q&A posters that translated scientific information into accessible language, aiming to broaden public engagement.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-eb1.webp" alt="inclusivity1-eb1" style="zoom:26%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-eb1.webp" alt="inclusivity1-eb1" style="width:26%;" />
 
 <div style="display: flex; overflow-x: auto; white-space: nowrap;">
   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-eb2.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">
@@ -242,7 +242,7 @@ In our pop-up，we invite the patients to briefly introduce their artwork with a
 
 Furthermore, to deepen public understanding of the daily realities for rare disease patients, we designed price comparison cards. For example, one card highlighted that while a postcard print of a patient's artwork was priced at just 3 RMB, a single daily medical dressing they required cost 100 RMB. This stark contrast help the participants to grasp the profound financial challenges faced by EB patients.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-tag.webp" alt="inclusivity1-1" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-tag.webp" alt="inclusivity1-1" style="width:90%;" />
 
 
 
@@ -264,7 +264,7 @@ Inspired by this, we formulated the **Visibility &rarr; Empowerment &rarr; Invol
 
 Furthermore, the intersectional perspective provides a cost-effective solution to the challenges rare diseases face — namely, *dispersed populations* and *low patient numbers/high research costs*. By “seeking overlaps,” we can amplify alliances and increase collective power.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/cycle.webp" alt="inclusivity1-1" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/cycle.webp" alt="inclusivity1-1" style="width:90%;" />
 
 ## 2. Empowerment: Mapping the Unspoken Truths.
 
@@ -365,7 +365,7 @@ This highlights that “fungus-susceptible groups,” including EB patients, fac
 
 Therefore, our goal is to **empower fungus-susceptible individuals** to articulate their valuable scientific experiences in their own language, and to create pathways for translating and amplifying these voices.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity2map2.webp" alt="inclusivity2map2" style="zoom:33%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity2map2.webp" alt="inclusivity2map2" style="width:80%;" />
 
 ---
 #### Sensory-friendly research design
@@ -476,7 +476,7 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
 
 The ["Visibility"](https://2025.igem.wiki/fudan/inclusivity.html#_1-visibility-ensuring-marginalized-groups-receive-attention) and ["Empowering Expression"](https://2025.igem.wiki/fudan/inclusivity.html#_2-empowerment-mapping-the-unspoken-truths) activities we carried out earlier mainly focused on us as the leading role to promote the construction of an inclusive scientific community. Yet this is not enough. More importantly, marginalized groups themselves must directly and proactively participate in scientific affairs. Moving from the margins to the core is not instantaneous—a STEM professional may require years or decades of training. While supporting groups with barriers to access core scientific careers, it is equally important to empower marginalized groups to participate in inclusive science governance, enabling them to take a firm first step into shared decision-making.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-1.webp" alt="inclusivity3-1" style="zoom:65%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-1.webp" alt="inclusivity3-1" style="width:65%;" />
 
 ---
 
@@ -527,7 +527,7 @@ The workshop climaxed in a **co-creation exercise based on medical settings**. D
 
 Participants brainstormed improvements to color, lighting, seating, and signage systems, eventually forming a collectively negotiated *“ideal solution.”* We then created a redesigned hospital space plan and shared it with earlier mapping participants, inviting them to evaluate how well it addressed their concerns. Most of the people who participated in the previous round of activities gave our plan a good review, believing that it would to some extent enhance their willingness to seek medical treatment.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-hospital.webp" alt="inclusivity3map" style="zoom:40%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-hospital.webp" alt="inclusivity3map" style="width:40%;" />
 
 We also consulted [Tang Xirong](https://2025.igem.wiki/fudan/human-practices.html#beyond-the-humans-more-humans), Deputy Chief Architect and Director of the Medical Institute at Shanghai Architectural Design &amp; Research Institute Co., Ltd. She endorsed our core approach—integrating AI-guided navigation and digital concierge services as emerging trends—alongside the philosophy of creating "less clinical, more social" healthcare spaces. She also offered expert recommendations: 1) prioritizing antimicrobial upholstery for seating, 2) introducing micro-environments such as small atriums and play corners, and 3) ensuring visual designs prioritize the needs of elderly users.
 
@@ -597,7 +597,7 @@ To go beyond passive observation, we designed an interactive experience. Visitor
 
 This setup simulated the everyday challenges faced by EB patients—fragile skin and restricted joint mobility—and the barriers these bring to scientific work. After the experience, participants were encouraged to reflect on the **limitations embedded in the “standard researcher” model** of science.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-2eb.webp" alt="inclusivity3-2eb" style="zoom:10%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-2eb.webp" alt="inclusivity3-2eb" style="width:10%;" />
 
 ------
 
@@ -609,9 +609,9 @@ This space showcased the **self-initiated expressions** of the patient community
 
 After having experienced the difficulties of EB patients firsthand, visitors could approach these works with deeper resonance. Participants were invited to write messages on sticky notes and place them beneath the respective artworks. Later, these notes were mailed back to the corresponding EB patients, establishing a **reciprocal dialogue** between creator and audience.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-art.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-art.webp" alt="inclusivity3-2eb3" style="width:80%;" />
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="width:80%;" />
 
 
 
@@ -693,7 +693,7 @@ These experiences resonated with our concerns for *fungal-vulnerable populations
 
 Importantly, the participant’s dual identity as both a researcher and a patient embodied an **intersectional position**, reflecting our core framework: individuals’ needs and struggles are fluid and overlapping. Inclusivity in science should not be seen as a “special demand” of marginalized groups, but as a collective benefit for everyone involved in scientific practice.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/protocol-in-lab.webp" alt="inclusivity3-2eb3" style="zoom:33%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/protocol-in-lab.webp" alt="inclusivity3-2eb3" style="width:80%;" />
 
 ---
 
@@ -709,15 +709,15 @@ Our laboratory-assistive web tool [ProtocolFlow](https://protocolflow-290e68.ige
 
 
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-1.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-1.webp" alt="inclusivity3-2eb3" style="width:80%;" />
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-2.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-2.webp" alt="inclusivity3-2eb3" style="width:80%;" />
 
 2. **Built-in Mental Health Self-Assessment Module**
 - **Function**: After completing an experiment, the software prompts the user to record their current mood via quick options, and guides them to a self-assessment questionnaire for stress evaluation. All data remains private to the user, and results are accompanied by stress-relief suggestions based on principles of Cognitive Behavioral Therapy (CBT).
 - **Design Rationale**: This normalizes and destigmatizes attention to mental health, encouraging experimenters to proactively monitor their own condition and prevent the accumulation of chronic stress. It echoes our focus on supporting the **whole person** rather than treating them as “research machines.”
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-4.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-4.webp" alt="inclusivity3-2eb3" style="width:80%;" />
 
 ---
 
@@ -737,7 +737,7 @@ These results suggest that our tool not only improves efficiency but also meanin
 
 The former results collected in [*ProtocolFlow*](https://2025.igem.wiki/fudan/inclusivity.html#_4-1-laboratory-assistive-software-—-protocolflow) inspired us to launch a **“Lab Mental Health Week” check-in campaign**, complete with posters that teams can download and use to foster collective awareness and care.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-7.webp" alt="inclusivity3-2eb3" style="zoom:38%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-7.webp" alt="inclusivity3-2eb3" style="width:38%;" />
 
 
 
@@ -751,7 +751,7 @@ From May to September, we have continued our science communication efforts on me
 
 **Core Principle**: Sustainable inclusivity stems from responding to the most marginalized and sensitive needs, which ultimately benefits all participants in science.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/four-steps.webp" alt="inclusivity5" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/four-steps.webp" alt="inclusivity5" style="width:90%;" />
 
 **Practical Pathway of Intersectionality:**
 - **Visibility**: Identify individuals around you who face barriers in science; amplify their presence.
@@ -772,7 +772,7 @@ From May to September, we have continued our science communication efforts on me
 
 ## Conclusion: Forming a replicable, scalable, self-evolving cycle.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/conclusion.webp" alt="inclusivity1-1" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/conclusion.webp" alt="inclusivity1-1" style="width:90%;" />
 
 Based on systematic literature review and preliminary field research, we have not only diagnosed three key structural barriers but also designed targeted solutions:
 

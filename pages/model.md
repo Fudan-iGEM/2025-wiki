@@ -497,7 +497,7 @@ To enhance the interpretability and accessibility of our modeling framework, we 
 
 ### 3D Yeast Growth Simulation
 
-This module simulates the three-dimensional growth of the multicellular "Grape Yeast" cluster, modeling cell division, elongation, and cluster formation under controlled environmental conditions (e.g. temperature at 30°C, YPD medium). Starting from a single ancestral cell, the simulation applies deterministic branching rules inspired by Pascal’s triangle developmental pattern[^9], incorporating asynchronous division to generate geometrically defined, clonal clusters. Users can toggle between "Grape" and "normal" yeast types, adjusting simulation speed (0.5–3×) to observe morphological transitions and cluster expansion. This interactive visualization gives us a more graphic understanding of "Grape Yeast's'' growth, thereby guiding the design of our multicellular chassis to enable precise, real-time tracking of drug resistance evolution in the [DR. sTraTeGY platform](/design/).
+This module simulates the three-dimensional growth of the multicellular "Grape Yeast" cluster, modeling cell division, elongation, and cluster formation under controlled environmental conditions (e.g. temperature at 30°C, YPD medium). Starting from a single ancestral cell, the simulation applies deterministic branching rules inspired by Pascal’s triangle developmental pattern[^9], incorporating asynchronous division to generate geometrically defined, clonal clusters. Users can toggle between "Grape" and "normal" yeast types, adjusting simulation speed (0.5–3×) to observe morphological transitions and cluster expansion. This interactive visualization gives us a more graphic understanding of "Grape Yeast's'' growth, thereby guiding the design of our multicellular chassis to enable precise, real-time tracking of drug resistance evolution in the [DR.&nbsp;sTraTeGY platform](/design/).
 
 <div style="text-align: center;">
         <span style="color:gray">Table 4. Parameters (local variables) for 3D Yeast Growth Simulation</span>
@@ -533,7 +533,7 @@ This module visualizes the spatiotemporal maturation of Fast-FT proteins within 
 
 
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/model/visual2-480p.webp" style="zoom:150%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/model/visual2-480p.webp" style="width:80%;" />
 
 <div style="text-align: center;" id="fig11">
         <span style="color:gray">Figure 11. Animation demo of 3D Fluorescent Timer Maturation</span>

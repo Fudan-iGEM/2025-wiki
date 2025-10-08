@@ -164,7 +164,7 @@ pnpm run serve
 
 **Build**: Implemented all features with full test coverage
 
-**Test**: In progress with wet lab validation
+**Test**: In progress with wet-lab validation
 
 **Learn**: Integrated features increase utility without sacrificing simplicity
 

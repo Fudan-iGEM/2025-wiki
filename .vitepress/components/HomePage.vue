@@ -110,7 +110,7 @@ const scene6Lotties = {
 }
 
 const initialScene2Dialogs = [
-  { id: 0, text: 'It’s the year of 2333, a formidable Crisis has swept over the world—antimicrobial resistance.', isInput: false },
+  { id: 0, text: 'It’s the year of 2333, a formidable Crisis has swept over the world — antimicrobial resistance.', isInput: false },
   { id: 1, text: 'Invasive fungal infections affecting billions of people worldwide are getting fatal while effective drugs are severely shrinking. ', isInput: false },
   { id: 2, text: 'Why is all this happening? How could I help?', isInput: true }
 ]
@@ -118,13 +118,13 @@ const createInitialScene2Dialogs = () => initialScene2Dialogs.map(dialog => ({ .
 const dialogs = ref(createInitialScene2Dialogs())
 
 const scene5Items = ref([
-  { id: 1, order: 'lottie-first', lottieUrl: scene5Lotties.item1, title: 'Fluoresence-based Detection', description: 'A novel platform for screening drug-resistant gene mutations' },
+  { id: 1, order: 'lottie-first', lottieUrl: scene5Lotties.item1, title: 'Fluoresence-based Detection', description: 'A novel platform for screening drug-resistant mutations' },
   { id: 2, order: 'text-first', lottieUrl: scene5Lotties.item2, title: 'Engineered Grape Yeast', description: 'Utilizing engineered grape yeast as a versatile and efficient chassis' },
-  { id: 3, order: 'lottie-first', lottieUrl: scene5Lotties.item3, title: 'AI-Powered Analysis', description: 'An integrated AI model for analyzing mutation data and predicting resistance' }
+  { id: 3, order: 'lottie-first', lottieUrl: scene5Lotties.item3, title: 'AI-Powered Analysis', description: 'An integrated model for predicting multicellular behaviors' }
 ])
 
 const scene6Items = ref([
-    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Rapid and Reduce-cost', description: 'DR. sTraTeGY provides a rapid, low-cost chassis to validate mutations and drug effects, offering great potential to accelerate new drug discovery and screening.' },
+    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Rapid and reduce-cost', description: 'DR. sTraTeGY provides a rapid, low-cost chassis to validate mutations and drug effects, offering great potential to accelerate new drug discovery and screening.' },
     { id: 2, lottieUrl: scene6Lotties.item2, title: 'Direct and demystify', description: 'Through programmable environments researchers can directly observe evolutionary divergences, deepening humanity’s understanding of the universal principles of life’s evolution.' },
     { id: 3, lottieUrl: scene6Lotties.item3, title: 'Strategic and safeguarding', description: 'The application of DR. sTraTeGY implies that humanity can fortify defenses ahead of a full-scale outbreak of drug resistance, establishing a societal safeguard against superfungi.' },
     { id: 4, lottieUrl: scene6Lotties.item4, title: 'Educational and enlightening', description: 'By making abstract genetic mutations and evolutionary processes “visual” through colors and different morphologies, it can advance public science education and foster social consensus.' },
@@ -638,7 +638,7 @@ const setupScene4 = () => {
         setScene4Animation(scene4Lotties.dog3, { loop: true, autoplay: true })
 
         // 左侧卡片：标题打字动画 + 副标题显现
-        gsap.to(scene4.scene4TitleRef, { duration: 2, text: 'And now we introduce -- DR. sTraTeGY!', ease: 'none', delay: 0.5 })
+        gsap.to(scene4.scene4TitleRef, { duration: 2, text: 'And now we introduce --', ease: 'none', delay: 0.5 })
         gsap.to(scene4.scene4SubtitleRef, { autoAlpha: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 2.7 })
       } else {
         gsap.to(this.target, {

@@ -4,7 +4,7 @@
 | ----- | ------------ |
 | [Homepage](https://2025.igem.wiki/fudan/)           | Xiuqi Tian, Zhongyi Huang, Yufan Han |
 | [Attributions](https://2025.igem.wiki/fudan/attributions/)       | Yuxin Duan                           |
-| [Collabrations](https://2025.igem.wiki/fudan/collabrations/)      | Huizhen Du                           |
+| [Collaborations](https://2025.igem.wiki/fudan/collaborations/)     | Huizhen Du                           |
 | Communication             | none                                 |
 | [Contribution](https://2025.igem.wiki/fudan/contribution/)       | Yuxin Duan                           |
 | [Description](https://2025.igem.wiki/fudan/description/)        | Zuyao Wu                             |

@@ -9,7 +9,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/pageimage/design/design-headmap.webp
-description: On this page, we describe DR. sTraTeGY, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
+description: On this page, we introduce <em>DR.&nbsp;sTraTeGY</em>, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
 ---
 
 <script setup>
@@ -18,26 +18,26 @@ import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualiz
 
 ## Overview
 
-On this page, we introduce DR. sTraTeGY, a Drug Resistance mutation Tracking Technology based on Grape Yeast. Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
+Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
 
-- The Problem: Antifungal resistance poses a serious threat to global health.
-- Our Solution: DR. sTraTeGY, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
-- Key Innovations: The platform consists of a "Grape Yeast" chassis, the "Timer &amp; Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
+- **The Problem:** Antifungal resistance poses a serious threat to global health.
+- **Our Solution:** *DR.&nbsp;sTraTeGY*, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
+- **Key Innovations:** The platform consists of a "Grape Yeast" chassis, the "Timer &amp; Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
 
-## How It Started?
+## How it Started?
 
-Fungal pathogens cause a wide range of diseases that have a significant impact on plant and animal life. It's estimated that approximately 1.7 billion people are affected globally, with more than 1.5 million deaths annually[^1]. Treatment options for invasive fungal infections are extremely limited, with only five main classes of drugs currently available. The long-term abuse of antibiotics has led to the constant emergence of drug-resistant variants, making it crucial to study the mutation and evolution of fungi under drug pressure.
+Fungal pathogens cause a wide range of diseases that have a significant impact on plant and animal life. It's estimated that approximately 1.7 billion people are affected globally, with more than 1.5 million deaths annually.[^1] Treatment options for invasive fungal infections are extremely limited, with only five main classes of drugs currently available. The long-term abuse of antibiotics has led to the constant emergence of drug-resistant variants, making it crucial to study the mutation and evolution of fungi under drug pressure.
 
-To address this challenge, we developed DR. sTraTeGY, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three key components:
+To address this challenge, we developed *DR.&nbsp;sTraTeGY*, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three components:
 
-1. Grape Yeast: The chassis engineered to be multicellular and responsive to external signals.
-2. Timer &amp; Recorder: A visualization toolkit to track the evolutionary history and selective pressure in real-time.
-3. YeastVerse: A virtual experiment platform to guide our wet lab designs and simulate evolutionary processes.
+1. **Grape Yeast:** The chassis engineered to be multicellular and responsive to external signals.
+2. **Timer &amp; Recorder:** A visualization toolkit to track the evolutionary history and selective pressure in real-time.
+3. **YeastVerse:** A virtual experiment platform to guide our wet-lab designs and simulate evolutionary processes.
 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig1-dr-strategy.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1. DR. sTraTeGY overview</span>
+        <span style="color:gray">Figure 1. *DR.&nbsp;sTraTeGY* overview</span>
         <br><br>
     </div>
 </div>
@@ -48,14 +48,14 @@ To address this challenge, we developed DR. sTraTeGY, an innovative platform bui
 
 ### What is the Grape Yeast
 
-To study fungal evolution, we focused on *Saccharomyces cerevisiae*, a classic model organism for eukaryotes and a widely used chassis in synthetic biology. It offers significant advantages, including a fully sequenced genome, mature genetic tools[^2], and a non-pathogenic nature with conserved resistance mechanisms[^3].  However, traditional methods that based on unicellular yeast like bulk sequencing provide only a static endpoint snapshot of evolving populations, making it challenging to capture low-frequency mutations or the real-time emergence of complex traits[^4].
+To study fungal evolution, we focused on *Saccharomyces cerevisiae*, a classic model organism for eukaryotes and a widely used chassis in synthetic biology. It offers significant advantages, including a fully sequenced genome, various genetic tools[^2], and a non-pathogenic nature with conserved resistance mechanisms[^3].  However, traditional methods that based on unicellular yeast like bulk sequencing provide only a static endpoint snapshot of evolving populations, making it challenging to capture low-frequency mutations or the real-time emergence of complex traits[^4].
 
-To overcome this, we designed the Grape Yeast—a new modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates DR. sTraTeGY from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex evolution trajectories would mask in a conventional bulk culture.
+To overcome this, we designed the Grape Yeast — a novel modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates *DR.&nbsp;sTraTeGY* from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex evolution trajectories would mask in a conventional bulk culture.
 
-We engineered this chassis through a simple four-module approach that allows us to achieve key functions: multicellularity development, external signal response, cluster size control, and individual diversity control. In essence, these designs provide synthetic biology with a new chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient, controllable, and scalable engineered biological system. It functions more like an organized multicellular body—with spatial structure and division of labor among cells—similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a production platform but also as a foundational model for exploring multicellular engineering.
+We engineered this chassis through modular approach that allows us to achieve key functions: (1) multicellularity development, (2) external signal response, (3) cluster size control, and (4) individual diversity control. In essence, these designs provide future research with a novel chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient and scalable engineered biological system. It functions more like an organized multicellular body — with spatial structure and division of labor among cells — similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a tracking platform but also as a foundational model for exploring multicellular engineering.
 
 <div style="text-align: center;" id="fig2">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/figure2-grapeyeast.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/figure2-grapeyeast.webp" style="width:66%">
     <div>
         <span style="color:gray">Figure 2. Constructing the Grape Yeast</span>
         <br><br>
@@ -63,17 +63,15 @@ We engineered this chassis through a simple four-module approach that allows us 
 </div>
 
 
+### Module 1 — Multicellularity Development
 
-
-### Module 1—Multicellularity Development
-
-#### Inspiration and Mechanistic Basis
+#### Inspiration and Background
 
 The earliest description of multicellularity in yeast was reported by Ratcliff et al.[^24], which served as the primary inspiration for our project. In that seminal study, *Saccharomyces cerevisiae* (strain Y55) was subjected to gravity-based selection, favoring cells with a rapid sedimentation phenotype. Multicellular aggregates were observed after just 60 transfers.
 
-Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the *ACE2* gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.
+Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the *ACE2* gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.[^9]
 
-To ensure the stability of the introduced genes in our chassis, we decided to integrate the following modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on this endogenous mechanism instead of introducing the additional CRISPR-Cas9 system(which might cause safety problems) this year. This approach was adapted from the yeast modular DNA assembly methods described by Lee et al. [^6] and Shaw et al. [^7].
+To ensure the stability of the introduced genes in our chassis, we integrate the following modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on only homologous recombination without introducing additional CRISPR/Cas9 (which might increase genome integration efficient). This approach was adapted from the yeast modular DNA assembly methods described by Lee et al.[^6].
 
 #### *ACE2* Deletion
 
@@ -81,18 +79,18 @@ To validate the feasibility of a multifunctional multicellular chassis, we first
 
 *ACE2* encodes a transcription factor that, when disrupted, prevents mother-daughter cell separation after budding[^8], leading to the formation of a multicellular yeast system. 
 
-We confirmed the successful knockout by observing the formation of multicellular clusters, clearly visualized through cell wall staining under a microscope.
+We confirmed the successful knockout by observing the formation of multicellular clusters, clearly visualized through [cell wall staining](/results/#fig1) under a fluoresence microscope.
 
 
-### Module2— External Signal Response
+### Module 2 — Response to External Signal
 
-Endogenous signaling pathway play central roles in regulating efflux pumps, cell wall remodeling, and stress responses, thereby fundamentally shaping antifungal resistance[^10]. This underscores the critical importance of external signal perception and membrane context in fungal biology. Building on this understanding, we introduced two key modifications into the Grape Yeast chassis: 
+Endogenous signaling pathway play central roles in regulating efflux pumps, cell wall remodeling, and stress responses, thereby fundamentally shaping antifungal resistance.[^10] This underscores the critical importance of external signal perception and membrane context in fungal biology. Building on this understanding, we introduced two key modifications into the Grape Yeast chassis: 
 
-(1) the HsDOR-PRP signaling pathway: The HsDOR-PRP system endows the chassis with the ability to respond to specific external chemical signals.
+**(1) HsDOR-PRP signaling pathway:** This endows the chassis with the ability to respond to specific external chemical signals.
 
-(2) Membrane Re-engineering: The substitution of native ergosterol with cholesterol. This modification not only facilitates the proper function of human GPCRs but also mimics a drug-resistant fungal membrane phenotype, enhancing its comparability with mammalian cells.
+**(2) Membrane Re-engineering:** The substitution of native ergosterol with cholesterol. This modification not only facilitates the proper function of human GPCRs but also mimics a drug-resistant fungal membrane phenotype, enhancing its comparability with mammalian cells.
 
-Collectively, these two modules transform the Grape Yeast into more than a synthetic biology system—it emerges as a novel multicellular chassis with high value for drug resistance studies and cross-species translatability.
+Collectively, these two modifications transform the Grape Yeast into more than a synthetic biology tool — it emerges as a novel multicellular chassis with high value for drug resistance studies and cross-species translatability.
 
 
 #### 1) Rewiring the Pheromone Response: HsDOR Integration
@@ -101,21 +99,20 @@ Sensing and responding to environmental cues is essential for fungal adaptation 
 
 Based on previous studies (Bean et al., 2022)[^11], we engineered yeast to activate to their native pheromone response pathway (PRP) via a heterologous GPCR, thereby triggering a MAPK signaling cascade and enhancing the expression of Ste12-regulated genes(Figure 3).
 
-While a complete modification of the GPCR system would ideally require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused on the most critical modifications: We replaced *ACE2* with the human &delta; opioid receptor (*HsDOR*, BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera(BBa_254K9906) in which five key residues were replaced with those from Gi&alpha; to ensure functional heterologous coupling.
+While a complete modification of the GPCR system would ideally require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused on the most critical modifications: We replaced *ACE2* with the human &delta; opioid receptor (*HsDOR*, BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera (BBa_254K9906) in which five key residues were replaced with those from Gi&alpha; to ensure functional heterologous coupling.
 
 <div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/gpcr1007.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 3. Mechanism of external signal response.We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and validated by the agonist SNC80</span>
+        <span style="color:gray">Figure 3. Mechanism of external signal response.<br>We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and cloud be validated by the agonist <a href="https://www.sigmaaldrich.com/HK/en/product/sigma/s2812" target=_blank>SNC80</a>.</span>
         <br><br>
     </div>
 </div>
 
-We validated the activation of this signaling pathway using the small-molecule &delta;-opioid receptor agonist SNC80 [^11]. Upon ligand stimulation, the system triggered the canonical MAPK cascade and activated the Ste12 transcription factor, which in turn regulates downstream mating-responsive genes. To confirm pathway activation, we quantified the mRNA levels of FUS3 and STE2 by qPCR [^25] (Table 1), as both genes are established Ste12 transcriptional targets whose upregulation serves as a direct readout of pathway activity.
-
+We validated the activation of this signaling pathway using the small-molecule &delta;-opioid receptor agonist [SNC80](https://www.sigmaaldrich.com/HK/en/product/sigma/s2812)[^11]. Upon ligand stimulation, the system triggered the canonical MAPK cascade and activated the Ste12 transcription factor, which in turn regulates downstream mating-responsive genes. To confirm pathway activation, we quantified the mRNA levels of FUS3 and STE2 by qPCR [^25] (Table 1), as both genes are established Ste12 transcriptional targets whose upregulation serves as a direct readout of pathway activity.
 
 <div style="text-align: center;">
-        <span style="color:gray">Table 1. Primers used for the qPCR validation</span>
+        <span style="color:gray">Table 1. qPCR primers for validating HsDOR's activation</span>
         <br>
 </div>
 
@@ -126,25 +123,24 @@ We validated the activation of this signaling pathway using the small-molecule &
 | 5S                  | 5-GTTGCGGCCATATCTACCAGAAAG | 5-CGTATGGTCACCCACTACACTACT |
 
 
-#### 2)Yeast Membrane Engineering
+#### 2) Yeast Membrane Engineering
 
 The ergosterol biosynthesis pathway is crucial, with *ERG6* and *ERG5* defining membrane sterol composition and influencing the expression and functionality of heterologously expressed human GPCRs. Crucially, elevated ergosterol levels disrupt the proper integration and function of GPCRs in the yeast membrane. Consequently, deleting *ERG5/6* and redirecting sterol flux toward cholesterol significantly enhances receptor efficiency[^11]. 
 
-To leverage this for our application, we deleted *ERG5/6* and added TDH3p-driven zebrafish genes (*DHCR7/24*:BBa_25RCU5CB and BBa_25FOVO4C) through homologous recombination. This modification blocks ergosterol production and redirects zymosterol to cholesterol, which is necessary for the human receptor to function properly[^11]. We confirmed this modification using cholesterol staining.
+To leverage this for our application, we deleted *ERG5/6* and added pREV1-driven (BBa_K3748015) zebrafish genes (*DHCR7/24*: BBa_25RCU5CB and BBa_25FOVO4C) through homologous recombination. This modification blocks ergosterol production and redirects zymosterol to cholesterol, which is necessary for the human receptor to function properly[^11]. We confirmed this modification using cholesterol staining.
 
 Furthermore, the resulting reduced ergosterol content mimics a phenotype associated with antifungal drug resistance[^12], offering a platform to investigate the impact of membrane composition on drug sensitivity and to identify non-ergosterol-related targets.
 
 
-
-### Module 3—Controlling Individual Diversity
+### Module 3 — Controlling Individual Diversity
 
 Genomic instability can cause fungi to acquire multiple drug resistances in a short period. For example, changes in chromosome ploidy (e.g. from diploid to haploid) can result in the loss of sensitive genes, contributing to multi-drug resistance[^14]. Similarly, chromosome duplication can result in the upregulation of resistance-related genes[^26]. These findings suggest a strong correlation between ploidy and drug resistance.
 
 To simulate this phenomenon, we introduced two strategies to control chromosomal ploidy.
 
-First, we introduced the meiosis-inducing gene *IME1*(BBa_250R9OVR) under the control of a pTet2 promoter or pCUP1 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size analysis and PI staining observed under a microscope.
+First, we introduced the meiosis-inducing gene *IME1* (BBa_250R9OVR) under the control of a pTet2 promoter or pCUP1 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size and propidium Iodide (PI) staining observed under a microscope.
 
-
+@@@@
 
 <div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-ime1-compressed.webp" style="width:80%">
@@ -157,15 +153,15 @@ First, we introduced the meiosis-inducing gene *IME1*(BBa_250R9OVR) under the co
 Previous research has shown that during gravity-based selection, the Y55 (*ACE2* &Delta;) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 selection pressure. To isolate the specific effects of the antibiotic, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
 
 
-### Module 4—Controlling Cluster Size
+### Module 4 — Controlling Cluster Size
 
-To enhance controllability and safety, we introduced *BAX*(BBa_K5441013), an apoptosis-inducing protein, under the control of a pTet2 promoter or a pCUP1 promoter.
+To enhance controllability and safety, we introduced *BAX* (BBa_K5441013), an apoptosis-inducing protein, under the control of a pTet2 promoter or a pCUP1 promoter.
 
 Bax is a pro-apoptotic member of the Bcl-2 protein family. When expressed in *S. cerevisiae*, it induces cell apoptosis via a mitochondria-mediated pathway[^13]. 
  
 This mechanism allows us to control the size of our clusters and, when required, induce the apoptosis of the entire system. 
 
-We verified the module's effectiveness by observing and analyzing the cluster size under a confocal microscope .
+We verified the module's effectiveness by observing and analyzing the cluster size under a microscope.
 
 <div style="text-align: center;" id="fig5">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-bax-compressed.webp" style="width:80%">
@@ -224,7 +220,7 @@ We screened 28 combinations of four promoters and seven optimized fluorescent pr
 | ------------------ | ---------------------------------------- | -------------------------- | ------------------------ | ------------ |
 | EMSfp383           | Optimized eBFP2 to resist EMS.           | 383                        | 448                      | BBa_25F6RD26 |
 | EMSfp399           | Optimized Bluebonnet2 to resist EMS.     | 399                        | 454                      | BBa_25M2Z9H7 |
-| EMSfp499           | Optimized mSG to resist EMS.             | 499                        | 510                      | BBa_25IB5O7X |
+| EMSfp499           | Optimized mSG[^99] to resist EMS.             | 499                        | 510                      | BBa_25IB5O7X |
 | EMSfp506           | Optimized NeolGreen to resist EMS.       | 506                        | 517                      | BBa_25FAVHQY |
 | EMSfp569           | Optimized mScarlet to resist EMS.        | 569                        | 594                      | BBa_25TYRLM9 |
 | EMSfp642           | Optimized smURFP to resist EMS.          | 642                        | 670                      | BBa_25GARG3E |
@@ -241,7 +237,7 @@ We screened 28 combinations of four promoters and seven optimized fluorescent pr
 
 To study its stability and performance in different genomic environments, we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes. We selected sixteen chromosomal integration sites (one per chromosome), including both neutral "safe sites" without functional roles and "dangerous sites" that replace non-essential genes. 
 
-To accurately reflect the natural genomic pressure during long-term evolution, the neutral sites—adapted from Shaw et al.[^7]—were chosen for their minimal influence on host physiology.
+To accurately reflect the natural genomic pressure during long-term evolution, the neutral sites — adapted from Shaw et al.[^7] — were chosen for their minimal influence on host physiology.
 
 Following the reference dataset (Puddu et al., *Nature*, 2019)[^22], we introduced six risk loci whose deletion was reported to increase genome instability. In that study, 4,732 yeast knockout strains were sequenced to assess how the loss of each non-essential gene influences genome integrity, revealing frequent copy-number variations, nuclear–mitochondrial crosstalk, and adaptive chromosomal rearrangements.
 
@@ -303,12 +299,12 @@ Besides, GG offers crucial technical superiority by maintaining high fidelity ev
 
 ## YeastVerse: Our Virtual Experiment Platform
 
-Throughout this project, we fully embraced the "dry-lab guiding wet-lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [Model](/model/) page for more details.
+Throughout this project, we fully embraced the "dry-lab guiding wet-lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet-lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [Model](/model/) page for more details.
 
 <div style="text-align: center;" id="fig9">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 9. Use digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
+        <span style="color:gray">Figure 9. Use digital YeastVerse to guide our wet-lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet-lab experiments.</span>
         <br><br>
     </div>
 </div>
@@ -321,7 +317,7 @@ Throughout this project, we fully embraced the "dry-lab guiding wet-lab" approac
 
   - We developed two powerful extension modules, the Timer and Recorder, to visualize cell lineage and evolutionary pressure, respectively. These modules are designed as flexible plugins that can be widely used by the iGEM community.
 
-  - We built the YeastVerse virtual simulation platform to guide our wet lab experiments. As the "zero-th machine" for Grape Yeast, YeastVerse can be widely used for various experimental tests, providing crucial support for wet lab works.
+  - We built the YeastVerse virtual simulation platform to guide our wet-lab experiments. As the "zero-th machine" for Grape Yeast, YeastVerse can be widely used for various experimental tests, providing crucial support for wet-lab works.
 
 
 
@@ -373,10 +369,12 @@ Throughout this project, we fully embraced the "dry-lab guiding wet-lab" approac
 
 [^23]: Niederau, P. A., Eglé, P., Willig, S., Parsons, J., Hoernstein, S. N. W., Decker, E. L., & Reski, R. (2024). Multifactorial analysis of terminator performance on heterologous gene expression in Physcomitrella. *Plant cell reports*, *43*(2), 43. DOI: 10.1007/s00299-023-03088-5
 
-[^24]: Ratcliff, W. C., Denison, R. F., Borrello, M., & Travisano, M. (2012). Experimental evolution of multicellularity. Proceedings of the National Academy of Sciences of the United States of America, 109(5), 1595–1600. DOI: 10.1073/pnas.1115323109
+[^24]: Ratcliff, W. C., Denison, R. F., Borrello, M., & Travisano, M. (2012). Experimental evolution of multicellularity. *Proceedings of the National Academy of Sciences of the United States of America*, *109*(5), 1595–1600. DOI: 10.1073/pnas.1115323109
 
-[^25]: Ramos-Alonso, L., Garcia, I., Enserink, J. M., & Chymkowitch, P. (2022). Analysis of the pheromone signaling pathway by RT-qPCR in the budding yeast Saccharomyces cerevisiae. STAR protocols, 3(1), 101210. DOI: 10.1016/j.xpro.2022.101210
+[^25]: Ramos-Alonso, L., Garcia, I., Enserink, J. M., & Chymkowitch, P. (2022). Analysis of the pheromone signaling pathway by RT-qPCR in the budding yeast *Saccharomyces cerevisiae*. *STAR protocols*, *3*(1), 101210. DOI: 10.1016/j.xpro.2022.101210
 
-[^26]: Khateb, A., Gago, S., Bromley, M., Richardson, M., & Bowyer, P. (2023). Aneuploidy Is Associated with Azole Resistance in Aspergillus fumigatus. Antimicrobial agents and chemotherapy, 67(4), e0125322. DOI: 10.1128/aac.01253-22
+[^26]: Khateb, A., Gago, S., Bromley, M., Richardson, M., & Bowyer, P. (2023). Aneuploidy Is Associated with Azole Resistance in Aspergillus fumigatus. *Antimicrobial agents and chemotherapy*, *67*(4), e0125322. DOI: 10.1128/aac.01253-22
 
-[^27]: Sorida, M., & Bonasio, R. (2023). An efficient cloning method to expand vector and restriction site compatibility of Golden Gate Assembly. Cell reports methods, 3(8), 100564. DOI: 10.1016/j.crmeth.2023.100564 
+[^27]: Sorida, M., & Bonasio, R. (2023). An efficient cloning method to expand vector and restriction site compatibility of Golden Gate Assembly. *Cell reports methods*, *3*(8), 100564. DOI: 10.1016/j.crmeth.2023.100564 
+
+[^99]: Ando, R., Shimozono, S., Ago, H., Takagi, M., Sugiyama, M., Kurokawa, H., Hirano, M., Niino, Y., Ueno, G., Ishidate, F., Fujiwara, T., Okada, Y., Yamamoto, M., & Miyawaki, A. (2024). StayGold variants for molecular fusion and membrane-targeting applications. *Nature methods*, *21*(4), 648–656. DOI: 10.1038/s41592-023-02085-6

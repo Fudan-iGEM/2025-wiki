@@ -456,7 +456,7 @@ We stained cells with [calcofluor white](https://www.sigmaaldrich.com/HK/en/prod
 2. Dilute the overnight cultures 1:20 into fresh SC media and incubate at 30°C with 220 rpm shaking until OD600 between 0.7-1.
 3. Prepare 0.4% low melting agarose in SC media, and keep at 42°C.
 4. Mix appropriate amout of yeast with melted agarose, vortex, and drop a total of ∼500&mu;L onto a glass-bottom dish allow it to solidify. Cover the agarose pad with SC media if needed.
-6. Observe cells immediately using a fluorescence or confocal microscope equipped with appropriate filters. Maintain stage temperature at 30°C.
+6. Observe cells immediately using a fluorescence microscope equipped with appropriate filters. Maintain stage temperature at 30°C.
 
 
 ## Mating of *a* and &alpha; Yeast Strains

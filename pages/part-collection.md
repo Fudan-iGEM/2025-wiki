@@ -9,13 +9,13 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we describe 3 collections built around Grape Yeast, foundamentally advaced the power of <i>Saccharomyces cerevisiae</i>.
 ---
 
-Our project **DR.sTraTeGY** (Drug Resistance mutation Tracking Technology based on Grape Yeast) has developed and test three part collections: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141), [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) (the optimal promoter–fluorescent protein combination screening collection), and [the homologous arms integration collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) for *Saccharomyces cerevisiae*.
+Our project **DR.&nbsp;sTraTeGY** (Drug Resistance mutation Tracking Technology based on Grape Yeast) has developed and test three part collections: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141), [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) (the optimal promoter–fluorescent protein combination screening collection), and [the homologous arms integration collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) for *Saccharomyces cerevisiae*.
 
 ## Collection 1: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)
 
 ### *ACE2* Knockout and Functional Human GPCR Integration
 
-To create Grape Yeast, we first knocked out the transcription factor gene *ACE2*, whose function is essential for septum degradation during yeast cell division. The resulting strain fails to release daughter cells after cytokinesis, instead forming multicellular clusters that resemble grape bunches (Ratcliff et al.,2011; Tong et al., 2025)[^1][^2]. And its morphology and characteristics closely mimic those of pathogenic fungi.[^3] Next, we introduced the human &delta;-opioid receptor - HsDOR (BBa_256S6J1M) to the *ACE2* deletion locus. Applying SNC80, which is an extracellular ligand that capable of binding to HsDOR, could activate the downstream signaling pathway. As human-derived HsDOR, which is on the membrane, cannot transduce signals inside yeast cells, we introduced Gpa1 (BBa_254K9906), described previously in Brown et al. (2000)[^4]. Introduced Gpa1 will serve as the intracellular messenger for HsDOR, thereby achieving a functional human GPCR-yeast coupling. This modification not only endowed the multicellular yeast chassis with drug-ensing capabilities but also demonstrated the feasibility of transplanting human receptors into yeast.
+To create Grape Yeast, we first knocked out the transcription factor gene *ACE2*, whose function is essential for septum degradation during yeast cell division. The resulting strain fails to release daughter cells after cytokinesis, instead forming multicellular clusters that resemble grape bunches (Ratcliff et al.,2011; Tong et al., 2025)[^1][^2]. And its morphology and characteristics closely mimic those of pathogenic fungi.[^3] Next, we introduced the human &delta;-opioid receptor - HsDOR (BBa_256S6J1M) to the *ACE2* deletion locus. Applying [SNC80](https://www.sigmaaldrich.com/HK/en/product/sigma/s2812), which is an extracellular ligand that capable of binding to HsDOR, could activate the downstream signaling pathway. As human-derived HsDOR, which is on the membrane, cannot transduce signals inside yeast cells, we introduced Gpa1 (BBa_254K9906), described previously in Brown et al. (2000)[^4]. Introduced Gpa1 will serve as the intracellular messenger for HsDOR, thereby achieving a functional human GPCR-yeast coupling. This modification not only endowed the multicellular yeast chassis with drug-ensing capabilities but also demonstrated the feasibility of transplanting human receptors into yeast.
 
 We used [the modular assembly yeast toolkit](https://www.addgene.org/kits/moclo-ytk/), described by Lee et al. (2015)[^5], to construct the parts in our project. An intermediate plasmid (BBa_25EI9P2P) was constructed to integrate different translational units (TU) in *ACE2* locus, which is very similar to [pYTK096](https://www.addgene.org/kits/moclo-ytk/) for *URA3* locus integration. The GFP dropout cassette in BBa_25EI9P2P has the BsaI sites oriented in reverse relative to standard parts. When performing the [Golden Gate Assembly](/experiments/#golden-gate-assembly) to produce BBa_25EI9P2P no 55°C digestion nor 80°C heat-inactivation, only ligation — cycling between 37°C and 16°C for 30 cycles. After cycling, the mixture is directly transformed into *E. coli*, and correct clones are identified by gain of GFP fluorescence with kanamycin resistance, followed by whole-plasmid sequencing confirmation.
 
@@ -161,29 +161,28 @@ Furthermore, we recognized that these integration sites exhibit varying distance
 
 Table 3. Integration Sites with varying distances to the centromere
 
-| Part number  |  Part name   |     Integration Loci     |
-| :----------: | :----------: | :----------------------: |
-| BBa_250U3B6G | HR5'\_Chr1L  |  ChrI: 169,422-169,940   |
-| BBa_25GQIZIK | HR3'\_Chr1R  |  ChrI: 169,942-170,478   |
-| BBa_253K1B8N | HR5'\_Chr4L  |  ChrIV: 359,868-360,355  |
-| BBa_25P0EZQP | HR3'\_Chr4R  |  ChrIV: 360,356-360,897  |
-| BBa_2552AC6E | HR5'\_Chr6L  |   ChrVI: 10,278-10,913   |
-| BBa_25IULUBT | HR3'\_Chr6R  |   ChrVI: 10,914-11,424   |
-| BBa_25ZYL3GW | HR5'\_Chr7L  |  ChrVII: 12,472-12,982   |
-| BBa_25H1VEJW | HR3'\_Chr7R  |  ChrVII: 12,983-13,498   |
-| BBa_25FYK3TX | HR5'\_Chr8L  | ChrVIII: 191,015-191,539 |
-| BBa_25PJP4LG | HR3'\_Chr8R  | ChrVIII: 191,540-192,044 |
-| BBa_25FUWBU7 | HR5'\_Chr9L  |  ChrIX: 340,431-340,933  |
-| BBa_25PDQZ8Z | HR3'\_Chr9R  |  ChrIX: 340,935-341,523  |
-| BBa_25DIWZUL | HR5'\_Chr11L |   ChrXI: 24,931-25,451   |
-| BBa_257IAIOG | HR3'\_Chr11R |   ChrXI: 25,452-25,963   |
-| BBa_25F4SCLY | HR5'\_Chr13L | ChrXIII: 408,123-408,657 |
-| BBa_25GCY7VQ | HR3'\_Chr13R | ChrXIII: 408,658-409,161 |
-| BBa_25B7ZBSD | HR5'\_Chr15L |  ChrXV: 686,950-687,450  |
-| BBa_25Q3F2B3 | HR3'\_Chr15R |  ChrXV: 687,451-687,964  |
-| BBa_25RRB2RQ | HR5'\_Chr16L | ChrXVI: 569,995-570,541  |
-| BBa_25U7CTYJ | HR3'\_Chr16R | ChrXVI: 570,542-571,023  |
-
+| Part number  |  Part name   |     Integration Loci     |Chr. Arm |Distance to Centromere |
+| :----------: | :----------: | :----------------------: | :------ | :---------------------|
+| BBa_250U3B6G | HR5'\_Chr1L  |  ChrI: 169,422-169,940   |Right | 30% |
+| BBa_25GQIZIK | HR3'\_Chr1R  |  ChrI: 169,942-170,478   |Right | 26414 bp |
+| BBa_253K1B8N | HR5'\_Chr4L  |  ChrIV: 359,868-360,355  |Left | 20% |
+| BBa_25P0EZQP | HR3'\_Chr4R  |  ChrIV: 360,356-360,897  |Left | 90061 bp |
+| BBa_2552AC6E | HR5'\_Chr6L  |   ChrVI: 10,278-10,913   |Left | 93% |
+| BBa_25IULUBT | HR3'\_Chr6R  |   ChrVI: 10,914-11,424   |Left | 140333 bp |
+| BBa_25ZYL3GW | HR5'\_Chr7L  |  ChrVII: 12,472-12,982   |Left | 97% |
+| BBa_25H1VEJW | HR3'\_Chr7R  |  ChrVII: 12,983-13,498   |Left | 483414 bp |
+| BBa_25FYK3TX | HR5'\_Chr8L  | ChrVIII: 191,015-191,539 |Right | 21% |
+| BBa_25PJP4LG | HR3'\_Chr8R  | ChrVIII: 191,540-192,044 |Right | 96388 bp |
+| BBa_25FUWBU7 | HR5'\_Chr9L  |  ChrIX: 340,431-340,933  |Left | 5% |
+| BBa_25PDQZ8Z | HR3'\_Chr9R  |  ChrIX: 340,935-341,523  |Left | 17943 bp |
+| BBa_25DIWZUL | HR5'\_Chr11L |   ChrXI: 24,931-25,451   |Left | 94% |
+| BBa_257IAIOG | HR3'\_Chr11R |   ChrXI: 25,452-25,963   |Left | 428273 bp |
+| BBa_25F4SCLY | HR5'\_Chr13L | ChrXIII: 408,123-408,657 |Right | 23% |
+| BBa_25GCY7VQ | HR3'\_Chr13R | ChrXIII: 408,658-409,161 |Right | 154324 bp |
+| BBa_25B7ZBSD | HR5'\_Chr15L |  ChrXV: 686,950-687,450  |Right | 50% |
+| BBa_25Q3F2B3 | HR3'\_Chr15R |  ChrXV: 687,451-687,964  |Right | 369943 bp |
+| BBa_25RRB2RQ | HR5'\_Chr16L | ChrXVI: 569,995-570,541  |Right | 9% |
+| BBa_25U7CTYJ | HR3'\_Chr16R | ChrXVI: 570,542-571,023  |Right | 33350 bp |
 
 
 ### 6 Dangerous Integration Sites
@@ -255,18 +254,18 @@ This multi-layered design not only expands the experimental versatility of yeast
 
 ## Reference
 
-[^1]:Ratcliff, W. C., Denison, R. F., Borrello, M., & Travisano, M. (2012). Experimental evolution of multicellularity. *Proceedings of the National Academy of Sciences of the United States of America*, *109*(5), 1595–1600. https://doi.org/10.1073/pnas.1115323109
-[^2]:Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. *Nature*, *639*(8055), 691–699. https://doi.org/10.1038/s41586-025-08689-6
-[^3]:Saputo, S., Chabrier-Rosello, Y., Luca, F. C., Kumar, A., & Krysan, D. J. (2012). The RAM network in pathogenic fungi. *Eukaryotic cell*, *11*(6), 708–717. https://doi.org/10.1128/EC.00044-12
+[^1]:Ratcliff, W. C., Denison, R. F., Borrello, M., & Travisano, M. (2012). Experimental evolution of multicellularity. *Proceedings of the National Academy of Sciences of the United States of America*, *109*(5), 1595–1600. DOI: 10.1073/pnas.1115323109
+[^2]:Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. *Nature*, *639*(8055), 691–699. DOI: 10.1038/s41586-025-08689-6
+[^3]:Saputo, S., Chabrier-Rosello, Y., Luca, F. C., Kumar, A., & Krysan, D. J. (2012). The RAM network in pathogenic fungi. *Eukaryotic cell*, *11*(6), 708–717. DOI: 10.1128/EC.00044-12
 [^4]:Brown, A. J., Dyos, S. L., Whiteway, M. S., White, J. H., Watson, M. A., Marzioch, M., Clare, J. J., Cousens, D. J., Paddon, C., Plumpton, C., Romanos, M. A., & Dowell, S. J. (2000). Functional coupling of mammalian receptors to the yeast mating pathway using novel yeast/mammalian G protein alpha-subunit chimeras. *Yeast (Chichester, England)*, *16*(1), 11–22. PMID: 10620771
-[^5]:Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. **ACS synthetic biology**, **4**(9), 975–986. https://doi.org/10.1021/sb500366v
-[^6]:Smith, H. E., Su, S. S., Neigeborn, L., Driscoll, S. E., & Mitchell, A. P. (1990). Role of IME1 expression in regulation of meiosis in Saccharomyces cerevisiae. *Molecular and cellular biology*, *10*(12), 6103–6113. https://doi.org/10.1128/mcb.10.12.6103-6113.1990
-[^7]:Greenhalf, W., Stephan, C., & Chaudhuri, B. (1996). Role of mitochondria and C-terminal membrane anchor of Bcl-2 in Bax induced growth arrest and mortality in Saccharomyces cerevisiae. *FEBS letters*, *380*(1-2), 169–175. https://doi.org/10.1016/0014-5793(96)00044-0
-[^8]:Bean, B. D. M., Mulvihill, C. J., Garge, R. K., Boutz, D. R., Rousseau, O., Floyd, B. M., Cheney, W., Gardner, E. C., Ellington, A. D., Marcotte, E. M., Gollihar, J. D., Whiteway, M., & Martin, V. J. J. (2022). Functional expression of opioid receptors and other human GPCRs in yeast engineered to produce human sterols. *Nature communications*, *13*(1), 2882. https://doi.org/10.1038/s41467-022-30570-7
-[^9]:Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature chemical biology*, *5*(2), 118–126. https://doi.org/10.1038/nchembio.138
-[^10]:Kari, H., Bandi, S. M. S., Kumar, A., & Yella, V. R. (2023). DeePromClass: Delineator for Eukaryotic Core Promoters Employing Deep Neural Networks. *IEEE/ACM transactions on computational biology and bioinformatics*, *20*(1), 802–807. https://doi.org/10.1109/TCBB.2022.3163418
-[^11]:Bertrand, E., Chartrand, P., Schaefer, M., Shenoy, S. M., Singer, R. H., & Long, R. M. (1998). Localization of ASH1 mRNA particles in living yeast. *Molecular cell*, *2*(4), 437–445. https://doi.org/10.1016/s1097-2765(00)80143-4 
-[^12]:Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. https://doi.org/10.1017/s1355838200001059
-[^13]:Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. https://doi.org/10.1073/pnas.1902823116
-[^14]:Shaw, W. M., Khalil, A. S., & Ellis, T. (2023). A Multiplex MoClo Toolkit for Extensive and Flexible Engineering of *Saccharomyces cerevisiae*. *ACS synthetic biology*, *12*(11), 3393–3405. https://doi.org/10.1021/acssynbio.3c00423
-[^15]:Puddu, F., Herzog, M., Selivanova, A., Wang, S., Zhu, J., Klein-Lavi, S., Gordon, M., Meirman, R., Millan-Zambrano, G., Ayestaran, I., Salguero, I., Sharan, R., Li, R., Kupiec, M., & Jackson, S. P. (2019). Genome architecture and stability in the Saccharomyces cerevisiae knockout collection. *Nature*, *573*(7774), 416–420. https://doi.org/10.1038/s41586-019-1549-9
+[^5]:Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. **ACS synthetic biology**, **4**(9), 975–986. DOI: 10.1021/sb500366v
+[^6]:Smith, H. E., Su, S. S., Neigeborn, L., Driscoll, S. E., & Mitchell, A. P. (1990). Role of IME1 expression in regulation of meiosis in Saccharomyces cerevisiae. *Molecular and cellular biology*, *10*(12), 6103–6113. DOI: 10.1128/mcb.10.12.6103-6113.1990
+[^7]:Greenhalf, W., Stephan, C., & Chaudhuri, B. (1996). Role of mitochondria and C-terminal membrane anchor of Bcl-2 in Bax induced growth arrest and mortality in Saccharomyces cerevisiae. *FEBS letters*, *380*(1-2), 169–175. DOI: 10.1016/0014-5793(96)00044-0
+[^8]:Bean, B. D. M., Mulvihill, C. J., Garge, R. K., Boutz, D. R., Rousseau, O., Floyd, B. M., Cheney, W., Gardner, E. C., Ellington, A. D., Marcotte, E. M., Gollihar, J. D., Whiteway, M., & Martin, V. J. J. (2022). Functional expression of opioid receptors and other human GPCRs in yeast engineered to produce human sterols. *Nature communications*, *13*(1), 2882. DOI: 10.1038/s41467-022-30570-7
+[^9]:Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature chemical biology*, *5*(2), 118–126. DOI: 10.1038/nchembio.138
+[^10]:Kari, H., Bandi, S. M. S., Kumar, A., & Yella, V. R. (2023). DeePromClass: Delineator for Eukaryotic Core Promoters Employing Deep Neural Networks. *IEEE/ACM transactions on computational biology and bioinformatics*, *20*(1), 802–807. DOI: 10.1109/TCBB.2022.3163418
+[^11]:Bertrand, E., Chartrand, P., Schaefer, M., Shenoy, S. M., Singer, R. H., & Long, R. M. (1998). Localization of ASH1 mRNA particles in living yeast. *Molecular cell*, *2*(4), 437–445. DOI: 10.1016/s1097-2765(00)80143-4 
+[^12]:Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
+[^13]:Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. DOI: 10.1073/pnas.1902823116
+[^14]:Shaw, W. M., Khalil, A. S., & Ellis, T. (2023). A Multiplex MoClo Toolkit for Extensive and Flexible Engineering of *Saccharomyces cerevisiae*. *ACS synthetic biology*, *12*(11), 3393–3405. DOI: 10.1021/acssynbio.3c00423
+[^15]:Puddu, F., Herzog, M., Selivanova, A., Wang, S., Zhu, J., Klein-Lavi, S., Gordon, M., Meirman, R., Millan-Zambrano, G., Ayestaran, I., Salguero, I., Sharan, R., Li, R., Kupiec, M., & Jackson, S. P. (2019). Genome architecture and stability in the Saccharomyces cerevisiae knockout collection. *Nature*, *573*(7774), 416–420. DOI: 10.1038/s41586-019-1549-9

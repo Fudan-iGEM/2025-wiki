@@ -147,7 +147,7 @@ We held in-depth conversations with CJUH-JLU-China, during which they shared val
 **What We Learned From It**
 
 - The discussion reinforced our strategy of using playful methods to engage a broad audience.
-- We decided to focus “Play” activities on widespread participation, while reserving “Practice” sessions for older students (middle and high school) who possess the necessary foundational knowledge and operational skills.
+- We focus “Play” activities on widespread participation, while reserving “Practice” sessions for older students (middle and high school) who possess the necessary foundational knowledge and operational skills.
 - The feedback also prompted us to refine our activity design using official iGEM judge-book, enhancing both relevance and quality.
 
 
@@ -339,7 +339,7 @@ The laboratory visit provided valuable lessons in designing research exposure ac
 
 Date：May 18，2025
 
-People：Zhiqin Wang、Yixuan Lu、Peining Wu、Huizhen Du
+People：Zhiqin Wang, Yixuan Lu, Peining Wu, Huizhen Du
 
 For Learning by Practicing, we aimed to demystify the lab and build foundational skills through highly accessible experiments. We hypothesized that a simple, relatable experiment could break down barriers to the lab, build confidence ("I can do this"), and reveal the invisible microbial world around us.
 
@@ -377,7 +377,7 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 Date：March 28th，2025
 
-People：Peining Wu、Yuxin Duan、Zuyao Wu、Yue Yue、Huizhen Du
+People：Peining Wu, Yuxin Duan, Zuyao Wu, Yue Yue, Huizhen Du
 
 Garden parties allow us to reach a diverse audience with different backgrounds—our goal was to test a multi-activity model: using "Play" ——games to attract participants, using "Practice" ——interactive operations to deepen understanding, and finally guiding participants to "Produce" creative works ——collage poetry to solidify their knowledge of synthetic biology.
 
@@ -496,7 +496,7 @@ Our activities are loved by children and parents. Everyone realized that there a
 
 To spark lasting interest in science, we focused on interactive workshops. Students learn by experimenting, observing, and collaborating, turning science into a fun, inclusive, and engaging adventure that inspires them to think like explorers and problem-solvers.
 
-In order to allow more children to receive our education, we choose to go into the community to reach more children. We collaborated with [Dalian Road Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/2ri6HdtRwp8TmxzetrYYDw)、[Chenjiatou Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/28t6Jc8MTzO5HJrqELSMMA) and [Lingqiao No.7 Residents’ Committee, Gaoqiao Town](https://mp.weixin.qq.com/s/0Tw382Uwc3kX4GZwmM42Vw), bringing a variety of workshop activities to local children.
+In order to allow more children to receive our education, we choose to go into the community to reach more children. We collaborated with [Dalian Road Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/2ri6HdtRwp8TmxzetrYYDw), [Chenjiatou Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/28t6Jc8MTzO5HJrqELSMMA) and [Lingqiao No.7 Residents’ Committee, Gaoqiao Town](https://mp.weixin.qq.com/s/0Tw382Uwc3kX4GZwmM42Vw), bringing a variety of workshop activities to local children.
 
 
 
@@ -579,7 +579,7 @@ Bread is a food almost every child knows and loves — and in Shanghai, with its
 
 We began with the observation that dough “gets bigger.” Children were encouraged to guess why, which led them to discover yeast — a living microorganism. From there, they learned that yeast produces gas through cellular respiration, which makes bread soft and airy.
 
-To spark creativity, we share the latest advances in yeast research and ask the children:*If you could change yeast, what would you want it to make?* we get the answer that:Plastic、Natural coloring、Even cakes and so on. Their imaginative answers are always surprising and inspiring.
+To spark creativity, we share the latest advances in yeast research and ask the children:*If you could change yeast, what would you want it to make?* we get the answer that:Plastic, Natural coloring, Even cakes and so on. Their imaginative answers are always surprising and inspiring.
 
 **Learning by Playing Activities**
 
@@ -710,7 +710,7 @@ Date：From July to October，2025
 
 Organizers：Yufan Han，Huizhen Du
 
-Collaboration：USTC、NUDT-CHINA
+Collaboration：USTC, NUDT-CHINA
 
 - Format
 
@@ -848,7 +848,7 @@ Date：September 12th，2025
 
 Organizers：Yining Zhao，Yuxin Duan，Zhiqin Wang，Huizhen Du
 
-Collaboration：Nanjing-China、SJTU-BioX-Shanghai、ZJU-China、USTC
+Collaboration：Nanjing-China, SJTU-BioX-Shanghai, ZJU-China, USTC
 
 **Overview** 
 
@@ -856,7 +856,7 @@ Hands-on experience is essential for building confidence in experimental science
 
 **Implementation**
 
-Following our earlier [microbial inoculation activity](#activity-3-microbial-inoculation-of-daily-necessities), participants suggested incorporating artistic elements to deepen engagement. In response, we developed this session in collaboration with Nanjing-China、SJTU-BioX-Shanghai、ZJU-China、USTC, combining microbiology with art.
+Following our earlier [microbial inoculation activity](#activity-3-microbial-inoculation-of-daily-necessities), participants suggested incorporating artistic elements to deepen engagement. In response, we developed this session in collaboration with Nanjing-China, SJTU-BioX-Shanghai, ZJU-China, USTC, combining microbiology with art.
 
 Using **safe bacterial strains**—some genetically engineered to fluoresce—participants “painted” directly onto agar plates using sterile loops and cotton swabs. This required careful attention to aseptic technique, helping build foundational lab skills in an intuitive and visually rewarding context.
 
@@ -935,7 +935,7 @@ By investigating practical questions—such as how temperature and yeast strains
 This method not only made synthetic biology more relatable through cultural context, but also strengthened the connection between microorganisms and everyday life through active creation—fully reflecting iGEM’s educational goal of bringing science closer to the public.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record7-rice.webp" alt="image-20250924000215628" style="zoom:50%;" />
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record7-rice.webp" alt="image-20250924000215628" style="width:50%;" />
     <div>
         <span style="color:gray">Figure 30. Aspergillus brunneus</span>
         <br><br>
@@ -1088,7 +1088,7 @@ Organizers：Huizhen Du，Yue Yue
 The Torch Plan is an innovative educational initiative designed to bridge synthetic biology and teacher education. By collaborating with future educators, we transform complex iGEM research topics into engaging, child-friendly learning materials, promoting sustainable science communication and achieving the educational goals of *Learning by Producing*.This initiative creates a collaborative platform where iGEM team members and education students combine their expertise. Through structured workshops and co-creation sessions, we transform complex scientific concepts into engaging educational content tailored for children aged 5-10.
 
 <div style="text-align: center;" id="fig1">
-   <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/poster-torch-plan.webp" alt="Event invitation poster" style="zoom:50%;" />
+   <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/poster-torch-plan.webp" alt="Event invitation poster" style="width:50%;" />
     <div>
         <span style="color:gray">Figure 34. The invitation poster of Torch plan</span>
         <br><br>
@@ -1153,7 +1153,7 @@ These resources have already been implemented in our [Interactive Science worksh
 Yinying Pan, one participant, reflected that the program helped her **rethink education across disciplines**. She realized that methods like inquiry-based learning and project-based activities could be applied in her English teaching, showing how synthetic biology education inspires innovation beyond the life sciences.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/yingyin-pan-torch-plan.webp" alt="Yingyin Pan" style="zoom:50%;" />
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/yingyin-pan-torch-plan.webp" alt="Yingyin Pan" style="width:50%;" />
     <div>
         <span style="color:gray">Figure 38. Yingyin Pan</span>
         <br><br>
@@ -1186,7 +1186,7 @@ Our goal was to **bring these groups back into the conversation**, empower them 
 
 Date：September 20th，2025
 
-Organizers：Huizhen Du、Zhongyi Huang
+Organizers：Huizhen Du, Zhongyi Huang
 
 Collaboration: SUSTech-Med
 
@@ -1322,7 +1322,7 @@ One of the core missions of our iGEM education program is to break down **geogra
 In collaboration with the **Youth League Committee of the Department of Physics**, we brought our curriculum directly into classrooms in remote mountain villages — areas that often lack quality educational materials and experienced teachers.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/rural.webp" alt="Our courses were taken to rural areas" style="zoom:50%;" />
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/rural.webp" alt="Our courses were taken to rural areas" style="width:50%;" />
     <div>
         <span style="color:gray">Figure 45. Our courses were taken to rural areas</span>
         <br><br>

@@ -11,7 +11,7 @@ description: On this page, we show how collaboration unites teams, experts, comm
 
 ## A Collaborative Journey
 
-Our project's success is deeply rooted in the vibrant iGEM community, which provided invaluable theoretical guidance and a dynamic platform for practical application. We are proud to have collaborated with a diverse network of partners, united by a shared mission to advance our project's goals while empowering the iGEM ecosystem.
+Our project's success is deeply rooted in the vibrant iGEM community, which provided invaluable guidance and a dynamic platform for practical application. We are proud to have collaborated with a diverse network of partners, united by a shared mission to advance our project's goals while empowering the iGEM ecosystem.
 
 This cooperation was guided by the dual principles of "serving project goals" and "empowering the iGEM community". We collaborated with three types of partners:
 
@@ -21,7 +21,7 @@ This cooperation was guided by the dual principles of "serving project goals" an
 
 All partnerships were forged in the spirit of iGEM's values, ensuring mutual benefit and a focus on solving real-world problems.
 
-| Partner                             | Activity                                   | Main Contribution                                            |
+| Type | Activity | Partner |
 | ----------------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
 | iGEM Teams                          | Ideas sharing, project exchange, joint events | BNUZH, NEFU, CAU – Idea exchange; CJLH-JLU-China – Education sharing; JLU-China with 33 teams – Rumor-debunking handbook; CSU-China, SZU-China, SUSTech, SCAU, Linke Edu – Project sharing; ECUST – Entrepreneurship (topics on pricing &amp; promotion); Munich – Project &amp; idea exchange; AFMU-China – Co-created picture book; USTC – Science game; ShanghaiTech-China &amp; SJTU-BioX-Shanghai – City Orienteering; Nanjing-China, SJTU-BioX-Shanghai, ZJU-China, USTC – Microbial Painting |
 | University / Student Organizations  | Campus events, lab visits                  | Fudan Student Union – Lecture Decoding Life with Algorithms; Campus Culture Center – Brewing course; School of Life Sciences – Lab tour &amp; microbial inoculation; GT Ratcliff Lab – Experimental training |
@@ -68,16 +68,16 @@ We attended this integrated event, which attracted over 1,000 synthetic biology 
 
 We initiated exchanges with multiple iGEM teams to iterate on our project design and [Human Practices](/human-practices) framework, ensuring they were robust and informed by diverse perspectives.
 
-| Date   | Team                                                         | Content                                                      |
+| Date   | Teams                                                        | Content |
 | :----- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Jan&nbsp;18 | [BNUZH-China](https://2025.igem.wiki/bnuzh-china/home), [NEFU-China](https://2025.igem.wiki/nefu-china/index.html), [CAU-China](https://2025.igem.wiki/cau-china/index.html) | [Human Practices experience sharing](/human-practices/) |
 | May&nbsp;16 | [CJLH-JLU-China](https://2025.igem.wiki/cjuh-jlu-china/index.html) | [Education strategy and learning exchange](/education/#academic-depth-exchanges-with-jilin-university) |
-| Sep&nbsp;11 | [UCS-A](https://2025.igem.wiki/ucs-a/)、[SUSTechOCEAN](https://2025.igem.wiki/sustechocean/)、[SZU-China](https://2025.igem.wiki/szu-china/)、[CSU-CHINA](https://2025.igem.wiki/csu-china/)、[SCAU Guangzhou](https://2025.igem.wiki/scau-guangzhou/) | [Project sharing and discussion](/human-practices/) |
+| Sep&nbsp;11 | [UCS-A](https://2025.igem.wiki/ucs-a/), [SUSTechOCEAN](https://2025.igem.wiki/sustechocean/), [SZU-China](https://2025.igem.wiki/szu-china/), [CSU-CHINA](https://2025.igem.wiki/csu-china/), [SCAU Guangzhou](https://2025.igem.wiki/scau-guangzhou/) | [Project sharing and discussion](/human-practices/) |
 | Sep&nbsp;20 | [ECUST-China](https://2025.igem.wiki/ecust-china/)           | [Entrepreneurship: pharmaceutical product pricing &amp; promotion](/entrepreneurship/) |
 | Sep&nbsp;28 | [Munich](https://2025.igem.wiki/Munich/)                     | [Project sharing, Idea exchange, and model presentation](/human-practices/) |
 
 
-## Activities Engagement &amp; Public Welfare
+## Engagements &amp; Public Welfare
 
 We actively sought collaborations with diverse teams to broaden our reach and engage wider audiences. We also extend our gratitude to the various departments and organizations that supported us and provided platforms for our activities.
 
@@ -98,7 +98,7 @@ Co-organized with teams from [ShanghaiTech-China](https://2025.igem.wiki/shangha
 
 #### [BIO-BOUNCE](/education/#bio-bounce)
 
-Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://2025.igem.wiki/nudt-china/home), we developed an online puzzle game that made gene editing concepts accessible and engaging, reaching a wide, digital-native audience. Below is a sceenshot of the game interface.
+Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://2025.igem.wiki/nudt-china/home), we developed [an online puzzle game](https://2025.igem.wiki/ustc/education#section-2) that made gene editing concepts accessible and engaging, reaching a wide, digital-native audience. Below is a sceenshot of the game interface.
 
 <div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/game-interface.webp" style="width:80%">
@@ -126,7 +126,7 @@ Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://20
 
 #### [Structured Community Education](/education/#interactive-science-workshop)
 
-We established a recurring presence at community centers ([Shanghai Sunflower](https://mp.weixin.qq.com/s/JaN6fctOlMpAvuNNOxJZrw),  [Dalian Road Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/2ri6HdtRwp8TmxzetrYYDw)、[Chenjiatou Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/28t6Jc8MTzO5HJrqELSMMA) and [Lingqiao No.7 Residents' Committee, Gaoqiao Town](https://mp.weixin.qq.com/s/0Tw382Uwc3kX4GZwmM42Vw), co-developing a standardized curriculum for children on topics like "[Genes &amp; Proteins](/education/#gene-protein-the-code-of-life)", "[Bread Fermentation](/education/#bread-fermentation)", "[Microbes are Everywhere](/education/#microbes-are-everywhere)" and so on.
+We established a recurring presence at community centers ([Shanghai Sunflower](https://mp.weixin.qq.com/s/JaN6fctOlMpAvuNNOxJZrw),  [Dalian Road Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/2ri6HdtRwp8TmxzetrYYDw), [Chenjiatou Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/28t6Jc8MTzO5HJrqELSMMA) and [Lingqiao No.7 Residents' Committee, Gaoqiao Town](https://mp.weixin.qq.com/s/0Tw382Uwc3kX4GZwmM42Vw), co-developing a standardized curriculum for children on topics like "[Genes &amp; Proteins](/education/#gene-protein-the-code-of-life)", "[Bread Fermentation](/education/#bread-fermentation)", "[Microbes are Everywhere](/education/#microbes-are-everywhere)" and so on.
 
 <div style="text-align: center;" id="fig6">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/community-centers.webp" style="width:80%">
@@ -173,7 +173,7 @@ In collaboration with multiple universities, primarily [CJUH-JLU-China](https://
 We contacted a well-known EB patient blogger, ["Prince Superman"](https://www.douyin.com/user/MS4wLjABAAAAiPAi_DP-EC0vXnRdKEIiamC2FOLQPAVw9_-7_5n5uOxYFHlLwK9Bj0oKVI1SBqf9), getting in touch with the "Butterfly Baby" patient community was transformative. With [Chuangzhi Farm](https://mp.weixin.qq.com/s/T5r_cn4C996vpNrhgvPFFw), we organized an exhibition to help the public understand the daily challenges patients face.
 
 <div style="text-align: center;" id="fig9">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/our-exhibition.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/our-exhibition.webp" style="width:50%">
     <div>
         <span style="color:gray">Our exhibition at Chuangzhi Farm</span>
         <br>        
@@ -209,7 +209,7 @@ Using the "PhotoVoice" methodology with [Club Tang Xin Dan](https://mp.weixin.qq
 
 #### [Garden Party ](/education/#activity-4-garden-party)
 
-On March 28th, we collaborated with [Club—Yiluzhiyin](https://mp.weixin.qq.com/s/j8XAxvefIViG3muPJaWC2Q) to host a vibrant Garden Party. The event featured balloon art, a synthetic biology adventure game, and collage poetry, successfully engaging over 300 participants and demonstrating the power of combining play, practice, and creation in science outreach.
+On March 28th, we collaborated with [Club - Yiluzhiyin](https://mp.weixin.qq.com/s/j8XAxvefIViG3muPJaWC2Q) to host a vibrant Garden Party. The event featured balloon art, a synthetic biology adventure game, and collage poetry, successfully engaging over 300 participants and demonstrating the power of combining play, practice, and creation in science outreach.
 
 <div style="text-align: center;" id="fig12">
     <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/our-event-booths.webp" style="width:80%">
@@ -251,4 +251,4 @@ We took part in the [Biopharmaceutical Track of the Shanghai College Student Inn
 
 ## Summary
 
-Our collaboration was guided by the principles of *serving project goals* and *empowering the iGEM community*. Through cross-team exchanges, expert guidance, and partnerships with schools, communities, patients, and industry, we co-created educational tools, organized public outreach, refined our project design, and explored real-world applications. Together, these collaborations bridged academia, society, and industry—transforming synthetic biology into a shared effort for education, empowerment, and innovation.
+Our collaboration was guided by the principles of *serving project goals* and *empowering the iGEM community*. Through cross-team exchanges, expert guidance, and partnerships with schools, communities, patients, and industry, we co-created educational tools, organized public outreach, refined our project design, and explored real-world applications. Together, these collaborations bridged academia, society, and industry — transforming synthetic biology into a shared effort for education, empowerment, and innovation.

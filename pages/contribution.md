@@ -25,9 +25,9 @@ description: Below is what we put in the judging form.
 
 ### [Gold](/contribution/#gold)
 
-We have decided to compete for three special awards: [New Composite Part](https://registry.igem.org/parts/bba-255t0phy), [Model](/model/), [Inclusivity](/inclusivity/).
+We are competing for three special awards: [New Composite Part](https://registry.igem.org/parts/bba-255t0phy), [Model](/model/), [Inclusivity](/inclusivity/).
 
-- We developed a useful new composite part BBa_255T0PHY that functions as an optimized transcription unit: [pSTM1 driven EMSfp499](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein). By combining a mutation-sensitive promoter with an EMS-resistant fluorescent protein, it enables high-fidelity recording of mutation dynamics. We confirmed it by whole-plasmid sequencing, and integrated it into yeast strain [BY4741](https://www.yeastgenome.org/strain/by4741) at *URA3* locus. We compared it with other [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) by [flow cytometry](/experiments/#flow-cytometry-of-single-cell-yeast) and fluoresence imaging, and [quantitively](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement?ref_type=heads) show that it fluctuates most under mutation pressure.
+- We developed a fully characterized new composite part BBa_255T0PHY that functions as a transcription unit: [pSTM1 driven EMSfp499](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein). By combining a mutation-sensitive promoter with an EMS-resistant fluorescent protein, it enables high-fidelity recording of mutation dynamics. We confirmed it by whole-plasmid sequencing, and integrated it into yeast strain [BY4741](https://www.yeastgenome.org/strain/by4741) at *URA3* locus. We compared it with other [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) by [flow cytometry](/experiments/#flow-cytometry-of-single-cell-yeast) and fluoresence imaging, and [quantitively](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/cytoflex?ref_type=heads) show that it fluctuates most under mutation pressure.
 
 - We developed the [YeastVerse](/model/) modeling and [3D simulation platform](/model/#visualization) to predict key parameters including fluorescent protein expression and maturation dynamics. We have established a Design-Build-Test-Learn cycle that integrates mathematical modeling with [AI-assisted reasoning](/model/#ai-aided-validation-of-model-predictions) to cross-validate designs like the [Fluorescent Timer](/part-collection/#fluorescent-timer) before wet-lab experiments.
 
@@ -35,7 +35,7 @@ We have decided to compete for three special awards: [New Composite Part](https:
 
 ## New Composite Part - pSTM1 driven EMSfp499
 
-The pSTM1 driven EMSfp499 BBa_255T0PHY is the best-performing *TU Recorder* from a collection of 28 [Transcriptional Unit (TU) Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) systematically designed and screened by our team. It exemplifies both design innovation and experimental rigor, making it a strong candidate for the Best Composite Part Award. This part combines the EMS–responsive promoter pSTM1[^1] with an EMS-resistant fluorescent reporter EMSfp499 (optimized mSG), achieving stable tracking of promoter mutagenesis under stress. 
+The pSTM1 driven EMSfp499 BBa_255T0PHY is the best-performing *TU Recorder* from a collection of 28 [Transcriptional Unit (TU) Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) systematically designed and screened by our team. It exemplifies both design innovation and experimental rigor, making it a strong candidate for the Best Composite Part Award. This part combines the EMS–responsive promoter pSTM1[^1] with an EMS-resistant fluorescent reporter EMSfp499 (optimized mSG[^9]), achieving stable tracking of promoter mutagenesis under stress. 
 
 Because any DNA sequences could mutate under EMS treatment and distort expression signals, EMSfp499 was optimized using our [Software Tool](/software) to minimize G/C content, thereby enhancing its resistance to EMS-induced transitions. When the pSTM1 promoter undergoes G/C &rarr; A/T mutations under EMS treatment, the resulting transcriptional changes are faithfully captured through the fluorescence of EMSfp499. This enables a high-fidelity, real-time readout of promoter mutation dynamics, offering the first mutagenic recording tool for *Saccharomyces cerevisiae*.
 
@@ -63,10 +63,12 @@ For *Encouraging Participation*, our [PhotoVoice](/inclusivity/#facilitating-dia
 
 These efforts led to [ProtocolFlow](https://protocolflow-290e68.igem.wiki/), our laboratory-assistive software. It provides visualized experimental guidance and a built-in mental health assessment, boosting lab efficiency while supporting researchers' well-being. We also initiated a "[Lab Mental Health Week](/inclusivity/#_4-2-lab-mental-health-week-check-in-campaign)" to promote collective awareness.
 
-We believe this replicable, evolving cycle of inclusive practice will transcend labels, genuinely empower diverse identities, and drive systemic transformation in science.
+We believe our replicable, evolving cycle of [Inclusive practice](/inclusivity/) will transcend labels, genuinely empower diverse identities, and drive systemic transformation in science.
 
 
-## [Reference](/contribution/#reference)
+## Reference
 
-[^1]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. https://doi.org/10.1073/pnas.1902823116
-[^2]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. https://doi.org/10.1021/sb500366v
+[^1]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. DOI: 10.1073/pnas.1902823116
+[^2]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v
+[^9]: Ando, R., Shimozono, S., Ago, H., Takagi, M., Sugiyama, M., Kurokawa, H., Hirano, M., Niino, Y., Ueno, G., Ishidate, F., Fujiwara, T., Okada, Y., Yamamoto, M., & Miyawaki, A. (2024). StayGold variants for molecular fusion and membrane-targeting applications. *Nature methods*, *21*(4), 648–656. DOI: 10.1038/s41592-023-02085-6
+
