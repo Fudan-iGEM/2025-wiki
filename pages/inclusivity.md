@@ -678,7 +678,7 @@ Future inclusive practices should focus more on creating **“points of identity
 
 #### Motivation: Reflection on the scientific community
 
-During our **PhotoVoice dialogues**, we invited a researcher with a history of fungal infections to share their lived experiences in the lab. They described the need to conceal their condition to avoid stigma, the frustration of making mistakes under sensory overload, and the worsening of their illness due to workplace stress.
+During our [**PhotoVoice dialogues**](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), we invited a researcher with a history of fungal infections to share their lived experiences in the lab. They described the need to conceal their condition to avoid stigma, the frustration of making mistakes under sensory overload, and the worsening of their illness due to workplace stress.
 
 This helped us realize: **inclusivity in science is not only about integrating marginalized groups into research, but also about safeguarding the well-being of researchers themselves.** We heard similar accounts from scientists, clinicians, and technicians, who work under high precision and high pressure while struggling with sensory sensitivities (e.g., to equipment noise or chemical odors), leading to anxiety and burnout.
 
