@@ -53,7 +53,7 @@ This model is based on the following experimental settings:
     </div>
 
 
-| **Parameter** | **Meaning**                                | **Default Value**       | **Unit** |
+| **Parameter** | **Meaning**                                | **Default Value**     | **Unit** |
 | ------------------- | ---------------------------------------------- | -------------------------------- | -------- |
 | **$Tcc$**      | Cell cycle length | 87[^6]                           | min      |
 | **$t_{end}$**   | Single-cell simulation duration | 20160 (customizable and modifiable) | min      |
@@ -64,12 +64,12 @@ This model is based on the following experimental settings:
 | **$\tau_{B}$** | C to B time constant       | 12.0[^1]                         | min      |
 | **$\tau_{I}$** | B to I time constant       | 45.0[^1]                         | min      |
 | **$\tau_{R}$** | I to R time constant       | 720.0[^1]                       | min      |
-| **$t_{12}^{(R)}$** | Red protein half-life      | 247.2                       | h        |
+| **$t_{12}^{(R)}$** | Red protein half-life      | 247.2 (estimated, assumed to be stable, with no significant degradation compared to the experimental window) | h        |
 | **$inherit_{frac,C}$** | Inheritance fraction of C-state protein | 1.0 (estimated, to simplify the model, modifiable within [0.0, 1.0]) | -        |
 | **$k_B$**           | C to B rate constant         | $\frac{1}{\tau_B}$ (calculate from known value $\tau_{B}$) | min⁻¹    |
 | **$k_I$**           | B to I rate constant         | $\frac{1}{\tau_I}$ (calculate from known value $\tau_{I}$) | min⁻¹    |
 | **$k_R$**           | I to R rate constant         | $\frac{1}{\tau_R}$ (calculate from known value $\tau_{R}$) | min⁻¹    |
-| **$k_{DR}$**       | Red protein degradation rate | $\frac{\ln 2}{(t_{12}^{(R)} \cdot 60)}$ | min⁻¹    |
+| **$k_{DR}$**       | Red protein degradation rate | $\frac{\ln 2}{t_{12}^{(R)} \cdot 60}$ (calculate from estimated value $t_{12}^{(R)}$) | min⁻¹    |
 
 ### Fast-FT Time Parameter Calculation
 
@@ -79,12 +79,13 @@ The fluorescence maturation of Fast-FT (from blue to red) is essentially a chemi
 
 ##### 1.1 Literature Data Summary
 
-The core data for the calculation is derived from literature on Fast-FT key time parameters at 25°C (in vitro purified + intracellular, Drosophila S2 cells) and 37°C (in vitro purified + intracellular, HeLa cells). Specific data are shown below:
+The core data for the calculation is derived from literature on Fast-FT key time parameters at 25°C (in vitro purified + intracellular, Drosophila S2 cells) and 37°C (in vitro purified + intracellular, HeLa cells). Specific data are shown below (data source[^1]):
 
 <div style="text-align: center;">
         <span style="color:gray">Table 2. Data summary for Fast-FT time parameter</span>
         <br>
     </div>
+
 
 | Temperature | Experimental System        | Blue Fluorescence Peak Time (h) | Red Fluorescence Half-Peak Time (h) | Remarks                                                      |
 | ----------- | -------------------------- | ------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
@@ -513,9 +514,7 @@ This module simulates the three-dimensional growth of the multicellular "grape y
 <div style="text-align: left;">
         <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
     </div>
-Other minor parameters are detailed in the [source code](https://gitlab.igem.org/2025/fudan/-/blob/main/model/YeastVerse/src/YeastSimulation.jsx).
-
-
+Other minor parameters are detailed in the source code.
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/visual1.webp)
 
