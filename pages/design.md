@@ -241,7 +241,7 @@ To replace the original HA and to enable [BsmBI](https://www.neb.com/en/products
 
 For 3'HA, we specially introduced two reversed [BbsI](https://www.thermofisher.com/order/catalog/product/FD1014) site, which can adapt to the MYT system in Shaw et al. (2023) （插入引用）for introducing selective marker. In addition, though not used in our project, we leave a PstI site, a design used in Shaw  et al. (2023)  for transposition of gRNA arrays, which could be utilized if further researchers require.
 
-![image-20251006220348644](typora-user-images\image-20251006220348644.png)
+image-20251006220348644.png
 
 ↑最新版，未上传图床
 
@@ -253,11 +253,7 @@ While Shaw et al. (2023差引用) included additional barcodes within their homo
 
 We used two primer sets to confirm correct integration via junction analysis. The 5H Forward / 3H Reverse primers anneal to the native genome sequence, while the 5H Reverse / 3H Forward primers anneal to the inserted construct (specifically, the ConLS and AgTEF Terminator sequences)（Fig. 插入序号）. This arrangement ensures that only precise integration at the target locus is amplified, yielding a band of near 500 bp. Native strains or off-target integrations will result in no amplification. 
 
-![image-20251003030557091](typora-user-images\image-20251003030557091.png)
-
-
-
-<ChromosomeVisualization />
+image-20251003030557091.png
 
 ## Cloning Strategy
 
