@@ -26,7 +26,7 @@ description: Through intersectional practices, we build an inclusive scientific 
     Enable rare disease patients to increase visibility by presenting themselves as artists.
   </h5>
 
-  <br/>
+  <br>
 
   <div class="section">
     <div class="section-title"><strong>Systemic Barriers Research:</strong></div>
@@ -145,7 +145,7 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
     Enable rare disease patients to increase visibility by presenting themselves as artists.
   </h5>
 
-  <br/>
+  <br>
 
   <div class="section">
     <div class="section-title"><strong>Objective</strong></div>
@@ -257,7 +257,7 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
     Sensory-friendly research design helps individuals affected by fungal problems to identify struggles they previously <em>could not articulate</em>, thereby empowering marginalized groups to voice their perspectives.
   </h5>
 
-  <br/>
+  <br>
 
   <div class="section">
     <div class="section-title"><strong>Objective</strong></div>
@@ -418,7 +418,7 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
     To address the challenge of "difficulty in participation" by creating opportunities for multi-stakeholder dialogue on scientific issues.
   </h5>
 
-  <br/>
+  <br>
 
   <div class="section">
     <div class="section-title"><strong>Objective</strong></div>
@@ -608,7 +608,7 @@ Future inclusive practices should focus more on creating **“points of identity
     The design of our lab mental health campaigns and assistive software showed that our dialogues with minority groups have deepened our understanding of intersectionality in scientific research.
   </h5>
 
-  <br/>
+  <br>
 
   <div class="section">
     <div class="section-title"><strong>Objective</strong></div>
