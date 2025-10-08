@@ -31,7 +31,7 @@ description: On this page, we present a commercially viable solution addressing 
 - Backed by expert validation (Shanghai Stock Exchange Cup, SoftBank China CEO), prioritizing **IP protection, CRO partnerships, and targeted market segmentation.**
 
 
-## 1. Our pre-research in the Antifungal medication market?
+## 1. Our pre-research in the Antifungal medication market
 
 #### 1.1 The current business landscape
 
@@ -72,7 +72,7 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 ## 2.Making our solution possible，scalable and inventive
 
 
-#### 2.1Core Technology
+#### 2.1 Core Technology
 
 At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture. The unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
 
@@ -82,7 +82,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 
 
-#### 2.2MVP (Minimum Viable Product)
+#### 2.2 MVP (Minimum Viable Product)
 
  We will deliver **Dr.sTraTeGY** to our clients as a **“Reagent Kit + Companion Software”** tool package, consisting of three parts.
 
@@ -394,8 +394,6 @@ By linking these five strategic pillars, we will build a complete marketing funn
 
 ------
 
-
-
 #### 5.6 Business Exit Strategy
 
 We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from first commercial sales to either acquisition or IPO if all goes well (pMYTarket traction, regulatory compliance, scaling).
@@ -408,7 +406,6 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 | **M&A by CRO / service company**                        | A large CRO might acquire DR、r.sTraTeGY to internalize the resistance-tracking capability. | **Pros:** Logical buyer with direct benefit from the technology; potential for strong synergies.<br>**Cons:** Purchase price negotiation challenges; may command a lower premium than a product company. | Integration potential, cost-saving synergies, ability to scale the technology, overlap with the acquirer's customer base. |
 
 ------
-
 
 
 #### 5.7 Business model canvas
