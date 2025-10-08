@@ -9,9 +9,12 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/software/header-softwar
 description: EMS Sequence Optimizer -- A web-based tool for optimizing gene sequences to tune their EMS mutagenesis sensitivity through synonymous codon substitution
 ---
 
-> **Try EMS-Optimizer now**: https://2025.igem.wiki/software-tools/fudan/
+> [!TLDR]
+> 
+> **Try EMS-Optimizer at&nbsp;**  https://2025.igem.wiki/software-tools/fudan/
 >
-> **Source code**: https://gitlab.igem.org/2025/software-tools/fudan
+> **Source code at&nbsp;** https://gitlab.igem.org/2025/software-tools/fudan
+
 
 ## Problem Statement
 
@@ -25,7 +28,7 @@ Directed evolution through EMS (ethyl methanesulfonate) mutagenesis is powerful 
 
 **EMS-Optimizer** intelligently selects synonymous codons to modulate G/C content, thereby controlling EMS mutation susceptibility. Key innovations:
 
-1. **Dual modes**: Forward (G→A, C→T for EMS) and Reverse (A→G, T→C for suppressor screening)
+1. **Dual modes**: Forward (G&rarr;A, C&rarr;T for EMS) and Reverse (A&rarr;G, T&rarr;C for suppressor screening)
 2. **Risk-based algorithm**: Scores codons by stop/missense/silent mutation potential (not just G/C count)
 3. **CAI integration**: Monitors translation efficiency impact using Codon Adaptation Index
 4. **GFP specialization**: Built-in analysis for 22+ critical fluorescent protein sites
@@ -43,16 +46,16 @@ Directed evolution through EMS (ethyl methanesulfonate) mutagenesis is powerful 
 
 ### Intelligent Mutagenesis Design
 
-At the core of our software is the **Smart Codon Selection** tool, which allows users to strategically target specific regions of a gene for mutagenesis. This feature operates in two distinct modes to suit different experimental goals. The **Maximize mode** is engineered to introduce high-risk codons into EMS-sensitive regions, thereby increasing the likelihood of desired mutations. Conversely, the **Minimize mode** selects low-risk codons for regions intended to remain stable. To quantify the potential impact of mutations, we have implemented a risk scoring system that heavily penalizes stop codons (×10) and missense mutations (×3) over silent mutations (×0). All codon selections are optimized for expression in *Saccharomyces cerevisiae* (yeast), ensuring that the resulting protein variants can be effectively produced.
+At the core of our software is the **Smart Codon Selection** tool, which allows users to strategically target specific regions of a gene for mutagenesis. This feature operates in two distinct modes to suit different experimental goals. The **Maximize mode** is engineered to introduce high-risk codons into EMS-sensitive regions, thereby increasing the likelihood of desired mutations. Conversely, the **Minimize mode** selects low-risk codons for regions intended to remain stable. To quantify the potential impact of mutations, we have implemented a risk scoring system that heavily penalizes stop codons (×10) and missense mutations (×3) over silent mutations (×0). All codon selections are optimized for expression in *Saccharomyces cerevisiae* (yeast), ensuring that the resulting protein variants can be effectively produced for our project.
 
-The software supports two operational modes for modeling genetic changes. The default **G:C → A:T Transition Mode** simulates the effects of EMS mutagenesis, specifically G→A and C→T transitions, which is ideal for standard mutagenesis screening experiments. For researchers interested in studying genetic suppression or reversion events, the **A:T → G:C Transition Mode** models the corresponding reversion mutations (A→G, T→C), providing a powerful tool for identifying suppressor mutations and conducting reversion screening.
+The software supports two operational modes for modeling genetic changes. The default **G:C &rarr; A:T Transition Mode** simulates the effects of EMS mutagenesis, specifically G&rarr;A and C&rarr;T transitions, which is ideal for standard mutagenesis screening experiments. For researchers interested in studying genetic suppression or reversion events, the **A:T &rarr; G:C Transition Mode** models the corresponding reversion mutations (A&rarr;G, T&rarr;C), providing a powerful tool for identifying suppressor mutations and conducting reversion screening.
 
 ### Real-time Expression and Functional Analysis
 
 To maintain a balance between mutagenesis and protein expression, our software includes **Translation Efficiency Tracking**. This feature calculates the Codon Adaptation Index (CAI) in real-time as sequence modifications are made. Visual cues—a green indicator (🟢) for an increase in CAI, red (🔴) for a decrease, and white (⚪) for neutral changes—provide immediate feedback, allowing users to make informed decisions that align their mutagenesis goals with optimal expression efficiency.
 
-<div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/software/cai.webp" style="width:30%">
+<div style="text-align: center;" id="fig2">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/software/cai.webp" style="width:50%">
     <div>
         <span style="color:gray">Figure 2. Translation Efficiency Tracking Panel</span>
         <br><br>
@@ -63,16 +66,16 @@ For projects focused on fluorescent protein engineering, the software offers a *
 
 ### User-Friendly and Accessible
 
-Our software is designed with the user in mind. As a web-based application, it requires no installation and is accessible from any modern web browser. It accommodates both DNA and protein sequences as input, with an automatic conversion feature for seamless workflow. The mutation rate is highly adjustable, with precision down to 1×10⁻¹⁰, giving users fine-grained control over their in-silico experiments. Once an optimized sequence is generated, it can be copied to the clipboard with a single click. To cater to a global user base, the interface is available in both English and Chinese.
+Our software is designed with the user in mind. As a web-based application, it requires no installation and is accessible from any modern web browser. It accommodates both DNA and protein sequences as input, with an automatic conversion feature for seamless workflow. The mutation rate is highly adjustable, with precision down to 1×10<sup>-10</sup>, giving users fine-grained control over their in-silico experiments. Once an optimized sequence is generated, it can be copied to the clipboard with a single click. To cater to a global user base, the interface is available in both English and Chinese.
 
 ## How It Works
 
 ### Algorithm Overview
 
-<div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/software/algorithm.webp" style="width:30%">
+<div style="text-align: center;" id="fig3">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/software/algorithm.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 3. How the algorithm works</span>
+        <span style="color:gray">Figure 3. Flow chart of the algorithm</span>
         <br><br>
     </div>
 </div>
@@ -81,7 +84,7 @@ Our software is designed with the user in mind. As a web-based application, it r
 
 For each codon position (0, 1, 2):
 1. **Identify mutable bases** (G/C for forward, A/T for reverse)
-2. **Simulate mutation** (G→A, C→T, or A→G, T→C)
+2. **Simulate mutation** (G&rarr;A, C&rarr;T, or A&rarr;G, T&rarr;C)
 3. **Score outcome**:
    - Nonsense (stop codon): +10 points
    - Missense (AA change): +3 points
@@ -91,21 +94,21 @@ For each codon position (0, 1, 2):
 
 ### Probability Calculation
 
-**Per-codon probabilities**: Direct simulation of all 3 positions
+**Per-codon probabilities**: direct simulation of all 3 positions
 
 **Sequence-wide cumulative probability**:
 ```
 P(≥1 mutation) = 1 - ∏[1 - P(single codon)]
 ```
-Implemented with log-space arithmetic for numerical stability:
+implemented with log-space arithmetic for numerical stability:
 ```
 P(≥1 mutation) = -expm1(∑log1p(-Pᵢ))
 ```
 
-## Installation & Usage
+## Installation &amp; Usage
 
 ### Online Access
-**Live demo**: https://2025.igem.wiki/software-tools/fudan/
+**Live demo at&nbsp;** https://2025.igem.wiki/software-tools/fudan/
 
 ### Local Deployment
 ```bash
@@ -129,64 +132,64 @@ pnpm run serve
    - Hover codons for detailed probabilities
    - Copy optimized sequences with one click
 
-## Development Process (DBTL Cycle)
+## Development Process (DBTL cycles)
 
 ### Cycle 1: Algorithm Validation
 
-**Design**: Python CLI to test core optimization logic
-**Build**: Implemented G/C-based codon selection
-**Test**: Distributed to team members
-**Learn**: ❌ Poor usability (requires Python installation), results not intuitive
+- **Design**: Python CLI to test core optimization logic
+- **Build**: Implemented G/C-based codon selection
+- **Test**: Distributed to team members
+- **Learn**: ❌ Poor usability (requires Python installation), results not intuitive
 
 **Key insight**: A powerful algorithm needs an accessible interface.
 
 ### Cycle 2: Web Application
 
-**Design**: Browser-based GUI with 3-step workflow (Input → Optimize → Export)
+**Design**: Browser-based GUI with 3-step workflow (Input &rarr; Optimize &rarr; Export)
+
 **Build**:
 - Migrated Python logic to JavaScript/TypeScript
 - Created Vue 3 single-page application
 - Added side-by-side sequence comparison view
+
 **Test**: Positive feedback on ease of use and visualization
+
 **Learn**: ✅ Web delivery removes installation barriers and enables instant feedback
 
 ### Cycle 3: Advanced Features (Current)
 
 **Design**: Based on user feedback, added:
 - Reverse mutation mode for suppressor screening
-
 - CAI tracking for expression efficiency
-
 - GFP-specific site analysis
-
 - Bilingual support
 
-  **Build**: Implemented all features with full test coverage
-  **Test**: In progress with wet lab validation
-  **Learn**: Integrated features increase utility without sacrificing simplicity
+**Build**: Implemented all features with full test coverage
 
-## Future Directions
+**Test**: In progress with wet lab validation
 
-1. **Expand organism support**: E. coli, mammalian cell codon tables
-3. **Integrate structural data**: Incorporate AlphaFold predictions to weight solvent accessibility
-4. **Experimental feedback loop**: Machine learning from observed mutation distributions
+**Learn**: Integrated features increase utility without sacrificing simplicity
+
+## Future Development
+
+- **Expand organism support**: add *E. coli*, mammalian cell codon tables
+- **Integrate structural data**: incorporate [AlphaFold](https://alphafoldserver.com) predictions to weight solvent accessibility
+- **Experimental feedback**: implement machine learning to tune parameters from observed mutation distributions
 
 ## References
 
-1. Sharp, P. M., & Li, W. H. (1987). The codon adaptation index—a measure of directional synonymous codon usage bias, and its potential applications. *Nucleic Acids Research*, 15(3), 1281-1295.
+1. Sharp, P. M., & Li, W. H. (1987). The codon adaptation index — a measure of directional synonymous codon usage bias, and its potential applications. *Nucleic Acids Research*, 15(3), 1281-1295. DOI: 10.1093/nar/15.3.1281
 
-2. Tsien, R. Y. (1998). The green fluorescent protein. *Annual Review of Biochemistry*, 67, 509-544.
+2. Tsien, R. Y. (1998). The green fluorescent protein. *Annual Review of Biochemistry*, 67, 509-544. DOI: 10.1146/annurev.biochem.67.1.509
 
-3. Zacharias, D. A., et al. (2002). Partitioning of lipid-modified monomeric GFPs into membrane microdomains of live cells. *Science*, 296(5569), 913-916.
+3. Zacharias, D. A., et al. (2002). Partitioning of lipid-modified monomeric GFPs into membrane microdomains. *Science*, 2002;296(5569):913‑916. DOI: 10.1126/science.1068539
 
-4. Greene EA, et al. (2003) Spectrum of chemically induced mutations from a large-scale reverse-genetic screen in Arabidopsis. *Genetics* 164(2):731-740. DOI: 10.1093/genetics/164.2.731
-5. Bennetzen JL, Hall BD. (1982) Codon selection in yeast. *J Biol Chem* 257(6):3026-3031. PMID: 6277903
+4. Greene E. A., et al. (2003) Spectrum of chemically induced mutations from a large-scale reverse-genetic screen in Arabidopsis. *Genetics*, 164(2):731-740. DOI: 10.1093/genetics/164.2.731
 
-6. Ormö M. et al. Crystal structure of the Aequorea victoria green fluorescent protein. Science. 1996;273(5280):1392‑1395.
+5. Bennetzen J. L., Hall B. D. (1982) Codon selection in yeast. *J Biol Chem*, 257(6):3026-3031. PMID: 6277903
 
-7. Cormack BP, Valdivia RH, Falkow S. FACS-optimized mutants of GFP. Gene. 1996;173(1):33‑38.
+6. Ormö M. et al. (1996) Crystal structure of the Aequorea victoria green fluorescent protein. *Science*, 273(5280):1392‑1395. DOI: 10.1126/science.273.5280.1392
 
-8. Tsien RY. The green fluorescent protein. Annu Rev Biochem. 1998;67:509‑544.
-9. Heim R, Tsien RY. Engineering GFP for improved brightness and spectral variants. Curr Biol. 1996;6(2):178‑182.
+7. Cormack B. P., Valdivia R. H., Falkow S. (1996) FACS-optimized mutants of the green fluorescent protein (GFP). *Gene*, 173(1):33‑38. DOI: 10.1016/0378-1119(95)00685-0
 
-10. Zacharias DA, Violin JD, Newton AC, Tsien RY. Partitioning of lipid-modified monomeric GFPs into membrane microdomains. Science. 2002;296(5569):913‑916.
+8. Heim R., Tsien R.Y. (1996) Engineering green fluorescent protein for improved brightness, longer wavelengths and fluorescence resonance energy transfer. *Curr Biol*, 6(2):178‑182. DOI: 10.1016/s0960-9822(02)00450-5

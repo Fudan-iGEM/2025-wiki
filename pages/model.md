@@ -26,11 +26,11 @@ In synthetic biology and cellular timing studies, constructing a reliable and re
 
 ## Introduction
 
-This model is centered around the "single pulse → three-step irreversible maturation chain (C→B→I→R)" and simulates the entire process from promoter expression to the complete maturation of the fluorescent protein. It uses $r(t) = \frac{R}{B + R}$ and $\Delta r$ as criteria to evaluate the readability and monotonicity of the timer. By adjusting the pulse width (the duration of Ash1 pulses), maturation time constants ($\tau_B, \tau_I, \tau_R$), and pulse intensity (adjusting promoter strength), we first screen for "usable intervals" mathematically, and then provide reproducible target conditions for wet experiments. The model compares periodic promoters (Ash1) with constitutive promoters: the former provides short and clean expression windows, improving $\Delta r$ and monotonicity; the latter, under the same maturation parameters, tends to dilute time resolution due to continuous new molecule generation, and thus is used as a control to demonstrate the necessity of pulse gating. To address cases where promoter expression is either too high or too low, the model incorporates promoter strength ($pulse_{amp}$) and intergenerational inheritance (inheritance fraction, $pp$) into sensitivity analysis. By controlling promoter strength, we ensure that the system provides an appropriate level of protein expression while avoiding premature saturation or insufficient signaling. In summary, the model systematically examines and quantifies two critical factors: promoter selection and promoter strength, validating the reasonableness of selecting the Ash1 promoter and an appropriate promoter strength from both the mathematical and model perspectives before conducting wet experiments.
+This model is centered around the "single pulse &rarr; three-step irreversible maturation chain (C&rarr;B&rarr;I&rarr;R)" and simulates the entire process from promoter expression to the complete maturation of the fluorescent protein. It uses $r(t) = \frac{R}{B + R}$ and $\Delta r$ as criteria to evaluate the readability and monotonicity of the timer. By adjusting the pulse width (the duration of Ash1 pulses), maturation time constants ($\tau_B, \tau_I, \tau_R$), and pulse intensity (adjusting promoter strength), we first screen for "usable intervals" mathematically, and then provide reproducible target conditions for wet experiments. The model compares periodic promoters (Ash1) with constitutive promoters: the former provides short and clean expression windows, improving $\Delta r$ and monotonicity; the latter, under the same maturation parameters, tends to dilute time resolution due to continuous new molecule generation, and thus is used as a control to demonstrate the necessity of pulse gating. To address cases where promoter expression is either too high or too low, the model incorporates promoter strength ($pulse_{amp}$) and intergenerational inheritance (inheritance fraction, $pp$) into sensitivity analysis. By controlling promoter strength, we ensure that the system provides an appropriate level of protein expression while avoiding premature saturation or insufficient signaling. In summary, the model systematically examines and quantifies two critical factors: promoter selection and promoter strength, validating the reasonableness of selecting the Ash1 promoter and an appropriate promoter strength from both the mathematical and model perspectives before conducting wet experiments.
 
 ## Model Design
 
-In a yeast multicellular system, the timer fluorescent protein (FT) is introduced to represent the time process between the birth and maturation of cells. FT consists of an irreversible maturation chain: **C→B→I→R**, where:
+In a yeast multicellular system, the timer fluorescent protein (FT) is introduced to represent the time process between the birth and maturation of cells. FT consists of an irreversible maturation chain: **C&rarr;B&rarr;I&rarr;R**, where:
 
 - **C** represents the immature protein;
 - **B** represents the blue state;
@@ -60,16 +60,16 @@ This model is based on the following experimental settings:
 | **$dt$**      | Integration step size | 1.0 (customizable and modifiable) | min      |
 | **$pulse_{width}$** | Pulse duration | 15 (as demonstrated [below](#periodic-promoter-vs-constitutive-promoter)) | min      |
 | **$pulse_{amp}$**   | Pulse amplitude                   | 1.0 (as demonstrated [below](#strong-promoter-vs-weak-promoter)) | -        |
-| **$k_{dm}$**        | mRNA degradation rate | $\frac{\ln 2}{10}$[^11]  | min⁻¹    |
+| **$k_{dm}$**        | mRNA degradation rate | $\frac{\ln 2}{10}$[^11]  | min<sup>-1</sup> |
 | **$\tau_{B}$** | C to B time constant       | 12.0[^1]                         | min      |
 | **$\tau_{I}$** | B to I time constant       | 45.0[^1]                         | min      |
 | **$\tau_{R}$** | I to R time constant       | 720.0[^1]                       | min      |
 | **$t_{12}^{(R)}$** | Red protein half-life      | 247.2 (estimated, assumed to be stable, with no significant degradation compared to the experimental window) | h        |
 | **$inherit_{frac,C}$** | Inheritance fraction of C-state protein | 1.0 (estimated, to simplify the model, modifiable within [0.0, 1.0]) | -        |
-| **$k_B$**           | C to B rate constant         | $\frac{1}{\tau_B}$ (calculate from known value $\tau_{B}$) | min⁻¹    |
-| **$k_I$**           | B to I rate constant         | $\frac{1}{\tau_I}$ (calculate from known value $\tau_{I}$) | min⁻¹    |
-| **$k_R$**           | I to R rate constant         | $\frac{1}{\tau_R}$ (calculate from known value $\tau_{R}$) | min⁻¹    |
-| **$k_{DR}$**       | Red protein degradation rate | $\frac{\ln 2}{t_{12}^{(R)} \cdot 60}$ (calculate from estimated value $t_{12}^{(R)}$) | min⁻¹    |
+| **$k_B$**           | C to B rate constant         | $\frac{1}{\tau_B}$ (calculate from known value $\tau_{B}$) | min<sup>-1</sup>    |
+| **$k_I$**           | B to I rate constant         | $\frac{1}{\tau_I}$ (calculate from known value $\tau_{I}$) | min<sup>-1</sup>    |
+| **$k_R$**           | I to R rate constant         | $\frac{1}{\tau_R}$ (calculate from known value $\tau_{R}$) | min<sup>-1</sup>    |
+| **$k_{DR}$**       | Red protein degradation rate | $\frac{\ln 2}{t_{12}^{(R)} \cdot 60}$ (calculate from estimated value $t_{12}^{(R)}$) | min<sup>-1</sup>    |
 
 ### Fast-FT Time Parameter Calculation
 
@@ -323,7 +323,7 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 2. &delta;r(65→145 min) vs pulse width τ</span>
+        <span style="color:gray">Figure 2. &delta;r(65&rarr;145 min) vs pulse width τ</span>
         <br><br>
     </div>
 
@@ -525,7 +525,7 @@ Other minor parameters are detailed in the source code.
 
 ### 3D Fluorescent Timer Maturation Visualization
 
-This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "Grape Yeast" cluster, integrating the core ordinary differential equation framework for mRNA transcription, protein synthesis, and state transitions (C → B → I → R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
+This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "Grape Yeast" cluster, integrating the core ordinary differential equation framework for mRNA transcription, protein synthesis, and state transitions (C &rarr; B &rarr; I &rarr; R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
 
 
 
@@ -572,7 +572,7 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 - **Design (2025.06):**
   The initial model was designed based on published data for Fast-FT proteins, including maturation kinetics from in vitro studies (e.g., blue peak time and red half-peak time at 25°C and 37°C). Parameters such as maturation time constants ($\tau_B, \tau_I, \tau_R$) were sourced from literature [^1], and the model assumed a generic promoter expression pattern without cell-cycle specificity.
 - **Build (2025.06):**
-  We implemented the model using ordinary differential equations (ODEs) to describe the irreversible maturation chain (C→B→I→R). Key parameters were set based on in vitro values, such as $\tau_B$=12 min and $\tau_R$=720 min, and the Ash1 promoter was initially erroneously modeled to express at the start of the cell cycle.
+  We implemented the model using ordinary differential equations (ODEs) to describe the irreversible maturation chain (C&rarr;B&rarr;I&rarr;R). Key parameters were set based on in vitro values, such as $\tau_B$=12 min and $\tau_R$=720 min, and the Ash1 promoter was initially erroneously modeled to express at the start of the cell cycle.
 - **Test (2025.07):**
   Simulation results revealed discrepancies with expected cellular behaviors. The in vitro-based maturation kinetics caused the fluorescent proteins to mature from blue to red far too rapidly. This led to a premature saturation of the red signal, where the r(t) ratio approached its maximum too quickly within a single cell cycle, influencing the time gradient needed for resolution. Consequently, over just one or two generations, all cells accumulated a similarly high red signal, making it impossible to distinguish young daughter cells from old mother cells and causing the timer to lose its core function.
 - **Learn (2025.07):**
@@ -619,7 +619,7 @@ This model provides a complete theoretical framework and computational implement
 
 **Use Case:** Understand the fundamental behavior of the timer within a single cell cycle and validate the core dynamics of the model.
 
-Single-cell simulations form the foundation for understanding FT system behavior. By observing the full cycle of a single cell from birth to division, users can verify whether the maturation chain (C→B→I→R) behaves as expected, check the monotonicity of the red-to-blue ratio $r(t)$, and assess whether the time evolution of each protein state aligns with biological intuition. This level of analysis is especially useful for users encountering the model for the first time, helping them develop an intuitive understanding of the system behavior.
+Single-cell simulations form the foundation for understanding FT system behavior. By observing the full cycle of a single cell from birth to division, users can verify whether the maturation chain (C&rarr;B&rarr;I&rarr;R) behaves as expected, check the monotonicity of the red-to-blue ratio $r(t)$, and assess whether the time evolution of each protein state aligns with biological intuition. This level of analysis is especially useful for users encountering the model for the first time, helping them develop an intuitive understanding of the system behavior.
 
 When analyzing the results, focus on the following aspects:
 

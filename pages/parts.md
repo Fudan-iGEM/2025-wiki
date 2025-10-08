@@ -44,9 +44,9 @@ We gratefully acknowledge the following companies for synthesizing double-strand
 
 Our favourite part is BBa_255T0PHY which belongs to the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) collection.
 
-Please visit our [Improved Parts](/fudan/improve/) page for parts we improved this year.
+Please visit our [Improved Parts](/improve/) page for parts we improved this year.
 
-Vist our [Part Collection](/fudan/part-collection/) page for details about our 3 collections.
+Vist our [Part Collection](/part-collection/) page for details about our 3 collections.
 
 ----
 Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v

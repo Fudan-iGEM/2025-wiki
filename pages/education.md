@@ -528,7 +528,7 @@ When teaching, the key points were *what DNA is* and *how DNA controls protein s
 
 - **Base-Matching Game** – We also improved last year's [base-matching game](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-plan-dna-base-pairing-mini-game.pdf) to help children understand the principle of base complementary pairing — through this interaction, they gained a comprehensive view of base-pairing rules. Using an interactive card-matching system, students practiced complementary base pairing, reinforcing rules through play.
 
-- **Molecular Role-Play** – Moreover, to explain transcription and translation (“DNA → RNA → protein”), we organized a role-playing stage play where children acted out different molecular roles and functions. You can read our play clicking [here](https://static.igem.wiki/teams/5643/pageimage/education/file/interactive-scenario-simulation-exploring-protein-synthesis-in-biology.pdf). Acting as DNA, RNA, and ribosomes, children performed transcription and translation. This theater-style game brought the central dogma to life in a way that was both fun and unforgettable.
+- **Molecular Role-Play** – Moreover, to explain transcription and translation (“DNA &rarr; RNA &rarr; protein”), we organized a role-playing stage play where children acted out different molecular roles and functions. You can read our play clicking [here](https://static.igem.wiki/teams/5643/pageimage/education/file/interactive-scenario-simulation-exploring-protein-synthesis-in-biology.pdf). Acting as DNA, RNA, and ribosomes, children performed transcription and translation. This theater-style game brought the central dogma to life in a way that was both fun and unforgettable.
 
 **Outcomes**
 
@@ -1353,7 +1353,7 @@ Ultimately, what we gained went far beyond subject expertise. We learned how to 
 
 ## Summary
 
-Our education initiative is built on the **Constructionism** learning theory and implemented through our unique **"Triple P" framework**: **Play → Practice → Produce**.
+Our education initiative is built on the **Constructionism** learning theory and implemented through our unique **"Triple P" framework**: **Play &rarr; Practice &rarr; Produce**.
 
 We **sparked curiosity** through interactive games, urban challenges, and a children's picture book. We **built understanding** via hands-on experiments like microbial art and rice wine brewing. We **empowered creation** through a synbio training program and our Torch Plan, where we co-developed educational materials with future teachers.
 

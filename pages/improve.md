@@ -11,7 +11,7 @@ description: On this page, we describe how we improved mCherry to our Timer modu
 
 ## Overview
 
-mCherry is a monomeric red fluorescent protein first reported in 2004. It is widely used due to its advantage of fast maturation kinetics. This year, to better characterize cellular lineage and cell life cycle, we introduced a modified mCherry variant based on academic literature[^1]. Its color emission changes predictably over time (blue → red), thereby gaining the ability to resolve time.
+mCherry is a monomeric red fluorescent protein first reported in 2004. It is widely used due to its advantage of fast maturation kinetics. This year, to better characterize cellular lineage and cell life cycle, we introduced a modified mCherry variant based on academic literature[^1]. Its color emission changes predictably over time (blue &rarr; red), thereby gaining the ability to resolve time.
 
 
 

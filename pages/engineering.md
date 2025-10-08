@@ -100,6 +100,8 @@ Quantitative analysis via flow cytometry showed a significant increase in fluore
 
 The functional output of the near-infrared reporters is decoupled from the successful DNA construction. Achieving sufficient fluorescence for EMSfp642 and EMSfp643 in yeast requires the supplementation of the chromophore precursor PCB, as the native BV pathway is rate-limiting. This experience mandates that all future experiments using BV-dependent fluorescent proteins in *S. cerevisiae* must include the PCB incubation step to ensure reliable and quantifiable results.
 
+These DBTL cycles are just one example of our project engineering processes. Other examples are available on our [Software](/software/#development-process-dbtl-cycle), [Model](/model/#improvement-log), [Inclusivity](/inclusivity/#) and [Entrepreneurship](/entrepreneurship/#) pages.
+
 ## Reference
 
 [^1]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. DOI: 10.1073/pnas.1902823116

@@ -269,7 +269,7 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 #### Marketing Strategy
 
-By linking these five strategic pillars, we will build a complete marketing funnel from **brand awareness → interest generation → value validation → trust building → conversion & payment → word-of-mouth propagation**. This integrated online and offline approach efficiently drives the commercial success of Dr.sTraTeGY, achieving brand building, lead generation, and sales conversion in a closed loop.
+By linking these five strategic pillars, we will build a complete marketing funnel from **brand awareness &rarr; interest generation &rarr; value validation &rarr; trust building &rarr; conversion & payment &rarr; word-of-mouth propagation**. This integrated online and offline approach efficiently drives the commercial success of Dr.sTraTeGY, achieving brand building, lead generation, and sales conversion in a closed loop.
 
 **I. Brand & Corporate Image**
 

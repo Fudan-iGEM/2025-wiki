@@ -118,9 +118,9 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 
 
 
-### 0.2 Our **Visibility → Empowerment → Involvement** model
+### 0.2 Our **Visibility &rarr; Empowerment &rarr; Involvement** model
 
-To address these barriers, we propose the **Visibility → Empowerment → Involvement** model of inclusive science.
+To address these barriers, we propose the **Visibility &rarr; Empowerment &rarr; Involvement** model of inclusive science.
 
 - **Visibility** serves as the emotional and cognitive foundation of an inclusive community.
 - **Empower expression** allows marginalized groups to articulate needs overlooked within current scientific structures.
@@ -240,7 +240,7 @@ Intersectionality, a concept introduced by scholar Kimberlé Crenshaw, posits th
 
 While we also employ the framework of intersectionality, our emphasis is distinct. We argue that while intersecting barriers undoubtedly create and reinforce inequality, these points of intersection also represent potential sites for building diverse partnerships. By uniting individuals and groups who share similar challenges, we can forge broader coalitions to develop collective solutions.
 
-Inspired by this, we formulated the **Visibility → Empowerment → Involvement** model, emphasizing respect for participants’ multiple identities throughout the process, and using *intersectional identities* to establish connections across broader stakeholders. This approach expands the reach of inclusive science.
+Inspired by this, we formulated the **Visibility &rarr; Empowerment &rarr; Involvement** model, emphasizing respect for participants’ multiple identities throughout the process, and using *intersectional identities* to establish connections across broader stakeholders. This approach expands the reach of inclusive science.
 
 Furthermore, the intersectional perspective provides a cost-effective solution to the challenges rare diseases face — namely, *dispersed populations* and *low patient numbers/high research costs*. By “seeking overlaps,” we can amplify alliances and increase collective power.
 
