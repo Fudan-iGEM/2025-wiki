@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/zyn-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/imp.webp
-description: On this page, we describe how we improved mCherry to our <a href="https://2025.igem.wiki/fudan/part-collection.html#fluorescent-timer">Timer Module</a>.
+description: On this page, we describe how we improved mCherry to our Timer module https://2025.igem.wiki/fudan/part-collection.html#fluorescent-timer
 ---
 
 ## Overview
@@ -45,7 +45,7 @@ Based on the study by Subach *et al.* (2009)[^1], the red/blue fluorescence inte
 
 We constructed the TU Timer (BBa_25AT6YR4) to utilize the modified mCherry . Since our yeast population is continuously proliferating, the timing of protein transcription and translation is inherently asynchronous. To accurately represent cell lineage progression, we needed the timer to initiate maturation at a defined cell-cycle stage. Therefore, selecting an appropriate promoter was essential.
 
-Based on the results from our Model (see [Model page](/model/)), we chose the ASH1 AIpro promoter, which is transcriptionally activated during the late M phase. In addition, we incorporated the ASH1 3' UTR (BBa_25AIDL8P), which localizes the mRNA to the bud tip of the daughter cell, ensuring that translation begins specifically within the daughter cell[^3]. 
+Based on the results from our Model (see our [Model](/model/) page), we chose the ASH1 AIpro promoter, which is transcriptionally activated during the late M phase. In addition, we incorporated the ASH1 3' UTR (BBa_25AIDL8P), which localizes the mRNA to the bud tip of the daughter cell, ensuring that translation begins specifically within the daughter cell[^3]. 
 
 Consequently, the modified mCherry transcript is produced in the mother cell during late M phase, and its mRNA is then localized to the newly formed daughter cell, where translation and chromophore maturation occur. This process is repeated at every cell division, enabling the TU Timer(BBa_25AT6YR4) to visually track cell lineage over successive generations.
 

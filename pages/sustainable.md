@@ -34,7 +34,7 @@ Fungal infections are a growing global health threat. Our project seeks to reduc
 
 ### Problem Identification
 
-**Problem 1 – Marginalized voices in healthcare** Patients with epidermolysis bullosa (EB) and other rare conditions frequently suffer fungal infections, yet their lived experiences are rarely integrated into biomedical research or treatment design due to insufficient data and high costs.
+**Problem 1 – Marginalized voices in healthcare** Patients with Epidermolysis Bullosa (EB) and other rare conditions frequently suffer fungal infections, yet their lived experiences are rarely integrated into biomedical research or treatment design due to insufficient data and high costs.
 
 **Problem 2 – Psychosocial and economic burdens** Beyond the physical disease, patients encounter stigma, emotional isolation, and heavy financial costs, which remain under-addressed in healthcare systems.
 

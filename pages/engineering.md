@@ -6,14 +6,14 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/eng.webp
-description: On this page, we detail how our <a href="https://2025.igem.wiki/fudan/part-collection.html#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein">Recorder Module</a> was developed through Design–Build–Test–Learn (DBTL) cycles. What came out of DBTL is a fluorescent reporter system to monitor changes induced by EMS mutagenesis, involving four distinct promoters driving seven EMS-optimized fluorescent proteins.
+description: On this page, we detail how our Recorder module was developed through Design–Build–Test–Learn (DBTL) cycles. What came out of DBTL is a fluorescent reporter to monitor changes induced by EMS mutagenesis, involving four distinct promoters driving seven EMS-optimized fluorescent proteins.
 ---
 
 ## DBTL Cycles: Optimization of the Reporter Module
 
 In our Recorder Module, we designed and tested a fluorescent reporter system to monitor changes induced by EMS mutagenesis. This system involved four distinct promoters driving seven of our EMS-optimized fluorescent proteins. In completing this module, we encountered and flexibly resolved several key challenges through the Design-Build-Test-Learn (DBTL) cycle.
 
-(For the complete molecular cloning design, please refer to the [Design Page](/design/); for specific experimental protocols, see the [Experiment Page](/experiments/).)
+(For the complete molecular cloning design, please refer to our [Design](/design/) page; for specific experimental protocols, see the [Experiments](/experiments/) page.)
 
 
 
@@ -79,7 +79,7 @@ To solve the low near-infrared fluorescence, we designed a modification to the T
 
 #### Build
 
-We implemented the new standard operating procedure: yeast cultures were incubated with PCB for 1 hour prior to fluorescence measurement. See details on our [Experiment page](/experiments/).
+We implemented the new standard operating procedure: yeast cultures were incubated with PCB for 1 hour prior to fluorescence measurement. See details on our [Experiments](/experiments/) page.
 
 #### Test
 

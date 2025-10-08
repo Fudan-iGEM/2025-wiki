@@ -9,7 +9,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: Please visit our <a href="/fudan/improve">Improve</a> page for parts we improved this year. Vist our <a href="/fudan/part-collection">Part Collection</a> page for details about our 3 collections.
+description: Please visit our Improve page for parts we improved this year.<br>Vist our Part Collection page for details about our 3 collections.
 ---
 
 All of our level 0 plasmids (chloramphenicol resistance) were verified by Sanger sequencing (we attached electropherogram raw data as ab1 file with those parts), using one of the primers below.
@@ -43,6 +43,10 @@ t0terminator_R  5-ttcagaacgctcggttgcc-3</pre>
 We gratefully acknowledge the following companies for synthesizing double-strand DNA fragments used in our project: [Tsingke](https://www.tsingke.com/), [GenScript](https://www.genscript.com/), [Twist Bioscience](https://www.twistbioscience.com/), and [Integrated DNA Technologies](https://www.idtdna.com/). All of our [Golden Gate](/experiments.html#golden-gate-assembly) assembled plasmids, were verified by restriction enzyme digestion ([NotI](https://www.neb.com/en/products/r3189-noti-hf) or [HindIII](https://www.neb.com/en/products/r3104-hindiii-hf)) and whole-plasmid sequencing.
 
 Our favourite part is BBa_255T0PHY which belongs to the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) collection.
+
+Please visit our [Improve](/fudan/improve/) page for parts we improved this year.
+
+Vist our [Part Collection](/fudan/part-collection/) page for details about our 3 collections.
 
 ----
 Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v

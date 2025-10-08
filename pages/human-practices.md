@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we 
+description: On this page, we document how we improve our project through discussions with experts in their fields.
 ---
 
 > “Our technology has exceeded our humanity.”
@@ -48,7 +48,7 @@ During our winter-break training, we introduced the concept of using multicellul
 >
 > Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an “AI Yeast System.” Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
 
-His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model Page](https://2025.igem.wiki/fudan/model.html)).
+His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model](/model/)) page.
 After extensive discussion, we refined our idea and decided to employ multicellular yeast as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are developing today.
 
 
@@ -387,7 +387,7 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 
 
 
-### Suzhou Biopharmaceutical Technology Conference 
+### Suzhou Biopharmaceutical Technology Conference
 
 **Date:** June 27th, 2025
 

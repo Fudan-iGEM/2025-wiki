@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
 layout: igem 
 heroImage: https://static.igem.wiki/teams/5643/header/implemention.webp
-description:
+description: What is now, and what is next?
 ---
 
 ## [Overview](/implementation/#overview)

@@ -45,7 +45,7 @@ Building on this chassis, we developed two key modules: the **Timer**, which tra
 
 Through this design, our aim is to move beyond retrospective analysis and establish a system that not only tracks the resistance mutations but also visualizes the trajectories. Ultimately, **DR. sTraTeGY** offers a new framework to confront the global crisis of antifungal resistance—capturing fungal evolution, inspiring future research to build upon this new chassis and guiding the development of next-generation therapies.
 
-Learn more about the design and construction of **DR. sTraTeGY** on our [Design Page](/design/).
+Learn more about the design and construction of **DR. sTraTeGY** on our [Design](/design/) page.
 
 
 ## 5. From Wet Lab to Dry Lab: Model Integration
@@ -56,7 +56,7 @@ YeastVerse allows us to do several critical things. It can **screen feasible par
 
 By combining experimental and computational perspectives, we ensure that **DR. sTraTeGY** is not only observable but also predictable. In doing so, we provide future researchers with a robust framework to study resistance dynamics and design their own interventions with greater confidence.
 
-Explore more details about **YeastVerse** on our [Model Page](/model/).
+Explore more details about **YeastVerse** on our [Model](/model/) page.
 
 
 ## 6. Beyond the Lab: Inclusivity &amp; Diversity
@@ -69,7 +69,7 @@ In response, we designed an outreach program that placed **inclusivity at its co
 
 These activities did more than document perspectives—they created spaces for dialogue,brought people together and opened channels for mutual understanding.  Just as we aim to track resistance evolution in real time, we also strive to make sure that those affected by fungal infections are seen and heard in real life. We believe that a scientific platform addressing antifungal resistance must also reflect the values of equity, respect, and shared humanity.
 
-Discover stories of **Inclusivity** on our [Inclusivity Page](/Inclusivity/).
+Discover stories of **Inclusivity** on our [Inclusivity](/Inclusivity/) page.
 
 
 ## 7. Conclusion

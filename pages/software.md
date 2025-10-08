@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/hyf-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/pageimage/software/header-software.webp
-description: <a href="https://2025.igem.wiki/software-tools/fudan/" target=_blank>EMS Sequence Optimizer</a> -- A web-based tool for optimizing gene sequences to tune their EMS mutagenesis sensitivity through synonymous codon substitution
+description: EMS Sequence Optimizer -- A web-based tool for optimizing gene sequences to tune their EMS mutagenesis sensitivity through synonymous codon substitution
 ---
 
 > [!TIP]

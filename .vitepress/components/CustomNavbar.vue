@@ -705,7 +705,7 @@ const navItems = ref([
       },
       {
         icon: "parts",
-        title: "Parts List",
+        title: "Parts",
         description: "Our parts inventory",
         link: "/fudan/parts/",
       },

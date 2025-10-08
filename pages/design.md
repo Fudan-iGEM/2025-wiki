@@ -177,7 +177,7 @@ Our project features two simple yet powerful visualization tools designed to tra
 
 Microscopic observation alone cannot determine the chronological relationship between two neighboring cells. To address this, we developed the Timer module, which visually records a single cell's life cycle in real-time. The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro), a modified-mCherry fluorescent protein, the Ash1 3'UTR, and the ScENO1terminator.
 
-The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see [Model page](/model/)), and, together with the modified mCherry (see [Improved Part page](/improve/)), enables visualization of the cell life cycle.
+The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see our [Model](/model/) page), and, together with the modified mCherry (see our [Improved Part](/improve/) page), enables visualization of the cell life cycle.
 
 
 
@@ -263,7 +263,7 @@ Besides, GG offers crucial technical superiority by maintaining high fidelity ev
 
 ## YeastVerse: Our Virtual Experiment Platform
 
-Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [model page](/model/) for more details.
+Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [Model](/model/) page for more details.
 
 <div style="text-align: center;" id="fig7">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">
