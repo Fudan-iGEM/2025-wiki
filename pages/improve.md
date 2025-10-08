@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Yining
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/zyn-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/header/imp.webp
+heroImage: https://static.igem.wiki/teams/5643/pageimage/improved-part/improvedparts-header.avif
 description: On this page, we describe how we improved mCherry to our Timer module https://2025.igem.wiki/fudan/part-collection.html#fluorescent-timer
 ---
 

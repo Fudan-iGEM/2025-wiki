@@ -8,7 +8,7 @@ authors:
     url: /fudan/team/#Zhiqin
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/header/des.webp
+heroImage: https://static.igem.wiki/teams/5643/pageimage/design/design-headmap.webp
 description: On this page, we describe DR. sTraTeGY, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
 ---
 
@@ -55,7 +55,7 @@ To overcome this, we designed the Grape Yeast—a new modular chassis based on a
 We engineered this chassis through a simple four-module approach that allows us to achieve key functions: multicellularity development, external signal response, cluster size control, and individual diversity control.  In essence, these designs provide synthetic biology with a new chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient, controllable, and scalable engineered biological system. It functions more like an organized multicellular body—with spatial structure and division of labor among cells—similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a production platform but also as a foundational model for exploring multicellular engineering.
 
 <div style="text-align: center;" id="fig2">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig2-grapeyeast.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/figure2-grapeyeast.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure 2. Constructing the Grape Yeast</span>
         <br><br>
@@ -94,6 +94,7 @@ Endogenous signaling pathway play central roles in regulating efflux pumps, cell
 
 Collectively, these two modules transform the Grape Yeast into more than a synthetic biology system—it emerges as a novel multicellular chassis with high value for drug resistance studies and cross-species translatability.
 
+
 #### 1) Rewiring the Pheromone Response: HsDOR Integration
 
 Sensing and responding to environmental cues is essential for fungal adaptation and for enabling advanced synthetic regulation. In this module, we extended the native signal transduction network to create a versatile interface that the community can later use to detect signals from other organisms or the environment. Given that G-protein coupled receptors (GPCRs) are among the most frequent drug targets in humans, they are particularly physiologically relevant targets for synthetic biology.
@@ -103,7 +104,7 @@ Based on previous studies (Bean et al., 2022)[^11], we engineered yeast to activ
 While a complete modification of the GPCR system would ideally require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused on the most critical modifications: We replaced *ACE2* with the human &delta; opioid receptor (*HsDOR*, BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera(BBa_254K9906) in which five key residues were replaced with those from Gi&alpha; to ensure functional heterologous coupling.
 
 <div style="text-align: center;" id="fig3">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig4-gpcr.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/gpcr1007.webp" style="width:80%">
     <div>
         <span style="color:gray">Figure 3. Mechanism of external signal response.We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and validated by the agonist SNC80</span>
         <br><br>
@@ -137,33 +138,39 @@ Furthermore, the resulting reduced ergosterol content mimics a phenotype associa
 
 ### Module 3—Controlling Individual Diversity
 
-Genomic instability can lead to cells acquiring multiple drug resistances in a short period. For example, changes in chromosome ploidy (e.g. from diploid to haploid) can result in the loss of sensitive genes, contributing to multi-drug resistance. （double）This suggests a strong link between ploidy and resistance[^14].
+Genomic instability can cause fungi to acquire multiple drug resistances in a short period. For example, changes in chromosome ploidy (e.g. from diploid to haploid) can result in the loss of sensitive genes, contributing to multi-drug resistance[^14]. Similarly, chromosome duplication can result in the upregulation of resistance-related genes[^26]. These findings suggest a strong correlation between ploidy and drug resistance.
+
+To simulate this phenomenon, we introduced two strategies to control chromosomal ploidy.
+
+First, we introduced the meiosis-inducing gene IME1(BBa_250R9OVR) under the control of a pTet2 promoter or pCUP1 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size analysis and PI staining observed under a microscope.
 
 
-To control individual diversity within the cluster, we introduced the meiosis-inducing gene IME1(BBa_250R9OVR) under the control of a pTet2 promoter. Ime1 is an essential transcriptional activator for meiosis-specific gene expression. By interacting with other transcription factors, it activates genes involved in the meiotic process[^15]. We verified this module through cell size analysis and PI staining observed under a microscope.
 
-//液体环境+G418=模拟人体环境
-//利用重力沉降
-
-<div style="text-align: center;" id="fig5">
+<div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-ime1-compressed.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 5. Use Ime1 to control individual diversity</span>
+        <span style="color:gray">Figure 4. Use Ime1 to control individual diversity</span>
         <br><br>
     </div>
 </div>
 
-It is indicated that during gravity-based selection, the Y55 (*ACE2* &Delta;) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9].  Building on these findings, we specifically investigated the ploidy stability of the tetraploid Y55 during gravity-based passaging under G418 selection pressure. Furthermore, to isolate the effect of the antibiotic, we included a comparative passage study under both selective (G418) and non-selective (G418-free) conditions.
+Previous research has shown that during gravity-based selection, the Y55 (*ACE2* &Delta;) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. To mimic the liquid environment where drug resistance evolves in vivo, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 selection pressure. To isolate the specific effects of the antibiotic, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
 
 
 ### Module 4—Controlling Cluster Size
 
-To enhance controllability and safety, we introduced *BAX*(BBa_K5441013), an apoptosis-inducing protein, under the control of a pTet2 promoter. Bax is a pro-apoptotic member of the Bcl-2 protein family. When expressed in *S. cerevisiae*, it induces cell apoptosis via a mitochondria-related pathway[^13]. This mechanism allows us to control the size of our clusters and, if necessary, induce the apoptosis of the entire system. We verified the module's effectiveness by observing and analyzing the cluster size under a confocal microscope .
+To enhance controllability and safety, we introduced *BAX*(BBa_K5441013), an apoptosis-inducing protein, under the control of a pTet2 promoter or a pCUP1 promoter.
 
-<div style="text-align: center;" id="fig4">
+Bax is a pro-apoptotic member of the Bcl-2 protein family. When expressed in *S. cerevisiae*, it induces cell apoptosis via a mitochondria-mediated pathway[^13]. 
+ 
+This mechanism allows us to control the size of our clusters and, when required, induce the apoptosis of the entire system. 
+
+We verified the module's effectiveness by observing and analyzing the cluster size under a confocal microscope .
+
+<div style="text-align: center;" id="fig5">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-bax-compressed.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 4. Use BAX to control the cluter size</span>
+        <span style="color:gray">Figure 5. Use BAX to control the cluter size</span>
         <br><br>
     </div>
 </div>
@@ -171,18 +178,20 @@ To enhance controllability and safety, we introduced *BAX*(BBa_K5441013), an apo
 
 ## Visualize the Evolution: The Timer & Recorder Extension
 
-Our project features two simple yet powerful visualization tools designed to track evolutionary history and mutations. They can be directly integrated into the Grape Yeast chassis by replacing  *ACE2* or inserted at other desired locations.
+Our project features two simple yet powerful visualization modules designed to track evolutionary history and mutations. They can be directly integrated into the Grape Yeast chassis by replacing  *ACE2* or inserted at other desired locations.
 
 ### Timer: Tracking Cell Lineage
 
-Microscopic observation alone cannot determine the chronological relationship between two neighboring cells. To address this, we developed the Timer module, which visually records a single cell's life cycle in real-time. The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro), a modified-mCherry fluorescent protein, the Ash1 3'UTR, and the ScENO1terminator.
+Microscopic observation alone cannot reveal the chronological relationship between two neighboring cells. To overcome this limitation, we developed the Timer module, which visually records a single cell's life cycle in real-time. 
 
-The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see our [Model](/model/) page), and, together with the modified mCherry (see our [Improved Parts](/improve/) page), enables visualization of the cell life cycle.
+The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro,BBa_25VHXKNL), a modified mCherry fluorescent protein(BBa_25TQG9WZ), the Ash1 3'UTR, and the ScENO1 terminator(BBa_K2753051).
+
+The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see [Model page](/model/)), and, together with the modified mCherry (see [Improved Part page](/improve/)), enables visualization of the cell life cycle.
 
 
 
 <div style="text-align: center;" id="fig6">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig-timer-compressed.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/timer1008.avif" style="width:80%">
     <div>
         <span style="color:gray">Figure 6. Design of the Timer.The Timer module enables real-time visualization of a cell’s life cycle, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
         <br><br>
@@ -197,7 +206,15 @@ The Timer matures in daughter cells based on model-guided selection of the Ash1 
 
 #### 1) Building the Recorder
 
-To intuitively record the pressure at different chromosomal loci during evolution, we developed the Recorder module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20]. To identify the optimal reporter configuration, we created a combinatorial library, testing four distinct promoters[^21] with six of our EMS-optimized fluorescent proteins(这些蛋白的序列被设计为EMS-resistant以消除EMS对其的影响。For more details of EMS-resistant proteins, please check our [software](/software/)). This promoter set was specifically chosen to capture a range of expression dynamics under EMS mutagenesis.Menawhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6] [^23]. We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
+To intuitively record the pressure at different chromosomal loci during evolution, we developed the Recorder module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. 
+
+To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (SNPs)(G/C->A/T), the most common mutation type in *S. cerevisiae*[^20].
+
+To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters[^21] with seven of our EMS-optimized fluorescent proteins(The sequences of these proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our Software page
+for details.). This promoter set was specifically chosen to capture a range of expression dynamics under EMS mutagenesis.Menawhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6] [^23].
+
+We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by FACS analysis and selected the combination with the most significant change in brightness and named it the TU Recorder.
+
 <div style="text-align: center;">
         <span style="color:gray">Table 2. Optimized Fluorescent Proteins and Promoters for the Recorder Module</span>
         <br>
@@ -222,65 +239,88 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 
 #### 2) Long-Term Natural Evolution Tracking
 
-To study its stability and performance in different genomic environments., we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes. 
-We selected sixteen chromosomal integration sites (one per chromosome), including both neutral “safe sites” without functional roles and risk-associated loci that replace non-essential genes. To faithfully capture the natural genomic pressure during long-term evolution, the neutral sites—adapted from *Shaw et al.*[^7]—were chosen for their minimal influence on host physiology.
- In addition, following the reference dataset (*Puddu et al.*, *Nature*, 2019)[^22], we introduced six risk loci whose deletion was reported to increase genome instability. In that study, the authors systematically sequenced 4,732 yeast knockout strains to reveal how the loss of each non-essential gene affects genome stability, uncovering widespread copy-number variations, nuclear–mitochondrial crosstalk, and adaptive genomic alterations. We are particularly interested in such genomic alterations, as chromosomal duplication is closely related to the emergence of drug resistance—Yeast often adapts to the environment by duplicating or losing the function of parts of its chromosomes. Based on the supplementary information, we selected loci whose gene deletions affect the ploidy or number of chromosomal rearrangements detected (GCR) on other chromosomes. For instance, replacing *SWI4* on chromosome V—a key subunit of the cell-cycle–dependent transcription complex that binds CCB elements with *SWI6*—alters the ploidy of chromosome II (2 &rarr; 2.65) and increases GCR to 5. Further details can be found in the Supporting Information.
- For this iteration, we no longer relied on EMS mutagenesis. Instead, we used long-term cultivation and selective pressure to induce the natural evolution of the strain to a diploid state. By utilizing FACS analysis, we were able to track changes in fluorescence over a period of seven days or more, allowing us to reconstruct the population's dynamics like reading a flight recorder.
+To study its stability and performance in different genomic environments, we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes. We selected sixteen chromosomal integration sites (one per chromosome), including both neutral “safe sites” without functional roles and "dangerous sites" that replace non-essential genes. 
+
+To accurately reflect the natural genomic pressure during long-term evolution, the neutral sites—adapted from Shaw et al.[^7]—were chosen for their minimal influence on host physiology.
+
+Following the reference dataset (Puddu et al., *Nature*, 2019)[^22], we introduced six risk loci whose deletion was reported to increase genome instability. In that study, 4,732 yeast knockout strains were sequenced to assess how the loss of each non-essential gene influences genome integrity, revealing frequent copy-number variations, nuclear–mitochondrial crosstalk, and adaptive chromosomal rearrangements.
+
+We were particularly interested in such genomic alterations, as chromosomal duplication and rearrangement are closely related to the emergence of drug resistance—yeast often adapts to the environment by duplicating or losing the function of parts of its chromosomes. Based on the supplementary information, we selected loci whose gene deletions affect the ploidy or number of chromosomal rearrangements detected (GCR) on other chromosomes. For instance, replacing *SWI4* on chromosome V—a key subunit of the cell-cycle–dependent transcription complex that binds CCB elements with *SWI6*—alters the ploidy of chromosome II (2 &rarr; 2.65) and increases GCR to 5. Further details can be found in the Supporting Information.
+
+In this iteration, we no longer relied on EMS mutagenesis. Instead, we used long-term cultivation and selective pressure to induce the natural evolution of the strain to a diploid state. By utilizing FACS analysis, we were able to track changes in fluorescence over a period of seven days or more, allowing us to reconstruct the population's dynamics like reading a flight recorder.
 
 #### 3)Special Design for Homology Arm Entry
 
-The Yeast Toolkit (YTK) and MoClo systems facilitate the construction of transcriptional units (TUs) by using standardized Level 1 assembly methods, such as the 234r GFP dropout cassette (插入YTK047的BBa号) designed to accept  Type 2 (Promoter), Type 3 (CDS), and Type 4 (Terminator) parts. However, efficiently swapping or integrating different homologous arms (HAs) into the final assembled plasmid presents a separate challenge. 
+The Yeast Toolkit (YTK) and MoClo systems facilitate the construction of transcriptional units (TUs) by using standardized Level 1 assembly methods, such as the 234r GFP dropout cassette designed to accept Type 2 (Promoter), Type 3 (CDS), and Type 4 (Terminator) parts. However, efficiently swapping or integrating different homologous arms (HAs) into the final assembled plasmid presents a separate challenge. 
 
 ##### Homology Arm Entry Vector
 
-To address this, we designed a dedicated Homology Arm Entry Vector (pHA-Entry应该可以写一个part？) based on pMTK078 (Shaw et al., 2023差引用) and inspired by Sorida et al. (2023差引用). Our design incorporates two distinct cloning strategies: 1) we introduced two Type IIP restriction enzymes sites, XhoI and XbaI, at the 5' end of the original 5' HA and the 3' end of the original 3' HA respectively, under whose digestion the whole 5'HA-Inserted Fragment-3'HA will be released; 2) at the other end of 5'/3' HA, [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) sites are designed to release original 5'/3' HA and generate 4-nt flanks. All the flanks produced in this section do not overlap with any standard ends in YTK or the Multiplex Yeast Toolkit (MYT), so they will not conflict with other assembly and therefore ensured specific and correct ligation.
+To address this, we designed a dedicated Homology Arm Entry Vector based on pMTK078 (Shaw et al., 2023)[^7] and inspired by Sorida et al. (2023)[^27]. Our design incorporates two distinct cloning strategies: 
+1) we introduced two Type IIP restriction enzymes sites, XhoI and XbaI, at the 5' end of the original 5' HA and the 3' end of the original 3' HA respectively, under whose digestion the whole 5'HA-Inserted Fragment-3'HA will be released; 
+2) at the other end of 5'/3' HA, [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) sites are designed to release original 5'/3' HA and generate 4-nt flanks. 
+
+All the flanks produced in this section do not overlap with any standard ends in YTK or the Multiplex Yeast Toolkit (MYT), so they will not conflict with other assembly and therefore ensured specific and correct ligation.
 
 ##### Standard preexisting 5'/3' Homology Arms
 
 To replace the original HA and to enable [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) assembly into the entry vector, primers for amplifying preexisting HA should be designed as illustrated in Fig.序号 . Please note that the 4-nt at the end of primers should not be omitted, for they are essential for effective enzyme cleaving.
 
-For 3'HA, we specially introduced two reversed [BbsI](https://www.thermofisher.com/order/catalog/product/FD1014) site, which can adapt to the MYT system in Shaw et al. (2023) （插入引用）for introducing selective marker. In addition, though not used in our project, we leave a PstI site, a design used in Shaw  et al. (2023)  for transposition of gRNA arrays, which could be utilized if further researchers require.
+For 3'HA, we specially introduced two reversed [BbsI](https://www.thermofisher.com/order/catalog/product/FD1014) site, which can adapt to the MYT system in Shaw et al. (2023)[^7] for introducing selective marker. In addition, though not used in our project, we leave a PstI site, a design used in Shaw  et al. (2023)[^7] for transposition of gRNA arrays, which could be utilized if further researchers require.
 
-image-20251006220348644.png
+<div style="text-align: center;" id="fig7">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/golden.webp" style="width:80%">
+    <div>
+        <span style="color:gray">Figure 7. Structure of Homology Arm Entry plasmid and Assembly of New Homology Arm..</span>
+        <br><br>
+    </div>
+</div>
 
-↑最新版，未上传图床
-
-- For experiment details, please visit [Experiments | Fudan](https://2025.igem.wiki/fudan/experiments.html#expanded-golden-gate). The whole process could be completed without an intermediate purification step, which is both convenient and highly-efficient.
+- For experiment details, please visit [Experiments | Fudan](/experiments/). The whole process could be completed without an intermediate purification step, which is both convenient and highly-efficient.
 
 ##### Verification for Integration in Yeasts
 
-While Shaw et al. (2023差引用) included additional barcodes within their homology arms primarily for PCR amplification and high-throughput, multiplexed quality control, our Recorder module has different priorities. Since our project only required verifying a few integrated sites and our construct was sensitive to DNA burden, we opted for a targeted integration analysis that avoids non-functional sequence additions.
+While Shaw et al.[^7] included additional barcodes within their homology arms primarily for PCR amplification and high-throughput, multiplexed quality control, our Recorder module has different priorities. Since our project only required verifying a few integrated sites and our construct was sensitive to DNA burden, we opted for a targeted integration analysis that avoids non-functional sequence additions.
 
-We used two primer sets to confirm correct integration via junction analysis. The 5H Forward / 3H Reverse primers anneal to the native genome sequence, while the 5H Reverse / 3H Forward primers anneal to the inserted construct (specifically, the ConLS and AgTEF Terminator sequences)（Fig. 插入序号）. This arrangement ensures that only precise integration at the target locus is amplified, yielding a band of near 500 bp. Native strains or off-target integrations will result in no amplification. 
+We used two primer sets to confirm correct integration via junction analysis. The 5H Forward / 3H Reverse primers anneal to the native genome sequence, while the 5H Reverse / 3H Forward primers anneal to the inserted construct (specifically, the ConLS and AgTEF Terminator sequences)（Fig. 8）. This arrangement ensures that only precise integration at the target locus is amplified, yielding a band of near 500 bp. Native strains or off-target integrations will result in no amplification. 
 
-image-20251003030557091.png
+
+<div style="text-align: center;" id="fig8">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/gg-l.webp" style="width:80%">
+    <div>
+        <span style="color:gray">Figure 8. Design of colony PCR primers for verification of chromosomal integrations.</span>
+        <br><br>
+    </div>
+</div>
+
 
 ## Cloning Strategy
 
 In our previous projects, our teams were used to Gibson Assembly for DNA construction. This year, however, we opted to utilize Golden Gate (GG) Assembly, primarily because GG's use of standardized Type IIS restriction sites eliminates the need to redesign homology arms for every new assembly junction, thereby enabling rapid, combinatorial construction and part reusability. 
 
-Besides, GG offers crucial technical superiority by maintaining high fidelity even with difficult sequences (such as repetitive regions or secondary structures), effectively assembling small fragments, and ensuring vector integrity by avoiding 5′ exonuclease damage, all of which accelerated our timeline and ensured the system's required high fidelity. []（引用ExGG和lee那篇）
+Besides, GG offers crucial technical superiority by maintaining high fidelity even with difficult sequences (such as repetitive regions or secondary structures), effectively assembling small fragments, and ensuring vector integrity by avoiding 5′ exonuclease damage, all of which accelerated our timeline and ensured the system's required high fidelity[^27].
+
+
 
 ## YeastVerse: Our Virtual Experiment Platform
 
-Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [Model](/model/) page for more details.
+Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [model page](/model/) for more details.
 
-<div style="text-align: center;" id="fig7">
+<div style="text-align: center;" id="fig9">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 7. Use digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
+        <span style="color:gray">Figure 9. Use digital YeastVerse to guide our wet lab.Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into Yeastverse and obtain feedback, which helps guide the design and implementation of our wet lab experiments.</span>
         <br><br>
     </div>
 </div>
 
 
 
-
-
 ## Summary
 
   - We successfully engineered a novel yeast chassis, the Grape Yeast, for studying fungal mutation and evolution under drug pressure. The modular design, including control modules and external signal interfaces, gives it unlimited potential for further modifications.
+
   - We developed two powerful extension modules, the Timer and Recorder, to visualize cell lineage and evolutionary pressure, respectively. These modules are designed as flexible plugins that can be widely used by the iGEM community.
+
   - We built the YeastVerse virtual simulation platform to guide our wet lab experiments. As the ""zero-th machine" for Grape Yeast, YeastVerse can be widely used for various experimental tests, providing crucial support for wet lab works.
 
 
@@ -336,3 +376,7 @@ Throughout this project, we fully embraced the "dry lab guiding wet lab" approac
 [^24]: Ratcliff, W. C., Denison, R. F., Borrello, M., & Travisano, M. (2012). Experimental evolution of multicellularity. Proceedings of the National Academy of Sciences of the United States of America, 109(5), 1595–1600. DOI: 10.1073/pnas.1115323109
 
 [^25]: Ramos-Alonso, L., Garcia, I., Enserink, J. M., & Chymkowitch, P. (2022). Analysis of the pheromone signaling pathway by RT-qPCR in the budding yeast Saccharomyces cerevisiae. STAR protocols, 3(1), 101210. DOI: 10.1016/j.xpro.2022.101210
+
+[^26]: Khateb, A., Gago, S., Bromley, M., Richardson, M., & Bowyer, P. (2023). Aneuploidy Is Associated with Azole Resistance in Aspergillus fumigatus. Antimicrobial agents and chemotherapy, 67(4), e0125322. DOI: 10.1128/aac.01253-22
+
+[^27]: Sorida, M., & Bonasio, R. (2023). An efficient cloning method to expand vector and restriction site compatibility of Golden Gate Assembly. Cell reports methods, 3(8), 100564. DOI: 10.1016/j.crmeth.2023.100564 
