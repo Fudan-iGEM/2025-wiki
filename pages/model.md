@@ -516,7 +516,7 @@ This module simulates the three-dimensional growth of the multicellular "Grape Y
     </div>
 
 
-> Click here to view our [measurement](/measurement/) and [results](/result/).
+> Click here to view our [measurement](/measurement/) and [results](/results/).
 
 Other minor parameters are detailed in the source code.
 
