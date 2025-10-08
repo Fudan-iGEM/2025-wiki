@@ -9,203 +9,277 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we 
 ---
 
-> "Our technology has exceeded our humanity."
+> “Our technology has exceeded our humanity.”
 > ——Albert Einstein
+
+Human Practices (HP) is not just a set of activities—it is a lens through which we critically examine the impact of synthetic biology on society. For our iGEM 2025 journey, HP became a path of reflection, dialogue, and iterative learning.
 
 ## What's Wrong with Our Technology?
 
-In recent years, the growing problem of fungal drug resistance has pushed countless patients battling fungal infections into even greater difficulty. People are beginning to realize that the unrestrained and irrational use of antibiotics has only nurtured the rise of so-called "super fungi".
+Our journey began with a simple but profound question: What's Wrong with Our Technology?
 
-During the winter vacation, our team launched an outreach project — a letter exchange with middle school students — to share stories about synthetic biology. Across mountains and oceans, one young student wrote to us and asked a question that stopped us in our tracks:
+During the winter vacation, we launched a **science-by-letter outreach program** to introduce synthetic biology to students across China.
 
-> "Are the ‘new things’ created through synthetic biology beneficial or harmful?"
+In our letters, we explained how scientists design and modify organisms to perform beneficial functions and outlined our educational framework. We also posed open-ended questions, such as:
 
-<div style="text-align: center;"> 
-<img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp">  
-<div> <p><small style="color: gray">The letter from the young student</small></p> </div> 
-</div>
+- What does biology look like to you?
+- Are you familiar with any cutting-edge synthetic biology technologies?
+- How much do you think these technologies impact living organisms?
 
-That innocent question struck a deep chord. It made us pause and reflect: how should we use our technologies wisely and responsibly?
-From that moment, we knew this was where our journey for the year would begin.
+The students responded with enthusiasm, sharing their curiosity, challenges, and creative ideas. One question, however, stood out:
 
+> “Is this ‘new’ technology truly beneficial or harmful? Will it make a real difference? Does it genuinely matter to society?”
 
+This simple yet profound doubt prompted us to pause and reflect. Through this activity, we began to **consider whether synthetic biology technologies inherently have “good” or “bad” effects**. For example, the development of antibiotics is a clear technological advancement—but does it serve as a blessing for humanity, or could it also bring unforeseen challenges?
+
+This reflection naturally led us to examine our own project. We asked: how can we ensure that the technologies we develop provide real societal benefits rather than unintended problems? Guided by these questions, we embarked on further exploration and practical efforts, designing our project to not only advance science but also respond meaningfully to human needs and ethical considerations.
+
+<img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="zoom: 33%;" />
 
 ## The Potential of Multicellular Yeast?
 
-During our winter-break training, we introduced the concept of using multicellular yeast as the chassis for our synthetic-biology system.However, many aspects remained undefined — from the natural characteristics to the mechanisms of differentiation and the potential application scenarios.
+With this philosophical foundation, we turned to the scientific heart of our project: **multicellular yeast** as a platform for dynamic screening of antibiotic-resistance targets. Our discussions with experts helped us shape the idea and define its scientific and societal significance.
 
-> ### Dr. Boxun Lu
+### Interview with Dr. Boxun Lu
+
+>**Date:** January 15th, 2025
+>**Respondent :** Dr. Boxun Lu
+>**Respondent Profile:**
+>Researcher @ Department of Neurobiology, School of Life Sciences, Fudan University
+Neurodegenerative diseases; Original drug development strategies
 >
-> Researcher @ Department of Neurobiology, School of Life Sciences, Fudan University
-> Neurodegenerative diseases; Original drug development strategies
+>![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/boxun-lu.webp)
 >
-> **Date:** January 15th, 2025
+>**Topic：**
+>**Key Takeaways：**
+>
+> Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an “AI Yeast System.” Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
+>
+> His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model Page](https://2025.igem.wiki/fudan/model.html)).
+> After extensive discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are developing today.
+
+------
+
+
+
+### Interview with Dr.Hengchi Chen
+
+> **Date:** March 7th, 2025
+> **Respondent:** Dr. Hengchi Chen
+> **Respondent Profile:** Postdoctoral Researcher @ the University of Göttingen, Ecology
 >
 > ---
 >
-> **Topic：**
-> **Key Takeaways：**
+> **Topic:** The Rise of Polyploids During Environmental Catastrophes
+> **Key Takeaways:**
 >
-> Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an "AI Yeast System". Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
+> - ------
+>
+>   Polyploidy did not arise randomly but surged during major environmental upheavals such as the K–Pg mass extinction, suggesting that climate change may promote the emergence and survival of polyploids.
+>
+> - Dr. Chen found the idea of using multicellular yeast as a new chassis fascinating, but he reminded us that the story needed to flow more clearly. He advised us to anchor the project in a concrete situation where multicellular yeast is crucial for tackling new crisis, and to make sure its structural stability is convincingly supported.
+>
+> - Conversations with people familiar with the field gave us fresh perspectives. Their feedback not only clarified our goals but also inspired us to look deeper into why multicellular yeast matters and what it could contribute to research on antifungal resistance.
 
-His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model](https://2025.igem.wiki/fudan/model.html) page).
-After extensive discussion, we refined our idea and decided to employ multicellular yeast as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are developing today.
-
-
-
-### Dr. Hengchi Chen
-
-Postdoctoral Researcher @ the University of Göttingen
-Ecology
-
-**Date:** March 7th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
+------
 
 
 
+### Interview with Dr. Willim Ratcliff
+
+> **Date:** March-April, 2025
+> **Respondent:** Dr. Willim Ratcliff
+> **Respondent Profile:** Assistant Professor @ Georgia Institute of Technology, Major transitions in evolution (mainly multicellularity)
+>
+> ---
+>
+> **Topic:** Re: Students from Fudan University,China want to get involved in the http://snowflakeyeastlab.com/
+> **Key Takeaways:**
+>
+> - Prof. Ratcliff offered invaluable insights during the early stages of our project. He encouraged us to think creatively with the concept of multicellular yeast and to keep improving and expanding upon our initial ideas.
+> - The outreach lab organized by Prof. Ratcliff greatly inspired us by demonstrating how even complex scientific concepts developed in laboratories can be simplified and shared with the public, thereby promoting accessibility and ensuring equal opportunities for quality education.
+
+------
 
 
 
+### Interview with Prof. Guanghua Huang
+
+> **Date:** April 15th, 2025
+> **Respondent:** Prof. Guanghua Huang
+> **Respondent Profile:** Executive Director @ Department of Microbiology and Immunology, School of Life Sciences, Fudan University; The morphological development, pathogenic mechanism, drug resistance mechanism and new drug screening et a. lof pathogenic Candida species in humans
+>
+> ---
+>
+> **Topic:** Antifungal Resistance Research and Project Positioning
+> **Key Takeaways:**
+>
+> ![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/guanghua-huang.webp)
+>
+> After confirming our project’s direction—tracking antifungal resistance mutations—we aimed to gain a deeper understanding of the current landscape of antifungal resistance research. This would help us position our work within existing advances while identifying opportunities for meaningful innovation.
+>
+> ### What We Gained?
+>
+> Professor Huang’s insights, grounded in years of expertise in fungal resistance, provided us with both direction and inspiration:
+>
+> - **Defining project focus:** He emphasized distinguishing between basic biological research and engineering application. The multicellular yeast system, he noted, may exhibit enhanced resistance due to intercellular cooperation—a property advantageous for industrial fermentation and drug screening applications.
+> - **Building resistance models:** Resistance evolution can be effectively modeled through gene knockout of resistance-related loci or drug-induced selection, mirroring how clinical fungal pathogens acquire resistance.
+> - **Optimizing experimental design:** Techniques such as *ultrasonic dispersion* can facilitate the transition from multicellular clusters to single cells, while *streptomycin resistance markers* can streamline the selection process.
+>
+> In conclusion, Professor Huang encouraged us to select clinically relevant antifungal drugs and integrate synthetic biology tools to capture and record the mutation trajectories underlying resistance development.
+
+------
 
 
 
-### Dr. Willim Ratcliff
+### Interview with Prof. Liping Zhu
 
-Assistant Professor @ Georgia Institute of Technology
-Major transitions in evolution (mainly multicellularity)
+> **Date:** May 13th, 2025
+> **Respondent:** Prof. Liping Zhu
+> **Respondent Profile:** Expert in Clinical Mycology and Antifungal Resistance
+>
+> ---
+>
+> **Topic:** Bridging Basic Research and Clinical Needs in Antifungal Resistance
+> **Key Takeaways:**
+>
+> ![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/liping-zhu.webp)
+>
+> - Prof. Zhu began by emphasizing the growing global challenge of antifungal resistance. Multidrug-resistant species such as Candida auris and Candida glabrata are spreading rapidly, while the number of immunocompromised patients—such as cancer and organ transplant recipients—continues to rise.In his words, “We must focus on the fungi that truly matter in clinical settings.” This statement reminded us that basic research must always maintain a clear line of sight to clinical needs.
+> - Prof. Zhu’s guidance helped us rethink the positioning of our multicellular yeast platform. He proposed that our platform could serve as a drug pre-screening system, provided that we also address the challenge of translating results to clinical pathogens.
+> - Prof. Zhu also reminded us that successful research depends on feasibility and collaboration. He encouraged us to conduct clear feasibility analyses, define our goals, and build interdisciplinary partnerships with clinicians, microbiologists, and engineers. He stressed that research should be viewed as a long-term, collaborative journey rather than a short-term competition.
+> - We incorporated his advice by reaching out to medical researchers for cross-disciplinary input on experimental design.His words strengthened our commitment to developing a project that bridges science and service, making our research not only technically innovative but also socially meaningful.
 
-**Date:** March-April, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
-
-
-
-
-
-
-
-
-
-
-
-### Prof. Guanghua Huang
-
-Executive Director @ Department of Microbiology and Immunology, School of Life Sciences, Fudan University
-The morphological development, pathogenic mechanism, drug resistance mechanism and new drug screening et a. lof pathogenic Candida species in humans
-
-**Date:** April 15th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
+------
 
 
 
-### Prof. Liping Zhu
+### Suzhou Biopharmaceutical Technology Conference
 
-Chief Physician @ Department of Infectious Diseases, Huashan Hospital Affiliated to Fudan University
-Diagnosis and treatment of infectious diseases
+> **Date:** June 27th, 2025
+> **Respondent:** Suzhou Biopharmaceutical Technology Conference Participants
+>
+> ---
+>
+> **Topic:** Industry Insights and Project Feedback
+> **Key Takeaways:**
+>
+> ------
+>
+> ![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/suzhou-biopharmaceutical-technology-conference.webp)
+>
+> At the *Suzhou Biopharmaceutical Technology Conference*, our team took part in the *Synthetic Biology Forum*, where we explored cutting-edge research and learned how industry leaders are applying synthetic biology in product development. We also engaged directly with professionals from leading biopharmaceutical companies on our project, gaining more understanding how antibiotic resistance projects are being developed in the industry.
+>
+> ### What We Gained:
+>
+> - **Forum Insights:** The discussions and presentations broadened our perspective, helping us refine our project concept and deepen our understanding of the scope and potential of *synthetic biology*.
+> - **Industry Dialogue:** By bringing up our project—using *Saccharomyces cerevisiae* to track antibiotic resistance targets—we received valuable feedback and practical advice from company representatives, who shared the current industrial landscape, including ongoing R&D pipelines, recommended directions, and strategic approaches to resistance site screening and product development.
+>
+> We exchanged contact information with the company representatives, establishing connections that allows us to follow up on industrial progress and integrate real-world insights into our ongoing project.
 
-**Date:** May 13th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
-
-
-
-
-
-
+------
 
 
 
 ### Jiangsu-Zhejiang-Shanghai iGEM Regional Meet-up
 
-**Date:** June 28th, 2025
+> **Date:** June 28th, 2025
+> **Respondent:** Jiangsu–Zhejiang–Shanghai iGEM Teams
+>
+> ---
+>
+> **Topic:** Regional Exchange and Project Development
+> **Key Takeaways:**
+>
+> The Jiangsu–Zhejiang–Shanghai iGEM Regional Meetup was held at Xi’an Jiaotong–Liverpool University in Suzhou, bringing together iGEMers from 18 universities, including Shanghai Jiao Tong University, Zhejiang University, Jiangnan University, and Fudan University. The event featured two main segments—interactive booth sessions and project presentations—where participants exchanged ideas freely and learned from one another’s work.
+>
+> ### What We Gained？
+>
+> - **Rethinking Human Practices:** Dr. Yuhan Bao, the Liaison Officer and Human Practices Committee Coordinator for iGEM 2025, encouraged teams to go beyond traditional HP activities and integrate them with experimental design. He also suggested visualizing the Design–Build–Test–Learn (DBTL) feedback cycle on the wiki to better reflect project iteration and improvement.
+>
+> - **Enhancing Team Collaboration:** iGEM 2025 Ambassador Xiaohan Zhang highlighted that effective teamwork lies at the heart of every successful iGEM project, emphasizing the importance of clear role division and coordination among members.
+>
+>   ![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/suzhou-exchange-meeting.webp)
+>
+> Through discussions and idea-sharing at the meetup, we gained valuable perspectives on both project design and Human Practices execution. The on-site question—“How can resistance screening be effectively implemented?”—sparked meaningful reflection, helping us refine our project’s experimental design and close existing gaps.
 
----
-
-**Topic：**
-**Key Takeaways：**
-
-
-
-
-
-
-
-### Prof. Don Cleveland
-
-Distinguished Professor and Chair @ Department of Cellular and Molecular Medicine, UC San Diego School of Medicine
-Genome stability; Mechanism &amp; therapy for human neurodegenerative disease
-
-**Date:** July 26th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
+------
 
 
 
-### Mr. Shan Jiang
+### Clinical Immersion at Huashan Hospital, Infection Department
 
-The co-founder and COO of Ailurus Biotechnology Co., Ltd.
-Synthetic biology, the winner of the 2018 iGEM Grand Prize
+> **Date:** July 21st-31st, 2025
+> **Respondent:** Huashan Hospital, Infection Department
+>
+> ---
+>
+> **Topic:** Clinical Insights into Cryptococcal Meningitis and Antifungal Resistance
+> **Key Takeaways:**
+>
+> - During our clinical immersion at the Department of Infectious Diseases, Huashan Hospital, we directly observed patients suffering from *cryptococcal meningitis*. Many presented with severe and life-threatening symptoms such as increased intracranial pressure, persistent vomiting, high fever, and even septic shock.
+> - However, there is currently no drug that can directly cure cryptococcal meningitis. The antifungal fluconazole remains the only medication available for initial treatment, yet its clinical effectiveness is increasingly compromised.
+> - Clinical data showed that up to 84% of patients were resistant to fluconazole, underscoring the urgent need for new antifungal agents and novel resistance-tracking strategies.
+> - Seeing these cases firsthand reminded us that antifungal resistance is not an abstract research topic—it is a real and urgent medical challenge. This experience strengthened our determination to design DR. sTraTeGY as a platform that can accelerate antifungal drug discovery and bridge basic research with clinical impact.
 
-**Date:** August 7th, 2025
+------
 
----
 
-**Topic：**
-**Key Takeaways：**
+
+### Interview with Prof. Don Cleveland
+
+> **Date:** July 26th, 2025
+> **Respondent:** Prof. Don Cleveland
+> **Respondent Profile:** Professor Don Cleveland, a member of three major U.S. academies and an eminent cancer/neurobiologist, is Dean of UC San Diego’s Cell & Mol. Med. Dept. He was 2013 American Society for Cell Biology President, won the 2018 Life Science Breakthrough Award for hereditary ALS research, and advanced mitotic spindle/chromosome movement studies.
+>
+> ---
+>
+> **Topic:** Exploring yeast gene markers and strategies for broad gene coverage
+> **Key Takeaways:**
+>
+> - We had an in-depth exchange with Prof. Cleveland on the current frontiers and prospects of synthetic biology. He shared his own research experiences, which greatly inspired and encouraged us.
+> - We asked about the feasibility of labeling or visualizing as many yeast genes as possible to trace mutation sites. Prof. Cleveland explained that, given the vast number of yeast genes, it is technically unfeasible to identify a universal marker that covers most genes.
+> - Based on his advice, we reflected on the limitations of our current capabilities and recognized that clarifying mother-daughter genetic variations exceeds our technical scope. This conversation helped us realign our project direction and identify future research possibilities.
+
+------
+
+
+
+### Interview with Mr. Shan Jiang
+
+> **Date:** August 7th, 2025
+> **Respondent:** Mr. Shan Jiang
+> **Respondent Profile:** Shan Jiang is Co-founder and COO of Red Panda Biosciences and an undergraduate at the University of Edinburgh. His research in biophysics and bacterial physiology is conducted under Prof. Teuta Pilizota. He began his synthetic biology career in high school under Prof. Chenli Liu at SIAT, CAS. He co-founded iDEC in 2020 and was a member of the iGEM Engineering Committee.
+>
+> ---
+>
+> **Topic:** Refining our research direction and understanding project significance
+> **Key Takeaways:**
+>
+> - We discussed with Mr. Jiang the core significance of our project, especially in light of our challenge to pinpoint precise gene mutation sites. This discussion prompted us to shift focus toward constructing a gene mutation platform rather than pursuing a single locus.
+>
+>   Mr. Jiang advised us not to fixate on a specific mutation site, as mutations are inherently random. Instead, he encouraged us to broaden our scope to study larger DNA fragments or regions that encompass multiple potential mutation sites.
+>
+>   He also highlighted that our platform could contribute to basic research on drug target discovery, offering long-term value in biomedical applications. This suggestion helped us refine our understanding of our project’s potential impact.
+
+------
 
 
 
 ### The 12th CCiC
-
-**Date:** August 6th-8th, 2025
-
+> **Date:** August 6th-8th, 2025
+> **Respondent:** Association of Young Enthusiasts for Engineering Biology
+> 
+> ---
+> 
+> **Topic:** Biosafety, Bio-Art and Interdisciplinary Dialogue
+> **Key Takeaways:**
+> 
+> - In the biosafety practice seminar, perspectives from industry, anthropology, law, and AI professionals provided diverse insights into biosafety considerations and actions.
+> - In the roundtable "Rewriting Perceptual Structures: Aesthetic Variations in the Age of Life Technologies," Wei Ying presented the development process of bio-art and its iconic works.
+> - Participated in an unconference on ethics and biosafety in synthetic biology hosted by Central South University, discussing biosafety and ethical compliance in HP practices with teams from Central South University, Hainan University, and Huazhong University of Science and Technology.
+> - Exchanged ideas with HP team members from various universities in the poster session, reaching intentions for HP collaboration and sharing creative promotional materials.
 ---
-
-**Topic：**
-**Key Takeaways：**
-
-
-
-
-
-### Prof. Jianpeng Ma
-
-Founding Director @ Multiscale Research Institute for Complex Systems, Fudan University
-Biophysics; Computational biology; Structural biology
-
-**Date:** September 28th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
-
-- **Gradual Development of AIVC:** The development of Artificial Intelligence Virtual Cells (AIVC) might be a gradual process. It relies on an iterative approach where data collection and model refinement are continuously integrated. Rather than starting from an exhaustive understanding of all biological, chemical, and physical aspects of cells, AIVC development builds upon existing knowledge and progressively improves through experimentation and simulation. This iterative cycle allows for reliable simulations and predictions even as the complexity of the virtual cell model increases over time.
-
-- **Applying the Above Approach Beyond Biology:** This gradual approach to model building is not limited to computational biology. It also offers valuable insights for societal engagement. Just as we don’t need to fully understand every detail of a cell to create useful models, we don’t need to understand every individual or cultural nuance to engage meaningfully with society. The key is maintaining an open mind, actively listening, and continuously refining our understanding through interaction. By doing so, we can create more effective connections and foster cooperation in both science and society.
-
-
-
-
-
-(实习)
 
 
 
@@ -213,36 +287,41 @@ Biophysics; Computational biology; Structural biology
 
 ## How Can We Better Connect with Human Society?
 
-
-
-
+HP is most meaningful when it connects scientific work with society. To understand how to do this effectively, we exchanged experiences with iGEM teams and experts in anthropology, public policy, and healthcare
 
 ### Experience sharing with BNUZH-China, NEFU-China, CAU-China
-
-**Date:** January 18th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
-
-
-
-
-
-
-
-> ### Dr. Yeyang Su
 >
-> Independent Scholar and member of the iGEM Human Practices Committee
-> Studies of the contemporary; Social anthropology; Science and technology studies 
+> **Date:** January 18th, 2025
+> **Respondent:** BNUZH-China, NEFU-China, CAU-China
+>
+> ---
+>
+> **Topic:** About hp project exchange, harvest sharing
+> **Key Takeaways:**
+>
+> - Learned the importance of identifying a clear real-world problem and building a complete "problem–solution–validation" loop to ensure project relevance and credibility.
+>
+> - Gained insights on team communication, emphasizing direct and open dialogue among subgroups and valuing diverse perspectives to enhance efficiency and creativity.
+>
+> - Understood how to expand project impact through frameworks like the Triple Bottom Line and UN SDGs, which help demonstrate social, environmental, and economic value.
+>
+> - Recognized the need for market-oriented thinking, combining rigorous research with interdisciplinary collaboration to achieve sustainable application beyond the lab.
+
+------
+
+
+
+### Dialogue with Dr. Yeyang Su
 >
 > **Date:** August 6th, 2025
+> **Respondent:** Dr. Yeyang Su
+>
+> **Respondent Profile:** Independent Scholar in Anthropology, expert in Medical Anthropology and iGEM Human Practices
 >
 > ---
 >
 > **Topic:** Human Practices in Synthetic Biology
-> **Key Takeaways：**
+> **Key Takeaways:**
 >
 > - Human Practice is both a process-oriented and reflexive practice that requires researchers to "use oneself as a method" and embed themselves within the research.
 >
@@ -258,70 +337,131 @@ Biophysics; Computational biology; Structural biology
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/yeyang-su.webp">  
 > <div> <p><small style="color: gray">Dialogue with Dr. Yeyang Su</small></p> </div> 
 > </div>
+>
+> - We shared the main challenges we faced in our Human Practices (HP) work, including limited audience engagement and difficulties linking outreach activities with our project's core goals. Each team offered constructive suggestions, such as collaborating with more iGEM teams, expanding communication channels, and inviting professionals from relevant fields to provide insights from their expertise.
+>
+> - During the discussion, we found that many teams shared the same confusion: Is our HP work truly beneficial to society, or are we conducting outreach only for the sake of completing HP tasks? This question sparked deep reflection on the real purpose and value of HP.
+>
+> - Together, we reached the understanding that the true significance of HP lies in two-way communication. Only through sincere dialogue and real intersections with communities can HP activities generate meaningful social impact and bring synthetic biology closer to people's lives.
 
-
+------
 
 
 
 ### Carpet conference with HainanU-China, HZAU-China, NKU-China
 
-**Date:** August 7th, 2025
+>**Date:** August 7th, 2025
+>**Respondent:** HainanU-China, HZAU-China, NKU-China
+>
+>---
+>
+>**Topic：**Human Practices Exchange
+>**Key Takeaways**：
+>
+>- Main challenges in Human Practices (HP): limited audience engagement and difficulty linking outreach to core project goals. Suggested solutions: collaborate with more iGEM teams, expand communication channels, involve professionals for expert insights.
+>- Common reflection: evaluating whether HP work is genuinely beneficial to society versus performing outreach just to complete HP tasks.
+>- Consensus: the true value of HP lies in two-way communication; meaningful social impact arises from sincere dialogue and real engagement with communities, bringing synthetic biology closer to people’s lives.
 
----
-
-**Topic：**
-**Key Takeaways：**
-
-
-
-
-
-
-
-
-
+------
 
 
 
+### Interview with Prof. Jianpeng Ma
+
+>**Date:** August 7th, 2025
+**Respondent:** 
+>**Respondent Profile:** 
+>
+>---
+>
+>**Topic：**
+>**Key Takeaways：**
+
+------
+
+
+
+### Talk with iGEM Munich 2025
+
+> **Date:** September 28th, 2025
+>
+> ##### Respondent: iGEM Munich 2025
+>
+> ---
+>
+> **Topic：**
+> **Key Takeaways：**
+
+------
 
 
 
 ## Where is the Warning Line of Technology?
 
+As we developed our project, we recognized the importance of establishing ethical boundaries and safety protocols to ensure responsible innovation.
+
+### Interview with Dr. Geng Hong
+
+> **Date:** March 20th, 2025  
+> **Respondent:** Dr. Geng Hong  
+> **Respondent Profile:** Assistant Professor @ Fudan Development Institute, Fudan University  
+> Cybercrime; Privacy on Mobile App; Novel Cybersecurity Threat  
+>
+> ---
+>
+> **Topic:** AI Evaluation Tool Diagnostics & Improvement  
+> **Key Takeaways:**  
+>
+> ![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/geng-hong.webp)  
+>
+> We met with Professor Hong to discuss our team’s *AI Evaluation Tool*, which applies artificial intelligence to assess the Integrated Human Practices of iGEM projects.  
+>
+> During our internal testing, we noticed a clear discrepancy: the 2024 gold medal team JU-Krakow scored lower than two nominated teams — a result inconsistent with actual competition outcomes. To address this, we sought Professor Hong’s insights on diagnosing and improving the evaluation system.  
+>
+> ### What we Gained?  
+>
+> - **Data Awareness — “Does the AI know enough?”**  
+>   Professor Hong emphasized the importance of confirming what the AI actually *knows*.“For every score, ask *why*. Verify whether the AI has accessed the relevant information,” he advised.He suggested approaching debugging like a computer scientist: systematically checking whether the AI is using the same data foundation as human judges.“You can simply ask the AI if it knows certain details about each team. If not, provide that information explicitly.”  
+>
+> - **Scoring Logic — Aligning Human and Machine Reasoning**  
+>   According to Professor Hong, teams should first clarify their expected scoring logic and then verify if the AI applies the same reasoning.“For instance,” he explained, “if you think geography influences scoring, ask whether the AI recognizes each team’s location, then explain the rule and observe its reasoning." He also pointed out that errors may arise if the AI misinterprets webpage structure — something that should be checked to prevent biases introduced by formatting.  
+>
+> - **Model Selection — Fit over Fancy**  
+>   Professor Hong reminded us that the best model is the one that *meets your needs and budget*. Rather than chasing the most advanced model, he suggested focusing efforts on solving the *core problem* of the project.  
+>
+> - **Ethics — Conducting Responsible User Research**  
+>   If the project involves *user studies*, Professor Hong emphasized the necessity of obtaining ethical clearance in advance. He advised reviewing Institutional Review Board (IRB) principles to ensure that the evaluation process aligns with ethical standards.  
+>
+> Professor Hong’s feedback precisely addressed the core difficulties of our AI evaluation project and offered practical solutions. His insights played a key role in guiding us to refine our model and strengthen the reliability of our AI-based evaluation system.
+
+------
 
 
 
+### Round-table conference with CSU-CHINA, NKU-China, HUST-China,HainanU-China
 
-### Dr. Geng Hong
+>**Date:** August 8th, 2025  
+>
+>**Respondent:** Members in HainanU-China, CSU-CHINA, NKU-China, HUST-China  
+>
+>**Topic:** Discussion on Biosafety  
+>
+> **Key Takeaways:**  
+>
+> - We discussed the clearly defined scope of China's "Biosafety Law," explained the distinction between "biosafety" (primarily focusing on laboratory biosafety) and "biosecurity" (referring to risks arising from the malicious use of biotechnology), and learnt about China's biosafety governance system.  
+>- Together，we interpreted iGEM's requirements regarding biosafety and ethics related to human practices, summarized the biosafety work experiences of outstanding teams from previous years, and facilitated presentations by each team on their projects. Together, we identified and mutually resolved biosafety and ethical concerns encountered during the competition process.  
+> - Our team introduced the Belmont Report，which establishes three core ethical principles for research: respect for persons (via informed consent), beneficence (maximizing benefits/minimizing risks), and justice (fair distribution of burdens and benefits).
+>
+><div style="text-align: center;"> 
+><img src="https://static.igem.wiki/teams/5643/pageimage/ihp/roundtable-ccic.webp">  
+><div> <p><small style="color: gray">Dialogue with HainanU-China, CSU-CHINA, NKU-China, HUST-China  iGEMers</small></p> </div> 
+></div> 
 
-Assistant Professor @ Fudan Development Institute, Fudan University
-Cybercrime; Privacy on mobile app; Novel cybersecurity threat
-
-**Date:** March 20th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
-
-
-
-### Round-table conference with HainanU-China, CSU-CHINA, NKU-China, HUST-China
-
-**Date:** August 8th, 2025
-
----
-
-**Topic：**
-**Key Takeaways：**
+------
 
 
 
-
-
-
-
-
+### Dialogue with Prof.Li Tang
 
 > ### Prof. Li Tang
 >
@@ -331,38 +471,35 @@ Cybercrime; Privacy on mobile app; Novel cybersecurity threat
 > **Date:** September 24th, 2025
 >
 > ---
+> **Topic:** Science Governance, Ethics, and Public Communication  
+> **Key Takeaways:**  
 >
-> **Topic：**Science Governance, Ethics, and Public Communication
-> **Key Takeaways：**
+> - Prof Tang's research focuses on developing databases including sci-tech literature (1980–2024), thematic databases, and global synthetic biology policy databases such as Overton. It also involves synthetic biology governance, contributing to the Tianjin Guidelines, cross-cultural GITA studies, and science communication.  
 >
-> - Prof Tang's research focuses on developing databases including sci-tech literature (1980–2024), thematic databases, and global synthetic biology policy databases such as Overton. It also involves synthetic biology governance, contributing to the Tianjin Guidelines, cross-cultural GITA studies, and science communication.
+> - Inclusive science communication should emphasize both the benefits and risks of synthetic biology, while addressing ethical boundaries such as informed consent and scientist conduct.  
 >
-> - Inclusive science communication should emphasize both the benefits and risks of synthetic biology, while addressing ethical boundaries such as informed consent and scientist conduct.
+> - For policy advice, tools like PKU FAZHENG can be used for research, and international governance and safety should be highlighted in public materials. Key challenges include public resistance and regulatory delays, such as slow approvals for novel materials.  
 >
-> - For policy advice, tools like PKU FAZHENG can be used for research, and international governance and safety should be highlighted in public materials. Key challenges include public resistance and regulatory delays, such as slow approvals for novel materials.
+> - Safety concerns involve critical issues like drug resistance, gene leakage, and intellectual property theft. National governance includes measures such as wet/dry lab separation and dynamic black/white/grey lists.  
 >
-> - Safety concerns involve critical issues like drug resistance, gene leakage, and intellectual property theft. National governance includes measures such as wet- or dry-lab separation and dynamic black/white/grey lists.
+> - In China, policy flexibility is essential due to regional diversity, making direct student involvement in policy drafting less feasible compared to smaller countries. Competition judges are aware of these contextual constraints.  
 >
-> - In China, policy flexibility is essential due to regional diversity, making direct student involvement in policy drafting less feasible compared to smaller countries. Competition judges are aware of these contextual constraints.
->
-> <div style="text-align: center;"> 
-> <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/li-tang.webp">  
-> <div> <p><small style="color: gray">Dialogue with Prof. Li Tang</small></p> </div> 
-> </div>
+><div style="text-align: center;"> 
+><img src="https://static.igem.wiki/teams/5643/pageimage/ihp/li-tang.webp">  
+><div> <p><small style="color: gray">Dialogue with Prof. Li Tang</small></p> </div> 
+></div>
 
-
-
-
-
-
+------
 
 
 
 ## Beyond the "Humans", More "Humans"
 
-Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
+<div style="text-align: center;"> 
+<img src="ht
+The ultimate goal of technology is to serve people. We expanded our perspective to explore the commercial and human-centered dimensions of our project, ensuring it creates tangible value beyond the laboratory.
 
-
+### Dialogue with Mr. Jie Chen
 
 > ### Mr. Jie Chen
 >
@@ -376,7 +513,7 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 > **Key Takeaways：**
 >
 > - **Differentiated Pricing Strategy:** It is recommended to adopt a multi-tiered pricing model. This could include a low-cost basic software package to attract early adopters, alongside a premium, high-priced "enterprise edition" that includes dedicated technical support, custom analysis, and regular updates. The goal is to capture different segments of the CRO market.
-> - **Focus on Financial Metrics &amp; Value Proposition:** Investors pay close attention to a company's financial health. The business plan must clearly outline the path to profitability. It is crucial to quantitatively demonstrate how the platform can help CRO clients reduce R&D cycles, lower costs, or increase success rates, translating the technical advantage into clear financial value.
+> - **Focus on Financial Metrics & Value Proposition:** Investors pay close attention to a company's financial health. The business plan must clearly outline the path to profitability. It is crucial to quantitatively demonstrate how the platform can help CRO clients reduce R&D cycles, lower costs, or increase success rates, translating the technical advantage into clear financial value.
 > - **Target Market Refinement:** While targeting the Yangtze River Delta CROs is a good start, it is recommended to further define the "beachhead" market. Focus initially on small to medium-sized CROs that are more agile in adopting new technologies, before expanding to larger, established players.
 > - **Emphasize Data Assets:** Beyond the tool itself, the platform's potential to generate unique, proprietary datasets from client use is a significant long-term asset. This data can be leveraged for future AI model training, new drug target discovery, or industry reports, creating additional revenue streams.
 >
@@ -385,31 +522,15 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 > <div> <p><small style="color: gray">Dialogue with Mr. Jie Chen</small></p> </div> 
 > </div>
 
-
-
-### Suzhou Biopharmaceutical Technology Conference
-
-**Date:** June 27th, 2025
-
----
-
-**Topic：** Medical Space Design and Wayfinding Systems
-**Key Takeaways：**
-
-- **Forum Insights:** The discussions and presentations broadened our perspective, helping us refine our project concept and deepen our understanding of the scope and potential of *synthetic biology*.
-- **Industry Dialogue:** By bringing up our project—using *Saccharomyces cerevisiae* to track antibiotic resistance targets—we received valuable feedback and practical advice from company representatives, who shared the current industrial landscape, including ongoing R&D pipelines, recommended directions, and strategic approaches to resistance site screening and product development.
+------
 
 
 
-
-
-
-
-
+### Dialogue with Xirong Tang
 
 > ### Ms. Xirong Tang
 >
-> Deputy Chief Architect and Director of Healthcare Architecture @ Shanghai Architectural Design &amp; Research Institute Co., Ltd.
+> Deputy Chief Architect and Director of Healthcare Architecture @ Shanghai Architectural Design & Research Institute Co., Ltd.
 > Medical space planning and design
 >
 > **Date: **September 21th, 2025
@@ -439,12 +560,15 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 > <div> <p><small style="color: gray">Ms. Xirong Tang</small></p> </div> 
 > </div>
 
+------
 
 
 
-
-
-
-> "Concern for man himself and his fate must always form the chief interest of all technical endeavors… in order that the creations of our mind shall be a blessing and not a curse to mankind."
+> “Concern for man himself and his fate must always form the chief interest of all technical endeavors… in order that the creations of our mind shall be a blessing and not a curse to mankind.”
 > ——Albert Einstein
 
+##  
+
+## Summary
+
+Our Integrated Human Practices journey began with a student's profound question: "Is this technology truly beneficial?" This sparked a reflective process that fundamentally shaped our project. Through consultations with experts in evolutionary biology, clinical mycology, and synthetic biology, we refined our multicellular yeast platform to address the urgent challenge of antifungal resistance. Our clinical immersion at Huashan Hospital transformed this from a technical concept into a human-centered mission. By engaging with anthropologists, policy experts, and fellow iGEM teams, we embedded ethical considerations and public dialogue into our project's development, ensuring DR.sTraTeGY evolves as a socially responsible innovation with meaningful real-world impact.
