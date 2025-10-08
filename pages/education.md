@@ -13,7 +13,7 @@ description: We hoped to educate everyone to learn synthetic biology through con
 
 Welcome to the education section of our iGEM 2025 project! Our mission is to make synthetic biology accessible and engaging for everyone. Guided by the educational theory of **Constructionism**, we developed our unique ***"Triple P" Framework: Learning by Playing, Learning by Practicing, and Learning by Producing.***
 
-This framework forms an iterative cycle where **Play** sparks curiosity through games and interactive experiences, **Practice** builds mastery via hands-on experimentation, and **Produce** deepens understanding by empowering learners to create tangible outcomes.
+This framework forms an iterative cycle where *Play* sparks curiosity through games and interactive experiences, *Practice* builds mastery via hands-on experimentation, and *Produce* deepens understanding by empowering learners to create tangible outcomes.
 
 Crucially, our approach was **co-created with our community**. 
 
@@ -33,7 +33,13 @@ Through extensive interviews and collaborations with academics, teachers, studen
 
 While a single activity may not transform a participant into an expert, it can plant a seed of curiosity. We strive to make the process of discovering the science behind everyday life joyful and meaningful. It is our hope that through these experiences, participants develop a growing interest in synthetic biology, begin to contemplate its principles, and ultimately apply what they have learned—forming a virtuous cycle of exploration and understanding.
 
-![OUR GOAL](https://static.igem.wiki/teams/5643/pageimage/education/our-goal.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/our-goal.webp" style="width:45%">
+    <div>
+        <span style="color:gray">Our goal </span>
+        <br><br>
+    </div>
+</div>
 
 
 This idea of learning through cycles of curiosity, engagement, and reflection connects directly to our educational philosophy.We root our approach in [**Constructionism**](https://en.wikipedia.org/wiki/Constructionism_(learning_theory)), which posits that people learn most effectively when actively engaged in constructing tangible and shareable objects in the real world[^3]. It emphasizes meaningful, hands-on experiences, where active and social participation helps learners build a deeper understanding of the world around themm[^6][^7]. 
@@ -47,17 +53,23 @@ The constructionist learning process often follows a cyclical pattern:
 
 This process shares strong similarities with the **Design-Build-Test-Learn (DBTL) cycle** central to synthetic biology. It provides a robust pedagogical foundation for STEM education, which is why we have adopted it as the guiding philosophy for all our activities.
 
-![Constructionism and DBTL Cycle](https://static.igem.wiki/teams/5643/pageimage/education/constructionism-and-dbtl-cycle.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/constructionism-and-dbtl-cycle.webp" style="width:80%">
+    <div>
+        <span style="color:gray">Constructionism and DBTL Cycle </span>
+        <br><br>
+    </div>
+</div>
 
 Synthetic biology is, at its core, a constructive discipline. Theory alone is not enough—the key lies in transforming knowledge into real-world applications. Drawing on educational research on constructionist learning, we analyzed and synthesized relevant ideas to develop our ***“Triple P”*** framework: ***Learning by Playing, Learning by Practicing, and Learning by Producing***.
 
 You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/constructionism-and-the-triple-p-framework.pdf) to read our research results.
 
-### *Our Framework：*Triple P
+### Our Framework：Triple P
 
 Guided by this principle, we developed a framework centered on three interconnected pathways: **Learning by Playing, Learning by Practicing, and Learning by Producing**.
 
-#### LEARNING BY PLAYING：The Gateway to Engagement
+**LEARNING BY PLAYING：The Gateway to Engagement**
 
 To spark curiosity, the first essential step is to inspire a genuine desire to *explore*. We believe the most effective way to achieve this is through **play**.
 
@@ -65,21 +77,21 @@ Play is a universal language—it transcends age, culture, and background. As ch
 
 By integrating playful experiences into our education, we lower barriers to entry and invite learners to approach synthetic biology without fear, but with fascination.
 
-#### LEARNING BY PRACTICING：The Path to Mastery
+**LEARNING BY PRACTICING：The Path to Mastery**
 
 While curiosity initiates the learning journey, abstract concepts can often remain challenging due to their intangible nature. For many learners in synthetic biology, certain knowledge points may appear confusing or difficult to grasp fully. When faced with purely theoretical explanations that feel disconnected from reality, motivation can wane.
 
 That is why we have made *learning by practicing* a core component of our educational approach. We believe that true understanding comes from direct engagement—translating theory into tangible experience. Through hands-on experimentation, abstract ideas become concrete, enabling learners to actively construct knowledge. In this way, participants evolve from passive recipients into active investigators, gaining not only conceptual clarity but also practical mastery of scientific principles.
 
-#### LEARNING BY PRODUCING：The Culmination of Understanding
+**LEARNING BY PRODUCING：The Culmination of Understanding**
 
 A central question in education is: how can we deepen learning outcomes, promote long-term understanding, and sustain growth after learners have grasped the fundamentals? Our answer is **production**.
 
 Production empowers learners to become innovators—transforming them from information consumers into knowledge creators. Whether designing a project, developing a presentation, or formulating a new idea, they build upon existing knowledge, independently address gaps, and develop a comprehensive grasp of the subject.
 
-Crucially, ***producing is not a final destination***—it generates new outcomes that spark further exploration, practice, and curiosity, sustaining a continuous cycle of learning and growth.
+Crucially, **producing is not a final destination**—it generates new outcomes that spark further exploration, practice, and curiosity, sustaining a continuous cycle of learning and growth.
 
-#### Triple P：A Cohesive and Iterative Cycle
+**Triple P：A Cohesive and Iterative Cycle**
 
 The Triple P framework—**Learning by Playing, Learning by Practicing, and Learning by Producing**—is not a set of isolated learning stages, but an iterative ecosystem centered on "curiosity-driven engagement, competency advancement, and value-based closure."
 
@@ -87,16 +99,24 @@ The Triple P framework—**Learning by Playing, Learning by Practicing, and Lear
 - **Practice** transforms this curiosity into targeted skill refinement and conceptual deepening, building a bridge from "emerging ideas" to "mastered methods."
 - **Produce** translates acquired competencies into meaningful outcomes—outcomes that then serve as the starting point for new rounds of Play-based exploration and Practice-driven refinement.
 
-![The Triple P Pathway](https://static.igem.wiki/teams/5643/pageimage/education/the-triple-p-pathway.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/the-triple-p-pathway.webp" style="width:40%">
+    <div>
+        <span style="color:gray">The Triple P Pathway </span>
+        <br><br>
+    </div>
+</div>
 
 This self-reinforcing cycle breaks away from one-way knowledge transfer. It enables learners to grow into active explorers, competent practitioners, and creative contributors—fostering deep understanding, sustained engagement, and innovation in synthetic biology and beyond.
 
 
-### Build Our Activities in Community Insights
 
-A theoretical framework is merely a starting point, impactful education must be **co-created with its intended audience**. To bring the *Triple P* framework to life and **test its real-world relevance**, we embarked on a collaborative journey with diverse stakeholders. Their unique insights and hands-on feedback directly shaped our work—from **initial activity design** to **iterative refinement**. This process guaranteed a program that is theoretically rigorous, yet also deeply attuned to genuine learning needs and broader social contexts.
 
-#### Academic Depth - Exchanges with Jilin University
+## Build Our Activities in Community Insights
+
+A theoretical framework is merely a starting point, impactful education must be co-created with its intended audience. To bring the *Triple P* framework to life and test its real-world relevance, we embarked on a collaborative journey with diverse stakeholders. Their unique insights and hands-on feedback directly shaped our work—from initial activity design to iterative refinement. This process guaranteed a program that is theoretically rigorous, yet also deeply attuned to genuine learning needs and broader social contexts.
+
+### Academic Depth - Exchanges with Jilin University
 
 Date：May 16th，2025
 
@@ -106,9 +126,13 @@ Collaboration：CJUH-JLU-China
 
 To examine the academic validity of our framework, we engaged in discussions with peers and mentors from Jilin University. Their team, CJUH-JLU-China, which received [the Nomination of *Best Education* in iGEM 2024](https://jamboree.igem.org/2024/results/special-prizes#best-education) and possesses extensive experience in the education track, provided critical insights during these exchanges. This dialogue served as an essential initial step to assess the practical feasibility of our theoretical approach.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/hp.webp" alt="Our Communication with CJUH-JLU-China" style="zoom:50%;" />
-
-<img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/.webp" alt="Our Communication with CJUH-JLU-China" style="zoom:50%;" />
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/hp.webp" style="width:65%">
+    <div>
+        <span style="color:gray">We Communication with CJUH-JLU-China </span>
+        <br><br>
+    </div>
+</div>
 
 **Why We Conducted This Activities**
 
@@ -126,15 +150,13 @@ We held in-depth conversations with CJUH-JLU-China, during which they shared val
 
 
 
-#### Practical Frontline - Dialogue with School Teacher
+### Practical Frontline - Dialogue with School Teacher
 
 Date：May 24th，2025
 
 People：Huizhen Du
 
 To ground our *Triple P* educational framework in real teaching contexts, we held a focused discussion with Ms. Li Linyu, an experienced teacher from [Shanghai Hongshan Middle School](http://www.hshsh.pudong-edu.sh.cn/). Her frontline perspective helped us assess the practical feasibility of integrating “play” and “practice” into classroom settings.
-
-![Ms. Li Linyu](https://static.igem.wiki/teams/5643/pageimage/education/insight/ms-li-linyu.webp)
 
 **Why We Conducted This Activity**
 
@@ -146,23 +168,40 @@ During our conversation, we presented the 3P framework and discussed its potenti
 
 >“For most students, they love to play games! Games make them more willing to listen and engage, because they’re fun. It doesn’t have to be a very sophisticated game—even simple interactions are effective.”
 
-![The photo of us with teachers](https://static.igem.wiki/teams/5643/pageimage/education/insight/the-photo-of-us-with-teachers.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/the-photo-of-us-with-teachers.webp" style="width:50%">
+    <div>
+        <span style="color:gray">We Communication with Ms.Li Linyu </span>
+        <br><br>
+    </div>
+</div>
 
 What We Learned From It
 
 - The “Play” component is strongly supported as an effective gateway to learning, especially for younger students.
+
 - Game design should prioritize **engagement and curiosity**, even over strict content alignment in introductory phases.
+
 - Activities must be modular and easy to implement to **fit into tight teaching schedules and varying class sizes**.
+
 - Involving teachers in the design process is crucial to **developing practically viable educational tools**.
 
+  
 
-#### Social Breadth - Interdisciplinary Interviews
+
+### Social Breadth - Interdisciplinary Interviews
 
 Date：From April to June，2025
 
 People：All team members
 
-![Communicate with students from non-science and engineering backgrounds](https://static.igem.wiki/teams/5643/pageimage/education/insight/communicate-with-students-from-non-science-and-engineering-backgrounds.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/communicate-with-students-from-non-science-and-engineering-backgrounds.webp" style="width:50%">
+    <div>
+        <span style="color:gray">We Communication with student from non-science and engineering backgrounds </span>
+        <br><br>
+    </div>
+</div>
 
 **Why We Conducted This Activity**
 
@@ -174,21 +213,25 @@ We designed a series of semi-structured interviews with students from non-STEM d
 
 **What We Learn From It**
 
-- The primary barrier to public engagement is **not a lack of interest, but the absence of accessible entry points** into the subject.
-- Using **everyday analogies** instead of technical jargon significantly improves comprehension and relatability.
-- Embedding scientific content within **ethical, cultural, and social contexts** enhances relevance and engagement.
-- These insights motivated us to design **low-threshold, high-impact activities** that welcome participants with little to no science background.
+- The primary barrier to public engagement is not a lack of interest, but the absence of accessible entry points into the subject.
+- Using everyday analogies instead of technical jargon significantly improves comprehension and relatability.
+- Embedding scientific content within ethical, cultural, and social contexts enhances relevance and engagement.
+- These insights motivated us to design low-threshold, high-impact activities that welcome participants with little to no science background.
 
 You can read our interview records [here](https://static.igem.wiki/teams/5643/pageimage/education/file/interview-records.pdf).
 
 
+
+
 ### ReDesign and Rebuild——The Synthesis: From Insights to Action
 
-Our educational framework did not emerge in isolation—it was **co-built with the community**. Insights from peers at Jilin University sharpened our academic grounding, reminding us to balance *breadth of participation* with *depth of rigor*. Conversations with frontline teachers highlighted the **practical realities of classrooms**, from time limits to student engagement strategies, ensuring our activities remained feasible and impactful. Meanwhile, dialogues with non-STEM students revealed that the **true barrier is not interest, but accessibility**—pushing us to use analogies, cultural framing, and modular designs that invite broader audiences.
+Our educational framework did not emerge in isolation—it was co-built with the community. Insights from peers at Jilin University sharpened our academic grounding, reminding us to balance **breadth of participation with depth of rigor.** Conversations with frontline teachers highlighted the **practical realities of classrooms**, from time limits to student engagement strategies, ensuring our activities remained feasible and impactful. Meanwhile, dialogues with non-STEM students revealed that the **true barrier is not interest, but accessibility**—pushing us to use analogies, cultural framing, and modular designs that invite broader audiences.
 
-Looking ahead, we also plan to translate these insights into **new formats of engagement**: picture books that invite children into the microbial world, immersive storytelling formats such as “rule-based mysteries” that resonate with young people, and **interactive workshops** that make learning participatory and fun. We will further expand with **hands-on experiments** that let learners experience science directly, and with **training sessions** that guide students to independently explore research topics and continuously refine their knowledge systems.
+Looking ahead, we also plan to translate these insights into new formats of engagement: picture books that invite children into the microbial world, immersive storytelling formats such as “rule-based mysteries” that resonate with young people, and interactive workshops that make learning participatory and fun. We will further expand with hands-on experiments that let learners experience science directly, and with training sessions that guide students to independently explore research topics and continuously refine their knowledge systems.
 
 By grounding theory in lived realities, we ensured that our framework is both **academically defensible and socially responsive**. The outcome is an educational model that is not static, but adaptive, capable of evolving with new audiences, emerging pedagogical needs, and the broader mission of democratizing synthetic biology.
+
+
 
 
 ## Our Initial Portfolio
@@ -210,9 +253,13 @@ People：Huizhen Du
 
 We hypothesized that picture books could serve as a gateway to scientific knowledge, making complex concepts like Gene editing approachable and fun.
 
-![A child are reading picture-books](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/a-child-are-reading-picture-books.webp)
-
-![Children are completing the content of the picture book](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/a-child-is-completing-the-content-of-the-picture-book.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/picture-book-relay.webp" style="width:100%">
+    <div>
+        <span style="color:gray">Picture Book Relay </span>
+        <br><br>
+    </div>
+</div>
 
 **How We Conducted it**
 
@@ -222,15 +269,17 @@ We improved picture books of the team in previous years, you can read the book c
 2. They then retold the content to their parents, creating a "knowledge feedback" loop.
 3. We avoided over-explaining the picture book plot to preserve children’s self-directed learning experience.
 
-![The children are explaining the content of the picture book to their families](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/a-child-is-explaining-the-content-of-a-picture-book-to-her-family.webp)
-
 If you would like to know more about the event, please click [here](https://mp.weixin.qq.com/s/uO72zDIgBLpdTJRgyLpvGw).
 
 **What We Learn from it**
 
 - Children showed stronger preference for visual content over text, so text in picture books should not occupy a large proportion.
+
 - Many parents praised the session, noting that children’s independent reading and retelling fostered better parent-child interaction—parents suggested we avoid guiding children’s reading directly.
+
 - Parents also recommended creating **a supplementary manual** to address potential gaps in children’s self-directed learning , for example: missed key points.
+
+  
 
 
 ### Activity2. Laboratory Visit and Experience
@@ -243,23 +292,18 @@ We organized a laboratory open day to provide students with an immersive researc
 
 **How We Conducted It**
 
-We designed the visit as an interactive research journey:
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/lab.webp" style="width:100%">
+    <div>
+        <span style="color:gray">Participating students are visiting the laboratory and communicating with teachers </span>
+        <br><br>
+    </div>
+</div>We designed the visit as an interactive research journey:
 
 - Guided Lab Tours
-  Students visited multiple research groups specializing in areas such as synthetic biology, microbiology, and biophysics. They observed advanced equipment, ongoing experiments, and project displays, gaining firsthand insight into real research environments and interdisciplinary approaches.
-
-![students are visiting the laboratory](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/students-are-visiting-the-laboratory.webp)
-
-![students are visiting the laboratory](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/students-are-visiting-the-laboratory2.webp)
-
-![students are visiting the laboratory](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/students-are-visiting-the-laboratory3.webp)
-
-![students are visiting the laboratory](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/students-are-visiting-the-laboratory4.webp)
-
+  Students visited various research labs in synthetic biology, microbiology, and biophysics, observing equipment and experiments to gain direct exposure to real scientific work.
 - Dialogue with Faculty and Researchers
-  Each lab visit included a session for students to interact directly with principal investigators and senior lab members. They discussed research objectives, experimental design, career pathways, and the daily life of a scientist, helping students contextualize their academic studies within active research frameworks.
-
-![students communicate with teachers](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/students-communicate-with-teachers.webp)
+  Students interacted directly with lab leaders and members, discussing research, careers, and life in science to better connect academic learning with active research.
 
 You can click [here](https://mp.weixin.qq.com/s/C2iyZ71eCbZYdDI9bUDMBA) to view the details of the activity.
 
@@ -267,12 +311,19 @@ You can click [here](https://mp.weixin.qq.com/s/C2iyZ71eCbZYdDI9bUDMBA) to view 
 
 The laboratory visit provided valuable lessons in designing research exposure activities:
 
-- **Direct Exposure Inspires Motivation:** Entering real labs and seeing ongoing work significantly enhanced students' interest in scientific careers and helped them visualize their own potential paths in research.
-- **Interaction with Researchers Builds Confidence:** Face-to-face conversations with faculty and lab members demystified the research process, making science more approachable and strengthening students' identity as future scientists.
-- **Observational Tours Are Only a First Step:** We recognized that while lab tours spark interest, they are not sufficient for building experimental understanding. Moving forward, we plan to develop **follow-up hands-on sessions**, such as offering simplified experimental kits or organizing weekend lab practicums, to provide continuous, immersive learning pathways from observation to practice.
+- Direct Exposure Inspires Motivation: Entering real labs and seeing ongoing work significantly enhanced students' interest in scientific careers and helped them visualize their own potential paths in research.
 
-![we took photos with participant](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-took-photos-with-participant.webp)
+- Interaction with Researchers Builds Confidence: Face-to-face conversations with faculty and lab members demystified the research process, making science more approachable and strengthening students' identity as future scientists.
 
+- Observational Tours Are Only a First Step: We recognized that while lab tours spark interest, they are not sufficient for building experimental understanding. Moving forward, we plan to develop follow-up hands-on sessions, such as offering simplified experimental kits or organizing weekend lab practicums, to provide continuous, immersive learning pathways from observation to practice.
+
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-took-photos-with-participant.webp" style="width:40%">
+      <div>
+          <span style="color:gray">Our group photo from Lab visit and experience </span>
+          <br><br>
+      </div>
+  </div>
 
 ### Activity 3. Microbial Inoculation of Daily Necessities
 
@@ -280,7 +331,7 @@ Date：May 18，2025
 
 People：Zhiqin Wang、Yixuan Lu、Peining Wu、Huizhen Du
 
-For **Learning by Practicing**, we aimed to demystify the lab and build foundational skills through highly accessible experiments. We hypothesized that a simple, relatable experiment could break down barriers to the lab, build confidence ("I can do this"), and reveal the invisible microbial world around us.
+For Learning by Practicing, we aimed to demystify the lab and build foundational skills through highly accessible experiments. We hypothesized that a simple, relatable experiment could break down barriers to the lab, build confidence ("I can do this"), and reveal the invisible microbial world around us.
 
 **How We Conducted it**
 
@@ -290,13 +341,13 @@ To break down laboratory barriers and reduce operational difficulty:
 2. Students selected common daily items (e.g., stationery, tableware) as the inoculation objects.
 3. They observed differences in microbial colony characteristics across items, turning the experiment into an exploratory activity.
 
-![microbial inoculation](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/microbial-inoculation1.webp)
-
-![microbial inoculation](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/microbial-inoculation2.webp)
-
-![microbial inoculation](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/microbial-inoculation3.webp)
-
-![microbial inoculation](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/microbial-inoculation4.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbial-inoculation-of-daily-necessities.webp" style="width:100%">
+    <div>
+        <span style="color:gray">We are performing microbial inoculation of daily necessities </span>
+        <br><br>
+    </div>
+</div>
 
  If you would like to know more about the event, please click [here](https://mp.weixin.qq.com/s/dwDjYi3mrVq8wgG90Eg3uQ).
 
@@ -309,6 +360,8 @@ To break down laboratory barriers and reduce operational difficulty:
 You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-feedback-microbial-inoculation-of-daily-necessities.pdf) to see the feedback from the students.
 
 
+
+
 ### Activity 4. Garden Party
 
 Date：March 28th，2025
@@ -319,9 +372,23 @@ Garden parties allow us to reach a diverse audience with different backgrounds�
 
 If you would like to know more about the event, please click [here](https://mp.weixin.qq.com/s/z9hbR3rPf5ykIEdhJJapVQ).
 
-![our booth](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/our-event-booths.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/our-event-booths.webp" style="width:40%">
+    <div>
+        <span style="color:gray">Our booth at the garden party </span>
+        <br><br>
+    </div>
+</div>
 
 **How We Conducted it**
+
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/graden-party.webp" style="width:40%">
+    <div>
+        <span style="color:gray">We are conducting activities at our booth </span>
+        <br><br>
+    </div>
+</div>
 
 We designed three linked activities:
 
@@ -329,48 +396,46 @@ We designed three linked activities:
 
   We leveraged our team's logo to create a hands-on, family-friendly activity. Participants were guided through the process of making their own balloon puppies, which served as an immediate icebreaker and a popular souvenir.
 
-  ![Team members teach balloon puppy making](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/team-members-teach-balloon-puppy-making.webp)
-
 - **Rules and Ghost Stories **
 
   Building on the popularity of horror-adventure games, which combine puzzle-solving, narrative exploration, and interaction, we adapted the format with a synthetic biology theme. Divided into three chapters, the game taught participants about common microorganisms and laboratory safety rules through level-based challenges. This turned knowledge acquisition into an exciting adventure, encouraging active engagement with scientific content.
 
   You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/game-rules-party.pdf) to view our games
 
-  ![carry out rules and strange talk activities](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/carry-out-rules-and-strange-talk-activities.webp)![Participating students reading our materials](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/participating-students-reading-our-materials.webp)
-
 - **Collage Poetry Creation **
 
   We set up a creative station where participants could translate their learning into personal expression through collage poetry—a format popular among students. To facilitate this synthesis of experience, we provided a curated bank of synthetic biology-related words, phrases, and nouns, alongside current popular meme formats. To lower the entry barrier and bridge scientific concepts with contemporary culture, we also offered optional fill-in-the-blank structures and "meme fill-in" templates, guiding participants to combine these materials into original poems that felt both relatable and uniquely styled.
 
-  ![Collage poems of creation](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/collage-poems-of-creation.webp)
 
 **What We Learn from It**
 
 More than **300 people** participated in this event. The Garden Party taught us as much as it did our participants. It revealed what works, what doesn’t, and where the sweet spot lies in designing public engagement activities:
 
-- **Diverse Activities Maximize Reach:** The combination of a **simple craft (balloon puppies)**, an **immersive game (Rules Horror)**, and a **creative expression task (collage poetry)** successfully attracted a wide range of attendees with different interests, ensuring broad appeal.
-- **Tangible Takeaways Enhance Engagement:** Activities that resulted in a physical product for participants to take home—whether a **self-made balloon puppy** or a **personalized poem**—were particularly valued. This underscored the importance of providing a concrete and personal memento of the experience.
-- **Balancing Challenge and Accessibility is Key:** We observed that while the "Rules and Ghost Stories" game was deeply engaging for those who participated, its narrative and puzzle-solving elements presented a **noticeable threshold** that deterred some visitors. This highlighted the need to carefully calibrate the complexity of game-based outreach.
-- **Creative Constraints Can Guide Output:** The collage poetry activity demonstrated that providing a well-designed set of constraints (a curated word bank) effectively stimulated creativity without causing paralysis. However, we also noted that the outcomes were highly influenced by the materials we provided, indicating the need for thoughtful curation to guide messaging without being overly restrictive.
-- **Leveraging Familiar Culture Lowers Barriers**: The most successful elements used familiar concepts from popular culture, such as balloon art and internet memes. This approach proved highly effective in making the unfamiliar field of synthetic biology feel accessible, approachable, and relevant to a general audience.
+- Diverse Activities Maximize Reach**:**  Activities where participants could take home a physical product (e.g., a balloon puppy or personalized poem) were especially valued.
+- Tangible Takeaways Enhance Engagement: Activities that resulted in a physical product for participants to take home—whether a self-made balloon puppy or a personalized poem—were particularly valued. This underscored the importance of providing a concrete and personal memento of the experience.
+- Balancing Challenge and Accessibility is Key: The puzzle-based game engaged some but was too complex for others, highlighting the need to calibrate difficulty.
+- Creative Constraints Can Guide Output: Providing a curated word bank stimulated creativity, but outcomes depended heavily on material selection.
+- Use Familiar Cultural References: Leveraging well-known concepts (e.g., balloon art, internet memes) made synthetic biology feel accessible and relevant.
 
-![we take a group photo](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-take-a-group-photo.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-take-a-group-photo.webp" style="width:40%">
+    <div>
+        <span style="color:gray">Our group photo at the garden party </span>
+        <br><br>
+    </div>
+</div>
 
 
-## The Practice of Triple P
 
-### LEARNING BY PLAYING
+## LEARNING BY PLAYING
 
-#### Children
-
-> **For Structured Learning Environments: Classroom & Family Engagement**
+> For **Children**: to structure environments——Classroom & Family Engagement
 
 Early science education plays a decisive role in shaping curiosity, critical thinking, and problem-solving skills. Primary science education ensures that children are not merely passive recipients of knowledge but active participants who question, investigate, and explore. Positive early experiences can even influence students’ career aspirations and help bridge the gender gap in STEM fields[^2].
 
-Children were therefore a **primary target audience** for our activities. Since most have limited prior knowledge of biology—let alone synthetic biology—our first goal was to **capture their interest** through relatable, real-world examples. We designed playful, curriculum-aligned activities that encourage students to recognize the science all around them. To extend learning beyond the classroom, we also encouraged children to **share what they learned with parents and friends**, creating a multiplier effect that spreads knowledge across communities.
+Children were therefore a primary target audience for our activities. Since most have limited prior knowledge of biology—let alone synthetic biology—our first goal was to capture their interest through relatable, real-world examples. We designed playful, curriculum-aligned activities that encourage students to recognize the science all around them. To extend learning beyond the classroom, we also encouraged children to share what they learned with parents and friends, creating a multiplier effect that spreads knowledge across communities.
 
-##### My Microb Friends——Picturebook
+### My Microb Friends——Picturebook
 
 Date：From June to July，2025
 
@@ -397,22 +462,30 @@ In this story, microorganisms become friendly characters who “talk” to child
 
 Learned from [the previous event](#Activity-1.-Picture-Book-Relay), we created a [**supplementary parent guide**](https://static.igem.wiki/teams/5643/pageimage/education/file/my-microbe-friend-supplementary-guide-en-version.pdf) ([Chinese version](https://static.igem.wiki/teams/5643/pageimage/education/file/my-microbe-friend-supplementary-guide-zh-version.pdf)) for parents. These parts include explanations and ideas for simple activities, encouraging families to read and learn together. In this way, our picture book becomes more than just a story — it becomes a shared journey of discovery.
 
-![reading-picturebook](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/reading-picturebook.webp)
-
-![reading-picturebook2](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/reading-picturebook-2.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/picture-book.webp" style="width:40%">
+    <div>
+        <span style="color:gray">People are reading our picture books </span>
+        <br><br>
+    </div>
+</div>
 
 **Outcome**
 
 Our activities are loved by children and parents. Everyone realized that there are so many microorganisms in life.
 
 
-##### Interactive Science workshop
 
-To cultivate a lasting interest in science, fostering positive attitudes is essential. Interactive science workshops achieve this by moving beyond traditional lectures to offer a **hands-on and inquiry-based** experience. In this exploratory format, students learn by doing—experimenting, observing, and collaborating under expert guidance. This **active participation** builds a supportive environment that sparks curiosity and strengthens conceptual understanding. By making science **fun, inclusive, and participatory**, these workshops transform it from a passive subject into an engaging adventure, inspiring children to see themselves as explorers and problem-solvers.
+
+### Interactive Science workshop
+
+To cultivate a lasting interest in science, fostering positive attitudes is essential. Interactive science workshops achieve this by moving beyond traditional lectures to offer a hands-on and inquiry-based experience. In this exploratory format, students learn by doing—experimenting, observing, and collaborating under expert guidance. This active participation builds a supportive environment that sparks curiosity and strengthens conceptual understanding. By making science fun, inclusive, and participatory, these workshops transform it from a passive subject into an engaging adventure, inspiring children to see themselves as explorers and problem-solvers.
 
 In order to allow more children to receive our education, we choose to go into the community to reach more children. We collaborated with [Dalian Road Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/2ri6HdtRwp8TmxzetrYYDw)、[Chenjiatou Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/28t6Jc8MTzO5HJrqELSMMA) and [Lingqiao No.7 Residents’ Committee, Gaoqiao Town](https://mp.weixin.qq.com/s/0Tw382Uwc3kX4GZwmM42Vw), bringing a variety of workshop activities to local children.
 
-###### Gene & Protein： The Code of Life
+
+
+**Workshop1: Gene & Protein**
 
 Date：July 15th，2025
 
@@ -420,9 +493,15 @@ Organizers：Huizhen Du，Yuxin Duan，Yining Zhao
 
 **Overview**
 
-DNA and proteins form the foundation of biology and play central roles in synthetic biology. Because of their importance — and their direct connection to questions children naturally ask — we chose **Genes and Proteins**([the presentation file](https://static.igem.wiki/teams/5643/pageimage/education/file/presention-file-genes-and-proteins.pdf)) as the theme for our first lesson.
+DNA and proteins form the foundation of biology and play central roles in synthetic biology. Because of their importance — and their direct connection to questions children naturally ask — we chose Genes and Proteins([the presentation file](https://static.igem.wiki/teams/5643/pageimage/education/file/presention-file-genes-and-proteins.pdf)) as the theme for our first lesson.
 
-![We take a photo with the children](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/we-take-a-photo-with-the-children.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/we-take-a-photo-with-the-children.webp" style="width: 50%;">
+    <div>
+        <span style="color:gray">Our group photo from Workshop 1</span>
+        <br><br>
+    </div>
+</div>
 
 **Educational Design**
 
@@ -431,25 +510,25 @@ To stimulate curiosity, we began with guiding questions such as:
 - *Why are we different from others?*
 - *Why is everyone unique?*
 
-![We offer activities on genes and proteins for children](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/we-offer-courses-on-genes-and-proteins-for-children.webp)
-
-These questions naturally led to the key concept: **genes control protein synthesis, and proteins determine traits**. The lesson focused on helping children understand what DNA is and how genetic information is expressed through proteins.
+These questions naturally led to the key concept: genes control protein synthesis, and proteins determine traits. The lesson focused on helping children understand what DNA is and how genetic information is expressed through proteins.
 
 **Learning by Playing Activities**
+
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/gene-protein.webp" style="width: 70%;">
+    <div>
+        <span style="color:gray">Photos of Workshop 1 in progress</span>
+        <br><br>
+    </div>
+</div>
 
 When teaching, the key points were *what DNA is* and *how DNA controls protein synthesis*. 
 
 - **DNA Origami** – We continued last year's [DNA origami interaction](https://static.igem.wiki/teams/5643/pageimage/education/file/dna-origami-guide.pdf), helping children grasp DNA's double-helix structure. Children folded paper into the double helix, gaining a tangible feel for DNA’s structure.
 
-![We are teaching children to make origami](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/we-are-teaching-children-to-make-origami.webp)
-
 - **Base-Matching Game** – We also improved last year's [base-matching game](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-plan-dna-base-pairing-mini-game.pdf) to help children understand the principle of base complementary pairing — through this interaction, they gained a comprehensive view of base-pairing rules. Using an interactive card-matching system, students practiced complementary base pairing, reinforcing rules through play.
 
 - **Molecular Role-Play** – Moreover, to explain transcription and translation (“DNA → RNA → protein”), we organized a role-playing stage play where children acted out different molecular roles and functions. You can read our play clicking [here](https://static.igem.wiki/teams/5643/pageimage/education/file/interactive-scenario-simulation-exploring-protein-synthesis-in-biology.pdf). Acting as DNA, RNA, and ribosomes, children performed transcription and translation. This theater-style game brought the central dogma to life in a way that was both fun and unforgettable.
-
-![We are performing a script](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/we-are-performing-a-script.webp)
-
-![After the event, we had a discussion with the children](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/after-the-event-we-had-a-discussion-with-the-children.webp)
 
 **Outcomes**
 
@@ -468,7 +547,8 @@ Survey results showed:
 You can view the full questionnaire and results [here](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-feedback-gene-and-protein.pdf).
 
 
-###### Bread Fermentation
+
+**Workshop2：Bread Fermentation**
 
 Date：July 17th and 23th，2025
 
@@ -478,27 +558,27 @@ Organizers：Huizhen Du，Yuxin Duan，Yixuan Lu
 
 Bread is a food almost every child knows and loves — and in Shanghai, with its rich bread culture, it’s especially familiar. Starting from this everyday experience, we introduced children to the science behind a simple but fascinating question: *Why does bread rise?* hoping them undertsand cell breath, knowing the basic information about synbiology.
 
-![activities were carried out](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activities-were-carried-out.webp)
-
-![Children interact_Bread](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/children-interact-bread.webp)
-
 **Educational Design**
 
-We began with the observation that dough “gets bigger.” Children were encouraged to guess why, which led them to discover **yeast** — a living microorganism. From there, they learned that yeast produces gas through **cellular respiration**, which makes bread soft and airy.
+We began with the observation that dough “gets bigger.” Children were encouraged to guess why, which led them to discover yeast — a living microorganism. From there, they learned that yeast produces gas through cellular respiration, which makes bread soft and airy.
 
 To spark creativity, we share the latest advances in yeast research and ask the children:*If you could change yeast, what would you want it to make?* we get the answer that:Plastic、Natural coloring、Even cakes and so on. Their imaginative answers are always surprising and inspiring.
 
 **Learning by Playing Activities**
 
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/bread-fermentation.webp" style="width:70%">
+    <div>
+        <span style="color:gray">Photos of Workshop 2 in progress</span>
+        <br><br>
+    </div>
+</div>
+
 - **Observation & Discovery** – Watching dough rise and linking it to yeast activity.
 
 - **Creative Brainstorming** – Imagining new products yeast could make if redesigned.
 
-  ![Q&A interaction](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/q-a-interaction.webp)
-
 - **Balloon Puppies** – To visualize yeast’s grape-like clusters, we guided children in making balloon puppies (our team’s logo). This playful craft activity not only improved motor skills but also created a vivid analogy for microbial clustering.
-
-  ![the Child with balloon made](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/the-child-with-balloon-made.webp)
 
 **Outcomes**
 
@@ -514,7 +594,7 @@ You can view the full questionnaire and results [here](https://static.igem.wiki/
 
 
 
-###### Microbes Are Everywhere
+**Workshop3：Microbes Are Everywhere**
 
 Date：July 24th，2025
 
@@ -522,39 +602,67 @@ Organizers：Huizhen Du，Zhiqin Wang，Zhongyi Huang
 
 **Overview**
 
-Children often know they should wash their hands before meals, but many do not fully understand *why*. While “bacteria” may be a familiar word, the microbial world often feels invisible and abstract. This workshop was designed to help children realize that **microbes are everywhere** — in the environment, on our hands, and even inside our bodies — and to show how they can be both helpful and harmful.
+Children often know they should wash their hands before meals, but many do not fully understand *why*. While “bacteria” may be a familiar word, the microbial world often feels invisible and abstract. This workshop was designed to help children realize that microbes are everywhere — in the environment, on our hands, and even inside our bodies — and to show how they can be both helpful and harmful.
 
-Beyond simply introducing what microbes are, we also wanted participants to **connect microbes with everyday life**, understand their link to diseases, and gain an age-appropriate introduction to **microbial resistance**. The goal was to give children a more **comprehensive and balanced perspective** on microorganisms.
-
-![activity record 4](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record4-microbe-everywhere.webp)
+Beyond simply introducing what microbes are, we also wanted participants to connect microbes with everyday life, understand their link to diseases, and gain an age-appropriate introduction to microbial resistance. The goal was to give children a more comprehensive and balanced perspective on microorganisms.
 
 **Education Design**
 
 To make the invisible world of microbes engaging and memorable, we followed our theme of **Learning by Playing**. The lesson combined basic knowledge about bacteria, fungi, and viruses with interactive activities that demonstrated concepts such as infection and antimicrobial resistance (AMR). Rather than relying on passive lectures, we encouraged children to learn through movement, experiments, creativity, and storytelling.
 
-![activity record 1](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record1-microbe-everywhere.webp)
-
 **Learning by Playing Activities**
+
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbes-are-everywhere-photo-1.webp" style="width:70%">
+    <div>
+        <span style="color:gray">Photos of Workshop 3 in progress</span>
+        <br><br>
+    </div>
+</div>
 
 - **Microbial Squat** – Adapted from the popular “Turnip Squat” game, this energetic activity required students to squat while chanting microbe names and giving examples, turning abstract knowledge into physical memory.
 
 - **AMR Mini-Experiment (“Resistance Mystery”)** Using the analogy of microbes as “monsters” and drugs as “weapons,” we demonstrated how repeated attacks can lead to resistance. A simple ink-diffusion experiment helped children visualize the concept of antimicrobial resistance.
 
-  ![activity record 2](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record2-microbe-everywhere.webp)
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record2-microbe-everywhere.webp" style="width:40%">
+      <div>
+          <span style="color:gray">We are conducting the AMR Mini-Experiment</span>
+          <br><br>
+      </div>
+  </div>
 
 - **Immune Role-Play (“Microbial Variations”)** –  Children acted as immune cells defending the body from invading microbes, experiencing firsthand how the immune system detects and eliminates pathogens.
 
-![activity record 3](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record3-microbe-everywhere.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record3-microbe-everywhere.webp" style="width:40%">
+    <div>
+        <span style="color:gray">We are conducting the Mini-Immune Role-Play</span>
+        <br><br>
+    </div>
+</div>
 
 - **Painting Expression** – After the course, children were invited to create drawings of “the microbes in their hearts.” This activity encouraged imagination, reflection, and creative expression of what they had learned.
+
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/the-paintings-of-children.webp" style="width:70%">
+    <div>
+        <span style="color:gray">Paintings of children</span>
+        <br><br>
+    </div>
+</div>
 
 **Outcomes**
 
 Through play, children moved from *hearing* about microbes to *experiencing* them. The workshop successfully transformed the **invisible microbial world into something visible, memorable, and fun**. 
 
-![Group photo of the event](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/group-photo-of-the-event-microbe.webp)
-
-![children fill out questionnaires](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/children-fill-out-questionnaires.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/group-photo-of-the-event-microbe.webp" style="width:70%">
+    <div>
+        <span style="color:gray">Our group photo from Workshop 3</span>
+        <br><br>
+    </div>
+</div>
 
 Post-event feedback showed:
 
@@ -568,26 +676,14 @@ Post-event feedback showed:
 You can view the full questionnaire and results [here](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-feedback-microbe.pdf).
 
 
-#### Youth and Public
 
-> **For Social & Digital Natives: Gamified Public Outreach**
+> For **Digital Natives**: to gamify outreach——Digital Platforms & Interactive Installations
 
 Our education theme, **Learning by Playing**, is not limited to children. We believe that young people and the general public also learn best when science becomes **interactive, social, and fun**. As digital natives and social explorers, they are drawn to experiences that feel engaging, shareable, and connected to their daily lives.
 
 To reach this audience, we designed activities that blend **gamification, digital platforms, and urban interaction**. From an online gene-editing game to a city-wide synthetic biology challenge, we transformed synthetic biology into something that could be *played, explored, and experienced* — making biology relevant not only in textbooks, but also in the streets, screens, and shared culture of modern life.
 
-**Education Design**
-
-We designed two complementary outreach projects:
-
-1. **Website Game** — meeting youth in the digital space, where play and learning naturally merge.
-2. **SynbioSH (Synthetic Biology Shanghai Orienteering)** — bringing biology into the city itself, turning Shanghai into a living laboratory.
-
-
-
-##### **BIO-BOUNCE**
-
-> Website Game — Gene Editing Meets Casual Play
+### BIO-BOUNCE
 
 Date：From July to October，2025
 
@@ -601,31 +697,35 @@ Collaboration：USTC、NUDT-CHINA
 
 - Concept
 
-  Players use **“genetic scissors”** to edit their character’s DNA. By altering genes, they change the character’s visible traits, which determines success in overcoming in-game challenges.
+  Players use “genetic scissors” to edit their character’s DNA. By altering genes, they change the character’s visible traits, which determines success in overcoming in-game challenges.
 
 - Educational Value
-  1. Demonstrates the **relationship between genes and traits**.
-  2. Introduces **tools of synthetic biology** (e.g., gene editing concepts) in simplified form.
-  3. Reinforces the idea that **biology is modular and programmable**, just like a game.
+  1. Demonstrates the relationship between genes and traits.
+  2. Introduces tools of synthetic biology (e.g., gene editing concepts) in simplified form.
+  3. Reinforces the idea that biology is modular and programmable, just like a game.
 
 - Design Features
   1. Parkour-style level clearing: fast-paced, easy to replay.
   2. Points system: incentivizes continued play and friendly competition.
   3. Low barrier of entry: playable anytime, anywhere, without prior science background.
 
-- Impact: 
+- Impact
 
   The game became popular among students because it felt like a real game, not a classroom exercise. Its shareability and scoring system helped spread it organically, increasing both reach and visibility for synthetic biology education.
   
-  ![the Participant is playing our games](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/the-participant-is-playing-our-games.webp)
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/the-participant-is-playing-our-games.webp" style="width:40%">
+      <div>
+          <span style="color:gray">The participant is playing BIO-BOUNCE</span>
+          <br><br>
+      </div>
+  </div>
 
 You can enjoy it [click here](https://gd.games/instant-builds/837df4ba-8e96-4e18-b117-50fa6db0dede).
 
 
 
-##### **SynbioSH**
-
-> A City-Wide Synthetic Biology Adventure
+### SynbioSH
 
 Date：July 6th，2025
 
@@ -635,11 +735,17 @@ Collaborators: ShanghaiTech-China,  SITU-BioX-Shanghai
 
 - Format: Urban orienteering + puzzle solving
 
-![Pre-event training_SynBioSH](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/pre-event-training-synbiosh.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/pre-event-training-synbiosh.webp" style="width:40%">
+    <div>
+        <span style="color:gray">Preliminary training and planning</span>
+        <br><br>
+    </div>
+</div>
 
 - Concept
 
-  Participants used their phones to navigate Shanghai landmarks, where they encountered **synthetic biology–themed checkpoints**. Each checkpoint offered an interactive challenge that tied synthetic biology principles to real-world contexts.
+  Participants used their phones to navigate Shanghai landmarks, where they encountered synthetic biology–themed checkpoints. Each checkpoint offered an interactive challenge that tied synthetic biology principles to real-world contexts.
 
 <div style="position: relative; width: 100%; height: 600px;">
   <iframe src="https://static.igem.wiki/teams/5643/pageimage/education/file/synbiosh-task-book-eng-ver.pdf" width="100%" height="100%" style="border: none;">
@@ -652,24 +758,29 @@ Collaborators: ShanghaiTech-China,  SITU-BioX-Shanghai
 You can read the Chinese version of the task book [here](https://static.igem.wiki/teams/5643/pageimage/education/file/synbiosh-task-book-zh-ver.pdf).
 
 - Checkpoint Highlights
-1. **Crossword Puzzles**: Learned common synthetic biology terms through wordplay.
-  2. **Park Exploration**: Identified symbiotic fungi by observing plants, connecting microbiology to ecology.
-  3. **Protein Role-Play**: Participants acted as proteins to simulate the path of protein synthesis, reinforcing the central dogma through embodied learning.
-  4. **Food and Health Investigation**: Explored nutrition facts to understand links between diet, microbes, and disease.
-  5. **Science & Technology Building**: Matched architectural structures with organelle functions, linking cell biology to modern design.
+1. Crossword Puzzles: Learned common synthetic biology terms through wordplay.
+  2. Park Exploration: Identified symbiotic fungi by observing plants, connecting microbiology to ecology.
+  3. Protein Role-Play: Participants acted as proteins to simulate the path of protein synthesis, reinforcing the central dogma through embodied learning.
+  4. Food and Health Investigation: Explored nutrition facts to understand links between diet, microbes, and disease.
+  5. Science & Technology Building: Matched architectural structures with organelle functions, linking cell biology to modern design.
 - Social Dimension
 
-  1. Most participants joined in **small teams**, promoting communication, problem-solving, and collaboration.
-  2. The mix of physical exploration and digital tools mirrored how youth engage with both the **online** and **offline** world.
+  1. Most participants joined in small teams, promoting communication, problem-solving, and collaboration.
+  2. The mix of physical exploration and digital tools mirrored how youth engage with both the online and offline world.
+  
 - Impact
 
-  1. Transformed Shanghai into a **living laboratory** where synthetic biology could be discovered in everyday places.
+  1. Transformed Shanghai into a living laboratory where synthetic biology could be discovered in everyday places.
   2. Attracted not only students but also young professionals and families, broadening public exposure to biology.
-  3. Sparked conversations about the relevance of synthetic biology to **food, health, environment, and technology**.
-
-![Participants are solving puzzles_SynBioSH](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/participants-are-solving-puzzles-synbiosh.webp)
-
-![Activity material_SynBioSH](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-material-synbiosh.webp)
+  3. Sparked conversations about the relevance of synthetic biology to food, health, environment, and technology.
+  
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/participants-are-solving-puzzles-synbiosh.webp">
+      <div>
+          <span style="color:gray">Photo of SynbioSH in progress</span>
+          <br><br>
+      </div>
+  </div>
 
 If you would like to know more about the event, please click [here](https://mp.weixin.qq.com/s/gNuJPDYxtc4yTwyEqJ975Q).
 
@@ -683,11 +794,11 @@ Although we did not conduct formal surveys, the strong participation and enthusi
 - **Engagement**: The mix of play, teamwork, and curiosity made learning active rather than passive.
 - **Relevance**: By embedding synthetic biology into digital play and city life, we showed that science is not distant — it is part of culture and daily experience.
 
-Through the **Website Game** and **SynbioSH**, we extended our philosophy of **Learning by Playing** to new audiences. These activities proved that synthetic biology can be not just a subject to study, but a **world to explore and a game to play**.
+Through the Website Game and SynbioSH, we extended our philosophy of Learning by Playing to new audiences. These activities proved that synthetic biology can be not just a subject to study, but a **world to explore and a game to play**.
 
 
 
-### LEARNING BY PRACTICING
+## LEARNING BY PRACTICING
 
 We designed a **progressive pathway of practice-based activities**, each addressing a different stage of scientific growth:
 
@@ -698,10 +809,11 @@ We designed a **progressive pathway of practice-based activities**, each address
 
   In *Rice Wine Production* and the *Practice + X* program, we connected science to culture and everyday phenomena. By fermenting rice into wine or exploring yogurt and browning fruit, participants moved beyond *what* happens to grasp *why* it happens—linking hands-on actions to underlying principles like microbial metabolism and environmental regulation.
 
-
 Together, these experiences formed a cohesive journey from initial curiosity to conceptual understanding and finally to scientific empowerment. Through **Learning by Practicing**, we equipped participants with more than just technical ability—we nurtured a mindset of inquiry, iteration, and intellectual courage.
 
-#### Microbial Painting
+
+
+### Microbial Painting
 
 >I can do this——Building Lab Intuition
 
@@ -713,9 +825,7 @@ Collaboration：Nanjing-China、SJTU-BioX-Shanghai、ZJU-China、USTC
 
 **Overview** 
 
-Hands-on experience is essential for building confidence in experimental science. To help participants overcome initial apprehensions about lab work, we designed **Microbial Painting**—an activity that merges microbiology with visual art, making the first encounter with microorganisms both engaging and creatively stimulating. 
-
-By using safe, colorful, and even fluorescent bacteria as “paint,” **participants learn essential aseptic techniques while creating unique bio-art pieces.** This approach demonstrates that synthetic biology is not only accessible but also a medium for personal expression and discovery.
+Hands-on experience is essential for building confidence in experimental science. To help participants overcome initial apprehensions about lab work, we designed Microbial Painting—an activity that merges microbiology with visual art, making the first encounter with microorganisms both engaging and creatively stimulating. 
 
 **Implementation**
 
@@ -723,31 +833,35 @@ Following our earlier [microbial inoculation activity](#activity-3-microbial-ino
 
 Using **safe bacterial strains**—some genetically engineered to fluoresce—participants “painted” directly onto agar plates using sterile loops and cotton swabs. This required careful attention to aseptic technique, helping build foundational lab skills in an intuitive and visually rewarding context.
 
-![demonstration_microbe painting](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/demonstration-microbe-painting.webp)
+<iframe title="Fudan: microbial painting (2025) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/25DMsnAXuUc7iqSKKMWuNC" allow="fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="border: 0px;"></iframe>
 
 As the bacterial colonies grew over the following days, each participant’s design emerged in vivid detail. The activity allowed everyone to observe microbial growth patterns, colony morphology, and the tangible outcomes of genetic engineering in an artistic format.
 
-![the painting of participants_microbe painting](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/the-painting-of-participants-microbe-painting.webp)
-
-![participant painting1_microbe painting](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/participant-painting1-microbe-painting.webp)
-
-![participant painting3_microbe painting](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/participant-painting3-microbe-painting.webp)
-
-![participant painting2_microbe painting](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/participant-painting2-microbe-painting.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbial-painting-implementation.webp">
+    <div>
+        <span style="color:gray">Photos of Microbial painting in progress</span>
+        <br><br>
+    </div>
+</div>
 
 **Outcome**
 
 The workshop received highly positive feedback, with participants expressing enthusiasm for the blend of science and creativity. Many reported a stronger sense of connection to microbiology and greater confidence in handling microorganisms. By turning an introductory lab exercise into a creative endeavor, we reinforced the idea that **scientific practice can be both rigorous and imaginative**—an essential insight for aspiring synthetic biologists.
 
-![achievement-display-microbe-painting-01](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/achievement-display-microbe-painting-01.webp)
-
-![achievement-display-microbe-painting-02](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/achievement-display-microbe-painting-02.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbial-painting-our-painting.webp">
+    <div>
+        <span style="color:gray">Display of Microbial Painting </span>
+        <br><br>
+    </div>
+</div>
 
 You can check out participants' feedback on their activities [here](https://static.igem.wiki/teams/5643/pageimage/education/file/feedback-microbial-painting.pdf).
 
 
 
-#### Rice wine production
+### Rice Wine Making
 
 >I can see how it works——I enjoy it
 
@@ -763,31 +877,45 @@ Our iGEM team designed this event around the “Learning by Practicing” approa
 
 You can read our presentation file click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/presentation-file-rice.pdf).
 
-![activity-record2-rice](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/activity-record2-rice.webp)
-
 **Implementation**
+
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/rice-wine.webp">
+    <div>
+        <span style="color:gray">Photos of Rice wine making in progress</span>
+        <br><br>
+    </div>
+</div>
 
 Through direct involvement, participants were able to observe yeast fermentation firsthand: CO₂ release visible as bubbling, and the development of complex flavors from alcohol and other metabolites. This transformed the abstract concept of a “microbial cell factory” into a tangible, living phenomenon. 
 
-![activity-record5-rice](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/activity-record5-rice.webp)
-
 By investigating practical questions—such as how temperature and yeast strains influence alcohol content and flavor—participants gained intuitive insight into core scientific principles, including the dependence of microbial metabolism on environmental conditions and the regulation of microbes for specific product synthesis.
 
-![activity-record6-rice](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/activity-record6-rice.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/activity-record6-rice.webp">
+    <div>
+        <span style="color:gray">Group photo at Rice wine making</span>
+        <br><br>
+    </div>
+</div>
 
 **Reflection and Learn**
 
 This method not only made synthetic biology more relatable through cultural context, but also strengthened the connection between microorganisms and everyday life through active creation—fully reflecting iGEM’s educational goal of bringing science closer to the public.
 
-![img](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/activity-record8-rice.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record7-rice.webp" alt="image-20250924000215628" style="zoom:50%;" />
+    <div>
+        <span style="color:gray">Aspergillus brunneus</span>
+        <br><br>
+    </div>
+</div>
 
 Additionally, some students identified *Aspergillus brunneus*, a microbial species that appeared during fermentation. This unexpected discovery prompted independent research and discussion around why it occurred. By examining the microbe’s growth conditions within the experimental context, participants deepened their understanding of microbial ecosystems and the dynamics of fermentation.
 
-![image-20250924000215628](https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record7-rice.webp)
 
 
-
-#### Practice + X
+### Practice + X
 
 >I can learn from how it works
 
@@ -797,9 +925,9 @@ Organizers：Huizhen Du
 
 **Overview**
 
-Many biological processes are hidden in everyday life: yogurt fermentation, mold growth on food, the browning of apples, and more. Because these phenomena are so familiar, people often overlook the **biological principles behind them**.
+Many biological processes are hidden in everyday life: yogurt fermentation, mold growth on food, the browning of apples, and more. Because these phenomena are so familiar, people often overlook the biological principles behind them.
 
-**Practice + X** was designed to turn these everyday observations into opportunities for scientific discovery. Participants not only recognized what happens, but also **learned why it happens**, moving from casual observation to process-based understanding.This five-day program gradually built a conceptual framework for understanding life processes. By connecting each experiment to a real-world phenomenon, we lowered the cognitive barrier, encouraged analytical thinking, and prepared participants to engage more deeply with the logic of synthetic biology.
+Practice + X was designed to turn these everyday observations into opportunities for scientific discovery. Participants not only recognized what happens, but also **learned why it happens**, moving from casual observation to process-based understanding.This five-day program gradually built a conceptual framework for understanding life processes. By connecting each experiment to a real-world phenomenon, we lowered the cognitive barrier, encouraged analytical thinking, and prepared participants to engage more deeply with the logic of synthetic biology.
 
 <div style="position: relative; width: 100%; height: 600px;">
   <iframe src="https://static.igem.wiki/teams/5643/pageimage/education/file/practice-x-eng-version.pdf" width="100%" height="100%" style="border: none;">
@@ -817,21 +945,21 @@ This five-day program gradually built a conceptual framework for understanding l
 
 Each day focused on a specific theme and experiment:
 
-1. **Observation** — Searching for microbes in soil, yogurt, or moldy bread and realizing their abundance in daily life.
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/practice-x.webp">
+    <div>
+        <span style="color:gray">Photos of Practice+X in progress</span>
+        <br><br>
+    </div>
+</div>
 
-   ![record6-x](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/record6-x.webp)
+1. **Observation** — Searching for microbes in soil, yogurt, or moldy bread and realizing their abundance in daily life.
 
 2. **Transformation** — Making yogurt to see how microbes convert raw ingredients into valuable products.
 
-   ![record1-x](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/record1-x.webp)
-
 3. **Comparison** — Investigating apple browning to understand how enzymes respond to different environments.
 
-   ![record3_X](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/record3-x.webp)
-
 4. **Visualization** — Extracting DNA from fruit to make the invisible blueprint of life visible.
-
-   ![record4-x](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/record4-x.webp)![record5-x](https://static.igem.wiki/teams/5643/pageimage/education/activities/practicing/record5-x.webp)
 
 5. **Reflection** — Recording insights through writing or drawing, consolidating key concepts in fermentation, enzyme activity, and DNA as the program of life.
 
@@ -839,7 +967,7 @@ By connecting everyday phenomena with scientific principles, participants moved 
 
 **Reflection and Learning**
 
-This program is designed to help participants **understand biological processes by experiencing them directly**. Each activity reveals not only what happens in nature but also **how it happens**, guiding participants to move beyond simple observation toward process-based understanding. By completing this five-day program, participants are expected to develop a clearer conceptual framework for biological phenomena, aligning with the goal of **“Understanding Processes — I see how it works.”** This experiential approach fosters analytical thinking and prepares participants to engage more deeply with the principles and applications of synthetic biology.
+This program is designed to help participants understand biological processes by experiencing them directly. Each activity reveals not only what happens in nature but also **how it happens**, guiding participants to move beyond simple observation toward process-based understanding. By completing this five-day program, participants are expected to develop a clearer conceptual framework for biological phenomena, aligning with the goal of **“Understanding Processes — I see how it works.”** This experiential approach fosters analytical thinking and prepares participants to engage more deeply with the principles and applications of synthetic biology.
 
 In view of the suggestions of [the previous picture book activities](#Activity-1.-Picture-Book-Relay), we have also created **a supplementary manual** for this activity to provide more information for children or to help participants better understand the experimental principles, have a deeper understanding of biology, and stimulate their interest. 
 
@@ -847,13 +975,15 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 
 
-### LEARNING BY PRODUCING
+## LEARNING BY PRODUCING
 
-After participants acquire hands-on experience through “Learning by Practicing,” they gain a **comprehensive understanding of synthetic biology concepts**. For learners with certain research skills, the next step is **Learning by Producing**: creating their own projects, applying knowledge to real problems, and achieving deeper learning through **output-driven engagement**.
+After participants acquire hands-on experience through “Learning by Practicing,” they gain a comprehensive understanding of synthetic biology concepts. For learners with certain research skills, the next step is Learning by Producing: creating their own projects, applying knowledge to real problems, and achieving deeper learning through **output-driven engagement**.
 
 By producing tangible results, participants **internalize knowledge**, consolidate understanding, and experience the full cycle of scientific inquiry — from exploration to creation.
 
-#### SynBio Training Program
+
+
+### SynBio Training Program
 
 Date：From January 6th to January 5th ，2025
 
@@ -886,25 +1016,34 @@ Our activities can be divided into four parts:
 - **Topic guidance—direction without limits**
    We provide 5–6 topic directions based on daily relevance and suitable difficulty. Clear direction prevents stagnation, while open-ended exploration fosters independent thinking. Participants learn synthetic biology design logic through hands-on exploration and validation.
 
-![](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record2-training.webp)
-
 - **Ongoing support—shaping complete outcomes**
-   Midway, we hold group Q&As and invite mentors for feedback. Later, workshops help transform scattered data into structured reports and refine ideas into technical roadmaps. The final result is a “Project Portfolio” with educational and reuse value.
-
-  ![](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record1-training.webp)
-
+  Midway, we hold group Q&As and invite mentors for feedback. Later, workshops help transform scattered data into structured reports and refine ideas into technical roadmaps. The final result is a “Project Portfolio” with educational and reuse value.
 - **Value extension—closing the loop**
-   Participants not only complete projects but also see their work applied in education. This process reinforces “learning by producing,” ensuring both mastery of design logic and recognition of practical impact.
+  Participants not only complete projects but also see their work applied in education. This process reinforces “learning by producing,” ensuring both mastery of design logic and recognition of practical impact.
 
-![record4_training](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record4-training.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/synbio-training-program-photo.webp">
+    <div>
+        <span style="color:gray">Photos of Synbio training program in progress</span>
+        <br><br>
+    </div>
+</div>
 
 **Outcome**
+
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record4-training.webp">
+    <div>
+        <span style="color:gray">Group photo at Synbio training program</span>
+        <br><br>
+    </div>
+</div>
 
 This program combines tool-based training, guided topics, and open exploration to bridge the gap between traditional education and practical application. It empowers participants to internalize knowledge through creation and achieve capability advancement through output, genuinely cultivating the engineering mindset and design skills essential for synthetic biology.
 
 
 
-#### Torch plan
+### Torch plan
 
 > When iGEM meets Education
 
@@ -914,11 +1053,15 @@ Organizers：Huizhen Du，Yue Yue
 
 **Overview**
 
-Science communication in synthetic biology often struggles to balance accuracy and accessibility. Content is either too specialized for young audiences or too superficial to convey meaningful knowledge. iGEM teams may lack expertise in pedagogy, while education students often miss opportunities to apply teaching skills to cutting-edge scientific topics.
-
 The Torch Plan is an innovative educational initiative designed to bridge synthetic biology and teacher education. By collaborating with future educators, we transform complex iGEM research topics into engaging, child-friendly learning materials, promoting sustainable science communication and achieving the educational goals of *Learning by Producing*.This initiative creates a collaborative platform where iGEM team members and education students combine their expertise. Through structured workshops and co-creation sessions, we transform complex scientific concepts into engaging educational content tailored for children aged 5-10.
 
-![Event invitation poster](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/poster-torch-plan.webp)
+<div style="text-align: center;" id="fig1">
+   <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/poster-torch-plan.webp" alt="Event invitation poster" style="zoom:50%;" />
+    <div>
+        <span style="color:gray">The invitation poster of Torch plan</span>
+        <br><br>
+    </div>
+</div>
 
 **Implement**
 
@@ -928,7 +1071,13 @@ Our initiative is structured into three cohesive phases that reflect our collabo
 
   We presents our research project o education students using visually engaging and simplified explanations. Together, we identify and extract key synthetic biology concepts embedded in the project, forming a "core knowledge list" that includes fundamental ideas like microorganisms, basics of genetic engineering, and resistance principles. This phase establishes a shared understanding and a solid foundation for developing educational content.
 
-  ![record3-torch-plan](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record2-torch-plan.webp)
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record2-torch-plan.webp">
+      <div>
+          <span style="color:gray"> The photo of project introduction in progress</span>
+          <br><br>
+      </div>
+  </div>
 
 - **Educational Analysis & Adaptation**
 
@@ -938,13 +1087,25 @@ Our initiative is structured into three cohesive phases that reflect our collabo
   - *Interaction Design*: incorporating games and hands-on activities.
   - *Logical Flow*: organizing the content from familiar real-life phenomena to scientific principles, ensuring it aligns with children's cognitive patterns.
 
-  ![record1-torch-plan](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record3-torch-plan.webp)
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record3-torch-plan.webp">
+      <div>
+          <span style="color:gray"> We are having a discussion on the plan with participants</span>
+          <br><br>
+      </div>
+  </div>
 
 - **Co-Creation & Output Production**
 
   Both groups work together to design and produce ready-to-use PowerPoint presentations. We ensures all scientific content remains accurate, while the education students contribute pedagogical expertise to make the materials age-appropriate and engaging. Through rounds of iterative feedback and refinement, we co-create final teaching resources that are both fun and educationally effective. These PPTs are subsequently used by us, we bringing synthetic biology to wider and younger audiences.
   
-  ![](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record4-torch-plan.webp)
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/record4-torch-plan.webp">
+      <div>
+          <span style="color:gray"> The PPT made jointly by us</span>
+          <br><br>
+      </div>
+  </div>
 
 **Outcome**
 
@@ -954,24 +1115,32 @@ These resources have already been implemented in our [Interactive Science worksh
 
 Yinying Pan, one participant, reflected that the program helped her **rethink education across disciplines**. She realized that methods like inquiry-based learning and project-based activities could be applied in her English teaching, showing how synthetic biology education inspires innovation beyond the life sciences.
 
-![Yingyin Pan](https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/yingyin-pan-torch-plan.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/yingyin-pan-torch-plan.webp" alt="Yingyin Pan" style="zoom:50%;" />
+    <div>
+        <span style="color:gray"> Yingyin Pan</span>
+        <br><br>
+    </div>
+</div>
 
 >As an English education student, the Torch Plan was inspiring. I realized how synthetic biology and education can intersect, sparking new teaching ideas. Instead of focusing only on language, I considered integrating science into English classes—for example, using synthetic biology terms in vocabulary or reading activities, so students learn both language and science. Discussions on making learning easier reminded me that effective education is universal. Inquiry- and project-based approaches could enrich English teaching, such as student speeches on scientific topics. This experience showed me the value of interdisciplinary collaboration. Next year, I will volunteer in rural schools, bringing these ideas westward so more children can experience the fun of synthetic biology.
 
 All in all, the Torch Plan successfully demonstrates how iGEM's synthetic biology research can intersect with education to create meaningful, lasting impact. By empowering future teachers with both scientific knowledge and practical teaching tools, we ensure that synthetic biology education continues to inspire young minds long after the iGEM competition ends.
 
 
+
+
 ## Education Beyond Limits
 
 > Commitment to Inclusion, to bridge generations & backgrounds
 
-We believe that science should be **truly accessible and beneficial to everyone**, regardless of age, background, or geographic location. This year, we specifically focused on reaching often overlooked groups—the elderly, migrant children, and students in rural areas—by designing tailored activities that address their unique circumstances and needs.
+We believe that science should be truly accessible and beneficial to everyone, regardless of age, background, or geographic location. This year, we specifically focused on reaching often overlooked groups—the elderly, migrant children, and students in rural areas—by designing tailored activities that address their unique circumstances and needs.
 
 - **Elderly individuals** are often vulnerable to misinformation about biotechnology and may feel excluded from fast-changing science.
 - **Migrant children** in urban centers face instability in education due to family mobility, limited resources, and barriers to cultural integration.
 - **Rural students** frequently lack access to advanced resources, equipment, and educators, widening the gap in science learning opportunities.
 
-Our goal was to **bring these groups back into the conversation**, empower them with knowledge, and foster **trust between communities and technology**.
+Our goal was to **bring these groups back into the conversation**, empower them with knowledge, and foster trust between communities and technology.
 
 ### Rumor Stopping
 
@@ -987,57 +1156,75 @@ Collaboration: SUSTech-Med
 
 Elderly communities are often targeted by **false advertisements** and **“miracle cure” products** that misuse scientific terms like “synthetic biology,” “gene editing,” or “stem cells.” These scams not only waste money but also foster **fear, distrust, or overconfidence** toward biotechnology.
 
-![scam-information-in-life](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/scam-information-in-life.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/scam-information-in-life.webp">
+    <div>
+        <span style="color:gray"> The rumors we found in daily life</span>
+        <br><br>
+    </div>
+</div>
 
-We collaborated with the **SUS team** to launch the **“Rumor Stop” campaign **[(presentation file)](https://static.igem.wiki/teams/5643/pageimage/education/file/presentation-file-miracle-medicine-or-trap-let-synthetic-biology-tell-you-the-truth.pdf). During the process, we found that although Shenzhen and Shanghai — both first-tier cities with strong foundations in science education — offer many resources, **large numbers of elderly people still lack sufficient understanding of cutting-edge technology**. Some lawbreakers exploit this gap to commit fraud under the guise of “synthetic biology.”
+We collaborated with the [**SUSTech-Med**](https://2025.igem.wiki/sustech-med/) to launch the **“Rumor Stop” campaign **[(presentation file)](https://static.igem.wiki/teams/5643/pageimage/education/file/presentation-file-miracle-medicine-or-trap-let-synthetic-biology-tell-you-the-truth.pdf). During the process, we found that although Shenzhen and Shanghai — both first-tier cities with strong foundations in science education — offer many resources, large numbers of elderly people still lack sufficient understanding of cutting-edge technology. Some lawbreakers exploit this gap to commit fraud under the guise of “synthetic biology.”
 
-To further verify this issue, we conducted a special survey. In the first half of 2025, **Shanghai investigated and handled 2,182 fraud cases**, 37 of which were transferred to public security for further action. The SUS team also identified similar risks in Shenzhen through in-depth community research. More importantly, survey data revealed that many elderly people have **significant cognitive biases** in health and technology knowledge. Topic interest analysis showed that **90.7% of the elderly are highly interested in health preservation**, followed by **50.0% in fraud prevention**.
+To further verify this issue, we conducted a special survey. In the first half of 2025, **Shanghai investigated and handled 2,182 fraud cases**, 37 of which were transferred to public security for further action. The SUS team also identified similar risks in Shenzhen through in-depth community research. More importantly, survey data revealed that many elderly people have **significant cognitive biases** in health and technology knowledge. Topic interest analysis showed that 90.7% of the elderly are highly interested in health preservation, followed by 50.0% in fraud prevention.
 
 You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/research-report-rumor-stopping.pdf) to view our research situation.
 
-Based on these findings, our two teams jointly carried out **popular science activities themed on synthetic biology** in both Shanghai and Shenzhen. This initiative aimed to **bridge the gap in elderly understanding of technology and prevent fraud from the source**.
+Based on these findings, our two teams jointly carried out popular science activities themed on synthetic biology in both Shanghai and Shenzhen. This initiative aimed to **bridge the gap in elderly understanding of technology and prevent fraud from the source**.
 
-![record-photo-rumor-stopping](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/record-photo-rumor-stopping.webp)
-
-![record-photo2-rumor-stopping](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/record-photo2-rumor-stopping.webp)
-
-![activity-record4-rumor-stopping](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/activity-record4-rumor-stopping.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/rumor-stopping2.webp">
+    <div>
+        <span style="color:gray"> Photos of Synbio training program in progress</span>
+        <br><br>
+    </div>
+</div>
 
 **Educational Design**
 
-Rather than relying on traditional lectures, we adopted a **Learning by Playing** approach that mixed clear explanations with **interactive scenarios**. The workshop covered three core components:
+Rather than relying on traditional lectures, we adopted a Learning by Playing approach that mixed clear explanations with **interactive scenarios**. The workshop covered three core components:
 
 - **Exposing false claims** — Examples included “CRISPR cures all cancer,” “glowing probiotic capsules for diabetes,” “stem cell detox drinks,” and “super-antibody oral liquids.” We explained the scientific reasons why such claims are impossible.
-- **Highlighting real synthetic biology products** — Medicines such as **semaglutide**, **NMN**, and **artemisinin** were used as examples of products developed through rigorous research, testing, and approval processes.
+- **Highlighting real synthetic biology products** — Medicines such as semaglutide, NMN, and artemisinin were used as examples of products developed through rigorous research, testing, and approval processes.
 - **Practical tips** — Participants learned how to identify red flags: skipping clinical trials, exaggerated promises like “cure-all,” and misuse of scientific jargon.
-
-**Learning by Playing Activities**
 
 - **Scenario Interpretation (Mini-Theater)** – Participants role-played exaggerated skits as *miracle drug salespeople*, *customers*, and *doctors/family members*. Each group performed a 2-minute pitch and rejection, with the audience voting for the most entertaining and convincing act. This activity highlighted common persuasive tricks in a humorous, memorable way.
 
 - **Q&A Session** – Participants were encouraged to share their own experiences with suspicious products, followed by open discussion and clarification from facilitators.
 
-  ![record-photo3-rumor-stopping](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/record-photo3-rumor-stopping.webp)
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/record-photo3-rumor-stopping.webp">
+      <div>
+          <span style="color:gray"> We communicate with participant</span>
+          <br><br>
+      </div>
+  </div>
 
 **Outcome**
 
 To make the campaign’s impact sustainable, we collaborated with a number of universities, mainly Jilin University to produce a Rumor Clarification Handbook, which participants could take home and use to continue practicing critical thinking when encountering health-related claims. 
 
-![](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/smashing-synthetic-biology-rumours-science-brochure-59.webp)
-
-![](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/smashing-synthetic-biology-rumours-science-brochure-60.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/smashing-synbio-rumors.webp">
+    <div>
+        <span style="color:gray"> the Rumor Clarification Handbook</span>
+        <br><br>
+    </div>
+</div>
 
 While we did not conduct a formal survey, participants showed **high enthusiasm and active participation**. The scenario interpretation in particular made the session lively and memorable — participants laughed, improvised, and confidently spotted the “red flags” of pseudoscience. Many reported feeling more prepared to discuss health products with friends and family.
 
 Moreover, after the event concluded, we had a brief conversation with the teacher in charge of the community. The teacher informed us that fraud related to medications or health maintenance products is all too common in the community. Specifically, some unscrupulous sellers peddle products under the pretense of "high technology" to defraud people—and many elderly residents, who lack strong vigilance against such scams, easily fall victim. Therefore, this activity is very meaningful.
 
-![chat with teacher_rumor stopping](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/chat-with-teacher.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/rumor-stopping1.webp">
+    <div>
+        <span style="color:gray"> We chat with teacher and we take the group photo</span>
+        <br><br>
+    </div>
+</div>
 
 This workshop demonstrated how **role-play and humor** can be powerful tools for teaching scientific literacy to older adults. By combining scientific explanation, survey insights, and playful learning, we showed that synthetic biology is not distant or intimidating, but rather **knowledge that protects and empowers communities**.
-
-![group-photo-rumor-stopping](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/group-photo-rumor-stopping.webp)
-
-![group-photo-rumor-stopping5](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/activity-record5-rumor-stopping.webp)
 
 
 
@@ -1053,13 +1240,17 @@ Organizers：Huizhen Du，Yue Yue
 
 Urbanization has brought large numbers of migrant children into cities, but educational resources have not always kept pace. Many of these children come from low-income households, where parents often lack the time or educational background to support learning. Financial pressures and limited opportunities for cultural integration further impact their academic progress and emotional development[^8].
 
-To address these challenges, we partnered with the **Sunflower Education Institution** to design and deliver **two engaging courses** — [*Genes & Proteins*](https://mp.weixin.qq.com/s/b8AHxl_A9Pn4mFhheZQWsg) and [*Bread Fermentation*](https://mp.weixin.qq.com/s/RiOEyZOLwXShUNieK5LrFw). Using **storytelling, hands-on experiments, and collaborative games**, we created learning experiences that made biology accessible and enjoyable. These activities helped children not only gain basic scientific knowledge but also feel included, valued, and empowered.
+To address these challenges, we partnered with the **Sunflower Education Institution** to design and deliver two engaging courses — [*Genes & Proteins*](https://mp.weixin.qq.com/s/b8AHxl_A9Pn4mFhheZQWsg) and [*Bread Fermentation*](https://mp.weixin.qq.com/s/RiOEyZOLwXShUNieK5LrFw). Using storytelling, hands-on experiments, and collaborative games, we created learning experiences that made biology accessible and enjoyable. These activities helped children not only gain basic scientific knowledge but also feel included, valued, and empowered.
 
-![explain-to-the-children-migrant-children](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/explain-to-the-children-migrant-children.webp)
-
-![interaction-with-child2-migrant-children](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/interaction-with-child2-migrant-children.webp)
-
-![interaction with child_migrant children](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/interaction-with-child-migrant-children.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/explain-to-the-children-migrant-children.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/interaction-with-child2-migrant-children.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/interaction-with-child-migrant-children.webp">
+    <div>
+        <span style="color:gray">We interact with migrant children</span>
+        <br><br>
+    </div>
+</div>
 
 **Outcome**
 
@@ -1085,13 +1276,21 @@ One of the core missions of our iGEM education program is to break down **geogra
 
 In collaboration with the **Youth League Committee of the Department of Physics**, we brought our curriculum directly into classrooms in remote mountain villages — areas that often lack quality educational materials and experienced teachers.
 
-![rural](https://static.igem.wiki/teams/5643/pageimage/education/collaboration/rural.webp)
+<div style="text-align: center;" id="fig1">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/rural.webp" alt="Our courses were taken to rural areas" style="zoom:50%;" />
+    <div>
+        <span style="color:gray"> Our courses were taken to rural areas</span>
+        <br><br>
+    </div>
+</div>
 
 **Outcome**
 
 This initiative not only gave rural students access to basic concepts of synthetic biology but also helped them view science as approachable and useful for their own lives. By engaging in interactive experiments, they gained confidence, moved beyond memorization, and discovered that creativity is part of scientific thinking. Most importantly, the workshops inspired a sense of possibility — showing that science is not abstract or distant, but a tool that can help address real challenges in their communities and contribute to sustainable development in their hometowns.
 
-You can click [here](https://mp.weixin.qq.com/s/WEcco3ydBVGyTfBy3VA0CA) for more information
+You can click [here](https://mp.weixin.qq.com/s/WEcco3ydBVGyTfBy3VA0CA) for more information.
+
+
 
 
 ## Virtuous Cycle: Reusability, Legacy, and Reflection
@@ -1161,6 +1360,12 @@ We **sparked curiosity** through interactive games, urban challenges, and a chil
 All activities were **co-created with our community** through interviews with teachers, academics, and students. We designed our projects for **long-term impact**, creating reusable materials to ensure our educational legacy continues beyond iGEM.
 
 We hope to inspire everyone to understand the face of synthetic biology through continuous in-depth activities. We have completed our education, and at the same time, we have completed our own education.
+
+
+
+> Note: All images involving children have been authorized with the consent of their guardians for filming.
+
+
 
 
 ## Reference

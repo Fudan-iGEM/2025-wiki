@@ -22,6 +22,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/parts-design-safety.webp",
     description: "I take part in experiment design and safety, always on the lookout for inspiration in the everyday moments around me. My heart beats for music and books, with an endless curiosity not only for knowledge but also for the joy of sport."
   },
   {
@@ -32,6 +33,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/inclusive-education.webp",
     description: "Hello everyone, I'm Huizhen. As a free-spirited thinker, I'm excited to channel my creativity into our iGEM project, where I focus on education. I look forward to collaborating with everyone to bring fun, imaginative science communication to life!"
   },
   {
@@ -42,6 +44,7 @@ const teamMembers = [
     contactText: "Detail", 
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/wetlab-experiment.webp",
     description: "Hello everyone! I'm from the School of Stomatology. It's a pleasure to be part of Fudan iGEM 2025, where I contributed to the Part-related work. In my daily life, I'm a big fan of movies, comics, and novels. I'm always excited to meet new friends — let's explore the wonders of both biology and life together!"
   },
   {
@@ -62,6 +65,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/hzy-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/inclusive-education.webp",
     description: "Coming from a Literature background,I help our team build a bridge between science and the broader community through Inclusivity and visual design. I stay curious about both the elevated and the everyday aspects of culture. I've been on a bit of a nostalgia kick recently."
   },
   {
@@ -72,6 +76,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/zyn-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/wetlab-experiment.webp",
     description: "In our team, I participated in the Design and Experimental work, helping to build the logic behind our synthetic biology tools — decoding life, and exploring what comes next."
   },
   {
@@ -82,6 +87,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/txq.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/ihp-business.webp",
     description: "I'm an art enthusiast who's passionate about musicals and mystery novels. On this project, I am responsible for entrepreneurship. I'm absolutely thrilled to dive into iGEM and excited to explore new fields with the team."
   },
   {
@@ -92,6 +98,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/parts-design-safety.webp",
     description: "A light chaser: always moving forward and enbracing all possibilities. I pretty enjoy communication and collaboration during the journey of iGEM. For me, life is like a game called *Earth Online* and there's always something to explore!"
   },
   {
@@ -102,6 +109,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wyz-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/wetlab-experiment.webp",
     description: "Hi everyone! My name is Zuyao, you can also call me Sophie. I'm studying clinical medicine and I’m really interested in the topic of life on earth. In our team, I’m mainly responsible for design and experiments. I love to explore new things, reach out to new areas and try to put ideas into practice. Let us find the treasures in life and be the first to stand in line!"
   },
   {
@@ -122,6 +130,7 @@ const teamMembers = [
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx.webp", 
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp",
+    iconUrl: "https://static.igem.wiki/teams/5643/img/wetlab-experiment.webp",
     description: "Hello, everyone! I am Yuxin, from Shanghai Medical College, Fudan University, major in Clinical Medicine. Participating in iGEM has taught me a lot of new knowledge and skills; it is not only full of the challenges and fun of doing experiments, but also provides wonderful memories of our joint efforts. Let us explore the mysteries of synthetic biology together!"
   }
 ]

@@ -182,3 +182,12 @@ pnpm run serve
 
 4. Greene EA, et al. (2003) Spectrum of chemically induced mutations from a large-scale reverse-genetic screen in Arabidopsis. *Genetics* 164(2):731-740. DOI: 10.1093/genetics/164.2.731
 5. Bennetzen JL, Hall BD. (1982) Codon selection in yeast. *J Biol Chem* 257(6):3026-3031. PMID: 6277903
+
+6. Ormö M. et al. Crystal structure of the Aequorea victoria green fluorescent protein. Science. 1996;273(5280):1392‑1395.
+
+7. Cormack BP, Valdivia RH, Falkow S. FACS-optimized mutants of GFP. Gene. 1996;173(1):33‑38.
+
+8. Tsien RY. The green fluorescent protein. Annu Rev Biochem. 1998;67:509‑544.
+9. Heim R, Tsien RY. Engineering GFP for improved brightness and spectral variants. Curr Biol. 1996;6(2):178‑182.
+
+10. Zacharias DA, Violin JD, Newton AC, Tsien RY. Partitioning of lipid-modified monomeric GFPs into membrane microdomains. Science. 2002;296(5569):913‑916.
