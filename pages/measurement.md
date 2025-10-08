@@ -18,7 +18,7 @@ Our project DR.Strategy is trying to dynamically record natural mutations in liv
 
 
 
-#### Microscopy: Qualitative Observation of Signal Variation
+#### Microscopy-Qualitative Observation of Signal Variation
 
 To visually record and quantify gene mutations under evolutionary pressure in yeast, we specifically designed the TU Recorder. This novel biological tool dynamically tracks natural mutations in living cells, particularly in yeast, by converting random genetic mutations into quantifiable changes in fluorescence intensity. This is achieved by combining a mutation-sensitive promoter with an EMS (ethyl methanesulfonate)-resistant fluorescent protein. To qualitatively assess the performance of our [28 TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) combinations and narrow down the most promising candidates, we employed fluorescence microscopy, visually observing changes in fluorescence intensity and distribution within individual yeast cells before and after EMS treatment.
 
@@ -45,7 +45,7 @@ Based on initial observations through fluorescence microscopy, we identified som
 
 
 
-#### Flow Cytometry: Data Processing and Composite Score Calculating
+#### Flow Cytometry-Data Processing and Composite Score Calculating
 
 The flow cytometry data processing pipeline was designed to ensure signal fidelity, correct for autofluorescence, and provide statistically robust metrics for quantifying the effect of EMS induction on fluorescent protein expression. This process is divided into three critical stages: Quality Control and Data Normalization, Fold Change Calculation and Significance Test, and Composite Score Calculation.
 
@@ -151,7 +151,7 @@ Following a comprehensive performance analysis of all tested promoter and fluore
 
 
 
-#### Growth Curve: Quantitative Assessment of Metabolic Burden
+#### Growth Curve-Quantitative Assessment of Metabolic Burden
 
 To evaluate the metabolic burden imposed by the top three fluorescent reporters, we quantified and compared their growth rates by recording their hourly growth curves via optical density (OD) measurements. Although the average size of yeast is about 5-10 &mu;m, we only have NanoCym950 nanoparticles with a diameter of 950 nm. We estimated that 1 OD600 corresponds to 10^8 nanoparticles per mL, which was used to convert yeast counts. Experimental details refer to our [protocol](/experiments/#yeast-growth-curves). 
 
@@ -187,7 +187,7 @@ According to data analysis results, pSTM1-EMSfp499 demonstrated a growth pattern
 
 
 
-#### Deep Sequencing: Molecular Validation of the Mechanism
+#### Deep Sequencing-Molecular Validation of the Mechanism
 
 
 
