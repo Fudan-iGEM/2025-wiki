@@ -557,10 +557,10 @@ The full AI conversation logs, including model reasoning and conclusions, are av
 
 ## Conclusion
 
-The model successfully predicted two key components: the promoter and the Fluorescent Timer. Guided by these predictions, we selected these core elements for our [experimental](/experiments/) [design](/design/), as detailed on our [Improved Parts](/improved-parts/) page.
+The model successfully predicted two key components: the promoter and the Fluorescent Timer. Guided by these predictions, we selected these core elements for our [experimental](/experiments/) [design](/design/), as detailed on our [Improved Parts](/improve/) page.
 
 - Promoter Selection: The model recommends using a pulsed, medium-intensity expressed promoter, providing a clear direction for experimental screening. Ultimately, we selected the ASH1_AIpro promoter[^7], optimized through deep learning algorithms. This promoter is induced only during the late M phase, enabling pulsed expression and ensuring that mRNA is synthesized at the appropriate time, with precise localization of the mRNA in the daughter cell through the ASH1 3' UTR[^13].
-- Fluorescent Timer Selection: The model suggested the use of Fast-FT, leading to our experimental choice of Fast-FT ([modified mCherry](/improved-parts/)). This fluorescent protein undergoes a time-dependent color shift: initially emitting blue fluorescence (excitation/emission peaks: 403/466 nm) and gradually transitioning to red (excitation/emission peaks: 583/606 nm), thereby enabling visual tracking of temporal progression.
+- Fluorescent Timer Selection: The model suggested the use of Fast-FT, leading to our experimental choice of Fast-FT ([modified mCherry](/improve/)). This fluorescent protein undergoes a time-dependent color shift: initially emitting blue fluorescence (excitation/emission peaks: 403/466 nm) and gradually transitioning to red (excitation/emission peaks: 583/606 nm), thereby enabling visual tracking of temporal progression.
 
 In the actual construction, we assembled the TU Timer system, which consists of: Ash1_AIpro, modified mCherry fluorescent protein, Ash1 3' UTR, and the ScENO1 terminator. After introducing the TU Timer into yeast cells, we analyzed the red and blue fluorescence intensity changes over time using flow cytometry, with the specific results presented on the [results](/results/) page.
 
