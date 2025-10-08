@@ -1,0 +1,76 @@
+# --- Conda Environment Setup ---
+# Create a new conda environment named 'ultra' with Python 3.9 and automatically confirm the creation
+conda create -n ultra python=3.9 -y 
+# Activate the newly created conda environment
+conda activate ultra
+
+# --- Install Common Python Libraries ---
+# Install essential Python libraries for data manipulation and plotting (NumPy, pandas, Matplotlib)
+conda install numpy pandas matplotlib -y
+
+# --- Install Bioinformatics Tools ---
+# Install bioinformatics tools NanoPlot (for quality control/plotting), minimap2 (for alignment), and samtools (for BAM file manipulation) from the bioconda channel
+conda install -c bioconda nanoplot minimap2 samtools -y
+
+# --- Quality Control and Visualization (NanoPlot) ---
+# Run NanoPlot for quality control and visual summarization of sequencing data
+# --fastq: Specifies the input raw sequencing reads file
+# --outdir: Specifies the output directory for NanoPlot results
+NanoPlot --fastq your_data.fastq --outdir nanoplot_results
+
+# --- Read Alignment (minimap2 and samtools) ---
+# Align Nanopore reads to a reference genome/target sequence
+minimap2 -ax map-ont target.fa your_data.fastq | \
+# '-ax map-ont': Nanopore sequencing alignment preset
+# 'target.fa': The reference sequence file (e.g., genome, target region)
+# 'your_data.fastq': The input Nanopore reads
+
+# Pipe the SAM output to samtools to convert to a BAM file, filter, and sort
+samtools view -b -F 2048 | \
+# 'samtools view': Converts and filters the alignment data
+# '-b': Output in BAM format
+# '-F 2048': Exclude secondary and supplementary alignments (keeps only primary alignments)
+samtools sort -o primary_aligned.bam
+# 'samtools sort': Sorts the BAM file by coordinate
+# '-o primary_aligned.bam': The output sorted BAM file (containing only primary alignments)
+
+# Index the sorted BAM file for fast access (required for depth and mpileup)
+samtools index primary_aligned.bam
+
+# Calculate and display the sequencing depth across the reference/target
+samtools depth primary_aligned.bam
+
+# --- Base Distribution Analysis (samtools mpileup and awk) ---
+# Generate a pileup format file from the aligned BAM for base distribution analysis
+samtools mpileup -f target.fa aligned_primary.bam | \
+# 'samtools mpileup': Generates pileup information
+# '-f target.fa': Specifies the reference sequence file
+
+# Use awk to process the pileup output and calculate base counts and percentages at each position
+awk '{
+    # Print Chromosome/Contig ($1), Position ($2), and Reference Base ($3)
+    printf "%s\t%s\t%s\t", $1, $2, $3;  
+    
+    # Remove read start marks ('^.') from the sequencing base column ($5)
+    gsub(/\^./, "", $5);  
+    # Remove read end marks ('$') from the sequencing base column ($5)
+    gsub(/\$/, "", $5);   
+ 
+    # Count the occurrences of each base (A, C, G, T, N)
+    a = gsub(/[aA]/, "&", $5);
+    c = gsub(/[cC]/, "&", $5);
+    g = gsub(/[gG]/, "&", $5);
+    t = gsub(/[tT]/, "&", $5);
+    n = gsub(/[nN]/, "&", $5);
+    # Count the occurrences of bases matching the reference ('.' for forward strand, ',' for reverse strand)
+    ref_match = gsub(/[.,]/, "&", $5);  
+    
+    # Calculate the total number of reads at the position
+    total = a + c + g + t + n + ref_match;
+    
+    # Print the counts, percentages for each base, reference match, and total coverage
+    printf "A:%d(%.1f%%)\tC:%d(%.1f%%)\tG:%d(%.1f%%)\tT:%d(%.1f%%)\tN:%d(%.1f%%)\tRef_match:%d(%.1f%%)\tTotal:%d\tRef_match_percent:%.1f%%\n", 
+           a, (a/total)*100, c, (c/total)*100, g, (g/total)*100, 
+           t, (t/total)*100, n, (n/total)*100, ref_match, (ref_match/total)*100, total, (ref_match/total)*100;
+}' > base_distribution.txt
+# Redirect the processed output to a file
