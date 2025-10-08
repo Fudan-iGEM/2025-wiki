@@ -86,4 +86,130 @@ defineExpose({
   height: auto;
   margin-bottom: 0.25rem; /* 视觉上更贴近底部 */
 }
+
+@media (max-width: 1200px) {
+  .scene8-container {
+    padding: 4rem 3rem;
+    align-items: center;
+  }
+
+  .cards-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 1.25rem);
+    max-width: 260px;
+    min-height: clamp(320px, 50vh, 460px);
+  }
+
+  .card-title {
+    font-size: 2.1rem;
+    left: 1.25rem;
+    top: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .scene8-container {
+    position: relative;
+    padding: 2rem 1rem 3rem;
+    justify-content: center;
+  }
+
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem;
+    width: min(100%, 360px);
+    margin: 0 auto;
+  }
+
+  .card {
+    flex: none;
+    width: 100%;
+    max-width: none;
+    min-height: 160px;
+    aspect-ratio: auto;
+    padding: 0.75rem 0.9rem;
+    border-radius: 18px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    flex-direction: row;
+  }
+
+  .card-title {
+    position: static;
+    font-size: clamp(1.15rem, 4.5vw, 1.45rem);
+    text-shadow: none;
+    max-width: 60%;
+    text-align: left;
+  }
+
+  .card img {
+    width: clamp(72px, 30%, 110px);
+    margin: 0;
+    align-self: center;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .scene8-container {
+    padding: 1.6rem 0.75rem 2.1rem;
+  }
+
+  .cards-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.6rem;
+    width: 100%;
+  }
+
+  .card {
+    min-height: 150px;
+    padding: 0.65rem 0.8rem;
+    border-radius: 16px;
+  }
+
+  .card-title {
+    font-size: clamp(1.05rem, 5.5vw, 1.35rem);
+    text-align: left;
+  }
+
+  .card img {
+    width: clamp(64px, 28%, 96px);
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .scene8-container {
+    padding: 1.4rem 0.6rem 1.8rem;
+  }
+
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .card {
+    min-height: 140px;
+    padding: 0.55rem 0.75rem;
+    gap: 0.6rem;
+  }
+
+  .card-title {
+    font-size: clamp(1rem, 6vw, 1.25rem);
+    max-width: 65%;
+    text-align: left;
+  }
+
+  .card img {
+    width: clamp(58px, 26%, 88px);
+    flex-shrink: 0;
+  }
+}
 </style>

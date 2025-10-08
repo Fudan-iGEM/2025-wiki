@@ -31,9 +31,9 @@ Our screening focused on two key aspects:
   Simultaneously, we carefully monitored the fluorescence intensity in the other three fluorescent channels. Ideally, these non-primary channels should exhibit minimal to no change in intensity or brightness distribution. This observation would confirm that the EMSfp sequence itself is resistant to mutagenesis, and that the observed changes are specific to the promoter's response to EMS, rather than a general degradation or alteration of the fluorescent protein.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/fluorescence-micriscope.avif" style="width:80%">
+    <img src="#" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment. (A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499. Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.</span>
+        <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment. <a href="https://static.igem.wiki/teams/5643/pageimage/measurement/fluorescence-micriscope.avif" target=_blank>(A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499.</a> Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.</span>
         <br><br>
     </div>
 </div>
@@ -211,12 +211,10 @@ A site was designated as a genuine mutation—rather than a sequencing error—i
 By separately quantifying the putative EMS-induced mutations (G/C ↔ A/T) within the promoter, coding sequence (CDS or EMSfp), and terminator regions, we calculated the respective mutation rates. The results showed that the EMS mutation rate in the promoter region was significantly higher than that in the CDS/EMSfp region（one-way ANOVA and followed with Tukey's multiple comparisons test, p < 0.001). Our analysis confirms that the EMSfp sequence indeed confers resistance to EMS-induced mutagenesis.
 
 
-### [Summary](/measurement/#Summary)
+### Summary
 
 The integrated results demonstrate that EMS-induced mutations specifically accumulate in the promoter region rather than the coding sequence, directly linking observed fluorescence changes to targeted genetic alterations. Through this systematic validation spanning cellular, population, and molecular levels, we have established BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) in our [TU Recorders collection](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein) as a reliable standardized biological part that effectively records mutation events, thereby enabling dynamic tracking by our *DR. sTraTeGY*.
 
-
-### [Reference](/measurement/#Reference)
+### Reference
 
 [^1]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. https://doi.org/10.1073/pnas.1902823116 ↩
-

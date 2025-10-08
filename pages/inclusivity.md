@@ -22,8 +22,7 @@ description: Through intersectional practices, we build an inclusive scientific 
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In One Sentence: </strong>
-    Enable rare disease patients to increase visibility by presenting themselves as artists.
+    <strong> 🎉 Welcome to our inclusivity page! </strong>
   </h5>
 
   <br>
@@ -42,24 +41,27 @@ Not just “How can we help marginalized groups in science” but “How can par
 ------
 
 
-### Our highlights
+### Our highlights ✨ 
 
-1.   **What systemic barriers did we identify?**
-We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face three intertwined barriers: they are unseen, voiceless, and excluded from participation. We have discovered the potential for their intersectional identities to engage in scientific affairs.
+**1.   What systemic barriers did we identify?**
+We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face [three intertwined barriers](https://2025.igem.wiki/fudan/inclusivity.html#_0-1-our-initial-framework-and-primary-target-group): they are unseen, voiceless, and excluded from participation. We have discovered the potential for their [intersectional](https://2025.igem.wiki/fudan/inclusivity.html#_1-2-improving-our-theoretical-framework-intersectionality) identities to engage in scientific affairs.
 
-2.   **How did we expand participation in science?**
-     We co-created inclusive formats with EB patients, including sensory-friendly surveys, photovoice storytelling, and immersive exhibitions. These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
+**2.   How did we expand participation in science?**
+We co-created inclusive formats with EB patients, including [sensory-friendly surveys](https://2025.igem.wiki/fudan/inclusivity.html#_3-2-co-creation-in-action-the-art-experience-exhibition), [Photovoice storytelling](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), and [immersive exhibitions](/inclusivity/### 3.2 Co-Creation in Action: The Art Experience Exhibition). These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
 
-3.   **How do we ensure dialogue and mutual learning?**
-Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped improve the laboratory environment—benefiting other neurodiverse researchers as well.
-4.   **What replicable outcomes have emerged?**
-We developed a series of transferable tools and methods: a sensory-friendly research toolkit, a post-event feedback and evaluation model, a collection of science posters, and the assistive software “ProtocolFlow.” These resources can be readily adapted by other teams.
+**3.   How do we ensure dialogue and mutual learning?**
+Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped [improve the laboratory environment](https://2025.igem.wiki/fudan/inclusivity.html#_4-building-an-inclusive-scientific-community-learn-from-the-margins)—benefiting other neurodiverse researchers as well.
+
+**4.   What replicable outcomes have emerged?**
+We developed a series of transferable tools and methods: [a sensory-friendly research toolkit](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf), [a post-event feedback and evaluation model](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), [a collection of science posters](https://2025.igem.wiki/fudan/inclusivity.html#_4-2-lab-mental-health-week-check-in-campaign), and the assistive software “[ProtocolFlow](https://protocolflow-290e68.igem.wiki/).” These resources can be readily adapted by other teams.
+
+
 
 ------
 
 
 
-> “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects.If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks." ——Kimberlé Crenshaw
+> “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects. If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks." ——Kimberlé Crenshaw
 
 
 Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. When conducting research on fungal infectious diseases, we recognize that, fungal challenges are not one-dimensional in real society,. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
@@ -268,15 +270,15 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In One Sentence: </strong>
-    Sensory-friendly research design helps individuals affected by fungal problems to identify struggles they previously <em>could not articulate</em>, thereby empowering marginalized groups to voice their perspectives.
+    <strong>✅In a nutshell: </strong>
+    Through sensory-friendly design, people living with fungal challenges can express struggles that were once unspeakable — turning silent experiences into voices that matter.
   </h5>
 
   <br>
 
   <div class="section">
     <div class="section-title"><strong>Objective:</strong></div>
-    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+    <p>To address the voiceless problem by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
   </div>
   <div class="section">
     <div class="section-title"><strong>Process:</strong></div>
@@ -643,11 +645,11 @@ Future inclusive practices should focus more on creating **“points of identity
     <p>We integrate insights from marginalized groups into the design of more inclusive laboratories and scientific practices.</p>
   </div>
 
-
   <div class="section">
     <div class="section-title"><strong>Action:</strong></div>
     <p>
       - Develop laboratory-assistive software<br>
+      - Launch an inclusive laboratory initiative</br>
       - Conduct reflection and long-term planning<br>
     </p>
   </div>
@@ -692,11 +694,15 @@ Importantly, the participant’s dual identity as both a researcher and a patien
 
 ##### Core Functions
 
-Our laboratory-assistive web tool is not merely an efficiency software, but a support system embedded with the 理念 (ethos) of **inclusivity**. Its core functional design directly responds to the needs revealed through our research and dialogues with individuals affected by fungal conditions:
+Our laboratory-assistive web tool [ProtocolFlow](https://protocolflow-290e68.igem.wiki/) is not merely an efficiency software, but a support system embedded with the ethos of **inclusivity**. Its core functional design directly responds to the needs revealed through our research and dialogues with individuals affected by fungal conditions:
 
 1. **Visualized Experimental Guidance**
    - **Function**: Users can import or write their own experimental protocols, which the software automatically parses into a clear, visual step-by-step flowchart. Each step is accompanied by a progress bar, estimated duration, key precaution notes, and corresponding tool components. At the end, a tagged experimental report can be generated.
    - **Design Rationale**: This reduces the cognitive load and anxiety caused by lengthy, text-heavy instructions, alleviating psychological pressure for lab members susceptible to fungal infections. It also helps experimenters with attention deficits or reading difficulties to better grasp both the overall workflow and the details. Built-in widgets such as timers and calculators minimize task-switching and reduce the risk of errors.
+
+
+
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-1.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-2.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
@@ -752,7 +758,7 @@ From May to September, we have continued our science communication efforts on me
   - For promoting popular science: A poster about the rare disease **Epidermolysis Bullosa** (see [Q&A Posters](#qa-posters) section)
   - For practical activities: [**Sensory-Friendly Research Toolkit**](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf)
   - For feedback: *Ten Post-Event Evaluation Questions* (see [Establishing Feedback Mechanisms](#establishing-feedback-mechanisms) section)
-- *Technology Empowerment*: Laboratory-assistive software prototype [ProtocolFlow Official Website](https://protocolflow-290e68.igem.wiki/)
+- *Technology Empowerment*: Laboratory-assistive software prototype [ProtocolFlow Live Demo](https://protocolflow-290e68.igem.wiki/) and [gitlab](https://gitlab.igem.org/larryivanhan/protocolflow).
 - *Methodological Innovation*: An operationalized, stepwise framework of "intersectionality in practice"
 
 ---

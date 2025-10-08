@@ -1,6 +1,29 @@
 <script setup>
-import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import ProfileCard from './ProfileCard/ProfileCard.vue'
+
+const outfits = [
+  {
+    id: 'hat',
+    label: 'Hats On',
+    image: 'https://static.igem.wiki/teams/5643/pageimage/team/team/team3.avif'
+  },
+  {
+    id: 'no-hat',
+    label: 'Hats Off',
+    image: 'https://static.igem.wiki/teams/5643/pageimage/team/team/team2.avif'
+  }
+]
+
+const activeOutfit = ref(outfits[0].id)
+const activeOutfitImage = computed(() => {
+  const selected = outfits.find(option => option.id === activeOutfit.value)
+  return selected ? selected.image : outfits[0].image
+})
+
+const setOutfit = (id) => {
+  activeOutfit.value = id
+}
 
 const teamMembers = [
   {
@@ -237,6 +260,31 @@ onUnmounted(() => {
 
 <template>
   <div class="member-page">
+    <section class="team-outfit-switcher">
+      <div class="switcher-content">
+        <div class="outfit-info">
+          <h2 class="switcher-title">Team Outfit Switch</h2>
+          <p class="switcher-subtitle">Tap to swap between our hat-on and hat-off group photos.</p>
+          <div class="switcher-buttons">
+            <button
+              v-for="option in outfits"
+              :key="option.id"
+              type="button"
+              class="outfit-button"
+              :class="{ 'outfit-button--active': option.id === activeOutfit }"
+              :aria-pressed="option.id === activeOutfit"
+              @click="setOutfit(option.id)"
+            >
+              {{ option.label }}
+            </button>
+          </div>
+        </div>
+        <div class="outfit-preview">
+          <img :src="activeOutfitImage" :alt="`Team photo ${activeOutfit === 'hat' ? 'wearing hats' : 'without hats'}`" />
+        </div>
+      </div>
+    </section>
+
     <div class="member-grid">
       <div
         v-for="(member, index) in visibleMembers"
@@ -270,6 +318,97 @@ onUnmounted(() => {
   margin: 0 auto;
 }
 
+.team-outfit-switcher {
+  margin-bottom: 50px;
+  padding: 28px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(0, 136, 201, 0.08), rgba(0, 188, 212, 0.12));
+  border: 1px solid rgba(0, 136, 201, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 64, 128, 0.08);
+}
+
+.switcher-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.outfit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.switcher-title {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #07255a;
+}
+
+.switcher-subtitle {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(7, 37, 90, 0.72);
+}
+
+.switcher-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.outfit-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.75);
+  color: #0f3c7f;
+  box-shadow: 0 8px 20px rgba(15, 60, 127, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.outfit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(15, 60, 127, 0.2);
+}
+
+.outfit-button--active {
+  background: linear-gradient(135deg, #0088c9, #00bcd4);
+  color: #ffffff;
+  box-shadow: 0 10px 28px rgba(0, 136, 201, 0.35);
+}
+
+.outfit-preview {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 16px 50px rgba(7, 37, 90, 0.18);
+}
+
+.outfit-preview::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 37, 90, 0.14), transparent 50%, rgba(0, 188, 212, 0.12));
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.outfit-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .member-grid {
   display: grid;
   gap: 40px;
@@ -282,6 +421,31 @@ onUnmounted(() => {
   padding: 20px;
   font-size: 16px;
   color: #666;
+}
+
+@media (max-width: 1024px) {
+  .team-outfit-switcher {
+    padding: 24px;
+  }
+
+  .switcher-content {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .outfit-info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .switcher-buttons {
+    justify-content: center;
+  }
+
+  .outfit-preview {
+    max-width: 640px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1379px) and (min-width: 851px) {
@@ -300,6 +464,11 @@ onUnmounted(() => {
   .member-page {
     padding: 30px 15px;
   }
+
+  .team-outfit-switcher {
+    margin-bottom: 40px;
+    padding: 22px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -311,6 +480,19 @@ onUnmounted(() => {
   .member-page {
     padding: 20px 10px;
   }
+
+  .team-outfit-switcher {
+    padding: 20px 16px;
+    margin-bottom: 30px;
+  }
+
+  .switcher-title {
+    font-size: 1.6rem;
+  }
+
+  .switcher-subtitle {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -320,6 +502,20 @@ onUnmounted(() => {
 
   .member-page {
     padding: 15px 8px;
+  }
+
+  .team-outfit-switcher {
+    padding: 18px 12px;
+    margin-bottom: 32px;
+  }
+
+  .switcher-buttons {
+    gap: 8px;
+  }
+
+  .outfit-button {
+    padding: 0.55rem 1.1rem;
+    font-size: 0.9rem;
   }
 }
 </style>
