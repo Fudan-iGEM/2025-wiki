@@ -24,9 +24,10 @@
         <TrueFocus
           :key="subtitleKey"
           sentence="a Drug Resistance Mutation Tracking Technology based on Grape Yeast"
-          :blurAmount="1"
+          :blurAmount="0"
           :animationDuration="0.8"
           :pauseBetweenAnimations="1.2"
+          :skipWords="['a', 'based', 'on']"
         />
       </div>
     </div>

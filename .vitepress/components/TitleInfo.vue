@@ -51,7 +51,7 @@
 
 <script setup>
 import { useData } from "vitepress";
-import { computed } from "vue";
+import { computed, nextTick, onMounted, watch } from "vue";
 import { useWindowSize } from "@vueuse/core";
 import SplitText from "./SplitText.vue";
 
@@ -66,6 +66,7 @@ const pageTitle = computed(() => frontmatter.value.title);
 
 // 获取页面描述
 const pageDescription = computed(() => frontmatter.value.description);
+const normalizedDescriptionText = computed(() => stripHtml(pageDescription.value || ""));
 
 // 响应式标题样式
 const titleStyles = computed(() => {
@@ -117,6 +118,41 @@ const formattedDescription = computed(() => {
   }
 
   return applyHighlightSpans(rawDescription);
+});
+
+const removeDuplicateDescription = async () => {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  const targetText = normalizedDescriptionText.value;
+  if (!targetText) {
+    return;
+  }
+
+  await nextTick();
+
+  const docRoot = document.querySelector(".vp-doc");
+  if (!docRoot) {
+    return;
+  }
+
+  Array.from(docRoot.children)
+    .slice(0, 3)
+    .forEach((element) => {
+      const elementText = normalizeWhitespace(element.textContent || "");
+      if (elementText && elementText === targetText) {
+        element.remove();
+      }
+    });
+};
+
+onMounted(() => {
+  removeDuplicateDescription();
+});
+
+watch(pageDescription, () => {
+  removeDuplicateDescription();
 });
 
 // Handle authors - support both single author and multiple authors (max 3)
@@ -229,6 +265,17 @@ function applyHighlightSpans(html) {
 
   result += processTextBuffer(buffer);
   return result;
+}
+
+function stripHtml(html) {
+  if (!html) {
+    return "";
+  }
+  return normalizeWhitespace(html.replace(/<[^>]*>/g, " "));
+}
+
+function normalizeWhitespace(text) {
+  return text.replace(/\s+/g, " ").trim();
 }
 
 // Helper function to format URLs
