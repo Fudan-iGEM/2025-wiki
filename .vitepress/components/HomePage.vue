@@ -104,7 +104,7 @@ const scene5Items = ref([
 ])
 
 const scene6Items = ref([
-    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Rapid and Reduce-cost', description: 'DR. sTraTeGY provides a rapid, low-cost chassis system to validate mutations and drug effects, offering great potential to accelerate new drug discovery and screening.' },
+    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Rapid and Reduce-cost', description: 'DR. sTraTeGY provides a rapid, low-cost chassis to validate mutations and drug effects, offering great potential to accelerate new drug discovery and screening.' },
     { id: 2, lottieUrl: scene6Lotties.item2, title: 'Direct and demystify', description: 'Through programmable environments researchers can directly observe evolutionary divergences, deepening humanity’s understanding of the universal principles of life’s evolution.' },
     { id: 3, lottieUrl: scene6Lotties.item3, title: 'Strategic and safeguarding', description: 'The application of DR. sTraTeGY implies that humanity can fortify defenses ahead of a full-scale outbreak of drug resistance, establishing a societal safeguard against superfungi.' },
     { id: 4, lottieUrl: scene6Lotties.item4, title: 'Educational and enlightening', description: 'By making abstract genetic mutations and evolutionary processes “visual” through colors and different morphologies, it can advance public science education and foster social consensus.' },
