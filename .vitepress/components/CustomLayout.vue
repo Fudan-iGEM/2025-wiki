@@ -306,6 +306,12 @@ function handleResize() {
 </template>
 
 <style scoped>
+/* Hide the built-in doc header so the hero handles title/description rendering */
+:deep(.doc-header),
+:deep(.vp-doc > .doc > header:first-child) {
+  display: none;
+}
+
 /* --- Flexbox Layout --- */
 .VPDoc {
   display: flex;
