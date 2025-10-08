@@ -140,7 +140,7 @@ To address these challenges, design a robust genetic safeguards should meet thre
 - Robustness maintains wild-type fitness levels while ensuring containment across different growth conditions, even in nutrient-rich or complex environments where other organisms may supply missing metabolites.
 - Modularity allows multiple safeguard strategies to be layered within a single strain or transferred across different hosts, making safeguards more versatile and portable.
 
-Inspried by the Gallagher *et al*'s circuit[^12], which integrates three core modules: a riboregulatory system, a biotin auxotrophy strategy, and a nuclease-based kill switch.
+Inspried by the Gallagher et al's circuit[^12], which integrates three core modules: a riboregulatory system, a biotin auxotrophy strategy, and a nuclease-based kill switch.
 
 - **Riboregulatory module:** The pLtetO promoter is repressed by TetR and activated by aTc to express trans-activating RNA (taRNA). Meanwhile, the pLlacO promoter is repressed by LacI and activated by IPTG to drive cis-repressing RNA (crRNA) along with an essential gene. The taRNA and crRNA interact through a looped intermediate structure that exposes the crRNA's ribosome binding site (RBS), enabling expression of the downstream essential gene.
 - **Biotin auxotrophy module:** Normally, *bioA* produces the precursor of biotin's heterocyclic ring, while *bioB* catalyzes the final ring closure to generate active biotin. Disruption of both genes creates an auxotrophic strain that requires exogenous biotin for growth.

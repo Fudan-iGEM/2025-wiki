@@ -11,7 +11,7 @@ description: On this page, we describe detailed protocols for Golden Gate assemb
 
 ## Golden Gate Assembly
 
-As described in Shaw *et al*. (2023)[^1], briefly: 
+As described in Shaw et al. (2023)[^1], briefly: 
 
 ### Assembly Reaction
 
@@ -99,7 +99,7 @@ Then,
 
 ### Expanded Golden Gate
 
-Inspired by Sorida *et al*. (2023)[^2], briefly: 
+Inspired by Sorida et al. (2023)[^2], briefly: 
 
 1. Prepare the digestion mixtures in PCR tube：
 
@@ -121,11 +121,11 @@ Inspired by Sorida *et al*. (2023)[^2], briefly:
 
 ## Site-Directed Mutagenesis PCR
 
-As described in Liu *et al*. (2008)[^3], briefly: 
+As described in Liu et al. (2008)[^3], briefly: 
 
 ### Primer Design
 
-Primers were designed as in Liu *et al*. (2008) Figure 2[^3]. The non-overlapping sequences are larger (significantly larger than suggested in [^4])than the complementary sequences to make the melting temperature of non-overlapping sequences (Tm no, 47.5-60.2) 5 to 10°C higher than the melting temperature of primer-primer complementary sequences (41.1-50.3 Tm pp < Tm no).
+Primers were designed as in Liu et al. (2008) Figure 2[^3]. The non-overlapping sequences are larger (significantly larger than suggested in [^4])than the complementary sequences to make the melting temperature of non-overlapping sequences (Tm no, 47.5-60.2) 5 to 10°C higher than the melting temperature of primer-primer complementary sequences (41.1-50.3 Tm pp < Tm no).
 
 ### PCR Reaction Setup
 
@@ -162,7 +162,7 @@ Primers were designed as in Liu *et al*. (2008) Figure 2[^3]. The non-overlappin
 
 ## Yeast Transformation
 
-As described in Shaw *et al*. (2023)[^1]. Briefly: 
+As described in Shaw et al. (2023)[^1]. Briefly: 
 
 ### One-day Competent Yeast Preparation
 
@@ -267,7 +267,7 @@ On the day of transformation:
 
 ## Yeast Colony PCR
 
-As described in Shaw *et al*. (2023)[^1], briefly: 
+As described in Shaw et al. (2023)[^1], briefly: 
 
 1. Pick a single colony from solid medium and resuspend it in 50 &mu;L of sterile water; or use 1 &mu;L of liquid culture.
 2. Combine the following components in a PCR tube:
@@ -310,7 +310,7 @@ If the routine genotyping above fails, the following protocol was used to quickl
 
 ## Grape Yeast Settling Selection
 
-As described in Tong *et al*. (2025)[^6], briefly: 
+As described in Tong et al. (2025)[^6], briefly: 
 
 1. Grow the diploid and tetraploid yeast with *ACE2* deletion in 3 mL of YPD media with and without G418 at 30°C with shaking at 250 rpm for 24 h.
 2. Transfer 1 mL of the culture into a 1.5-mL microcentrifuge tube.
@@ -355,7 +355,7 @@ Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/
 
 ## EMS Mutagenesis
 
-As described in Hodgins-Davis *et al*. (2019)[^8], briefly: 
+As described in Hodgins-Davis et al. (2019)[^8], briefly: 
 
 1. Wash a 2 mL aliquot of saturated culture (~10<sup>7</sup> cells/mL) twice in 5 mL of H<sub>2</sub>O, and then resuspend in 2 mL of sodium phosphate buffer (0.1 M, pH = 7).
 2. Divide the culture into two 1 mL aliquots in 1.5-mL microcentrifuge tubes. 
@@ -368,7 +368,7 @@ As described in Hodgins-Davis *et al*. (2019)[^8], briefly:
 
 ## Grape Yeast Cluster Size Measurement
 
-As described in Tong *et al*. (2025)[^6], briefly: 
+As described in Tong et al. (2025)[^6], briefly: 
 
 ### Strain Revival
 
@@ -398,7 +398,7 @@ Use [ImageJ](https://imagej.net/ij/) for a semi-automated image analysis:
 
 ## Imaging-based Ploidy Measurement
 
-As described in Tong *et al*. (2025)[^6], briefly: 
+As described in Tong et al. (2025)[^6], briefly: 
 
 In every experiment, two control strains with known ploidy, namely, the engineered grande diploid and tetraploid grape yeast, also went through the same procedure of sample preparation and imaging. 
 
@@ -440,7 +440,7 @@ Continue the analysis in R.
 
 ## Chitin staining
 
-We stained cells with [calcofluor white](https://www.sigmaaldrich.com/HK/en/product/sial/18909) as described in Tong *et al*. (2025)[^6], briefly: 
+We stained cells with [calcofluor white](https://www.sigmaaldrich.com/HK/en/product/sial/18909) as described in Tong et al. (2025)[^6], briefly: 
 
 1. Sample 150&mu;L from the cell culture from the ancestor.
 2. Remove the supernatant through an iterated process of centrifugation and pipetting medium removal. 
@@ -461,7 +461,7 @@ We stained cells with [calcofluor white](https://www.sigmaaldrich.com/HK/en/prod
 
 ## Mating of *a* and &alpha; Yeast Strains
 
-As described in Tong *et al*. (2025)[^6], briefly: 
+As described in Tong et al. (2025)[^6], briefly: 
 
 1. Inoculate *a* and *&alpha;* strains separately into liquid medium and grow overnight at 30°C until cultures reach saturation.
 2. Mix the two cultures at a 1:1 ratio.

@@ -184,12 +184,12 @@ pnpm run serve
 
 3. Zacharias, D. A., et al. (2002). Partitioning of lipid-modified monomeric GFPs into membrane microdomains. *Science*, 2002;296(5569):913‑916. DOI: 10.1126/science.1068539
 
-4. Greene E. A., et al. (2003) Spectrum of chemically induced mutations from a large-scale reverse-genetic screen in Arabidopsis. *Genetics*, 164(2):731-740. DOI: 10.1093/genetics/164.2.731
+4. Greene E. A., et al. (2003). Spectrum of chemically induced mutations from a large-scale reverse-genetic screen in Arabidopsis. *Genetics*, 164(2):731-740. DOI: 10.1093/genetics/164.2.731
 
-5. Bennetzen J. L., Hall B. D. (1982) Codon selection in yeast. *J Biol Chem*, 257(6):3026-3031. PMID: 6277903
+5. Bennetzen J. L., Hall B. D. (1982). Codon selection in yeast. *J Biol Chem*, 257(6):3026-3031. PMID: 6277903
 
-6. Ormö M. et al. (1996) Crystal structure of the Aequorea victoria green fluorescent protein. *Science*, 273(5280):1392‑1395. DOI: 10.1126/science.273.5280.1392
+6. Ormö M. et al. (1996). Crystal structure of the Aequorea victoria green fluorescent protein. *Science*, 273(5280):1392‑1395. DOI: 10.1126/science.273.5280.1392
 
-7. Cormack B. P., Valdivia R. H., Falkow S. (1996) FACS-optimized mutants of the green fluorescent protein (GFP). *Gene*, 173(1):33‑38. DOI: 10.1016/0378-1119(95)00685-0
+7. Cormack B. P., Valdivia R. H., Falkow S. (1996). FACS-optimized mutants of the green fluorescent protein (GFP). *Gene*, 173(1):33‑38. DOI: 10.1016/0378-1119(95)00685-0
 
-8. Heim R., Tsien R.Y. (1996) Engineering green fluorescent protein for improved brightness, longer wavelengths and fluorescence resonance energy transfer. *Curr Biol*, 6(2):178‑182. DOI: 10.1016/s0960-9822(02)00450-5
+8. Heim R., Tsien R.Y. (1996). Engineering green fluorescent protein for improved brightness, longer wavelengths and fluorescence resonance energy transfer. *Curr Biol*, 6(2):178‑182. DOI: 10.1016/s0960-9822(02)00450-5

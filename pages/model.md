@@ -798,15 +798,15 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 ## References
 
 [^1]: Subach, F. V., Subach, O. M., Gundorov, I. S., Morozova, K. S., Piatkevich, K. D., Cuervo, A. M., & Verkhusha, V. V. (2009). Monomeric fluorescent timers that change color from blue to red report on cellular trafficking. *Nature Chemical Biology*, 5(2), 118–126. DOI: 10.1038/nchembio.138
-[^2]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, *4*, 975–986. DOI: 10.1021/sb500366v
-[^3]: Penadés, J. R., Gottweis, J., He, L., Patkowski, J. B., Daryin, A., Weng, W.-H., Tu, T., Palepu, A., Myaskovsky, A., Pawlosky, A., Natarajan, V., Karthikesalingam, A., & Costa, T. R. D. (2025). AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution. *Cell, 188*(5), 1–12. DOI: 10.1016/j.cell.2025.08.018
-[^4]: Kutta, W. (1901). Beitrag zur näherungsweisen Integration totaler Differentialgleichungen. Teubner.
-[^5]: Butcher, J. C. (2000). Numerical methods for ordinary differential equations in the 20th century. Journal of Computational and Applied Mathematics, 125(1-2), 1-29. DOI: 10.1016/S0377-0427(00)00455-6
-[^6]: Di Talia, S., Skotheim, J. M., Bean, J. M., Siggia, E. D., & Cross, F. R. (2007). The effects of molecular noise and size control on variability in the budding yeast cell cycle. *Nature*, *448*(7156), 947–951. DOI: 10.1038/nature06072
-[^7]: Kari, H., Bandi, S. M. S., Kumar, A., & Yella, V. R. (2023). DeePromClass: Delineator for eukaryotic core promoters employing deep neural networks. *IEEE/ACM Transactions on Computational Biology and Bioinformatics*, *20*(1), 802–807. DOI: 10.1109/TCBB.2022.3163418
-[^8]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
-[^9]: Ratcliff, W., Fankhauser, J., Rogers, D. *et al.* Origins of multicellular evolvability in snowflake yeast. *Nat Commun* **6**, 6102 (2015). DOI: 10.1038/ncomms7102
-[^10]: Fukuda, N. Apparent diameter and cell density of yeast strains with different ploidy. *Sci Rep* **13**, 1513 (2023). DOI: 10.1038/s41598-023-28800-z
-[^11]: Alalam, H., Zepeda-Martínez, J. A., & Sunnerhagen, P. (2022). Global SLAM-seq for accurate mRNA decay determination and identification of NMD targets. *RNA*, *28*(6), 905-915. DOI: 10.1261/rna.079077.121
-[^12]: Arrhenius, S. (1889). Über die Reaktionsgeschwindigkeit bei der Inversion von Rohrzucker durch Säuren. *Zeitschrift für physikalische Chemie*, *4*(1), 226-248.
-[^13]: Bertrand, E., Chartrand, P., Schaefer, M., Shenoy, S. M., Singer, R. H., & Long, R. M. (1998). Localization of ASH1 mRNA particles in living yeast. *Molecular Cell*, *2*(4), 437–445. DOI: 10.1016/S1097-2765(00)80143-4
+[^2]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A highly characterized yeast toolkit for modular, multipart assembly. *ACS Synthetic Biology*, 4, 975–986. DOI: 10.1021/sb500366v
+[^3]: Penadés, J. R., Gottweis, J., He, L., Patkowski, J. B., Daryin, A., Weng, W.-H., Tu, T., Palepu, A., Myaskovsky, A., Pawlosky, A., Natarajan, V., Karthikesalingam, A., & Costa, T. R. D. (2025). AI mirrors experimental science to uncover a mechanism of gene transfer crucial to bacterial evolution. *Cell*, 188(5), 1–12. DOI: 10.1016/j.cell.2025.08.018
+[^4]: Kutta, W. (1901). Beitrag zur näherungsweisen Integration totaler Differentialgleichungen. *Teubner*.
+[^5]: Butcher, J. C. (2000). Numerical methods for ordinary differential equations in the 20th century. *Journal of Computational and Applied Mathematics*, 125(1-2), 1-29. DOI: 10.1016/S0377-0427(00)00455-6
+[^6]: Di Talia, S., Skotheim, J. M., Bean, J. M., Siggia, E. D., & Cross, F. R. (2007). The effects of molecular noise and size control on variability in the budding yeast cell cycle. *Nature*, 448(7156), 947–951. DOI: 10.1038/nature06072
+[^7]: Kari, H., Bandi, S. M. S., Kumar, A., & Yella, V. R. (2023). DeePromClass: Delineator for eukaryotic core promoters employing deep neural networks. *IEEE/ACM Transactions on Computational Biology and Bioinformatics*, 20(1), 802–807. DOI: 10.1109/TCBB.2022.3163418
+[^8]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, 6(12), 1737–1749. DOI: 10.1017/s1355838200001059
+[^9]: Ratcliff, W., Fankhauser, J., Rogers, D. et al. (2015). Origins of multicellular evolvability in snowflake yeast. *Nat Commun*, 6, 6102. DOI: 10.1038/ncomms7102
+[^10]: Fukuda, N. (2023). Apparent diameter and cell density of yeast strains with different ploidy. *Sci Rep* 13, 1513. DOI: 10.1038/s41598-023-28800-z
+[^11]: Alalam, H., Zepeda-Martínez, J. A., & Sunnerhagen, P. (2022). Global SLAM-seq for accurate mRNA decay determination and identification of NMD targets. *RNA*, 28(6), 905-915. DOI: 10.1261/rna.079077.121
+[^12]: Arrhenius, S. (1889). Über die Reaktionsgeschwindigkeit bei der Inversion von Rohrzucker durch Säuren. *Zeitschrift für physikalische Chemie*, 4(1), 226-248.
+[^13]: Bertrand, E., Chartrand, P., Schaefer, M., Shenoy, S. M., Singer, R. H., & Long, R. M. (1998). Localization of ASH1 mRNA particles in living yeast. *Molecular Cell*, 2(4), 437–445. DOI: 10.1016/S1097-2765(00)80143-4
