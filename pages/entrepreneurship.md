@@ -233,7 +233,7 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 
 
-## 5. Marketing ：Business Strategies and Roadmap
+## 5. Marketing : Business Strategies and Roadmap
 
 #### 5.1 Our mission
 
@@ -417,7 +417,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 ## 6. Overlook: Impact and Plans for the Long Term
 #### 6.1 Expansion Timeline
 
- With our product planning to exit in 5years，we planned the business timeline since 2026： 
+ With our product planning to exit in 5years，we planned the business timeline since 2026:  
 | Phase                                               | Timeline     | Key Activities                                               |
 | :-------------------------------------------------- | :----------- | :----------------------------------------------------------- |
 | **Phase 1: Proof &amp; Pilot**                          | 0-12 months  | Regulatory groundwork; pilot studies with 2-3 CROs in YRD; gather data; refine kit + software UI; generate case studies/publications; set up IP filings. |

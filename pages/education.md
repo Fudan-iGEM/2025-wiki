@@ -62,11 +62,11 @@ Synthetic biology is, at its core, a constructive discipline. Theory alone is no
 
 You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/constructionism-and-the-triple-p-framework.pdf) to read our research results.
 
-### Our Framework：Triple P
+### Our Framework: Triple P
 
 Guided by this principle, we developed a framework centered on three interconnected pathways: **Learning by Playing, Learning by Practicing, and Learning by Producing**.
 
-**LEARNING BY PLAYING：The Gateway to Engagement**
+**LEARNING BY PLAYING: The Gateway to Engagement**
 
 To spark curiosity, the first essential step is to inspire a genuine desire to *explore*. We believe the most effective way to achieve this is through **play**.
 
@@ -74,13 +74,13 @@ Play is a universal language—it transcends age, culture, and background. As ch
 
 By integrating playful experiences into our education, we lower barriers to entry and invite learners to approach synthetic biology without fear, but with fascination.
 
-**LEARNING BY PRACTICING：The Path to Mastery**
+**LEARNING BY PRACTICING: The Path to Mastery**
 
 While curiosity initiates the learning journey, abstract concepts can often remain challenging due to their intangible nature. For many learners in synthetic biology, certain knowledge points may appear confusing or difficult to grasp fully. When faced with purely theoretical explanations that feel disconnected from reality, motivation can wane.
 
 That is why we have made *learning by practicing* a core component of our educational approach. We believe that true understanding comes from direct engagement—translating theory into tangible experience. Through hands-on experimentation, abstract ideas become concrete, enabling learners to actively construct knowledge. In this way, participants evolve from passive recipients into active investigators, gaining not only conceptual clarity but also practical mastery of scientific principles.
 
-**LEARNING BY PRODUCING：The Culmination of Understanding**
+**LEARNING BY PRODUCING: The Culmination of Understanding**
 
 A central question in education is: how can we deepen learning outcomes, promote long-term understanding, and sustain growth after learners have grasped the fundamentals? Our answer is **production**.
 
@@ -88,7 +88,7 @@ Production empowers learners to become innovators—transforming them from infor
 
 Crucially, **producing is not a final destination**—it generates new outcomes that spark further exploration, practice, and curiosity, sustaining a continuous cycle of learning and growth.
 
-**Triple P：A Cohesive and Iterative Cycle**
+**Triple P: A Cohesive and Iterative Cycle**
 
 The Triple P framework—**Learning by Playing, Learning by Practicing, and Learning by Producing**—is not a set of isolated learning stages, but an iterative ecosystem centered on "curiosity-driven engagement, competency advancement, and value-based closure."
 
@@ -114,11 +114,11 @@ To bring the *Triple P* framework to life, we collaborated with diverse stakehol
 
 ### Academic Depth - Exchanges with Jilin University
 
-Date：May 16th，2025
+Date: May 16th，2025
 
-People：Zhiqin Wang，Huizhen Du，Yixuan Lu
+People: Zhiqin Wang，Huizhen Du，Yixuan Lu
 
-Collaboration：CJUH-JLU-China
+Collaboration: CJUH-JLU-China
 
 To examine the academic validity of our framework, we engaged in discussions with peers and mentors from Jilin University. Their team, CJUH-JLU-China, which received [the Nomination of *Best Education* in iGEM 2024](https://jamboree.igem.org/2024/results/special-prizes#best-education) and possesses extensive experience in the education track, provided critical insights during these exchanges. This dialogue served as an essential initial step to assess the practical feasibility of our theoretical approach.
 
@@ -148,9 +148,9 @@ We held in-depth conversations with CJUH-JLU-China, during which they shared val
 
 ### Practical Frontline - Dialogue with School Teacher
 
-Date：May 24th，2025
+Date: May 24th，2025
 
-People：Huizhen Du
+People: Huizhen Du
 
 To ground our *Triple P* educational framework in real teaching contexts, we held a focused discussion with Ms. Li Linyu, an experienced teacher from [Shanghai Hongshan Middle School](http://www.hshsh.pudong-edu.sh.cn/). Her frontline perspective helped us assess the practical feasibility of integrating “play” and “practice” into classroom settings.
 
@@ -188,9 +188,9 @@ What We Learned From It
 
 ### Social Breadth - Interdisciplinary Interviews
 
-Date：From April to June，2025
+Date: From April to June，2025
 
-People：All team members
+People: All team members
 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/communicate-with-students-from-non-science-and-engineering-backgrounds.webp" style="width:50%">
@@ -243,9 +243,9 @@ Our initial tests covered all three dimensions of the 3P theory:
 
 ### Activity 1. Picture Book Relay
 
-Date：From May to June，2025
+Date: From May to June，2025
 
-People：Huizhen Du
+People: Huizhen Du
 
 We hypothesized that picture books could serve as a gateway to scientific knowledge, making complex concepts like Gene editing approachable and fun.
 
@@ -279,9 +279,9 @@ If you would like to know more about the event, please click [here](https://mp.w
 
 ### Activity2. Laboratory Visit and Experience
 
-Date：May 17th，2025
+Date: May 17th，2025
 
-Organizers：Zhiqin Wang，Yufan Han
+Organizers: Zhiqin Wang，Yufan Han
 
 We organized a laboratory open day to provide students with an immersive research experience. The event aimed to bridge the gap between theoretical knowledge and real-world science by guiding participants through multiple biology labs, introducing diverse research fields, and facilitating direct communication with faculty members and researchers.
 
@@ -324,9 +324,9 @@ The laboratory visit provided valuable lessons in designing research exposure ac
 
 ### Activity 3. Microbial Inoculation of Daily Necessities
 
-Date：May 18，2025
+Date: May 18，2025
 
-People：Zhiqin Wang、Yixuan Lu、Peining Wu、Huizhen Du
+People: Zhiqin Wang、Yixuan Lu、Peining Wu、Huizhen Du
 
 For Learning by Practicing, we aimed to demystify the lab and build foundational skills through highly accessible experiments. We hypothesized that a simple, relatable experiment could break down barriers to the lab, build confidence ("I can do this"), and reveal the invisible microbial world around us.
 
@@ -360,9 +360,9 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 ### Activity 4. Garden Party
 
-Date：March 28th，2025
+Date: March 28th，2025
 
-People：Peining Wu、Yuxin Duan、Zuyao Wu、Yue Yue、Huizhen Du
+People: Peining Wu、Yuxin Duan、Zuyao Wu、Yue Yue、Huizhen Du
 
 Garden parties allow us to reach a diverse audience with different backgrounds—our goal was to test a multi-activity model: using "Play" ——games to attract participants, using "Practice" ——interactive operations to deepen understanding, and finally guiding participants to "Produce" creative works ——collage poetry to solidify their knowledge of synthetic biology.
 
@@ -434,11 +434,11 @@ As a result, children are a key audience for our activities. With limited prior 
 
 ### My Microb Friends——Picturebook
 
-Date：From June to July，2025
+Date: From June to July，2025
 
-Organizers：Huizhen Du, Xiuqi Tian
+Organizers: Huizhen Du, Xiuqi Tian
 
-Collaboration：AFMU-China
+Collaboration: AFMU-China
 
 **The Elevator Pitch**
 
@@ -485,9 +485,9 @@ In order to allow more children to receive our education, we choose to go into t
 
 **Workshop1: Gene & Protein**
 
-Date：July 15th，2025
+Date: July 15th，2025
 
-Organizers：Huizhen Du，Yuxin Duan，Yining Zhao
+Organizers: Huizhen Du，Yuxin Duan，Yining Zhao
 
 **Overview**
 
@@ -546,11 +546,11 @@ You can view the full questionnaire and results [here](https://static.igem.wiki/
 
 
 
-**Workshop2：Bread Fermentation**
+**Workshop2: Bread Fermentation**
 
-Date：July 17th and 23th，2025
+Date: July 17th and 23th，2025
 
-Organizers：Huizhen Du，Yuxin Duan，Yixuan Lu
+Organizers: Huizhen Du，Yuxin Duan，Yixuan Lu
 
 **Overview**
 
@@ -593,11 +593,11 @@ You can view the full questionnaire and results [here](https://static.igem.wiki/
 
 
 
-**Workshop3：Microbes Are Everywhere**
+**Workshop3: Microbes Are Everywhere**
 
-Date：July 24th，2025
+Date: July 24th，2025
 
-Organizers：Huizhen Du，Zhiqin Wang，Zhongyi Huang
+Organizers: Huizhen Du，Zhiqin Wang，Zhongyi Huang
 
 **Overview**
 
@@ -678,11 +678,11 @@ To reach this audience, we designed activities that blend **gamification, digita
 
 ### BIO-BOUNCE
 
-Date：From July to October，2025
+Date: From July to October，2025
 
-Organizers：Yufan Han，Huizhen Du
+Organizers: Yufan Han，Huizhen Du
 
-Collaboration：USTC、NUDT-CHINA
+Collaboration: USTC、NUDT-CHINA
 
 - Format
 
@@ -720,9 +720,9 @@ You can enjoy it [click here](https://gd.games/instant-builds/837df4ba-8e96-4e18
 
 ### SynbioSH
 
-Date：July 6th，2025
+Date: July 6th，2025
 
-Organizers：Huizhen Du
+Organizers: Huizhen Du
 
 Collaborators: ShanghaiTech-China,  SITU-BioX-Shanghai
 
@@ -811,11 +811,11 @@ These experiences guided participants from curiosity to understanding, equipping
 
 >I can do this——Building Lab Intuition
 
-Date：September 12th，2025
+Date: September 12th，2025
 
-Organizers：Yining Zhao，Yuxin Duan，Zhiqin Wang，Huizhen Du
+Organizers: Yining Zhao，Yuxin Duan，Zhiqin Wang，Huizhen Du
 
-Collaboration：Nanjing-China、SJTU-BioX-Shanghai、ZJU-China、USTC
+Collaboration: Nanjing-China、SJTU-BioX-Shanghai、ZJU-China、USTC
 
 **Overview** 
 
@@ -857,9 +857,9 @@ You can check out participants' feedback on their activities [here](https://stat
 
 >I can see how it works——I enjoy it
 
-Date：May 18th，2025
+Date: May 18th，2025
 
-Organizers：Huizhen Du，Zhiqin Wang，Yixuan Lu，Xiuqi Tian，Jihua Tang，Zuyao Wu
+Organizers: Huizhen Du，Zhiqin Wang，Yixuan Lu，Xiuqi Tian，Jihua Tang，Zuyao Wu
 
 **Overview**
 
@@ -908,9 +908,9 @@ Additionally, some students identified *Aspergillus brunneus*, a microbial speci
 
 >I can learn from how it works
 
-Date：From July to August，2025
+Date: From July to August，2025
 
-Organizers：Huizhen Du
+Organizers: Huizhen Du
 
 **Overview**
 
@@ -973,9 +973,9 @@ By producing tangible results, participants **internalize knowledge**, consolida
 
 ### SynBio Training Program
 
-Date：From January 6th to January 5th ，2025
+Date: From January 6th to January 5th ，2025
 
-Organizers：All members
+Organizers: All members
 
 **Overview**
 
@@ -1034,9 +1034,9 @@ This program combines tool-based training, guided topics, and open exploration t
 
 > When iGEM meets Education
 
-Date：From April to May ，2025
+Date: From April to May ，2025
 
-Organizers：Huizhen Du，Yue Yue
+Organizers: Huizhen Du，Yue Yue
 
 **Overview**
 
@@ -1133,9 +1133,9 @@ Our goal was to **bring these groups back into the conversation**, empower them 
 
 > Building Scientific Literacy for the Elderly
 
-Date：September 20th，2025
+Date: September 20th，2025
 
-Organizers：Huizhen Du、Zhongyi Huang
+Organizers: Huizhen Du、Zhongyi Huang
 
 Collaboration: SUSTech-Med
 
@@ -1219,9 +1219,9 @@ This workshop demonstrated how **role-play and humor** can be powerful tools for
 
 > Opening Doors to Science
 
-Date：May 31th and June 21th，2025
+Date: May 31th and June 21th，2025
 
-Organizers：Huizhen Du，Yue Yue
+Organizers: Huizhen Du，Yue Yue
 
 **Overview**
 
@@ -1250,9 +1250,9 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 > Bringing Science to Remote Villages
 
-Date：From June to July，2025
+Date: From June to July，2025
 
-Organizers：Huizhen Du
+Organizers: Huizhen Du
 
 **Overview**
 

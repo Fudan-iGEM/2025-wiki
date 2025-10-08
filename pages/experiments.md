@@ -22,7 +22,7 @@ As described in Shaw et al. (2023)[^1], briefly:
 - **Inserts:** Dilute to a final concentration of 50 fmol/&mu;L.
 - **Plasmid Backbones:** Dilute to a final concentration of 25 fmol/&mu;L.
 
-2. Prepare the Golden Gate reaction mixtures in PCR tube：
+2. Prepare the Golden Gate reaction mixtures in PCR tube: 
 
 > Assemble reactions on ice to prevent premature enzyme activity, and put the enzymes back immediately after use!
 
@@ -101,7 +101,7 @@ Then,
 
 Inspired by Sorida et al. (2023)[^2], briefly: 
 
-1. Prepare the digestion mixtures in PCR tube：
+1. Prepare the digestion mixtures in PCR tube: 
 
    |       |           Reagent           |    Volume (&mu;L)    |
    | :---: | :-------------------------: | :------------------: |

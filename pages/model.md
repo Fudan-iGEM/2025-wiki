@@ -189,7 +189,7 @@ def u_birth_pulse(t_since_div: float, pulse_width: float, pulse_amp: float,
 - **I**: Intermediate-state concentration
 - **R**: Red-state concentration
 
-- **Output reading**：$r(t) = \frac{R}{B + R}$
+- **Output reading**: $r(t) = \frac{R}{B + R}$
 
 ### 3) Kinetic Equations
 
@@ -793,11 +793,11 @@ For detailed setup instructions and technical requirements, please refer to the 
 
 ## Code and Data Accessibility
 
-Periodic Promoter vs Constitutive Promoter Part：[ft_compare_promoters.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/ft_compare_promoters.py)
+Periodic Promoter vs Constitutive Promoter Part: [ft_compare_promoters.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/ft_compare_promoters.py)
 
-Strong Promoter vs Weak Promoter Part：[df_strength.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/df_strength.py)
+Strong Promoter vs Weak Promoter Part: [df_strength.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/df_strength.py)
 
-Result Part：[FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py)
+Result Part: [FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py)
 
 AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_DeepSeek_Assistant.json), [Qwen Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_Qwen_Assistant.json)
 

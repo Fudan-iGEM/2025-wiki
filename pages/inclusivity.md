@@ -12,7 +12,7 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity
 description: Through intersectional practices, we build an inclusive scientific community, bringing groups underrepresented in science like those with rare disease Epidermolysis Bullosa (EB patients) into science.
 ---
 
-## Summary： Intersectional Echoes
+## Summary:  Intersectional Echoes
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -41,7 +41,7 @@ Not just “How can we help marginalized groups in science” but “How can par
 ------
 
 
-### Our highlights ✨ 
+### Our highlights ✨
 
 **1.   What systemic barriers did we identify?**
 We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face [three intertwined barriers](https://2025.igem.wiki/fudan/inclusivity.html#_0-1-our-initial-framework-and-primary-target-group): they are unseen, voiceless, and excluded from participation. We have discovered the potential for their [intersectional](https://2025.igem.wiki/fudan/inclusivity.html#_1-2-improving-our-theoretical-framework-intersectionality) identities to engage in scientific affairs.
@@ -126,7 +126,7 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 
 
 
-### 0.2 The three-step model: Visibility → Empowerment → Involvement 
+### 0.2 The three-step model: Visibility → Empowerment → Involvement
 
 To address these barriers, we propose the **Visibility &rarr; Empowerment &rarr; Involvement** model of inclusive science.
 
@@ -159,7 +159,7 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Objective：</strong></div>
+    <div class="section-title"><strong>Objective: </strong></div>
     <p>To address the issue of invisibility and bring the existence and needs of EB patients into the view of the public and the scientific community.</p>
   </div>
 
@@ -349,7 +349,7 @@ We first conducted a **quantitative questionnaire survey**, Participants answer 
 | 4.I believe the complexity of symptoms and physical sensations I experienced are not adequately captured in current healthcare processes, scientific research, and drug development. | 1.93 |
 | 5.In my studies, work, and daily life, I have felt misunderstood, judged, or needed to hide my physical condition due to fungal issues in order to participate in certain activities. | 2.20 |
 
-This table contains both positively and reverse-scored items. Specifically: **Items 1-3 are positively scored**, where a higher score indicates stronger agreement or a more positive evaluation of the healthcare experience. **Items 4 and 5 are reverse-scored**, where a higher score indicates greater dissatisfaction with the current situation or more frequent negative experiences. Results showed that：
+This table contains both positively and reverse-scored items. Specifically: **Items 1-3 are positively scored**, where a higher score indicates stronger agreement or a more positive evaluation of the healthcare experience. **Items 4 and 5 are reverse-scored**, where a higher score indicates greater dissatisfaction with the current situation or more frequent negative experiences. Results showed that: 
 
 - The majority had experienced *misunderstanding and stigma* due to fungal problems.（Q5=2.20）
 - Most participants felt that medical experiences strongly influenced their willingness to seek care, and that current clinical experiences required improvement.（Q1=3.41，Q4=1.93）

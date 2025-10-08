@@ -28,7 +28,7 @@ To determine the temporal sequence of growth and identify mother–daughter rela
     <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp">  
     <small>Figure 1. Chitin Imaging of 2x and 4x Grape Yeast</small>
   </p>
-  <!-- 第二段：靠左，紧贴上一行 -->
+  <!-- 第二段: 靠左，紧贴上一行 -->
   <p style="text-align:left; margin:0; color:gray;">
   <small>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.</small>
   </p>

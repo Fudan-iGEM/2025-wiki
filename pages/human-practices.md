@@ -10,9 +10,10 @@ description: On this page, we
 ---
 
 > “Our technology has exceeded our humanity.”
-> ——Albert Einstein
+> 
+> -- Albert Einstein
 
-Human Practices (HP) is not just a set of activities—it is a lens through which we critically examine the impact of synthetic biology on society. For our iGEM 2025 journey, HP became a path of reflection, dialogue, and iterative learning.
+Human Practices (HP) is not just a set of activities — it is a lens through which we critically examine the impact of synthetic biology on society. On our iGEM journey, HP became a path of reflection, dialogue, and iterative learning.
 
 ## What's Wrong with Our Technology?
 
@@ -34,127 +35,105 @@ This simple yet profound doubt prompted us to pause and reflect. Through this ac
 
 This reflection naturally led us to examine our own project. We asked: how can we ensure that the technologies we develop provide real societal benefits rather than unintended problems? Guided by these questions, we embarked on further exploration and practical efforts, designing our project to not only advance science but also respond meaningfully to human needs and ethical considerations.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="zoom: 33%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%" />
 
 ## The Potential of Multicellular Yeast?
 
-With this philosophical foundation, we turned to the scientific heart of our project: **multicellular yeast** as a platform for dynamic screening of antibiotic-resistance targets. Our discussions with experts helped us shape the idea and define its scientific and societal significance.
+With this philosophical foundation, we turned to the scientific core of our project: **multicellular yeast** as a platform for dynamic screening of antibiotic-resistance targets. Our discussions with experts helped us shape the idea and define its scientific and societal significance.
 
-### Interview with Dr. Boxun Lu
+### Discussion with Dr. Boxun Lu
 
->**Date:** January 15th, 2025
->**Respondent :** Dr. Boxun Lu
->**Respondent Profile:**
->Researcher @ Department of Neurobiology, School of Life Sciences, Fudan University
-Neurodegenerative diseases; Original drug development strategies
->
->![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/boxun-lu.webp)
->
->**Topic：**
->**Key Takeaways：**
->
-> Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an “AI Yeast System.” Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
->
-> His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model Page](https://2025.igem.wiki/fudan/model.html)).
-> After extensive discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are developing today.
+**Date:** January 15th, 2025
 
-------
+**Respondent:** Dr. Boxun Lu
+
+**Respondent Profile:** Researcher @ Department of Neurobiology, School of Life Sciences, Fudan University; Study neurodegenerative diseases, develop original drug development strategies
+
+![](https://static.igem.wiki/teams/5643/pageimage/ihp/boxun-lu.webp)
+
+**Key Takeaways:**  Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an “AI Yeast System”. Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
+
+His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model](/model/) page). After extensive internal discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are presenting today.
 
 
+### Discussion with Dr. Hengchi Chen
 
-### Interview with Dr.Hengchi Chen
+**Date:** March 7th, 2025
 
-> **Date:** March 7th, 2025
-> **Respondent:** Dr. Hengchi Chen
-> **Respondent Profile:** Postdoctoral Researcher @ the University of Göttingen, Ecology
->
-> ---
->
-> **Topic:** The Rise of Polyploids During Environmental Catastrophes
-> **Key Takeaways:**
->
-> - ------
->
->   Polyploidy did not arise randomly but surged during major environmental upheavals such as the K–Pg mass extinction, suggesting that climate change may promote the emergence and survival of polyploids.
->
-> - Dr. Chen found the idea of using multicellular yeast as a new chassis fascinating, but he reminded us that the story needed to flow more clearly. He advised us to anchor the project in a concrete situation where multicellular yeast is crucial for tackling new crisis, and to make sure its structural stability is convincingly supported.
->
-> - Conversations with people familiar with the field gave us fresh perspectives. Their feedback not only clarified our goals but also inspired us to look deeper into why multicellular yeast matters and what it could contribute to research on antifungal resistance.
+**Respondent:** Dr. Hengchi Chen
 
-------
+**Respondent Profile:** Postdoctoral Researcher @ the University of Göttingen, Ecology
+
+**Topic:** The Rise of Polyploids During Environmental Catastrophes
+
+> Polyploidy did not arise randomly but surged during major environmental upheavals such as the K–Pg mass extinction, suggesting that climate change may promote the emergence and survival of polyploids.
+
+- Dr. Chen found the idea of using multicellular yeast as a new chassis fascinating, but he reminded us that the story needed to flow more clearly. He advised us to anchor the project in a concrete situation where multicellular yeast is crucial for tackling new crisis, and to make sure its structural stability is convincingly supported.
+- Conversations with people familiar with the field gave us fresh perspectives. Their feedback not only clarified our goals but also inspired us to look deeper into why multicellular yeast matters and what it could contribute to research on antifungal resistance.
 
 
+### Email exchange with Dr. Willim Ratcliff
 
-### Interview with Dr. Willim Ratcliff
+**Date:** March-April, 2025
 
-> **Date:** March-April, 2025
-> **Respondent:** Dr. Willim Ratcliff
-> **Respondent Profile:** Assistant Professor @ Georgia Institute of Technology, Major transitions in evolution (mainly multicellularity)
->
-> ---
->
-> **Topic:** Re: Students from Fudan University,China want to get involved in the http://snowflakeyeastlab.com/
-> **Key Takeaways:**
->
-> - Prof. Ratcliff offered invaluable insights during the early stages of our project. He encouraged us to think creatively with the concept of multicellular yeast and to keep improving and expanding upon our initial ideas.
-> - The outreach lab organized by Prof. Ratcliff greatly inspired us by demonstrating how even complex scientific concepts developed in laboratories can be simplified and shared with the public, thereby promoting accessibility and ensuring equal opportunities for quality education.
+**Respondent:** Dr. Willim Ratcliff
 
-------
+**Respondent Profile:** Assistant Professor @ Georgia Institute of Technology, Major transitions in evolution (mainly multicellularity)
+
+**Topic:** Re: Students from Fudan University,China want to get involved in the http://snowflakeyeastlab.com/
+
+**Key Takeaways:**
+
+- Prof. Ratcliff offered invaluable insights during the early stages of our project. He encouraged us to think creatively with the concept of multicellular yeast and to keep improving and expanding upon our initial ideas.
+- The outreach lab organized by Prof. Ratcliff greatly inspired us by demonstrating how even complex scientific concepts developed in laboratories can be simplified and shared with the public, thereby promoting accessibility and ensuring equal opportunities for quality education.
 
 
+### Discussion with Prof. Guanghua Huang
 
-### Interview with Prof. Guanghua Huang
+**Date:** April 15th, 2025
 
-> **Date:** April 15th, 2025
-> **Respondent:** Prof. Guanghua Huang
-> **Respondent Profile:** Executive Director @ Department of Microbiology and Immunology, School of Life Sciences, Fudan University; The morphological development, pathogenic mechanism, drug resistance mechanism and new drug screening et a. lof pathogenic Candida species in humans
->
-> ---
->
-> **Topic:** Antifungal Resistance Research and Project Positioning
-> **Key Takeaways:**
->
-> ![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/guanghua-huang.webp)
->
-> After confirming our project’s direction—tracking antifungal resistance mutations—we aimed to gain a deeper understanding of the current landscape of antifungal resistance research. This would help us position our work within existing advances while identifying opportunities for meaningful innovation.
->
-> ### What We Gained?
->
-> Professor Huang’s insights, grounded in years of expertise in fungal resistance, provided us with both direction and inspiration:
->
-> - **Defining project focus:** He emphasized distinguishing between basic biological research and engineering application. The multicellular yeast system, he noted, may exhibit enhanced resistance due to intercellular cooperation—a property advantageous for industrial fermentation and drug screening applications.
-> - **Building resistance models:** Resistance evolution can be effectively modeled through gene knockout of resistance-related loci or drug-induced selection, mirroring how clinical fungal pathogens acquire resistance.
-> - **Optimizing experimental design:** Techniques such as *ultrasonic dispersion* can facilitate the transition from multicellular clusters to single cells, while *streptomycin resistance markers* can streamline the selection process.
->
-> In conclusion, Professor Huang encouraged us to select clinically relevant antifungal drugs and integrate synthetic biology tools to capture and record the mutation trajectories underlying resistance development.
+**Respondent:** Prof. Guanghua Huang
 
-------
+**Respondent Profile:** Executive Director @ Department of Microbiology and Immunology, School of Life Sciences, Fudan University; Study fungi morphological development, pathogenic mechanism, drug resistance mechanism and new drug screening of pathogenic *Candida* species in humans
+
+![](https://static.igem.wiki/teams/5643/pageimage/ihp/guanghua-huang.webp)
 
 
+**Topic:** Antifungal Resistance Research and Project Positioning
 
-### Interview with Prof. Liping Zhu
+**Key Takeaways:**
 
-> **Date:** May 13th, 2025
-> **Respondent:** Prof. Liping Zhu
-> **Respondent Profile:** Expert in Clinical Mycology and Antifungal Resistance
->
-> ---
->
-> **Topic:** Bridging Basic Research and Clinical Needs in Antifungal Resistance
-> **Key Takeaways:**
->
-> ![TOC](https://static.igem.wiki/teams/5643/pageimage/ihp/liping-zhu.webp)
->
-> - Prof. Zhu began by emphasizing the growing global challenge of antifungal resistance. Multidrug-resistant species such as Candida auris and Candida glabrata are spreading rapidly, while the number of immunocompromised patients—such as cancer and organ transplant recipients—continues to rise.In his words, “We must focus on the fungi that truly matter in clinical settings.” This statement reminded us that basic research must always maintain a clear line of sight to clinical needs.
-> - Prof. Zhu’s guidance helped us rethink the positioning of our multicellular yeast platform. He proposed that our platform could serve as a drug pre-screening system, provided that we also address the challenge of translating results to clinical pathogens.
-> - Prof. Zhu also reminded us that successful research depends on feasibility and collaboration. He encouraged us to conduct clear feasibility analyses, define our goals, and build interdisciplinary partnerships with clinicians, microbiologists, and engineers. He stressed that research should be viewed as a long-term, collaborative journey rather than a short-term competition.
-> - We incorporated his advice by reaching out to medical researchers for cross-disciplinary input on experimental design.His words strengthened our commitment to developing a project that bridges science and service, making our research not only technically innovative but also socially meaningful.
+After confirming our project’s direction—tracking antifungal resistance mutations—we aimed to gain a deeper understanding of the current landscape of antifungal resistance research. This would help us position our work within existing advances while identifying opportunities for meaningful innovation.
 
-------
+Professor Huang’s insights, grounded in years of expertise in fungal resistance, provided us with both direction and inspiration:
+
+- **Defining project focus:** He emphasized distinguishing between basic biological research and engineering application. The multicellular yeast system, he noted, may exhibit enhanced resistance due to intercellular cooperation—a property advantageous for industrial fermentation and drug screening applications.
+- **Building resistance models:** Resistance evolution can be effectively modeled through gene knockout of resistance-related loci or drug-induced selection, mirroring how clinical fungal pathogens acquire resistance.
+- **Optimizing experimental design:** Techniques such as *ultrasonic dispersion* can facilitate the transition from multicellular clusters to single cells, while *streptomycin resistance markers* can streamline the selection process.
+
+In conclusion, Professor Huang encouraged us to select clinically relevant antifungal drugs and integrate synthetic biology tools to capture and record the mutation trajectories underlying resistance development.
 
 
+### Discussion with Prof. Liping Zhu
 
-### Suzhou Biopharmaceutical Technology Conference
+**Date:** May 13th, 2025
+
+**Respondent:** Prof. Liping Zhu
+
+![](https://static.igem.wiki/teams/5643/pageimage/ihp/liping-zhu.webp)
+
+**Respondent Profile:** Expert in Clinical Mycology and Antifungal Resistance
+
+**Topic:** Bridging Basic Research and Clinical Needs in Antifungal Resistance
+
+**Key Takeaways:**
+
+- Prof. Zhu began by emphasizing the growing global challenge of antifungal resistance. Multidrug-resistant species such as Candida auris and Candida glabrata are spreading rapidly, while the number of immunocompromised patients—such as cancer and organ transplant recipients—continues to rise.In his words, “We must focus on the fungi that truly matter in clinical settings.” This statement reminded us that basic research must always maintain a clear line of sight to clinical needs.
+- Prof. Zhu’s guidance helped us rethink the positioning of our multicellular yeast platform. He proposed that our platform could serve as a drug pre-screening system, provided that we also address the challenge of translating results to clinical pathogens.
+- Prof. Zhu also reminded us that successful research depends on feasibility and collaboration. He encouraged us to conduct clear feasibility analyses, define our goals, and build interdisciplinary partnerships with clinicians, microbiologists, and engineers. He stressed that research should be viewed as a long-term, collaborative journey rather than a short-term competition.
+- We incorporated his advice by reaching out to medical researchers for cross-disciplinary input on experimental design.His words strengthened our commitment to developing a project that bridges science and service, making our research not only technically innovative but also socially meaningful.
+
+### Attend Suzhou Biopharmaceutical Technology Conference
 
 > **Date:** June 27th, 2025
 > **Respondent:** Suzhou Biopharmaceutical Technology Conference Participants
@@ -355,8 +334,8 @@ HP is most meaningful when it connects scientific work with society. To understa
 >
 >---
 >
->**Topic：**Human Practices Exchange
->**Key Takeaways**：
+>**Topic:** Human Practices Exchange
+>**Key Takeaways**: 
 >
 >- Main challenges in Human Practices (HP): limited audience engagement and difficulty linking outreach to core project goals. Suggested solutions: collaborate with more iGEM teams, expand communication channels, involve professionals for expert insights.
 >- Common reflection: evaluating whether HP work is genuinely beneficial to society versus performing outreach just to complete HP tasks.
@@ -374,8 +353,8 @@ HP is most meaningful when it connects scientific work with society. To understa
 >
 >---
 >
->**Topic：**
->**Key Takeaways：**
+>**Topic:** 
+>**Key Takeaways:** 
 
 ------
 
@@ -389,8 +368,8 @@ HP is most meaningful when it connects scientific work with society. To understa
 >
 > ---
 >
-> **Topic：**
-> **Key Takeaways：**
+> **Topic:** 
+> **Key Takeaways:** 
 
 ------
 
@@ -418,7 +397,7 @@ As we developed our project, we recognized the importance of establishing ethica
 >
 > During our internal testing, we noticed a clear discrepancy: the 2024 gold medal team JU-Krakow scored lower than two nominated teams — a result inconsistent with actual competition outcomes. To address this, we sought Professor Hong’s insights on diagnosing and improving the evaluation system.  
 >
-> ### What we Gained?  
+> ### What we Gained?
 >
 > - **Data Awareness — “Does the AI know enough?”**  
 >   Professor Hong emphasized the importance of confirming what the AI actually *knows*.“For every score, ask *why*. Verify whether the AI has accessed the relevant information,” he advised.He suggested approaching debugging like a computer scientist: systematically checking whether the AI is using the same data foundation as human judges.“You can simply ask the AI if it knows certain details about each team. If not, provide that information explicitly.”  
@@ -509,8 +488,8 @@ The ultimate goal of technology is to serve people. We expanded our perspective 
 >
 > ---
 >
-> **Topic：** Commercialization of the Visualization Tracking Platform
-> **Key Takeaways：**
+> **Topic:**  Commercialization of the Visualization Tracking Platform
+> **Key Takeaways:** 
 >
 > - **Differentiated Pricing Strategy:** It is recommended to adopt a multi-tiered pricing model. This could include a low-cost basic software package to attract early adopters, alongside a premium, high-priced "enterprise edition" that includes dedicated technical support, custom analysis, and regular updates. The goal is to capture different segments of the CRO market.
 > - **Focus on Financial Metrics & Value Proposition:** Investors pay close attention to a company's financial health. The business plan must clearly outline the path to profitability. It is crucial to quantitatively demonstrate how the platform can help CRO clients reduce R&D cycles, lower costs, or increase success rates, translating the technical advantage into clear financial value.
@@ -537,8 +516,8 @@ The ultimate goal of technology is to serve people. We expanded our perspective 
 >
 > ---
 >
-> **Topic：** Medical Space Design and Wayfinding Systems
-> **Key Takeaways：**
+> **Topic:**  Medical Space Design and Wayfinding Systems
+> **Key Takeaways:** 
 > We have a better understand of how to strike a balance  healthcare efficiency and patient-centered care in scienfic perspectives.
 >
 > - Environmental controls (e.g., ICU fungal limits) are strict in China, sometimes at the expense of humanistic elements.
@@ -565,9 +544,10 @@ The ultimate goal of technology is to serve people. We expanded our perspective 
 
 
 > “Concern for man himself and his fate must always form the chief interest of all technical endeavors… in order that the creations of our mind shall be a blessing and not a curse to mankind.”
-> ——Albert Einstein
+> 
+> -- Albert Einstein
 
-##  
+## 
 
 ## Summary
 
