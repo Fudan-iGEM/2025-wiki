@@ -100,13 +100,11 @@ const scene6Lotties = {
   item4: 'https://static.igem.wiki/teams/5643/img/homepage/6-4.json'
 }
 
-const initialScene2Dialogs = [
+const dialogs = ref([
   { id: 0, text: 'It’s the year of 2333, a formidable Crisis has swept over the world—antimicrobial resistance.', isInput: false },
   { id: 1, text: 'Invasive fungal infections affecting billions of people worldwide are getting fatal while effective drugs are severely shrinking. ', isInput: false },
   { id: 2, text: 'Why is all this happening? How could I help?', isInput: true }
-]
-const createInitialScene2Dialogs = () => initialScene2Dialogs.map(dialog => ({ ...dialog }))
-const dialogs = ref(createInitialScene2Dialogs())
+])
 
 const scene5Items = ref([
   { id: 1, order: 'lottie-first', lottieUrl: scene5Lotties.item1, title: 'Fluoresence-based Detection', description: 'A novel platform for screening drug-resistant gene mutations' },
@@ -144,10 +142,6 @@ const dialogBoxRefs = reactive({})
 const isSendEnabled = ref(false)
 const isSendActive = ref(false)
 const hasSendTriggered = ref(false)
-const scene2ContentHidden = ref(false)
-let scene2SequenceActive = false
-const scene2CleanupCallbacks = []
-let scene2DoctorRepliesCleanup = null
 
 const scrollPromptVisible = ref(false)
 const scrollPromptMode = ref('none')
@@ -216,20 +210,18 @@ const activateSendPrompt = () => {
 }
 
 const fadeOutInitialDialogs = () => {
-  if (!scene2SequenceActive) return null
-
   const idsToRemove = dialogs.value
     .filter(dialog => dialog.id <= 2)
     .map(dialog => dialog.id)
 
-  if (!idsToRemove.length) return null
+  if (!idsToRemove.length) return
 
   const elements = idsToRemove
     .map(id => dialogBoxRefs[id])
     .filter(Boolean)
 
   if (elements.length) {
-    return gsap.to(elements, {
+    gsap.to(elements, {
       autoAlpha: 0,
       y: -12,
       duration: 0.35,
@@ -240,11 +232,10 @@ const fadeOutInitialDialogs = () => {
         idsToRemove.forEach(id => delete dialogBoxRefs[id])
       }
     })
+  } else {
+    dialogs.value = dialogs.value.filter(dialog => !idsToRemove.includes(dialog.id))
+    idsToRemove.forEach(id => delete dialogBoxRefs[id])
   }
-
-  dialogs.value = dialogs.value.filter(dialog => !idsToRemove.includes(dialog.id))
-  idsToRemove.forEach(id => delete dialogBoxRefs[id])
-  return null
 }
 
 const handleSendClick = () => {
@@ -253,84 +244,47 @@ const handleSendClick = () => {
   isSendActive.value = false
   isSendEnabled.value = false
 
-  scene2SequenceActive = true
-  clearScene2Cleanup()
-
-  const sendButton = getSendButtonEl()
-  if (sendButton) {
-    const hideSendTween = gsap.to(sendButton, { autoAlpha: 0, scale: 0.5, duration: 0.3, ease: 'power2.in' })
-    registerScene2Cleanup(() => hideSendTween.kill())
-  }
-  const promptEl = scene2ComponentRef.value?.scene2Ref?.querySelector('.crisis-dialog__send-prompt')
-  if (promptEl) {
-    const hidePromptTween = gsap.to(promptEl, { autoAlpha: 0, duration: 0.3 })
-    registerScene2Cleanup(() => hidePromptTween.kill())
-  }
+  gsap.to(getSendButtonEl(), { autoAlpha: 0, scale: 0.5, duration: 0.3, ease: 'power2.in' })
+  gsap.to(scene2ComponentRef.value?.scene2Ref?.querySelector('.crisis-dialog__send-prompt'), { autoAlpha: 0, duration: 0.3 })
 
   const userInputDialog = dialogs.value.find(d => d.isInput)
   if (userInputDialog) {
     userInputDialog.text = 'We need a new approach. What are our options?'
     userInputDialog.isInput = false
-    const typingTween = gsap.to(dialogBoxRefs[userInputDialog.id], { duration: 1.5, text: userInputDialog.text, ease: 'none' })
-    registerScene2Cleanup(() => typingTween.kill())
+    gsap.to(dialogBoxRefs[userInputDialog.id], { duration: 1.5, text: userInputDialog.text, ease: 'none' })
   }
 
   scene2AnimationUrl.value = scene2Lotties.crisis2
   scene2Loop.value = true
   nextTick(() => scene2ComponentRef.value?.lottie2Ref?.play())
 
-  const fadeInitialDialogsDelay = gsap.delayedCall(1.2, () => {
-    if (!scene2SequenceActive) return
-    const fadeTween = fadeOutInitialDialogs()
-    if (fadeTween) {
-      registerScene2Cleanup(() => fadeTween.kill())
-    }
-  })
-  registerScene2Cleanup(() => fadeInitialDialogsDelay.kill())
+  gsap.delayedCall(1.2, fadeOutInitialDialogs)
 
   // --- SCENE 3: Doctor Replies ---
-  scene2DoctorRepliesCleanup = triggerDoctorReplies(dialogs, dialogBoxRefs, () => scene2SequenceActive)
-  registerScene2Cleanup(() => {
-    scene2DoctorRepliesCleanup?.()
-    scene2DoctorRepliesCleanup = null
-  })
+  triggerDoctorReplies(dialogs, dialogBoxRefs)
   
   // 标记第三幕动画完成 - 在第二段回复完成后
-  const scene3CompleteDelay = gsap.delayedCall(6.0, () => {
-    if (!scene2SequenceActive) return
+  gsap.delayedCall(6.0, () => {
     scene3AnimationComplete.value = true
   })
-  registerScene2Cleanup(() => scene3CompleteDelay.kill())
 
   // --- TRANSITION TO SCENE 4 ---
-  const transitionDelay = gsap.delayedCall(7.5, () => {
-    if (!scene2SequenceActive) return
-    const dialogElements = Object.values(dialogBoxRefs)
-    const fadeDialogsTween = gsap.to(dialogElements, {
-      autoAlpha: 0,
-      y: -20,
-      duration: 0.4,
-      stagger: 0.1,
+  gsap.delayedCall(7.5, () => {
+    gsap.to(Object.values(dialogBoxRefs), {
+      autoAlpha: 0, y: -20, duration: 0.4, stagger: 0.1,
       onComplete: () => {
-        if (!scene2SequenceActive) return
         dialogs.value = []
-        const hideTween = setScene2ContentVisibility(false)
-        if (hideTween) {
-          hideTween.eventCallback('onComplete', () => {
-            if (!scene2SequenceActive) return
+        gsap.to(scene2ComponentRef.value?.scene2ContentRef, {
+          autoAlpha: 0,
+          duration: 0.5,
+          onComplete: () => {
+            gsap.set(scene2ComponentRef.value?.scene2ContentRef, { display: 'none' })
             setupScene4()
-            scene2SequenceActive = false
-          })
-          registerScene2Cleanup(() => hideTween.kill())
-        } else {
-          setupScene4()
-          scene2SequenceActive = false
-        }
+          }
+        })
       }
     })
-    registerScene2Cleanup(() => fadeDialogsTween.kill())
   })
-  registerScene2Cleanup(() => transitionDelay.kill())
 }
 
 const showScrollPrompt = (mode) => {
@@ -368,129 +322,6 @@ watch(scene4BallPlaced, (placed) => {
   }
 })
 
-const registerScene2Cleanup = (cleanup) => {
-  if (typeof cleanup === 'function') {
-    scene2CleanupCallbacks.push(cleanup)
-  }
-}
-
-const clearScene2Cleanup = () => {
-  while (scene2CleanupCallbacks.length) {
-    const cleanup = scene2CleanupCallbacks.pop()
-    try {
-      cleanup()
-    } catch (error) {
-      console.warn('Failed to clear Scene 2 cleanup callback.', error)
-    }
-  }
-  scene2DoctorRepliesCleanup = null
-}
-
-const setScene2ContentVisibility = (shouldShow, { immediate = false } = {}) => {
-  const contentEl = scene2ComponentRef.value?.scene2ContentRef
-  if (!contentEl) return null
-
-  if (shouldShow) {
-    if (!scene2ContentHidden.value && !immediate) return null
-    if (immediate) {
-      gsap.set(contentEl, { display: '', autoAlpha: 1 })
-    } else {
-      gsap.set(contentEl, { display: '' })
-      gsap.to(contentEl, { autoAlpha: 1, duration: 0.4, ease: 'power2.out' })
-    }
-    scene2ContentHidden.value = false
-    return null
-  }
-
-  if (scene2ContentHidden.value) return null
-
-  const tween = gsap.to(contentEl, {
-    autoAlpha: 0,
-    duration: 0.5,
-    ease: 'power2.in',
-    onComplete: () => {
-      gsap.set(contentEl, { display: 'none' })
-    }
-  })
-  scene2ContentHidden.value = true
-  return tween
-}
-
-const resetScene2Dialogs = () => {
-  dialogs.value = createInitialScene2Dialogs()
-  Object.keys(dialogBoxRefs).forEach(key => {
-    delete dialogBoxRefs[key]
-  })
-}
-
-const resetScene2InteractionState = ({ resetProgressFlags = false } = {}) => {
-  resetScene2Dialogs()
-  isSendEnabled.value = false
-  isSendActive.value = false
-  hasSendTriggered.value = false
-  const sendButton = getSendButtonEl()
-  if (sendButton) {
-    gsap.set(sendButton, { autoAlpha: 0, scale: 0.9 })
-  }
-  const promptText = scene2ComponentRef.value?.scene2Ref?.querySelector('.crisis-dialog__send-prompt')
-  if (promptText) {
-    gsap.set(promptText, { autoAlpha: 0, y: 10 })
-  }
-  scene2Loop.value = false
-  scene2AnimationUrl.value = ''
-  hasScene2Played = false
-  scene2Timeline?.kill()
-  scene2Timeline = null
-  if (resetProgressFlags) {
-    scene3AnimationComplete.value = false
-    scene4BallPlaced.value = false
-  }
-}
-
-const resetScene4State = () => {
-  const scene4 = scene4ComponentRef.value
-  if (!scene4) return
-
-  Draggable.get(scene4.glowingBallRef)?.kill()
-
-  const resetTargets = [
-    scene4.scene4LeftBoxRef,
-    scene4.dropTargetRef,
-    scene4.glowingBallRef
-  ].filter(Boolean)
-  if (resetTargets.length) {
-    gsap.set(resetTargets, { clearProps: 'all' })
-  }
-
-  if (scene4.scene4ContainerRef) {
-    scene4.scene4ContainerRef.style.display = ''
-    gsap.set(scene4.scene4ContainerRef, { autoAlpha: 0 })
-  }
-
-  scene4AnimationUrl.value = ''
-}
-
-const resetScene2ForRewind = () => {
-  if (!scene2ContentHidden.value && !hasSendTriggered.value && !scene3AnimationComplete.value && !scene4BallPlaced.value) {
-    return
-  }
-
-  scene2SequenceActive = false
-  clearScene2Cleanup()
-  resetScene2InteractionState({ resetProgressFlags: true })
-  setScene2ContentVisibility(true, { immediate: true })
-
-  const scene2 = scene2ComponentRef.value
-  if (scene2) {
-    const avatar = scene2.scene2Ref?.querySelector('.crisis-dialog__avatar')
-    if (avatar) {
-      gsap.set(avatar, { autoAlpha: 0 })
-    }
-  }
-
-  resetScene4State()
-}
-
 const setupScene4 = () => {
   const scene4 = scene4ComponentRef.value
   if (!scene4) return
@@ -501,10 +332,6 @@ const setupScene4 = () => {
   const target = scene4.dropTargetRef
   const originalBoxShadow = '0 0 30px 10px rgba(255, 154, 0, 0.55)'
   const brighterBoxShadow = '0 0 50px 20px rgba(255, 180, 0, 0.75)'
-
-  if (ball) {
-    Draggable.get(ball)?.kill()
-  }
 
   if (scene4.scene4LeftBoxRef) {
     // 清空标题内容并隐藏副标题，准备打字与显现动画
@@ -610,12 +437,13 @@ const setupInitialStates = () => {
   gsap.set(scene1.subtitleWrapperRef, { y: 24, autoAlpha: 0 })
   gsap.set(Object.values(dialogBoxRefs), { autoAlpha: 0, y: 20 })
   gsap.set(scene2.scene2Ref.querySelector('.crisis-dialog__avatar'), { autoAlpha: 0 })
-  scene2SequenceActive = false
-  clearScene2Cleanup()
-  resetScene2InteractionState({ resetProgressFlags: true })
-  setScene2ContentVisibility(true, { immediate: true })
-  scene2ContentHidden.value = false
-  gsap.set(scene2.scene2Ref.querySelector('.crisis-dialog__send-prompt'), { autoAlpha: 0 })
+  isSendEnabled.value = false
+  isSendActive.value = false
+  hasSendTriggered.value = false
+  scene2Loop.value = false
+  scene4BallPlaced.value = false
+  gsap.set(getSendButtonEl(), { autoAlpha: 0, scale: 0.9 })
+  gsap.set(scene2.scene2Ref.querySelector('.crisis-dialog__send-prompt'), { autoAlpha: 0 });
   scrollPromptVisible.value = false
   scrollPromptMode.value = 'none'
   initialScrollPromptShown.value = false
@@ -713,7 +541,6 @@ const setupScrollAnimation = () => {
                   scene4.dropTargetRef
                 ], { x: '-120%', autoAlpha: 0, duration: 0.45, ease: 'power2.in', overwrite: 'auto' })
               }
-              resetScene2ForRewind()
             }
           }
         }
@@ -817,9 +644,6 @@ onBeforeUnmount(() => {
   document.body.style.overflow = ''
   mainTimeline?.kill()
   scene2Timeline?.kill()
-  scene2Timeline = null
-  scene2SequenceActive = false
-  clearScene2Cleanup()
   const scene4 = scene4ComponentRef.value
   if (scene4 && scene4.glowingBallRef) {
       Draggable.get(scene4.glowingBallRef)?.kill()

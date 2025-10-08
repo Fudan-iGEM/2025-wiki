@@ -523,7 +523,7 @@ Other minor parameters are detailed in the source code.
         <br><br>
     </div>
 
-### 3D Fluorescent Timer Maturation Visualization
+### 3D Fluorescent Timer Maturation
 
 This module visualizes the spatiotemporal maturation of Fast-FT proteins within the "Grape Yeast" cluster, integrating the core ordinary differential equation framework for mRNA transcription, protein synthesis, and state transitions (C &rarr; B &rarr; I &rarr; R). It simulates fluorescence color shifts over cell cycles. Users interact via OrbitControls for 3D navigation, clicking cells to inspect maturation states (e.g. r-ratio). The tool supports speed adjustments (1× default) and displays real-time stats like average maturation stage and total cells, facilitating optimization of promoter pulses and inheritance fractions for lineage tracing in multicellular contexts.
 
@@ -755,6 +755,28 @@ def additional_regulation(t, y, p):
 ```
 
 The entire model is built with a modular design, ensuring good readability and extensibility. Users can flexibly adjust parameters or modify functional modules according to their specific needs. It is recommended to conduct a systematic virtual screening before major experimental investments, as this can save valuable experimental resources and time and significantly improve research efficiency by "failing on silicon" rather than in the laboratory.
+
+### 7. Interactive 3D Visualization Exploration
+
+**Use Case:** Visually explore the 3D growth dynamics of multicellular yeast and the spatiotemporal maturation of fluorescent timer proteins, providing an intuitive understanding of system behavior and facilitating hypothesis generation.
+
+The YeastVerse platform offers two interactive 3D visualization tools that allow users to simulate and observe key aspects of the multicellular yeast chassis and fluorescent timer dynamics in real-time. These tools are built using React.js and Three.js, and they help bridge the gap between abstract mathematical models and biological intuition by providing visual, spatially explicit representations.
+
+**Example Workflow:**
+
+- For 3D Yeast Growth Simulation:
+
+  > - Start the simulation and observe how the yeast cluster grows from a single cell to a multicellular structure.
+  > - Note the branching patterns and cell arrangements in "Grape" vs. "normal" yeast, which can inform the design of the multicellular chassis for drug resistance evolution studies.
+  > - Key growth parameters are user-adjustable, allowing for the customization of simulations to explore morphological outcomes under different hypothetical conditions.
+
+- For 3D Fluorescent Timer Maturation:
+
+  > - Run the maturation simulation and watch the color changes in the population over time.
+  > - Click on cells at different positions in the cluster to compare their maturation states, which can help validate the inheritance and maturation logic in a spatial context.
+  > - The underlying maturation kinetics and promoter parameters can be modified, enabling researchers to tailor the simulation for different fluorescent protein variants or experimental scenarios.
+
+For detailed setup instructions and technical requirements, please refer to the [YeastVerse README](https://gitlab.igem.org/2025/fudan/-/blob/main/model/YeastVerse/README.md). The visualization platform runs directly in modern web browsers, making it accessible to researchers without specialized computational resources.
 
 ## Code and Data Accessibility
 
