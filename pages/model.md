@@ -597,7 +597,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
 
   - Using temperature-dependent maturation kinetics derived from [Q₁₀](#fast-ft-time-parameter-calculation) calculations to adjust Fast-FT[^1] times for 30°C.
   - Adjusting the Ash1_AIpro[^7] promoter to express during the late M phase in our model to match biological evidence.
-  - Revising protein inheritance logic to allow immature C-state proteins to be almost fully transferred to daughter cells, and mature in the daughter cells produced after a cell division[^8].
+  - Revising protein inheritance logic to allow immature C-state proteins to be almost fully transferred to daughter cells, and mature in the daughter cells produced after a cell division[^8][^13].
   
 - **Test (2025.08–09):**
   The predictions of the refined model were subsequently tested through [wet-lab experiments](#). The results confirmed the computational forecasts:
@@ -782,3 +782,4 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 [^10]: Fukuda, N. Apparent diameter and cell density of yeast strains with different ploidy. *Sci Rep* **13**, 1513 (2023). DOI: 10.1038/s41598-023-28800-z
 [^11]: Alalam, H., Zepeda-Martínez, J. A., & Sunnerhagen, P. (2022). Global SLAM-seq for accurate mRNA decay determination and identification of NMD targets. *RNA*, *28*(6), 905-915. DOI: 10.1261/rna.079077.121
 [^12]: Arrhenius, S. (1889). Über die Reaktionsgeschwindigkeit bei der Inversion von Rohrzucker durch Säuren. *Zeitschrift für physikalische Chemie*, *4*(1), 226-248.
+[^13]: Bertrand, E., Chartrand, P., Schaefer, M., Shenoy, S. M., Singer, R. H., & Long, R. M. (1998). Localization of ASH1 mRNA particles in living yeast. *Molecular Cell*, *2*(4), 437–445. DOI: 10.1016/S1097-2765(00)80143-4
