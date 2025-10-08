@@ -207,7 +207,7 @@ This insight encouraged us: although the division between *EB patients* and *non
 
 The campus-based “Butterfly Children Charity Sale” was our first attempt. The event combined a *public-welfare + commercial* model, offering over 20 charity products (postcards, bracelets, knitted items, cardholders, paintings, etc.) created by patients and their families. It attracted over 200 participants .
 
-- Through this, we hoped rare disease patients could act as knowledge producers, actively participating in the process and generating income through their creative work — transforming one-way *assistance* into two-way *healing*.
+Through this, we hoped rare disease patients could act as knowledge producers, actively participating in the process and generating income through their creative work — transforming one-way *assistance* into two-way *healing*.
 - **Q&A Posters** {#qa-posters}
 
 Before the event, our iGEM team had conducted three months of systematic fieldwork. We contacted a well-known EB patient blogger, "Prince Superman," whose documentary received over 25 million views. With his support, we invited over 10 EB families to join. To break down biomedical knowledge barriers, the team designed Q&A posters that translated scientific information into accessible language, aiming to broaden public engagement.
