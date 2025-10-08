@@ -514,6 +514,8 @@ This module simulates the three-dimensional growth of the multicellular "Grape Y
 <div style="text-align: left;">
         <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
     </div>
+> Click here to view our [measurement](/measurement/) and [results](/result/).
+
 Other minor parameters are detailed in the source code.
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/visual1.webp)
