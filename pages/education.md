@@ -392,17 +392,17 @@ If you would like to know more about the event, please click [here](https://mp.w
 
 We designed three linked activities:
 
-- **Balloon Puppy Making **
+- **Balloon Puppy Making**
 
   We leveraged our team's logo to create a hands-on, family-friendly activity. Participants were guided through the process of making their own balloon puppies, which served as an immediate icebreaker and a popular souvenir.
 
-- **Rules and Ghost Stories **
+- **Rules and Ghost Stories**
 
   Building on the popularity of horror-adventure games, which combine puzzle-solving, narrative exploration, and interaction, we adapted the format with a synthetic biology theme. Divided into three chapters, the game taught participants about common microorganisms and laboratory safety rules through level-based challenges. This turned knowledge acquisition into an exciting adventure, encouraging active engagement with scientific content.
 
   You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/game-rules-party.pdf) to view our games
 
-- **Collage Poetry Creation **
+- **Collage Poetry Creation**
 
   We set up a creative station where participants could translate their learning into personal expression through collage poetry—a format popular among students. To facilitate this synthesis of experience, we provided a curated bank of synthetic biology-related words, phrases, and nouns, alongside current popular meme formats. To lower the entry barrier and bridge scientific concepts with contemporary culture, we also offered optional fill-in-the-blank structures and "meme fill-in" templates, guiding participants to combine these materials into original poems that felt both relatable and uniquely styled.
 
@@ -1362,10 +1362,7 @@ All activities were **co-created with our community** through interviews with te
 We hope to inspire everyone to understand the face of synthetic biology through continuous in-depth activities. We have completed our education, and at the same time, we have completed our own education.
 
 
-
 > Note: All images involving children have been authorized with the consent of their guardians for filming.
-
-
 
 
 ## Reference
