@@ -34,7 +34,7 @@ Through extensive interviews and collaborations with academics, teachers, studen
 While a single activity may not transform a participant into an expert, it can plant a seed of curiosity. We strive to make the process of discovering the science behind everyday life joyful and meaningful. It is our hope that through these experiences, participants develop a growing interest in synthetic biology, begin to contemplate its principles, and ultimately apply what they have learned—forming a virtuous cycle of exploration and understanding.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/our-goal.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/our-goal.webp" style="width:45%">
     <div>
         <span style="color:gray">Our goal </span>
         <br><br>
@@ -100,7 +100,7 @@ The Triple P framework—**Learning by Playing, Learning by Practicing, and Lear
 - **Produce** translates acquired competencies into meaningful outcomes—outcomes that then serve as the starting point for new rounds of Play-based exploration and Practice-driven refinement.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/the-triple-p-pathway.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/the-triple-p-pathway.webp" style="width:40%">
     <div>
         <span style="color:gray">The Triple P Pathway </span>
         <br><br>
@@ -127,7 +127,7 @@ Collaboration：CJUH-JLU-China
 To examine the academic validity of our framework, we engaged in discussions with peers and mentors from Jilin University. Their team, CJUH-JLU-China, which received [the Nomination of *Best Education* in iGEM 2024](https://jamboree.igem.org/2024/results/special-prizes#best-education) and possesses extensive experience in the education track, provided critical insights during these exchanges. This dialogue served as an essential initial step to assess the practical feasibility of our theoretical approach.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/hp.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/hp.webp" style="width:65%">
     <div>
         <span style="color:gray">We Communication with CJUH-JLU-China </span>
         <br><br>
@@ -169,7 +169,7 @@ During our conversation, we presented the 3P framework and discussed its potenti
 >“For most students, they love to play games! Games make them more willing to listen and engage, because they’re fun. It doesn’t have to be a very sophisticated game—even simple interactions are effective.”
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/the-photo-of-us-with-teachers.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/the-photo-of-us-with-teachers.webp" style="width:50%">
     <div>
         <span style="color:gray">We Communication with Ms.Li Linyu </span>
         <br><br>
@@ -196,7 +196,7 @@ Date：From April to June，2025
 People：All team members
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/communicate-with-students-from-non-science-and-engineering-backgrounds.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/insight/communicate-with-students-from-non-science-and-engineering-backgrounds.webp" style="width:50%">
     <div>
         <span style="color:gray">We Communication with student from non-science and engineering backgrounds </span>
         <br><br>
@@ -318,7 +318,7 @@ The laboratory visit provided valuable lessons in designing research exposure ac
 - Observational Tours Are Only a First Step: We recognized that while lab tours spark interest, they are not sufficient for building experimental understanding. Moving forward, we plan to develop follow-up hands-on sessions, such as offering simplified experimental kits or organizing weekend lab practicums, to provide continuous, immersive learning pathways from observation to practice.
 
   <div style="text-align: center;" id="fig1">
-      <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-took-photos-with-participant.webp" style="width:100%">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-took-photos-with-participant.webp" style="width:40%">
       <div>
           <span style="color:gray">Our group photo from Lab visit and experience </span>
           <br><br>
@@ -373,7 +373,7 @@ Garden parties allow us to reach a diverse audience with different backgrounds�
 If you would like to know more about the event, please click [here](https://mp.weixin.qq.com/s/z9hbR3rPf5ykIEdhJJapVQ).
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/our-event-booths.webp" style="width:90%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/our-event-booths.webp" style="width:40%">
     <div>
         <span style="color:gray">Our booth at the garden party </span>
         <br><br>
@@ -383,7 +383,7 @@ If you would like to know more about the event, please click [here](https://mp.w
 **How We Conducted it**
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/graden-party.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/graden-party.webp" style="width:40%">
     <div>
         <span style="color:gray">We are conducting activities at our booth </span>
         <br><br>
@@ -418,7 +418,7 @@ More than **300 people** participated in this event. The Garden Party taught us 
 - Use Familiar Cultural References: Leveraging well-known concepts (e.g., balloon art, internet memes) made synthetic biology feel accessible and relevant.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-take-a-group-photo.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-take-a-group-photo.webp" style="width:40%">
     <div>
         <span style="color:gray">Our group photo at the garden party </span>
         <br><br>
@@ -463,7 +463,7 @@ In this story, microorganisms become friendly characters who “talk” to child
 Learned from [the previous event](#Activity-1.-Picture-Book-Relay), we created a [**supplementary parent guide**](https://static.igem.wiki/teams/5643/pageimage/education/file/my-microbe-friend-supplementary-guide-en-version.pdf) ([Chinese version](https://static.igem.wiki/teams/5643/pageimage/education/file/my-microbe-friend-supplementary-guide-zh-version.pdf)) for parents. These parts include explanations and ideas for simple activities, encouraging families to read and learn together. In this way, our picture book becomes more than just a story — it becomes a shared journey of discovery.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/picture-book.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/picture-book.webp" style="width:40%">
     <div>
         <span style="color:gray">People are reading our picture books </span>
         <br><br>
@@ -496,7 +496,7 @@ Organizers：Huizhen Du，Yuxin Duan，Yining Zhao
 DNA and proteins form the foundation of biology and play central roles in synthetic biology. Because of their importance — and their direct connection to questions children naturally ask — we chose Genes and Proteins([the presentation file](https://static.igem.wiki/teams/5643/pageimage/education/file/presention-file-genes-and-proteins.pdf)) as the theme for our first lesson.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/we-take-a-photo-with-the-children.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/we-take-a-photo-with-the-children.webp" style="width: 50%;">
     <div>
         <span style="color:gray">Our group photo from Workshop 1</span>
         <br><br>
@@ -515,14 +515,12 @@ These questions naturally led to the key concept: genes control protein synthesi
 **Learning by Playing Activities**
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/gene-protein.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/gene-protein.webp" style="width: 70%;">
     <div>
         <span style="color:gray">Photos of Workshop 1 in progress</span>
         <br><br>
     </div>
 </div>
-
-![Gene and protein])
 
 When teaching, the key points were *what DNA is* and *how DNA controls protein synthesis*. 
 
@@ -569,7 +567,7 @@ To spark creativity, we share the latest advances in yeast research and ask the 
 **Learning by Playing Activities**
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/bread-fermentation.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/bread-fermentation.webp" style="width:70%">
     <div>
         <span style="color:gray">Photos of Workshop 2 in progress</span>
         <br><br>
@@ -615,7 +613,7 @@ To make the invisible world of microbes engaging and memorable, we followed our 
 **Learning by Playing Activities**
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbes-are-everywhere-photo-1.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbes-are-everywhere-photo-1.webp" style="width:70%">
     <div>
         <span style="color:gray">Photos of Workshop 3 in progress</span>
         <br><br>
@@ -627,7 +625,7 @@ To make the invisible world of microbes engaging and memorable, we followed our 
 - **AMR Mini-Experiment (“Resistance Mystery”)** Using the analogy of microbes as “monsters” and drugs as “weapons,” we demonstrated how repeated attacks can lead to resistance. A simple ink-diffusion experiment helped children visualize the concept of antimicrobial resistance.
 
   <div style="text-align: center;" id="fig1">
-      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record2-microbe-everywhere.webp">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record2-microbe-everywhere.webp" style="width:40%">
       <div>
           <span style="color:gray">We are conducting the AMR Mini-Experiment</span>
           <br><br>
@@ -637,7 +635,7 @@ To make the invisible world of microbes engaging and memorable, we followed our 
 - **Immune Role-Play (“Microbial Variations”)** –  Children acted as immune cells defending the body from invading microbes, experiencing firsthand how the immune system detects and eliminates pathogens.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record3-microbe-everywhere.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-record3-microbe-everywhere.webp" style="width:40%">
     <div>
         <span style="color:gray">We are conducting the Mini-Immune Role-Play</span>
         <br><br>
@@ -647,7 +645,7 @@ To make the invisible world of microbes engaging and memorable, we followed our 
 - **Painting Expression** – After the course, children were invited to create drawings of “the microbes in their hearts.” This activity encouraged imagination, reflection, and creative expression of what they had learned.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/the-paintings-of-children.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/the-paintings-of-children.webp" style="width:70%">
     <div>
         <span style="color:gray">Paintings of children</span>
         <br><br>
@@ -659,7 +657,7 @@ To make the invisible world of microbes engaging and memorable, we followed our 
 Through play, children moved from *hearing* about microbes to *experiencing* them. The workshop successfully transformed the **invisible microbial world into something visible, memorable, and fun**. 
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/group-photo-of-the-event-microbe.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/group-photo-of-the-event-microbe.webp" style="width:70%">
     <div>
         <span style="color:gray">Our group photo from Workshop 3</span>
         <br><br>
@@ -716,7 +714,7 @@ Collaboration：USTC、NUDT-CHINA
   The game became popular among students because it felt like a real game, not a classroom exercise. Its shareability and scoring system helped spread it organically, increasing both reach and visibility for synthetic biology education.
   
   <div style="text-align: center;" id="fig1">
-      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/the-participant-is-playing-our-games.webp">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/the-participant-is-playing-our-games.webp" style="width:40%">
       <div>
           <span style="color:gray">The participant is playing BIO-BOUNCE</span>
           <br><br>
@@ -738,7 +736,7 @@ Collaborators: ShanghaiTech-China,  SITU-BioX-Shanghai
 - Format: Urban orienteering + puzzle solving
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/pre-event-training-synbiosh.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/pre-event-training-synbiosh.webp" style="width:40%">
     <div>
         <span style="color:gray">Preliminary training and planning</span>
         <br><br>
