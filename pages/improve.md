@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/zyn-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we describe our improved part--modified mCherry
+description: On this page, we describe how we improved mCherry to our <a href="https://2025.igem.wiki/fudan/part-collection.html#fluorescent-timer">Timer Module</a>.
 ---
 
 ## Overview

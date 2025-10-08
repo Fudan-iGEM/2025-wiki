@@ -9,7 +9,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/pageimage/model/heroimage-model.webp
-description: On this page, we describe a model of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
+description: On this page, we describe <a href="https://gitlab.igem.org/2025/fudan/-/tree/main/model?ref_type=heads" target=_blank>a model</a> of dynamic protein timers in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
 ---
 
 ## Highlights — A New Paradigm for Synthetic Biology in the AI Era

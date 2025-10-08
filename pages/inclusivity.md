@@ -9,11 +9,10 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-2.webp
-description: On this page, we describe how Fudan iGEM 2025 builds an inclusive scientific community through intersectional practices, bringing Groups Underrepresented in Science like those with rare disease Epidermolysis bullosa into science.
+description: Through intersectional practices, we build an inclusive scientific community, bringing groups underrepresented in science like those with rare disease epidermolysis bullosa (EB patients) into science.
 ---
 
 ## Summary： Intersectional Echoes
-
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -491,7 +490,7 @@ The workshop climaxed in a **co-creation exercise based on medical settings**. D
 
 <Interview />
 
-####  "Ideal Solutions" from Collective Wisdom
+#### "Ideal Solutions" from Collective Wisdom
 
 - Adopt soft color schemes for waiting halls.
 - Add AI navigation/voice registration services to assist elderly patients.
@@ -646,7 +645,7 @@ Future inclusive practices should focus more on creating **“points of identity
 
 ### 4.1 Laboratory-assistive software — *ProtocolFlow*
 
-#### Motivation: Reflection on the scientific community 
+#### Motivation: Reflection on the scientific community
 
 During our **PhotoVoice dialogues**, we invited a researcher with a history of fungal infections to share their lived experiences in the lab. They described the need to conceal their condition to avoid stigma, the frustration of making mistakes under sensory overload, and the worsening of their illness due to workplace stress.
 

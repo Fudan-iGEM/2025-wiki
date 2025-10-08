@@ -47,13 +47,13 @@ In the 24Model[^91] framework, safety evaluation is conducted as outlined in the
 
 As part of this effort, we compiled a Laboratory Safety Analysis Report, available as a PDF file. We hope it will offer future iGEM teams and laboratory practitioners a systematic perspective on laboratory safety, as well as fresh insights for building safer research environments.
 
-<!-- div style="position: relative; width: 100%; height: 600px;">
-  <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/report.pdf" width="100%" height="100%" style="border: none;">
+<div style="position: relative; width: 100%; height: 480px;">
+  <iframe src="https://static.igem.wiki/teams/5643/pageimage/safety/1.pdf" width="100%" height="100%" style="border: none;">
   </iframe>
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none;" id="pdf-fallback-2">
-    Your browser does not support PDFs. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/1.pdf">Download the PDF</a>.
+    Your browser does not support PDF. <a href="https://static.igem.wiki/teams/5643/pageimage/safety/1.pdf">Download this file</a> to read.
   </div>
-</div -->
+</div>
 
 
 Following the systematic risk assessment, we recognized that structured training and tiered management are essential for creating a robust safety culture. By ensuring that every member is both well-prepared and forward-thinking, we can sustain a culture of safety.

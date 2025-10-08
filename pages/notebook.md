@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
 layout: igem 
 heroImage: https://static.igem.wiki/teams/5643/header/notebook.webp
-description: On this page, we document our project's journey, tracking the key developments and significant progress we have made from inception to completion.
+description: On this page, we document our project's journey, tracking the key developments and significant progress we have made from inception to freeze.
 ---
 
 ## [January](/notebook/#january)
