@@ -220,11 +220,16 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-eb7.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">
 </div>
 
-- **Price Contrast Cards and Backstories behind handicrafts**
+**Personal Story Tag and Price Contrast Cards**
 
-  To strengthen public empathy for rare disease patients, we designed *price contrast cards*. For instance, a patient’s drawing printed as a postcard was priced at 3 RMB, whereas one piece of medical dressing they needed daily costs 100 RMB. This design choice resonated with participants, helping them grasp the economic challenges faced by rare disease patients and prompting reflection on how even small gestures of kindness can accumulate into real hope.
-  
-  
+   > “I chose this painting because it feels really realistic! I feel like the little girl in the painting, lively and cute yet elegant. Next to 'me' is 'my kitten', which is smart and clever while still charming." ——EB patient HanJing
+
+In our pop-up，we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
+
+Furthermore, to deepen public understanding of the daily realities for rare disease patients, we designed price comparison cards. For example, one card highlighted that while a postcard print of a patient's artwork was priced at just 3 RMB, a single daily medical dressing they required cost 100 RMB. This stark contrast help the participants to grasp the profound financial challenges faced by EB patients.
+
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/tag-card.webp" alt="inclusivity1-1" style="zoom:90%;" />
+
 
 ### 1.2 Improving our Theoretical Framework: Intersectionality
 
@@ -382,7 +387,7 @@ This enabled us to develop a [**Sensory-Friendly Research Toolkit**](https://sta
 ---
 #### Two powerful moments
 
-1. A woman undergoing *over a year of antifungal treatment* faced workplace discrimination and nearly lost her job. When asked, “If you could describe fungal infection with one color, what would it be?” she answered:
+1. A lady undergoing *over a year of antifungal treatment* faced workplace discrimination and nearly lost her job. When asked, “If you could describe fungal infection with one color, what would it be?” she answered:
 
    > “I would choose green, a symbol of hope—like wild grass that survives the fire, growing again when the wind blows.”
 
@@ -393,7 +398,7 @@ Both accounts challenge simplistic narratives of “patient as passive sufferer.
 This case underscores the core advantage of sensory-friendly methods: creating a safe space for complex, even contradictory experiences. Tools like colors and doodles allowed us to capture *dialectical narratives of illness* beyond binary framings, inspiring healthcare practices rooted in **respect for patients’ interpretive agency**.
 
 ---
-#### Conclusion (Value & Significance)
+#### Conclusion
 
 From this study, we learned that fungus-susceptible individuals demand more convenient antifungal treatments. Topical medication was reported as inconvenient and had low adherence, while participants called for faster-acting oral drugs with greater resistance profiles. EB patients, in particular, emphasized the need for smaller pills due to esophageal strictures. These insights informed the **experimental antifungal drug screening** part of our project.
 
@@ -584,7 +589,9 @@ After having experienced the difficulties of EB patients firsthand, visitors cou
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
-#### Conclusion (Significance and Value)
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/encouragement.avif)" alt="tag-card.avif" style="zoom:90%;" />
+
+#### Conclusion
 
 Through the method of **artistic co-creation**, we explored a more intersectional pathway. When rare disease communities appear as *“creators”* and *“curators”*, their expression is no longer confined to narratives of illness. Instead, it encompasses **aesthetic sensibilities, craftsmanship, and reflections on life**.
 
