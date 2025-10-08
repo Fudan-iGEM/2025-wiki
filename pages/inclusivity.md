@@ -4,9 +4,6 @@ authors:
   - name: Zhongyi Huang
     url: /fudan/team/#Zhongyi
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/hzy-a.webp
-  - name: Xiuqi Tian
-    url: /fudan/team/#Xiuqi
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp
   - name: Yufan Han
     url: /fudan/team/#Yufan
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/hyf-a.webp
@@ -61,7 +58,7 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/content.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
-## **0.Forming our theory from the pre-research**
+## 0.Forming the theoretical framework
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -71,7 +68,7 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅ In One Sentence:</strong> We aim to co-create an inclusive scientific community to collectively address fungal challenges.
+    <strong>✅ In a nutshell: We aim to co-create an inclusive scientific community to address fungal challenges with joint effort.</strong>
   </h5>
 </div>
 
@@ -119,7 +116,7 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 
 
 
-### 0.2 Our **Visibility &rarr; Empowerment &rarr; Involvement** model
+### 0.2 The three-step model: Visibility → Empowerment → Involvement 
 
 To address these barriers, we propose the **Visibility &rarr; Empowerment &rarr; Involvement** model of inclusive science.
 
@@ -135,7 +132,7 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
 
 
 
-## 1. Establishing Visibility: Ensuring marginalized groups receive attention.
+## 1. Visibility: Ensuring marginalized groups receive attention.
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -145,15 +142,15 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In One Sentence: </strong>
+    <strong>✅In a nutshell: </strong>
     Enable rare disease patients to increase visibility by presenting themselves as artists.
   </h5>
 
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Objective</strong></div>
-    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+    <div class="section-title"><strong>Objective：</strong></div>
+    <p>To address the issue of invisibility and bring the existence and needs of EB patients into the view of the public and the scientific community.</p>
   </div>
 
   <div class="section">
@@ -255,7 +252,7 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/circle.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
-## 2. Beyond Words: Mapping the Unspoken Truths
+## 2. Empowerment: Mapping the Unspoken Truths.
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
