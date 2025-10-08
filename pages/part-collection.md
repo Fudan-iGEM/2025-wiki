@@ -161,28 +161,28 @@ Furthermore, we recognized that these integration sites exhibit varying distance
 
 Table 3. Integration Sites with varying distances to the centromere
 
-| Part number  |  Part name   |     Integration Loci     |
-| :----------: | :----------: | :----------------------: |
-| BBa_250U3B6G | HR5'\_Chr1L  |  ChrI: 169,422-169,940   |
-| BBa_25GQIZIK | HR3'\_Chr1R  |  ChrI: 169,942-170,478   |
-| BBa_253K1B8N | HR5'\_Chr4L  |  ChrIV: 359,868-360,355  |
-| BBa_25P0EZQP | HR3'\_Chr4R  |  ChrIV: 360,356-360,897  |
-| BBa_2552AC6E | HR5'\_Chr6L  |   ChrVI: 10,278-10,913   |
-| BBa_25IULUBT | HR3'\_Chr6R  |   ChrVI: 10,914-11,424   |
-| BBa_25ZYL3GW | HR5'\_Chr7L  |  ChrVII: 12,472-12,982   |
-| BBa_25H1VEJW | HR3'\_Chr7R  |  ChrVII: 12,983-13,498   |
-| BBa_25FYK3TX | HR5'\_Chr8L  | ChrVIII: 191,015-191,539 |
-| BBa_25PJP4LG | HR3'\_Chr8R  | ChrVIII: 191,540-192,044 |
-| BBa_25FUWBU7 | HR5'\_Chr9L  |  ChrIX: 340,431-340,933  |
-| BBa_25PDQZ8Z | HR3'\_Chr9R  |  ChrIX: 340,935-341,523  |
-| BBa_25DIWZUL | HR5'\_Chr11L |   ChrXI: 24,931-25,451   |
-| BBa_257IAIOG | HR3'\_Chr11R |   ChrXI: 25,452-25,963   |
-| BBa_25F4SCLY | HR5'\_Chr13L | ChrXIII: 408,123-408,657 |
-| BBa_25GCY7VQ | HR3'\_Chr13R | ChrXIII: 408,658-409,161 |
-| BBa_25B7ZBSD | HR5'\_Chr15L |  ChrXV: 686,950-687,450  |
-| BBa_25Q3F2B3 | HR3'\_Chr15R |  ChrXV: 687,451-687,964  |
-| BBa_25RRB2RQ | HR5'\_Chr16L | ChrXVI: 569,995-570,541  |
-| BBa_25U7CTYJ | HR3'\_Chr16R | ChrXVI: 570,542-571,023  |
+| Part number  |  Part name   |     Integration Loci     |Chr. Arm |Distance to Centromere |
+| :----------: | :----------: | :----------------------: | :------ | :---------------------|
+| BBa_250U3B6G | HR5'\_Chr1L  |  ChrI: 169,422-169,940   |Right | 30% |
+| BBa_25GQIZIK | HR3'\_Chr1R  |  ChrI: 169,942-170,478   | | 26414 bp |
+| BBa_253K1B8N | HR5'\_Chr4L  |  ChrIV: 359,868-360,355  |Left | 20% |
+| BBa_25P0EZQP | HR3'\_Chr4R  |  ChrIV: 360,356-360,897  | | 90061 bp |
+| BBa_2552AC6E | HR5'\_Chr6L  |   ChrVI: 10,278-10,913   |Left | 93% |
+| BBa_25IULUBT | HR3'\_Chr6R  |   ChrVI: 10,914-11,424   | | 140333 bp |
+| BBa_25ZYL3GW | HR5'\_Chr7L  |  ChrVII: 12,472-12,982   |Left | 97% |
+| BBa_25H1VEJW | HR3'\_Chr7R  |  ChrVII: 12,983-13,498   | | 483414 bp |
+| BBa_25FYK3TX | HR5'\_Chr8L  | ChrVIII: 191,015-191,539 |Right | 21% |
+| BBa_25PJP4LG | HR3'\_Chr8R  | ChrVIII: 191,540-192,044 | | 96388 bp |
+| BBa_25FUWBU7 | HR5'\_Chr9L  |  ChrIX: 340,431-340,933  |Left | 5% |
+| BBa_25PDQZ8Z | HR3'\_Chr9R  |  ChrIX: 340,935-341,523  | | 17943 bp |
+| BBa_25DIWZUL | HR5'\_Chr11L |   ChrXI: 24,931-25,451   |Left | 94% |
+| BBa_257IAIOG | HR3'\_Chr11R |   ChrXI: 25,452-25,963   | | 428273 bp |
+| BBa_25F4SCLY | HR5'\_Chr13L | ChrXIII: 408,123-408,657 |Right | 23% |
+| BBa_25GCY7VQ | HR3'\_Chr13R | ChrXIII: 408,658-409,161 | | 154324 bp |
+| BBa_25B7ZBSD | HR5'\_Chr15L |  ChrXV: 686,950-687,450  |Right | 50% |
+| BBa_25Q3F2B3 | HR3'\_Chr15R |  ChrXV: 687,451-687,964  | | 369943 bp |
+| BBa_25RRB2RQ | HR5'\_Chr16L | ChrXVI: 569,995-570,541  |Right | 9% |
+| BBa_25U7CTYJ | HR3'\_Chr16R | ChrXVI: 570,542-571,023  | | 33350 bp |
 
 
 ### 6 Dangerous Integration Sites
