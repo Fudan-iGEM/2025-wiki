@@ -24,12 +24,12 @@ We first confirmed the multicellular morphology of the *ACE2*-knockout grape yea
 To determine the temporal sequence of growth and identify mother–daughter relationships, the culture was resumed for an additional 24 h after staining. Under bright-field illumination, several cells lacked detectable fluorescence (orange arrows), demonstrating that the fluorophore had not yet incorporated into these nascent cell structures.
 
 <div>
-  <!-- 第一段：居中 -->
+  <!-- 第一段: 居中 -->
   <p style="text-align:center; margin:0; color:gray;">
     <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp">  
     <small>Figure 1. Chitin Imaging of 2x and 4x Grape Yeast</small>
   </p>
-  <!-- 第二段：靠左，紧贴上一行 -->
+  <!-- 第二段: 靠左, 紧贴上一行 -->
   <p style="text-align:left; margin:0; color:gray;">
   <small>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.</small>
   </p>
@@ -96,7 +96,7 @@ As microscopic images of fixed yeast cells fail to capture the real-time, authen
 
 Having obtained the multicellular Grape Yeast and gained familiarity with the its properties, we initiated an evolutionary tracing study. 
 
-In this section, we evaluated various combination of promoters and fluorescent protein from different perspectives,  including [confocal imaging](/measurement/#Microscopy-Qualitative-Observation-of-Signal-Variation), [flow cytometry](/measurement/Flow-Cytometry-Data-Processing-and-Composite-Score-Calculating) and [deep sequencing](/measurement/#Deep-Sequencing-Molecular-Validation-of-the-Mechanism). Through this thorough assessment, we eventually come up with a optimized fluorescent reporter, pSTM1 driven EMSfp499 (BBa_25IB5O7X)，that can function effectively under pressure conditions. 
+In this section, we evaluated various combination of promoters and fluorescent protein from different perspectives,  including [confocal imaging](/measurement/#Microscopy-Qualitative-Observation-of-Signal-Variation), [flow cytometry](/measurement/Flow-Cytometry-Data-Processing-and-Composite-Score-Calculating) and [deep sequencing](/measurement/#Deep-Sequencing-Molecular-Validation-of-the-Mechanism). Through this thorough assessment, we eventually come up with a optimized fluorescent reporter, pSTM1 driven EMSfp499 (BBa_25IB5O7X), that can function effectively under pressure conditions. 
 
 For more details, please refer to [Measurement](/measurement).
 
