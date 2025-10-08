@@ -27,7 +27,7 @@ The training was structured into three components:
     </div>
 </div>
 
-Through these training programs, we ensured seamless transfer of knowledge and experience between alumni and new members, maintained team continuity, and fostered team growth. We also actively sought valuable feedback from faculty, inviting their suggestions on our brainstorming initiatives. Ultimately, inspired by the insights of alumnus [Kai Tong](https://pubmed.ncbi.nlm.nih.gov/37165189/) and under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading figure in experimental evolution, we selected multicellular yeast as our chassis organism and developed the initial concept for our subsequent project, [DR. sTraTeGY](/design/).
+Through these training programs, we ensured seamless transfer of knowledge and experience between alumni and new members, maintained team continuity, and fostered team growth. We also actively sought valuable feedback from faculty, inviting their suggestions on our brainstorming initiatives. Ultimately, inspired by the insights of alumnus [Kai Tong](https://www.scopus.com/authid/detail.uri?authorId=57224397364) and under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading figure in experimental evolution, we selected multicellular yeast as our chassis organism and developed the initial concept for our subsequent project, [DR. sTraTeGY](/design/)（Drug Resistance mutation Tracking Technology based on Grape Yeast）.
 
 <div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/january-groupphoto.webp" style="width:80%">
@@ -51,12 +51,13 @@ Through these training programs, we ensured seamless transfer of knowledge and e
 During the Spring Festival, we organized into groups based on individual skills and interests to conduct modular research. We thoroughly studied previous iGEM projects and compiled our findings by the end of February, which significantly enhanced our understanding of the iGEM [Judging Handbook](https://competition.igem.org/judging/handbook). Concurrently, we clarified each team member's tasks and roles to advance the project through further literature investigation.
 
 <div style="text-align: center;" id="fig4">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/february-summary.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig4.avif" style="width:100%">
     <div>
         <span style="color:gray">Figure 4. Our research work conducted during the winter break</span>
         <br><br>
     </div>
 </div>
+
 
 
 ## March
@@ -66,12 +67,13 @@ We held regular meetings to refine the design of both dry and wet lab experiment
 Additionally, we corresponded with Professor Ratcliff via email and received valuable suggestions for organizing education initiatives. Based on practical considerations, we identified [butterfly children (patients with Epidermolysis Bullosa)](/inclusivity/#breaking-the-silence-the-first-glimpse-of-visibility)as the target group for our inclusivity efforts. We subsequently hosted [Garden Party](/education/#activity-4-garden-party), using interactive games to popularize synthetic biology knowledge in an engaging format.
 
 <div style="text-align: center;" id="fig5">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/march-summary.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig1.avif" style="width:100%">
     <div>
         <span style="color:gray">Figure 5. Our project progress and some photos from public events</span>
         <br><br>
     </div>
 </div>
+
 
 
 ## April
@@ -81,12 +83,13 @@ On April 15th, we conducted an interview with Professor Huang to advance our inv
 This discussion clarified the crucial role of chromosomal aneuploidization in the development of drug resistance, providing key theoretical support for constructing our multicellular yeast monitoring platform.
 
 <div style="text-align: center;" id="fig6">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/april-profhuang.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig2.avif" style="width:80%">
     <div>
         <span style="color:gray">Figure 6. Our discussion with Professor Huang</span>
         <br><br>
     </div>
 </div>
+
 
 ## May
 
@@ -99,12 +102,13 @@ On May 16th, we collaborated with [CJUH-JLU-China](/education/#academic-depth-ex
 On May 17th, we connected with middle school students in Henan Province through letter exchanges, effectively promoting iGEM and our project's vision.
 
 <div style="text-align: center;" id="fig7">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/may-summary.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig3.avif" style="width:100%">
     <div>
         <span style="color:gray">Figure 7. Photos from our business roadshow and interview with experts</span>
         <br><br>
     </div>
 </div>
+
 
 ## June
 
@@ -156,9 +160,9 @@ Meanwhile, we collaborated with 33 iGEM teams to compile the ["Debunking Synthet
 
 On September 3rd, we took part in [the Star Forum](https://mp.weixin.qq.com/s/b8w70TE68bhm5pWgQCQuBA) and listened to Professor Jianpeng Ma's presentation on the deep integration of AI and life sciences. He analyzed how algorithms create value in biological fields and explored future trends and potential challenges.
 
-On September 11th, we organized a joint project sharing session with [CSU-China](https://2025.igem.wiki/csu-china/), [SZU-China](https://2025.igem.wiki/szu-china/), [SUSTech-China](https://2025.igem.wiki/sustech-china/), [SCAU-China](https://2025.igem.wiki/scau-china/) and ULink Education Group. Through these exchanges, we introduced synthetic biology concepts and presented our project in detail, while collecting valuable feedback and diverse perspectives.
+On September 11th, we organized a joint project sharing session with [CSU-China](https://2025.igem.wiki/csu-china/), [SZU-China](https://2025.igem.wiki/szu-china/), [SUSTech-China](https://2025.igem.wiki/cjuh-jlu-china/collaboration), [SCAU-China](https://2025.igem.wiki/scau-china/) and ULink Education Group. Through these exchanges, we introduced synthetic biology concepts and presented our project in detail, while collecting valuable feedback and diverse perspectives.
 
-In late September, we implemented targeted outreach initiatives for communities affected by fungal diseases. We conducted [photovoice workshops](/inclusivity/#facilitating-dialogue-photovoice) and [healthcare accessibility mapping](/inclusivity/#sensory-friendly-research-design) for patients, organized [collaborative art exhibitions](/inclusivity/#co-creation-in-action-the-art-experience-exhibition) and [handicraft charity sales](/inclusivity/#process) for Butterfly Children, and delivered elderly-focused seminars exposing "high-tech scams" while educating about legitimate synthetic biology-based drug development.
+In late September, we implemented targeted outreach initiatives for communities affected by fungal diseases. We conducted [photovoice workshops](/inclusivity/#_3-1-facilitating-dialogue-photovoice) and [healthcare accessibility mapping](/inclusivity/#sensory-friendly-research-design) for patients, organized [collaborative art exhibitions](/inclusivity/#_3-2-co-creation-in-action-the-art-experience-exhibition) and [handicraft charity sales](/inclusivity/#_1-1-art-pop-up-and-co-creation-charity-with-eb-patients) for Butterfly Children, and delivered elderly-focused seminars exposing "high-tech scams" while educating about legitimate synthetic biology-based drug development.
 
 Over the course of one month, we jointly developed an [educational mini-game](https://gd.games/ruoxi_cao/mint-picture--platformer----bi) with USTC that visualizes gene editing processes through intuitive gameplay mechanics.
 
