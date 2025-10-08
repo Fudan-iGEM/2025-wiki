@@ -16,7 +16,7 @@ description: On this page, we describe <a href="https://gitlab.igem.org/2025/fud
 
 Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
 
-Our work reimagines this cycle by introducing an [AI-augmented modeling framework](#ai-aided-validation-of-model-predictions) that dramatically increases the predictive accuracy of in silico design—enabling first-attempt success in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1 promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models ([DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/)), which—when prompted only with biological first principles—converged on the same optimal design choices.
+Our work reimagines this cycle by introducing an [AI-augmented modeling framework](#ai-aided-validation-of-model-predictions) that dramatically increases the predictive accuracy of in silico design—enabling first-attempt success in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1_AIpro[^7] promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models ([DeepSeek](https://chat.deepseek.com/) and [Qwen](https://chat.qwen.ai/)), which—when prompted only with biological first principles—converged on the same optimal design choices.
 
 This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach supercharges the “Design” phase, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
 
@@ -96,7 +96,7 @@ The core data for the calculation is derived from literature on Fast-FT key time
 
 ##### 1.2 Q₁₀ Calculation (Temperature Coefficient)
 
-Q₁₀ is the core index for quantifying the impact of temperature on the reaction rate. The formula (Arrhenius equation) is:
+Q₁₀ is the core index for quantifying the impact of temperature on the reaction rate. The formula (Arrhenius equation[^12]) is:
 $$
 Q_{10} = \left( \frac{v_{T2}}{v_{T1}} \right)^{\frac{10}{T2-T1}}
 $$
@@ -153,7 +153,7 @@ $$
 
 ## Assumptions
 
-1. **Single Pulse**: Each cell expresses the fluorescent protein once near the end of the cell cycle and stops expression after the pulse.
+1. **Single Pulse**: Each cell expresses the fluorescent protein once during the late M phase of the cell cycle and stops expression after the pulse.
 2. **Protein Transfer Mechanism**: The immature C-state protein generated in the mother cell enters the daughter cell and matures within the daughter cell.
 3. **Irreversible Maturation Chain**: The maturation process from C (immature protein) to B (blue state), I (intermediate state), and R (red state) is irreversible.
 4. **Red-state Degradation**: Red-state protein has a degradation rate controlled by its half-life, $t_{12}^{(R)}$.
@@ -543,7 +543,7 @@ To further validate the robustness and generalizability of our model, we leverag
 Remarkably, the answers provided by both AI models converged with the key conclusions drawn from our mathematical model, reinforcing the credibility of our findings. The models independently highlighted the following optimal choices:
 
 1. Fast-FT as the preferred timer variant, aligning with our analysis of maturation times relative to the yeast cell cycle (~87 minutes).
-2. A periodic promoter strategy, exemplified by the Ash1 promoter, which naturally expresses during the late M phase[^7] and enables precise "timestamping" of daughter cells at division.
+2. A periodic promoter strategy, exemplified by the Ash1_AIpro[^7] promoter, which expresses during the late M phase and enables precise "timestamping" of daughter cells at division.
 3. The necessity for short pulse widths (≈10–15 min), which ensures optimal temporal resolution within a single cell cycle.
 4. A medium-strength promoter, which provides the best balance between signal intensity and biological burden, ensuring reliable signal detection without saturating the fluorescence detectors.
 
@@ -596,7 +596,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
   Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab yeast experiments](#). This included:
 
   - Using temperature-dependent maturation kinetics derived from [Q₁₀](#fast-ft-time-parameter-calculation) calculations to adjust Fast-FT[^1] times for 30°C.
-  - Adjusting the Ash1 promoter to express during the late M phase[^7] in our model to match biological evidence.
+  - Adjusting the Ash1_AIpro[^7] promoter to express during the late M phase in our model to match biological evidence.
   - Revising protein inheritance logic to allow immature C-state proteins to be almost fully transferred to daughter cells, and mature in the daughter cells produced after a cell division[^8].
   
 - **Test (2025.08–09):**
@@ -776,9 +776,9 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 [^4]: Kutta, W. (1901). Beitrag zur näherungsweisen Integration totaler Differentialgleichungen. Teubner.
 [^5]: Butcher, J. C. (2000). Numerical methods for ordinary differential equations in the 20th century. Journal of Computational and Applied Mathematics, 125(1-2), 1-29. DOI: 10.1016/S0377-0427(00)00455-6
 [^6]: Di Talia, S., Skotheim, J. M., Bean, J. M., Siggia, E. D., & Cross, F. R. (2007). The effects of molecular noise and size control on variability in the budding yeast cell cycle. *Nature*, *448*(7156), 947–951. DOI: 10.1038/nature06072
-[^7]: Yu, Y., Yarrington, R. M., & Stillman, D. J. (2020). FACT and Ash1 promote long-range and bidirectional nucleosome eviction at the HO promoter. *Nucleic acids research*, *48*(19), 10877–10889. DOI: 10.1093/nar/gkaa819
+[^7]: Kari, H., Bandi, S. M. S., Kumar, A., & Yella, V. R. (2023). DeePromClass: Delineator for eukaryotic core promoters employing deep neural networks. *IEEE/ACM Transactions on Computational Biology and Bioinformatics*, *20*(1), 802–807. DOI: 10.1109/TCBB.2022.3163418
 [^8]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
 [^9]: Ratcliff, W., Fankhauser, J., Rogers, D. *et al.* Origins of multicellular evolvability in snowflake yeast. *Nat Commun* **6**, 6102 (2015). DOI: 10.1038/ncomms7102
 [^10]: Fukuda, N. Apparent diameter and cell density of yeast strains with different ploidy. *Sci Rep* **13**, 1513 (2023). DOI: 10.1038/s41598-023-28800-z
 [^11]: Alalam, H., Zepeda-Martínez, J. A., & Sunnerhagen, P. (2022). Global SLAM-seq for accurate mRNA decay determination and identification of NMD targets. *RNA*, *28*(6), 905-915. DOI: 10.1261/rna.079077.121
-
+[^12]: Arrhenius, S. (1889). Über die Reaktionsgeschwindigkeit bei der Inversion von Rohrzucker durch Säuren. *Zeitschrift für physikalische Chemie*, *4*(1), 226-248.
