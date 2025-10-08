@@ -605,7 +605,7 @@ After having experienced the difficulties of EB patients firsthand, visitors cou
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
-
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-art.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 ---
 
 #### Conclusion
