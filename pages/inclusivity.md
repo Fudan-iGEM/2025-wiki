@@ -312,7 +312,7 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 
 ### 2.1 In-depth interview and Ethnographic fieldwork with patients
 
-#### Motivation:  **Breaking the binary divide between "healthy" and "ill."**
+#### Motivation:  **Breaking the binary divide between "healthy" and "ill"**
 
 Building on insights from our first activity, we aimed to invite individuals who share similar lived circumstances with EB patients at certain moments, in order to reduce the inequitable pressure produced by the binary divide between “healthy” and “ill.” Starting from our project’s focus on fungal issues and based on literature review[^6], we delineated a broad group of **“fungus-susceptible individuals.”**
 
@@ -602,7 +602,6 @@ After having experienced the difficulties of EB patients firsthand, visitors cou
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/encouragement.avif)" alt="tag-card.avif" style="zoom:90%;" />
 
 ---
 
