@@ -157,7 +157,7 @@ Primers were designed as in Liu *et al*. (2008) Figure 2[^3]. The non-overlappin
    c. **Final Annealing:** T<sub>m pp</sub> - 5°C for 15 s.
    d. **Final Extension:** 72°C for 10 min.
 
-3. While verifying 10 mu;L PCR products by [agarose gel electrophoresis](https://2022.igem.wiki/fudan/experiments#agarose-gel-electrophoresis); treat the remaining 15 mu;L PCR products with 0.5 &mu;L DpnI at 37°C for > 4 h. Once verified and DpnI digestion completed, the PCR products were [transformed](#other-experimental-methods) into *E. coli*.
+3. While verifying 10&mu;L PCR products by [agarose gel electrophoresis](https://2022.igem.wiki/fudan/experiments#agarose-gel-electrophoresis); treat the remaining 15&mu;L PCR products with 0.5 &mu;L DpnI at 37°C for > 4 h. Once verified and DpnI digestion completed, the PCR products were [transformed](#other-experimental-methods) into *E. coli*.
 
 
 ## Yeast Transformation
@@ -318,13 +318,19 @@ As described in Tong *et al*. (2025)[^6], briefly:
 4. Transfer the bottom 50 &mu;L into 3 mL of fresh YPD media for the next day of growth. 
 5. Archive a glycerol (20%) stock for each population every 7 days. 
 
+### Sedimentation Rate Measurement
+
+1. Grow the diploid and tetraploid yeast with *ACE2* deletion of certain generation until OD600 > 1.
+2. After sufficient pipetting, take 1 mL fresh yeast culture to measure its OD600.
+3. Record the change of OD600 value with a camera until it declines under 0.5, and then calculate the sedimentation rate.
+
 
 ## Yeast Growth Curves
 
 1. Grow yeast cultures in YPD at 30°C with 220 rpm shaking until OD600 > 1.
 2. Normalized OD600 reading usng fresh YPD among cultures.
 3. Dilute the cultures at 1:20 into 4 mL of fresh YPD and incubate at 30°C with 220 rpm shaking.
-4. Every 1 h, 200 mu;L of the cultures was sampled, and mixed with 800 mu;L of ddH<sub>2</sub>O to achieve a 5-fold dilution.
+4. Every 1 h, 200&mu;L of the cultures was sampled, and mixed with 800&mu;L of ddH<sub>2</sub>O to achieve a 5-fold dilution.
 5. Measure OD600 of the diluted samples and draw the growth curve.
 
 
@@ -436,12 +442,12 @@ Continue the analysis in R.
 
 We stained cells with [calcofluor white](https://www.sigmaaldrich.com/HK/en/product/sial/18909) as described in Tong *et al*. (2025)[^6], briefly: 
 
-1. Sample 150 mu;L from the cell culture from the ancestor.
+1. Sample 150&mu;L from the cell culture from the ancestor.
 2. Remove the supernatant through an iterated process of centrifugation and pipetting medium removal. 
-3. Build 15 mu;L of 1 mg/mL calcofluor solution into 500 mu;L 1x phosphate-buffered saline solution (PBS) and mixed with the yeast pellet. 
+3. Build 15&mu;L of 1 mg/mL calcofluor solution into 500&mu;L 1x phosphate-buffered saline solution (PBS) and mixed with the yeast pellet. 
 4. Incubate the sample in the dark at room temperature for 25 min.
 5. Remove the calcofluor media by centrifugation and pipetting. 
-6. Add 200 mu;L 1x PBS on top of the pellet. 5 mu;L of this cell suspension was pipetted onto a clean glass slide and covered with a coverslip for microscopy analysis.
+6. Add 200 &mu;L 1x PBS on top of the pellet. 5&mu;L of this cell suspension was pipetted onto a clean glass slide and covered with a coverslip for microscopy analysis.
 
 
 ## Yeast Live-cell Imaging in Agarose
@@ -449,7 +455,7 @@ We stained cells with [calcofluor white](https://www.sigmaaldrich.com/HK/en/prod
 1. Grow yeast overnight in 3 mL of YPD at 30°C with 220 rpm shaking.
 2. Dilute the overnight cultures 1:20 into fresh SC media and incubate at 30°C with 220 rpm shaking until OD600 between 0.7-1.
 3. Prepare 0.4% low melting agarose in SC media, and keep at 42°C.
-4. Mix appropriate amout of yeast with melted agarose, vortex, and drop a total of ∼500 mu;L onto a glass-bottom dish allow it to solidify. Cover the agarose pad with SC media if needed.
+4. Mix appropriate amout of yeast with melted agarose, vortex, and drop a total of ∼500&mu;L onto a glass-bottom dish allow it to solidify. Cover the agarose pad with SC media if needed.
 6. Observe cells immediately using a fluorescence or confocal microscope equipped with appropriate filters. Maintain stage temperature at 30°C.
 
 
