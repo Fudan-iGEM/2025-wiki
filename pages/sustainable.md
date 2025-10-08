@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Zuyao
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzy-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/header/a6b4fd97433898ee1303b72298d621dd.avif
+heroImage: https://static.igem.wiki/teams/5643/header/sus-n.avif
 description: On this page, we align our project to Safeguard, Deliver, Grow (SDG) communities, from local to global.
 ---
 
