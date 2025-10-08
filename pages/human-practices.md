@@ -1,9 +1,15 @@
 ---
 title: Integrated HP
 authors:
-  - name: Yixuan Lu， Huizhen Du， Zuyao Wu
+  - name: Yixuan Lu
     url: /fudan/team/#Yixuan
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp
+  - name: Huizhen Du
+    url: /fudan/team/#Huizhen
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp
+  - name: Zuyao Wu
+    url: /fudan/team/#Zuyao
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzy-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/ihp.avif
 description: On this page, we show how Human Practices guided our project to be both scientifically innovative and socially responsible.
