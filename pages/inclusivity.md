@@ -220,7 +220,7 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-eb7.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">
 </div>
 
-**Personal Story Tag and Price Contrast Cards**
+- **Personal Story Tag and Price Contrast Cards**
 
    > “I chose this painting because it feels really realistic! I feel like the little girl in the painting, lively and cute yet elegant. Next to 'me' is 'my kitten', which is smart and clever while still charming." ——EB patient HanJing
 
