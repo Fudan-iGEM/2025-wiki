@@ -89,15 +89,21 @@ On the other hand, starting from the clinical connection between fungal infectio
 
 Therefore, we propose the establishment of an interdisciplinary and inclusive scientific community methodology, aimed at breaking down the structural barriers to scientific participation. This approach seeks to systematically empower marginalized groups, enabling their experiences and voices to genuinely influence the agenda and direction of scientific research through effective expression and action.
 
+---
+
 #### The Intersection of Scientific and Social Problems
 
 - Fungal infections are a widespread global health concern, potentially affecting almost everyone. Fungal diseases cause more than 1.5 million deaths each year and affect over 1 billion people[^1]. For instance, dermatophytosis—the most common superficial fungal disease—affects 20–25% of the global population[^2]. Within these broad populations, there exists a group who not only endure recurrent skin lesions but also face fungal infections as a severe complication: **patients with Epidermolysis bullosa ("Butterfly Children")**.
 - Epidermolysis bullosa (EB) is a group of rare genetic disorders characterized by profoundly fragile skin. Clinically, individuals with EB experience chronic blistering and wound formation, with certain subtypes also involving mucous membranes and other organs. As a result of this loss of the skin’s natural protective barrier, patients are highly vulnerable to infections. 
 - Among these, we have identified fungal infections as a critical concern for EB patients, given their persistent skin breakdown and compromised immunity. This vulnerability is exacerbated by the disease's lifelong course and the lack of curative treatments, which together intensify the risk of antifungal drug resistance and underline the pressing need for better therapeutic strategies.
 
+---
+
 #### Systemic Scientific Barriers
 
 - Financial strain arises from the high cost of ongoing medical care, compounded when parents or caregivers must leave their jobs to provide support, exacerbating economic hardship[^3]. The relentless physical and psychological demands of daily wound management lead to profound exhaustion, making sustained concentration in high-intensity fields like scientific research particularly challenging. Furthermore, inadequate accessibility support in educational institutions often forces students with EB to discontinue their studies, while pervasive social stigma and low expectations further limit opportunities for advanced scientific training and professional participation. These multifaceted barriers—physical, emotional, socioeconomic, and societal—highlight the urgent need for integrated support systems and increased awareness to improve the lives of those affected by EB.
+
+---
 
 #### Three layers of structural barriers in science
 
@@ -198,6 +204,8 @@ This insight encouraged us: although the division between *EB patients* and *non
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" alt="inclusivity1-4" style="zoom:80%;" />
 
+---
+
 #### **Details**
 
 - **Art as a medium**
@@ -230,6 +238,7 @@ Furthermore, to deepen public understanding of the daily realities for rare dise
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/tag-card.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
+---
 
 ### 1.2 Improving our Theoretical Framework: Intersectionality
 
@@ -466,6 +475,8 @@ The "Visibility" and "Empowering Expression" activities we carried out earlier m
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-1.webp" alt="inclusivity3-1" style="zoom:65%;" />
 
+---
+
 #### Details
 
 PhotoVoice is a participatory research method that invites participants to express their experiences through photographs and narrate the stories behind them[^8]. We combined this method with an *intersectionality* lens, inviting EB patients, fungus-susceptible individuals, medical researchers, psychology experts, and photographers.
@@ -473,6 +484,7 @@ PhotoVoice is a participatory research method that invites participants to expre
 We worked with **Dr. Zihan Zhou**, a psychologist with a STEM background, to design our approach, and also promoted these ideas at the **campus mental health center**. You can click here to view the [**guidance manual** ](https://static.igem.wiki/teams/5643/pageimage/inclusivity/photovoice-guidance-manual.pdf) and [**outcome report**](https://static.igem.wiki/teams/5643/pageimage/inclusivity/photovoice.pdf) of our PhotoVoice this time.
 
 ---
+
 ##### Structured Feedback and Dialogue
 
 The PhotoVoice workshop unfolded around three progressively layered themes:
@@ -492,7 +504,6 @@ During this process, participants’ diverse identities shaped distinct perspect
 
 This dialogue naturally extended into broader discussions of the boundaries of science and life education, enabling mutual understanding. Patients integrated into the wider community in a safe atmosphere, while doctors and researchers gained greater awareness of other stakeholders’ perspectives—making them more conscious of inclusivity in daily practice.
 
----
 ##### Collective Wisdom: The “Ideal Solution”
 
 The workshop climaxed in a **co-creation exercise based on medical settings**. Drawing from our earlier participatory mapping findings, we simulated a “Shanghai hospital waiting hall” and introduced specific challenges .These barriers stem from the real needs identified through the "sensory-friendly research" we conducted in the previous section.
@@ -569,6 +580,8 @@ The *“Fingertip Warmth · Science in Healing Together”* art co-creation exhi
 
 In the first *visibility-focused* charity sale, by inviting patients to appear as “artists,” we discovered their **intersectional identities** beyond illness. After subsequent research and dialogue activities that promoted expression, we reflected on the shortcomings of our first visibility event. We realized the need to **increase the leadership of EB patients in activities**, transforming their stories into tangible, publicly impactful expressions.
 
+---
+
 #### Details
 
 ##### Restricted Movement Experience Zone: Fostering Understanding through “Inconvenience”
@@ -590,6 +603,8 @@ After having experienced the difficulties of EB patients firsthand, visitors cou
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/encouragement.avif)" alt="tag-card.avif" style="zoom:90%;" />
+
+---
 
 #### Conclusion
 
@@ -668,6 +683,8 @@ Importantly, the participant’s dual identity as both a researcher and a patien
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/protocol-in-lab.webp" alt="inclusivity3-2eb3" style="zoom:33%;" />
 
+---
+
 #### Details
 
 ##### Core Functions
@@ -686,6 +703,8 @@ Our laboratory-assistive web tool is not merely an efficiency software, but a su
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-4.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
+---
+
 #### Initial Validation
 
 In a two-week pilot with 30 researchers, we collected encouraging quantitative feedback:
@@ -696,7 +715,7 @@ In a two-week pilot with 30 researchers, we collected encouraging quantitative f
 
 These results suggest that our tool not only improves efficiency but also meaningfully enhances researcher well-being. In today’s climate of rising concern over mental health in science, inclusivity efforts like this can strengthen the resilience of research.
 
-
+---
 
 ### 4.2 **“Lab Mental Health Week” check-in campaign**
 
@@ -710,7 +729,7 @@ From May to September, we have continued our science communication efforts on me
 
 <div style="display: flex; overflow-x: auto; white-space: nowrap;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental1.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental2.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental3.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental4.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental5.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;">   <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-mental6.webp" style="width: 35%; height: auto; margin-right: 10px; flex-shrink: 0;"> </div>
 
-
+---
 
 ### 4.3 A Methodology for Inclusive Scientific Practice into a sustain cycle
 
