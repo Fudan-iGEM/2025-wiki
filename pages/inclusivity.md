@@ -12,7 +12,7 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity
 description: Through intersectional practices, we build an inclusive scientific community, bringing groups underrepresented in science like those with rare disease Epidermolysis Bullosa (EB patients) into science.
 ---
 
-## Summary:  Intersectional Echoes
+## Summary： Intersectional Echoes
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -41,18 +41,22 @@ Not just “How can we help marginalized groups in science” but “How can par
 ------
 
 
-### Our highlights ✨
+### Our highlights ✨ 
 
 **1.   What systemic barriers did we identify?**
+
 We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face [three intertwined barriers](https://2025.igem.wiki/fudan/inclusivity.html#_0-1-our-initial-framework-and-primary-target-group): they are unseen, voiceless, and excluded from participation. We have discovered the potential for their [intersectional](https://2025.igem.wiki/fudan/inclusivity.html#_1-2-improving-our-theoretical-framework-intersectionality) identities to engage in scientific affairs.
 
 **2.   How did we expand participation in science?**
-We co-created inclusive formats with EB patients, including [sensory-friendly surveys](https://2025.igem.wiki/fudan/inclusivity.html#_3-2-co-creation-in-action-the-art-experience-exhibition), [Photovoice storytelling](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), and [immersive exhibitions](/inclusivity/### 3.2 Co-Creation in Action: The Art Experience Exhibition). These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
+
+We co-created inclusive formats with EB patients, including [sensory-friendly surveys](https://2025.igem.wiki/fudan/inclusivity.html#_3-2-co-creation-in-action-the-art-experience-exhibition), [Photovoice storytelling](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), and [immersive exhibitions](https://2025.igem.wiki/fudan/inclusivity.html#_3-2-co-creation-in-action-the-art-experience-exhibition). These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
 
 **3.   How do we ensure dialogue and mutual learning?**
+
 Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped [improve the laboratory environment](https://2025.igem.wiki/fudan/inclusivity.html#_4-building-an-inclusive-scientific-community-learn-from-the-margins)—benefiting other neurodiverse researchers as well.
 
 **4.   What replicable outcomes have emerged?**
+
 We developed a series of transferable tools and methods: [a sensory-friendly research toolkit](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf), [a post-event feedback and evaluation model](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), [a collection of science posters](https://2025.igem.wiki/fudan/inclusivity.html#_4-2-lab-mental-health-week-check-in-campaign), and the assistive software “[ProtocolFlow](https://protocolflow-290e68.igem.wiki/).” These resources can be readily adapted by other teams.
 
 
@@ -126,7 +130,7 @@ Rare disease patients encounter **three layers of structural barriers** in scien
 
 
 
-### 0.2 The three-step model: Visibility → Empowerment → Involvement
+### 0.2 The three-step model: Visibility → Empowerment → Involvement 
 
 To address these barriers, we propose the **Visibility &rarr; Empowerment &rarr; Involvement** model of inclusive science.
 
@@ -159,7 +163,7 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Objective: </strong></div>
+    <div class="section-title"><strong>Objective：</strong></div>
     <p>To address the issue of invisibility and bring the existence and needs of EB patients into the view of the public and the scientific community.</p>
   </div>
 
@@ -234,7 +238,7 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
 
    > “I chose this painting because it feels really realistic! I feel like the little girl in the painting, lively and cute yet elegant. Next to 'me' is 'my kitten', which is smart and clever while still charming." ——EB patient HanJing
 
-In our pop-up, we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
+In our pop-up，we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
 
 Furthermore, to deepen public understanding of the daily realities for rare disease patients, we designed price comparison cards. For example, one card highlighted that while a postcard print of a patient's artwork was priced at just 3 RMB, a single daily medical dressing they required cost 100 RMB. This stark contrast help the participants to grasp the profound financial challenges faced by EB patients.
 
@@ -260,7 +264,7 @@ Inspired by this, we formulated the **Visibility &rarr; Empowerment &rarr; Invol
 
 Furthermore, the intersectional perspective provides a cost-effective solution to the challenges rare diseases face — namely, *dispersed populations* and *low patient numbers/high research costs*. By “seeking overlaps,” we can amplify alliances and increase collective power.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/circle.webp" alt="inclusivity1-1" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/cycle.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
 ## 2. Empowerment: Mapping the Unspoken Truths.
 
@@ -351,11 +355,11 @@ We first conducted a **quantitative questionnaire survey**, Participants answer 
 | 4.I believe the complexity of symptoms and physical sensations I experienced are not adequately captured in current healthcare processes, scientific research, and drug development. | 1.93 |
 | 5.In my studies, work, and daily life, I have felt misunderstood, judged, or needed to hide my physical condition due to fungal issues in order to participate in certain activities. | 2.20 |
 
-This table contains both positively and reverse-scored items. Specifically: **Items 1-3 are positively scored**, where a higher score indicates stronger agreement or a more positive evaluation of the healthcare experience. **Items 4 and 5 are reverse-scored**, where a higher score indicates greater dissatisfaction with the current situation or more frequent negative experiences. Results showed that: 
+This table contains both positively and reverse-scored items. Specifically: **Items 1-3 are positively scored**, where a higher score indicates stronger agreement or a more positive evaluation of the healthcare experience. **Items 4 and 5 are reverse-scored**, where a higher score indicates greater dissatisfaction with the current situation or more frequent negative experiences. Results showed that：
 
 - The majority had experienced *misunderstanding and stigma* due to fungal problems.（Q5=2.20）
-- Most participants felt that medical experiences strongly influenced their willingness to seek care, and that current clinical experiences required improvement.（Q1=3.41, Q4=1.93）
-- All participants rated their *level of participation in science* lower than their perceived *importance in science*.（Q2=4.31, Q3=2.91）
+- Most participants felt that medical experiences strongly influenced their willingness to seek care, and that current clinical experiences required improvement.（Q1=3.41，Q4=1.93）
+- All participants rated their *level of participation in science* lower than their perceived *importance in science*.（Q2=4.31，Q3=2.91）
 
 This highlights that “fungus-susceptible groups,” including EB patients, face barriers of *scientific voicelessness*. Specifically, their experiential knowledge, rooted in lived medical encounters, is systematically excluded from knowledge production when it does not conform to dominant discourses (e.g., technical biomedical language).
 
@@ -470,7 +474,7 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
 
 #### Motivation: Use participatory research method to empower our target group.
 
-The "Visibility" and "Empowering Expression" activities we carried out earlier mainly focused on us as the leading role to promote the construction of an inclusive scientific community. Yet this is not enough. More importantly, marginalized groups themselves must directly and proactively participate in scientific affairs. Moving from the margins to the core is not instantaneous—a STEM professional may require years or decades of training. While supporting groups with barriers to access core scientific careers, it is equally important to empower marginalized groups to participate in inclusive science governance, enabling them to take a firm first step into shared decision-making.
+The ["Visibility"](https://2025.igem.wiki/fudan/inclusivity.html#_1-visibility-ensuring-marginalized-groups-receive-attention) and ["Empowering Expression"](https://2025.igem.wiki/fudan/inclusivity.html#_2-empowerment-mapping-the-unspoken-truths) activities we carried out earlier mainly focused on us as the leading role to promote the construction of an inclusive scientific community. Yet this is not enough. More importantly, marginalized groups themselves must directly and proactively participate in scientific affairs. Moving from the margins to the core is not instantaneous—a STEM professional may require years or decades of training. While supporting groups with barriers to access core scientific careers, it is equally important to empower marginalized groups to participate in inclusive science governance, enabling them to take a firm first step into shared decision-making.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-1.webp" alt="inclusivity3-1" style="zoom:65%;" />
 
@@ -610,7 +614,6 @@ After having experienced the difficulties of EB patients firsthand, visitors cou
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
 
----
 
 #### Conclusion
 
@@ -765,10 +768,11 @@ From May to September, we have continued our science communication efforts on me
 - *Technology Empowerment*: Laboratory-assistive software prototype [ProtocolFlow Live Demo](https://protocolflow-290e68.igem.wiki/) and [gitlab](https://gitlab.igem.org/larryivanhan/protocolflow).
 - *Methodological Innovation*: An operationalized, stepwise framework of "intersectionality in practice"
 
----
+
+
 ## Conclusion: Forming a replicable, scalable, self-evolving cycle.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/cycle.webp" alt="inclusivity1-1" style="zoom:90%;" />
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/conclusion.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
 Based on systematic literature review and preliminary field research, we have not only diagnosed three key structural barriers but also designed targeted solutions:
 
