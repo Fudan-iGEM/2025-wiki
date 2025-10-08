@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Yue
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+heroImage: https://static.igem.wiki/teams/5643/header/safety.webp
 description: On this page, we elaborated on laboratory safety analysis methods and outline how to prevent laboratory safety issues.
 ---
 

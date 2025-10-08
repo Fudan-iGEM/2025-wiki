@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Huizhen
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+heroImage: https://static.igem.wiki/teams/5643/header/edu-h.webp
 description: We hoped to educate everyone to learn synthetic biology through continuous in-depth activities. We have completed our education, and at the same time, we have completed our own education.
 ---
 
