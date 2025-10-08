@@ -48,6 +48,15 @@
       :cards="scene8Cards"
     />
 
+    <button
+      v-if="skipAvailable"
+      type="button"
+      class="skip-button"
+      @click="skipToFinalScene"
+    >
+      Skip
+    </button>
+
     <div
       ref="scrollPromptRef"
       class="scroll-prompt"
@@ -122,10 +131,10 @@ const scene6Items = ref([
 ]);
 
 const scene8Cards = ref([
-  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.webp', color: '#4ECDC4', link: '/fudan/design/', alt: 'Design', title: 'Design' },
-  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.webp', color: '#1E3A8A', link: '/fudan/parts/', alt: 'Parts', title: 'Parts' },
+  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.webp', color: '#4ECDC4', link: '/fudan/design/', alt: 'Design', title: 'Design' },
+  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.webp', color: '#1E3A8A', link: '/fudan/parts/', alt: 'Parts', title: 'Parts' },
   { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.webp', color: '#FF6B35', link: '/fudan/model/', alt: 'Model', title: 'Model' },
-  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.webp', color: '#000000', link: '/fudan/inclusivity/', alt: 'Inclusivity', title: 'Inclusivity' }
+  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.webp', color: '#000000', link: '/fudan/inclusivity/', alt: 'Inclusivity', title: 'Inclusivity' }
 ]);
 
 // --- Component & Template Refs ---
@@ -154,6 +163,8 @@ const scrollPromptMode = ref('none')
 const initialScrollPromptShown = ref(false)
 const postDragScrollPromptShown = ref(false)
 let scrollPromptHideProgress = null
+const skipAvailable = ref(false)
+const skipTriggered = ref(false)
 
 const scene4AnimationUrl = ref('')
 const scene4Loop = ref(false)
@@ -169,6 +180,18 @@ const scene2AnimationUrl = ref('')
 const scene2Loop = ref(false)
 let mainTimeline = null
 let scene2Timeline = null
+let skipScrollTween = null
+
+const resetPinSpacerStyles = () => {
+  const wrapper = homepageRef.value?.parentElement
+  if (!wrapper?.classList?.contains('pin-spacer')) return
+  wrapper.style.removeProperty('padding')
+  wrapper.style.removeProperty('height')
+  wrapper.style.removeProperty('max-width')
+  wrapper.style.removeProperty('margin')
+  wrapper.style.removeProperty('min-width')
+  wrapper.style.removeProperty('display')
+}
 
 // --- Composables ---
 const { triggerDoctorReplies } = useScene3()
@@ -402,7 +425,13 @@ const setScene2ContentVisibility = (shouldShow, { immediate = false } = {}) => {
     return null
   }
 
-  if (scene2ContentHidden.value) return null
+  if (scene2ContentHidden.value && !immediate) return null
+
+  if (immediate) {
+    gsap.set(contentEl, { autoAlpha: 0, display: 'none' })
+    scene2ContentHidden.value = true
+    return null
+  }
 
   const tween = gsap.to(contentEl, {
     autoAlpha: 0,
@@ -475,6 +504,9 @@ const resetScene2ForRewind = () => {
     return
   }
 
+  skipScrollTween?.kill()
+  skipScrollTween = null
+
   scene2SequenceActive = false
   clearScene2Cleanup()
   resetScene2InteractionState({ resetProgressFlags: true })
@@ -489,6 +521,53 @@ const resetScene2ForRewind = () => {
   }
 
   resetScene4State()
+  skipTriggered.value = false
+}
+
+const skipToFinalScene = () => {
+  if (!mainTimeline?.scrollTrigger || skipTriggered.value) return
+
+  skipTriggered.value = true
+  skipAvailable.value = false
+  hideScrollPrompt()
+  initialScrollPromptShown.value = true
+  postDragScrollPromptShown.value = true
+
+  skipScrollTween?.kill()
+  skipScrollTween = null
+
+  scene3AnimationComplete.value = true
+  scene4BallPlaced.value = true
+  hasSendTriggered.value = true
+  isSendEnabled.value = false
+  isSendActive.value = false
+
+  scene2SequenceActive = false
+  clearScene2Cleanup()
+  scene2Timeline?.kill()
+  scene2Timeline = null
+
+  setScene2ContentVisibility(false, { immediate: true })
+  const scene2 = scene2ComponentRef.value
+  if (scene2?.scene2Ref) {
+    gsap.set(scene2.scene2Ref, { autoAlpha: 0 })
+  }
+  dialogs.value = []
+  Object.keys(dialogBoxRefs).forEach(key => delete dialogBoxRefs[key])
+
+  const scrollTrigger = mainTimeline.scrollTrigger
+  if (scrollTrigger) {
+    const scrollTarget = scrollTrigger.scroller || (typeof window !== 'undefined' ? window : null)
+    const setScroll = scrollTarget && scrollTarget !== window && scrollTarget !== window?.document?.documentElement && scrollTarget !== window?.document?.body
+      ? (value) => { scrollTarget.scrollTop = value }
+      : (value) => { window?.scrollTo({ top: value, behavior: 'auto' }) }
+
+    setScroll?.(scrollTrigger.end)
+    mainTimeline.progress(1, false)
+    scrollTrigger.update()
+  } else {
+    mainTimeline.progress(1, false)
+  }
 }
 
 const setupScene4 = () => {
@@ -621,6 +700,10 @@ const setupInitialStates = () => {
   initialScrollPromptShown.value = false
   postDragScrollPromptShown.value = false
   scrollPromptHideProgress = null
+  skipAvailable.value = false
+  skipTriggered.value = false
+  skipScrollTween?.kill()
+  skipScrollTween = null
 }
 
 const handleLottieComplete = () => {
@@ -634,6 +717,9 @@ const handleLottieComplete = () => {
       setupScrollAnimation()
       document.body.style.overflow = ''
       showScrollPrompt('initial')
+      if (!skipTriggered.value) {
+        skipAvailable.value = true
+      }
     }
   })
   titleTimeline
@@ -721,6 +807,16 @@ const setupScrollAnimation = () => {
         if (scrollPromptVisible.value && typeof scrollPromptHideProgress === 'number' && self.progress >= scrollPromptHideProgress) {
           hideScrollPrompt()
         }
+
+        if (!skipTriggered.value && initialScrollPromptShown.value) {
+          if (self.progress > 0.95) {
+            if (skipAvailable.value) {
+              skipAvailable.value = false
+            }
+          } else if (!skipAvailable.value) {
+            skipAvailable.value = true
+          }
+        }
       }
     } 
   })
@@ -729,7 +825,7 @@ const setupScrollAnimation = () => {
     .to({}, { duration: 1.0 }) // Pause after title is shown
     .set(glitchOverlayRef.value, { className: 'glitch-overlay active' })
     .to([scene1.titleWrapperRef, scene1.lottie1WrapperRef], { autoAlpha: 0, duration: 0.8, ease: 'power2.inOut' })
-    .to(homepageRef.value, { backgroundColor: '#3a1667', duration: 1.2, ease: 'power2.inOut' }, '<')
+    .to(homepageRef.value, { backgroundColor: '#291c3d', duration: 1.2, ease: 'power2.inOut' }, '<')
     .set(glitchOverlayRef.value, { className: 'glitch-overlay' }, '>-0.5')
     .to(scene2.scene2Ref, { autoAlpha: 1, duration: 0.1 }, '-=0.8')
     .addLabel('scene2End')
@@ -815,16 +911,21 @@ const setupScrollAnimation = () => {
 
 onBeforeUnmount(() => {
   document.body.style.overflow = ''
+  const trigger = mainTimeline?.scrollTrigger
+  trigger?.kill(false)
   mainTimeline?.kill()
   scene2Timeline?.kill()
   scene2Timeline = null
   scene2SequenceActive = false
   clearScene2Cleanup()
+  skipScrollTween?.kill()
+  skipScrollTween = null
   const scene4 = scene4ComponentRef.value
   if (scene4 && scene4.glowingBallRef) {
       Draggable.get(scene4.glowingBallRef)?.kill()
   }
   ScrollTrigger.getAll().forEach(st => st.kill())
+  resetPinSpacerStyles()
 })
 </script>
 
@@ -844,34 +945,35 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 0.4rem;
   padding: 0.75rem 1.5rem 1rem;
-  border-radius: 999px;
-  background: rgba(12, 12, 12, 0.55);
-  color: #f8fafd;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
+  border-radius: 1.5rem;
+  background: rgba(12, 12, 12, 0.72);
+  color: #fefefe;
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.45s ease, transform 0.45s ease;
   z-index: 50;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3), 0 0 24px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 .scroll-prompt--visible {
   opacity: 1;
   transform: translate(-50%, 0);
 }
 .scroll-prompt__text {
-  font-weight: 600;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 .scroll-prompt__arrow {
-  width: 12px;
-  height: 12px;
-  border-left: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
+  width: 14px;
+  height: 14px;
+  border-left: 2.5px solid currentColor;
+  border-bottom: 2.5px solid currentColor;
   transform: rotate(-45deg);
   animation: scroll-prompt-bounce 1.8s ease-in-out infinite;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
 }
 @keyframes scroll-prompt-bounce {
   0% {
@@ -880,14 +982,48 @@ onBeforeUnmount(() => {
   }
   30% {
     opacity: 1;
+    transform: translateY(-2px) rotate(-45deg);
   }
   70% {
     opacity: 1;
+    transform: translateY(4px) rotate(-45deg);
   }
   100% {
     opacity: 0;
-    transform: translateY(8px) rotate(-45deg);
+    transform: translateY(10px) rotate(-45deg);
   }
+}
+.skip-button {
+  position: absolute;
+  top: 4.8rem;
+  right: 1.5rem;
+  padding: 0.75rem 1.85rem;
+  border-radius: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(135deg, #ff7a4a 0%, #ffd166 100%);
+  color: #0d1324;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 16px 36px rgba(255, 107, 53, 0.55), 0 0 24px rgba(255, 209, 102, 0.35);
+  z-index: 60;
+}
+.skip-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
+  box-shadow: 0 20px 44px rgba(255, 107, 53, 0.6), 0 0 28px rgba(255, 209, 102, 0.45);
+}
+.skip-button:hover,
+.skip-button:focus-visible {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+}
+.skip-button:active {
+  transform: translateY(0);
+  filter: brightness(0.9);
 }
 .glitch-overlay {
   display: none;
