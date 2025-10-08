@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Zhiqin
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+heroImage: https://static.igem.wiki/teams/5643/header/eng.webp
 description: On this page, we detail how our <a href="https://2025.igem.wiki/fudan/part-collection.html#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein">Recorder Module</a> was developed through Design–Build–Test–Learn (DBTL) cycles. What came out of DBTL is a fluorescent reporter system to monitor changes induced by EMS mutagenesis, involving four distinct promoters driving seven EMS-optimized fluorescent proteins.
 ---
 

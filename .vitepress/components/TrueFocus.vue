@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
-import { computed, nextTick, onMounted, onUnmounted, ref, watch, useTemplateRef } from 'vue';
+import { computed, nextTick, onMounted, onUnmounted, reactive, ref, watch, watchEffect, useTemplateRef } from 'vue';
 
 interface TrueFocusProps {
   sentence?: string;
@@ -10,6 +10,7 @@ interface TrueFocusProps {
   glowColor?: string;
   animationDuration?: number;
   pauseBetweenAnimations?: number;
+  skipWords?: string[];
 }
 
 const props = withDefaults(defineProps<TrueFocusProps>(), {
@@ -19,13 +20,23 @@ const props = withDefaults(defineProps<TrueFocusProps>(), {
   borderColor: '#e97e35',
   glowColor: 'rgba(233, 126, 53, 0.6)',
   animationDuration: 0.3,
-  pauseBetweenAnimations: 1
+  pauseBetweenAnimations: 1,
+  skipWords: () => []
 });
 
 const words = computed(() => props.sentence.split(' ').filter(word => word.length > 0));
+const skipWordSet = computed(() => new Set((props.skipWords ?? []).map(word => word.toLowerCase())));
+const focusableIndices = computed(() =>
+  words.value
+    .map((word, index) => ({ word, index }))
+    .filter(({ word }) => !skipWordSet.value.has(word.toLowerCase()))
+    .map(({ index }) => index)
+);
+const focusableKey = computed(() => focusableIndices.value.join('-'));
 const animationDuration = computed(() => props.animationDuration);
 const currentIndex = ref(0);
 const lastActiveIndex = ref<number | null>(null);
+const visitedIndices = reactive(new Set<number>());
 const containerRef = useTemplateRef<HTMLDivElement>('containerRef');
 const wordRefs = ref<(HTMLSpanElement | null)[]>([]);
 const focusRect = ref({ x: 0, y: 0, width: 0, height: 0 });
@@ -54,7 +65,8 @@ const containerStyle = computed(() => {
     '--tf-blur-amount': `${props.blurAmount}px`,
     '--tf-transition-duration': `${props.animationDuration}s`,
     '--tf-background-color': hasCompletedCycle.value ? computeBackgroundColor(progress) : 'transparent',
-    '--tf-content-opacity': `${contentOpacity.value}`
+    '--tf-content-opacity': `${contentOpacity.value}`,
+    '--tf-word-filter': props.blurAmount > 0 ? `blur(${props.blurAmount}px)` : 'none'
   };
 });
 
@@ -134,34 +146,65 @@ const stopAutoCycle = () => {
   }
 };
 
-const advanceWord = () => {
-  if (words.value.length === 0) return;
+const markVisited = (index: number | null | undefined) => {
+  if (index === null || index === undefined || index < 0) return;
+  visitedIndices.add(index);
+};
 
-  if (currentIndex.value >= words.value.length - 1) {
+const clearVisited = () => {
+  if (visitedIndices.size > 0) {
+    visitedIndices.clear();
+  }
+};
+
+const advanceWord = () => {
+  const focusable = focusableIndices.value;
+  if (focusable.length === 0) {
+    hasCompletedCycle.value = false;
+    return;
+  }
+
+  const currentPosition = focusable.indexOf(currentIndex.value);
+
+  if (currentPosition === -1) {
+    currentIndex.value = focusable[0];
+    lastActiveIndex.value = focusable[0];
+    return;
+  }
+
+  if (currentPosition >= focusable.length - 1) {
     hasCompletedCycle.value = true;
     stopAutoCycle();
     return;
   }
 
-  currentIndex.value = currentIndex.value + 1;
+  const nextIndex = focusable[currentPosition + 1];
+  currentIndex.value = nextIndex;
+  lastActiveIndex.value = nextIndex;
 };
 
-watch(
-  () => words.value.length,
-  (length) => {
-    if (length === 0) {
-      currentIndex.value = -1;
-      lastActiveIndex.value = null;
-      hasCompletedCycle.value = false;
-      return;
-    }
+watchEffect(() => {
+  const wordCount = words.value.length;
+  const focusable = focusableIndices.value;
 
-    if (currentIndex.value < 0 || currentIndex.value >= length) {
-      currentIndex.value = 0;
+  if (wordCount === 0 || focusable.length === 0) {
+    clearVisited();
+    if (currentIndex.value !== -1) {
+      currentIndex.value = -1;
     }
-  },
-  { immediate: true }
-);
+    lastActiveIndex.value = null;
+    hasCompletedCycle.value = false;
+    return;
+  }
+
+  if (!focusable.includes(currentIndex.value)) {
+    clearVisited();
+    const firstIndex = focusable[0];
+    currentIndex.value = firstIndex;
+    lastActiveIndex.value = firstIndex;
+    hasCompletedCycle.value = false;
+  }
+});
 
 watch(hasCompletedCycle, (completed) => {
   if (completed) {
@@ -170,6 +213,16 @@ watch(hasCompletedCycle, (completed) => {
     disableScrollTracking();
   }
 });
+
+watch(
+  currentIndex,
+  (index) => {
+    markVisited(index);
+  },
+  { immediate: true }
+);
+
+const isVisited = (index: number) => visitedIndices.has(index);
 
 watch(
   [currentIndex, () => words.value.length],
@@ -184,16 +237,18 @@ watch(
 );
 
 const handleMouseEnter = (index: number) => {
-  if (props.manualMode) {
-    lastActiveIndex.value = index;
-    currentIndex.value = index;
-  }
+  if (!props.manualMode) return;
+  if (!focusableIndices.value.includes(index)) return;
+
+  lastActiveIndex.value = index;
+  currentIndex.value = index;
 };
 
 const handleMouseLeave = () => {
-  if (props.manualMode && words.value.length > 0) {
-    currentIndex.value = lastActiveIndex.value ?? 0;
-  }
+  if (!props.manualMode) return;
+
+  const fallbackIndex = lastActiveIndex.value ?? focusableIndices.value[0] ?? -1;
+  currentIndex.value = fallbackIndex;
 };
 
 const setWordRef = (el: HTMLSpanElement | null, index: number) => {
@@ -206,18 +261,24 @@ onMounted(async () => {
   window.addEventListener('resize', handleResize, { passive: true });
 
   watch(
-    [() => props.manualMode, () => props.animationDuration, () => props.pauseBetweenAnimations, () => words.value.length, () => props.sentence],
+    [() => props.manualMode, () => props.animationDuration, () => props.pauseBetweenAnimations, () => focusableKey.value, () => props.sentence],
     () => {
       stopAutoCycle();
 
-      if (props.manualMode || words.value.length === 0) {
+      const focusable = focusableIndices.value;
+
+      clearVisited();
+
+      if (props.manualMode || focusable.length === 0) {
         hasCompletedCycle.value = false;
         return;
       }
 
+      const firstIndex = focusable[0];
+      currentIndex.value = firstIndex;
+      lastActiveIndex.value = firstIndex;
+      markVisited(firstIndex);
       hasCompletedCycle.value = false;
-      currentIndex.value = 0;
-      lastActiveIndex.value = null;
       const intervalDelay = Math.max((props.animationDuration + props.pauseBetweenAnimations) * 1000, 16);
 
       interval = setInterval(() => {
@@ -248,7 +309,7 @@ onUnmounted(() => {
       :key="index"
       :ref="el => setWordRef(el as HTMLSpanElement, index)"
       class="true-focus__word"
-      :class="{ 'true-focus__word--active': index === currentIndex }"
+      :class="{ 'true-focus__word--active': index === currentIndex, 'true-focus__word--visited': isVisited(index) }"
       @mouseenter="handleMouseEnter(index)"
       @mouseleave="handleMouseLeave"
     >
@@ -306,15 +367,19 @@ onUnmounted(() => {
   font-weight: 800;
   font-size: clamp(0.85rem, 2.3vw, 1.8rem);
   line-height: 1.1;
-  color: rgba(17, 24, 39, 0.35);
-  filter: blur(var(--tf-blur-amount));
-  transition: filter var(--tf-transition-duration) ease, color var(--tf-transition-duration) ease, opacity 0.4s ease;
+  color: rgba(17, 24, 39, 0.75);
+  filter: var(--tf-word-filter, none);
+  transition: color var(--tf-transition-duration) ease, opacity 0.4s ease;
   cursor: pointer;
   opacity: var(--tf-content-opacity, 1);
+  z-index: 1;
 }
 
 .true-focus__word--active {
-  filter: blur(0px);
+  color: #111827;
+}
+
+.true-focus__word--visited {
   color: #111827;
 }
 
@@ -328,6 +393,7 @@ onUnmounted(() => {
   border-radius: 12px;
   filter: drop-shadow(0 0 14px var(--tf-glow-color, rgba(233, 126, 53, 0.48)));
   transition: opacity var(--tf-transition-duration) ease;
+  z-index: 0;
 }
 
 .true-focus__corner {

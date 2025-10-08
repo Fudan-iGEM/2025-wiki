@@ -5,7 +5,7 @@ authors:
   - name: Huizhen Du
     url: /fudan/team/#Huizhen
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp
-heroImage: https://static.igem.wiki/teams/5643/header/edu.webp
+heroImage: https://static.igem.wiki/teams/5643/header/coll.webp
 description: On this page, we show how collaboration unites teams, experts, communities, and industry to bridge synthetic biology with education, empowerment, and real-world impact.
 ---
 
