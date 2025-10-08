@@ -16,7 +16,7 @@ description: On this page, we document how we quantify our experimental results.
 
 Our project *DR. sTraTeGY* is trying to dynamically record natural mutations in living cells using engineered biological systems. The core of this strategy is a mutation recorder based on the [EMSfp parts](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein), which converts random mutations into quantifiable changes in fluorescence intensity. To validate this recorder's functionality, we employed a comprehensive three-stage approach: fluorescence microscopy for direct visual confirmation of intensity variation at single-cell level, flow cytometry for statistical analysis of population-wide fluorescence distribution, and deep sequencing to confirm mutation localization in promoter regions but not EMSfp regions. 
 
-## Microscopy: Qualitative Observation of Signal Variation
+## Microscopy - Qualitative Observation of Signal Variation
 
 To visually record and quantify gene mutations under evolutionary pressure in yeast, we specifically designed the [TU Recorders](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein). This novel biological tool dynamically tracks natural mutations in living cells, particularly in yeast, by converting random genetic mutations into quantifiable changes in fluorescence intensity. This is achieved by combining a mutation-sensitive promoter with an EMS (ethyl methanesulfonate)-resistant fluorescent protein. To qualitatively assess the performance of our [28 TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) combinations and narrow down the most promising candidate, we employed fluorescence microscopy, visually observing changes in fluorescence intensity and distribution within individual yeast cells before and after EMS treatment.
 
@@ -29,19 +29,36 @@ Our screening focused on two key aspects:
 - **EMS Resistance**
 
   Simultaneously, we carefully monitored the fluorescence intensity in the other three fluorescent channels. Ideally, these non-primary channels should exhibit minimal to no change in intensity or brightness distribution. This observation would confirm that the EMSfp sequence itself is resistant to mutagenesis, and that the observed changes are specific to the promoter's response to EMS, rather than a general degradation or alteration of the fluorescent protein.
+  
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f1.avif" style="width:80%">
+      <div>
+          <span style="color:gray"></span>
+          <br><br>
+      </div>
+  </div>
+  
+  <div style="text-align: center;" id="fig1">
+      <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f2.avif" style="width:80%">
+      <div>
+          <span style="color:gray"></span>
+          <br><br>
+      </div>
+  </div>
 
 <div style="text-align: center;" id="fig1">
-    <img src="#" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f3.avif" style="width:80%">
     <div>
         <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment. <a href="https://static.igem.wiki/teams/5643/pageimage/measurement/fluorescence-micriscope.avif" target=_blank>(A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499.</a> Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.</span>
         <br><br>
     </div>
 </div>
 
+
 Based on initial observations through fluorescence microscopy, we identified some promising combinations that qualitatively met these criteria, showing clear changes in their primary fluorescence channel while maintaining stability in other channels, one of them is BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy). This qualitative selection gave us confidence to continue quantitative validation using flow cytometry and deep sequencing.
 
 
-## Flow Cytometry: Data Processing and Composite Score Calculating
+## Flow Cytometry - Data Processing and Composite Score Calculating
 
 The flow cytometry data processing pipeline was designed to ensure signal fidelity, correct for autofluorescence, and provide statistically robust metrics for quantifying the effect of EMS induction on fluorescent protein expression. This process is divided into three critical stages: (1) Quality Control and Data Normalization, (2) Fold Change Calculation and Significance Test, and (3) Composite Score Calculation.
 
@@ -156,7 +173,7 @@ Following a comprehensive performance analysis of all promoter and fluorescent p
 | pTDH3    | EMSfp569            | -0.5416             | 0.0027            | 0.5683                    | 0.0194   |
 
 
-## Growth Curve: Quantitative Assessment of Metabolic Burden
+## Growth Curve - Quantitative Assessment of Metabolic Burden
 
 To evaluate the metabolic burden imposed by the top three fluorescent reporters, we quantified and compared their growth rates by recording their hourly growth curves via optical density (OD) measurements. Although the average size of yeast is about 5-10 &mu;m, we only have NanoCym950 nanoparticles with a diameter of 950 nm. We estimated that 1 OD600 corresponds to 10^8 nanoparticles per mL, which was used to convert yeast counts. Experimental details please refer to our [protocol](/experiments/#yeast-growth-curves). 
 
@@ -191,7 +208,7 @@ $$
 
 According to analysis, [pSTM1-EMSfp499](https://registry.igem.org/parts/bba-255t0phy) demonstrated a growth pattern most similar to the wild-type BY4741 strain, with pTDH3-EMSfp383 following closely ([Figure 3](#fig3) & Table 4). While the pRNR2-EMSfp383 combination achieved the highest Composite Score (S) in flow cytometry, it imposed a significant metabolic burden on the yeast, rendering it unsuitable as an ideal fluorescent reporter. By synthesizing the fluorescent change patterns with the metabolic burden profiles, we concluded that BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) is the optimal reporter combination for our Recorder module.
 
-## Deep Sequencing: Molecular Validation of the Mechanism
+## Deep Sequencing - Molecular Validation of the Mechanism
 
 To further validate that the EMS Sequence Optimizer-optimized fluorescent protein exhibits high resistance to EMS mutagenesis, we performed deep sequencing (third-generation [Nanopore](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/nanopore/) sequencing) on select gene sequences.
 
@@ -216,4 +233,4 @@ The integrated results demonstrate that EMS-induced mutations specifically accum
 
 ### Reference
 
-[^1]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. https://doi.org/10.1073/pnas.1902823116 ↩
+[^1]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. https://doi.org/10.1073/pnas.1902823116 
