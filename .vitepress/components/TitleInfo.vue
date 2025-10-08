@@ -20,9 +20,11 @@
 
     <!-- Description and button content -->
     <div class="hero-bottom-content">
-      <p class="hero-description" v-if="pageDescription">
-        <span v-html="formattedDescription"></span>
-      </p>
+      <div
+        class="hero-description"
+        v-if="pageDescription"
+        v-html="formattedDescription"
+      ></div>
       <p class="hero-description" v-else>
         Vestibulum <span class="text-orange-400">faucibus eget</span> erat eget pretium.
         Donec commodo convallis ligula, eget suscipit orci.
@@ -107,14 +109,14 @@ const titleStyles = computed(() => {
   };
 });
 
-// Handle description formatting
+// Preserve author-supplied HTML while highlighting {{token}} sections
 const formattedDescription = computed(() => {
-  if (!pageDescription.value) return "";
-  // Match {{text}} for orange highlight
-  return pageDescription.value.replace(
-    /\{\{(.*?)\}\}/g,
-    '<span class="text-orange-400">$1</span>'
-  );
+  const rawDescription = pageDescription.value;
+  if (!rawDescription) {
+    return "";
+  }
+
+  return applyHighlightSpans(rawDescription);
 });
 
 // Handle authors - support both single author and multiple authors (max 3)
@@ -159,6 +161,75 @@ const authors = computed(() => {
   
   return [{ name: "XXX", url: null, avatar: null }];
 });
+
+// Escape text while keeping valid HTML entities intact
+function escapeHtmlText(text) {
+  return text
+    .replace(/&(?!(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);)/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function processTextBuffer(buffer) {
+  if (!buffer) {
+    return "";
+  }
+
+  const parts = [];
+  const highlightRegex = /\{\{(.*?)\}\}/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = highlightRegex.exec(buffer)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(escapeHtmlText(buffer.slice(lastIndex, match.index)));
+    }
+
+    parts.push(`<span class="text-orange-400">${escapeHtmlText(match[1])}</span>`);
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < buffer.length) {
+    parts.push(escapeHtmlText(buffer.slice(lastIndex)));
+  }
+
+  return parts.join("");
+}
+
+function applyHighlightSpans(html) {
+  let result = "";
+  let buffer = "";
+  let insideTag = false;
+
+  for (let i = 0; i < html.length; i += 1) {
+    const char = html[i];
+
+    if (char === "<") {
+      result += processTextBuffer(buffer);
+      buffer = "";
+      insideTag = true;
+      result += char;
+      continue;
+    }
+
+    if (char === ">") {
+      insideTag = false;
+      result += char;
+      continue;
+    }
+
+    if (insideTag) {
+      result += char;
+    } else {
+      buffer += char;
+    }
+  }
+
+  result += processTextBuffer(buffer);
+  return result;
+}
 
 // Helper function to format URLs
 function formatUrl(url) {
