@@ -233,7 +233,7 @@ Furthermore, to deepen public understanding of the daily realities for rare dise
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/tag-card.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
----
+
 
 ### 1.2 Improving our Theoretical Framework: Intersectionality
 
@@ -299,10 +299,7 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 </div>
 
 
-
 ------
-
-
 
 
 ### 2.1 In-depth interview and Ethnographic fieldwork with patients
@@ -693,7 +690,7 @@ Our laboratory-assistive web tool is not merely an efficiency software, but a su
 
 2. **Built-in Mental Health Self-Assessment Module**
 - **Function**: After completing an experiment, the software prompts the user to record their current mood via quick options, and guides them to a self-assessment questionnaire for stress evaluation. All data remains private to the user, and results are accompanied by stress-relief suggestions based on principles of Cognitive Behavioral Therapy (CBT).
-   - **Design Rationale**: This normalizes and destigmatizes attention to mental health, encouraging experimenters to proactively monitor their own condition and prevent the accumulation of chronic stress. It echoes our focus on supporting the **whole person** rather than treating them as “research machines.”
+- **Design Rationale**: This normalizes and destigmatizes attention to mental health, encouraging experimenters to proactively monitor their own condition and prevent the accumulation of chronic stress. It echoes our focus on supporting the **whole person** rather than treating them as “research machines.”
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-4.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
