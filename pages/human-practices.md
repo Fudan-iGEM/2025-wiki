@@ -8,7 +8,6 @@ layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/ihp.avif
 description: On this page, we show how Human Practices guided our project to be both scientifically innovative and socially responsible.
 ---
-
 ## Overview
 
 Our Integrated Human Practices journey began with a simple question: *Is technology inherently good or bad?*
@@ -48,6 +47,7 @@ This reflection naturally led us to examine our own project. We asked: how can w
 <div> <p><small style="color: gray">letter exchange with children</small></p> </div> 
 </div>
 
+
 ## From Reflection to Design: The Birth of an Idea
 
 Our first conversation was with **Dr. Boxun Lu**, a neurobiologist at Fudan University, who envisioned an “AI Yeast System” capable of simulating living cells. His idea helped us see beyond biology as a purely experimental process—it could also be computational, predictive, and creative.
@@ -65,6 +65,7 @@ His insight inspired our modeling strategy: using simulation-driven design to pr
 ><img src="https://static.igem.wiki/teams/5643/pageimage/ihp/boxun-lu.webp">  
 ><div> <p><small style="color: gray">Dr. Boxun Lu</small></p> </div> 
 ></div>
+>
 >
 >**Topic：**From “AI Yeast System” to Multicellular Modeling
 >**Key Takeaways：**
@@ -132,6 +133,7 @@ This exchange inspired us to think not only about the scientific novelty of our 
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/guanghua-huang.webp">  
 > <div> <p><small style="color: gray">Interview with Prof. Guanghua Huang</small></p> </div> 
 > </div>
+> 
 >
 > **Topic:** Antifungal Resistance Research and Project Positioning
 > **Key Takeaways:**
@@ -162,6 +164,7 @@ These insights anchored our concept within clinical relevance, motivating us to 
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/liping-zhu.webp">  
 > <div> <p><small style="color: gray">Interview with Prof. Liping Zhu</small></p> </div> 
 > </div>
+> 
 >
 > **Topic:** Bridging Basic Research and Clinical Needs in Antifungal Resistance
 > **Key Takeaways:**
@@ -188,6 +191,7 @@ After integrating clinical perspectives, we recognized the need to align our exp
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/suzhou-biopharmaceutical-technology-conference.webp">  
 > <div> <p><small style="color: gray">Suzhou Biopharmaceutical Technology Conference</small></p> </div> 
 > </div>
+> 
 >
 > **Topic:** Industry Insights and Project Feedback
 > **Key Takeaways:**
@@ -215,14 +219,13 @@ Following these industrial dialogues, we learned how practical implementation co
 > <div> <p><small style="color: gray">Jiangsu-Zhejiang-Shanghai iGEM Regional Meet-up</small></p> </div> 
 > </div>
 >
-> ---
->
-> **Key Takeaways:**
->
-> - The regional meetup gathered iGEM teams from 18 universities, including Fudan University, Shanghai Jiao Tong University, Zhejiang University, and Jiangnan University, fostering vibrant exchanges through booth exhibitions and project presentations.
->- Rethinking Human Practices: Dr. Yuhan Bao, iGEM 2025 Liaison Officer and Human Practices Committee Coordinator, encouraged teams to move beyond conventional outreach and integrate HP into experimental design. He also advised visualizing the *Design–Build–Test–Learn (DBTL)* cycle on the wiki to highlight iteration and improvement.
-> - Enhancing Team Collaboration: iGEM 2025 Ambassador Xiaohan Zhang emphasized that effective teamwork is central to every successful project, underscoring the importance of clear communication and role coordination.
->- Through open discussion and peer feedback, we gained new insights into both project design and Human Practices execution. A question raised during the session—“How can resistance screening be effectively implemented?”—prompted us to reflect on and refine our experimental design, further strengthening the coherence of our project.
+> 
+>**Key Takeaways:**
+> 
+>- The regional meetup gathered iGEM teams from 18 universities, including Fudan University, Shanghai Jiao Tong University, Zhejiang University, and Jiangnan University, fostering vibrant exchanges through booth exhibitions and project presentations.
+> - Rethinking Human Practices: Dr. Yuhan Bao, iGEM 2025 Liaison Officer and Human Practices Committee Coordinator, encouraged teams to move beyond conventional outreach and integrate HP into experimental design. He also advised visualizing the *Design–Build–Test–Learn (DBTL)* cycle on the wiki to highlight iteration and improvement.
+>- Enhancing Team Collaboration: iGEM 2025 Ambassador Xiaohan Zhang emphasized that effective teamwork is central to every successful project, underscoring the importance of clear communication and role coordination.
+> - Through open discussion and peer feedback, we gained new insights into both project design and Human Practices execution. A question raised during the session—“How can resistance screening be effectively implemented?”—prompted us to reflect on and refine our experimental design, further strengthening the coherence of our project.
 
 ------
 
@@ -259,6 +262,7 @@ This direct clinical exposure connected our theoretical aspirations with urgent 
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/don.avif">  
 > <div> <p><small style="color: gray">Interview with Prof. Don Cleveland</small></p> </div> 
 > </div>
+> 
 >
 > **Topic:** Exploring yeast gene markers and strategies for broad gene coverage
 > **Key Takeaways:**
@@ -284,6 +288,7 @@ Our dialogue with Prof. Cleveland refined our research boundaries, helping us fo
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/20251008205227.avif">  
 > <div> <p><small style="color: gray">Interview with Mr. Shan Jiang</small></p> </div> 
 > </div>
+> 
 >
 > **Topic:** Refining our research direction and understanding project significance
 > **Key Takeaways:**
@@ -307,6 +312,7 @@ This conversation bridged academic design and real-world application, reaffirmin
 > <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/ccic.webp">  
 > <div> <p><small style="color: gray">Group photo at Beijing CCiC Synbiopunk 2025</small></p> </div> 
 > </div>
+> 
 >
 > **Topic:** Biosafety, Bio-Art and Interdisciplinary Dialogue
 > **Key Takeaways:**
@@ -335,6 +341,7 @@ With a scientifically and ethically grounded foundation, we turned to a new ques
 ><img src="https://static.igem.wiki/teams/5643/pageimage/ihp/experience-sharing-with-bnuzh-china.avif">  
 ><div> <p><small style="color: gray">Experience sharing with BNUZH-China, NEFU-China, CAU-China</small></p> </div> 
 ></div>
+>
 >
 >**Topic:** About hp project exchange, harvest sharing
 >**Key Takeaways:**
@@ -365,6 +372,7 @@ These early conversations taught us the value of collaboration and reflection, p
 ><img src="https://static.igem.wiki/teams/5643/pageimage/ihp/yeyang-su.webp">  
 ><div> <p><small style="color: gray">Dialogue with Dr. Yeyang Su</small></p> </div> 
 ></div>
+>
 >
 >**Topic:** Human Practices in Synthetic Biology
 >**Key Takeaways:**
@@ -402,6 +410,7 @@ Dr. Su’s anthropological perspective reminded us that science is never isolate
 ><div> <p><small style="color: gray">Carpet conference with HainanU-China, HZAU-China, NKU-China</small></p> </div> 
 ></div>
 >
+>
 >**Topic：**Human Practices Exchange
 >**Key Takeaways**：
 >
@@ -420,12 +429,13 @@ Together, these exchanges shaped our understanding that Human Practices are not 
 >**Respondent:** Prof. Jianpeng Ma
 >**Respondent Profile:** Professor Jianpeng Ma, Director of Fudan University's Multiscale Research Institute for Complex Systems, is a leading computational biologist. His team's OPUS software suite leads the globe in protein structure prediction, powering an AI-driven platform for new drug development.
 >
->---
+>
 >
 ><div style="text-align: center;"> 
 ><img src="https://static.igem.wiki/teams/5643/pageimage/ihp/majianpeng.avif">  
 ><div> <p><small style="color: gray">Interview with Prof. Jianpeng Ma</small></p> </div> 
 ></div>
+>
 >
 >**Topic：**Gradual Development of AIVC & Societal Engagement
 >
@@ -447,12 +457,13 @@ This parallel between iterative science and social engagement became a guiding p
 >
 > ##### Respondent: iGEM Munich 2025
 >
-> ---
+> 
 >
 > <div style="text-align: center;"> 
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/munchen.avif">  
 > <div> <p><small style="color: gray">Talk with iGEM Munich 2025</small></p> </div> 
 > </div> 
+> 
 >
 > **Topic：**
 > **Key Takeaways：**  
@@ -483,6 +494,7 @@ As we developed our project, we recognized the importance of establishing ethica
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/geng-hong.webp">  
 > <div> <p><small style="color: gray">Interview with Dr. Geng Hong</small></p> </div> 
 > </div>   
+> 
 >
 > **Topic:** AI Evaluation Tool Diagnostics & Improvement  
 > **Key Takeaways:**  
@@ -513,6 +525,7 @@ Through this, we not only improved our AI tool but also deepened our commitment 
 ><div> <p><small style="color: gray">Dialogue with HainanU-China, CSU-CHINA, NKU-China, HUST-China  iGEMers</small></p> </div> 
 ></div> 
 >
+>
 >**Topic:** Discussion on Biosafety  
 >
 >**Key Takeaways:**  
@@ -540,6 +553,7 @@ These discussions allowed us to collectively define safety not as a constraint, 
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/li-tang.webp">  
 > <div> <p><small style="color: gray">Dialogue with Prof. Li Tang</small></p> </div> 
 > </div>
+> 
 >
 > **Topic:** Science Governance, Ethics, and Public Communication  
 > **Key Takeaways:**  
@@ -577,6 +591,7 @@ As our project matured, we expanded our scope beyond academia, exploring how our
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/softbank-china.webp">  
 > <div> <p><small style="color: gray">Dialogue with Mr. Jie Chen</small></p> </div> 
 > </div>
+> 
 >
 > **Topic：** Commercialization of the Visualization Tracking Platform
 > **Key Takeaways：**
@@ -605,7 +620,9 @@ His feedback guided us in envisioning a practical pathway toward real-world depl
 > <div style="text-align: center;"> 
 > <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/qianrong-tang.webp">  
 > <div> <p><small style="color: gray">Ms. Xirong Tang</small></p> </div> 
-> </div>ss
+> </div>
+>
+> 
 >
 > **Topic：** Medical Space Design and Wayfinding Systems
 > **Key Takeaways：**
