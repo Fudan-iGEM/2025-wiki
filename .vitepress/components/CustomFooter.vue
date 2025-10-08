@@ -7,19 +7,19 @@
     </div>
     <div class="footer-sponsors">
       <a href="https://life.fudan.edu.cn/" target="_blank" class="sponsor-link">
-        <img src="https://static.igem.wiki/teams/5643/img/sky.svg" alt="Fudan, School of Life Sciences" class="sky"/>
+        <img src="https://static.igem.wiki/teams/5643/img/sky.webp" alt="Fudan, School of Life Sciences" class="sky"/>
       </a>
       <a href="https://www.fudan.edu.cn/en/" target="_blank" class="sponsor-link">
-        <img src="https://static.igem.wiki/teams/5643/img/fudan.svg" alt="Fudan University" />
+        <img src="https://static.igem.wiki/teams/5643/img/fudan.webp" alt="Fudan University" />
       </a>
       <a href="https://igem.org/" target="_blank" class="sponsor-link">
         <img src="https://static.igem.wiki/teams/5643/img/igem.svg" alt="iGEM" />
       </a>
       <a href="https://www.yfc.cn/" target="_blank" class="sponsor-link">
-        <img src="https://static.igem.wiki/teams/5643/img/yf-capital.svg" alt="YF Capital" />
+        <img src="https://static.igem.wiki/teams/5643/img/yf-capital.webp" alt="YF Capital" />
       </a>
       <a href="https://www.fudan.edu.cn/2019/0408/c526a95643/page.htm" target="_blank" class="sponsor-link">
-        <img src="https://static.igem.wiki/teams/5643/img/kq.svg" alt="KeQin" />
+        <img src="https://static.igem.wiki/teams/5643/img/kq.webp" alt="KeQin" />
       </a>
     </div>
     <div class="footer-copyright">
