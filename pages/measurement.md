@@ -1,6 +1,9 @@
 ---
 title: Measurement
 authors:
+  - name: Zhiqin Wang
+    url: /fudan/team/#Zhiqin
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.web
   - name: Yuxin Duan
     url: /fudan/team/#Yuxin
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp

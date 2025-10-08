@@ -19,7 +19,7 @@
 | [Implementation](https://2025.igem.wiki/fudan/implementation/)     | Yuxin Duan                           |
 | [Improved Parts](https://2025.igem.wiki/fudan/improve/)     | Yining Zhao                          |
 | [Inclusivity](https://2025.igem.wiki/fudan/inclusivity/)        | Zhongyi Huang, Xiuqi Tian, Yufan Han |
-| [Measurement](https://2025.igem.wiki/fudan/measurement/)        | Yuxin Duan                           |
+| [Measurement](https://2025.igem.wiki/fudan/measurement/)        | Zhiqin Wang, Yuxin Duan              |
 | [Model](https://2025.igem.wiki/fudan/model)              | Jihua Tang, Yue Yue                  |
 | [Notebook](https://2025.igem.wiki/fudan/notebook/)           | Yuxin Duan                           |
 | [Part Collection](https://2025.igem.wiki/fudan/part-collection/)    | Peining Wu                           |
@@ -31,5 +31,5 @@
 | [Results](https://2025.igem.wiki/fudan/results/)            | Zhiqin Wang, Yixuan Lu, Yue Yue      |
 | [Safety](https://2025.igem.wiki/fudan/safety/)             | Yue Yue                              |
 | [Software](https://2025.igem.wiki/fudan/software/)           | Yufan Han                            |
-| [Sustainable](https://2025.igem.wiki/fudan/sustainable)        | Yixuan Lu                            |
+| [Sustainable](https://2025.igem.wiki/fudan/sustainable)        | Zuyao Wu                             |
 | [Team](https://2025.igem.wiki/fudan/team/)               | all                                  |
