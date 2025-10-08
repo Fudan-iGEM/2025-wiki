@@ -298,7 +298,7 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure1-single-cell-b-r-left-r-right.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 1. Single-cell- B-R (left) & r (right)</span>
+        <span style="color:gray">Figure 1. Single-cell- B-R (left) &amp; r (right)</span>
         <br><br>
     </div>
 
@@ -322,7 +322,7 @@ C_inherit = p.inherit_frac_C * C_T
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig2">
         <span style="color:gray">Figure 2. &delta;r(65&rarr;145 min) vs pulse width τ</span>
         <br><br>
     </div>
@@ -334,7 +334,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure3-lineage-r-heatmap-birth-aligned.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig3">
         <span style="color:gray">Figure 3. Lineage r heatmap (birth-aligned)</span>
         <br><br>
     </div>
@@ -342,7 +342,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure4-lineage-r-heatmap-baseline-corrected.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig4">
         <span style="color:gray">Figure 4. Lineage r' heatmap (baseline-corrected)</span>
         <br><br>
     </div>
@@ -376,7 +376,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure5-delta-r-vs-10-90-min-window.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig5">
         <span style="color:gray">Figure 5. &Delta;r vs τ (10-90 min window)</span>
         <br><br>
     </div>
@@ -394,7 +394,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure6-rt-t-overlay-fairness-equal-intensity.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig6">
         <span style="color:gray">Figure 6. r(t) overlay (fairness- equal_intensity)</span>
         <br><br>
     </div>
@@ -426,7 +426,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure7-lineage-heatmap-comparison.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig7">
         <span style="color:gray">Figure 7. Lineage Heatmap Comparison</span>
         <br><br>
     </div>
@@ -443,7 +443,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure8-four-generation-rprime-chains-fairness-equal-intensity.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig8">
         <span style="color:gray">Figure 8. Four-generation rprime chains - fairness equal_intensity</span>
         <br><br>
     </div>
@@ -485,7 +485,7 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure9-strong-promoter-vs-weak-promoter.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig9">
         <span style="color:gray">Figure 9. Strong Promoter vs Weak Promoter</span>
         <br><br>
     </div>
@@ -518,7 +518,7 @@ Other minor parameters are detailed in the source code.
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/visual1.webp)
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig10">
         <span style="color:gray">Figure 10. Animation demo of 3D Yeast Growth Simulation</span>
         <br><br>
     </div>
@@ -531,7 +531,7 @@ This module visualizes the spatiotemporal maturation of Fast-FT proteins within 
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/model/visual2-480p.webp" style="zoom:150%;" />
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig11">
         <span style="color:gray">Figure 11. Animation demo of 3D Fluorescent Timer Maturation</span>
         <br><br>
     </div>

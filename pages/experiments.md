@@ -157,7 +157,7 @@ Primers were designed as in Liu *et al*. (2008) Figure 2[^3]. The non-overlappin
    c. **Final Annealing:** T<sub>m pp</sub> - 5°C for 15 s.
    d. **Final Extension:** 72°C for 10 min.
 
-3. While verifying 10&mu;L PCR products by [agarose gel electrophoresis](https://2022.igem.wiki/fudan/experiments#agarose-gel-electrophoresis); treat the remaining 15&mu;L PCR products with 0.5 &mu;L DpnI at 37°C for > 4 h. Once verified and DpnI digestion completed, the PCR products were [transformed](#other-experimental-methods) into *E. coli*.
+3. While verifying 10&mu;L PCR products by [agarose gel electrophoresis](https://2022.igem.wiki/fudan/experiments#agarose-gel-electrophoresis); treat the remaining 15&mu;L PCR products with 0.5 &mu;L [DpnI](https://www.neb.cn/zh-cn/products/r0176-dpni) at 37°C for > 4 h. Once verified and DpnI digestion completed, the PCR products were [transformed](#other-experimental-methods) into *E. coli*.
 
 
 ## Yeast Transformation
@@ -444,7 +444,7 @@ We stained cells with [calcofluor white](https://www.sigmaaldrich.com/HK/en/prod
 
 1. Sample 150&mu;L from the cell culture from the ancestor.
 2. Remove the supernatant through an iterated process of centrifugation and pipetting medium removal. 
-3. Build 15&mu;L of 1 mg/mL calcofluor solution into 500&mu;L 1x phosphate-buffered saline solution (PBS) and mixed with the yeast pellet. 
+3. Build 15&mu;L of 1 mg/mL calcofluor solution into 500&mu;L 1x phosphate-buffered saline solution (PBS) and mixed with the yeast pellet.
 4. Incubate the sample in the dark at room temperature for 25 min.
 5. Remove the calcofluor media by centrifugation and pipetting. 
 6. Add 200 &mu;L 1x PBS on top of the pellet. 5&mu;L of this cell suspension was pipetted onto a clean glass slide and covered with a coverslip for microscopy analysis.

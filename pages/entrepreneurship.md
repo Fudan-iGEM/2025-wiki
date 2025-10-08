@@ -22,7 +22,7 @@ description: On this page, we present a commercially viable solution addressing 
 - **Dr.sTraTeGY = Kit + Software** for dynamic resistance tracking.
 - **Kit:** engineered yeast strains with fluorescent clocks + mutation probes + reagents.
 - **Software:** quantifies fluorescence, models resistance evolution, and exports ready-to-publish reports.
-- **Pricing:** USD 18,000–38,000 per package; optional customization & service contracts.
+- **Pricing:** USD 18,000–38,000 per package; optional customization &amp; service contracts.
 
 ### **How**
 
@@ -84,7 +84,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 #### 2.2 MVP (Minimum Viable Product)
 
- We will deliver **Dr.sTraTeGY** to our clients as a **“Reagent Kit + Companion Software”** tool package, consisting of three parts.
+ We will deliver **Dr.sTraTeGY** to our clients as a **"Reagent Kit + Companion Software"** tool package, consisting of three parts.
 
 ![toolkit of Dr.sTraTeGY](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic5.webp)
 
@@ -189,11 +189,11 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 - **Tier 3 (Public health, regulators, and policy stakeholders):** Their benefits are societal and systemic, helping to drive market access, regulatory acceptance, reimbursement, and policy alignment. They typically come into play later or via partnerships.
 
 
-| Stakeholder Type                                             | Representative Example                                       | Interests / Needs                                            | How DR.sTraTeGY Can Serve Them                               | Risks & Considerations                                       |
+| Stakeholder Type                                             | Representative Example                                       | Interests / Needs                                            | How DR.sTraTeGY Can Serve Them                               | Risks &amp; Considerations                                       |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| **Tier 1 (Primary)**<br />CROs in China                      | Shanghai Medicilon Inc. — a leading R&D CRO based in Shanghai. | High-resolution, robust mutation/resistance data.<br />Reduced time & cost vs whole-genome sequencing.<br />Regulatory compliance, software/data export for analyses.<br />Good support / training. | <ul><li>Offers real-time tracking of resistance emergence and quantitative mutation rates.</li><li>Automation and software export help integrate into CRO workflows.</li><li>Modular/pre-installed reagents reduce set-up time.</li></ul> | <ul><li>Need to demonstrate cost/time advantages over NGS/WGS.</li><li>Learning curve, software usability, and microscope infrastructure.</li><li>Pricing must be acceptable vs. CRO project budgets.</li></ul> |
+| **Tier 1 (Primary)**<br />CROs in China                      | Shanghai Medicilon Inc. — a leading R&D CRO based in Shanghai. | High-resolution, robust mutation/resistance data.<br />Reduced time &amp; cost vs whole-genome sequencing.<br />Regulatory compliance, software/data export for analyses.<br />Good support / training. | <ul><li>Offers real-time tracking of resistance emergence and quantitative mutation rates.</li><li>Automation and software export help integrate into CRO workflows.</li><li>Modular/pre-installed reagents reduce set-up time.</li></ul> | <ul><li>Need to demonstrate cost/time advantages over NGS/WGS.</li><li>Learning curve, software usability, and microscope infrastructure.</li><li>Pricing must be acceptable vs. CRO project budgets.</li></ul> |
 | **Tier 2 (Secondary)**<br />Other research institutions in YRD; Antifungal/Infectious Disease R&D pharma companies | Lizhu Pharmaceutical (cooperation on SG1001); Hansoh Pharma (partnership with SCYNEXIS). | Deep mechanistic insights to support drug candidate development.<br />Usage in preclinical models / early drug efficacy study.<br />Custom probe panels to monitor specific resistance genes.<br />Publication / translational outputs. | <ul><li>Provides detailed mutation mapping and simulates evolutionary pressure under drug concentrations.</li><li>Customizable panels allow tracking of relevant resistance mutations.</li><li>Software outputs usable for academic papers and regulatory dossiers.</li></ul> | <ul><li>Require extensive proof/validation due to long R&D timelines.</li><li>High expectations for data quality and reproducibility.</li><li>May require certification/regulatory-grade assays.</li></ul> |
-| **Tier 3 (Tertiary/Indirect)**<br />Patients; Local health authorities; Hospitals & diagnostic labs | Local CDC in YRD provinces; Hospital mycology labs in Shanghai/Zhejiang. | Better diagnostics and earlier detection of resistant strains.<br />Public health surveillance to track resistance emergence.<br />Hospitals want reliable assays with understandable metrics.<br />Patients want effective treatments. | <ul><li>Outputs could support hospital labs in diagnostics and inform clinicians.</li><li>Health authorities can use aggregated data for stewardship policies.</li><li>Potentially reduces treatment failures and hospital costs.</li></ul> | <ul><li>Slow adoption in hospitals; may lack equipment or trained staff.</li><li>Regulatory approvals (IVD) needed for diagnostic use.</li><li>Patient benefit is indirect and needs demonstrated clinical outcomes.</li></ul> |
+| **Tier 3 (Tertiary/Indirect)**<br />Patients; Local health authorities; Hospitals &amp; diagnostic labs | Local CDC in YRD provinces; Hospital mycology labs in Shanghai/Zhejiang. | Better diagnostics and earlier detection of resistant strains.<br />Public health surveillance to track resistance emergence.<br />Hospitals want reliable assays with understandable metrics.<br />Patients want effective treatments. | <ul><li>Outputs could support hospital labs in diagnostics and inform clinicians.</li><li>Health authorities can use aggregated data for stewardship policies.</li><li>Potentially reduces treatment failures and hospital costs.</li></ul> | <ul><li>Slow adoption in hospitals; may lack equipment or trained staff.</li><li>Regulatory approvals (IVD) needed for diagnostic use.</li><li>Patient benefit is indirect and needs demonstrated clinical outcomes.</li></ul> |
 
 
 
@@ -253,11 +253,11 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 | :--------------- | :----------------------------------------------------------- | :-------------------- | :----------------------------------------------------------- |
 | **Basic**        | Standard reagent kit (tree yeast strain + core probes), core software (fluorescence quantification, evolutionary modeling), manual, 3-month tech support | $18,000               | Lower margin for easier entry; potentially a subsidized/pilot price for early adopters; could include a consumable usage cap. |
 | **Professional** | Adds customizable probes, advanced software features, priority technical support, potentially shorter training lead time | $28,000               | Intended for mid-sized CROs doing repeated studies, or labs needing more advanced metrics. |
-| **Enterprise**   | Full probe customization, extended license (12 months+), higher usage volumes, potential onsite/bespoke modifications, premium support, software updates & modeling additions | $38,000 - $45,000     | May include "consumables per run" pricing or subscription components for software updates. |
+| **Enterprise**   | Full probe customization, extended license (12 months+), higher usage volumes, potential onsite/bespoke modifications, premium support, software updates &amp; modeling additions | $38,000 - $45,000     | May include "consumables per run" pricing or subscription components for software updates. |
 
  Additionally, we also planned pricing strategy ABC to engage our first consumers:
 
- **A. Consumables / Per-Sample Add-ons**: For labs / CROs not able to purchase full kits/licences upfront, you might offer per-sample reagents or per-run reagent bundles priced at e.g. **USD** **300-500 / sample** depending on complexity, or “run” pricing (batch) to make it more accessible.
+ **A. Consumables / Per-Sample Add-ons**: For labs / CROs not able to purchase full kits/licences upfront, you might offer per-sample reagents or per-run reagent bundles priced at e.g. **USD** **300-500 / sample** depending on complexity, or "run" pricing (batch) to make it more accessible.
 
  **B. Software License / Maintenance / Updates**: After initial sale, offer annual renewal/subscription for software updates / new models / cloud features in range **USD** **5,000-10,000/year** for Pro and Enterprise clients.
 
@@ -269,11 +269,11 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 #### 5.3 Marketing Strategy
 
-By linking these five strategic pillars, we will build a complete marketing funnel from **brand awareness &rarr; interest generation &rarr; value validation &rarr; trust building &rarr; conversion & payment &rarr; word-of-mouth propagation**. This integrated online and offline approach efficiently drives the commercial success of Dr.sTraTeGY, achieving brand building, lead generation, and sales conversion in a closed loop.
+By linking these five strategic pillars, we will build a complete marketing funnel from **brand awareness &rarr; interest generation &rarr; value validation &rarr; trust building &rarr; conversion &amp; payment &rarr; word-of-mouth propagation**. This integrated online and offline approach efficiently drives the commercial success of Dr.sTraTeGY, achieving brand building, lead generation, and sales conversion in a closed loop.
 
-**I. Brand & Corporate Image**
+**I. Brand &amp; Corporate Image**
 
-**Brand Positioning & Core Messaging:**
+**Brand Positioning &amp; Core Messaging:**
 
 - **Positioning:** The leader in dynamic antifungal resistance research solutions for drug development.
 - **Core Slogan:** **From Static Snapshot to Dynamic Evolution.**
@@ -285,7 +285,7 @@ By linking these five strategic pillars, we will build a complete marketing funn
 
 - **Color Palette:** Primary Colors are Cyan and Orange; accent color is purple (echoing the grape yeast theme).
 
-**Typography & Imagery:** Maintains clean, modern sans-serif fonts while continuing to utilize dynamic graphs, microphotography, and clean interface illustrations in a unified "scientific visualization" style.
+**Typography &amp; Imagery:** Maintains clean, modern sans-serif fonts while continuing to utilize dynamic graphs, microphotography, and clean interface illustrations in a unified "scientific visualization" style.
 
 
 
@@ -299,7 +299,7 @@ By linking these five strategic pillars, we will build a complete marketing funn
   - **Resource Center with Smart Gating:** Place whitepapers, case studies, and other content behind forms to capture high-quality potential customer information.
   - **Clear Calls-to-Action (CTAs):** Prominently feature CTAs like "Schedule a Demo," "Apply for a Pilot Project," and "Contact Sales" across the site.
 
-**Precision Digital Advertising & Marketing Automation**
+**Precision Digital Advertising &amp; Marketing Automation**
 
 - **Ad Placement:**
   - **Platforms:** Focus on LinkedIn and WeChat Official Account Ads.
@@ -310,7 +310,7 @@ By linking these five strategic pillars, we will build a complete marketing funn
 
 
 
-**III. Content & PR Strategy**
+**III. Content &amp; PR Strategy**
 
 **Content Marketing:**
 
@@ -318,7 +318,7 @@ By linking these five strategic pillars, we will build a complete marketing funn
 - **Case Study Content:** Produce video versions of Customer Success Stories, featuring testimonials from 1-2 benchmark CRO clients, highlighting cost savings and reduced R&D timelines.
 - **Educational Content:** Create the "Dr.sTraTeGY Academy" online video series for new customer training and potential client education.
 
-**Public Relations & Media:**
+**Public Relations &amp; Media:**
 
 - Systematically publicize milestone events like participation in the Shanghai Stock Exchange Cup competition and the meeting with SoftBank China CEO.
 - Plan feature stories like "How an iGEM Team Solved a Billion-Dollar Market Pain Point" for placement in tech and biopharma media outlets like RedNote, 36Kr, and VCBeat.
@@ -400,7 +400,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 | Exit Path                                               | Description                                                  | Pros / Cons                                                  | Likely Valuation Drivers                                     |
 | :------------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| **Acquisition by larger diagnostics / biotech company** | A company that sells diagnostic kits or an IVD/antifungal R&D company buys you for your tech, customer base, and IP. | **Pros:** Quicker exit, less risk of scaling; acquirer's distribution & regulatory power aids scaling.<br>**Cons:** Might accept a lower valuation; integration risk. | Validated performance (clinical/pilot data), regulatory approvals, revenue growth, CRO customer list, defensible IP. |
+| **Acquisition by larger diagnostics / biotech company** | A company that sells diagnostic kits or an IVD/antifungal R&D company buys you for your tech, customer base, and IP. | **Pros:** Quicker exit, less risk of scaling; acquirer's distribution &amp; regulatory power aids scaling.<br>**Cons:** Might accept a lower valuation; integration risk. | Validated performance (clinical/pilot data), regulatory approvals, revenue growth, CRO customer list, defensible IP. |
 | **Licensing plus strategic partnerships**               | License the technology to different geographies or companies; possibly involve partial buy-outs. | **Pros:** Lower risk; retain ownership; recurring revenue; flexibility.<br>**Cons:** Slower cash inflow; requires strong legal/IP infrastructure. | Value of licensing agreements, royalty streams, strength of contracts, robust and defensible IP. |
 | **IPO / public listing**                                | Float on a Chinese board (e.g., Zhujiang Delta Market) or an overseas biotech-friendly market. | **Pros:** Potential for high valuation if growth is strong; brand and resource expansion.<br>**Cons:** Burdensome regulations, public reporting, dilution, market risk; dependent on favorable market conditions. | Proof of scale, documented revenue growth, recurring contracts, a clear path to profitability. |
 | **M&A by CRO / service company**                        | A large CRO might acquire DR、r.sTraTeGY to internalize the resistance-tracking capability. | **Pros:** Logical buyer with direct benefit from the technology; potential for strong synergies.<br>**Cons:** Purchase price negotiation challenges; may command a lower premium than a product company. | Integration potential, cost-saving synergies, ability to scale the technology, overlap with the acquirer's customer base. |
@@ -421,11 +421,11 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
  With our product planning to exit in 5years，we planned the business timeline since 2026： 
 | Phase                                               | Timeline     | Key Activities                                               |
 | :-------------------------------------------------- | :----------- | :----------------------------------------------------------- |
-| **Phase 1: Proof & Pilot**                          | 0-12 months  | Regulatory groundwork; pilot studies with 2-3 CROs in YRD; gather data; refine kit + software UI; generate case studies/publications; set up IP filings. |
-| **Phase 2: Local Market Rollout**                   | 12-24 months | Full launch in YRD; onboarding of CRO clients; sales & marketing; refinement; support infrastructure; pricing optimization; consumables supply chain; begin expansion to other Chinese regions. |
-| **Phase 3: Product Maturation & Scaling**           | 24-36 months | Expand probe panels; enhance software features (cloud, dashboards); automation; partner with reagent distributors; strengthen regulatory certification; build recurring contracts. |
-| **Phase 4: Geographic Expansion & Licensing**       | 36-48 months | Enter other provinces in China; possibly Southeast Asia; license or partnership in non-China jurisdictions; consider export/IVD registration overseas; build brand internationally. |
-| **Phase 5: Exit Preparation & Growth Optimization** | 48-60 months | Solidify recurring revenue streams; profitability or path to it; clean financials; prepare for M&A or IPO; investor relations; possibly raise growth-stage capital. |
+| **Phase 1: Proof &amp; Pilot**                          | 0-12 months  | Regulatory groundwork; pilot studies with 2-3 CROs in YRD; gather data; refine kit + software UI; generate case studies/publications; set up IP filings. |
+| **Phase 2: Local Market Rollout**                   | 12-24 months | Full launch in YRD; onboarding of CRO clients; sales &amp; marketing; refinement; support infrastructure; pricing optimization; consumables supply chain; begin expansion to other Chinese regions. |
+| **Phase 3: Product Maturation &amp; Scaling**           | 24-36 months | Expand probe panels; enhance software features (cloud, dashboards); automation; partner with reagent distributors; strengthen regulatory certification; build recurring contracts. |
+| **Phase 4: Geographic Expansion &amp; Licensing**       | 36-48 months | Enter other provinces in China; possibly Southeast Asia; license or partnership in non-China jurisdictions; consider export/IVD registration overseas; build brand internationally. |
+| **Phase 5: Exit Preparation &amp; Growth Optimization** | 48-60 months | Solidify recurring revenue streams; profitability or path to it; clean financials; prepare for M&A or IPO; investor relations; possibly raise growth-stage capital. |
 
 ![business timeline](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-timeline.webp)
 
@@ -437,23 +437,23 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 **Scientific Impact**
 
-| Specific Impact Description                                  | Likelihood  | Mitigation & Solution Strategies                             |
+| Specific Impact Description                                  | Likelihood  | Mitigation &amp; Solution Strategies                             |
 | :----------------------------------------------------------- | :---------- | :----------------------------------------------------------- |
 | **Positive:** Provides dynamic, visualized data on resistance evolution, significantly enhancing understanding of fungal resistance mechanisms and potentially catalyzing new drug target discovery. | High        | Continuously iterate technology; collaborate with top research institutions to publish high-impact papers; establish technical standards. |
 | **Negative:** Risk of data misinterpretation. Model predictions might be overinterpreted, leading to erroneous research conclusions. | Medium      | Provide detailed SOPs, data analysis guidelines, and user training; embed clear disclaimers and result interpretation notes within the software. |
-| **Negative:** Technology imitation or circumvention. Competitors may develop more advanced or cheaper alternatives. | Medium-High | Build a robust patent portfolio; maintain technological leadership through ongoing R&D; establish brand reputation and customer loyalty. |
+| **Negative:** Technology imitation or circumvention. Competitors may develop more advanced or cheaper alternatives. | Medium-High | Build a robust patent portfolio; maintain technological leadership through ongoing R&amp;D; establish brand reputation and customer loyalty. |
 
 **Medical and Clinical Impact**
 
-| Specific Impact Description                                  | Likelihood | Mitigation & Solution Strategies                             |
+| Specific Impact Description                                  | Likelihood | Mitigation &amp; Solution Strategies                             |
 | :----------------------------------------------------------- | :--------- | :----------------------------------------------------------- |
 | **Positive:** Accelerates R&D of novel antifungal drugs, potentially providing patients with more effective treatment options and improving clinical outcomes in the future. | High       | Collaborate closely with pharmaceutical companies, using real-world data to demonstrate the platform's ability to shorten preclinical timelines. |
 | **Negative:** If R&D decisions based on platform data fail, it could lead to resource waste and delay the development of truly effective therapies. | Medium     | Clearly define the platform's scope and limitations, emphasizing its role as a "tool", not a "decision-maker"; integrate findings with other preclinical data for comprehensive judgment. |
 | **Negative:** Biosafety risks. Accidental release of engineered yeast strains or probes could pose unknown risks to the environment or lab personnel. | Medium     | Low	Strictly adhere to biosafety level regulations; genetically engineer strains to reduce environmental survivability; develop and drill emergency response plans. |
 
-**Economic & Social Impact**
+**Economic &amp; Social Impact**
 
-| **Impact Category**        | **Specific Impact Description**                              | **Likelihood**     | **Mitigation & Solution Strategies**                         |
+| **Impact Category**        | **Specific Impact Description**                              | **Likelihood**     | **Mitigation &amp; Solution Strategies**                         |
 | :------------------------- | :----------------------------------------------------------- | :----------------- | :----------------------------------------------------------- |
 | **Economic/Market Impact** | **Positive:** Saves significant R&D costs and time for CROs and pharma, creating direct economic value; generates substantial revenue through sales and licensing. | High               | Execute phased market entry and expansion strategy; adopt flexible pricing models; demonstrate clear ROI through case studies. |
 |                            | **Positive:** Enables local Chinese biotech/diagnostic industry to capture more value in the global supply chain. | Medium             | Form strategic partnerships with local companies; actively participate in industry ecosystem development. |
@@ -468,7 +468,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 #### 6.3 **Financial Planning**
 
-**Financial Projections & Assumptions**
+**Financial Projections &amp; Assumptions**
 
 | Item                                       | Year 1                                  | Year 2  | Year 3                                                       | Year 4                      | Year 5                      |
 | :----------------------------------------- | :-------------------------------------- | :------ | :----------------------------------------------------------- | :-------------------------- | :-------------------------- |
@@ -496,7 +496,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 - If Year 4 revenue is USD ~2-3 million, exit might fetch USD ~16-30 million (if acquired).
 - If by Year 5 revenue reaches ~USD 5-6 million with good margin, strong customer base, IP, then exit could be **USD 40-60 million** or more; with licensing, recurring revenue, or IPO, possibly higher.
 
- **Funding Needs & Use**
+ **Funding Needs &amp; Use**
 
 - Seed / Pre-Series A (USD 1-2 million) for pilot, regulatory, initial sales / hiring.
 - Series A (USD 5-10 million) around Year 2-3 to scale production, marketing, expand geographic coverage.

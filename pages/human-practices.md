@@ -9,16 +9,16 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we 
 ---
 
-> “Our technology has exceeded our humanity.”
+> "Our technology has exceeded our humanity."
 > ——Albert Einstein
 
 ## What's Wrong with Our Technology?
 
-In recent years, the growing problem of fungal drug resistance has pushed countless patients battling fungal infections into even greater difficulty. People are beginning to realize that the unrestrained and irrational use of antibiotics has only nurtured the rise of so-called “super fungi.”
+In recent years, the growing problem of fungal drug resistance has pushed countless patients battling fungal infections into even greater difficulty. People are beginning to realize that the unrestrained and irrational use of antibiotics has only nurtured the rise of so-called "super fungi".
 
 During the winter vacation, our team launched an outreach project — a letter exchange with middle school students — to share stories about synthetic biology. Across mountains and oceans, one young student wrote to us and asked a question that stopped us in our tracks:
 
-> “Are the ‘new things’ created through synthetic biology beneficial or harmful?”
+> "Are the ‘new things’ created through synthetic biology beneficial or harmful?"
 
 <div style="text-align: center;"> 
 <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp">  
@@ -46,9 +46,9 @@ During our winter-break training, we introduced the concept of using multicellul
 > **Topic：**
 > **Key Takeaways：**
 >
-> Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an “AI Yeast System.” Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
+> Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an "AI Yeast System". Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
 
-His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model Page](https://2025.igem.wiki/fudan/model.html)).
+His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model](https://2025.igem.wiki/fudan/model.html) page).
 After extensive discussion, we refined our idea and decided to employ multicellular yeast as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are developing today.
 
 
@@ -147,7 +147,7 @@ Diagnosis and treatment of infectious diseases
 ### Prof. Don Cleveland
 
 Distinguished Professor and Chair @ Department of Cellular and Molecular Medicine, UC San Diego School of Medicine
-Genome stability; Mechanism & therapy for human neurodegenerative disease
+Genome stability; Mechanism &amp; therapy for human neurodegenerative disease
 
 **Date:** July 26th, 2025
 
@@ -341,7 +341,7 @@ Cybercrime; Privacy on mobile app; Novel cybersecurity threat
 >
 > - For policy advice, tools like PKU FAZHENG can be used for research, and international governance and safety should be highlighted in public materials. Key challenges include public resistance and regulatory delays, such as slow approvals for novel materials.
 >
-> - Safety concerns involve critical issues like drug resistance, gene leakage, and intellectual property theft. National governance includes measures such as wet/dry lab separation and dynamic black/white/grey lists.
+> - Safety concerns involve critical issues like drug resistance, gene leakage, and intellectual property theft. National governance includes measures such as wet- or dry-lab separation and dynamic black/white/grey lists.
 >
 > - In China, policy flexibility is essential due to regional diversity, making direct student involvement in policy drafting less feasible compared to smaller countries. Competition judges are aware of these contextual constraints.
 >
@@ -376,7 +376,7 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 > **Key Takeaways：**
 >
 > - **Differentiated Pricing Strategy:** It is recommended to adopt a multi-tiered pricing model. This could include a low-cost basic software package to attract early adopters, alongside a premium, high-priced "enterprise edition" that includes dedicated technical support, custom analysis, and regular updates. The goal is to capture different segments of the CRO market.
-> - **Focus on Financial Metrics & Value Proposition:** Investors pay close attention to a company's financial health. The business plan must clearly outline the path to profitability. It is crucial to quantitatively demonstrate how the platform can help CRO clients reduce R&D cycles, lower costs, or increase success rates, translating the technical advantage into clear financial value.
+> - **Focus on Financial Metrics &amp; Value Proposition:** Investors pay close attention to a company's financial health. The business plan must clearly outline the path to profitability. It is crucial to quantitatively demonstrate how the platform can help CRO clients reduce R&D cycles, lower costs, or increase success rates, translating the technical advantage into clear financial value.
 > - **Target Market Refinement:** While targeting the Yangtze River Delta CROs is a good start, it is recommended to further define the "beachhead" market. Focus initially on small to medium-sized CROs that are more agile in adopting new technologies, before expanding to larger, established players.
 > - **Emphasize Data Assets:** Beyond the tool itself, the platform's potential to generate unique, proprietary datasets from client use is a significant long-term asset. This data can be leveraged for future AI model training, new drug target discovery, or industry reports, creating additional revenue streams.
 >
@@ -387,7 +387,7 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 
 
 
-### Suzhou Biopharmaceutical Technology Conference 
+### Suzhou Biopharmaceutical Technology Conference
 
 **Date:** June 27th, 2025
 
@@ -409,7 +409,7 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 
 > ### Ms. Xirong Tang
 >
-> Deputy Chief Architect and Director of Healthcare Architecture @ Shanghai Architectural Design & Research Institute Co., Ltd.
+> Deputy Chief Architect and Director of Healthcare Architecture @ Shanghai Architectural Design &amp; Research Institute Co., Ltd.
 > Medical space planning and design
 >
 > **Date: **September 21th, 2025
@@ -445,6 +445,6 @@ Connect to more entrepreneurship...遍一编，还有其他能扯的也扯
 
 
 
-> “Concern for man himself and his fate must always form the chief interest of all technical endeavors… in order that the creations of our mind shall be a blessing and not a curse to mankind.”
+> "Concern for man himself and his fate must always form the chief interest of all technical endeavors… in order that the creations of our mind shall be a blessing and not a curse to mankind."
 > ——Albert Einstein
 

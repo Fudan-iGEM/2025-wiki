@@ -22,7 +22,7 @@ On this page, we introduce DR. sTraTeGY, a Drug Resistance mutation Tracking Tec
 
 - The Problem: The rapid rise of drug-resistant pathogens poses a serious threat to global health.
 - Our Solution: DR. sTraTeGY, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
-- Key Innovations: The platform consists of a "Grape Yeast" chassis, the "Timer & Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
+- Key Innovations: The platform consists of a "Grape Yeast" chassis, the "Timer &amp; Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
 
 ## How It Started?
 
@@ -31,7 +31,7 @@ Fungal pathogens cause a wide range of diseases that have a significant impact o
 To address this challenge, we developed DR. sTraTeGY, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three key components:
 
 1. Grape Yeast: The chassis engineered to be multicellular and responsive to external signals.
-2. Timer & Recorder: A visualization toolkit to track the evolutionary history and selective pressure in real-time.
+2. Timer &amp; Recorder: A visualization toolkit to track the evolutionary history and selective pressure in real-time.
 3. YeastVerse: A virtual experiment platform to guide our wet lab designs and simulate evolutionary processes.
 
 <div style="text-align: center;" id="fig1">
@@ -176,7 +176,7 @@ We verified the module's effectiveness by observing and analyzing the cluster si
 </div>
 
 
-## Visualize the Evolution: The Timer & Recorder Extension
+## Visualize the Evolution: The Timer &amp; Recorder Extension
 
 Our project features two simple yet powerful visualization modules designed to track evolutionary history and mutations. They can be directly integrated into the Grape Yeast chassis by replacing  *ACE2* or inserted at other desired locations.
 
@@ -186,7 +186,7 @@ Microscopic observation alone cannot reveal the chronological relationship betwe
 
 The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro,BBa_25VHXKNL), a modified mCherry fluorescent protein(BBa_25TQG9WZ), the Ash1 3'UTR, and the ScENO1 terminator(BBa_K2753051).
 
-The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see [Model page](/model/)), and, together with the modified mCherry (see [Improved Part page](/improve/)), enables visualization of the cell life cycle.
+The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see [Model](/model/) page), and, together with the modified mCherry (see [Improved Part](/improve/) page), enables visualization of the cell life cycle.
 
 
 
@@ -239,7 +239,7 @@ We screened 28 combinations of four promoters and seven optimized fluorescent pr
 
 #### 2) Long-Term Natural Evolution Tracking
 
-To study its stability and performance in different genomic environments, we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes. We selected sixteen chromosomal integration sites (one per chromosome), including both neutral “safe sites” without functional roles and "dangerous sites" that replace non-essential genes. 
+To study its stability and performance in different genomic environments, we integrated the TU Recorder into a "simplified grape yeast" strain(with only *ACE2* removed), covering all 16 chromosomes. We selected sixteen chromosomal integration sites (one per chromosome), including both neutral "safe sites" without functional roles and "dangerous sites" that replace non-essential genes. 
 
 To accurately reflect the natural genomic pressure during long-term evolution, the neutral sites—adapted from Shaw et al.[^7]—were chosen for their minimal influence on host physiology.
 
@@ -303,7 +303,7 @@ Besides, GG offers crucial technical superiority by maintaining high fidelity ev
 
 ## YeastVerse: Our Virtual Experiment Platform
 
-Throughout this project, we fully embraced the "dry lab guiding wet lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [model page](/model/) for more details.
+Throughout this project, we fully embraced the "dry-lab guiding wet-lab" approach by creating [YeastVerse](/model/), our virtual yeast simulation platform. YeastVerse, a portmanteau for "Yeast Metaverse," was used extensively to simulate the growth, division, protein expression, and external signal response of both Grape Yeast and normal unicellular yeast. This guided our wet lab work and visually demonstrated the advantage of Grape Yeast in tracking evolutionary history. YeastVerse is a powerful platform with various functional modules and adjustable parameters, serving as the "zero-th machine" for our Grape Yeast chassis. Please check our [Model](/model/) page for more details.
 
 <div style="text-align: center;" id="fig9">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">

@@ -53,7 +53,7 @@ Consequently, the modified mCherry transcript is produced in the mother cell dur
 
 ## Experimental Validation
 
-We performed both dry-lab and wet-lab experiments on the modified mCherry. For details, please refer to the [Registry page](BBa_25AT6YR4) and [Model](/model/).
+We performed both dry-lab and wet-lab experiments on the modified mCherry. For details, please refer to the BBa_25AT6YR4 and [Model](/model/).
 
 ## Community Value
 

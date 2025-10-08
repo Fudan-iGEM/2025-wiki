@@ -55,7 +55,7 @@ We actively participated in this regional conference at Xi'an Jiaotong-Liverpool
 
 We attended this integrated event, which attracted over 1,000 synthetic biology researchers and developers globally. We presented our work in the [CCiC](https://mp.weixin.qq.com/s/Khat--iWCXM0JxiwPnq1Ng) poster session and participated in SynCamp unconferences on critical topics like biosafety and AI. This experience provided invaluable feedback from both academic and industry perspectives, strengthening our commitment to responsible innovation.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/ccic.webp" style="width:80%">
     <div>
         <span style="color:gray">Group photo at Beijing CCiC &amp; Synbiopunk 2025</span>
@@ -87,7 +87,7 @@ We actively sought collaborations with diverse teams to broaden our reach and en
 
 Co-organized with teams from [ShanghaiTech-China](https://2025.igem.wiki/shanghaitech-china/) and [SJTU-BioX-Shanghai](https://2025.igem.wiki/sjtu-biox-shanghai/), this mega-event engaged 78 participants across Shanghai, transforming the city into a living laboratory and strengthening regional iGEM bonds.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/playing/activity-material-synbiosh.webp" style="width:80%">
     <div>
         <span style="color:gray">Gift to participants at SynbioSH</span>
@@ -100,7 +100,7 @@ Co-organized with teams from [ShanghaiTech-China](https://2025.igem.wiki/shangha
 
 Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://2025.igem.wiki/nudt-china/home), we developed an online puzzle game that made gene editing concepts accessible and engaging, reaching a wide, digital-native audience. Below is a sceenshot of the game interface.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/game-interface.webp" style="width:80%">
     <!-- div>
         <span style="color:gray">Game interface</span>
@@ -111,9 +111,9 @@ Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://20
 
 #### [Microbial painting](/education/#microbial-painting)
 
- In collaboration with [Nanjing-China](https://2025.igem.wiki/nanjing-china/), [SJTU-BioX-Shanghai](https://2025.igem.wiki/sjtu-biox-shanghai/), [ZJU-China](https://2025.igem.wiki/zju-china/) and [USTC](https://2025.igem.wiki/ustc/) , we hosted a microbial painting workshop. Using safe, colorful, and even fluorescent bacteria as “paint,” participants learned essential aseptic techniques while creating unique bio-art pieces. This activity demonstrated that synthetic biology is not only accessible but also a medium for personal expression and discovery.
+ In collaboration with [Nanjing-China](https://2025.igem.wiki/nanjing-china/), [SJTU-BioX-Shanghai](https://2025.igem.wiki/sjtu-biox-shanghai/), [ZJU-China](https://2025.igem.wiki/zju-china/) and [USTC](https://2025.igem.wiki/ustc/) , we hosted a microbial painting workshop. Using safe, colorful, and even fluorescent bacteria as "paint", participants learned essential aseptic techniques while creating unique bio-art pieces. This activity demonstrated that synthetic biology is not only accessible but also a medium for personal expression and discovery.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig5">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/microbial-painting.webp" style="width:80%">
     <div>
         <span style="color:gray">Group photo of microbial painting participants</span>
@@ -128,7 +128,7 @@ Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://20
 
 We established a recurring presence at community centers ([Shanghai Sunflower](https://mp.weixin.qq.com/s/JaN6fctOlMpAvuNNOxJZrw),  [Dalian Road Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/2ri6HdtRwp8TmxzetrYYDw)、[Chenjiatou Community Neighbor Center, Jiangpu Road Subdistrict](https://mp.weixin.qq.com/s/28t6Jc8MTzO5HJrqELSMMA) and [Lingqiao No.7 Residents' Committee, Gaoqiao Town](https://mp.weixin.qq.com/s/0Tw382Uwc3kX4GZwmM42Vw), co-developing a standardized curriculum for children on topics like "[Genes &amp; Proteins](/education/#gene-protein-the-code-of-life)", "[Bread Fermentation](/education/#bread-fermentation)", "[Microbes are Everywhere](/education/#microbes-are-everywhere)" and so on.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig6">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/community-centers.webp" style="width:80%">
     <div>
         <span style="color:gray">Group photo in the Jiangpu community center</span>
@@ -140,7 +140,7 @@ We established a recurring presence at community centers ([Shanghai Sunflower](h
 
 With [Lingqiao No.7 Residents' Committee , Gaoqiao Town](https://mp.weixin.qq.com/s/0Tw382Uwc3kX4GZwmM42Vw), we developed the seminar "[Rumor Stopping](/education/#rumor-stopping)" to educate seniors on identifying and avoiding high-tech scams.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig7">
     <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/record-photo2-rumor-stopping.webp" style="width:80%">
     <div>
         <span style="color:gray">We luanched the Rumor Stopping seminar.</span>
@@ -153,7 +153,7 @@ With [Lingqiao No.7 Residents' Committee , Gaoqiao Town](https://mp.weixin.qq.co
 
  We collaborated with [AFMU-China](https://2025.igem.wiki/afmu-china/) to co-author an original [children's picture book](/education/#my-microb-friends%E2%80%94%E2%80%94picturebook), creating a lasting and scalable outreach resource.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig8">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/my-microbe-friends.webp" style="width:80%">
     <!-- div>
         <span style="color:gray">My microbe friends</span>
@@ -172,7 +172,7 @@ In collaboration with multiple universities, primarily [CJUH-JLU-China](https://
 
 We contacted a well-known EB patient blogger, ["Prince Superman"](https://www.douyin.com/user/MS4wLjABAAAAiPAi_DP-EC0vXnRdKEIiamC2FOLQPAVw9_-7_5n5uOxYFHlLwK9Bj0oKVI1SBqf9), getting in touch with the "Butterfly Baby" patient community was transformative. With [Chuangzhi Farm](https://mp.weixin.qq.com/s/T5r_cn4C996vpNrhgvPFFw), we organized an exhibition to help the public understand the daily challenges patients face.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig9">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/our-exhibition.webp" style="width:80%">
     <div>
         <span style="color:gray">Our exhibition at Chuangzhi Farm</span>
@@ -184,7 +184,7 @@ We contacted a well-known EB patient blogger, ["Prince Superman"](https://www.do
 
 Using the "PhotoVoice" methodology with [Club Tang Xin Dan](https://mp.weixin.qq.com/s/Ydx7etjGJt2lUIIaJBCyag), we facilitated deep dialogues (one online meeting screenshot below) to center patient voices in health discussions.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig10">
     <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-1.webp" style="width:80%">
     <!-- div>
         <span style="color:gray">Dialogues with patients</span>
@@ -198,7 +198,7 @@ Using the "PhotoVoice" methodology with [Club Tang Xin Dan](https://mp.weixin.qq
 
  With the help from [Fudan Student Union](https://mp.weixin.qq.com/s/x3_FsgO8pRFZ2GsjsNveAA), we organized the lecture "Decoding Life with Algorithms", attracting more than one hundred students from diverse backgrounds and bridging biology with computational sciences.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig11">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/decoding-life-with-algorithms.webp" style="width:80%">
     <div>
         <span style="color:gray">Decoding Life with Algorithms</span>
@@ -211,7 +211,7 @@ Using the "PhotoVoice" methodology with [Club Tang Xin Dan](https://mp.weixin.qq
 
 On March 28th, we collaborated with [Club—Yiluzhiyin](https://mp.weixin.qq.com/s/j8XAxvefIViG3muPJaWC2Q) to host a vibrant Garden Party. The event featured balloon art, a synthetic biology adventure game, and collage poetry, successfully engaging over 300 participants and demonstrating the power of combining play, practice, and creation in science outreach.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig12">
     <img src="https://static.igem.wiki/teams/5643/pageimage/education/portifolio/our-event-booths.webp" style="width:80%">
     <div>
         <span style="color:gray">Garden Party on March 28th</span>
@@ -228,7 +228,7 @@ To ensure real-world relevance, we engaged with the business community to test o
 
 We had the privilege of engaging in a face-to-face discussion with Mr. Jie Chen, CEO of [SoftBank China](http://www.sbcvc.com/), who provided critical insights into the pharmaceutical market, directly influencing our business model and pricing strategy.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig13">
     <img src="https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action2.webp" style="width:80%">
     <div>
         <span style="color:gray">We communicate with a well established entrepreneur</span>
@@ -241,7 +241,7 @@ We had the privilege of engaging in a face-to-face discussion with Mr. Jie Chen,
 
 We took part in the [Biopharmaceutical Track of the Shanghai College Student Innovation and Entrepreneurship Competition (Shanghai Stock Exchange Cup)](https://hjyc.youkehulian.com/), aiming to raise initial funding from potential investors through roadshows. Industry experts and judges provided valuable feedback during discussion sessions.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="fig14">
     <img src="https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-action1.webp" style="width:80%">
     <div>
         <span style="color:gray">Photo of us, before the competition</span>

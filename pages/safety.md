@@ -116,7 +116,7 @@ New members also need to complete a [Good Lab Practice Quiz](https://wiki.actin.
 
 By layering University, School, and Laboratory safety programs, we've created a comprehensive, continuous, and proactive safety framework. This ensures all members receive the training and resources they need to work safely while advancing responsible and sustainable science.
 
-## Project-Specific Biosafety Assessment & Measures
+## Project-Specific Biosafety Assessment &amp; Measures
 
 Oversight of emerging technologies is constantly evolving, as the risks they pose are often not yet fully known or analyzed. For biosafety risk management, this means mitigation strategies must consider both the proven risks and the potential consequences that experiments may — or may not — produce.
 
