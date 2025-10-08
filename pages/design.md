@@ -30,7 +30,7 @@ Fungal pathogens cause a wide range of diseases that have a significant impact o
 
 To address this challenge, we developed DR. sTraTeGY, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three key components:
 
-1. Grape Yeast: The core chassis engineered to be multicellular and responsive to external signals.
+1. Grape Yeast: The chassis engineered to be multicellular and responsive to external signals.
 2. Timer & Recorder: A visualization toolkit to track the evolutionary history and selective pressure in real-time.
 3. YeastVerse: A virtual experiment platform to guide our wet lab designs and simulate evolutionary processes.
 

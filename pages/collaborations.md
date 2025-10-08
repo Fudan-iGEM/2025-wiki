@@ -34,7 +34,7 @@ All partnerships were forged in the spirit of iGEM's values, ensuring mutual ben
 
 ## Empowering the iGEM Community and Advancing Academia
 
-We believe the core strength of iGEM lies in its collaborative spirit. Acting as a hub for knowledge exchange, we engaged deeply with the global community and sought academic expertise to push the boundaries of our project.
+We believe the strength of iGEM lies in its collaborative spirit. Acting as a hub for knowledge exchange, we engaged deeply with the global community and sought academic expertise to push the boundaries of our project.
 
 ### National Conferences: Synergy at Scale
 
@@ -53,7 +53,7 @@ We actively participated in this regional conference at Xi'an Jiaotong-Liverpool
 
 #### Beijing CCiC &amp; Synbiopunk 2025
 
-We attended this integrated event, which attracted over 1,000 synthetic biology researchers and developers globally. We presented our work in the CCiC poster session and participated in SynCamp unconferences on critical topics like biosafety and AI. This experience provided invaluable feedback from both academic and industry perspectives, strengthening our commitment to responsible innovation.
+We attended this integrated event, which attracted over 1,000 synthetic biology researchers and developers globally. We presented our work in the [CCiC](https://mp.weixin.qq.com/s/Khat--iWCXM0JxiwPnq1Ng) poster session and participated in SynCamp unconferences on critical topics like biosafety and AI. This experience provided invaluable feedback from both academic and industry perspectives, strengthening our commitment to responsible innovation.
 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/ccic.webp" style="width:80%">
@@ -163,7 +163,7 @@ With [Lingqiao No.7 Residents' Committee , Gaoqiao Town](https://mp.weixin.qq.co
 
 #### [Rumor Clarification Handbook](/education/#rumor-stopping)
 
-In collaboration with multiple universities, primarily CJUH-JLU, we produced the "Smashing Synthetic Biology Rumors" [Science Brochure](https://static.igem.wiki/teams/5643/pageimage/collaboration/smashing-synthetic-biology-rumours-science-brochure-compressed.pdf), which participants could take home to continue practicing critical thinking when encountering health-related claims.
+In collaboration with multiple universities, primarily [CJUH-JLU-China](https://2025.igem.wiki/cjuh-jlu-china/), we produced the "Smashing Synthetic Biology Rumors" [Science Brochure](https://static.igem.wiki/teams/5643/pageimage/collaboration/smashing-synthetic-biology-rumours-science-brochure-compressed.pdf), which participants could take home to continue practicing critical thinking when encountering health-related claims.
 
 
 ### Collaboration with Patient Groups and Medical Institutions
