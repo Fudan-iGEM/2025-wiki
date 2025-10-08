@@ -6,7 +6,7 @@ author:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzy-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we
+description: On this page, we describe why we developed a new way to study microbial evolution.
 ---
 
 ## 1. The Global Challenge: Antifungal Resistance
@@ -17,7 +17,6 @@ What makes this challenge especially alarming is the rapid rise of **antifungal 
 
 In the face of this growing crisis, identifying new drug targets is not just an academic pursuit—it is an urgent necessity. A reliable and innovative platform to uncover resistance mutations could pave the way for next-generation antifungal therapies and strengthen our ability to respond to this silent yet pressing epidemic.
 
-------
 
 ## 2. Current Limitations in Drug Target Discovery
 
@@ -25,17 +24,19 @@ Although the urgency of developing new antifungal strategies is clear, current a
 
 Taken together, these shortcomings demonstrate the need for a **new kind of platform**: one that is standardized, dynamic, and able to directly track resistance mutations in real time. Such a system would not only allow us to identify resistance earlier but also reveal the evolutionary pathways fungi take as they adapt, offering insights that static methods cannot provide.
 
+
 ## 3. Our Inspiration: From Multicellularity to Evolution
 
 The turning point for our project came from an unexpected source of inspiration. While exploring literature on traceable evolution, one of our team members encountered the book *The Song of The Cell*[^6], which introduced the concept of **multicellularity as a visible form of short-term evolution**. This idea struck us profoundly. If multicellularity can make evolutionary change observable within the span of a few generations, perhaps it could also be used to track something as elusive and critical as the evolution of drug resistance. After all, fungi acquiring  resistance itself is an evolutionary process—fungal populations adapt to survive under drug pressure, and these adaptations leave a trail of mutations that, if properly recorded, could be studied in real time.
 
-Intrigued by this possibility, we began tracing the origins of multicellular yeast research and were surprised to discover that it had strong ties to our own university. The pioneering work in this field was carried out by our alumnus **Kai Tong**, under the mentorship of Professor **[Ratcliff](https://ratclifflab.biosci.gatech.edu/)**, a leading researcher in experimental evolution. When we reached out to them, they not only affirmed the novelty of our idea but also encouraged us that such a system could indeed be feasible. Their guidance and enthusiasm gave us the confidence to move forward.
+Intrigued by this possibility, we began tracing the origins of multicellular yeast research and were surprised to discover that it had strong ties to our own university. The pioneering work in this field was carried out by our alumnus **Kai Tong**, under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading researcher in experimental evolution. When we reached out to them, they not only affirmed the novelty of our idea but also encouraged us that such a system could indeed be feasible. Their guidance and enthusiasm gave us the confidence to move forward.
 
-【书本内容图】【邮件截图】
+@@@@【书本内容图】【邮件截图】
 
 This was the moment when a conceptual link turned into a concrete plan. We realized that by leveraging synthetic biology tools to engineer multicellular yeast as a living recorder, we could capture the evolutionary trajectory of antifungal resistance. From this realization, the foundation of our project was born: building a platform that transforms the study of resistance from static snapshots into **dynamic, observable evolution in action**.
 
-## 4. Our Solution: **DR. sTraTeGY**
+
+## 4. Our Solution: *DR. sTraTeGY*
 
 This led the Fudan iGEM 2025 team to create **DR. sTraTeGY** **(Drug Resistance mutation Tracking Technology based on Grape Yeast)**, an innovative platform to track the evolutionary dynamics of fungal resistance.
  At its foundation lies a **novel chassis organism**, the multicellular **“Grape Yeast.”** Unlike traditional unicellular systems, Grape Yeast provides a structured, programmable arena where spatial organization and cell differentiation make evolutionary processes directly observable.
@@ -44,11 +45,10 @@ Building on this chassis, we developed two key modules: the **Timer**, which tra
 
 Through this design, our aim is to move beyond retrospective analysis and establish a system that not only tracks the resistance mutations but also visualizes the trajectories. Ultimately, **DR. sTraTeGY** offers a new framework to confront the global crisis of antifungal resistance—capturing fungal evolution, inspiring future research to build upon this new chassis and guiding the development of next-generation therapies.
 
--->Learn more about the design and construction of **DR. sTraTeGY** on our [Design Page](/design/).
+Learn more about the design and construction of **DR. sTraTeGY** on our [Design Page](/design/).
 
----
 
-## 5. From Wet Lab to Dry Lab: **Model Integration**
+## 5. From Wet Lab to Dry Lab: Model Integration
 
 While the Grape Yeast chassis gives us a powerful biological platform to observe resistance in real time, experimental work alone is not enough. To systematically explore evolutionary dynamics and guide our design choices, we built a complementary computational tool: **YeastVerse**. This modeling platform was developed to bridge the wet lab and the dry lab, enabling us to simulate yeast behavior across diverse environmental conditions before committing resources to experiments.
 
@@ -56,11 +56,10 @@ YeastVerse allows us to do several critical things. It can **screen feasible par
 
 By combining experimental and computational perspectives, we ensure that **DR. sTraTeGY** is not only observable but also predictable. In doing so, we provide future researchers with a robust framework to study resistance dynamics and design their own interventions with greater confidence.
 
--->Explore more details about **YeastVerse** on our [Model Page](/model/).
+Explore more details about **YeastVerse** on our [Model Page](/model/).
 
-------
 
-## 6. Beyond the Lab: **Inclusivity & Diversity**
+## 6. Beyond the Lab: Inclusivity &amp; Diversity
 
 Just as fungi adapt under relentless drug pressure, patients with fungal infections similarly endure survival pressures not only from the disease itself but also from the social environments that surround them. As we studied fungal resistance, we became increasingly aware that those living with fungal infections often face challenges that go far beyond the biological disease itself. Many patients shared experiences of being **misunderstood, judged, or stigmatized** because of their condition. 
 
@@ -70,9 +69,8 @@ In response, we designed an outreach program that placed **inclusivity at its co
 
 These activities did more than document perspectives—they created spaces for dialogue,brought people together and opened channels for mutual understanding.  Just as we aim to track resistance evolution in real time, we also strive to make sure that those affected by fungal infections are seen and heard in real life. We believe that a scientific platform addressing antifungal resistance must also reflect the values of equity, respect, and shared humanity.
 
-👉 Discover stories of **Inclusivity** on our  [Inclusivity Page](/Inclusivity/).
+Discover stories of **Inclusivity** on our [Inclusivity Page](/Inclusivity/).
 
-------
 
 ## 7. Conclusion
 
@@ -81,7 +79,6 @@ Our project, **DR. sTraTeGY**, is more than a technological innovation—it is o
 Yet our vision extends beyond the laboratory. Through **YeastVerse**, our integrated computational model, we ensure that the biology we study is both testable and predictable, strengthening the design–build–test–learn cycle and offering future researchers a tool that can accelerate antifungal research. At the same time, our commitment to **inclusivity** ensures that science does not unfold in isolation but in conversation with the people most affected by fungal infections. By amplifying marginalized voices and creating new forms of dialogue, we show that scientific innovation and social responsibility can and must go hand in hand.
 
 Together, these elements capture the essence of DR. sTraTeGY: not just a new way to study microbial evolution, but a new way of practicing science—advancing knowledge while serving humanity. We believe DR. sTraTeGY holds the potential to accelerate antifungal drug development, deepen our understanding of evolution, and stand as a vital tool in humanity’s defense against fungal threats.
-
 
 
 ## References

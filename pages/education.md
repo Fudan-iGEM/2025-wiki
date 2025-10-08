@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dhz-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we
+description: We hoped to educate everyone to learn synthetic biology through continuous in-depth activities. We have completed our education, and at the same time, we have completed our own education.
 ---
 
 ## Overview
@@ -34,7 +34,6 @@ Through extensive interviews and collaborations with academics, teachers, studen
 While a single activity may not transform a participant into an expert, it can plant a seed of curiosity. We strive to make the process of discovering the science behind everyday life joyful and meaningful. It is our hope that through these experiences, participants develop a growing interest in synthetic biology, begin to contemplate its principles, and ultimately apply what they have learned—forming a virtuous cycle of exploration and understanding.
 
 ![OUR GOAL](https://static.igem.wiki/teams/5643/pageimage/education/our-goal.webp)
-
 
 
 This idea of learning through cycles of curiosity, engagement, and reflection connects directly to our educational philosophy.We root our approach in [**Constructionism**](https://en.wikipedia.org/wiki/Constructionism_(learning_theory)), which posits that people learn most effectively when actively engaged in constructing tangible and shareable objects in the real world[^3]. It emphasizes meaningful, hands-on experiences, where active and social participation helps learners build a deeper understanding of the world around themm[^6][^7]. 
@@ -80,8 +79,6 @@ Production empowers learners to become innovators—transforming them from infor
 
 Crucially, ***producing is not a final destination***—it generates new outcomes that spark further exploration, practice, and curiosity, sustaining a continuous cycle of learning and growth.
 
-
-
 #### Triple P：A Cohesive and Iterative Cycle
 
 The Triple P framework—**Learning by Playing, Learning by Practicing, and Learning by Producing**—is not a set of isolated learning stages, but an iterative ecosystem centered on "curiosity-driven engagement, competency advancement, and value-based closure."
@@ -93,7 +90,6 @@ The Triple P framework—**Learning by Playing, Learning by Practicing, and Lear
 ![The Triple P Pathway](https://static.igem.wiki/teams/5643/pageimage/education/the-triple-p-pathway.webp)
 
 This self-reinforcing cycle breaks away from one-way knowledge transfer. It enables learners to grow into active explorers, competent practitioners, and creative contributors—fostering deep understanding, sustained engagement, and innovation in synthetic biology and beyond.
-
 
 
 ### Build Our Activities in Community Insights
@@ -160,7 +156,6 @@ What We Learned From It
 - Involving teachers in the design process is crucial to **developing practically viable educational tools**.
 
 
-
 #### Social Breadth - Interdisciplinary Interviews
 
 Date：From April to June，2025
@@ -187,17 +182,13 @@ We designed a series of semi-structured interviews with students from non-STEM d
 You can read our interview records [here](https://static.igem.wiki/teams/5643/pageimage/education/file/interview-records.pdf).
 
 
-
 ### ReDesign and Rebuild——The Synthesis: From Insights to Action
-
-------
 
 Our educational framework did not emerge in isolation—it was **co-built with the community**. Insights from peers at Jilin University sharpened our academic grounding, reminding us to balance *breadth of participation* with *depth of rigor*. Conversations with frontline teachers highlighted the **practical realities of classrooms**, from time limits to student engagement strategies, ensuring our activities remained feasible and impactful. Meanwhile, dialogues with non-STEM students revealed that the **true barrier is not interest, but accessibility**—pushing us to use analogies, cultural framing, and modular designs that invite broader audiences.
 
 Looking ahead, we also plan to translate these insights into **new formats of engagement**: picture books that invite children into the microbial world, immersive storytelling formats such as “rule-based mysteries” that resonate with young people, and **interactive workshops** that make learning participatory and fun. We will further expand with **hands-on experiments** that let learners experience science directly, and with **training sessions** that guide students to independently explore research topics and continuously refine their knowledge systems.
 
 By grounding theory in lived realities, we ensured that our framework is both **academically defensible and socially responsive**. The outcome is an educational model that is not static, but adaptive, capable of evolving with new audiences, emerging pedagogical needs, and the broader mission of democratizing synthetic biology.
-
 
 
 ## Our Initial Portfolio
@@ -211,8 +202,7 @@ Our initial tests covered all three dimensions of the 3P theory:
 - **Produce**: We guided participants to transform their understanding of synthetic biology into works via collage poetry.
 
 
-
-#### Activity 1. Picture Book Relay
+### Activity 1. Picture Book Relay
 
 Date：From May to June，2025
 
@@ -243,8 +233,7 @@ If you would like to know more about the event, please click [here](https://mp.w
 - Parents also recommended creating **a supplementary manual** to address potential gaps in children’s self-directed learning , for example: missed key points.
 
 
-
-#### Activity2. Laboratory Visit and Experience
+### Activity2. Laboratory Visit and Experience
 
 Date：May 17th，2025
 
@@ -285,8 +274,7 @@ The laboratory visit provided valuable lessons in designing research exposure ac
 ![we took photos with participant](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-took-photos-with-participant.webp)
 
 
-
-#### Activity 3. Microbial Inoculation of Daily Necessities
+### Activity 3. Microbial Inoculation of Daily Necessities
 
 Date：May 18，2025
 
@@ -321,8 +309,7 @@ To break down laboratory barriers and reduce operational difficulty:
 You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-feedback-microbial-inoculation-of-daily-necessities.pdf) to see the feedback from the students.
 
 
-
-#### Activity 4. Garden Party
+### Activity 4. Garden Party
 
 Date：March 28th，2025
 
@@ -371,7 +358,6 @@ More than **300 people** participated in this event. The Garden Party taught us 
 ![we take a group photo](https://static.igem.wiki/teams/5643/pageimage/education/portifolio/we-take-a-group-photo.webp)
 
 
-
 ## The Practice of Triple P
 
 ### LEARNING BY PLAYING
@@ -418,7 +404,6 @@ Learned from [the previous event](#Activity-1.-Picture-Book-Relay), we created a
 **Outcome**
 
 Our activities are loved by children and parents. Everyone realized that there are so many microorganisms in life.
-
 
 
 ##### Interactive Science workshop
@@ -481,7 +466,6 @@ Survey results showed:
 - Interest: Many expressed greater curiosity about biology after the workshop.
 
 You can view the full questionnaire and results [here](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-feedback-gene-and-protein.pdf).
-
 
 
 ###### Bread Fermentation
@@ -582,7 +566,6 @@ Post-event feedback showed:
 - Stronger engagement thanks to the mix of movement, play, and role-based storytelling.
 
 You can view the full questionnaire and results [here](https://static.igem.wiki/teams/5643/pageimage/education/file/activity-feedback-microbe.pdf).
-
 
 
 #### Youth and Public
@@ -978,7 +961,6 @@ Yinying Pan, one participant, reflected that the program helped her **rethink ed
 All in all, the Torch Plan successfully demonstrates how iGEM's synthetic biology research can intersect with education to create meaningful, lasting impact. By empowering future teachers with both scientific knowledge and practical teaching tools, we ensure that synthetic biology education continues to inspire young minds long after the iGEM competition ends.
 
 
-
 ## Education Beyond Limits
 
 > Commitment to Inclusion, to bridge generations & backgrounds
@@ -991,7 +973,7 @@ We believe that science should be **truly accessible and beneficial to everyone*
 
 Our goal was to **bring these groups back into the conversation**, empower them with knowledge, and foster **trust between communities and technology**.
 
-#### Rumor Stopping
+### Rumor Stopping
 
 > Building Scientific Literacy for the Elderly
 
@@ -1059,7 +1041,7 @@ This workshop demonstrated how **role-play and humor** can be powerful tools for
 
 
 
-#### Migrant Children
+### Migrant Children
 
 > Opening Doors to Science
 
@@ -1089,7 +1071,7 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 
 
-#### Rural Students
+### Rural Students
 
 > Bringing Science to Remote Villages
 
@@ -1110,7 +1092,6 @@ In collaboration with the **Youth League Committee of the Department of Physics*
 This initiative not only gave rural students access to basic concepts of synthetic biology but also helped them view science as approachable and useful for their own lives. By engaging in interactive experiments, they gained confidence, moved beyond memorization, and discovered that creativity is part of scientific thinking. Most importantly, the workshops inspired a sense of possibility — showing that science is not abstract or distant, but a tool that can help address real challenges in their communities and contribute to sustainable development in their hometowns.
 
 You can click [here](https://mp.weixin.qq.com/s/WEcco3ydBVGyTfBy3VA0CA) for more information
-
 
 
 ## Virtuous Cycle: Reusability, Legacy, and Reflection
@@ -1140,11 +1121,12 @@ From the outset, every activity and resource in our Play-Practice-Produce initia
 
   These reusable resources form a growing **open educational archive** for synthetic biology. Our lesson plans have already been applied in community science programs; our fermentation experiments were adopted by campus culture festivals. This intentional design ensures our project’s impact extends far beyond iGEM, supporting ongoing synthetic biology education and inspiring future initiatives.
 
-### Our Own Education: The Team's Learning Journey
+
+## Our Own Education: The Team's Learning Journey
 
 >This is what we experience, and it is also our education
 
-#### Self-education
+### Self-education
 
 While building this ecosystem for others, our team underwent its own profound educational journey through the Play-Practice-Produce cycle—transforming our project into a mirror of our growth as young scientists and communicators. 
 
@@ -1156,7 +1138,7 @@ Through **Production**, we collaborated across boundaries. Working with educatio
 
 Throughout this process, we maintained a **team reflection log**—documenting challenges (like overly complex game rules) and solutions (such as adding a “1-minute guide”)—creating a living record that fueled rapid iteration and learning.
 
-#### Self-Reflection
+### Self-Reflection
 
 Reflection is an integral part of our cycle, ensuring that every activity is **meaningful, student-centered, and effective**. Throughout implementation, our team consistently asked:
 
@@ -1170,7 +1152,6 @@ This reflective practice feeds back into the ecosystem, enabling us to **refine 
 Ultimately, what we gained went far beyond subject expertise. We learned how to co-create with diverse groups, how to design for scalability and empathy, and how to turn criticism into better design. These insights represent the most valuable outcome of our education journey—one that we now share proudly as part of our iGEM legacy.
 
 
-
 ## Summary
 
 Our education initiative is built on the **Constructionism** learning theory and implemented through our unique **"Triple P" framework**: **Play → Practice → Produce**.
@@ -1182,6 +1163,7 @@ All activities were **co-created with our community** through interviews with te
 We hope to inspire everyone to understand the face of synthetic biology through continuous in-depth activities. We have completed our education, and at the same time, we have completed our own education.
 
 
+## Reference
 
 [^1]: Muñoz-Losa, A., Corbacho-Cuello, I. Impact of Interactive Science Workshops Participation on Primary School Children's Emotions and Attitudes Towards Science. *Int J of Sci and Math Educ* (2025). DOI: 10.1007/s10763-024-10539-2
 [^2]: Master A, Cheryan S, Moscatelli A, Meltzoff AN. Programming experience promotes higher STEM motivation among first-grade girls. J Exp Child Psychol. 2017 Aug;160:92-106. DOI: 10.1016/j.jecp.2017.03.013. Epub 2017 Apr 21. PMID: 28433822.
@@ -1189,4 +1171,3 @@ We hope to inspire everyone to understand the face of synthetic biology through 
 [^6]: Papavlasopoulou, S., Giannakos, M. N., & Jaccheri, L. (2019). Exploring children's learning experience in constructionism-based coding activities through design-based research. Computers in Human Behavior, 99, 415-427. DOI: DOI: 10.1016/j.chb.2019.01.008
 [^7]: Downey, R. J., Youmans, K., Villanueva Alarcón, I., Nadelson, L., & Bouwma-Gearhart, J. (2022). Building Knowledge Structures in Context: An Exploration of How Constructionism Principles Influence Engineering Student Learning Experiences in Academic Making Spaces Education Sciences (12, pp.).
 [^8]: Ma, G., & Wu, Q. (2019). Social capital and educational inequality of migrant children in contemporary China: A multilevel mediation analysis. Children and Youth Services Review, 99, 165-171. DOI: DOI: 10.1016/j.childyouth.2019.02.002
-
