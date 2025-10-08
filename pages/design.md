@@ -177,7 +177,7 @@ Our project features two simple yet powerful visualization tools designed to tra
 
 Microscopic observation alone cannot determine the chronological relationship between two neighboring cells. To address this, we developed the Timer module, which visually records a single cell's life cycle in real-time. The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro), a modified-mCherry fluorescent protein, the Ash1 3'UTR, and the ScENO1terminator.
 
-The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see our [Model](/model/) page), and, together with the modified mCherry (see our [Improved Part](/improve/) page), enables visualization of the cell life cycle.
+The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see our [Model](/model/) page), and, together with the modified mCherry (see our [Improved Parts](/improve/) page), enables visualization of the cell life cycle.
 
 
 

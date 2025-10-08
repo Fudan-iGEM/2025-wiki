@@ -9,7 +9,6 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/software/header-softwar
 description: EMS Sequence Optimizer -- A web-based tool for optimizing gene sequences to tune their EMS mutagenesis sensitivity through synonymous codon substitution
 ---
 
-> [!TIP]
 > **Try EMS-Optimizer now**: https://2025.igem.wiki/software-tools/fudan/
 >
 > **Source code**: https://gitlab.igem.org/2025/software-tools/fudan

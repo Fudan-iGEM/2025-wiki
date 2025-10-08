@@ -694,13 +694,13 @@ const navItems = ref([
       {
         icon: "improve",
         title: "Improved Parts",
-        description: "Enhanced biological parts",
+        description: "We enhanced parts",
         link: "/fudan/improve/",
       },
       {
         icon: "part-collection",
         title: "Part Collection",
-        description: "Catalog of biological parts",
+        description: "Catalog of our parts",
         link: "/fudan/part-collection/",
       },
       {

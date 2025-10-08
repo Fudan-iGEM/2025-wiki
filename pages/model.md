@@ -20,7 +20,7 @@ Our work reimagines this cycle by introducing an [AI-augmented modeling framewor
 
 This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach supercharges the “Design” phase, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a scalable, reproducible blueprint for the next generation of synthetic biology projects—one where computational foresight and wet-lab execution move in lockstep from day one.
 
-## Why This Model?
+## Why this Model?
 
 In synthetic biology and cellular timing studies, constructing a reliable and readable intracellular timer is crucial for understanding cellular life cycles, lineage relationships, and dynamic processes. Fluorescent Timer (FT) proteins, which change color over time, have become a powerful tool for achieving this goal. However, in practical applications, the performance of FT proteins is influenced by multiple factors, including expression strategies, maturation dynamics, cell division inheritance, and environmental conditions. To systematically evaluate and optimize these factors before conducting experiments, we have developed this mathematical model. It aims to theoretically screen feasible parameter ranges, validate the reasonableness of promoter selection and expression control, and provide clear design guidelines for subsequent wet-lab experiments.
 
@@ -45,7 +45,7 @@ This model is based on the following experimental settings:
 - Fluorescent protein: *Fast-FT*[^1] is selected;
 - Expression trigger: using a single pulse (based on the later comparison of periodic and constitutive promoters).
 
-## Parameters
+## Model Parameters
 
 <div style="text-align: center;">
         <span style="color:gray">Table 1. Parameters (global variables) for the model</span>
@@ -151,7 +151,7 @@ $$
 - **Cellular Environment Consistency**: The translation and protein degradation rates in S2 cells at 25°C align closely with yeast, and since both are lower eukaryotes, the biochemical interference is minimal, ensuring the chemical maturation and biological interference total time is comparable.
 - **Non-Core Variables Exclusion**: The pH of YPD 6.0–6.5 is within the fluorescent stability range of Fast-FT (pH 5.4–7.4), and the YPD medium only provides nutrients without affecting chromophore chemical maturation. Hence, no parameter adjustments are needed.
 
-## Assumptions
+## Model Assumptions
 
 1. **Single Pulse**: Each cell expresses the fluorescent protein once during the late M phase of the cell cycle and stops expression after the pulse.
 2. **Protein Transfer Mechanism**: The immature C-state protein generated in the mother cell enters the daughter cell and matures within the daughter cell.
@@ -279,7 +279,7 @@ C_inherit = p.inherit_frac_C * C_T
 # R_inherit = 0.0
 ```
 
-## Results
+## Modeling Results
 
 ### Single-cell time series
 
@@ -348,7 +348,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
     </div>
 
 
-## Analysis
+## Results and Discussion
 
 ### Periodic Promoter vs Constitutive Promoter
 
@@ -491,7 +491,7 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
     </div>
 
 
-## Visualization Modules
+## Visualization
 
 To enhance the interpretability and accessibility of our modeling framework, we developed two interactive 3D visualization tools as part of the YeastVerse virtual experiment platform. These tools simulate key aspects of the multicellular yeast chassis and fluorescent timer dynamics, providing intuitive insights into system behavior under various parameters. Built using React.js and Three.js, they allow users to explore spatial growth patterns and temporal fluorescence changes in real-time, bridging abstract mathematical predictions with visual, biologically grounded representations.
 
@@ -563,7 +563,7 @@ In summary, the model successfully validates the importance of periodic promoter
 
 To systematically improve our model, we adopted the Design–Build–Test–Learn (DBTL) cycle, a core methodology in synthetic biology. This iterative process allowed us to refine model parameters and mechanisms based on both literature and values obtained from our own wet-lab experiments. Below, we describe two rounds of DBTL cycles that led to the current robust model.
 
-### DBTL Round1
+### DBTL Round 1
 
 #### Literature-Based Initial Model and Identification of Gaps
 
@@ -578,7 +578,7 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 - **Learn (2025.07):**
   We identified that in vitro data did not account for cellular factors like translation delays, chaperone interactions, and metabolic context. This highlighted the need for intracellular-specific parameters and better alignment with yeast physiology. Additionally, the promoter expression timing and protein inheritance logic required biological validation from our [wet-lab experiments](#).
 
-### DBTL Round2
+### DBTL Round 2
 
 #### Integration of Wet-Lab Data and Model Validation
 
@@ -609,7 +609,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
 - **Learn (2025.10):**
   The convergence between our [AI-augmented model predictions](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) and the [experimental outcomes](#) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
 
-## How to use our model
+## How to Use our Model?
 
 This model provides a complete theoretical framework and computational implementation for simulating the dynamic behavior of fluorescent timer proteins (FT) in yeast cells. Through systematic parameter scanning and virtual experiments, users can optimize experimental designs, verify hypotheses, and predict potential outcomes before conducting actual wet-lab experiments. Below are the detailed usage guidelines:
 
@@ -766,7 +766,8 @@ Result Part：[FT.py](https://gitlab.igem.org/2025/fudan/-/blob/main/model/FT.py
 
 AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_DeepSeek_Assistant.json), [Qwen Conversation JSON](https://gitlab.igem.org/2025/fudan/-/blob/main/model/AI_Qwen_Assistant.json)
 
-3D Visualization Modules: [YeastVerse](https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse)
+3D Visualization: [YeastVerse](https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse)
+
 
 ## References
 
