@@ -535,6 +535,7 @@ This module visualizes the spatiotemporal maturation of Fast-FT proteins within 
         <span style="color:gray">Figure 11. Animation demo of 3D Fluorescent Timer Maturation</span>
         <br><br>
     </div>
+> To set up and explore these visual tools locally, please follow the step-by-step guide in the [README](https://gitlab.igem.org/2025/fudan/-/blob/main/model/YeastVerse/README.md) documentation to deploy the program on your own computer.
 
 ## AI-Aided Validation of Model Predictions
 
