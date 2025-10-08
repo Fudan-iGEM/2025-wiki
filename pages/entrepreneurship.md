@@ -65,11 +65,11 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic3.webp)
 
- In this stage, CRO usually takes the responsibility of drug screening for Drug manufacturers. CRO stands for Contract Research Organization， companies that provide outsourced research services to pharmaceutical, biotechnology, and medical device firms. Therefore, they usually conduct specialized works including AMR tests that allow drug developers to reduce costs, accelerate timelines, and access specialized expertise without building everything in-house.
+ In this stage, CRO usually takes the responsibility of drug screening for Drug manufacturers. CRO stands for Contract Research Organization,  companies that provide outsourced research services to pharmaceutical, biotechnology, and medical device firms. Therefore, they usually conduct specialized works including AMR tests that allow drug developers to reduce costs, accelerate timelines, and access specialized expertise without building everything in-house.
 
 
 
-## 2.Our solution: possible，scalable and inventive
+## 2.Our solution: possible, scalable and inventive
 
 
 #### 2.1 Core Technology
@@ -203,9 +203,9 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 #### 4.4 Team Members' capability
 
- As a team with diverse backgrounds, we have members specialized in different areas， including: biology，Clinical Medical Science，software development， commercialization，public relations.
+ As a team with diverse backgrounds, we have members specialized in different areas,  including: biology, Clinical Medical Science, software development,  commercialization, public relations.
 
- Dr. Meredith Belbin，the famous British management psychologist develop **the Belbin Team Roles Theory** in the 1980s [^4]. His framework identifies nine distinct roles individuals naturally adopt in teamwork. The core premise of the theory is that no single person possesses all the skills or traits needed for a team to succeed. And it is essential to ensure each iGEM team member’s roles align, complements each other in the commercialization of our product.
+ Dr. Meredith Belbin, the famous British management psychologist develop **the Belbin Team Roles Theory** in the 1980s [^4]. His framework identifies nine distinct roles individuals naturally adopt in teamwork. The core premise of the theory is that no single person possesses all the skills or traits needed for a team to succeed. And it is essential to ensure each iGEM team member’s roles align, complements each other in the commercialization of our product.
 
  Here is the visualization of our distribution of team roles of the 12 members:
 
@@ -217,7 +217,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 #### 4.5 SWOT Analysis
 
-Based on SWOT，we will take the SO strategy: where we will leverage **internal strengths** to capitalize on **external opportunities**.
+Based on SWOT, we will take the SO strategy: where we will leverage **internal strengths** to capitalize on **external opportunities**.
 
  **Leverage** **unique dynamic-tracking strength** to position DR.sTraTeGY as the *gold-standard tool* for CROs developing antifungal drugs.
 
@@ -417,7 +417,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 ## 6. Overlook: Impact and Plans for the Long Term
 #### 6.1 Expansion Timeline
 
- With our product planning to exit in 5years，we planned the business timeline since 2026:  
+ With our product planning to exit in 5years, we planned the business timeline since 2026:  
 | Phase                                               | Timeline     | Key Activities                                               |
 | :-------------------------------------------------- | :----------- | :----------------------------------------------------------- |
 | **Phase 1: Proof &amp; Pilot**                          | 0-12 months  | Regulatory groundwork; pilot studies with 2-3 CROs in YRD; gather data; refine kit + software UI; generate case studies/publications; set up IP filings. |

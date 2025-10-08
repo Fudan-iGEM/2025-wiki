@@ -114,9 +114,9 @@ To bring the *Triple P* framework to life, we collaborated with diverse stakehol
 
 ### Academic Depth - Exchanges with Jilin University
 
-Date: May 16th，2025
+Date: May 16th, 2025
 
-People: Zhiqin Wang，Huizhen Du，Yixuan Lu
+People: Zhiqin Wang, Huizhen Du, Yixuan Lu
 
 Collaboration: CJUH-JLU-China
 
@@ -148,7 +148,7 @@ We held in-depth conversations with CJUH-JLU-China, during which they shared val
 
 ### Practical Frontline - Dialogue with School Teacher
 
-Date: May 24th，2025
+Date: May 24th, 2025
 
 People: Huizhen Du
 
@@ -188,7 +188,7 @@ What We Learned From It
 
 ### Social Breadth - Interdisciplinary Interviews
 
-Date: From April to June，2025
+Date: From April to June, 2025
 
 People: All team members
 
@@ -243,7 +243,7 @@ Our initial tests covered all three dimensions of the 3P theory:
 
 ### Activity 1. Picture Book Relay
 
-Date: From May to June，2025
+Date: From May to June, 2025
 
 People: Huizhen Du
 
@@ -279,9 +279,9 @@ If you would like to know more about the event, please click [here](https://mp.w
 
 ### Activity2. Laboratory Visit and Experience
 
-Date: May 17th，2025
+Date: May 17th, 2025
 
-Organizers: Zhiqin Wang，Yufan Han
+Organizers: Zhiqin Wang, Yufan Han
 
 We organized a laboratory open day to provide students with an immersive research experience. The event aimed to bridge the gap between theoretical knowledge and real-world science by guiding participants through multiple biology labs, introducing diverse research fields, and facilitating direct communication with faculty members and researchers.
 
@@ -324,7 +324,7 @@ The laboratory visit provided valuable lessons in designing research exposure ac
 
 ### Activity 3. Microbial Inoculation of Daily Necessities
 
-Date: May 18，2025
+Date: May 18, 2025
 
 People: Zhiqin Wang、Yixuan Lu、Peining Wu、Huizhen Du
 
@@ -360,7 +360,7 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 ### Activity 4. Garden Party
 
-Date: March 28th，2025
+Date: March 28th, 2025
 
 People: Peining Wu、Yuxin Duan、Zuyao Wu、Yue Yue、Huizhen Du
 
@@ -434,7 +434,7 @@ As a result, children are a key audience for our activities. With limited prior 
 
 ### My Microb Friends——Picturebook
 
-Date: From June to July，2025
+Date: From June to July, 2025
 
 Organizers: Huizhen Du, Xiuqi Tian
 
@@ -485,9 +485,9 @@ In order to allow more children to receive our education, we choose to go into t
 
 **Workshop1: Gene & Protein**
 
-Date: July 15th，2025
+Date: July 15th, 2025
 
-Organizers: Huizhen Du，Yuxin Duan，Yining Zhao
+Organizers: Huizhen Du, Yuxin Duan, Yining Zhao
 
 **Overview**
 
@@ -548,9 +548,9 @@ You can view the full questionnaire and results [here](https://static.igem.wiki/
 
 **Workshop2: Bread Fermentation**
 
-Date: July 17th and 23th，2025
+Date: July 17th and 23th, 2025
 
-Organizers: Huizhen Du，Yuxin Duan，Yixuan Lu
+Organizers: Huizhen Du, Yuxin Duan, Yixuan Lu
 
 **Overview**
 
@@ -595,9 +595,9 @@ You can view the full questionnaire and results [here](https://static.igem.wiki/
 
 **Workshop3: Microbes Are Everywhere**
 
-Date: July 24th，2025
+Date: July 24th, 2025
 
-Organizers: Huizhen Du，Zhiqin Wang，Zhongyi Huang
+Organizers: Huizhen Du, Zhiqin Wang, Zhongyi Huang
 
 **Overview**
 
@@ -678,9 +678,9 @@ To reach this audience, we designed activities that blend **gamification, digita
 
 ### BIO-BOUNCE
 
-Date: From July to October，2025
+Date: From July to October, 2025
 
-Organizers: Yufan Han，Huizhen Du
+Organizers: Yufan Han, Huizhen Du
 
 Collaboration: USTC、NUDT-CHINA
 
@@ -720,7 +720,7 @@ You can enjoy it [click here](https://gd.games/instant-builds/837df4ba-8e96-4e18
 
 ### SynbioSH
 
-Date: July 6th，2025
+Date: July 6th, 2025
 
 Organizers: Huizhen Du
 
@@ -811,9 +811,9 @@ These experiences guided participants from curiosity to understanding, equipping
 
 >I can do this——Building Lab Intuition
 
-Date: September 12th，2025
+Date: September 12th, 2025
 
-Organizers: Yining Zhao，Yuxin Duan，Zhiqin Wang，Huizhen Du
+Organizers: Yining Zhao, Yuxin Duan, Zhiqin Wang, Huizhen Du
 
 Collaboration: Nanjing-China、SJTU-BioX-Shanghai、ZJU-China、USTC
 
@@ -857,9 +857,9 @@ You can check out participants' feedback on their activities [here](https://stat
 
 >I can see how it works——I enjoy it
 
-Date: May 18th，2025
+Date: May 18th, 2025
 
-Organizers: Huizhen Du，Zhiqin Wang，Yixuan Lu，Xiuqi Tian，Jihua Tang，Zuyao Wu
+Organizers: Huizhen Du, Zhiqin Wang, Yixuan Lu, Xiuqi Tian, Jihua Tang, Zuyao Wu
 
 **Overview**
 
@@ -908,7 +908,7 @@ Additionally, some students identified *Aspergillus brunneus*, a microbial speci
 
 >I can learn from how it works
 
-Date: From July to August，2025
+Date: From July to August, 2025
 
 Organizers: Huizhen Du
 
@@ -973,7 +973,7 @@ By producing tangible results, participants **internalize knowledge**, consolida
 
 ### SynBio Training Program
 
-Date: From January 6th to January 5th ，2025
+Date: From January 6th to January 5th , 2025
 
 Organizers: All members
 
@@ -1034,9 +1034,9 @@ This program combines tool-based training, guided topics, and open exploration t
 
 > When iGEM meets Education
 
-Date: From April to May ，2025
+Date: From April to May , 2025
 
-Organizers: Huizhen Du，Yue Yue
+Organizers: Huizhen Du, Yue Yue
 
 **Overview**
 
@@ -1133,7 +1133,7 @@ Our goal was to **bring these groups back into the conversation**, empower them 
 
 > Building Scientific Literacy for the Elderly
 
-Date: September 20th，2025
+Date: September 20th, 2025
 
 Organizers: Huizhen Du、Zhongyi Huang
 
@@ -1219,9 +1219,9 @@ This workshop demonstrated how **role-play and humor** can be powerful tools for
 
 > Opening Doors to Science
 
-Date: May 31th and June 21th，2025
+Date: May 31th and June 21th, 2025
 
-Organizers: Huizhen Du，Yue Yue
+Organizers: Huizhen Du, Yue Yue
 
 **Overview**
 
@@ -1250,7 +1250,7 @@ You can click [here](https://static.igem.wiki/teams/5643/pageimage/education/fil
 
 > Bringing Science to Remote Villages
 
-Date: From June to July，2025
+Date: From June to July, 2025
 
 Organizers: Huizhen Du
 

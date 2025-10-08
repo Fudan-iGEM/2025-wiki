@@ -234,7 +234,7 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
 
    > “I chose this painting because it feels really realistic! I feel like the little girl in the painting, lively and cute yet elegant. Next to 'me' is 'my kitten', which is smart and clever while still charming." ——EB patient HanJing
 
-In our pop-up，we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
+In our pop-up, we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
 
 Furthermore, to deepen public understanding of the daily realities for rare disease patients, we designed price comparison cards. For example, one card highlighted that while a postcard print of a patient's artwork was priced at just 3 RMB, a single daily medical dressing they required cost 100 RMB. This stark contrast help the participants to grasp the profound financial challenges faced by EB patients.
 
@@ -352,8 +352,8 @@ We first conducted a **quantitative questionnaire survey**, Participants answer 
 This table contains both positively and reverse-scored items. Specifically: **Items 1-3 are positively scored**, where a higher score indicates stronger agreement or a more positive evaluation of the healthcare experience. **Items 4 and 5 are reverse-scored**, where a higher score indicates greater dissatisfaction with the current situation or more frequent negative experiences. Results showed that: 
 
 - The majority had experienced *misunderstanding and stigma* due to fungal problems.（Q5=2.20）
-- Most participants felt that medical experiences strongly influenced their willingness to seek care, and that current clinical experiences required improvement.（Q1=3.41，Q4=1.93）
-- All participants rated their *level of participation in science* lower than their perceived *importance in science*.（Q2=4.31，Q3=2.91）
+- Most participants felt that medical experiences strongly influenced their willingness to seek care, and that current clinical experiences required improvement.（Q1=3.41, Q4=1.93）
+- All participants rated their *level of participation in science* lower than their perceived *importance in science*.（Q2=4.31, Q3=2.91）
 
 This highlights that “fungus-susceptible groups,” including EB patients, face barriers of *scientific voicelessness*. Specifically, their experiential knowledge, rooted in lived medical encounters, is systematically excluded from knowledge production when it does not conform to dominant discourses (e.g., technical biomedical language).
 
