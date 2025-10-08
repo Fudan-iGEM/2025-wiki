@@ -47,28 +47,29 @@ This model is based on the following experimental settings:
 
 ## Parameters
 
-<div style="text-align: left;">
+<div style="text-align: center;">
         <span style="color:gray">Table 1. Parameters (global variables) for the model</span>
         <br>
     </div>
 
+
 | **Parameter** | **Meaning**                                | **Default Value**       | **Unit** |
 | ------------------- | ---------------------------------------------- | -------------------------------- | -------- |
-| **$Tcc_{min}$**      | Cell cycle length | 87                               | min      |
-| **$t_{endmin}$**   | Single-cell simulation duration | 20160                       | min      |
-| **$dt_{min}$**      | Integration step size | 1.0                           | min      |
-| **$pulse_{widthmin}$** | Pulse duration | 15                               | min      |
-| **$pulse_{amp}$**   | Pulse amplitude                   | 1.0                              | -        |
-| **$k_{dm}$**        | mRNA degradation rate | \($\ln 2 / 10$\)                 | min⁻¹    |
-| **$\tau_{Bmin}$** | C to B time constant       | 12.0                             | min      |
-| **$\tau_{Imin}$** | B to I time constant       | 45.0                             | min      |
-| **$\tau_{Rmin}$**  | I to R time constant       | 720.0                            | min      |
+| **$Tcc$**      | Cell cycle length | 87[^6]                           | min      |
+| **$t_{end}$**   | Single-cell simulation duration | 20160 (customizable and modifiable) | min      |
+| **$dt$**      | Integration step size | 1.0 (customizable and modifiable) | min      |
+| **$pulse_{width}$** | Pulse duration | 15 (as demonstrated [below](#periodic-promoter-vs-constitutive-promoter)) | min      |
+| **$pulse_{amp}$**   | Pulse amplitude                   | 1.0 (as demonstrated [below](#strong-promoter-vs-weak-promoter)) | -        |
+| **$k_{dm}$**        | mRNA degradation rate | $\frac{\ln 2}{10}$[^11]  | min⁻¹    |
+| **$\tau_{B}$** | C to B time constant       | 12.0[^1]                         | min      |
+| **$\tau_{I}$** | B to I time constant       | 45.0[^1]                         | min      |
+| **$\tau_{R}$** | I to R time constant       | 720.0[^1]                       | min      |
 | **$t_{12}^{(R)}$** | Red protein half-life      | 247.2                       | h        |
-| **$inherit_{frac,C}$** | Inheritance fraction of C-state protein | 1.0                           | -        |
-| **$k_B$**           | C to B rate constant         | \($1 / \tau_B$\)                 | min⁻¹    |
-| **$k_I$**           | B to I rate constant         | \($1 / \tau_I$\)                 | min⁻¹    |
-| **$k_R$**           | I to R rate constant         | \($1 / \tau_R$\)                 | min⁻¹    |
-| **$k_{DR}$**       | Red protein degradation rate | \($\ln 2 / (t_{12}^{(R)} \cdot 60)$\) | min⁻¹    |
+| **$inherit_{frac,C}$** | Inheritance fraction of C-state protein | 1.0 (estimated, to simplify the model, modifiable within [0.0, 1.0]) | -        |
+| **$k_B$**           | C to B rate constant         | $\frac{1}{\tau_B}$ (calculate from known value $\tau_{B}$) | min⁻¹    |
+| **$k_I$**           | B to I rate constant         | $\frac{1}{\tau_I}$ (calculate from known value $\tau_{I}$) | min⁻¹    |
+| **$k_R$**           | I to R rate constant         | $\frac{1}{\tau_R}$ (calculate from known value $\tau_{R}$) | min⁻¹    |
+| **$k_{DR}$**       | Red protein degradation rate | $\frac{\ln 2}{(t_{12}^{(R)} \cdot 60)}$ | min⁻¹    |
 
 ### Fast-FT Time Parameter Calculation
 
@@ -312,9 +313,9 @@ C_inherit = p.inherit_frac_C * C_T
 
 **Criterion:** With a typical quantitative imaging noise $\sigma_r\approx 0.03$, the “3σ” line is $3\sigma_r\approx 0.09$. Thus:
 
-- $\tau\le 15,\mathrm{min}$ **passes**;
-- $\tau=20,\mathrm{min}$ is **borderline**;
-- $\tau\ge 25,\mathrm{min}$ **fails**.
+- $\tau\le 15,\mathrm{min}$ passes;
+- $\tau=20,\mathrm{min}$ is borderline;
+- $\tau\ge 25,\mathrm{min}$ fails.
 
 **Conclusion:** Under the present Fast-FT kinetics, constraining the birth pulse to $10\text{–}15\mathrm{min}$ yields $\Delta r>3\sigma$ in the $65\text{–}145\mathrm{min}$ window and is therefore readable.
 
@@ -366,9 +367,9 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 - **Criterion:**
     $\Delta r = r(90) - r(10)$ measures the dynamic range within the $10\text{–}90,\mathrm{min}$ window. Using a typical noise level of $\sigma_r \approx 0.03$, the 3$\sigma_r$ threshold is $\Delta r \approx 0.09$.
 
-   - $\tau \leq 15\mathrm{min}$ **passes**;
-   - $\tau = 20\mathrm{min}$ is **borderline**;
-   - $\tau \geq 25\mathrm{min}$ **fails**.
+   - $\tau \leq 15\mathrm{min}$ passes;
+   - $\tau = 20\mathrm{min}$ is borderline;
+   - $\tau \geq 25\mathrm{min}$ fails.
    
 - **Conclusion:** Shorter pulses, such as $\tau=10\text{–}15\mathrm{min}$, effectively compress the expression near cell birth, followed by the maturation process, yielding a clear signal within the $10\text{–}90\mathrm{min}$ window. Meanwhile, continuous expression dilutes the signal, making it difficult to distinguish changes in $r(t)$.
 
@@ -512,7 +513,7 @@ This module simulates the three-dimensional growth of the multicellular "grape y
 <div style="text-align: left;">
         <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
     </div>
-Other minor parameters are detailed in the [source code.](https://gitlab.igem.org/2025/fudan/-/blob/main/model/iGEMmodel/src/YeastSimulation.jsx)
+Other minor parameters are detailed in the [source code](https://gitlab.igem.org/2025/fudan/-/blob/main/model/YeastVerse/src/YeastSimulation.jsx).
 
 
 
@@ -780,3 +781,5 @@ AI-Aided Validation: [DeepSeek Conversation JSON](https://gitlab.igem.org/2025/f
 [^8]: Brodsky, A. S., & Silver, P. A. (2000). Pre-mRNA processing factors are required for nuclear export. *RNA (New York, N.Y.)*, *6*(12), 1737–1749. DOI: 10.1017/s1355838200001059
 [^9]: Ratcliff, W., Fankhauser, J., Rogers, D. *et al.* Origins of multicellular evolvability in snowflake yeast. *Nat Commun* **6**, 6102 (2015). DOI: 10.1038/ncomms7102
 [^10]: Fukuda, N. Apparent diameter and cell density of yeast strains with different ploidy. *Sci Rep* **13**, 1513 (2023). DOI: 10.1038/s41598-023-28800-z
+[^11]: Alalam, H., Zepeda-Martínez, J. A., & Sunnerhagen, P. (2022). Global SLAM-seq for accurate mRNA decay determination and identification of NMD targets. *RNA*, *28*(6), 905-915. DOI: 10.1261/rna.079077.121
+
