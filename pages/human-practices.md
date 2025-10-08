@@ -45,7 +45,7 @@ This reflection naturally led us to examine our own project. We asked: how can w
 
 <div style="text-align: center;"> 
 <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="zoom: 33%;" />
-<div> <p><small style="color: gray">letter exchange with children</small></small></p> </div> 
+<div> <p><small style="color: gray">letter exchange with children</small></p> </div> 
 </div>
 
 ## From Reflection to Design: The Birth of an Idea
