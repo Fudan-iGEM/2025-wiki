@@ -119,7 +119,6 @@ Following a comprehensive performance analysis of all promoter and fluorescent p
 
 **Table 2. Performance of Individual Fluorescent Protein**
 
-| Fluorescent Protein Performance |                         |                       |                               |              |
 | Fluorescent Protein                 | Avg Composite Score (S) | Avg Effectiveness (E) | Avg Specificity Loss (S_loss) | Avg log2(FC) |
 | ----------------------------------- | ----------------------- | --------------------- | ----------------------------- | ------------ |
 | EMSfp383                            | 2052.6009               | 205.3097              | 0.4958                        | 0.6844       |

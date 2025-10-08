@@ -321,7 +321,7 @@ Throughout this project, we fully embraced the "dry-lab guiding wet-lab" approac
 
   - We developed two powerful extension modules, the Timer and Recorder, to visualize cell lineage and evolutionary pressure, respectively. These modules are designed as flexible plugins that can be widely used by the iGEM community.
 
-  - We built the YeastVerse virtual simulation platform to guide our wet lab experiments. As the ""zero-th machine" for Grape Yeast, YeastVerse can be widely used for various experimental tests, providing crucial support for wet lab works.
+  - We built the YeastVerse virtual simulation platform to guide our wet lab experiments. As the "zero-th machine" for Grape Yeast, YeastVerse can be widely used for various experimental tests, providing crucial support for wet lab works.
 
 
 

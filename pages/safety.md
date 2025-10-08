@@ -11,7 +11,7 @@ description: On this page, we elaborated on laboratory safety analysis methods a
 
 ## Introduction
 
-Synthetic biology, not only in the iGEM competition but also in industry revolution, is an interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment which must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance.[^5] We have developed our project around Grape Yeast [(detailed on our Design page)](/design/), and integrated safety considerations into every stage to help shape a more responsible future for synthetic biology.
+Synthetic biology, not only in the iGEM competition but also in industry revolution, is an interdisciplinary field dedicated to designing and constructing novel biological systems beyond those found in nature. While it offers tremendous promise, it also carries significant risks to human health and the environment which must be carefully managed. Biosafety, often described as a “Sword of Damocles” hanging over the world, demands constant vigilance[^5]. We have developed our project around Grape Yeast [(detailed on our Design page)](/design/), and integrated safety considerations into every stage to help shape a more responsible future for synthetic biology.
 
 Since our [experimental design](/design/) and [application scenarios](/implementation/) take place entirely within the laboratory, we emphasize on laboratory safety. Beyond standard laboratory safety measures, we conduct project-specific biosafety assessments and implement tailored risk-mitigation strategies.
 

@@ -11,7 +11,7 @@ description: On this page, we describe why we developed a new way to study micro
 
 ## 1. The Global Challenge: Antifungal Resistance
 
-Fungi are responsible for a wide spectrum of human diseases, ranging from superficial infections to severe, life-threatening systemic mycoses. According to recent estimates, more than **6.55 million cases of acute fungal-related infections** occur every year worldwide, leading to approximately **3.8 million deaths**.[^1]
+Fungi are responsible for a wide spectrum of human diseases, ranging from superficial infections to severe, life-threatening systemic mycoses. According to recent estimates, more than **6.55 million cases of acute fungal-related infections** occur every year worldwide, leading to approximately **3.8 million deaths**[^1].
 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/description/fig-1-fungal-infection.webp" style="width:50%"/>
@@ -23,7 +23,7 @@ Fungi are responsible for a wide spectrum of human diseases, ranging from superf
 </div>
 
 
-What makes this challenge especially alarming is the rapid rise of **antifungal resistance**. Pathogenic fungi are increasingly resistant to nearly all licensed systemic antifungal drugs.[^2] Multidrug-resistant species such as *Candida auris* have already caused widespread outbreaks across multiple regions, posing a direct and escalating threat to public health.[^3][^4] Despite this immense burden, public awareness of fungal diseases remains limited, and the development of antifungal therapies has been stagnant for decades, worsening this dire situation.
+What makes this challenge especially alarming is the rapid rise of **antifungal resistance**. Pathogenic fungi are increasingly resistant to nearly all licensed systemic antifungal drugs[^2]. Multidrug-resistant species such as *Candida auris* have already caused widespread outbreaks across multiple regions, posing a direct and escalating threat to public health[^3] [^4]. Despite this immense burden, public awareness of fungal diseases remains limited, and the development of antifungal therapies has been stagnant for decades, worsening this dire situation.
 
 In the face of this growing crisis, identifying new drug targets is not just an academic pursuit — it is an urgent necessity. A reliable and innovative platform to uncover resistance mutations could pave the way for next-generation antifungal therapies and strengthen our ability to respond to this silent yet pressing epidemic.
 
