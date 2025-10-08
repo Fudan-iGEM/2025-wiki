@@ -20,11 +20,9 @@
 
     <!-- Description and button content -->
     <div class="hero-bottom-content">
-      <div
-        class="hero-description"
-        v-if="pageDescription"
-        v-html="formattedDescription"
-      ></div>
+      <p class="hero-description" v-if="pageDescription">
+        <span v-html="formattedDescription"></span>
+      </p>
       <p class="hero-description" v-else>
         Vestibulum <span class="text-orange-400">faucibus eget</span> erat eget pretium.
         Donec commodo convallis ligula, eget suscipit orci.
@@ -51,7 +49,7 @@
 
 <script setup>
 import { useData } from "vitepress";
-import { computed, nextTick, onMounted, watch } from "vue";
+import { computed } from "vue";
 import { useWindowSize } from "@vueuse/core";
 import SplitText from "./SplitText.vue";
 
@@ -66,7 +64,6 @@ const pageTitle = computed(() => frontmatter.value.title);
 
 // 获取页面描述
 const pageDescription = computed(() => frontmatter.value.description);
-const normalizedDescriptionText = computed(() => stripHtml(pageDescription.value || ""));
 
 // 响应式标题样式
 const titleStyles = computed(() => {
@@ -110,49 +107,14 @@ const titleStyles = computed(() => {
   };
 });
 
-// Preserve author-supplied HTML while highlighting {{token}} sections
+// Handle description formatting
 const formattedDescription = computed(() => {
-  const rawDescription = pageDescription.value;
-  if (!rawDescription) {
-    return "";
-  }
-
-  return applyHighlightSpans(rawDescription);
-});
-
-const removeDuplicateDescription = async () => {
-  if (typeof window === "undefined") {
-    return;
-  }
-
-  const targetText = normalizedDescriptionText.value;
-  if (!targetText) {
-    return;
-  }
-
-  await nextTick();
-
-  const docRoot = document.querySelector(".vp-doc");
-  if (!docRoot) {
-    return;
-  }
-
-  Array.from(docRoot.children)
-    .slice(0, 3)
-    .forEach((element) => {
-      const elementText = normalizeWhitespace(element.textContent || "");
-      if (elementText && elementText === targetText) {
-        element.remove();
-      }
-    });
-};
-
-onMounted(() => {
-  removeDuplicateDescription();
-});
-
-watch(pageDescription, () => {
-  removeDuplicateDescription();
+  if (!pageDescription.value) return "";
+  // Match {{text}} for orange highlight
+  return pageDescription.value.replace(
+    /\{\{(.*?)\}\}/g,
+    '<span class="text-orange-400">$1</span>'
+  );
 });
 
 // Handle authors - support both single author and multiple authors (max 3)
@@ -197,86 +159,6 @@ const authors = computed(() => {
   
   return [{ name: "XXX", url: null, avatar: null }];
 });
-
-// Escape text while keeping valid HTML entities intact
-function escapeHtmlText(text) {
-  return text
-    .replace(/&(?!(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);)/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-function processTextBuffer(buffer) {
-  if (!buffer) {
-    return "";
-  }
-
-  const parts = [];
-  const highlightRegex = /\{\{(.*?)\}\}/g;
-  let lastIndex = 0;
-  let match;
-
-  while ((match = highlightRegex.exec(buffer)) !== null) {
-    if (match.index > lastIndex) {
-      parts.push(escapeHtmlText(buffer.slice(lastIndex, match.index)));
-    }
-
-    parts.push(`<span class="text-orange-400">${escapeHtmlText(match[1])}</span>`);
-    lastIndex = match.index + match[0].length;
-  }
-
-  if (lastIndex < buffer.length) {
-    parts.push(escapeHtmlText(buffer.slice(lastIndex)));
-  }
-
-  return parts.join("");
-}
-
-function applyHighlightSpans(html) {
-  let result = "";
-  let buffer = "";
-  let insideTag = false;
-
-  for (let i = 0; i < html.length; i += 1) {
-    const char = html[i];
-
-    if (char === "<") {
-      result += processTextBuffer(buffer);
-      buffer = "";
-      insideTag = true;
-      result += char;
-      continue;
-    }
-
-    if (char === ">") {
-      insideTag = false;
-      result += char;
-      continue;
-    }
-
-    if (insideTag) {
-      result += char;
-    } else {
-      buffer += char;
-    }
-  }
-
-  result += processTextBuffer(buffer);
-  return result;
-}
-
-function stripHtml(html) {
-  if (!html) {
-    return "";
-  }
-  return normalizeWhitespace(html.replace(/<[^>]*>/g, " "));
-}
-
-function normalizeWhitespace(text) {
-  return text.replace(/\s+/g, " ").trim();
-}
 
 // Helper function to format URLs
 function formatUrl(url) {
