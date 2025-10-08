@@ -237,7 +237,7 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
 In our pop-up, we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
 
 Furthermore, to deepen public understanding of the daily realities for rare disease patients, we designed price comparison cards. For example, one card highlighted that while a postcard print of a patient's artwork was priced at just 3 RMB, a single daily medical dressing they required cost 100 RMB. This stark contrast help the participants to grasp the profound financial challenges faced by EB patients.
-
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-tag.webp" alt="inclusivity5" style="zoom:90%;" />
 
 
 ### 1.2 Improving our Theoretical Framework: Intersectionality
@@ -605,7 +605,7 @@ After having experienced the difficulties of EB patients firsthand, visitors cou
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusive-exhibition.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 
-
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-art.webp" alt="inclusivity3-2eb3" style="zoom:80%;" />
 ---
 
 #### Conclusion
@@ -764,6 +764,7 @@ From May to September, we have continued our science communication efforts on me
 ---
 ## Conclusion: Forming a replicable, scalable, self-evolving cycle.
 
+<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/cycle.webp" alt="inclusivity5" style="zoom:90%;" />
 
 Based on systematic literature review and preliminary field research, we have not only diagnosed three key structural barriers but also designed targeted solutions:
 

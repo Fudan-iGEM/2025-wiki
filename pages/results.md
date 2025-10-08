@@ -3,16 +3,16 @@ title: Results
 authors:
   - name: Zhiqin Wang
     url: /fudan/team/#Zhiqin
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
   - name: Yixuan Lu
     url: /fudan/team/#Yixuan
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp
   - name: Yue Yue
     url: /fudan/team/#Yue
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we
+heroImage: https://static.igem.wiki/teams/5643/header/screenshot-2025-10-08-at-23-13-36.avif
+description: On this page, we show the results of our experiments.
 ---
 
 ## Characteristics of Grape Yeast
@@ -24,7 +24,6 @@ We first confirmed the multicellular morphology of the *ACE2*-knockout grape yea
 To determine the temporal sequence of growth and identify mother–daughter relationships, the culture was resumed for an additional 24 h after staining. Under bright-field illumination, several cells lacked detectable fluorescence (orange arrows), demonstrating that the fluorophore had not yet incorporated into these nascent cell structures.
 
 <div>
-  <!-- 第一段: 居中 -->
   <p style="text-align:center; margin:0; color:gray;">
     <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp">  
     <small>Figure 1. Chitin Imaging of 2x and 4x Grape Yeast</small>
@@ -86,7 +85,6 @@ As microscopic images of fixed yeast cells fail to capture the real-time, authen
     <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif">  
     <small>Figure 3. Live-cell imaging of Grape Yeast.</small>
   </p>
-
   <p style="text-align:left; margin:0; color:gray;">
     <small> Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a confocal microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3h.</small>
   </p>
@@ -96,7 +94,25 @@ As microscopic images of fixed yeast cells fail to capture the real-time, authen
 
 Having obtained the multicellular Grape Yeast and gained familiarity with the its properties, we initiated an evolutionary tracing study. 
 
-In this section, we evaluated various combination of promoters and fluorescent protein from different perspectives,  including [confocal imaging](/measurement/#Microscopy-Qualitative-Observation-of-Signal-Variation), [flow cytometry](/measurement/Flow-Cytometry-Data-Processing-and-Composite-Score-Calculating) and [deep sequencing](/measurement/#Deep-Sequencing-Molecular-Validation-of-the-Mechanism). Through this thorough assessment, we eventually come up with a optimized fluorescent reporter, pSTM1 driven EMSfp499 (BBa_25IB5O7X), that can function effectively under pressure conditions. 
+In this section, we evaluated various combination of promoters and fluorescent protein from different perspectives, including [confocal imaging](/measurement/#Microscopy-Qualitative-Observation-of-Signal-Variation), [flow cytometry](/measurement/Flow-Cytometry-Data-Processing-and-Composite-Score-Calculating) and [deep sequencing](/measurement/#Deep-Sequencing-Molecular-Validation-of-the-Mechanism). Through this thorough assessment, we eventually come up with a optimized fluorescent reporter, pSTM1 driven EMSfp499 (BBa_255T0PHY), that can function effectively under pressure conditions. 
+
+For more details, please refer to [Measurement](/measurement).
+
+## What we learn
+
+### Grape Yeast Characteristics
+- The multicellular Grape Yeast grows in grape-like clusters and was confirmed using chitin staining, which provides a great chassis for us to trace the growth and mutation of yeast.
+- Higher-ploidy tetraploid yeast exhibits a less stable genome than diploid yeast under gravity-based settling selection. This characteristic shows the potential for grape yeast to mimic pathogenic fungus under pressure. 
+- Meanwhile, as some studies have reported that certain fungi develop drug resistance by downregulating the expression of drug targets—potentially through mechanisms such as gene modification or genome ploidy reduction—we employed IME1 to induce meiosis in grape yeast as a model for this phenomenon. The corresponding results will be presented in our presentation video.
+- Both higher ploidy and increased passage number lead to faster sedimentation rates.
+Future teams may easily sort out grape yeast based on this characteristic.
+
+### Evolution Tracing
+- The live-cell images give us confidence to track mother-daughter sequence utilizing our TU timer.
+
+- An optimized fluorescent reporter, pSTM1 driven EMSfp499 was developed to effectively trace the evolutionary dynamics of the Grape Yeast under selective pressure. 
+- On the next stage, we will integrate pSTM1 driven EMSfp499 into sixteen chromosomes of yeast to find out the most unstable chromosome and even gene loci. This work would lay the foundation for advancing the understanding of fungal drug resistance mechanisms as well as the development of fungal drug targets.
+>>>>>>> 9e8a24136381b08768142561ebde33d2a1e9a81e
 
 For more details, please refer to [Measurement](/measurement).
 
@@ -112,8 +128,6 @@ For more details, please refer to [Measurement](/measurement).
 
 - An optimized fluorescent reporter, pSTM1 driven EMSfp499 was developed to effectively trace the evolutionary dynamics of the Grape Yeast under selective pressure. 
 
-
-## Reference
 
 [^1]: Tong, K., Datta, S., Cheng, V., Haas, D. J., Gourisetti, S., Yopp, H. L., Day, T. C., Lac, D. T., Khalil, A. S., Conlin, P. L., Bozdag, G. O., & Ratcliff, W. C. (2025). Genome duplication in a long-term multicellularity evolution experiment. *Nature*, *639*(8055), 691–699. DOI: 10.1038/s41586-025-08689-6
 [^2]: Khateb, A., Gago, S., Bromley, M., Richardson, M., & Bowyer, P. (2023). Aneuploidy Is Associated with Azole Resistance in Aspergillus fumigatus. *Antimicrobial agents and chemotherapy*, *67*(4), e0125322. DOI: 10.1128/aac.01253-22

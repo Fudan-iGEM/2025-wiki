@@ -1,13 +1,19 @@
 ---
 title: Integrated HP
 authors:
-  - name: Yixuan Lu
+  - name: Yixuan Lu， Huizhen Du， Zuyao Wu
     url: /fudan/team/#Yixuan
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we 
+heroImage: https://static.igem.wiki/teams/5643/header/ihp.avif
+description: On this page, we show how Human Practices guided our project to be both scientifically innovative and socially responsible.
 ---
+## Overview
+
+Our Integrated Human Practices journey began with a simple question: *Is technology inherently good or bad?*
+ Guided by this reflection, we built our project around responsibility, inclusivity, and real-world relevance. Through dialogues with scientists, clinicians, and policymakers, we shaped a multicellular yeast platform inspired by the “AI Yeast System” concept to address antifungal resistance. From early conceptual debates to clinical fieldwork and ethical reflections, each encounter refined our design and ensured our work remained scientifically sound and socially conscious — a project truly created for humanity, not just by technology.
+
+### **Integrated Human Practices: Designing for Responsibility**
 
 ## Overview
 
@@ -21,8 +27,9 @@ These words are not just a warning — they are a mirror. This qote became the s
 
 Through months of dialogue—with scientists, clinicians, policymakers, and designers—we sought to weave inclusivity, reflection, and real-world responsiveness into every part of our work. What follows is the story of how each encounter reshaped our understanding of what it means to build technology that serves humanity.
 
+Through months of dialogue—with scientists, clinicians, policymakers, and designers—we sought to weave inclusivity, reflection, and real-world responsiveness into every part of our work. What follows is the story of how each encounter reshaped our understanding of what it means to build technology that serves humanity.
 
-## What's Wrong with Our Technology?
+### What's Wrong with Our Technology?
 
 Our journey began with a simple but profound question: What's Wrong with Our Technology?
 
@@ -42,11 +49,19 @@ This simple yet profound doubt prompted us to pause and reflect. Through this ac
 
 This reflection naturally led us to examine our own project. We asked: how can we ensure that the technologies we develop provide real societal benefits rather than unintended problems? Guided by these questions, we embarked on further exploration and practical efforts, designing our project to not only advance science but also respond meaningfully to human needs and ethical considerations.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%" />
+<div style="text-align: center;"> 
+<img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%;">
+<div> <p><small style="color: gray">letter exchange with children</small></p> </div> 
+</div>
 
-## The Potential of Multicellular Yeast?
 
 With this philosophical foundation, we turned to the scientific core of our project: **multicellular yeast** as a platform for dynamic screening of antibiotic-resistance targets. Our discussions with experts helped us shape the idea and define its scientific and societal significance.
+
+## From Reflection to Design
+
+Our first conversation was with **Dr. Boxun Lu**, a neurobiologist at Fudan University, who envisioned an “AI Yeast System” capable of simulating living cells. His idea helped us see beyond biology as a purely experimental process—it could also be computational, predictive, and creative.
+
+His insight inspired our modeling strategy: using simulation-driven design to predict antifungal resistance pathways. It was here that the concept of *multicellular yeast* as a research platform was born.
 
 ### Discussion with Dr. Boxun Lu
 
@@ -62,6 +77,7 @@ With this philosophical foundation, we turned to the scientific core of our proj
 
 His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model](/model/) page). After extensive internal discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are presenting today.
 
+After extensive discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are developing today.  It was here that the concept of *multicellular yeast* as a research platform was born.
 
 ### Discussion with Dr. Hengchi Chen
 
@@ -97,7 +113,6 @@ To deepen our understanding, we continued to seek insights from global researche
 - The outreach lab organized by Prof. Ratcliff greatly inspired us by demonstrating how even complex scientific concepts developed in laboratories can be simplified and shared with the public, thereby promoting accessibility and ensuring equal opportunities for quality education.
 
 This exchange inspired us to think not only about the scientific novelty of our system but also about how it could serve as a bridge between fundamental research and public engagement.
-
 
 ### Discussion with Prof. Guanghua Huang
 
@@ -243,10 +258,6 @@ This conversation bridged academic design and real-world application, reaffirmin
 
 **Date:** August 6th-8th, 2025
 
-**Respondent:** Association of Young Enthusiasts for Engineering Biology
-
-![](https://static.igem.wiki/teams/5643/pageimage/collaboration/ccic.webp)
-
 **Topic:** Biosafety, Bio-Art and Interdisciplinary Dialogue
 
 **Key Takeaways:**
@@ -261,7 +272,7 @@ By participating in national-level interdisciplinary dialogues, we positioned ou
 
 ## How Can We Better Connect with Human Society?
 
-With a scientifically and ethically grounded foundation, we turned to a new question: *how can technology truly serve people?* Human practices (HP) is most meaningful when it connects scientific work with society. To understand how to do this effectively, we exchanged experiences with iGEM teams and experts in anthropology, public policy, and healthcare.
+With a scientifically and ethically grounded foundation, we turned to a new question: how can technology truly serve people? HP is most meaningful when it connects scientific work with society. To understand how to do this effectively, we exchanged experiences with iGEM teams and experts in anthropology, public policy, and healthcare
 
 ### Experience sharing with BNUZH-China, NEFU-China, CAU-China
 
@@ -354,8 +365,6 @@ This parallel between iterative science and social engagement became a guiding p
 
 **Date:** September 28th, 2025
 
-![](https://static.igem.wiki/teams/5643/pageimage/ihp/munchen.avif)
-
 **Respondent:** [iGEM Munich 2025](https://2025.igem.wiki/munich/)
 
 **Key Takeaways:**
@@ -439,6 +448,8 @@ Additionally, We expanded our scope beyond academia, exploring how our technolog
 ### Dialogue with Mr. Jie Chen
 
 **Date:** June 13th, 2025
+
+### Dialogue with Mr. Jie Chen
 
 **Respondent:** Mr. Jie Chen
 

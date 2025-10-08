@@ -3,7 +3,7 @@ title: Measurement
 authors:
   - name: Zhiqin Wang
     url: /fudan/team/#Zhiqin
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.web
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.web
   - name: Yuxin Duan
     url: /fudan/team/#Yuxin
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
@@ -119,7 +119,6 @@ Following a comprehensive performance analysis of all promoter and fluorescent p
 
 **Table 2. Performance of Individual Fluorescent Protein**
 
-| Fluorescent Protein Performance |                         |                       |                               |              |
 | Fluorescent Protein                 | Avg Composite Score (S) | Avg Effectiveness (E) | Avg Specificity Loss (S_loss) | Avg log2(FC) |
 | ----------------------------------- | ----------------------- | --------------------- | ----------------------------- | ------------ |
 | EMSfp383                            | 2052.6009               | 205.3097              | 0.4958                        | 0.6844       |
