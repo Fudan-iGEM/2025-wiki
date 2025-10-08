@@ -29,32 +29,40 @@ description: Through intersectional practices, we build an inclusive scientific 
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Systemic Barriers Research:</strong></div>
-    <p>Through literature review and field investigation, we identified three layers of barriers faced by scientifically marginalized groups such as EB (Epidermolysis Bullosa) patients — being unseen, voiceless, and excluded from participation.The combined physical and social pressures often discourage them from being part of scientific endeavors, even though many have both the potential and the willingness to engage.</p>
+    <div class="section-title"><strong>Have you noticed that in most science projects, researchers lead—while patients only participate? ——That's where our reflection began.</strong></div>
+      <p>When inclusion becomes one-way, roles reduce diversity: scientist and patient, giver and receiver.  Such lines, though subtle, keep many voices at the margins of science.And we wanted to make a difference.</br>
+Through an intersectional lens, we found shared needs where divisions once stood.  By inviting diverse stakeholders to co-design, we began building shared agency.</br>
+<strong>Intersectional Echoes</strong>, to us, is not a checklist but a way of questioning—
+Not just “How can we help marginalized groups in science” but “How can participation itself create change?”</p>
   </div>
 
-  <div class="section">
-    <div class="section-title"><strong>Expanding Participation in Science:</strong></div>
-    <p>To address these barriers, we co-developed sensory-friendly surveys, photovoice storytelling, and immersive exhibitions together with patients.These initiatives transformed them from “research subjects” and “recipients of help” into co-designers and active participants in the scientific process.</p>
-  </div>
 
-  <div class="section">
-    <div class="section-title"><strong>Dialogical Practice:</strong></div>
-    <p>Our work is grounded in ongoing dialogue and negotiation with EB patients and fungus-sensitive communities.  Their needs for fungal therapy have informed our experimental design, and their unique sensory and physiological concerns have led to improvements benefiting other neurodiverse individuals in the laboratory</p>
-  </div>
-
-  <div class="section">
-    <div class="section-title"><strong>Replicable Outcomes:</strong></div>
-    <p>Following these activities, we compiled a set of transferable tools and methodologies — including Science posters, a sensory-friendly research toolkit, a post-event feedback and evaluation model, and the lab-assistive software ProtocolFlow,etc.</p>
-  </div>
 </div>
 
 ------
 
+
+### Our highlights
+
+1.   **What systemic barriers did we identify?**
+We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face three intertwined barriers: they are unseen, voiceless, and excluded from participation. We have discovered the potential for their intersectional identities to engage in scientific affairs.
+
+2.   **How did we expand participation in science?**
+     We co-created inclusive formats with EB patients, including sensory-friendly surveys, photovoice storytelling, and immersive exhibitions. These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
+
+3.   **How do we ensure dialogue and mutual learning?**
+Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped improve the laboratory environment—benefiting other neurodiverse researchers as well.
+4.   **What replicable outcomes have emerged?**
+We developed a series of transferable tools and methods: a sensory-friendly research toolkit, a post-event feedback and evaluation model, a collection of science posters, and the assistive software “ProtocolFlow.” These resources can be readily adapted by other teams.
+
+------
+
+
+
 > “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects.If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks." ——Kimberlé Crenshaw
 
-Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. When conducting research on fungal infectious diseases, we recognize that, fungal challenges are not one-dimensional in real society,. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
 
+Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. When conducting research on fungal infectious diseases, we recognize that, fungal challenges are not one-dimensional in real society,. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/content.webp" alt="inclusivity1-1" style="zoom:90%;" />
 
@@ -228,8 +236,6 @@ In our pop-up，we invite the patients to briefly introduce their artwork with a
 
 Furthermore, to deepen public understanding of the daily realities for rare disease patients, we designed price comparison cards. For example, one card highlighted that while a postcard print of a patient's artwork was priced at just 3 RMB, a single daily medical dressing they required cost 100 RMB. This stark contrast help the participants to grasp the profound financial challenges faced by EB patients.
 
-<img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/tag-card.webp" alt="inclusivity1-1" style="zoom:90%;" />
-
 
 
 ### 1.2 Improving our Theoretical Framework: Intersectionality
@@ -275,14 +281,13 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
   <div class="section">
     <div class="section-title"><strong>Process:</strong></div>
     <p>
-      1)  Through classification and data visualization, demonstrate the intersectionality of EB patients with other groups (e.g., diabetic foot patients, pregnant women, athletes) regarding fungal issues.<br>
-      2)  Develop a Participatory Mapping Toolkit to guide them in describing care-seeking pathways, pain points, and medication-related challenges.<br>
-      3)  Design sensory-friendly research methods: using metaphors, drawings, and embodied descriptions to help participants articulate experiences that are often "hard to put into words."<br>
-      4)  Identify barriers in fungal treatment from patient narratives, and reveal misunderstandings caused by the lack of integration with the broader scientific community.<br>
-      5)  Lay the groundwork for the next stage of activities that emphasize dialogue.
+      1)   Through classification and data visualization, demonstrate the intersectionality of EB patients with other groups (e.g., diabetic foot patients, pregnant women, athletes) regarding fungal issues.<br>
+      2)   Develop a Participatory Mapping Toolkit to guide them in describing care-seeking pathways, pain points, and medication-related challenges.<br>
+      3)   Design sensory-friendly research methods: using metaphors, drawings, and embodied descriptions to help participants articulate experiences that are often "hard to put into words."<br>
+      4)   Identify barriers in fungal treatment from patient narratives, and reveal misunderstandings caused by the lack of integration with the broader scientific community.<br>
+      5)   Lay the groundwork for the next stage of activities that emphasize dialogue.
     </p>
   </div>
-
 
   <div class="section">
     <div class="section-title"><strong>Significance:</strong></div>
@@ -328,7 +333,7 @@ Through broad recruitment, we identified **10 individuals in Shanghai** who had 
 
 - those living or working in humid environments.
 
----  
+---
 
 #### Preliminary discovery
 
@@ -411,7 +416,7 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
 
 
 
-## 3. **Encouraging Participation: Let the vulnerable dialogue with researchers.**
+## 3. Involvement: Let dialogue between the vulnerable and researchers take place.
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -421,15 +426,16 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In One Sentence: </strong>
-    To address the challenge of "difficulty in participation" by creating opportunities for multi-stakeholder dialogue on scientific issues.
+    <strong>✅In a nutshell:</strong>
+    Foster multi-stakeholder dialogues on science to bridge barriers and make participation more accessible.
   </h5>
+
 
   <br>
 
   <div class="section">
     <div class="section-title"><strong>Objective:</strong></div>
-    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+    <p>To address the excluded challenge by creating opportunities for multi-stakeholder dialogue on scientific issues.</p>
   </div>
 
   <div class="section">
@@ -486,12 +492,16 @@ After each theme, we implemented a **structured feedback mechanism** to ensure e
 
 During this process, participants’ diverse identities shaped distinct perspectives on the same scene. For example:
 
-   - An ER head nurse described using the hospital's Rainbow Passage during a night shift to transfer a patient to the ICU.
-   - A surgeon reflects on the story of their young patient: bearing witness not just to the child's medical journey through multiple visits, but to their personal growth.
-- A patient voiced frustration and fear about their chronic skin condition and turned to DeepSeek for comfort and support.
-- An EB patient, however, described the hospital as a “familiar space,” bringing her warmth and safety.
+>   - An ER head nurse described using the hospital's Rainbow Passage during a night shift to transfer a patient to the ICU.
+>   - A surgeon reflects on the story of their young patient: bearing witness not just to the child's medical journey through multiple visits, but to their personal growth.
+>   - A patient voiced frustration and fear about their chronic skin condition and turned to DeepSeek for comfort and support.
+>   - An EB patient, however, described the hospital as a “familiar space,” bringing her warmth and safety.
 
 This dialogue naturally extended into broader discussions of the boundaries of science and life education, enabling mutual understanding. Patients integrated into the wider community in a safe atmosphere, while doctors and researchers gained greater awareness of other stakeholders’ perspectives—making them more conscious of inclusivity in daily practice.
+
+------
+
+
 
 ##### Collective Wisdom: The “Ideal Solution”
 
@@ -511,7 +521,7 @@ Participants brainstormed improvements to color, lighting, seating, and signage 
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-hospital.webp" alt="inclusivity3map" style="zoom:40%;" />
 
-We also consulted Tang Xirong, Deputy Chief Architect and Director of the Medical Institute at Shanghai Architectural Design &amp; Research Institute Co., Ltd. She endorsed our core approach—integrating AI-guided navigation and digital concierge services as emerging trends—alongside the philosophy of creating "less clinical, more social" healthcare spaces. She also offered expert recommendations: 1) prioritizing antimicrobial upholstery for seating, 2) introducing micro-environments such as small atriums and play corners, and 3) ensuring visual designs prioritize the needs of elderly users.
+We also consulted [Tang Xirong](https://2025.igem.wiki/fudan/human-practices.html#beyond-the-humans-more-humans), Deputy Chief Architect and Director of the Medical Institute at Shanghai Architectural Design &amp; Research Institute Co., Ltd. She endorsed our core approach—integrating AI-guided navigation and digital concierge services as emerging trends—alongside the philosophy of creating "less clinical, more social" healthcare spaces. She also offered expert recommendations: 1) prioritizing antimicrobial upholstery for seating, 2) introducing micro-environments such as small atriums and play corners, and 3) ensuring visual designs prioritize the needs of elderly users.
 
 This exchange highlighted the complexity of real-world implementation. It also revealed that long-term and sustained community engagement is essential, beyond one-time events. To support this, we developed **“Ten Questions for Reflection after Inclusive Science Community Activities”**, helping us and future practitioners sustain improvement.
 
@@ -557,7 +567,7 @@ This exchange highlighted the complexity of real-world implementation. It also r
 ---
 #### Conclusion
 
-This multi-stakeholder dialogue not only helped us better understand the real needs of fungus-susceptible groups and provided gentler, more open channels for expression, but also encouraged underrepresented groups in science to speak up. It fostered dialogue across stakeholders, reduced misunderstandings, and strengthened shared belonging.
+This multi-stakeholder dialogue not only helped us better understand the real needs of fungus-susceptible groups and provided gentler, more open channels for expression, but also encouraged underrepresented groups in science to speak up. It fostered dialogue across stakeholders, reduced misunderstandings, and strengthened shared belonging.[^9]
 
 Most importantly, participants transformed from *“respondents”* into *“co-designers”*. Instead of us *doing for them*, they exercised agency in shaping scientific dialogue and public affairs. Dialogue not only empowered expression and eliminated misunderstandings—it also functioned as an **evaluative feedback mechanism**, helping us reflect and improve upon previous activities.
 
@@ -580,6 +590,8 @@ To go beyond passive observation, we designed an interactive experience. Visitor
 This setup simulated the everyday challenges faced by EB patients—fragile skin and restricted joint mobility—and the barriers these bring to scientific work. After the experience, participants were encouraged to reflect on the **limitations embedded in the “standard researcher” model** of science.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-2eb.webp" alt="inclusivity3-2eb" style="zoom:10%;" />
+
+------
 
 
 
@@ -607,8 +619,9 @@ It suggests that **true inclusivity does not lie in designing a “perfect solut
 Future inclusive practices should focus more on creating **“points of identity intersection”**, where people connect naturally through **shared interests, co-creation, and collective concerns**. In this way, inclusivity transcends labels, enabling **deeper recognition and understanding**.
 
 
-## 4. **Building an inclusive scientific community: Learn from the margins.**
 
+
+## 4. Building an inclusive scientific community: Learn from the margins.
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -618,16 +631,18 @@ Future inclusive practices should focus more on creating **“points of identity
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In One Sentence: </strong> 
-    The design of our lab mental health campaigns and assistive software showed that our dialogues with minority groups have deepened our understanding of intersectionality in scientific research.
+    <strong>✅In a nutshell: </strong> 
+    Our dialogues with marginalized groups have deepened our understanding of intersectionality in scientific research, inspiring the creation of ProtocolFlow and our lab mental health initiatives — bringing the spirit of inclusivity back into the scientific community itself.
   </h5>
+
 
   <br>
 
   <div class="section">
     <div class="section-title"><strong>Objective:</strong></div>
-    <p>To address the problem of <span class="highlight">inexpressibility</span> by providing appropriate tools that help scientifically marginalized groups articulate their own scientific experiences.</p>
+    <p>We integrate insights from marginalized groups into the design of more inclusive laboratories and scientific practices.</p>
   </div>
+
 
   <div class="section">
     <div class="section-title"><strong>Action:</strong></div>
@@ -741,7 +756,7 @@ From May to September, we have continued our science communication efforts on me
 - *Methodological Innovation*: An operationalized, stepwise framework of "intersectionality in practice"
 
 ---
-## Conclusion: Into a replicable, scalable, self-evolving cycle.
+## Conclusion: Forming a replicable, scalable, self-evolving cycle.
 
 
 Based on systematic literature review and preliminary field research, we have not only diagnosed three key structural barriers but also designed targeted solutions:
