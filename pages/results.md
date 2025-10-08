@@ -3,19 +3,17 @@ title: Results
 authors:
   - name: Zhiqin Wang
     url: /fudan/team/#Zhiqin
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
   - name: Yixuan Lu
     url: /fudan/team/#Yixuan
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp
   - name: Yue Yue
     url: /fudan/team/#Yue
-    avatar: https://static.igem.wiki/teams/5643/pageimage/team/dyx-a.webp
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/yy-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: On this page, we
+heroImage: https://static.igem.wiki/teams/5643/header/screenshot-2025-10-08-at-23-13-36.avif
+description: On this page, we show the results of our experiments.
 ---
-## Characteristics of Grape Yeast
-
 ### Chitin Imaging Reveals the Morphology of Multicellularity
 
 We first confirmed the multicellular morphology of the *ACE2*-knockout grape yeast. As shown in Figure 1, the yeast cell wall was [stained](/experiemnts/#Chitin staining) with a chitin-specific dye calcofluor white and immediately imaged under both bright-field and fluorescence microscopy. The cells grew in grape-like clusters, and at the junctions—where the walls were markedly thicker—the corresponding fluorescence intensity was higher. This pattern allowed us to delineate familial clusters. Blue arrows highlight regions where cells appeared to contact each other in bright-field images but showed no connecting fluorescent signal, indicating that these were not true cellular junctions.
