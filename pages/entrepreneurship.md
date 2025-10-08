@@ -31,9 +31,9 @@ description: On this page, we present a commercially viable solution addressing 
 - Backed by expert validation (Shanghai Stock Exchange Cup, SoftBank China CEO), prioritizing **IP protection, CRO partnerships, and targeted market segmentation.**
 
 
-## 1. Our pre-research in the Antifungal medication market
+## 1. Pre-research: the Antifungal medication market
 
-#### 1.1 The current business landscape
+#### 1.1 Current business landscape
 
 
  According to Fortune Business Insights, the global antifungal drugs market size is projected to reach **USD** **13.17 billion by 2027**, with a compound annual growth rate (CAGR) of **3.3%** during the forecast period [^1]. With our estimation, the Chinese antifungal drugs market accounts for 25% of the global share (3.29 billion).
@@ -57,7 +57,7 @@ description: On this page, we present a commercially viable solution addressing 
 
 
 
-#### 1.2 Why and who needs to study AMR？
+#### 1.2 The importance to study AMR
 
 Currently, the preclinical R&D pipeline for antifungal drugs remains insufficiently robust. This is attributed to the lack of efficient and effective drug screening, which results in a relatively high attrition rate during early-stage drug innovation. Specifically, many drugs that appear promising in the preclinical phase fail in subsequent clinical trials due to various reasons, such as safety concerns and inadequate efficacy. The existing preclinical R&D pipeline is unable to offset the losses caused by these high attrition rates.
 
@@ -69,7 +69,7 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 
 
 
-## 2.Making our solution possible，scalable and inventive
+## 2.Our solution: possible，scalable and inventive
 
 
 #### 2.1 Core Technology
@@ -110,9 +110,9 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 
 
-## 3. Where our market is located: Unmet needs in the Yangtze Delta region
+## 3. Discover:Unmet needs in the Yangtze Delta region
 
-#### 3.1 The gap in Critical Genetic Screening Approaches for Drug Resistance
+#### 3.1 The gap in Drug Target Discovery
 
  Currently, the escalation of fungal drug resistance and the lag in chassis organism models have led to a 24-year stagnation in the development of new classes of antifungal drugs.
 
@@ -160,7 +160,7 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic9.webp)
 
-## 4. Crafting Our Strategic Path: analyzing our resources and stakeholders
+## 4. Analyze: our Resources and Stakeholders
 
 #### 4.1 Product Advantages
 
@@ -233,7 +233,7 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 
 
-## 5. Going to market ：Strategies and roadmap
+## 5. Marketing ：Business Strategies and Roadmap
 
 #### 5.1 Our mission
 
@@ -414,8 +414,7 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 
 
 
-## 6. Overlooking to the long-term: how we impact the future
-
+## 6. Overlook: Impact and Plans for the Long Term
 #### 6.1 Expansion Timeline
 
  With our product planning to exit in 5years，we planned the business timeline since 2026： 
