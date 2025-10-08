@@ -7,6 +7,9 @@ authors:
   - name: Xiuqi Tian
     url: /fudan/team/#Xiuqi
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp
+  - name: Yufan Han
+    url: /fudan/team/#Yufan
+    avatar: https://static.igem.wiki/teams/5643/pageimage/team/hyf-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity1-2.webp
 description: Through intersectional practices, we build an inclusive scientific community, bringing groups underrepresented in science like those with rare disease Epidermolysis Bullosa (EB patients) into science.

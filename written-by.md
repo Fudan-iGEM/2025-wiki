@@ -18,7 +18,7 @@
 | [Integrated HP](https://2025.igem.wiki/fudan/human-practices/)      | Yixuan Lu                            |
 | [Implementation](https://2025.igem.wiki/fudan/implementation/)     | Yuxin Duan                           |
 | [Improved Parts](https://2025.igem.wiki/fudan/improve/)     | Yining Zhao                          |
-| [Inclusivity](https://2025.igem.wiki/fudan/inclusivity/)        | Zhongyi Huang                        |
+| [Inclusivity](https://2025.igem.wiki/fudan/inclusivity/)        | Zhongyi Huang, Xiuqi Tian, Yufan Han |
 | [Measurement](https://2025.igem.wiki/fudan/measurement/)        | Yuxin Duan                           |
 | [Model](https://2025.igem.wiki/fudan/model)              | Jihua Tang, Yue Yue                  |
 | [Notebook](https://2025.igem.wiki/fudan/notebook/)           | Yuxin Duan                           |
