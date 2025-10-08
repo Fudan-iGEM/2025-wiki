@@ -3,7 +3,13 @@
     <div class="scroll-wrapper">
       <div v-for="item in items" :key="item.id" class="card">
         <div class="card-lottie-wrapper">
-          <Vue3Lottie :animationLink="item.lottieUrl" :loop="true" :autoplay="true" />
+          <component
+            v-if="lottieComponent"
+            :is="lottieComponent"
+            :animationLink="item.lottieUrl"
+            :loop="true"
+            :autoplay="true"
+          />
         </div>
         <div class="card-text-content">
           <h4>{{ item.title }}</h4>
@@ -16,14 +22,20 @@
 </template>
 
 <script setup>
-import { ref, defineProps, defineExpose } from 'vue';
-import { Vue3Lottie } from 'vue3-lottie';
+import { ref, shallowRef, onMounted, defineProps, defineExpose } from 'vue';
 
 defineProps({
   items: Array,
 });
 
 const scene6Ref = ref(null);
+const lottieComponent = shallowRef(null);
+
+onMounted(async () => {
+  if (typeof window === 'undefined') return;
+  const { Vue3Lottie } = await import('vue3-lottie');
+  lottieComponent.value = Vue3Lottie;
+});
 
 defineExpose({
   scene6Ref,

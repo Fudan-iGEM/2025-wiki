@@ -7,7 +7,13 @@
           <p>{{ item.description }}</p>
         </div>
         <div class="lottie-box">
-          <Vue3Lottie :animationLink="item.lottieUrl" :loop="true" :autoplay="true" />
+          <component
+            v-if="lottieComponent"
+            :is="lottieComponent"
+            :animationLink="item.lottieUrl"
+            :loop="true"
+            :autoplay="true"
+          />
         </div>
         <div v-if="item.order === 'lottie-first'" class="text-content">
           <h3>{{ item.title }}</h3>
@@ -19,8 +25,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps, defineExpose } from 'vue';
-import { Vue3Lottie } from 'vue3-lottie';
+import { ref, shallowRef, onMounted, defineProps, defineExpose } from 'vue';
 
 defineProps({
   items: Array,
@@ -28,6 +33,13 @@ defineProps({
 
 const scene5Ref = ref(null);
 const columnWrapperRef = ref(null);
+const lottieComponent = shallowRef(null);
+
+onMounted(async () => {
+  if (typeof window === 'undefined') return;
+  const { Vue3Lottie } = await import('vue3-lottie');
+  lottieComponent.value = Vue3Lottie;
+});
 
 defineExpose({
   scene5Ref,
