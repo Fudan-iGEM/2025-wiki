@@ -98,23 +98,23 @@ const dialogs = ref([
 ])
 
 const scene5Items = ref([
-  { id: 1, order: 'lottie-first', lottieUrl: scene5Lotties.item1, title: 'High-throughput Platform', description: 'A high-throughput platform for screening drug-resistant gene mutations.' },
-  { id: 2, order: 'text-first', lottieUrl: scene5Lotties.item2, title: 'Engineered Grape Yeast', description: 'Utilizing engineered grape yeast as a versatile and efficient chassis.' },
-  { id: 3, order: 'lottie-first', lottieUrl: scene5Lotties.item3, title: 'AI-Powered Analysis', description: 'An integrated AI model for analyzing mutation data and predicting resistance.' }
+  { id: 1, order: 'lottie-first', lottieUrl: scene5Lotties.item1, title: 'Fluoresence-based Detection', description: 'A novel platform for screening drug-resistant gene mutations' },
+  { id: 2, order: 'text-first', lottieUrl: scene5Lotties.item2, title: 'Engineered Grape Yeast', description: 'Utilizing engineered grape yeast as a versatile and efficient chassis' },
+  { id: 3, order: 'lottie-first', lottieUrl: scene5Lotties.item3, title: 'AI-Powered Analysis', description: 'An integrated AI model for analyzing mutation data and predicting resistance' }
 ])
 
 const scene6Items = ref([
-    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Rapid and Reduce-cost', description: 'DR.sTraTeGY provides a rapid, low-cost chassis system to validate mutations and drug effects, offering great potential to accelerate new drug discovery and screening.' },
+    { id: 1, lottieUrl: scene6Lotties.item1, title: 'Rapid and Reduce-cost', description: 'DR. sTraTeGY provides a rapid, low-cost chassis system to validate mutations and drug effects, offering great potential to accelerate new drug discovery and screening.' },
     { id: 2, lottieUrl: scene6Lotties.item2, title: 'Direct and demystify', description: 'Through programmable environments researchers can directly observe evolutionary divergences, deepening humanity’s understanding of the universal principles of life’s evolution.' },
-    { id: 3, lottieUrl: scene6Lotties.item3, title: 'Strategic and safeguarding', description: 'The application of DR.sTraTeGY implies that humanity can fortify defenses ahead of a full-scale outbreak of drug resistance, establishing a societal safeguard against superfungi.' },
+    { id: 3, lottieUrl: scene6Lotties.item3, title: 'Strategic and safeguarding', description: 'The application of DR. sTraTeGY implies that humanity can fortify defenses ahead of a full-scale outbreak of drug resistance, establishing a societal safeguard against superfungi.' },
     { id: 4, lottieUrl: scene6Lotties.item4, title: 'Educational and enlightening', description: 'By making abstract genetic mutations and evolutionary processes “visual” through colors and different morphologies, it can advance public science education and foster social consensus.' },
 ]);
 
 const scene8Cards = ref([
-  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.webp', color: '#4ECDC4', link: '/design/', alt: 'Design', title: 'Design' },
-  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.webp', color: '#1E3A8A', link: '/parts/', alt: 'Parts', title: 'Parts' },
-  { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.webp', color: '#FF6B35', link: '/model/', alt: 'Model', title: 'Model' },
-  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.webp', color: '#000000', link: '/inclusivity/', alt: 'Inclusivity', title: 'Inclusivity' }
+  { id: 1, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage2.webp', color: '#4ECDC4', link: '/fudan/design/', alt: 'Design', title: 'Design' },
+  { id: 2, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage4.webp', color: '#1E3A8A', link: '/fudan/parts/', alt: 'Parts', title: 'Parts' },
+  { id: 3, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage3.webp', color: '#FF6B35', link: '/fudan/model/', alt: 'Model', title: 'Model' },
+  { id: 4, svgUrl: 'https://static.igem.wiki/teams/5643/img/homepage/forpage1.webp', color: '#000000', link: '/fudan/inclusivity/', alt: 'Inclusivity', title: 'Inclusivity' }
 ]);
 
 // --- Component & Template Refs ---
@@ -335,7 +335,7 @@ const setupScene4 = () => {
         setScene4Animation(scene4Lotties.dog3, { loop: true, autoplay: true })
 
         // 左侧卡片：标题打字动画 + 副标题显现
-        gsap.to(scene4.scene4TitleRef, { duration: 2, text: 'And now we introduce-- DR. sTraTeGY!', ease: 'none', delay: 0.5 })
+        gsap.to(scene4.scene4TitleRef, { duration: 2, text: 'And now we introduce -- DR. sTraTeGY!', ease: 'none', delay: 0.5 })
         gsap.to(scene4.scene4SubtitleRef, { autoAlpha: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 2.7 })
       } else {
         gsap.to(this.target, {
