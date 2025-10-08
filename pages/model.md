@@ -141,9 +141,9 @@ $$
 
 | Metric                          | 25°C Intracellular Time (h) | 30°C Estimated Time (h) | Calculation Logic                                            |
 | ------------------------------- | --------------------------- | ----------------------- | ------------------------------------------------------------ |
-| Blue Fluorescence Peak Time     | 13.0                        | 9.2 (≈9–10)             | 13.0 / 1.41 ≈ 9.2, considering differences in translation rate between yeast and S2 cells |
-| Red Fluorescence Half-Peak Time | 38.0                        | 30.0 (≈29–31)           | 38.0 / 1.41 ≈ 30.0, more stable as red maturation is less influenced by intracellular factors |
-| Red Fluorescence Peak Time      | 200.0 (S2 cells)            | 141.8 (≈140–145)        | 200.0 / 1.41 ≈ 141.8, used for long-term tracking experiments (e.g., intergenerational lineage analysis) |
+| Blue Fluorescence Peak Time     | 13.0                        | 9.2                     | 13.0 / 1.41 ≈ 9.2, considering differences in translation rate between yeast and S2 cells |
+| Red Fluorescence Half-Peak Time | 38.0                        | 30.0                    | 38.0 / 1.41 ≈ 30.0, more stable as red maturation is less influenced by intracellular factors |
+| Red Fluorescence Peak Time      | 200.0 (S2 cells)            | 141.8                   | 200.0 / 1.41 ≈ 141.8, used for long-term tracking experiments (e.g., intergenerational lineage analysis) |
 
 ##### 1.4 Reasonableness Check
 
@@ -355,7 +355,7 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 #### $\Delta r$ vs Pulse Width
 
 - **Observation:** Under fixed expression strength, $\Delta r$ decreases monotonically as the pulse width $\tau$ increases:
-   $\tau=10 \mathrm{min}$ is superior to $\tau=15\mathrm{min}$, and both are much better than $\tau=30\mathrm{min}$ or ON (continuous expression), namely $\tau$=10 ≳ $\tau$=15 ≫ $\tau$=30 > $\tau$=50 ≫ ON.
+   $\tau=10 \mathrm{min}$ is superior to $\tau=15\mathrm{min}$, and both are much better than $\tau=30\mathrm{min}$ or ON (continuous expression), namely $\tau_{=10}$ ≳ $\tau_{=15}$ ≫ $\tau_{=30}$ > $\tau_{=50}$ ≫ ON.
 
     The readings are approximately as follows:
 
@@ -506,7 +506,7 @@ This module simulates the three-dimensional growth of the multicellular "Grape Y
 
 | Parameter            | Meaning                                                      | **Default Value***                  | Unit   |
 | -------------------- | ------------------------------------------------------------ | ----------------------------------- | ------ |
-| MAX_LENGTH_RATIO     | long/short axis ratio for cell elongation under low oxygen/stress | 1.8 (estimated)[^9][^10]            | -      |
+| max_length_ratio     | long/short axis ratio for cell elongation under low oxygen/stress | 1.8 (estimated)[^9][^10]            | -      |
 | nucleus size         | Relative nucleus radius in cell model                        | 0.3 (estimated)                     | -      |
 | produceTwoCells prob | Probability of multi-bud formation (bipolar mode)            | 0.3–0.6 (estimated)                 | -      |
 | maxAngle             | Budding cone angle limit                                     | Grape: 20°; normal: 60° (estimated) | degree |
@@ -535,6 +535,9 @@ This module visualizes the spatiotemporal maturation of Fast-FT proteins within 
         <span style="color:gray">Figure 11. Animation demo of 3D Fluorescent Timer Maturation</span>
         <br><br>
     </div>
+
+
+
 > To set up and explore these visual tools locally, please follow the step-by-step guide in the [README](https://gitlab.igem.org/2025/fudan/-/blob/main/model/YeastVerse/README.md) documentation to deploy the program on your own computer.
 
 ## AI-Aided Validation of Model Predictions

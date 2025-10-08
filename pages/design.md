@@ -263,7 +263,7 @@ All the flanks produced in this section do not overlap with any standard ends in
 
 ##### Standard preexisting 5'/3' Homology Arms
 
-To replace the original HA and to enable [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) assembly into the entry vector, primers for amplifying preexisting HA should be designed as illustrated in Fig.序号 . Please note that the 4-nt at the end of primers should not be omitted, for they are essential for effective enzyme cleaving.
+To replace the original HA and to enable [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) assembly into the entry vector, primers for amplifying preexisting HA should be designed as illustrated in Fig.7 . Please note that the 4-nt at the end of primers should not be omitted, for they are essential for effective enzyme cleaving.
 
 For 3'HA, we specially introduced two reversed [BbsI](https://www.thermofisher.com/order/catalog/product/FD1014) site, which can adapt to the MYT system in Shaw et al. (2023)[^7] for introducing selective marker. In addition, though not used in our project, we leave a PstI site, a design used in Shaw  et al. (2023)[^7] for transposition of gRNA arrays, which could be utilized if further researchers require.
 
