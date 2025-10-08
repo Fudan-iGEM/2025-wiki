@@ -6,7 +6,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/txq-a.webp
 layout: igem 
 heroImage: https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-headmap.webp
-description: On this page, we present a commercially viable solution addressing the critical challenge of antifungal resistance — a multi-billion-dollar global health threat. We have a scalable business plan specifically designed for CROs in the Yangtze River Delta with a strategic pricing model.
+description: On this page, we present a commercially viable solution addressing the critical challenge of antifungal resistance—a multi-billion-dollar global health threat. Dr.sTraTeGY's innovative platform is specifically designed for CROs in the Yangtze River Delta with a strategic pricing model and scalable business framework.
 ---
 
 ## Summary
@@ -27,9 +27,7 @@ description: On this page, we present a commercially viable solution addressing 
 ### **How**
 
 - Structured in **three phases (2025–2029+)**, focusing on pilot testing in the Yangtze Delta, national expansion, and eventual exit opportunities.
-
 - Strengthened by complementary strategies, including SaaS licensing for software IP, tiered pricing models, and third-party distribution channels.
-
 - Backed by expert validation (Shanghai Stock Exchange Cup, SoftBank China CEO), prioritizing **IP protection, CRO partnerships, and targeted market segmentation.**
 
 
@@ -55,7 +53,9 @@ description: On this page, we present a commercially viable solution addressing 
 
  While these factors underscore the rising strategic importance of antifungal drug development, it is necessary to examine **the practical process of antifungal drug** **R&D** in greater detail to better evaluate the market landscape and opportunities.
 
-  
+------
+
+
 
 #### Two: Why and who needs to study AMR？
 
@@ -77,6 +77,10 @@ Currently, the preclinical R&D pipeline for antifungal drugs remains insufficien
 At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineered with targeted genetic modifications and modular extensions. This system integrates five functional modules to enable full-cycle tracking and analysis of fungal drug resistance evolution, offering dynamic insights that traditional endpoint sequencing cannot capture. The unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
 
 ![core tech](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-core-tech.webp)
+
+------
+
+
 
 #### MVP (Minimum Viable Product)
 
@@ -118,6 +122,10 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
  The prerequisite for developing anti-resistance drugs is the **precise identification of resistance mutation sites.** However, traditional whole-genome sequencing (WGS) is costly, analytically complex, and faces four major challenges: lack of standardization, resource dependency, high expense, and ambiguous results. Therefore, we aim to leverage our technology to develop a toolkit that can track the evolutionary dynamics of fungal resistance under drug pressure.
 
+------
+
+
+
 #### Benchhead market
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic8.webp)
@@ -135,12 +143,12 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
  By embedding ourselves in this ecosystem, we will gain:
 
 - Direct access to a concentrated customer base.
-
 - Opportunities for strategic partnerships with leading CROs.
-
 - A thriving talent pool for recruitment and collaborative research.
 
-  
+------
+
+
 
 #### TAM, SAM, SOM Analysis
 
@@ -158,9 +166,17 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 ![key advantages](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic4.webp)
 
+------
+
+
+
 #### PEST analysis
 
 ![Pest analysis](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic10.webp)
+
+------
+
+
 
 #### Our stakeholders
 
@@ -181,6 +197,10 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
 
 
 
+------
+
+
+
 #### Team Members' capability
 
  As a team with diverse backgrounds, we have members specialized in different areas， including: biology，Clinical Medical Science，software development， commercialization，public relations.
@@ -190,6 +210,10 @@ At the heart of Dr. sTraTeGY is the Grape Yeast multicellular chassis, engineere
  Here is the visualization of our distribution of team roles of the 12 members:
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic12.webp)
+
+------
+
+
 
 #### SWOT Analysis
 
@@ -215,6 +239,10 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic14.webp)
 
+------
+
+
+
 #### Pricing Strategy
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-pic15.webp)
@@ -234,6 +262,8 @@ Based on SWOT，we will take the SO strategy: where we will leverage **internal 
  **B. Software License / Maintenance / Updates**: After initial sale, offer annual renewal/subscription for software updates / new models / cloud features in range **USD** **5,000-10,000/year** for Pro and Enterprise clients.
 
  **C. Discounts and Pilot Offers**: Early adopter discount (e.g. 10-20% off) for first few CRO clients in YRD in exchange for validation data / case studies.
+
+------
 
 
 
@@ -330,10 +360,15 @@ By linking these five strategic pillars, we will build a complete marketing funn
 
 ![The research process of an antifungal medication](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-marketing.webp)
 
+------
+
+
 
 #### Other Strategies
 
 ![other strategies](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/business-mkt.webp)
+
+------
 
 
 
@@ -357,6 +392,8 @@ By linking these five strategic pillars, we will build a complete marketing funn
 - **Licensing Authorization:** Grant software/probe usage licenses to laboratories or CROs preferring not to purchase the full kit. Offer exclusive/co-exclusive licensing agreements to high-volume clients.
 - **Infringement Monitoring:** Conduct regular market monitoring and promptly enforce rights through administrative or judicial pathways upon detecting infringement.
 
+------
+
 
 
 #### Business Exit Strategy
@@ -369,6 +406,10 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 | **Licensing plus strategic partnerships**               | License the technology to different geographies or companies; possibly involve partial buy-outs. | **Pros:** Lower risk; retain ownership; recurring revenue; flexibility.<br>**Cons:** Slower cash inflow; requires strong legal/IP infrastructure. | Value of licensing agreements, royalty streams, strength of contracts, robust and defensible IP. |
 | **IPO / public listing**                                | Float on a Chinese board (e.g., Zhujiang Delta Market) or an overseas biotech-friendly market. | **Pros:** Potential for high valuation if growth is strong; brand and resource expansion.<br>**Cons:** Burdensome regulations, public reporting, dilution, market risk; dependent on favorable market conditions. | Proof of scale, documented revenue growth, recurring contracts, a clear path to profitability. |
 | **M&A by CRO / service company**                        | A large CRO might acquire DR、r.sTraTeGY to internalize the resistance-tracking capability. | **Pros:** Logical buyer with direct benefit from the technology; potential for strong synergies.<br>**Cons:** Purchase price negotiation challenges; may command a lower premium than a product company. | Integration potential, cost-saving synergies, ability to scale the technology, overlap with the acquirer's customer base. |
+
+------
+
+
 
 #### Business model canvas
 
@@ -390,6 +431,8 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 | **Phase 5: Exit Preparation & Growth Optimization** | 48-60 months | Solidify recurring revenue streams; profitability or path to it; clean financials; prepare for M&A or IPO; investor relations; possibly raise growth-stage capital. |
 
 ![business timeline](https://static.igem.wiki/teams/5643/pageimage/entrepreneurship-image/igem-business-timeline.webp)
+
+------
 
 
 
@@ -421,6 +464,8 @@ We listed four possible exit paths for Dr.sTraTeGY: typically **5-6 years** from
 | **Social Impact**          | **Positive:** Contributes to combating the global AMR crisis, improves public health, and aligns with UN Sustainable Development Goals. | Medium (Long-term) | Participate in public health initiatives; publish white papers; raise awareness among public and policymakers about fungal resistance. |
 |                            | **Negative:** Societal controversy over GMOs. Public may have safety concerns about "genetic modification" of synbio products. | Low-Medium         | Practice responsible innovation, maintain transparency; conduct public science communication; proactively engage with regulators. |
 |                            | **Negative:** High prices may exclude resource-limited regions, potentially exacerbating healthcare disparities. | Medium             | Consider preferential pricing for academic institutions; explore tiered pricing strategies for developing regions. |
+
+------
 
 
 
