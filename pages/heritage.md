@@ -4,7 +4,7 @@ authors:
   - name: All Members
     url: /fudan/team/#meet-our-members
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/header/heritage.webp
+heroImage: https://static.igem.wiki/teams/5643/header/heritage.avif
 description: Our legacy is being passed down from our ancestors.
 ---
 

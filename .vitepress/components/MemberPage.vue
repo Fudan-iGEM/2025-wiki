@@ -131,7 +131,7 @@ const teamMembers = [
     status: "ENTJ",
     contactText: "Detail",
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy.webp",
-    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wyz-a.webp",
+    barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/wzy-a.webp",
     iconUrl: "https://static.igem.wiki/teams/5643/img/wetlab-experiment.webp",
     description: "Hi everyone! My name is Zuyao, you can also call me Sophie. I'm studying clinical medicine and I’m really interested in the topic of life on earth. In our team, I’m mainly responsible for design and experiments. I love to explore new things, reach out to new areas and try to put ideas into practice. Let us find the treasures in life and be the first to stand in line!"
   },
