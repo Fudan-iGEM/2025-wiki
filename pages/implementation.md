@@ -13,9 +13,20 @@ Antimicrobial resistance (AMR) poses a critical global health threat. Despite th
 
 To address this, we develop *DR.sTraTeGY*, a multicellular yeast research platform [designed](/design/) to transform the study of microbial evolution from static, retrospective analysis into real-time, observable dynamics. This system tracks the evolution of fungal drug resistance and provides a standardized framework, enabling researchers to efficiently map the genomic locations and sequential order of cumulative mutations acquired under selection pressure.
 
+
 ## Immediate Research Directions
 
-@@@@
+As we found in the Results, a significant number of cell division abnormalities were already present in the ninth generation of tetraploid Grape Yeast. This suggests that even short-term gravity screening is sufficient to induce a substantial number of mutations. Consequently, we performed a longer-term passaging experiment and quantified the percentage of cells exhibiting abnormal division by PI staining. We found that the tetraploid yeast generally exhibited a more widespread incidence of division abnormalities, reaching a relatively high level by the 15th generation. We therefore believe that two weeks will be sufficient for future long-term screening experiments.
+
+**Table 1. Statistics of abnormal cell division**
+
+|        | total cell count | Abnormal cell division | Percentage |        | total cell count | Abnormal cell division | Percentage |
+| ------ | ---------------- | ---------------------- | ---------- | ------ | ---------------- | ---------------------- | ---------- |
+| 2N d9  | 143              | 0                      | 0.00%      | 4N d9  | 160              | 3                      | 1.88%      |
+| 2N d15 | 268              | 1                      | 0.37%      | 4N d15 | 218              | 6                      | 2.75%      |
+| 2N d30 | 241              | 2                      | 0.83%      | 4N d30 | 260              | 7                      | 2.69%      |
+| 2N d45 | 250              | 0                      | 0.00%      | 4N d45 | 253              | 7                      | 2.77%      |
+
 
 ## Commercialization
 
@@ -29,6 +40,6 @@ The application of our product is confined to laboratories within hospitals and 
 
 See more details on our [Safety](/safety/) page.
 
-## Conclusion
+## Summary
 
 Based on experimental [Results](/results/), our multicellular yeast system can serve as a high-throughput drug screening platform that enables systematic evaluation of how different drug administration sequences influence evolutionary trajectories, allowing rapid identification of optimal combination therapies capable of effectively blocking resistance development through real-time monitoring of resistance mutation pathways. Simultaneously, it functions as an educational and clinical diagnostic tool, providing medical schools with visual models of microbial evolution while assisting hospitals in conducting dynamic analysis of resistance profiles.

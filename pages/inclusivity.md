@@ -12,7 +12,7 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity
 description: Through intersectional practices, we build an inclusive scientific community, bringing groups underrepresented in science like those with rare disease Epidermolysis Bullosa (EB patients) into science.
 ---
 
-## Summary:  Intersectional Echoes
+## Summary: Intersectional Echoes
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);

@@ -8,6 +8,7 @@ layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/edu-h.webp
 description: We hoped to educate everyone to learn synthetic biology through continuous in-depth activities. We have completed our education, and at the same time, we have completed our own education.
 ---
+
 ## Overview
 
 Welcome to the education section of our iGEM 2025 project! Our mission is to make synthetic biology accessible and engaging for everyone. Guided by the educational theory of **Constructionism**, we developed our unique ***"Triple P" Framework: Learning by Playing, Learning by Practicing, and Learning by Producing.***
@@ -1383,9 +1384,7 @@ This reflective practice feeds back into the ecosystem, enabling us to **refine 
 Ultimately, what we gained went far beyond subject expertise. We learned how to co-create with diverse groups, how to design for scalability and empathy, and how to turn criticism into better design. These insights represent the most valuable outcome of our education journey—one that we now share proudly as part of our iGEM legacy.
 
 
-
-
-## Summary
+## Conclusion
 
 Our education initiative is built on the **Constructionism** learning theory and implemented through our unique **"Triple P" framework**: **Play &rarr; Practice &rarr; Produce**.
 
@@ -1395,11 +1394,7 @@ All activities were **co-created with our community** through interviews with te
 
 We hope to inspire everyone to understand the face of synthetic biology through continuous in-depth activities. We have completed our education, and at the same time, we have completed our own education.
 
-
-
 > **Note:** All images were used with consent. For minors, authorization was obtained from their parents or guardians.
-
-
 
 
 ## Reference

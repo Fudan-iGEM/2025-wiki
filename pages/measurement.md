@@ -83,7 +83,7 @@ $$
     </div>
 </div>
 
-##### Composite Score Calculation
+### Composite Score Calculation
 
 $$
 \text{S}_{\text{loss}} = \text{Mean} \left( \left(\log_2 \text{Fold Change}_{\text{Non-Primary Channels}} \right)^2 \right)
@@ -216,11 +216,10 @@ A site was designated as a genuine mutation—rather than a sequencing error—i
 
 By separately quantifying the putative EMS-induced mutations (G/C ↔ A/T) within the promoter, coding sequence (CDS or EMSfp), and terminator regions, we calculated the respective mutation rates. The results showed that the EMS mutation rate in the promoter region was significantly higher than that in the CDS/EMSfp region（one-way ANOVA and followed with Tukey's multiple comparisons test, p < 0.001). Our analysis confirms that the EMSfp sequence indeed confers resistance to EMS-induced mutagenesis.
 
-
-### Summary
+## Conclusion
 
 The integrated results demonstrate that EMS-induced mutations specifically accumulate in the promoter region rather than the coding sequence, directly linking observed fluorescence changes to targeted genetic alterations. Through this systematic validation spanning cellular, population, and molecular levels, we have established BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) in our [TU Recorders collection](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein) as a reliable standardized biological part that effectively records mutation events, thereby enabling dynamic tracking by our *DR.sTraTeGY*.
 
-### Reference
+## Reference
 
 [^1]: Hodgins-Davis, A., Duveau, F., Walker, E. A., & Wittkopp, P. J. (2019). Empirical measures of mutational effects define neutral models of regulatory evolution in *Saccharomyces cerevisiae*. *Proceedings of the National Academy of Sciences of the United States of America*, *116*(42), 21085–21093. DOI: 10.1073/pnas.1902823116 

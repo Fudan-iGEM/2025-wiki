@@ -48,7 +48,7 @@ In our letters, we explained how scientists design and modify organisms to perfo
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Letter exchange with a child</span><br><br>
+    <span style="color:gray">Figure 1. Letter exchange with a child</span><br><br>
   </div>
 </div>
 
@@ -103,7 +103,7 @@ Following this conceptual inspiration, we sought advice from Dr. Hengchi Chen, w
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/talk-with-dr-hengchi-chen.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Discussion with Dr. Hengchi Chen</span><br><br>
+    <span style="color:gray">Figure 2. Discussion with Dr. Hengchi Chen</span><br><br>
   </div>
 </div>
 
@@ -149,7 +149,7 @@ These early discussions transformed a conceptual idea into a research direction 
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/fireside-talk-with-prof-don-cleveland.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Fireside talk with Prof. Don Cleveland</span><br><br>
+    <span style="color:gray">Figure 3. Fireside talk with Prof. Don Cleveland</span><br><br>
   </div>
 </div>
 
@@ -179,7 +179,7 @@ As our project evolved, we realized the importance of aligning innovation with c
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/guanghua-huang.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Discussion with Prof. Guanghua Huang</span><br><br>
+    <span style="color:gray">Figure 4. Discussion with Prof. Guanghua Huang</span><br><br>
   </div>
 </div>
 **Topic:** Antifungal Resistance Research and Project Positioning
@@ -210,7 +210,7 @@ Prof. Huang’s concrete methodological advice directly informed our experimenta
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/liping-zhu.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Discussion with Prof. Liping Zhu</span><br><br>
+    <span style="color:gray">Figure 5. Discussion with Prof. Liping Zhu</span><br><br>
   </div>
 </div>
 **Key Takeaways:**
@@ -263,8 +263,8 @@ After grounding our project in clinical reality, we sought feedback from the bio
 
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/suzhou-biopharmaceutical-technology-conference-new.webp" style="width:80%;">
-  <div>
-    <span style="color:gray">Dialogue with enterprise representatives at Suzhou Biopharmaceutical Technology Conference</span><br><br>
+  <div style="width:66%">
+    <span style="color:gray">Figure 6. Dialogue with enterprise representatives at Suzhou Biopharmaceutical Technology Conference</span><br><br>
   </div>
 </div>
 
@@ -293,7 +293,7 @@ At the same time, we are also actively sharing and communicating projects with v
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/jiangsu-zhejiang-shanghai-igem-regional-meet-up.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Attendance at Jiangsu-Zhejiang-Shanghai iGEM Regional Meet-up</span><br><br>
+    <span style="color:gray">Figure 7. Attendance at Jiangsu-Zhejiang-Shanghai iGEM Regional Meet-up</span><br><br>
   </div>
 </div>
 
@@ -317,7 +317,7 @@ Through these collaborations, we strengthened our teamwork and expanded our unde
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/the-12th-ccic.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Presenting our DR.sTraTeGY at the 12th CCiC</span><br><br>
+    <span style="color:gray">Figure 8. Presenting our DR.sTraTeGY at the 12th CCiC</span><br><br>
   </div>
 </div>
 
@@ -345,7 +345,7 @@ Through preliminary discussions and research, our project has taken shape. We wa
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/shan-jiang.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Discussion with Mr. Shan Jiang</span><br><br>
+    <span style="color:gray">Figure 9. Discussion with Mr. Shan Jiang</span><br><br>
   </div>
 </div>
 
@@ -375,7 +375,7 @@ With a scientifically and ethically grounded foundation, we turned to a new ques
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/experience-sharing-with-bnuzh-china.avif" style="width:80%;">
   <div>
-    <span style="color:gray">Sharing HP experience with BNUZH-China, NEFU-China, CAU-China </span><br/>
+    <span style="color:gray">Figure 10. Sharing HP experience with BNUZH-China, NEFU-China, CAU-China </span><br/>
   </div>
 </div>
 
@@ -400,7 +400,7 @@ These early conversations taught us the value of collaboration and reflection, p
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/yeyang-su.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Dialogue with Dr. Yeyang Su</span><br/>
+    <span style="color:gray">Figure 11. Dialogue with Dr. Yeyang Su</span><br/>
   </div>
 </div>
 
@@ -431,7 +431,7 @@ Dr. Su’s anthropological perspective reminded us that science is never isolate
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/carpet.avif" style="width:80%;">
   <div>
-    <span style="color:gray">Carpet conference with HainanU-China, HZAU-China, NKU-China</span><br/>
+    <span style="color:gray">Figure 12. Carpet conference with HainanU-China, HZAU-China, NKU-China</span><br/>
   </div>
 </div>
 
@@ -457,7 +457,7 @@ Together, these exchanges shaped our understanding that Human Practices are not 
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/majianpeng.avif" style="width:80%;">
   <div>
-    <span style="color:gray">Dialogue with Prof. Jianpeng Ma</span><br/>
+    <span style="color:gray">Figure 13. Dialogue with Prof. Jianpeng Ma</span><br/>
   </div>
 </div>
 
@@ -482,7 +482,7 @@ This parallel between iterative science and social engagement became a guiding p
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/munchen.avif" style="width:80%;">
   <div>
-    <span style="color:gray">Discussion with iGEM Munich 2025</span><br/>
+    <span style="color:gray">Figure 14. Discussion with iGEM Munich 2025</span><br/>
   </div>
 </div>
 
@@ -511,7 +511,7 @@ As we developed our project, we recognized the importance of establishing ethica
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/geng-hong.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Interview with Dr. Geng Hong</span><br/>
+    <span style="color:gray">Figure 15. Interview with Dr. Geng Hong</span><br/>
   </div>
 </div> 
 
@@ -536,7 +536,7 @@ Through this, we not only improved our AI tool but also deepened our commitment 
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/round-table-conference.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Round-table dialogue with CSU-CHINA, NKU-China, HUST-China,HainanU-China</span><br/>
+    <span style="color:gray">Figure 16. Round-table dialogue with CSU-CHINA, NKU-China, HUST-China, HainanU-China</span><br/>
   </div>
 </div>
 
@@ -562,7 +562,7 @@ These discussions allowed us to collectively define safety not as a constraint, 
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/li-tang.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Dialogue with Prof. Li Tang</span><br/>
+    <span style="color:gray">Figure 17. Dialogue with Prof. Li Tang</span><br/>
   </div>
 </div>
 
@@ -595,7 +595,7 @@ Additionally, We expanded our scope beyond academia, exploring how our technolog
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/softbank-china.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Dialogue with Mr. Jie Chen</span><br/>
+    <span style="color:gray">Figure 18. Dialogue with Mr. Jie Chen</span><br/>
   </div>
 </div>
 
@@ -641,8 +641,7 @@ His feedback guided us in envisioning a practical pathway toward real-world depl
 We have a better understand of how to strike a balance  healthcare efficiency and patient-centered care in scienfic perspectives.
 
 
-
-## Summary
+## Conclusion
 
 These dialogues brought us full circle — from technological design to human experience, reminding us that science must heal as much as it innovates.
 
