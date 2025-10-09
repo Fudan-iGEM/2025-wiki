@@ -20,7 +20,7 @@ The training was structured into three components:
 3. Through brainstorming and three rounds of idea competitions, we conceptualized potential project proposals and ultimately defined the research direction for iGEM 2025, with further refinements in subsequent phases.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/january-trainingschedule.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/january-trainingschedule.webp" style="width:100%; max-width:100%;">
     <div>
         <span style="color:gray">Figure 1. The schedule of the winter training</span>
         <br><br>
