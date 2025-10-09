@@ -614,7 +614,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
   - AI-Assisted Reasoning: We prompted two large language models ([DeepSeek](https://huggingface.co/deepseek-ai) and [Qwen](https://huggingface.co/Qwen)) with the core design problem—optimizing a fluorescent timer for yeast lineage tracking—guiding them with biological first principles but without providing our model's interim results. This served as an independent validation of our design logic.
 
 - **Build (2025.08):**
-  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab yeast experiments](/result/). This included:
+  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab yeast experiments](/results/). This included:
 
   - Using temperature-dependent maturation kinetics derived from [Q₁₀](#fast-ft-time-parameter-calculation) calculations to adjust Fast-FT[^1] times for 30°C.
   - Adjusting the Ash1_AIpro[^7] promoter to express during the late M phase in our model to match biological evidence.
