@@ -45,19 +45,19 @@ Not just “How can we help marginalized groups in science” but “How can par
 
 **1.   What systemic barriers did we identify?**
 
-We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face [three intertwined barriers](https://2025.igem.wiki/fudan/inclusivity.html#_0-1-our-initial-framework-and-primary-target-group): they are unseen, voiceless, and excluded from participation. We have discovered the potential for their [intersectional](https://2025.igem.wiki/fudan/inclusivity.html#_1-2-improving-our-theoretical-framework-intersectionality) identities to engage in scientific affairs.
+We found that scientifically marginalized groups—such as people living with Epidermolysis Bullosa (EB)—often face [three intertwined barriers](#_0-1-our-initial-framework-and-primary-target-group): they are unseen, voiceless, and excluded from participation. We have discovered the potential for their [intersectional](#_1-2-improving-our-theoretical-framework-intersectionality) identities to engage in scientific affairs.
 
 **2.   How did we expand participation in science?**
 
-We co-created inclusive formats with EB patients, including [sensory-friendly surveys](https://2025.igem.wiki/fudan/inclusivity.html#_3-2-co-creation-in-action-the-art-experience-exhibition), [Photovoice storytelling](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), and [immersive exhibitions](https://2025.igem.wiki/fudan/inclusivity.html#_3-2-co-creation-in-action-the-art-experience-exhibition). These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
+We co-created inclusive formats with EB patients, including [sensory-friendly surveys](#_3-2-co-creation-in-action-the-art-experience-exhibition), [Photovoice storytelling](#_3-1-facilitating-dialogue-photovoice), and [immersive exhibitions](#_3-2-co-creation-in-action-the-art-experience-exhibition). These initiatives helped transform participants from “research subjects” into co-designers and active collaborators, allowing their experiences to directly shape scientific inquiry.
 
 **3.   How do we ensure dialogue and mutual learning?**
 
-Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped [improve the laboratory environment](https://2025.igem.wiki/fudan/inclusivity.html#_4-building-an-inclusive-scientific-community-learn-from-the-margins)—benefiting other neurodiverse researchers as well.
+Our approach is built on ongoing dialogue and negotiation with EB patients and fungus-sensitive communities. Their needs for fungal therapy have informed our experimental design, while their insights into sensory and physiological sensitivity helped [improve the laboratory environment](#_4-building-an-inclusive-scientific-community-learn-from-the-margins)—benefiting other neurodiverse researchers as well.
 
 **4.   What replicable outcomes have emerged?**
 
-We developed a series of transferable tools and methods: [a sensory-friendly research toolkit](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf), [a post-event feedback and evaluation model](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), [a collection of science posters](https://2025.igem.wiki/fudan/inclusivity.html#_4-2-lab-mental-health-week-check-in-campaign), and the assistive software “[ProtocolFlow](https://protocolflow-290e68.igem.wiki/).” These resources can be readily adapted by other teams.
+We developed a series of transferable tools and methods: [a sensory-friendly research toolkit](https://static.igem.wiki/teams/5643/pageimage/inclusivity/a-sensory-friendly-research-toolkit.pdf), [a post-event feedback and evaluation model](#_3-1-facilitating-dialogue-photovoice), [a collection of science posters](#_4-2-lab-mental-health-week-check-in-campaign), and the assistive software “[ProtocolFlow](https://protocolflow-290e68.igem.wiki/)”. These resources can be readily adapted by other teams.
 
 
 
@@ -84,7 +84,8 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅ In a nutshell: We aim to co-create an inclusive scientific community to address fungal challenges with joint effort.</strong>
+    <strong>✅ In a nutshell:</strong>
+    We aim to co-create an inclusive scientific community to address fungal challenges with joint effort.
   </h5>
 </div>
 
@@ -158,7 +159,7 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In a nutshell: </strong>
+    <strong>✅ In a nutshell:</strong>
     Enable rare disease patients to increase visibility by presenting themselves as artists.
   </h5>
 
@@ -282,7 +283,7 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In a nutshell: </strong>
+    <strong>✅ In a nutshell:</strong>
     Through sensory-friendly design, people living with fungal challenges can express struggles that were once unspeakable — turning silent experiences into voices that matter.
   </h5>
 
@@ -322,7 +323,7 @@ Furthermore, the intersectional perspective provides a cost-effective solution t
 
 #### Motivation:  **Breaking the binary divide between "healthy" and "ill"**
 
-Building on insights from [our first activity](https://2025.igem.wiki/fudan/inclusivity.html#_1-1-art-pop-up-and-co-creation-charity-with-eb-patients), we aimed to invite individuals who share similar lived circumstances with EB patients at certain moments, in order to reduce the inequitable pressure produced by the binary divide between “healthy” and “ill.” Starting from our project’s focus on fungal issues and based on literature review[^6], we delineated a broad group of **“fungus-susceptible individuals.”**
+Building on insights from [our first activity](#_1-1-art-pop-up-and-co-creation-charity-with-eb-patients), we aimed to invite individuals who share similar lived circumstances with EB patients at certain moments, in order to reduce the inequitable pressure produced by the binary divide between “healthy” and “ill.” Starting from our project’s focus on fungal issues and based on literature review[^6], we delineated a broad group of **“fungus-susceptible individuals.”**
 
 | **Category** | **Main populations** | **Common fungal problems** |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -440,7 +441,7 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In a nutshell:</strong>
+    <strong>✅ In a nutshell:</strong>
     Foster multi-stakeholder dialogues on science to bridge barriers and make participation more accessible.
   </h5>
 
@@ -480,7 +481,7 @@ These insights directly shaped our follow-up activities: **Photovoice (“Image-
 
 #### Motivation: Use participatory research method to empower our target group.
 
-The ["Visibility"](https://2025.igem.wiki/fudan/inclusivity.html#_1-visibility-ensuring-marginalized-groups-receive-attention) and ["Empowering Expression"](https://2025.igem.wiki/fudan/inclusivity.html#_2-empowerment-mapping-the-unspoken-truths) activities we carried out earlier mainly focused on us as the leading role to promote the construction of an inclusive scientific community. Yet this is not enough. More importantly, marginalized groups themselves must directly and proactively participate in scientific affairs. Moving from the margins to the core is not instantaneous—a STEM professional may require years or decades of training. While supporting groups with barriers to access core scientific careers, it is equally important to empower marginalized groups to participate in inclusive science governance, enabling them to take a firm first step into shared decision-making.
+The ["Visibility"](#_1-visibility-ensuring-marginalized-groups-receive-attention) and ["Empowering Expression"](#_2-empowerment-mapping-the-unspoken-truths) activities we carried out earlier mainly focused on us as the leading role to promote the construction of an inclusive scientific community. Yet this is not enough. More importantly, marginalized groups themselves must directly and proactively participate in scientific affairs. Moving from the margins to the core is not instantaneous—a STEM professional may require years or decades of training. While supporting groups with barriers to access core scientific careers, it is equally important to empower marginalized groups to participate in inclusive science governance, enabling them to take a firm first step into shared decision-making.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity3-1.webp" alt="inclusivity3-1" style="width:65%;" />
 
@@ -535,7 +536,7 @@ Participants brainstormed improvements to color, lighting, seating, and signage 
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inc-hospital.webp" alt="inclusivity3map" style="width:40%;" />
 
-We also consulted [Tang Xirong](https://2025.igem.wiki/fudan/human-practices.html#beyond-the-humans-more-humans), Deputy Chief Architect and Director of the Medical Institute at Shanghai Architectural Design &amp; Research Institute Co., Ltd. She endorsed our core approach—integrating AI-guided navigation and digital concierge services as emerging trends—alongside the philosophy of creating "less clinical, more social" healthcare spaces. She also offered expert recommendations: 1) prioritizing antimicrobial upholstery for seating, 2) introducing micro-environments such as small atriums and play corners, and 3) ensuring visual designs prioritize the needs of elderly users.
+We also consulted [Tang Xirong](/human-practices/#beyond-the-humans-more-humans), Deputy Chief Architect and Director of the Medical Institute at Shanghai Architectural Design &amp; Research Institute Co., Ltd. She endorsed our core approach—integrating AI-guided navigation and digital concierge services as emerging trends—alongside the philosophy of creating "less clinical, more social" healthcare spaces. She also offered expert recommendations: 1) prioritizing antimicrobial upholstery for seating, 2) introducing micro-environments such as small atriums and play corners, and 3) ensuring visual designs prioritize the needs of elderly users.
 
 This exchange highlighted the complexity of real-world implementation. It also revealed that long-term and sustained community engagement is essential, beyond one-time events. To support this, we developed **“Ten Questions for Reflection after Inclusive Science Community Activities”**, helping us and future practitioners sustain improvement.
 
@@ -591,7 +592,7 @@ Most importantly, participants transformed from *“respondents”* into *“co-
 
 The *“Fingertip Warmth · Science in Healing Together”* art co-creation exhibition was not an isolated attempt, but rather an iteration and elevation of our previous cycle of **Visibility – Expression – Co-Creation**.
 
-In the [Art Pop-up and Co-creation Charity with EB Patients](https://2025.igem.wiki/fudan/inclusivity.html#_1-1-art-pop-up-and-co-creation-charity-with-eb-patients), by inviting patients to appear as “artists,” we discovered their **intersectional identities** beyond illness. After subsequent research and dialogue activities that promoted expression, we reflected on the shortcomings of our first visibility event. We realized the need to **increase the leadership of EB patients in activities**, transforming their stories into tangible, publicly impactful expressions.
+In the [Art Pop-up and Co-creation Charity with EB Patients](#_1-1-art-pop-up-and-co-creation-charity-with-eb-patients), by inviting patients to appear as “artists,” we discovered their **intersectional identities** beyond illness. After subsequent research and dialogue activities that promoted expression, we reflected on the shortcomings of our first visibility event. We realized the need to **increase the leadership of EB patients in activities**, transforming their stories into tangible, publicly impactful expressions.
 
 ---
 
@@ -646,10 +647,9 @@ Future inclusive practices should focus more on creating **“points of identity
   margin: 16px 0;
 ">
   <h5 style="margin: 0; color:#e97628;">
-    <strong>✅In a nutshell: </strong> 
+    <strong>✅ In a nutshell:</strong>
     Our dialogues with marginalized groups have deepened our understanding of intersectionality in scientific research, inspiring the creation of ProtocolFlow and our lab mental health initiatives — bringing the spirit of inclusivity back into the scientific community itself.
   </h5>
-
 
   <br>
 
@@ -691,7 +691,7 @@ Future inclusive practices should focus more on creating **“points of identity
 
 #### Motivation: Reflection on the scientific community
 
-During our [**PhotoVoice dialogues**](https://2025.igem.wiki/fudan/inclusivity.html#_3-1-facilitating-dialogue-photovoice), we invited a researcher with a history of fungal infections to share their lived experiences in the lab. They described the need to conceal their condition to avoid stigma, the frustration of making mistakes under sensory overload, and the worsening of their illness due to workplace stress.
+During our [**PhotoVoice dialogues**](#_3-1-facilitating-dialogue-photovoice), we invited a researcher with a history of fungal infections to share their lived experiences in the lab. They described the need to conceal their condition to avoid stigma, the frustration of making mistakes under sensory overload, and the worsening of their illness due to workplace stress.
 
 This helped us realize: **inclusivity in science is not only about integrating marginalized groups into research, but also about safeguarding the well-being of researchers themselves.** We heard similar accounts from scientists, clinicians, and technicians, who work under high precision and high pressure while struggling with sensory sensitivities (e.g., to equipment noise or chemical odors), leading to anxiety and burnout.
 
@@ -704,6 +704,10 @@ Importantly, the participant’s dual identity as both a researcher and a patien
 ---
 
 #### Details
+
+> Try ProtocolFlow at https://protocolflow-290e68.igem.wiki/
+>
+> Source code at https://gitlab.igem.org/2025/fudan/-/tree/main/protocolflow
 
 ##### Core Functions
 
@@ -741,7 +745,7 @@ These results suggest that our tool not only improves efficiency but also meanin
 
 ### 4.2 **“Lab Mental Health Week” check-in campaign**
 
-The former results collected in [*ProtocolFlow*](https://2025.igem.wiki/fudan/inclusivity.html#_4-1-laboratory-assistive-software-—-protocolflow) inspired us to launch a **“Lab Mental Health Week” check-in campaign**, complete with posters that teams can download and use to foster collective awareness and care.
+The former results collected in [*ProtocolFlow*](#_4-1-laboratory-assistive-software-—-protocolflow) inspired us to launch a **“Lab Mental Health Week” check-in campaign**, complete with posters that teams can download and use to foster collective awareness and care.
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity4-7.webp" alt="inclusivity3-2eb3" style="width:38%;" />
 
@@ -791,7 +795,7 @@ Based on systematic literature review and preliminary field research, we have no
 
 In today’s increasingly segmented society, people are routinely categorized as “children,” “elders,” “healthy individuals,” or “disabled populations.” Such labels—though administratively convenient—make cross-group understanding more difficult. Public speech and participation in science often remain reserved for the so-called “healthy,” pushing others further to the margins.
 
-Our [**Visibility–Empowerment–Involvement cycle**](https://2025.igem.wiki/fudan/inclusivity.html#_0-2-the-three-step-model-visibility-→-empowerment-→-involvement) seeks to challenge this divide. Instead of reducing people to abstract categories, we restore the **fullness of each participant’s multi-identity**—as a researcher, a patient, an artist, a parent, or more.
+Our [**Visibility–Empowerment–Involvement cycle**](#_0-2-the-three-step-model-visibility-→-empowerment-→-involvement) seeks to challenge this divide. Instead of reducing people to abstract categories, we restore the **fullness of each participant’s multi-identity**—as a researcher, a patient, an artist, a parent, or more.
 
 A truly inclusive scientific community should not present people as fixed, single-identity figures. Rather, it must embrace individuals’ complexity and plurality, transforming them into genuine agents of change. Such a community becomes a **catalyst for dialogue, mutual understanding, and systemic transformation**.
 

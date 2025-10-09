@@ -1,0 +1,67 @@
+# GitLab CI/CD 配置文件
+# 用于自动构建和部署 Vue.js 应用
+
+# 定义阶段
+stages:
+  - build
+  - deploy
+
+# 全局变量
+variables:
+  NODE_VERSION: "18"
+
+# 构建阶段
+build:
+  stage: build
+  image: node:${NODE_VERSION}
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - echo "开始安装依赖..."
+    - npm install -g pnpm
+    - pnpm install
+    - echo "开始构建应用..."
+    - pnpm run build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 hour
+  only:
+    - main
+
+# 部署阶段 - 使用 GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - echo "准备部署到 GitLab Pages..."
+    - rm -rf public
+    - mkdir public
+    - cp -r dist/* public/
+  artifacts:
+    paths:
+      - public
+  dependencies:
+    - build
+  only:
+    - main
+
+# 可选：部署到自定义服务器（需要配置 Runner 和 SSH 密钥）
+# deploy_server:
+#   stage: deploy
+#   image: alpine:latest
+#   before_script:
+#     - apk add --no-cache openssh-client
+#     - eval $(ssh-agent -s)
+#     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+#     - mkdir -p ~/.ssh
+#     - chmod 700 ~/.ssh
+#     - ssh-keyscan $SERVER_HOST >> ~/.ssh/known_hosts
+#   script:
+#     - echo "部署到服务器..."
+#     - scp -r dist/* $SERVER_USER@$SERVER_HOST:$DEPLOY_PATH
+#   dependencies:
+#     - build
+#   only:
+#     - main
+#   when: manual  # 手动触发部署
