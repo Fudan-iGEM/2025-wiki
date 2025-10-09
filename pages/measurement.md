@@ -30,16 +30,15 @@ Our screening focused on two key aspects:
 
   Simultaneously, we carefully monitored the fluorescence intensity in the other three fluorescent channels. Ideally, these non-primary channels should exhibit minimal to no change in intensity or brightness distribution. This observation would confirm that the EMSfp sequence itself is resistant to mutagenesis, and that the observed changes are specific to the promoter's response to EMS, rather than a general degradation or alteration of the fluorescent protein.
   
-  <div style="text-align: center;" id="fig1">
-      <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f1.avif" style="width:80%">
-<br>
-      <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f2.avif" style="width:80%">
-<br>
-      <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f3.avif" style="width:80%">
-    <div>
-        <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment. (A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499. Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.</span>
-        <br><br>
-    </div>
+<div style="text-align: center;" id="fig1">
+  <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f1.avif" style="width:80%"><br>
+  <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f2.avif" style="width:80%"><br>
+  <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f3.avif" style="width:80%">
+  <div>
+    <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment.<br>(A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499. Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.
+    </span>
+    <br><br>
+  </div>
 </div>
 
 
@@ -182,6 +181,9 @@ $$
         <span style="color:gray">Figure 3. Self-Starting Logistic Model Fitted Parameters</span>
         <br><br>
     </div>
+</div>
+
+<div style="text-align: center;">
 
 **Table 4. Self-Starting Logistic Model Fitted Parameters**
 

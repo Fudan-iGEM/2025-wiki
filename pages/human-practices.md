@@ -52,10 +52,10 @@ This reflection naturally led us to examine our own project. We asked: how can w
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%;">
   <div>
-    <small style="color:gray">Letter exchange with a child</small><br><br>
+    <span style="color:gray">Letter exchange with a child</span>
+    <br><br>
   </div>
 </div>
-
 
 With this philosophical foundation, we turned to the scientific core of our project: **multicellular yeast** as a platform for dynamic screening of drug-resistance targets. Our discussions with experts helped us shape the idea and define its scientific and societal significance.
 
