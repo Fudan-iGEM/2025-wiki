@@ -26,8 +26,7 @@ To determine the temporal sequence of growth and identify mother–daughter rela
 <div style="text-align:center;" id="fig1">
   <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp" style="width:100%">  
   <div><span style="text-align:left; margin:0; color:gray;">Figure 1. Chitin Imaging of 2N and 4N Grape Yeast.
-    <br>
-    <small>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.</small>
+    <br>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.
   </span></div>
 </div>
 
@@ -49,10 +48,9 @@ These results collectively suggest that, under the pressure of settling selectio
 <div style="text-align:center;" id="fig2">
   <img src="https://static.igem.wiki/teams/5643/pageimage/results/ploid-abnormality-2.webp" style="width:100%">  
   <div><span style="text-align:left; margin:0; color:gray;">Figure 2. Microscopy images and statistical analysis of yeast ploidy changes.
-    <br>
-    <small>(A) Merged bright-field and fluorescence images of PI-stained diploid (left) and tetraploid (right) yeast after 9 generations of settling selection. Blue arrow: a single cell containing two nuclei, suggestive of an abnormal karyotype. Scale bar = 10 &mu;m. <br>
+    <br>(A) Merged bright-field and fluorescence images of PI-stained diploid (left) and tetraploid (right) yeast after 9 generations of settling selection. Blue arrow: a single cell containing two nuclei, suggestive of an abnormal karyotype. Scale bar = 10 &mu;m. <br>
 (B) Population-level distribution of fluorescence intensity in diploid and tetraploid yeast. <br>
-(C) Fluorescence intensity distribution across individual biological replicates of diploid (n = 7) and tetraploid (n = 9) yeast samples.</small>
+(C) Fluorescence intensity distribution across individual biological replicates of diploid (n = 7) and tetraploid (n = 9) yeast samples.
   </span></div>
 </div>
 
@@ -76,12 +74,11 @@ To test this idea, we measured the settling rates of yeast at different passages
 
 As microscopic images of fixed yeast cells fail to capture the real-time, authentic dynamics of Grape Yeast branching, we employed [live-cell imaging](/experiments/#yeast-live-cell-imaging-in-agarose) over a 3-hour span to track the yeast growth process.
 
-<div style="text-align:center;" id="fig2">
-  <img src="https://gitlab.igem.org/2025/fudan/-/raw/main/microscopy.webp?ref_type=heads" style="width:100%"><br>
-  <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif" style="width:100%">
+<div style="text-align:center;" id="fig3">
+  <img src="https://gitlab.igem.org/2025/fudan/-/raw/main/microscopy.webp?ref_type=heads" style="width:100%;margin-bottom:0"><br>
+  <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif" style="width:100%;margin-top:0">
   <div><span style="text-align:left; margin:0; color:gray;">Figure 3. Live-cell imaging of Grape Yeast.
-    <br>
-    <small>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3 h. The time-lapse movie at the top left corner was used to generate the montage image.</small>
+    <br>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3 h. The time-lapse movie at the top left corner was used to generate the montage image.
   </span></div>
 </div>
 
