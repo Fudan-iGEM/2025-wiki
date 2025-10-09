@@ -34,12 +34,9 @@ Through an intersectional lens, we found shared needs where divisions once stood
 <strong>Intersectional Echoes</strong>, to us, is not a checklist but a way of questioning—
 Not just “How can we help marginalized groups in science” but “How can participation itself create change?”</p>
   </div>
-
-
 </div>
 
 ------
-
 
 ### Our highlights ✨
 
@@ -74,7 +71,7 @@ Our project focuses on the differentiation and evolutionary potential of fungal 
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/content.webp" alt="inclusivity1-1" style="width:90%;" />
 
-## 0.Forming the theoretical framework
+## 0. Forming the theoretical framework
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -780,7 +777,7 @@ From May to September, we have continued our science communication efforts on me
 
 
 
-## Conclusion: Forming a replicable, scalable, self-evolving cycle.
+## Conclusion: Forming a replicable, scalable, self-evolving cycle
 
 <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/conclusion.webp" alt="inclusivity1-1" style="width:90%;" />
 
@@ -799,8 +796,9 @@ Our [**Visibility–Empowerment–Involvement cycle**](#_0-2-the-three-step-mode
 
 A truly inclusive scientific community should not present people as fixed, single-identity figures. Rather, it must embrace individuals’ complexity and plurality, transforming them into genuine agents of change. Such a community becomes a **catalyst for dialogue, mutual understanding, and systemic transformation**.
 
-Structural change is hard, but it begins with localized, lived efforts of inclusive community-building. *Any time you can give will make a difference.*
+Structural change is hard, but it begins with localized, lived efforts of inclusive community-building.
 
+*Any time you can give will make a difference.*
 
 
 ## References

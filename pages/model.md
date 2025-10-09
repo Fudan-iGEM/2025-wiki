@@ -12,15 +12,11 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/model/heroimage-model.w
 description: On this page, we describe a model of dynamic protein Timer in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
 ---
 
-> Try YeastVerse Visualization at https://yeastverse-99735e.igem.wiki/
->
-> Source code at https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse
-
 ## Highlights — A New Paradigm for Synthetic Biology in the AI Era
 
 Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
 
-Our work reimagines this cycle by introducing an [AI-augmented modeling framework](#ai-aided-validation-of-model-predictions) that dramatically increases the predictive accuracy of in silico design—enabling first-attempt success in wet experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1_AIpro[^7] promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models ([DeepSeek](https://huggingface.co/deepseek-ai) and [Qwen](https://huggingface.co/Qwen)), which—when prompted only with biological first principles—converged on the same optimal design choices.
+Our work reimagines this cycle by introducing an [AI-augmented modeling framework](#ai-aided-validation-of-model-predictions) that dramatically increases the predictive accuracy of in silico design—enabling first-attempt success in wet-lab experiments. Centered on a biophysically grounded model of fluorescent timer (Fast-FT) dynamics in yeast, we systematically screen critical parameters—such as Ash1_AIpro[^7] promoter pulse width (10–15 min), promoter strength (1×), and maturation kinetics—under realistic cellular conditions (30°C, YPD medium). Crucially, these model-derived recommendations were independently validated by two large language models ([DeepSeek](https://huggingface.co/deepseek-ai) and [Qwen](https://huggingface.co/Qwen)), which—when prompted only with biological first principles—converged on the same optimal design choices.
 
 This convergence between mechanistic modeling and AI reasoning provides unprecedented confidence in pre-experimental parameter selection. Rather than replacing the DBTL cycle, our approach supercharges the “Design” phase, minimizing failed builds and accelerating the path to reliable, interpretable results. By demonstrating that AI can serve as a “AI reasoning partner” in hypothesis generation and experimental planning, we offer a novel and replicable framework for future research, where [computationally guided](/model/) [design](/design/) paves a reliable and efficient path to [experimental realization](/results/).
 
@@ -30,7 +26,7 @@ In synthetic biology and cellular timing studies, constructing a reliable and re
 
 ## Introduction
 
-This model is centered around the "single pulse &rarr; three-step irreversible maturation chain (C&rarr;B&rarr;I&rarr;R)" and simulates the entire process from promoter expression to the complete maturation of the fluorescent protein. It uses $r(t) = \frac{R}{B + R}$ and $\Delta r$ as criteria to evaluate the readability and monotonicity of the timer. By adjusting the pulse width (the duration of Ash1 pulses), maturation time constants ($\tau_B, \tau_I, \tau_R$), and pulse intensity (adjusting promoter strength), we first screen for "usable intervals" mathematically, and then provide reproducible target conditions for wet experiments. The model compares periodic promoters (Ash1) with constitutive promoters: the former provides short and clean expression windows, improving $\Delta r$ and monotonicity; the latter, under the same maturation parameters, tends to dilute time resolution due to continuous new molecule generation, and thus is used as a control to demonstrate the necessity of pulse gating. To address cases where promoter expression is either too high or too low, the model incorporates promoter strength ($pulse_{amp}$) and intergenerational inheritance (inheritance fraction, $pp$) into sensitivity analysis. By controlling promoter strength, we ensure that the system provides an appropriate level of protein expression while avoiding premature saturation or insufficient signaling. In summary, the model systematically examines and quantifies two critical factors: promoter selection and promoter strength, validating the reasonableness of selecting the Ash1 promoter and an appropriate promoter strength from both the mathematical and model perspectives before conducting wet experiments.
+This model is centered around the "single pulse &rarr; three-step irreversible maturation chain (C&rarr;B&rarr;I&rarr;R)" and simulates the entire process from promoter expression to the complete maturation of the fluorescent protein. It uses $r(t) = \frac{R}{B + R}$ and $\Delta r$ as criteria to evaluate the readability and monotonicity of the timer. By adjusting the pulse width (the duration of Ash1 pulses), maturation time constants ($\tau_B, \tau_I, \tau_R$), and pulse intensity (adjusting promoter strength), we first screen for "usable intervals" mathematically, and then provide reproducible target conditions for wet-lab experiments. The model compares periodic promoters (Ash1) with constitutive promoters: the former provides short and clean expression windows, improving $\Delta r$ and monotonicity; the latter, under the same maturation parameters, tends to dilute time resolution due to continuous new molecule generation, and thus is used as a control to demonstrate the necessity of pulse gating. To address cases where promoter expression is either too high or too low, the model incorporates promoter strength ($pulse_{amp}$) and intergenerational inheritance (inheritance fraction, $pp$) into sensitivity analysis. By controlling promoter strength, we ensure that the system provides an appropriate level of protein expression while avoiding premature saturation or insufficient signaling. In summary, the model systematically examines and quantifies two critical factors: promoter selection and promoter strength, validating the reasonableness of selecting the Ash1 promoter and an appropriate promoter strength from both the mathematical and model perspectives before conducting wet-lab experiments.
 
 ## Model Design
 
@@ -52,10 +48,9 @@ This model is based on the following experimental settings:
 ## Model Parameters
 
 <div style="text-align: center;">
-        <span style="color:gray">Table 1. Parameters (global variables) for the model</span>
-        <br>
-    </div>
-
+    <span style="color:gray">Table 1. Parameters (global variables) for the model</span>
+    <br>
+</div>
 
 | **Parameter** | **Meaning**                                | **Default Value**     | **Unit** |
 | ------------------- | ---------------------------------------------- | -------------------------------- | -------- |
@@ -75,21 +70,21 @@ This model is based on the following experimental settings:
 | **$k_R$**           | I to R rate constant         | $\frac{1}{\tau_R}$ (calculate from known value $\tau_{R}$) | min<sup>-1</sup>    |
 | **$k_{DR}$**       | Red protein degradation rate | $\frac{\ln 2}{t_{12}^{(R)} \cdot 60}$ (calculate from estimated value $t_{12}^{(R)}$) | min<sup>-1</sup>    |
 
+
 ### Fast-FT Time Parameter Calculation
 
 #### 1. Basis for Calculation and Core Logic
 
-The fluorescence maturation of Fast-FT (from blue to red) is essentially a chemical process involving chromophore oxidation and conformational rearrangement. The rate of this process is strictly dependent on temperature and follows the biochemistry "temperature coefficient (Q₁₀)" rule — that is, for every 10°C increase, the reaction rate increases by 1.5–2.5 times. The typical Q₁₀ value for FT-like proteins in the literature is close to 2.0.
+The fluorescence maturation of Fast-FT (from blue to red) is essentially a chemical process involving chromophore oxidation and conformational rearrangement. The rate of this process is strictly dependent on temperature and follows the biochemistry "temperature coefficient (Q<sub>10</sub>)" rule — that is, for every 10°C increase, the reaction rate increases by 1.5–2.5 times. The typical Q<sub>10</sub> value for FT-like proteins in the literature is close to 2.0.
 
 ##### 1.1 Literature Data Summary
 
 The core data for the calculation is derived from literature on Fast-FT key time parameters at 25°C (in vitro purified + intracellular, Drosophila S2 cells) and 37°C (in vitro purified + intracellular, HeLa cells). Specific data are shown below (data source[^1]):
 
 <div style="text-align: center;">
-        <span style="color:gray">Table 2. Data summary for Fast-FT time parameter</span>
-        <br>
-    </div>
-
+    <span style="color:gray">Table 2. Data summary for Fast-FT time parameter</span>
+    <br>
+</div>
 
 | Temperature | Experimental System        | Blue Fluorescence Peak Time (h) | Red Fluorescence Half-Peak Time (h) | Remarks                                                      |
 | ----------- | -------------------------- | ------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
@@ -98,9 +93,11 @@ The core data for the calculation is derived from literature on Fast-FT key time
 | 37°C        | In vitro purified protein  | 0.25                            | 7.1                                 | Higher temperature accelerates maturation, much faster than at 25°C |
 | 37°C        | Intracellular (HeLa cells) | 17.0 (trend value)              | 41.0 (trend value)                  | Longer blue/red time compared to in vitro                    |
 
-##### 1.2 Q₁₀ Calculation (Temperature Coefficient)
+<br>
 
-Q₁₀ is the core index for quantifying the impact of temperature on the reaction rate. The formula (Arrhenius equation[^12]) is:
+##### 1.2 Q<sub>10</sub> Calculation (Temperature Coefficient)
+
+Q<sub>10</sub> is the core index for quantifying the impact of temperature on the reaction rate. The formula (Arrhenius equation[^12]) is:
 $$
 Q_{10} = \left( \frac{v_{T2}}{v_{T1}} \right)^{\frac{10}{T2-T1}}
 $$
@@ -109,7 +106,7 @@ Where:
 - $v_{T1}$ and $v_{T2}$ are the reaction rates at temperatures T1 and T2;
 - T1 and T2 are the two temperature points (°C).
 
-We calculate Q₁₀ based on the in vitro data at 25°C (T1) and 37°C (T2):
+We calculate Q<sub>10</sub> based on the in vitro data at 25°C (T1) and 37°C (T2):
 
 - T1=25°C, red half-peak time $t1 = 18.0\ \text{h}$, rate $v1 = 1/18.0\ \text{h}^{-1}$;
 - T2=37°C, red half-peak time $t2 = 7.1\ \text{h}$, rate $v2 = 1/7.1\ \text{h}^{-1}$;
@@ -119,11 +116,13 @@ Substituting into the formula:
 $$
 Q_{10} = \left( \frac{1/7.1}{1/18.0} \right)^{\frac{10}{12}} \approx 2.0
 $$
-This result aligns with the typical Q₁₀ range (1.8–2.2) for FT-like proteins in literature, confirming the reliability of the subsequent calculations.
+This result aligns with the typical Q<sub>10</sub> range (1.8–2.2) for FT-like proteins in literature, confirming the reliability of the subsequent calculations.
+
+<br>
 
 ##### 1.3 Parameter Calculation at 30°C
 
-For yeast experiments, the target temperature is 30°C (T3). We will use the data at 25°C (T1) for intracellular conditions (aligned with the yeast physiological environment) and a Q₁₀ value of 2.0 for calculations:
+For yeast experiments, the target temperature is 30°C (T3). We will use the data at 25°C (T1) for intracellular conditions (aligned with the yeast physiological environment) and a Q<sub>10</sub> value of 2.0 for calculations:
 
 ###### (1) Core Formula
 
@@ -149,11 +148,14 @@ $$
 | Red Fluorescence Half-Peak Time | 38.0                        | 30.0                    | 38.0 / 1.41 ≈ 30.0, more stable as red maturation is less influenced by intracellular factors |
 | Red Fluorescence Peak Time      | 200.0 (S2 cells)            | 141.8                   | 200.0 / 1.41 ≈ 141.8, used for long-term tracking experiments (e.g., intergenerational lineage analysis) |
 
+<br>
+
 ##### 1.4 Reasonableness Check
 
 - **Temperature Range Match**: 30°C is between 25°C (lower limit for yeast) and 37°C (mammalian body temperature), so the estimated result is free from extrapolation errors.
 - **Cellular Environment Consistency**: The translation and protein degradation rates in S2 cells at 25°C align closely with yeast, and since both are lower eukaryotes, the biochemical interference is minimal, ensuring the chemical maturation and biological interference total time is comparable.
 - **Non-Core Variables Exclusion**: The pH of YPD 6.0–6.5 is within the fluorescent stability range of Fast-FT (pH 5.4–7.4), and the YPD medium only provides nutrients without affecting chromophore chemical maturation. Hence, no parameter adjustments are needed.
+
 
 ## Model Assumptions
 
@@ -302,9 +304,9 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure1-single-cell-b-r-left-r-right.webp)
 
 <div style="text-align: center;" id="fig1">
-        <span style="color:gray">Figure 1. Single-cell- B-R (left) &amp; r (right)</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 1. Single-cell- B-R (left) &amp; r (right)</span>
+    <br><br>
+</div>
 
 
 ### Pulse width vs $\Delta r$
@@ -327,9 +329,9 @@ C_inherit = p.inherit_frac_C * C_T
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp)
 
 <div style="text-align: center;" id="fig2">
-        <span style="color:gray">Figure 2. &delta;r(65&rarr;145 min) vs pulse width τ</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 2. &delta;r(65&rarr;145 min) vs pulse width τ</span>
+    <br><br>
+</div>
 
 
 ### Lineage analysis
@@ -339,17 +341,18 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure3-lineage-r-heatmap-birth-aligned.webp)
 
 <div style="text-align: center;" id="fig3">
-        <span style="color:gray">Figure 3. Lineage r heatmap (birth-aligned)</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 3. Lineage r heatmap (birth-aligned)</span>
+    <br><br>
+</div>
 
+<br>
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure4-lineage-r-heatmap-baseline-corrected.webp)
 
 <div style="text-align: center;" id="fig4">
-        <span style="color:gray">Figure 4. Lineage r' heatmap (baseline-corrected)</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 4. Lineage r' heatmap (baseline-corrected)</span>
+    <br><br>
+</div>
 
 
 ## Results and Discussion
@@ -381,9 +384,9 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure5-delta-r-vs-10-90-min-window.webp)
 
 <div style="text-align: center;" id="fig5">
-        <span style="color:gray">Figure 5. &Delta;r vs τ (10-90 min window)</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 5. &Delta;r vs τ (10-90 min window)</span>
+    <br><br>
+</div>
 
 
 #### $r(t)$ Overlaid Curves
@@ -399,9 +402,9 @@ This pattern occurs because after a short pulse, the system almost no longer add
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure6-rt-t-overlay-fairness-equal-intensity.webp)
 
 <div style="text-align: center;" id="fig6">
-        <span style="color:gray">Figure 6. r(t) overlay (fairness- equal_intensity)</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 6. r(t) overlay (fairness- equal_intensity)</span>
+    <br><br>
+</div>
 
 
 
@@ -428,12 +431,13 @@ This pattern occurs because after a short pulse, the system almost no longer add
   - ON: The upper limit is $\approx 0.028$, with the flattest gradient.
 - **Interpretation:** Even after baseline correction, shorter pulses maintain strong temporal resolution within generations, while ON expression fails to distinguish subtle age differences.
 
-![](https://static.igem.wiki/teams/5643/pageimage/model/figure7-lineage-heatmap-comparison.webp)
-
 <div style="text-align: center;" id="fig7">
-        <span style="color:gray">Figure 7. Lineage Heatmap Comparison</span>
-        <br><br>
+    <img src="https://static.igem.wiki/teams/5643/pageimage/model/figure7-lineage-heatmap-comparison.webp" style="width:100%">
+    <div>
+      <span style="color:gray">Figure 7. Lineage Heatmap Comparison</span>
+    <br><br>
     </div>
+</div>
 
 
 #### Single-Chain Four-Generation $r'$ Overlaid Curves
@@ -453,7 +457,9 @@ This pattern occurs because after a short pulse, the system almost no longer add
     </div>
 
 
-In summary, using a periodic promoter (Ash1) with a pulse width controlled between 10–15 minutes provides a reliable and distinguishable timing signal; in contrast, a constitutive promoter is not suitable for use as a timer input.
+**In summary**, using a periodic promoter (Ash1) with a pulse width controlled between 10–15 minutes provides a reliable and distinguishable timing signal; in contrast, a constitutive promoter is not suitable for use as a timer input.
+
+<br>
 
 ### Strong Promoter vs Weak Promoter
 
@@ -490,16 +496,16 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
 ![](https://static.igem.wiki/teams/5643/pageimage/model/figure9-strong-promoter-vs-weak-promoter.webp)
 
 <div style="text-align: center;" id="fig9">
-        <span style="color:gray">Figure 9. Strong Promoter vs Weak Promoter</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 9. Strong Promoter vs Weak Promoter</span>
+    <br><br>
+</div>
 
 
 ## Visualization
 
 To enhance the interpretability and accessibility of our modeling framework, we developed two interactive 3D visualization tools as part of the YeastVerse virtual experiment platform. These tools simulate key aspects of the multicellular yeast chassis and fluorescent timer dynamics, providing intuitive insights into system behavior under various parameters. Built using React.js and Three.js, they allow users to explore spatial growth patterns and temporal fluorescence changes in real-time, bridging abstract mathematical predictions with visual, biologically grounded representations.
 
-> YeastVerse Visualization at https://yeastverse-99735e.igem.wiki/
+> Try YeastVerse Visualization at https://yeastverse-99735e.igem.wiki/
 >
 > Source code at https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse
 
@@ -520,20 +526,21 @@ This module simulates the three-dimensional growth of the multicellular "Grape Y
 | maxAngle             | Budding cone angle limit                                     | Grape: 20°; normal: 60° (estimated) | degree |
 
 <div style="text-align: left;">
-        <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet experiments have provided some measurements for this value.</span>
+        <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet-lab experiments have provided some measurements for this value.</span>
     </div>
 
-
-> Click here to view our [measurement](/measurement/) and [results](/results/).
+> View our [Measurement](/measurement/) and [Results](/results/).
 
 Other minor parameters are detailed in the source code.
 
 ![](https://static.igem.wiki/teams/5643/pageimage/model/visual1.webp)
 
 <div style="text-align: center;" id="fig10">
-        <span style="color:gray">Figure 10. Animation demo of 3D Yeast Growth Simulation</span>
-        <br><br>
-    </div>
+    <span style="color:gray">Figure 10. Animation demo of 3D Yeast Growth Simulation</span>
+    <br><br>
+</div>
+
+<br>
 
 ### 3D Fluorescent Timer Maturation
 
@@ -567,6 +574,7 @@ This alignment between our mathematical model and independent AI reasoning provi
 
 The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#code-and-data-accessibility).
 
+
 ## Conclusion
 
 The model successfully predicted two key components: the promoter and the Fluorescent Timer. Guided by these predictions, we selected these core elements for our [experimental](/experiments/) [design](/design/), as detailed on our [Improved Parts](/improve/) page.
@@ -574,11 +582,10 @@ The model successfully predicted two key components: the promoter and the Fluore
 - Promoter Selection: The model recommends using a pulsed, medium-intensity expressed promoter, providing a clear direction for experimental screening. Ultimately, we selected the ASH1_AIpro promoter[^7], optimized through deep learning algorithms. This promoter is induced only during the late M phase, enabling pulsed expression and ensuring that mRNA is synthesized at the appropriate time, with precise localization of the mRNA in the daughter cell through the ASH1 3' UTR[^13].
 - Fluorescent Timer Selection: The model suggested the use of Fast-FT, leading to our experimental choice of Fast-FT ([modified mCherry](/improve/)). This fluorescent protein undergoes a time-dependent color shift: initially emitting blue fluorescence (excitation/emission peaks: 403/466 nm) and gradually transitioning to red (excitation/emission peaks: 583/606 nm), thereby enabling visual tracking of temporal progression.
 
-In the actual construction, we assembled the TU Timer system, which consists of: Ash1_AIpro, modified mCherry fluorescent protein, Ash1 3' UTR, and the ScENO1 terminator. After introducing the TU Timer into yeast cells, we analyzed the red and blue fluorescence intensity changes over time using flow cytometry, with the specific results presented on the [results](/results/) page.
+In the actual wet-lab experiments, we assembled the [TU Timer](/part-collection/#fluorescent-timer), which consists of: [Ash1_AIpro](https://registry.igem.org/parts/bba-25vhxknl), [modified mCherry fluorescent protein](https://registry.igem.org/parts/bba-25tqg9wz), [Ash1 3' UTR](https://registry.igem.org/parts/bba-25aidl8p), and [the ScENO1 terminator](https://parts.igem.org/Part:BBa_K2753051). After introducing the TU Timer into yeast cells, we analyzed the red and blue fluorescence intensity changes over time using fluoresence microscopy.
 
-[Experimental data](/results/) show that under the 30°C cultivation conditions, the trend in blue-red fluorescence color change of the TU Timer aligns with the model's predictions, effectively guiding the [experiment's progress](/experiments/) and ensuring [success on the first attempt](/results/).
+The successful coupling of [model predictions](#modeling-results) with [experimental validation](/results/) demonstrates that our proposed [AI-enhanced modeling framework](#ai-aided-validation-of-model-predictions) significantly improves the predictability of designs, achieving "first-attempt success". This provides a reproducible new paradigm for synthetic biology, greatly optimizing the traditional Design-Build-Test-Learn cycle.
 
-The successful coupling of [model predictions](#modeling-results) with [experimental validation](/results/) demonstrates that our proposed [AI-enhanced modeling framework](#ai-aided-validation-of-model-predictions) significantly improves the predictability of designs, achieving "first-attempt success." This provides a reproducible new paradigm for synthetic biology, greatly optimizing the traditional Design-Build-Test-Learn cycle.
 
 ## Improvement Log
 
@@ -592,10 +599,13 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 
 - **Design (2025.06):**
   The initial model was designed based on published data for Fast-FT proteins, including maturation kinetics from in vitro studies (e.g., blue peak time and red half-peak time at 25°C and 37°C). Parameters such as maturation time constants ($\tau_B, \tau_I, \tau_R$) were sourced from literature [^1], and the model assumed a generic promoter expression pattern without cell-cycle specificity.
+
 - **Build (2025.06):**
   We implemented the model using ordinary differential equations (ODEs) to describe the irreversible maturation chain (C&rarr;B&rarr;I&rarr;R). Key parameters were set based on in vitro values, such as $\tau_B$=12 min and $\tau_R$=720 min, and the Ash1 promoter was initially erroneously modeled to express at the start of the cell cycle.
+
 - **Test (2025.07):**
   Simulation results revealed discrepancies with expected cellular behaviors. The in vitro-based maturation kinetics caused the fluorescent proteins to mature from blue to red far too rapidly. This led to a premature saturation of the red signal, where the r(t) ratio approached its maximum too quickly within a single cell cycle, influencing the time gradient needed for resolution. Consequently, over just one or two generations, all cells accumulated a similarly high red signal, making it impossible to distinguish young daughter cells from old mother cells and causing the timer to lose its core function.
+
 - **Learn (2025.07):**
   We identified that in vitro data did not account for cellular factors like translation delays, chaperone interactions, and metabolic context. This highlighted the need for intracellular-specific parameters and better alignment with yeast physiology. Additionally, the promoter expression timing and protein inheritance logic required biological validation from our [wet-lab experiments](/experiments/).
 
@@ -603,10 +613,9 @@ Objective: Develop a preliminary model using literature-derived parameters to si
 
 #### Integration of Wet-Lab Data and Model Validation
 
-Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights-—-a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiment](/results/).
+Objective: To redesign the model using an AI-augmented framework that leverages biological first principles and the learnings from Round 1, with the goal of validating both the model's predictive power and the reliability of this [research paradigm](#highlights-—-a-new-paradigm-for-synthetic-biology-in-the-ai-era) through [data from wet-lab experiments](/results/).
 
 - **Design (2025.07-08):**
-
   Informed by the failures of Round 1, we initiated a redesigned DBTL cycle centered on computational prediction. We employed two independent pathways to converge on optimal parameters:
 
   - Mechanistic Modeling: We refined the model structure to correct the identified biological inaccuracies. This included setting the Ash1 promoter pulse to occur near the end of the cell cycle and revising the protein inheritance logic to allow for near-complete transfer of immature protein to the daughter cell.
@@ -614,13 +623,13 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
   - AI-Assisted Reasoning: We prompted two large language models ([DeepSeek](https://huggingface.co/deepseek-ai) and [Qwen](https://huggingface.co/Qwen)) with the core design problem—optimizing a fluorescent timer for yeast lineage tracking—guiding them with biological first principles but without providing our model's interim results. This served as an independent validation of our design logic.
 
 - **Build (2025.08):**
-  Based on Round1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab yeast experiments](/results/). This included:
+  Based on Round 1 DBTL learnings, we rebuilt the model to incorporate intracellular parameters from [logical calculations](#fast-ft-time-parameter-calculation) and these data are later supported by our [wet-lab experiments](/results/). This included:
 
-  - Using temperature-dependent maturation kinetics derived from [Q₁₀](#fast-ft-time-parameter-calculation) calculations to adjust Fast-FT[^1] times for 30°C.
+  - Using temperature-dependent maturation kinetics derived from [Q<sub>10</sub>](#fast-ft-time-parameter-calculation) calculations to adjust Fast-FT[^1] times for 30°C.
   - Adjusting the Ash1_AIpro[^7] promoter to express during the late M phase in our model to match biological evidence.
   - Revising protein inheritance logic to allow immature C-state proteins to be almost fully transferred to daughter cells, and mature in the daughter cells produced after a cell division[^8][^13].
   
-- **Test (2025.08–09):**
+- **Test (2025.08–10):**
   The predictions of the refined model were subsequently tested through [wet-lab experiments](/experiments/). The results confirmed the computational forecasts:
 
   - The experimentally observed blue-to-red transition timeline closely matched the model's prediction, providing a clear r(t) gradient.
@@ -640,7 +649,7 @@ This model provides a complete theoretical framework and computational implement
 
 **Use Case:** Understand the fundamental behavior of the timer within a single cell cycle and validate the core dynamics of the model.
 
-Single-cell simulations form the foundation for understanding FT system behavior. By observing the full cycle of a single cell from birth to division, users can verify whether the maturation chain (C&rarr;B&rarr;I&rarr;R) behaves as expected, check the monotonicity of the red-to-blue ratio $r(t)$, and assess whether the time evolution of each protein state aligns with biological intuition. This level of analysis is especially useful for users encountering the model for the first time, helping them develop an intuitive understanding of the system behavior.
+Single-cell simulations form the foundation for understanding FT behavior. By observing the full cycle of a single cell from birth to division, users can verify whether the maturation chain (C&rarr;B&rarr;I&rarr;R) behaves as expected, check the monotonicity of the red-to-blue ratio $r(t)$, and assess whether the time evolution of each protein state aligns with biological intuition. This level of analysis is especially useful for users encountering the model for the first time, helping them develop an intuitive understanding of the system behavior.
 
 When analyzing the results, focus on the following aspects:
 
@@ -751,7 +760,7 @@ generation_trends = np.mean(mat_corrected, axis=1)  # Average signal intensity p
 
 **Use Case:** Adapt the model to different growth conditions or optimize experimental settings, evaluating the influence of environmental factors on timer performance.
 
-Biological systems are highly sensitive to environmental conditions, such as temperature and pH, which can affect protein maturation dynamics. This model incorporates the impact of temperature using the Arrhenius equation with the Q₁₀ temperature coefficient, allowing users to predict timer behavior under different cultivation temperatures. This capability is especially valuable because actual experimental conditions may differ from the standard conditions reported in the literature.
+Biological systems are highly sensitive to environmental conditions, such as temperature and pH, which can affect protein maturation dynamics. This model incorporates the impact of temperature using the Arrhenius equation with the Q<sub>10</sub> temperature coefficient, allowing users to predict timer behavior under different cultivation temperatures. This capability is especially valuable because actual experimental conditions may differ from the standard conditions reported in the literature.
 
 ### 6. Advanced Customization and Function Extension
 
@@ -759,7 +768,7 @@ Biological systems are highly sensitive to environmental conditions, such as tem
 
 For advanced users with specific requirements, the modular design of the model supports a variety of custom modifications. Users can modify the maturation pathway (e.g., skipping the intermediate state I), add new regulatory modules (such as optogenetic or chemical induction systems), or integrate other cellular process models.
 
-This flexibility makes the model not only a specific FT system simulator but also a versatile platform for modeling various cellular processes. For example, users could incorporate the effects of cellular metabolic state on protein expression or integrate cell fate decision models to study timer behavior during differentiation.
+This flexibility makes the model not only a specific FT simulator but also a versatile platform for modeling various cellular processes. For example, users could incorporate the effects of cellular metabolic state on protein expression or integrate cell fate decision models to study timer behavior during differentiation.
 
 ```python
 # Modify maturation pathway (e.g., skip intermediate state)

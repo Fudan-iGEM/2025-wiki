@@ -166,7 +166,7 @@ In late September, we implemented targeted outreach initiatives for communities 
 
 Over the course of one month, we jointly developed an [educational mini-game](https://gd.games/ruoxi_cao/mint-picture--platformer----bi) with USTC that visualizes gene editing processes through intuitive gameplay mechanics.
 
-Our laboratory team proceeded with wet experiments and analyzed the results using fluorescence microscopy, flow cytometry, and deep sequencing.
+Our laboratory team proceeded with wet-lab experiments and analyzed the results using fluorescence microscopy, flow cytometry, and deep sequencing.
 
 <div style="text-align: center;" id="fig11">
     <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/september-summary.webp" style="width:100%">

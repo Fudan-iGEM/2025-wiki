@@ -23,7 +23,7 @@ Guided by this reflection, we built our project around responsibility, inclusivi
 
 
 
-## **Designing for Responsibility**
+## Designing for Responsibility
 
 > “Our technology has exceeded our humanity.”
 > 
