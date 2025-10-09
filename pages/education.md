@@ -40,7 +40,6 @@ While a single activity may not transform a participant into an expert, it can p
     </div -->
 </div>
 
-
 This idea of learning through cycles of curiosity, engagement, and reflection connects directly to our educational philosophy.We root our approach in [**constructionism**](https://en.wikipedia.org/wiki/Constructionism_(learning_theory)), which posits that people learn most effectively when actively engaged in constructing tangible and shareable objects in the real world[^3]. It emphasizes meaningful, hands-on experiences, where active and social participation helps learners build a deeper understanding of the world around themm[^6][^7]. 
 
 The constructionist learning process often follows a cyclical pattern:
@@ -1193,12 +1192,13 @@ Collaboration: SUSTech-Med
 Elderly communities are often targeted by **false advertisements** and **“miracle cure” products** that misuse scientific terms like “synthetic biology,” “gene editing,” or “stem cells.” These scams not only waste money but also foster **fear, distrust, or overconfidence** toward biotechnology.
 
 <div style="text-align: center;" id="fig39">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/scam-information-in-life.webp">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/collaboration/scam-information-in-life.avif">
     <div>
         <span style="color:gray">Figure 39. The rumors we found in daily life</span>
         <br><br>
     </div>
 </div>
+
 
 
 We collaborated with the [**SUSTech-Med**](https://2025.igem.wiki/sustech-med/) to launch the **“Rumor Stop” campaign** [(presentation file)](https://static.igem.wiki/teams/5643/pageimage/education/file/presentation-file-miracle-medicine-or-trap-let-synthetic-biology-tell-you-the-truth.pdf). During the process, we found that although Shenzhen and Shanghai — both first-tier cities with strong foundations in science education — offer many resources, large numbers of elderly people still lack sufficient understanding of cutting-edge technology. Some lawbreakers exploit this gap to commit fraud under the guise of “synthetic biology.”
