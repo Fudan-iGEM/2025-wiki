@@ -232,7 +232,23 @@ known_basic_parts = ['BBa_B0030',
 'BBa_K3944010',
 'BBa_K5441013',
 'BBa_K5470009',
-'BBa_K5470011' ]
+'BBa_K5470011',
+'BBa_25VHXKNL',
+'BBa_25TQG9WZ',
+'BBa_25AIDL8P',
+'BBa_252BO17G',
+'BBa_25IB5O7X',
+'BBa_250R9OVR',
+'BBa_256S6J1M',
+'BBa_25RCU5CB',
+'BBa_25FOVO4C',
+'BBa_259JX52V',
+'BBa_25TYRLM9',
+'BBa_25F6RD26',
+'BBa_25GARG3E',
+'BBa_25M2Z9H7',
+'BBa_2599SI53',
+'BBa_25FQBGJW' ]
 
 
 table_th = ('Part Name', 'Short Description', 'Part Type', 'Designer(s)')

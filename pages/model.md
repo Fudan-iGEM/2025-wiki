@@ -326,11 +326,12 @@ C_inherit = p.inherit_frac_C * C_T
 
 **Conclusion:** Under the present Fast-FT kinetics, constraining the birth pulse to $10\text{–}15\mathrm{min}$ yields $\Delta r>3\sigma$ in the $65\text{–}145\mathrm{min}$ window and is therefore readable.
 
-![](https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp)
-
 <div style="text-align: center;" id="fig2">
-    <span style="color:gray">Figure 2. &delta;r(65&rarr;145 min) vs pulse width τ</span>
-    <br><br>
+    <img src="https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp" style="width:50%">
+    <div>
+      <span style="color:gray">Figure 2. &delta;r(65&rarr;145 min) vs pulse width τ</span>
+      <br><br>
+    </div>
 </div>
 
 
@@ -381,11 +382,12 @@ Birth-aligned lineage heatmaps show that $r$ increases roughly monotonically ove
    
 - **Conclusion:** Shorter pulses, such as $\tau=10\text{–}15\mathrm{min}$, effectively compress the expression near cell birth, followed by the maturation process, yielding a clear signal within the $10\text{–}90\mathrm{min}$ window. Meanwhile, continuous expression dilutes the signal, making it difficult to distinguish changes in $r(t)$.
 
-![](https://static.igem.wiki/teams/5643/pageimage/model/figure5-delta-r-vs-10-90-min-window.webp)
-
 <div style="text-align: center;" id="fig5">
+  <img src="https://static.igem.wiki/teams/5643/pageimage/model/figure5-delta-r-vs-10-90-min-window.webp" style="width:50%">
+  <div>
     <span style="color:gray">Figure 5. &Delta;r vs τ (10-90 min window)</span>
     <br><br>
+  </div>
 </div>
 
 
@@ -407,10 +409,9 @@ This pattern occurs because after a short pulse, the system almost no longer add
 </div>
 
 
-
 #### Lineage Heatmap Comparison
 
-##### $r$ Lineage Heatmap Comparison
+##### $r$ Comparison
 
 - **Observation:** The left side of all heatmaps (near birth) shows a "bright band," indicating inheritance of the red baseline across generations. Comparing the three conditions:
   - **$\tau = 15$**: After birth, $r$ rises quickly, and the "bright band" dims, followed by a rapid brightening in later generations, showing strong temporal resolution.
@@ -420,7 +421,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
   - ON: The gradient is the flattest and overall dimmer, indicating poor resolution within $0\text{–}90\mathrm{min}$.
 - **Interpretation:** Shorter pulses result in stronger intra-generational dynamics, while ON expression leads to weak signal contrast within generations, making inter-generational analysis less effective.
 
-##### $r'$ (Baseline Subtracted) Lineage Heatmap Comparison
+##### $r'$ (Baseline Subtracted) Comparison
 
 - **Observation:** After baseline subtraction, all three heatmaps show the "pure contemporary increment". The color scale upper limit reflects the dynamic range:
   
@@ -493,11 +494,12 @@ After comparing various promoter strengths, a medium-strength promoter (such as 
 
 Therefore, choosing the 1x medium promoter is a reasonable decision that balances signal strength, dynamic response, and noise control, while avoiding rapid saturation and unstable system performance. It is especially suitable as a timer for measuring cellular lifespan.
 
-![](https://static.igem.wiki/teams/5643/pageimage/model/figure9-strong-promoter-vs-weak-promoter.webp)
-
 <div style="text-align: center;" id="fig9">
+  <img src="https://static.igem.wiki/teams/5643/pageimage/model/figure2-r-65-145-min-vs-pulse-width.webp" style="width:100%;max-width:100%">
+  <div>
     <span style="color:gray">Figure 9. Strong Promoter vs Weak Promoter</span>
     <br><br>
+  </div>
 </div>
 
 
@@ -529,7 +531,7 @@ This module simulates the three-dimensional growth of the multicellular "Grape Y
         <span style="color:gray">Note. *The term "estimated" means that few corresponding literature data was found during the modeling process, but subsequent wet-lab experiments have provided some measurements for this value.</span>
     </div>
 
-> View our [Measurement](/measurement/) and [Results](/results/).
+> Wet-lab experiments are documented on our [Measurement](/measurement/) and [Results](/results/) pages.
 
 Other minor parameters are detailed in the source code.
 
@@ -570,7 +572,7 @@ Remarkably, the answers provided by both AI models converged with the key conclu
 3. The necessity for short pulse widths (≈10–15 min), which ensures optimal temporal resolution within a single cell cycle.
 4. A medium-strength promoter, which provides the best balance between signal intensity and biological burden, ensuring reliable signal detection without saturating the fluorescence detectors.
 
-This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful reasoning partner in hypothesis-driven research. [^3]Notably, the use of models like [DeepSeek](https://huggingface.co/deepseek-ai) and [Qwen](https://huggingface.co/Qwen), with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology. However, this is not a one-size-fits-all AI solution, but one use case demonstrating its value in targeted validation.
+This alignment between our mathematical model and independent AI reasoning provides an additional layer of validation for our experimental design. The convergence of these independent pathways of hypothesis generation — one computational and one AI-based — not only supports the validity of our conclusions but also underscores the potential for AI to act as a powerful reasoning partner in hypothesis-driven research.[^3] Notably, the use of models like [DeepSeek](https://huggingface.co/deepseek-ai) and [Qwen](https://huggingface.co/Qwen), with their deep knowledge and reasoning capabilities, enhances the persuasiveness of our model’s predictions, presenting a novel approach for integrating AI into experimental design in synthetic biology. However, this is not a one-size-fits-all AI solution, but one use case demonstrating its value in targeted validation.
 
 The full AI conversation logs, including model reasoning and conclusions, are available in the supplementary materials and can be accessed via [Code and Data Accessibility](#code-and-data-accessibility).
 

@@ -102,7 +102,7 @@ While a complete modification of the GPCR system would ideally require the knock
 
 <div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/gpcr1007.webp" style="width:80%">
-    <div>
+    <div style="width:66%;margin-left:17%">
         <span style="color:gray">Figure 3. Mechanism of external signal response.<br>We rewired the yeast pheromone response pathway by replacing ACE2 with the translational unit of human &delta; opioid receptor (HsDOR) and coupling it via a Gpa1–Gi&alpha;3 chimera, enabling MAPK activation and cloud be validated by the agonist <a href="https://www.sigmaaldrich.com/HK/en/product/sigma/s2812" target=_blank>SNC80</a>.</span>
         <br><br>
     </div>
@@ -166,16 +166,16 @@ We verified the module's effectiveness by observing and analyzing the cluster si
     </div>
 </div>
 
-> Q：Why is external signal response / cluster size control / individual diversity control needed for your project? 
-> What is individual diversity - is that division of labor?
-
- A: As for the external signal response, while genetic mutations certainly contribute to the development of antifungal resistance under the stress of drugs, drug tolerance is also greatly shaped by how pathogenic fungi respond to external signals and subsequently alter their metabolic levels. As we write above, endogenous signaling pathways are central to regulating efflux pumps, cell wall remodeling, and stress responses, all mechanisms that ultimately determine the level of tolerance. Our module is specifically designed to simulate this process of external signal response and metabolic change. 
-
- Furthermore, as Grape Yeast is a novel chassis organism in synthetic biology, it should inherently possess the capability for exogenous signal-inducible gene expression. This capability is an essential legacy we aim to leave for future teams utilizing this chassis.
-
- As for cluster size control, it serves a dual purpose. Not only is it a safety measure—a necessary tool to make a manageable chassis since our multicellular yeast exhibits characteristics similar to the invasive state of pathogenic fungi—but it also beautifully mimics the cell specialization seen in multicellular organisms. Just as multicellular organisms selectively induce cell death (apoptosis) to reallocate nutrients to better-performing cells, thereby maintaining the overall health and growth of the organism, this control mechanism is vital. In our future vision, we may add more intricate regulation (i.e. adding inducer with concentration gradient) to build a biocomputational model that simulates the life-death trade-off within a population to achieve optimal collective fitness.
-
- As for individual diversity, you are very insightful to draw a connection with division of labor. We believe that, in stark contrast to a unicellular chassis, a multicellular chassis (such as plants, animals, multicellular fungi, or algae) is much more than a simple cell factory. It is an organism with an inherent spatial structure and natural cellular specialization, making individual diversity a critical characteristic that we must explore and control.
+> Q：Why is external signal response / cluster size control / individual diversity control needed for your project?<br>
+> &nbsp;&nbsp;&nbsp; What is individual diversity - is that division of labor?
+> 
+> A: As for the external signal response, while genetic mutations certainly contribute to the development of antifungal resistance under the stress of drugs, drug tolerance is also greatly shaped by how pathogenic fungi respond to external signals and subsequently alter their metabolic levels. As we write above, endogenous signaling pathways are central to regulating efflux pumps, cell wall remodeling, and stress responses, all mechanisms that ultimately determine the level of tolerance. Our module is specifically designed to simulate this process of external signal response and metabolic change. 
+> 
+> Furthermore, as Grape Yeast is a novel chassis organism in synthetic biology, it should inherently possess the capability for exogenous signal-inducible gene expression. This capability is an essential legacy we aim to leave for future teams utilizing this chassis.
+> 
+> As for cluster size control, it serves a dual purpose. Not only is it a safety measure—a necessary tool to make a manageable chassis since our multicellular yeast exhibits characteristics similar to the invasive state of pathogenic fungi—but it also beautifully mimics the cell specialization seen in multicellular organisms. Just as multicellular organisms selectively induce cell death (apoptosis) to reallocate nutrients to better-performing cells, thereby maintaining the overall health and growth of the organism, this control mechanism is vital. In our future vision, we may add more intricate regulation (i.e. adding inducer with concentration gradient) to build a biocomputational model that simulates the life-death trade-off within a population to achieve optimal collective fitness.
+> 
+> As for individual diversity, you are very insightful to draw a connection with division of labor. We believe that, in stark contrast to a unicellular chassis, a multicellular chassis (such as plants, animals, multicellular fungi, or algae) is much more than a simple cell factory. It is an organism with an inherent spatial structure and natural cellular specialization, making individual diversity a critical characteristic that we must explore and control.
 
 
 ## Visualize the Evolution: Timer &amp; Recorder
@@ -197,7 +197,7 @@ The Timer matures in daughter cells based on model-guided selection of the Ash1 
 
 <div style="text-align: center;" id="fig6">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/timer1009.avif" style="width:80%">
-    <div>
+    <div style="width:66%;margin-left:17%">
         <span style="color:gray">Figure 6. Design of the Timer.<br>The Timer module enables real-time visualization of cell lineage, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
         <br><br>
     </div>
@@ -285,7 +285,7 @@ For 3'HA, we specially introduced two reversed [BbsI](https://www.thermofisher.c
     </div>
 </div>
 
-- For experiment details, please visit [Experiments | Fudan](/experiments/). The whole process could be completed without an intermediate purification step, which is both convenient and highly-efficient.
+- For details, please visit our [Experiments](/experiments/) page. The whole process could be completed without an intermediate purification step, which is both convenient and highly-efficient.
 
 ##### Verification for Integration in Yeasts
 
@@ -315,7 +315,7 @@ Throughout this project, we fully embraced the "*dry-lab guiding wet-lab*" appro
 
 <div style="text-align: center;" id="fig9">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig6-yeast-verse.webp" style="width:80%">
-    <div>
+    <div style="width:66%;margin-left:17%">
         <span style="color:gray">Figure 9. Use digital YeastVerse to guide our wet-lab.<br>Once we have an idea, we first conduct background research and collect relevant data. Then, we input this data into YeastVerse and obtain feedback, which helps guide the design and implementation of our wet-lab experiments.</span>
         <br><br>
     </div>
