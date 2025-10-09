@@ -38,7 +38,8 @@ Modified mCherry exhibits a color transition from blue (excitation/emission peak
 
 </div>
 
-<div style="text-align: center;" id="fig2">    <img src="https://static.igem.wiki/teams/5643/pageimage/improved-part/modified-mcherry.webp" style="width:80%">    <div>        <span style="color:gray">Figure 2. Structure of modified mCherry.<br>The mutated residues and the fluorescent core are highlighted in different colors.Structural data were obtained from the Protein Data Bank (ID: pdb_00003lf3).</span>        <br><br>    </div></div>
+<div style="text-align: center;" id="fig2">    <img src="https://static.igem.wiki/teams/5643/pageimage/improved-part/modified-mcherry.webp" style="width:80%">
+  <div style="width:66%;margin-left:17%">        <span style="color:gray">Figure 2. Structure of modified mCherry.<br>The mutated residues and the fluorescent core are highlighted in different colors.Structural data were obtained from the Protein Data Bank (ID: pdb_00003lf3).</span>        <br><br>    </div></div>
 
 Based on the study by Subach et al. (2009)[^1], the red/blue fluorescence intensity ratio of modified mCherry increases progressively over time (Subach et al. Figure 2d–f). Furthermore, the rate of increase is positively correlated with temperature. According to these findings, we calculated the red/blue ratio at 30°C to represent the maturation stage of the fluorescent protein, thereby serving as a quantitative indicator of elapsed time.
 

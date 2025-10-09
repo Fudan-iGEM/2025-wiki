@@ -34,7 +34,7 @@ Our screening focused on two key aspects:
   <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f1.avif" style="width:80%;margin-bottom:0"><br>
   <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f2.avif" style="width:80%;margin-top:0;margin-bottom:0"><br>
   <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f3.avif" style="width:80%;margin-top:0">
-  <div>
+  <div style="width:50%;margin-left:25%">
     <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment.<br>(A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499. Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.
     </span>
     <br><br>
@@ -177,7 +177,7 @@ $$
 
 <div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/growth-curve-1.svg" style="width:50%">
-    <div>
+    <div style="width:50%;margin-left:25%">
         <span style="color:gray">Figure 3. Self-Starting Logistic Model Fitted Parameters</span>
         <br><br>
     </div>

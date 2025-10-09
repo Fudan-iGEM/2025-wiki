@@ -34,7 +34,7 @@ As described in Shaw et al. (2023)[^1], briefly:
    | **2** |          Plasmid Backbone (25 fmol/&mu;L)          |              0.5              |            12.5 fmol            |
    | **3** |              10x T4 DNA Ligase Buffer              |               1               |               1x                |
    | **4** |            T4 DNA Ligase (400 U/&mu;L)             |              0.5              |              200 U              |
-   | **5** | Restriction Enzyme ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) or [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) or BpiI) |              0.5              | 10 U ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2)) or 5 U ([BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2)/[BpiI](https://www.thermofisher.com/order/catalog/product/FD1014)) |
+   | **5** | Restriction Enzyme ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) or [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) or [BpiI](https://www.thermofisher.com/order/catalog/product/FD1014)) |              0.5              | 10 U ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2)) or 5 U ([BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2)/[BpiI](https://www.thermofisher.com/order/catalog/product/FD1014)) |
    | **6** |                Nuclease-Free Water                 | to a final volume of 10 &mu;L |                -                |
    |       |                     **Total**                      |            **10**             |                                 |
 
@@ -334,7 +334,7 @@ As described in Tong et al. (2025)[^6], briefly:
 5. Measure OD600 of the diluted samples and draw the growth curve.
 
 
-## Flow Cytometry of Single Cell Yeast
+## Flow Cytometry of Unicellular Yeast
 
 Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/#recorder) transformed into BY4741 or BY4742 (unicellular yeast). We did not use chitinase to treat multicellular yeast for this analysis.
 

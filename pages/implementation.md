@@ -16,16 +16,16 @@ To address this, we develop *DR.sTraTeGY*, a multicellular yeast research platfo
 
 ## Immediate Research Directions
 
-As we found in the Results, a significant number of cell division abnormalities were already present in the ninth generation of tetraploid Grape Yeast. This suggests that even short-term gravity screening is sufficient to induce a substantial number of mutations. Consequently, we performed a longer-term passaging experiment and quantified the percentage of cells exhibiting abnormal division by PI staining. We found that the tetraploid yeast generally exhibited a more widespread incidence of division abnormalities, reaching a relatively high level by the 15th generation. We therefore believe that two weeks will be sufficient for future long-term screening experiments.
+As we found in the [Results](/results/), a significant number of cell division abnormalities were already present in the ninth generation of tetraploid Grape Yeast. This suggests that even short-term gravity screening is sufficient to induce a substantial number of mutations. Consequently, we performed a longer-term passaging experiment and quantified the percentage of cells exhibiting abnormal division by [PI staining](/experiments/#propidium-iodide-pi-staining). We found that the tetraploid yeast generally exhibited a more widespread incidence of division abnormalities, reaching a relatively high level by the 15th generation. We therefore believe that two weeks will be sufficient for future long-term screening experiments.
 
 **Table 1. Statistics of abnormal cell division**
 
-|        | total cell count | Abnormal cell division | Percentage |        | total cell count | Abnormal cell division | Percentage |
-| ------ | ---------------- | ---------------------- | ---------- | ------ | ---------------- | ---------------------- | ---------- |
-| 2N d9  | 143              | 0                      | 0.00%      | 4N d9  | 160              | 3                      | 1.88%      |
-| 2N d15 | 268              | 1                      | 0.37%      | 4N d15 | 218              | 6                      | 2.75%      |
-| 2N d30 | 241              | 2                      | 0.83%      | 4N d30 | 260              | 7                      | 2.69%      |
-| 2N d45 | 250              | 0                      | 0.00%      | 4N d45 | 253              | 7                      | 2.77%      |
+|        | Total cell count | Abnormal<br>cell division | Percentage |   |       | Total cell count | Abnormal<br>cell division | Percentage |
+| ------ | ---------------- | ---------------------- | ---------- | ---- |------ | ---------------- | ---------------------- | ---------- |
+| 2N d9  | 143              | 0                      | 0.00%     | | 4N d9  | 160              | 3                      | 1.88%      |
+| 2N d15 | 268              | 1                      | 0.37%     | | 4N d15 | 218              | 6                      | 2.75%      |
+| 2N d30 | 241              | 2                      | 0.83%     | | 4N d30 | 260              | 7                      | 2.69%      |
+| 2N d45 | 250              | 0                      | 0.00%     | | 4N d45 | 253              | 7                      | 2.77%      |
 
 
 ## Commercialization
