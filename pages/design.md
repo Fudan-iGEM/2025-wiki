@@ -51,7 +51,7 @@ To study fungal evolution, we focused on *Saccharomyces cerevisiae*, a classic m
 
 To overcome this, we designed the Grape Yeast — a novel modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates *DR.sTraTeGY* from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex evolution trajectories would mask in a conventional bulk culture.
 
-We engineered this chassis through modular approach that allows us to achieve key functions: (1) multicellularity development, (2) external signal response, (3) cluster size control, and (4) individual diversity control. In essence, these designs provide future research with a novel chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient and scalable engineered biological system. It functions more like an organized multicellular body — with spatial structure and division of labor among cells — similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a tracking platform but also as a foundational model for exploring multicellular engineering.
+We engineered this chassis through modular approach that allows us to achieve key functions: (1) multicellularity development, (2) external signal response, (3) individual diversity control, and (4) cluster size control. In essence, these designs provide future research with a novel chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient and scalable engineered biological system. It functions more like an organized multicellular body — with spatial structure and division of labor among cells — similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a tracking platform but also as a foundational model for exploring multicellular engineering.
 
 <div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/figure2-grapeyeast.webp" style="width:66%">
@@ -166,6 +166,17 @@ We verified the module's effectiveness by observing and analyzing the cluster si
     </div>
 </div>
 
+> Q：Why is external signal response / cluster size control / individual diversity control needed for your project? 
+> What is individual diversity - is that division of labor?
+
+ A: As for the external signal response, while genetic mutations certainly contribute to the development of antifungal resistance under the stress of drugs, drug tolerance is also greatly shaped by how pathogenic fungi respond to external signals and subsequently alter their metabolic levels. As we write above, endogenous signaling pathways are central to regulating efflux pumps, cell wall remodeling, and stress responses, all mechanisms that ultimately determine the level of tolerance. Our module is specifically designed to simulate this process of external signal response and metabolic change. 
+
+ Furthermore, as Grape Yeast is a novel chassis organism in synthetic biology, it should inherently possess the capability for exogenous signal-inducible gene expression. This capability is an essential legacy we aim to leave for future teams utilizing this chassis.
+
+ As for cluster size control, it serves a dual purpose. Not only is it a safety measure—a necessary tool to make a manageable chassis since our multicellular yeast exhibits characteristics similar to the invasive state of pathogenic fungi—but it also beautifully mimics the cell specialization seen in multicellular organisms. Just as multicellular organisms selectively induce cell death (apoptosis) to reallocate nutrients to better-performing cells, thereby maintaining the overall health and growth of the organism, this control mechanism is vital. In our future vision, we may add more intricate regulation (i.e. adding inducer with concentration gradient) to build a biocomputational model that simulates the life-death trade-off within a population to achieve optimal collective fitness.
+
+ As for individual diversity, you are very insightful to draw a connection with division of labor. We believe that, in stark contrast to a unicellular chassis, a multicellular chassis (such as plants, animals, multicellular fungi, or algae) is much more than a simple cell factory. It is an organism with an inherent spatial structure and natural cellular specialization, making individual diversity a critical characteristic that we must explore and control.
+
 
 ## Visualize the Evolution: Timer &amp; Recorder
 
@@ -175,12 +186,17 @@ Our project features two simple yet powerful visualization modules designed to t
 
 Microscopic observation alone cannot reveal the chronological relationship between two neighboring cells. To overcome this limitation, we developed the Timer module, which visually records a single cell's life cycle in real-time. 
 
-The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro, BBa_25VHXKNL), a modified mCherry fluorescent protein (BBa_25TQG9WZ) whose color emission changes blue &rarr; red predictably over time, the Ash1 3'UTR, and the ScENO1 terminator (BBa_K2753051).
+The TU Timer (BBa_25AT6YR4) consists of the following parts:
+- AI-optimized Ash1 promoter (Ash1 AIpro, BBa_25VHXKNL) – activates transcription during the late M phase.
+- Modified mCherry fluorescent protein (BBa_25TQG9WZ) – exhibits a predictable color shift from blue &rarr; red over time.
+- Ash1 3′UTR – localizes mRNA to the daughter cell.
+- ScENO1 terminator (BBa_K2753051).
+
 
 The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see [Model](/model/) page), and together with the modified mCherry (see [Improved Parts](/improve/) page), enables visualization of the cell lineage.
 
 <div style="text-align: center;" id="fig6">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/timer1008.avif" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/timer1009.avif" style="width:80%">
     <div>
         <span style="color:gray">Figure 6. Design of the Timer.<br>The Timer module enables real-time visualization of cell lineage, shifting from blue to red fluorescence specifically in daughter cells after division.</span>
         <br><br>
@@ -193,11 +209,11 @@ The Timer matures in daughter cells based on model-guided selection of the Ash1 
 #### 1) Building the Recorder
 
 To intuitively record the pressure at different chromosomal loci during evolution, we developed the Recorder module. It contains a promoter designed to record mutations and a reporter fluorescent protein. We hypothesized that mutations in the promoter would affect the expression level of the reporter protein, allowing us to quantify the pressure by measuring fluorescence intensity. 
+Consequently, the observed fluorescence intensity of the reporter serves as a quantitative readout for the accumulated mutation frequency within its dedicated promoter. This mutation accumulation acts as a direct biological measure of the local evolutionary pressure. Integrated into our multicellular chassis, this system allows us to track the emergence and propagation of genetic changes in a dynamic and lineage-specific manner.
 
 To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (G/C&rarr;A/T), the most common mutation type in *S. cerevisiae*[^20].
 
-To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters with seven of our EMSfp (the sequences of these fluorescent proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our [Software Tool](/software/) page
-for details). Three of the four promoters were specifically chosen to capture a range of expression dynamics under EMS mutagenesis[^21]. Meanwhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6][^23].
+To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters with seven of our EMSfp (the sequences of these fluorescent proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our [Software Tool](/software/) page for details). Three of the four promoters were specifically chosen to capture a range of expression dynamics under EMS mutagenesis[^21]. Meanwhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6][^23].
 
 We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by flow cytometer analysis and selected the combination with the most significant change in brightness and named it [the TU Recorder](https://registry.igem.org/parts/bba-2525t0phy).
 
@@ -232,7 +248,7 @@ We screened 28 combinations of four promoters and seven optimized fluorescent pr
 
 #### 2) Long-Term Natural Evolution Tracking
 
-To study its stability and performance in different genomic environments, we integrated the TU Recorder into a "simplified grape yeast" strain (with only *ACE2* replaced by [HsDOR](#_1-rewiring-the-pheromone-response-hsdor-integration)), covering all 16 chromosomes. We selected sixteen chromosomal integration sites (one per chromosome), including both neutral "safe sites" without functional roles and "dangerous sites" that replace non-essential genes. 
+To study its stability and performance across different genomic environments, thereby simulating the natural genomic stress and adaptive responses occurring during long-term evolution, we integrated the TU Recorder into a "simplified grape yeast" strain (with only *ACE2* replaced by [HsDOR](#_1-rewiring-the-pheromone-response-hsdor-integration)), covering all 16 chromosomes. We selected sixteen chromosomal integration sites (one per chromosome), including both neutral "safe sites" without functional roles and "dangerous sites" that replace non-essential genes. 
 
 To accurately reflect the natural genomic pressure during long-term evolution, the neutral sites — adapted from Shaw et al.[^7] — were chosen for their minimal influence on host physiology.
 
