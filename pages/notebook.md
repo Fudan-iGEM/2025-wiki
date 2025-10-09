@@ -27,7 +27,7 @@ The training was structured into three components:
     </div>
 </div>
 
-Through these training programs, we ensured seamless transfer of knowledge and experience between alumni and new members, maintained team continuity, and fostered team growth. We also actively sought valuable feedback from faculty, inviting their suggestions on our brainstorming initiatives. Ultimately, inspired by the insights of alumnus [Kai Tong](https://www.scopus.com/authid/detail.uri?authorId=57224397364) and under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading figure in experimental evolution, we selected multicellular yeast as our chassis organism and developed the initial concept for our subsequent project, [DR.&nbsp;sTraTeGY](/design/)（Drug Resistance mutation Tracking Technology based on Grape Yeast）.
+Through these training programs, we ensured seamless transfer of knowledge and experience between alumni and new members, maintained team continuity, and fostered team growth. We also actively sought valuable feedback from faculty, inviting their suggestions on our brainstorming initiatives. Ultimately, inspired by the insights of alumnus [Kai Tong](https://www.scopus.com/authid/detail.uri?authorId=57224397364) and under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading figure in experimental evolution, we selected multicellular yeast as our chassis organism and developed the initial concept for our subsequent project, [DR.&nbsp;sTraTeGY](/design/) (Drug Resistance mutation Tracking Technology based on Grape Yeast).
 
 <div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/january-groupphoto.webp" style="width:80%">

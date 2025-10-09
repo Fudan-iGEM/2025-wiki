@@ -12,7 +12,7 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivity
 description: Through intersectional practices, we build an inclusive scientific community, bringing groups underrepresented in science like those with rare disease Epidermolysis Bullosa (EB patients) into science.
 ---
 
-## Summary： Intersectional Echoes
+## Summary:  Intersectional Echoes
 
 <div style="
   background: linear-gradient(135deg, #ffefe3 100%, #ffefe3 100%);
@@ -28,7 +28,7 @@ description: Through intersectional practices, we build an inclusive scientific 
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Have you noticed that in most science projects, researchers lead—while patients only participate? ——That's where our reflection began.</strong></div>
+    <div class="section-title"><strong>Have you noticed that in most science projects, researchers lead—while patients only participate? -- That's where our reflection began.</strong></div>
       <p>When inclusion becomes one-way, roles reduce diversity: scientist and patient, giver and receiver.  Such lines, though subtle, keep many voices at the margins of science.And we wanted to make a difference.</br>
 Through an intersectional lens, we found shared needs where divisions once stood.  By inviting diverse stakeholders to co-design, we began building shared agency.</br>
 <strong>Intersectional Echoes</strong>, to us, is not a checklist but a way of questioning—
@@ -65,7 +65,9 @@ We developed a series of transferable tools and methods: [a sensory-friendly res
 
 
 
-> “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects. If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks." ——Kimberlé Crenshaw
+> “Intersectionality is a lens through which you can see where power comes and collides, where it interlocks and intersects. If we aren’t intersectional, some of us, the most vulnerable, are going to fall through the cracks."
+> 
+> -- Kimberlé Crenshaw
 
 
 Our project focuses on the differentiation and evolutionary potential of fungal multicellular clusters. When conducting research on fungal infectious diseases, we recognize that, fungal challenges are not one-dimensional in real society,. People with different identities, bodily conditions, and social circumstances often bear **intersectional pressures**. Fudan iGEM 2025, through **innovative inclusive practices**, takes EB (Epidermolysis Bullosa, “Butterfly Children”) patients as an example to address the multiple barriers faced by populations troubled by fungi—being unseen, voiceless, and excluded from participation. Our aim is to co-create an **inclusive scientific community**, enabling more diverse voices to join future scientific planning and decision-making. Since nearly everyone may become susceptible to fungal infections, we envision building an inclusive scientific community that faces fungal challenges together.
@@ -163,7 +165,7 @@ Through focusing on EB patients’ unique situation in the context of fungal cha
   <br>
 
   <div class="section">
-    <div class="section-title"><strong>Objective：</strong></div>
+    <div class="section-title"><strong>Objective: </strong></div>
     <p>To address the issue of invisibility and bring the existence and needs of EB patients into the view of the public and the scientific community.</p>
   </div>
 
@@ -236,7 +238,9 @@ Before the event, our iGEM team had conducted three months of systematic fieldwo
 
 - **Personal Story Tag and Price Contrast Cards**
 
-   > “I chose this painting because it feels really realistic! I feel like the little girl in the painting, lively and cute yet elegant. Next to 'me' is 'my kitten', which is smart and clever while still charming." ——EB patient HanJing
+   > “I chose this painting because it feels really realistic! I feel like the little girl in the painting, lively and cute yet elegant. Next to 'me' is 'my kitten', which is smart and clever while still charming."
+   > 
+   > -- EB patient HanJing
 
 In our pop-up，we invite the patients to briefly introduce their artwork with a personal story tag, offering a glimpse into the creator’s inner world and transforming the pieces from mere objects into powerful narratives of identity and self-expression.
 
@@ -248,7 +252,9 @@ Furthermore, to deepen public understanding of the daily realities for rare dise
 
 ### 1.2 Improving our Theoretical Framework: Intersectionality
 
-   > “Intersectionality has given many advocates a way to frame their circumstances and to fight for their visibility and inclusion."——Kimberlé Crenshaw
+   > “Intersectionality has given many advocates a way to frame their circumstances and to fight for their visibility and inclusion."
+   > 
+   > -- Kimberlé Crenshaw
 
 Initially, we sought to focus on a single *target group* to quickly identify needs. However, this approach risked unintentionally reproducing the same labeling pressures that patients face in daily life.
 
@@ -355,11 +361,11 @@ We first conducted a **quantitative questionnaire survey**, Participants answer 
 | 4.I believe the complexity of symptoms and physical sensations I experienced are not adequately captured in current healthcare processes, scientific research, and drug development. | 1.93 |
 | 5.In my studies, work, and daily life, I have felt misunderstood, judged, or needed to hide my physical condition due to fungal issues in order to participate in certain activities. | 2.20 |
 
-This table contains both positively and reverse-scored items. Specifically: **Items 1-3 are positively scored**, where a higher score indicates stronger agreement or a more positive evaluation of the healthcare experience. **Items 4 and 5 are reverse-scored**, where a higher score indicates greater dissatisfaction with the current situation or more frequent negative experiences. Results showed that：
+This table contains both positively and reverse-scored items. Specifically: **Items 1-3 are positively scored**, where a higher score indicates stronger agreement or a more positive evaluation of the healthcare experience. **Items 4 and 5 are reverse-scored**, where a higher score indicates greater dissatisfaction with the current situation or more frequent negative experiences. Results showed that: 
 
-- The majority had experienced *misunderstanding and stigma* due to fungal problems.（Q5=2.20）
-- Most participants felt that medical experiences strongly influenced their willingness to seek care, and that current clinical experiences required improvement.（Q1=3.41，Q4=1.93）
-- All participants rated their *level of participation in science* lower than their perceived *importance in science*.（Q2=4.31，Q3=2.91）
+- The majority had experienced *misunderstanding and stigma* due to fungal problems. (Q5=2.20)
+- Most participants felt that medical experiences strongly influenced their willingness to seek care, and that current clinical experiences required improvement. (Q1=3.41，Q4=1.93)
+- All participants rated their *level of participation in science* lower than their perceived *importance in science*. (Q2=4.31，Q3=2.91)
 
 This highlights that “fungus-susceptible groups,” including EB patients, face barriers of *scientific voicelessness*. Specifically, their experiential knowledge, rooted in lived medical encounters, is systematically excluded from knowledge production when it does not conform to dominant discourses (e.g., technical biomedical language).
 

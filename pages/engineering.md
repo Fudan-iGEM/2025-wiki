@@ -6,43 +6,43 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/eng.webp
-description: On this page, we detail how our Recorder module was developed through Design–Build–Test–Learn (DBTL) cycles. What came out of DBTL is a fluorescent reporter to monitor changes induced by EMS mutagenesis, involving four distinct promoters driving seven EMS-optimized fluorescent proteins.
+description: On this page, we detail how our Recorder module was developed through Design–Build–Test–Learn (DBTL) cycles.
 ---
 
 ## DBTL Cycles: Optimization of the Reporter Module
 
-In our Recorder Module, we designed and tested a fluorescent reporter system to monitor changes induced by EMS mutagenesis. This system involved four distinct promoters driving seven of our EMS-optimized fluorescent proteins. In completing this module, we encountered and flexibly resolved several key challenges through the Design-Build-Test-Learn (DBTL) cycle.
+In our [Recorder](/design/#recorder) module, we designed and tested a fluorescent reporter system to monitor changes induced by EMS mutagenesis. This module involved four distinct promoters driving seven of our EMS-optimized fluorescent proteins. In completing this module, we encountered and flexibly resolved several key challenges through the Design-Build-Test-Learn (DBTL) cycle.
 
-(For the complete molecular cloning design, please refer to our [Design](/design/) page; for specific experimental protocols, see the [Experiments](/experiments/) page.)
-
+For the entire project design, please refer to our [Design](/design/) page; for specific experimental protocols, please check the [Experiments](/experiments/) page.
 
 
 ### Iteration 1: Restriction Site Conflict in Level 0 Construction
 
 #### Design
 
-Based on literature, we selected four promoters, pSTM1(BBa_25FQBGJW), pRNR2(BBa_K3748013), pOST1(BBa_259JX52V), and pTDH3(BBa_K3190001) with distinct mutation patterns[^1]. 
+Based on literature, we selected four promoters, pSTM1 (BBa_25FQBGJW), pRNR2 (BBa_K3748013), pOST1 (BBa_259JX52V), and pTDH3 (BBa_K3190001) with distinct mutation patterns[^1]. 
 
 - **pSTM1** : Tends to increase expression
 - **pRNR2**: Tends to decrease expression
 - **pOST1**: Remains stable
 - **pTDH3**: A strong constitutive benchmark promoter
 
-We designed primers to amplify their genomic sequences for integration into the pYTK001 in Yeast Toolkit (YTK) system (Lee et al., 2015)[^2].
+We designed primers to amplify their genomic sequences for integration into the pYTK001 in Yeast Toolkit (YTK, Lee et al., 2015)[^2].
 
 #### Build
 
-We used the standard YTK process: Level 0 parts were amplified with flanking [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites and cloned into the pYTK001 entry vector via [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) [Golden Gate assembly](/experiments.html#golden-gate-assembly).
+We used the standard YTK process: Level 0 parts were amplified with flanking [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites and cloned into the pYTK001 entry vector via [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) [Golden Gate assembly](/experiments/#golden-gate-assembly).
 
 #### Test
 
-We successfully built the Level 0 plasmids for three promoters（pSTM1, pOST1, and pTDH3）. 
+We successfully built the Level 0 plasmids for three promoters (pSTM1, pOST1, and pTDH3). 
 
-However, the pRNR2 promoter sequence contained internal [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites. During assembly, these sites were unexpectedly cleaved, leading to fragmented DNA and extremely low efficiency in both Level 0 construction and subsequent Level 1 assembly.
+However, the pRNR2 promoter sequence contained internal [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites. During assembly, that site was cleaved, leading to fragmented DNA and extremely low efficiency in subsequent Level 1 assembly.
 
 #### Learn
 
-Internal Type IIS restriction sites (especially [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2)) in a part drastically reduce Golden Gate efficiency by cleaving the fragment and making it unavailable for ligation. For pRNR2, the standard protocol was unreliable due to this unavoidable molecular interference.
+Internal [Type II](https://www.neb.com/en/tools-and-resources/feature-articles/everything-you-ever-wanted-to-know-about-type-ii-restriction-enzymes)S restriction sites (especially [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2)) in a part drastically reduce Golden Gate efficiency by cleaving the fragment and making it unavailable for ligation. For pRNR2, the standard protocol was unreliable due to this unavoidable molecular interference.
+
 
 ### Iteration 2: Optimized Assembly and Initial Functional Failure
 
@@ -50,43 +50,42 @@ Internal Type IIS restriction sites (especially [BsmBI](https://www.neb.com/en/p
 
 To resolve the pRNR2 issue without mutating the promoter sequence: 
 
-1. Sequence Check: We confirmed that the 4-bp overhangs generated by the internal [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites did not match the YTK's standardized overhangs, meaning fragments would self-ligate rather than misassemble. 
+1. Sequence Check: We confirmed that the 4-bp overhangs generated by the internal [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites did not match the YTK's standardized overhangs, meaning fragments would self-ligate rather than misassemble. 
 2. Protocol Optimization: We adapted a solution from other researchers: adding a final 30-minute T4 DNA Ligase reaction after the thermal cycles to maximize the repair and ligation of all ends[^3]. 
 
 #### Build
 
-We executed the Golden Gate reaction as normal, followed by a dedicated 30-minute incubation with additional T4 DNA Ligase at 16∘C. This extended ligation step was designed to maximize the re-ligation of the temporarily fragmented pRNR2 sequence, leveraging the non-cognate nature of its internal overhangs.
+We executed the Golden Gate assemby as normal, followed by a dedicated 30-minute incubation with additional T4 DNA Ligase at 16∘C. This extended ligation step was designed to maximize the re-ligation of the temporarily fragmented pRNR2 sequence, leveraging the non-cognate nature of its internal overhangs.
 
 #### Test
 
-Final plasmids were verified by [NotI](https://www.neb.com/en/products/r3189-noti-hf) digestion and gel electrophoresis. Successfully transformed yeast colonies were confirmed via colony PCR for integration. Functionally, promoter activity was observed using a microscope, and quantified by flow cytometry. 
+Final plasmids were verified by [NotI](https://www.neb.com/en/products/r3189-noti-hf) digestion and [agarose gel electrophoresis](/experiments/#other-experimental-methods). Successfully transformed yeast colonies were confirmed via colony PCR for integration. Functionally, promoter activity was observed using a microscope, and quantified by flow cytometry. 
 
-However, a new problem emerged: our near-infrared fluorescent proteins (EMSfp642(BBa_25GARG3E) and EMSfp643(BBa_2599SI53) ) exhibited very weak fluorescence and a low signal-to-noise ratio, making them ineffective as reporters.
+However, a new problem emerged: our near-infrared fluorescent proteins EMSfp642 (BBa_25GARG3E) and EMSfp643 (BBa_2599SI53) exhibited very weak fluorescence and a low signal-to-noise ratio, making them ineffective as reporters.
 
 #### Learn
 
-The modified Golden Gate protocol was successful in overcoming the restriction site conflict. We successfully constructed the pRNR2 Level 0 plasmid and subsequently assembled the pRNR2-driven composite parts for yeast expression.
+The modified Golden Gate protocol was successful in overcoming the restriction site conflict. We successfully assembled the pRNR2-driven composite parts for yeast expression.
 
-New Problem: Near-infrared fluorescent proteins require the chromophore Biliverdin (BV) for fluorescence. Although S. cerevisiae harbors the HMX1 gene (a heme oxygenase homolog), the BV produced by endogenous Hmx1 was insufficient to saturate iRFP and smURFP, resulting in poor signal. Functional success required external modification.
+**New Problem:** Near-infrared fluorescent proteins require the chromophore Biliverdin (BV) for fluorescence. Although S. cerevisiae harbors the HMX1 gene (a heme oxygenase homolog), the BV produced by endogenous Hmx1 was insufficient to saturate iRFP and smURFP, resulting in poor signal. Functional success required external modification.
 
 
-
-### **Iteration 3: Chromophore Supplementation for Functional Enhancement**
+### Iteration 3: Chromophore Supplementation for Functional Enhancement
 
 #### Design
 
-To solve the low near-infrared fluorescence, we designed a modification to the Test Protocol by adding an exogenous chromophore. Literature indicated that PCB (Phycocyanobilin) treatment could increase iRFP fluorescence tenfold. We integrated a PCB incubation step into our functional assay[^4].
+To solve the low near-infrared fluorescence, we modified the protocol by adding an exogenous chromophore. Literature indicated that phycocyanobilin (PCB) treatment could increase infrared fluorescent proteins fluorescence tenfold.[^4] We added a PCB incubation step into our functional assay.
 
 #### Build
 
-We implemented the new standard operating procedure: yeast cultures were incubated with PCB for 1 hour prior to fluorescence measurement. See details on our [Experiments](/experiments/) page.
+We implemented the new standard operating procedure: yeast cultures were incubated with PCB for 1 hour prior to fluorescence measurement (see details on our [Experiments](/experiments/) page).
 
 #### Test
 
-Quantitative analysis via flow cytometry showed a significant increase in fluorescence intensity for both EMSfp642(Log10_Fold Change) = 1.85) and EMSfp643(Log10_Fold Change) = 2.36), achieving an acceptable signal-to-noise ratio.
+Quantitative analysis via flow cytometry showed a significant increase in fluorescence intensity for both EMSfp642 (Log10_Fold Change = 1.85) and EMSfp643 (Log10_Fold Change = 2.36), achieving an acceptable signal-to-noise ratio.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/engineering/pcb-analysis-grouped-by-sample-final-colors-capsize-r660-a-fixedtitle.webp" style="width:80%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/engineering/pcb-analysis-grouped-by-sample-final-colors-capsize-r660-a-fixedtitle.webp" style="width:50%">
     <div>
         <span style="color:gray">Figure 1. Fluorescent Inteansity Change after PCB treatment</span>
         <br><br>
@@ -94,13 +93,14 @@ Quantitative analysis via flow cytometry showed a significant increase in fluore
 </div>
 
 
-
-
 #### Learn
 
 The functional output of the near-infrared reporters is decoupled from the successful DNA construction. Achieving sufficient fluorescence for EMSfp642 and EMSfp643 in yeast requires the supplementation of the chromophore precursor PCB, as the native BV pathway is rate-limiting. This experience mandates that all future experiments using BV-dependent fluorescent proteins in *S. cerevisiae* must include the PCB incubation step to ensure reliable and quantifiable results.
 
-These DBTL cycles are just one example of our project engineering processes. Other examples are available on our [Software](/software/#development-process-dbtl-cycle), [Model](/model/#improvement-log), [Inclusivity](/inclusivity/#) and [Entrepreneurship](/entrepreneurship/#) pages.
+## Other DBTL Examples
+
+These DBTL cycles are just one example of our project engineering processes. Other examples are available on our [Software Tool](/software/#development-process-dbtl-cycle), [Model](/model/#improvement-log), [Inclusivity](/inclusivity/#) and [Entrepreneurship](/entrepreneurship/#) pages.
+
 
 ## Reference
 
@@ -108,6 +108,6 @@ These DBTL cycles are just one example of our project engineering processes. Oth
 
 [^2]: Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015). A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. *ACS synthetic biology*, *4*(9), 975–986. DOI: 10.1021/sb500366v
 
-[^3]: Estelle Lab. (2025). Golden Gate Assembling protocol [Unpublished protocol]. University of California, San Diego. Retrieved from https://labs.biology.ucsd.edu/estelle/Moss_files/MossGG_Assembling.pdf
+[^3]: Estelle Lab. (2025). Golden Gate Assembling protocol (Unpublished). University of California, San Diego. Retrieved from https://labs.biology.ucsd.edu/estelle/Moss_files/MossGG_Assembling.pdf
 
 [^4]: Sakai, K., Kondo, Y., Fujioka, H., Kamiya, M., Aoki, K., & Goto, Y. (2021). Near-infrared imaging in fission yeast using a genetically encoded phycocyanobilin biosynthesis system. *Journal of cell science*, *134*(24), jcs259315. DOI: 10.1242/jcs.259315

@@ -157,7 +157,7 @@ Primers were designed as in Liu et al. (2008) Figure 2[^3]. The non-overlapping 
    c. **Final Annealing:** T<sub>m pp</sub> - 5°C for 15 s.
    d. **Final Extension:** 72°C for 10 min.
 
-3. While verifying 10&mu;L PCR products by [agarose gel electrophoresis](https://2022.igem.wiki/fudan/experiments#agarose-gel-electrophoresis); treat the remaining 15&mu;L PCR products with 0.5 &mu;L [DpnI](https://www.neb.cn/zh-cn/products/r0176-dpni) at 37°C for > 4 h. Once verified and DpnI digestion completed, the PCR products were [transformed](#other-experimental-methods) into *E. coli*.
+3. While verifying 10&mu;L PCR products by [agarose gel electrophoresis](https://2022.igem.wiki/fudan/experiments#agarose-gel-electrophoresis); treat the remaining 15&mu;L PCR products with 0.5 &mu;L [DpnI](https://www.neb.com/en/products/r0176-dpni) at 37°C for > 4 h. Once verified and DpnI digestion completed, the PCR products were [transformed](#other-experimental-methods) into *E. coli*.
 
 
 ## Yeast Transformation

@@ -98,7 +98,7 @@ Co-organized with teams from [ShanghaiTech-China](https://2025.igem.wiki/shangha
 
 #### [BIO-BOUNCE](/education/#bio-bounce)
 
-Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://2025.igem.wiki/nudt-china/home), we developed [an online puzzle game](https://2025.igem.wiki/ustc/education#section-2) that made gene editing concepts accessible and engaging, reaching a wide, digital-native audience. Below is a sceenshot of the game interface.
+Partnering with [USTC](https://2025.igem.wiki/ustc/) and [NUDT-CHINA](https://2025.igem.wiki/nudt-china/home), we developed [an online puzzle game](https://gd.games/instant-builds/837df4ba-8e96-4e18-b117-50fa6db0dede) that made gene editing concepts accessible and engaging, reaching a wide, digital-native audience. Below is a sceenshot of the game interface.
 
 <div style="text-align: center;" id="fig4">
     <img src="https://static.igem.wiki/teams/5643/pageimage/collaboration/game-interface.webp" style="width:80%">
