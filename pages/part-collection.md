@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#Peining
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wpn-a.webp
 layout: igem
-heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
+heroImage: https://static.igem.wiki/teams/5643/header/pc.webp
 description: On this page, we describe 3 collections built around Grape Yeast, foundamentally advaced the power of <i>Saccharomyces cerevisiae</i>.
 ---
 
