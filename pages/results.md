@@ -77,14 +77,13 @@ To test this idea, we measured the settling rates of yeast at different passages
 As microscopic images of fixed yeast cells fail to capture the real-time, authentic dynamics of Grape Yeast branching, we employed [live-cell imaging](/experiments/#yeast-live-cell-imaging-in-agarose) over a 3-hour span to track the yeast growth process.
 
 <div style="text-align:center;" id="fig2">
-  <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif" style="width:100%">  
+  <img src="https://gitlab.igem.org/2025/fudan/-/raw/main/video/microscopy.webp?ref_type=heads" style="width:100%"><br>
+  <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif" style="width:100%">
   <div><span style="text-align:left; margin:0; color:gray;">Figure 3. Live-cell imaging of Grape Yeast.
     <br>
-    <small>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3 h.</small>
+    <small>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3 h. The time-lapse movie at the top left corner was used to generate the montage image.</small>
   </span></div>
 </div>
-
-@@@@ good animation
 
 
 ## Visualize the Evolution: The Timer & Recorder Extension
