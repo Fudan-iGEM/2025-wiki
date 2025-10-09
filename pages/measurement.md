@@ -76,7 +76,7 @@ $$
 $$
 
 <div style="text-align: center;" id="fig2">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/analysis-for-flow-cytometry.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/analysis-for-flow-cytometry.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 2. Different promoter-fluorescent protein pairs exhibited different fluorescence intensity change pattern after EMS-treatment</span>
         <br><br>

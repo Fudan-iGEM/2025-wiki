@@ -262,7 +262,7 @@ To replace the original HA and to enable [BsmBI](https://www.neb.com/en/products
 For 3'HA, we specially introduced two reversed [BbsI](https://www.thermofisher.com/order/catalog/product/FD1014) site, which was used in MYT for introducing selective markers. In addition, though not used in our project, we leave a PstI site, a design used in Shaw  et al. (2023)[^7] for transposition of gRNA arrays, which could be utilized if further researchers require.
 
 <div style="text-align: center;" id="fig7">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/golden.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/golden.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 7. Structure of Homology Arm Entry plasmid and Assembly of New Homology Arms</span>
         <br><br>
@@ -278,7 +278,7 @@ While Shaw et al.[^7] included additional barcodes within their homology arms pr
 We used two primer sets to confirm correct integration via junction analysis. The 5H Forward / 3H Reverse primers anneal to the native genome sequence, while the 5H Reverse / 3H Forward primers anneal to the inserted construct (specifically, the ConLS and AgTEF Terminator sequences)（[Figure 8](#fig8). This arrangement ensures that only precise integration at the target locus is amplified, yielding a band of near 500 bp. Native strains or off-target integrations will result in no amplification. 
 
 <div style="text-align: center;" id="fig8">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/design/gg-l.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/design/gg-l.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 8. Design of colony PCR primers for verification of chromosomal integrations</span>
         <br><br>

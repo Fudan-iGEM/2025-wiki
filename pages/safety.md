@@ -149,7 +149,7 @@ Inspried by the Gallagher et al's circuit[^12], which integrates three core modu
 Together, in their original design include these modules ensure that *E. coli* can only survive when all three inputs — aTc, IPTG, and exogenous biotin — are present simultaneously. This layered safeguard prevents accidental survival caused by the leakage of any single module.
 
 <div style="text-align: center;" id="fig2">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/transcriptional-translational-riboregulation-og-essential-genes.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/safety/transcriptional-translational-riboregulation-og-essential-genes.webp" style="width:100%;max-width:100%">
     <div>
         <!-- span style="color:gray">Figure 2. Design of multilayered safeguards</span -->
         <br><br>

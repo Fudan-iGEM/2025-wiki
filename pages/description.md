@@ -112,7 +112,7 @@ This observation reminds us that resilience is not merely a biological phenomeno
 In response, we designed an outreach program that placed **inclusivity at its center**. We experimented with sensory-friendly and creative research methods that allowed participants to express what is often difficult to articulate in words. Through [participatory mapping](/Inclusivity/), patients, elderly participants, and transplant recipients used drawings, colors, and metaphors to reflect on their lived experiences. By employing approaches such as **PhotoVoice** and the **Science of Healing**, we invited participants to act as both contributors and "artists", giving them visibility and a stronger sense of agency.
 
 <div style="text-align: center;" id="fig6">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" style="width:100%"/>
+    <img src="https://static.igem.wiki/teams/5643/pageimage/inclusivity/inclusivecharity.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 6. A glimpse into our Inclusivity activities</span>
         <br><br>

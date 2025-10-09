@@ -20,7 +20,7 @@ The training was structured into three components:
 3. Through brainstorming and three rounds of idea competitions, we conceptualized potential project proposals and ultimately defined the research direction for iGEM 2025, with further refinements in subsequent phases.
 
 <div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/january-trainingschedule.webp" style="width:100%; max-width:100%;">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/january-trainingschedule.webp" style="width:100%; max-width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 1. The schedule of the winter training</span>
         <br><br>
@@ -51,7 +51,7 @@ Through these training programs, we ensured seamless transfer of knowledge and e
 During the Spring Festival, we organized into groups based on individual skills and interests to conduct modular research. We thoroughly studied previous iGEM projects and compiled our findings by the end of February, which significantly enhanced our understanding of the iGEM [Judging Handbook](https://competition.igem.org/judging/handbook). Concurrently, we clarified each team member's tasks and roles to advance the project through further literature investigation.
 
 <div style="text-align: center;" id="fig4">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig4.avif" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig4.avif" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 4. Our research work conducted during the winter break</span>
         <br><br>
@@ -67,7 +67,7 @@ We held regular meetings to refine the design of both dry and wet-lab experiment
 Additionally, we corresponded with Professor Ratcliff via email and received valuable suggestions for organizing education initiatives. Based on practical considerations, we identified [butterfly children (patients with Epidermolysis Bullosa)](/inclusivity/#breaking-the-silence-the-first-glimpse-of-visibility)as the target group for our inclusivity efforts. We subsequently hosted [Garden Party](/education/#activity-4-garden-party), using interactive games to popularize synthetic biology knowledge in an engaging format.
 
 <div style="text-align: center;" id="fig5">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig1.avif" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig1.avif" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 5. Our project progress and some photos from public events</span>
         <br><br>
@@ -102,7 +102,7 @@ On May 16th, we collaborated with [CJUH-JLU-China](/education/#academic-depth-ex
 On May 17th, we connected with middle school students in Henan Province through letter exchanges, effectively promoting iGEM and our project's vision.
 
 <div style="text-align: center;" id="fig7">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig3.avif" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/notebook-fig3.avif" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 7. Photos from our business roadshow and interview with experts</span>
         <br><br>
@@ -119,7 +119,7 @@ On June 30th, we partnered with [CSU-China](https://2025.igem.wiki/csu-china/) t
 We also jointly produced the children's [picture book "My Microbe Friends"](/education.html#my-microb-friends%E2%80%94%E2%80%94picturebook) with [AFMU-China](https://2025.igem.wiki/afmu-china).
 
 <div style="text-align: center;" id="fig8">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/june-summary.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/june-summary.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 8. Our members attending conferences and organizing lectures</span>
         <br><br>
@@ -149,7 +149,7 @@ During this period, our conversation with Ms. Su revealed that Human Practices s
 Meanwhile, we collaborated with 33 iGEM teams to compile the ["Debunking Synthetic Biology Myths" handbook](https://static.igem.wiki/teams/5643/pageimage/collaboration/smashing-synthetic-biology-rumours-science-brochure-compressed.pdf). This guide clarifies common misconceptions and aims to help the public identify and avoid misinformation related to synthetic biology.
 
 <div style="text-align: center;" id="fig10">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/august-ccic.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/august-ccic.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 10. Our journey at CCiC</span>
         <br><br>
@@ -169,7 +169,7 @@ Over the course of one month, we jointly developed an [educational mini-game](ht
 Our laboratory team proceeded with wet-lab experiments and analyzed the results using fluorescence microscopy, flow cytometry, and deep sequencing.
 
 <div style="text-align: center;" id="fig11">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/september-summary.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/september-summary.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 11. Our education workshops and inclusiveness practices</span>
         <br><br>

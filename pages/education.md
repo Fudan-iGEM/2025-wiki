@@ -255,7 +255,7 @@ People: Huizhen Du
 We hypothesized that picture books could serve as a gateway to scientific knowledge, making complex concepts like Gene editing approachable and fun.
 
 <div style="text-align: center;" id="fig7">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/picture-book-relay.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/picture-book-relay.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 7. Picture Book Relay </span>
         <br><br>
@@ -295,7 +295,7 @@ We organized a laboratory open day to provide students with an immersive researc
 **How We Conducted It**
 
 <div style="text-align: center;" id="fig8">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/lab.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/lab.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 8. Participating students are visiting the laboratory and communicating with teachers </span>
         <br><br>
@@ -349,7 +349,7 @@ To break down laboratory barriers and reduce operational difficulty:
 3. They observed differences in microbial colony characteristics across items, turning the experiment into an exploratory activity.
 
 <div style="text-align: center;" id="fig10">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbial-inoculation-of-daily-necessities.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/education/updatephoto/microbial-inoculation-of-daily-necessities.webp" style="width:100%;max-width:100%">
     <div>
         <span style="color:gray">Figure 10. We are performing microbial inoculation of daily necessities </span>
         <br><br>

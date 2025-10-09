@@ -31,7 +31,7 @@ We first confirmed the multicellular morphology of the *ACE2*-knockout grape yea
 To determine the temporal sequence of growth and identify mother–daughter relationships, the culture was resumed for an additional 24 h after staining. Under bright-field illumination, several cells lacked detectable fluorescence (orange arrows), demonstrating that the fluorophore had not yet incorporated into these nascent cell structures.
 
 <div style="text-align:center;" id="fig2">
-  <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp" style="width:100%">  
+  <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp" style="width:100%;max-width:100%">  
   <div><span style="text-align:left; margin:0; color:gray;">Figure 2. Chitin Imaging of 2N and 4N Grape Yeast.
     <br>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.
   </span></div>
@@ -51,7 +51,7 @@ Our quantitative statistical data (Figure 3B, C) further supports this observati
 These results collectively suggest that, under the pressure of settling selection, higher-ploidy strains of *S. cerevisiae* possess a comparatively less stable genome and exhibit a pronounced tendency toward increased ploidy. We hypothesize that the underlying cause involves a failure in the ploidy sensing and maintenance machinery. This defect may lead to chromosome missegregation events, resulting in an unstable state where the cell is unable to correctly regulate its division cycle based on its current chromosome complement.
 
 <div style="text-align:center;" id="fig3">
-  <img src="https://static.igem.wiki/teams/5643/pageimage/results/ploid-abnormality-2.webp" style="width:100%">  
+  <img src="https://static.igem.wiki/teams/5643/pageimage/results/ploid-abnormality-2.webp" style="width:100%;max-width:100%">  
   <div><span style="text-align:left; margin:0; color:gray;">Figure 3. Microscopy images and statistical analysis of yeast ploidy changes.
     <br>(A) Merged bright-field and fluorescence images of PI-stained diploid (left) and tetraploid (right) yeast after 9 generations of settling selection. Blue arrow: a single cell containing two nuclei, suggestive of an abnormal karyotype. Scale bar = 10 &mu;m. <br>
 (B) Population-level distribution of fluorescence intensity in diploid and tetraploid yeast. <br>

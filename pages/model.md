@@ -432,7 +432,7 @@ This pattern occurs because after a short pulse, the system almost no longer add
 - **Interpretation:** Even after baseline correction, shorter pulses maintain strong temporal resolution within generations, while ON expression fails to distinguish subtle age differences.
 
 <div style="text-align: center;" id="fig7">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/model/figure7-lineage-heatmap-comparison.webp" style="width:100%">
+    <img src="https://static.igem.wiki/teams/5643/pageimage/model/figure7-lineage-heatmap-comparison.webp" style="width:100%;max-width:100%">
     <div>
       <span style="color:gray">Figure 7. Lineage Heatmap Comparison</span>
     <br><br>
