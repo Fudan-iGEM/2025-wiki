@@ -64,7 +64,7 @@ As described in Shaw et al. (2023)[^1], briefly:
      c. **Heat Inactivation:** 80°C for 10 min.
      d. **Hold:** 16°C
    
-   > For inserts containing internal [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites, we added a dedicated 30-minute incubation with additional T4 DNA Ligase at 16°C after the thermal cycles to maximize the repair and ligation of all ends.
+> For inserts containing internal [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) and [BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) sites, we added a dedicated 30-minute incubation with additional T4 DNA Ligase at 16°C after the thermal cycles to maximize the repair and ligation of all ends.
 
 ### Bacteria Transformation and Plating
 
