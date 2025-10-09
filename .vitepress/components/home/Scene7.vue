@@ -1,7 +1,7 @@
 <template>
   <div ref="scene7Ref" class="scene7-container">
     <div ref="textRef" class="end-text">
-      <h2>Let’s join <em>DR. sTraTeGY</em></h2>
+      <h2>Let’s join <em>DR.sTraTeGY</em></h2>
       <p>in finding new strategies to wage the war against antimicrobial resistance.</p>
     </div>
   </div>

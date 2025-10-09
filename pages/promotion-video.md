@@ -14,7 +14,7 @@ description: On this page, we highlight key frames in our promotional video.
 
 ## Highlights of our PV
 
-Step into the Wonderful World of Dr. Strategy 🌿
+Step into the Wonderful World of DR.sTraTeGY 🌿
 
 In our promotion video, we've brought synthetic biology to life with an *Animal Crossing*-inspired adventure! Explore a vibrant island and meet its adorable animated villagers.
 
@@ -34,7 +34,7 @@ Whole-genome sequencing struggles to pinpoint key resistance mutations, restrict
 
 ### Our Solution
 
-Driven to locate major mutations, we developed *DR.&nbsp;sTraTeGY*. We [design](/design/) a multicellular yeast system capable of recording mutational history and indicating mutation sites, aiming to integrate synthetic biology with medical research to provide a more convenient platform for antifungal drug development.
+Driven to locate major mutations, we developed *DR.sTraTeGY*. We [design](/design/) a multicellular yeast system capable of recording mutational history and indicating mutation sites, aiming to integrate synthetic biology with medical research to provide a more convenient platform for antifungal drug development.
 
 ![our solution](https://static.igem.wiki/teams/5643/pageimage/promotion-video/experiment.webp)
 

@@ -9,7 +9,7 @@ heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-2
 description: On this page, we describe 3 collections built around Grape Yeast, foundamentally advaced the power of <i>Saccharomyces cerevisiae</i>.
 ---
 
-Our project *DR.&nbsp;sTraTeGY* (Drug Resistance mutation Tracking Technology based on Grape Yeast) has developed and test three part collections: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141), [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) (the optimal promoter–fluorescent protein combination screening collection), and [the homologous arms integration collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) for *Saccharomyces cerevisiae*.
+Our project *DR.sTraTeGY* (Drug Resistance mutation Tracking Technology based on Grape Yeast) has developed and test three part collections: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141), [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30) (the optimal promoter–fluorescent protein combination screening collection), and [the homologous arms integration collection](https://registry.igem.org/collections/b64cd4a7-59f1-4dae-83a7-909b69a778d0) for *Saccharomyces cerevisiae*.
 
 ## Collection 1: [Grape Yeast](https://registry.igem.org/collections/5a15daa1-9c25-4fd7-9c31-aa4667c13141)
 

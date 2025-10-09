@@ -14,7 +14,7 @@ description: On this page, we document how we quantify our experimental results.
 
 ## Overview
 
-Our project *DR.&nbsp;sTraTeGY* is trying to dynamically record natural mutations in living cells using engineered biological systems. The core of this strategy is a mutation recorder based on the [EMSfp parts](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein), which converts random mutations into quantifiable changes in fluorescence intensity. To validate this recorder's functionality, we employed a comprehensive three-stage approach: fluorescence microscopy for direct visual confirmation of intensity variation at single-cell level, flow cytometry for statistical analysis of population-wide fluorescence distribution, and deep sequencing to confirm mutation localization in promoter regions but not EMSfp regions. 
+Our project *DR.sTraTeGY* is trying to dynamically record natural mutations in living cells using engineered biological systems. The core of this strategy is a mutation recorder based on the [EMSfp parts](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein), which converts random mutations into quantifiable changes in fluorescence intensity. To validate this recorder's functionality, we employed a comprehensive three-stage approach: fluorescence microscopy for direct visual confirmation of intensity variation at single-cell level, flow cytometry for statistical analysis of population-wide fluorescence distribution, and deep sequencing to confirm mutation localization in promoter regions but not EMSfp regions. 
 
 ## Microscopy - Qualitative Observation of Signal Variation
 
@@ -219,7 +219,7 @@ By separately quantifying the putative EMS-induced mutations (G/C ↔ A/T) withi
 
 ### Summary
 
-The integrated results demonstrate that EMS-induced mutations specifically accumulate in the promoter region rather than the coding sequence, directly linking observed fluorescence changes to targeted genetic alterations. Through this systematic validation spanning cellular, population, and molecular levels, we have established BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) in our [TU Recorders collection](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein) as a reliable standardized biological part that effectively records mutation events, thereby enabling dynamic tracking by our *DR.&nbsp;sTraTeGY*.
+The integrated results demonstrate that EMS-induced mutations specifically accumulate in the promoter region rather than the coding sequence, directly linking observed fluorescence changes to targeted genetic alterations. Through this systematic validation spanning cellular, population, and molecular levels, we have established BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) in our [TU Recorders collection](/part-collection/#collection-2-tu-recorders-using-ems-insensitive-fluorescent-protein) as a reliable standardized biological part that effectively records mutation events, thereby enabling dynamic tracking by our *DR.sTraTeGY*.
 
 ### Reference
 

@@ -9,7 +9,7 @@ authors:
     avatar: https://static.igem.wiki/teams/5643/pageimage/team/wzq-a.webp
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/pageimage/design/design-headmap.webp
-description: On this page, we introduce <em>DR.&nbsp;sTraTeGY</em>, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
+description: On this page, we introduce <em>DR.sTraTeGY</em>, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
 ---
 
 <script setup lang="ts">
@@ -21,14 +21,14 @@ import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualiz
 Our approach combines synthetic biology with advanced modeling and visualization tools to provide an unprecedented view into the dynamics of resistance evolution.
 
 - **The Problem:** Antifungal resistance poses a serious threat to global health.
-- **Our Solution:** *DR.&nbsp;sTraTeGY*, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
+- **Our Solution:** *DR.sTraTeGY*, a modular, multicellular yeast platform, is a powerful tool designed to track fungal acquisition of drug resistance under selective pressure. This unique multicellular chassis turns the evolving population into a physical, spatio-temporal lineage tree, overcoming the limitations of static endpoint snapshots brought by unicellular systems.
 - **Key Innovations:** The platform consists of a "Grape Yeast" chassis, the "Timer &amp; Recorder" visualization modules, and the "YeastVerse" virtual experiment platform.
 
 ## How it Started?
 
 Fungal pathogens cause a wide range of diseases that have a significant impact on plant and animal life. It's estimated that approximately 1.7 billion people are affected globally, with more than 1.5 million deaths annually.[^1] Treatment options for invasive fungal infections are extremely limited, with only five main classes of drugs currently available. The long-term abuse of antifungal drugs has led to the constant emergence of drug-resistant variants, making it crucial to study the mutation and evolution of fungi under drug pressure.
 
-To address this challenge, we developed *DR.&nbsp;sTraTeGY*, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three components:
+To address this challenge, we developed *DR.sTraTeGY*, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three components:
 
 1. **Grape Yeast:** The chassis engineered to be multicellular and responsive to external signals.
 2. **Timer &amp; Recorder:** A visualization toolkit to track the evolutionary history and selective pressure in real-time.
@@ -37,7 +37,7 @@ To address this challenge, we developed *DR.&nbsp;sTraTeGY*, an innovative platf
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig1-dr-strategy.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1. <em>DR.&nbsp;sTraTeGY</em> overview</span>
+        <span style="color:gray">Figure 1. <em>DR.sTraTeGY</em> overview</span>
         <br><br>
     </div>
 </div>
@@ -49,7 +49,7 @@ To address this challenge, we developed *DR.&nbsp;sTraTeGY*, an innovative platf
 
 To study fungal evolution, we focused on *Saccharomyces cerevisiae*, a classic model organism for eukaryotes and a widely used chassis in synthetic biology. It offers significant advantages, including a fully sequenced genome, various genetic tools[^2], and a non-pathogenic nature with conserved resistance mechanisms[^3].  However, traditional methods that based on unicellular yeast like bulk sequencing provide only a static endpoint snapshot of evolving populations, making it challenging to capture low-frequency mutations or the real-time emergence of complex traits[^4].
 
-To overcome this, we designed the Grape Yeast — a novel modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates *DR.&nbsp;sTraTeGY* from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex evolution trajectories would mask in a conventional bulk culture.
+To overcome this, we designed the Grape Yeast — a novel modular chassis based on a multicellular yeast system[^5]. The multicellular structure of the Grape Yeast is what differentiates *DR.sTraTeGY* from traditional methods. While unicellular models provide only a static endpoint snapshot of evolving populations, the Grape Yeast cluster, when combined with our visualization modules, functions as a spatio-temporal lineage recorder. The physical linkage between mother and daughter cells allows us to observe a tree of resistance evolution in a single cluster, where the [Timer](#timer-tracking-cell-lineage) tracks cell lineage and the [Recorder](#recorder) logs selective pressure at different points in that lineage. This provides an unprecedented, real-time view into the dynamics of resistance evolution that low-frequency mutations or complex evolution trajectories would mask in a conventional bulk culture.
 
 We engineered this chassis through modular approach that allows us to achieve key functions: (1) multicellularity development, (2) external signal response, (3) cluster size control, and (4) individual diversity control. In essence, these designs provide future research with a novel chassis organism. Unlike conventional unicellular chassis that act mainly as simple cell factories, the multicellular Grape Yeast presents an efficient and scalable engineered biological system. It functions more like an organized multicellular body — with spatial structure and division of labor among cells — similar to the natural paradigms of plants, animals, fungi, and algae. This highlights its potential not only as a tracking platform but also as a foundational model for exploring multicellular engineering.
 
@@ -66,7 +66,7 @@ We engineered this chassis through modular approach that allows us to achieve ke
 
 #### Inspiration and Background
 
-The earliest description of multicellularity in yeast was reported by Ratcliff et al.[^24], which served as the primary inspiration for our project. In that seminal study, *Saccharomyces cerevisiae* (strain Y55) was subjected to gravity-based selection, favoring cells with a rapid sedimentation phenotype. Multicellular aggregates were observed after just 60 [transfers](/experiments/#grape-yeast-settling-selection).
+The earliest description of multicellularity in yeast was reported by Ratcliff et al.[^24], which served as the primary inspiration for our project. In that seminal study, *Saccharomyces cerevisiae* (strain Y55) was subjected to gravity-based selection, favoring cells with a rapid sedimentation phenotype. Multicellular clusters were observed after just 60 [transfers](/experiments/#grape-yeast-settling-selection).
 
 Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the *ACE2* gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.[^9]
 
@@ -147,7 +147,7 @@ First, we introduced the meiosis-inducing gene *IME1* (BBa_250R9OVR) under the c
     </div>
 </div>
 
-Previous research has shown that during gravity-based selection, the Y55 (*ACE2&Delta;* was achieved by replace ACE2 with KanMX, a gift from [Prof. Ratcliff](http://snowflakeyeastlab.com/)) strain undergoes a ploidy shift from diploid (2n) to tetraploid (4n)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 (a common aminoglycoside antibiotic used as a selectable marker in eukaryotic cell culture) selection pressure. To isolate the specific effects of the drugs, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
+Previous research has shown that during gravity-based selection, the Y55 (*ACE2&Delta;* was achieved by replace ACE2 with KanMX, a gift from [Prof. Ratcliff](http://snowflakeyeastlab.com/)) strain undergoes a ploidy shift from diploid (2N) to tetraploid (4N)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 (a common aminoglycoside antibiotic used as a selectable marker in eukaryotic cell culture) selection pressure. To isolate the specific effects of the drugs, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
 
 
 ### Module 4 — Controlling Cluster Size

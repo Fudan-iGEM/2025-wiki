@@ -63,9 +63,9 @@ Intrigued by this possibility, we began tracing the origins of multicellular yea
 This was the moment when a conceptual link turned into a concrete plan. We realized that by leveraging synthetic biology tools to engineer multicellular yeast as a living recorder, we could capture the evolutionary trajectory of antifungal resistance. From that moment, our project was born: building a platform that transforms the study of resistance from static snapshots into **dynamic, observable evolution in action**.
 
 
-## Our Solution: *DR.&nbsp;sTraTeGY*
+## Our Solution: *DR.sTraTeGY*
 
-This led the Fudan iGEM 2025 team to create *DR.&nbsp;sTraTeGY* (**Drug Resistance mutation Tracking Technology based on Grape Yeast**), an innovative platform to track the evolutionary dynamics of fungal resistance.
+This led the Fudan iGEM 2025 team to create *DR.sTraTeGY* (**Drug Resistance mutation Tracking Technology based on Grape Yeast**), an innovative platform to track the evolutionary dynamics of fungal resistance.
 
 Our project uses a novel chassis organism, the multicellular **“Grape Yeast”**. Unlike traditional unicellular systems, Grape Yeast provides a structured, programmable arena where spatial organization and cell differentiation make evolutionary processes directly observable.
 
@@ -79,9 +79,9 @@ Our project uses a novel chassis organism, the multicellular **“Grape Yeast”
 
 Building on this chassis, we developed two key modules: the **Timer**, which traces cell lineage and developmental history, and the **Recorder**, which inscribes the genetic footprint of evolutionary pressures. Together, they shift resistance research from static snapshots to a **dynamic, unfolding narrative**.
 
-Through this design, our aim is to move beyond retrospective analysis and establish a system that not only tracks the resistance mutations but also visualizes the trajectories. Ultimately, *DR.&nbsp;sTraTeGY* offers a new framework to confront the global crisis of antifungal resistance—capturing fungal evolution, inspiring future research to build upon this new chassis and guiding the development of next-generation therapies.
+Through this design, our aim is to move beyond retrospective analysis and establish a system that not only tracks the resistance mutations but also visualizes the trajectories. Ultimately, *DR.sTraTeGY* offers a new framework to confront the global crisis of antifungal resistance—capturing fungal evolution, inspiring future research to build upon this new chassis and guiding the development of next-generation therapies.
 
-Learn more about the design and construction of *DR.&nbsp;sTraTeGY* on our [Design](/design/) page.
+Learn more about the design and construction of *DR.sTraTeGY* on our [Design](/design/) page.
 
 
 ## From Wet-Lab to Dry-Lab: Model Integration
@@ -98,7 +98,7 @@ YeastVerse allows us to do several critical things. It can screen feasible param
     </div>
 </div>
 
-By combining experimental and computational perspectives, we ensure that *DR.&nbsp;sTraTeGY* is not only observable but also predictable. In doing so, we provide future researchers with a robust framework to study resistance dynamics and design their own interventions with greater confidence.
+By combining experimental and computational perspectives, we ensure that *DR.sTraTeGY* is not only observable but also predictable. In doing so, we provide future researchers with a robust framework to study resistance dynamics and design their own interventions with greater confidence.
 
 Explore more details about **YeastVerse** on our [Model](/model/) page.
 
@@ -126,11 +126,11 @@ Discover vivid stories of our [Inclusivity](/Inclusivity/) activities.
 
 ## Conclusion
 
-Our project, *DR.&nbsp;sTraTeGY*, is more than a technological advancement - is our response to one of the most urgent yet underappreciated challenges in global health. The innovation of this project lies in the synergistic combination of its modules, making it a comprehensive tool that is far greater than the sum of its parts. By engineering the **Grape Yeast** as a multicellular chassis, and equipping it with the **Timer** and **Recorder** modules, we have created a living platform capable of transforming resistance research from static, retrospective analysis into real-time, observable evolution. This shift allows us not only to track resistance mutations but also to anticipate their trajectories, paving the way for the discovery of new antifungal targets and strategies.
+Our project, *DR.sTraTeGY*, is more than a technological advancement - is our response to one of the most urgent yet underappreciated challenges in global health. The innovation of this project lies in the synergistic combination of its modules, making it a comprehensive tool that is far greater than the sum of its parts. By engineering the **Grape Yeast** as a multicellular chassis, and equipping it with the **Timer** and **Recorder** modules, we have created a living platform capable of transforming resistance research from static, retrospective analysis into real-time, observable evolution. This shift allows us not only to track resistance mutations but also to anticipate their trajectories, paving the way for the discovery of new antifungal targets and strategies.
 
 Yet our vision extends beyond the laboratory. Through **YeastVerse**, our integrated computational model, we ensure that the biology we study is both predictable and testable, strengthening the Design–Build–Test–Learn cycle and offering future researchers a tool that can accelerate antifungal research. At the same time, our commitment to **inclusivity** ensures that science does not unfold in isolation but in conversation with the people most affected by fungal infections. By amplifying marginalized voices and creating new forms of dialogue, we show that scientific innovation and social responsibility can and must go hand in hand.
 
-Together, these elements capture the essence of *DR.&nbsp;sTraTeGY*: not just a new way to study microbial evolution, but a new way of practicing science — advancing knowledge while serving humanity. We believe *DR.&nbsp;sTraTeGY* holds the potential to accelerate antifungal drug development, deepen our understanding of evolution, and stand as a vital tool in humanity’s defense against fungal threats.
+Together, these elements capture the essence of *DR.sTraTeGY*: not just a new way to study microbial evolution, but a new way of practicing science — advancing knowledge while serving humanity. We believe *DR.sTraTeGY* holds the potential to accelerate antifungal drug development, deepen our understanding of evolution, and stand as a vital tool in humanity’s defense against fungal threats.
 
 
 ## References

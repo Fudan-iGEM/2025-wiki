@@ -25,7 +25,7 @@ To determine the temporal sequence of growth and identify mother–daughter rela
 
 <div style="text-align:center;" id="fig1">
   <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp" style="width:100%">  
-  <div><span style="text-align:left; margin:0; color:gray;">Figure 1. Chitin Imaging of 2n and 4n Grape Yeast.
+  <div><span style="text-align:left; margin:0; color:gray;">Figure 1. Chitin Imaging of 2N and 4N Grape Yeast.
     <br>
     <small>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.</small>
   </span></div>
@@ -38,11 +38,11 @@ However, a subset of cells in the Fix group were found outside the focal plane d
 
 ### Settling Selection Leads to Ploidy Abnormalities in Tetraploid Yeast
 
-It is indicated that during gravity-based selection, multicellular yeast undergoes ploidy doubling[^1], which is much similar to the change some pathogenic fungi undergo under the pressure of drug[^2]. Hence, we subjected both diploid (2n) and tetraploid (4n) Grape Yeast under [settling selection](/experiments/#grape-yeast-settling-selection) over successive generations to simulate the ploidy shift experienced by pathogenic fungi under drug-induced stress. We performed Propidium Iodide (PI) staining on the cell nuclei and subsequently acquired fluorescence images. The log-transformed PI fluorescence intensity is known to be linearly correlated with the number of chromosomes[^1].
+It is indicated that during gravity-based selection, multicellular yeast undergoes ploidy doubling[^1], which is much similar to the change some pathogenic fungi undergo under the pressure of drug[^2]. Hence, we subjected both diploid (2N) and tetraploid (4N) Grape Yeast under [settling selection](/experiments/#grape-yeast-settling-selection) over successive generations to simulate the ploidy shift experienced by pathogenic fungi under drug-induced stress. We performed Propidium Iodide (PI) staining on the cell nuclei and subsequently acquired fluorescence images. The log-transformed PI fluorescence intensity is known to be linearly correlated with the number of chromosomes[^1].
 
-While the ploidy of diploid grape yeast remained relatively stable in short time (9 generations), we unexpectedly discovered a distinct abnormality in the ploidy of the tetraploid (4n) strain. As shown in Figure 2A, the blue arrow points to a single cell containing two nuclei—the nucleus on the right appears to be in a state of division—suggesting a higher ploidy state, potentially hexaploid (6n). 
+While the ploidy of diploid grape yeast remained relatively stable in short time (9 generations), we unexpectedly discovered a distinct abnormality in the ploidy of the tetraploid (4N) strain. As shown in Figure 2A, the blue arrow points to a single cell containing two nuclei—the nucleus on the right appears to be in a state of division—suggesting a higher ploidy state, potentially hexaploid (6N). 
 
-Our quantitative statistical data (Figure 2B, C) further supports this observation. The distribution of PI fluorescence intensity for the 4n strain was significantly more dispersed than the 2n strain, and a distinct minor peak corresponding to a putative hexaploid (6n) population was visible in the histogram (Figure 2B).
+Our quantitative statistical data (Figure 2B, C) further supports this observation. The distribution of PI fluorescence intensity for the 4N strain was significantly more dispersed than the 2N strain, and a distinct minor peak corresponding to a putative hexaploid (6N) population was visible in the histogram (Figure 2B).
 
 These results collectively suggest that, under the pressure of settling selection, higher-ploidy strains of *S. cerevisiae* possess a comparatively less stable genome and exhibit a pronounced tendency toward increased ploidy. We hypothesize that the underlying cause involves a failure in the ploidy sensing and maintenance machinery. This defect may lead to chromosome missegregation events, resulting in an unstable state where the cell is unable to correctly regulate its division cycle based on its current chromosome complement.
 

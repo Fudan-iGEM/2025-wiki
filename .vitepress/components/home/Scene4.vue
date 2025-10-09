@@ -5,7 +5,7 @@
       <div ref="scene4LeftBoxRef" class="scene4-left-box">
         <h2 ref="scene4TitleRef" class="scene4-title"></h2>
         <p ref="scene4SubtitleRef" class="scene4-subtitle">
-          <em>DR. sTraTeGY</em> -- Drug Resistance mutation Tracking Technology based on Grape Yeast<br><br>
+          <em>DR.sTraTeGY</em> -- Drug Resistance mutation Tracking Technology based on Grape Yeast<br><br>
 A platform could accelerate antifungal drug development,<br>deepen our understanding of evolution,<br>and assist humanity’s defense against fungal threats
         </p>
       </div>

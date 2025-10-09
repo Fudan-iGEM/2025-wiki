@@ -11,7 +11,7 @@ description: What is now, and what is next?
 
 Antimicrobial resistance (AMR) poses a critical global health threat. Despite this, clinical antifungal options have remained limited to just five major drug classes for the past century. The widespread misuse of these agents has escalated fungal adaptability, leading to more difficult to treat infections and preventable deaths. 
 
-To address this, we develop *DR.&nbsp;sTraTeGY*, a multicellular yeast research platform [designed](/design/) to transform the study of microbial evolution from static, retrospective analysis into real-time, observable dynamics. This system tracks the evolution of fungal drug resistance and provides a standardized framework, enabling researchers to efficiently map the genomic locations and sequential order of cumulative mutations acquired under selection pressure.
+To address this, we develop *DR.sTraTeGY*, a multicellular yeast research platform [designed](/design/) to transform the study of microbial evolution from static, retrospective analysis into real-time, observable dynamics. This system tracks the evolution of fungal drug resistance and provides a standardized framework, enabling researchers to efficiently map the genomic locations and sequential order of cumulative mutations acquired under selection pressure.
 
 ## Immediate Research Directions
 

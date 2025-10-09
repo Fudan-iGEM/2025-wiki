@@ -18,7 +18,7 @@
         ref="titleImageRef"
         class="title-image"
         :src="titleSrc"
-        alt="DR. sTraTeGY title"
+        alt="DR.sTraTeGY title"
       />
       <div ref="subtitleWrapperRef" class="subtitle">
         <TrueFocus
