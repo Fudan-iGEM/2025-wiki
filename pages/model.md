@@ -628,7 +628,7 @@ Objective: To redesign the model using an AI-augmented framework that leverages 
   - The corrected inheritance logic was validated, as daughter cells showed the expected timing signal that was distinct from the mother cell's baseline.
 
 - **Learn (2025.10):**
-  The convergence between our [AI-augmented model predictions](#highlights — a-new-paradigm-for-synthetic-biology-in-the-ai-era) and the [experimental outcomes](/results/) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
+  The convergence between our [AI-augmented model predictions](#highlights-—-a-new-paradigm-for-synthetic-biology-in-the-ai-era) and the [experimental outcomes](/results/) demonstrated the power of "Design" phase. This approach minimized the traditional DBTL iterations, as the parameters defined in silico proved to be functionally accurate in vivo. It validated that integrating mechanistic modeling with AI reasoning can dramatically increase pre-experimental confidence and serve as a blueprint for first-attempt success in synthetic biology.
 
 ## How to Use our Model?
 
