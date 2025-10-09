@@ -1085,7 +1085,7 @@ Organizers: Huizhen Du，Yue Yue
 The Torch Plan is an innovative educational initiative designed to bridge synthetic biology and teacher education. By collaborating with future educators, we transform complex iGEM research topics into engaging, child-friendly learning materials, promoting sustainable science communication and achieving the educational goals of *Learning by Producing*.This initiative creates a collaborative platform where iGEM team members and education students combine their expertise. Through structured workshops and co-creation sessions, we transform complex scientific concepts into engaging educational content tailored for children aged 5-10.
 
 <div style="text-align: center;" id="fig34">
-   <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/poster-torch-plan.webp" alt="Event invitation poster" style="width:50%;" />
+   <img src="https://static.igem.wiki/teams/5643/pageimage/education/activities/producing/poster-torch-plan.avif" alt="Event invitation poster" style="width:50%;" />
     <div>
         <span style="color:gray">Figure 34. The invitation poster of Torch plan</span>
         <br><br>
