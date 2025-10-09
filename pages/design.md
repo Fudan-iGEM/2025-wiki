@@ -196,7 +196,7 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 
 To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (G/C&rarr;A/T), the most common mutation type in *S. cerevisiae*[^20].
 
-To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters with seven of our EMS-optimized fluorescent proteins (the sequences of these proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our [Software Tool](/software/) page
+To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters with seven of our EMSfp (the sequences of these fluorescent proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our [Software Tool](/software/) page
 for details). Three of the four promoters were specifically chosen to capture a range of expression dynamics under EMS mutagenesis[^21]. Meanwhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6][^23].
 
 We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by flow cytometer analysis and selected the combination with the most significant change in brightness and named it [the TU Recorder](https://registry.igem.org/parts/bba-2525t0phy).
