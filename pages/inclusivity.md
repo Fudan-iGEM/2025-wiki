@@ -29,8 +29,8 @@ description: Through intersectional practices, we build an inclusive scientific 
 
   <div class="section">
     <div class="section-title"><strong>Have you noticed that in most science projects, researchers lead—while patients only participate? -- That's where our reflection began.</strong></div>
-      <p>When inclusion becomes one-way, roles reduce diversity: scientist and patient, giver and receiver.  Such lines, though subtle, keep many voices at the margins of science.And we wanted to make a difference.</br>
-Through an intersectional lens, we found shared needs where divisions once stood.  By inviting diverse stakeholders to co-design, we began building shared agency.</br>
+      <p>When inclusion becomes one-way, roles reduce diversity: scientist and patient, giver and receiver.  Such lines, though subtle, keep many voices at the margins of science.And we wanted to make a difference.<br>
+Through an intersectional lens, we found shared needs where divisions once stood.  By inviting diverse stakeholders to co-design, we began building shared agency.<br>
 <strong>Intersectional Echoes</strong>, to us, is not a checklist but a way of questioning—
 Not just “How can we help marginalized groups in science” but “How can participation itself create change?”</p>
   </div>
