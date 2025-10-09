@@ -77,7 +77,7 @@ To test this idea, we measured the settling rates of yeast at different passages
 As microscopic images of fixed yeast cells fail to capture the real-time, authentic dynamics of Grape Yeast branching, we employed [live-cell imaging](/experiments/#yeast-live-cell-imaging-in-agarose) over a 3-hour span to track the yeast growth process.
 
 <div style="text-align:center;" id="fig2">
-  <img src="https://gitlab.igem.org/2025/fudan/-/raw/main/video/microscopy.webp?ref_type=heads" style="width:100%"><br>
+  <img src="https://gitlab.igem.org/2025/fudan/-/raw/main/microscopy.webp?ref_type=heads" style="width:100%"><br>
   <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif" style="width:100%">
   <div><span style="text-align:left; margin:0; color:gray;">Figure 3. Live-cell imaging of Grape Yeast.
     <br>
