@@ -12,7 +12,7 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/design/design-headmap.w
 description: On this page, we introduce <em>DR.&nbsp;sTraTeGY</em>, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
 ---
 
-<script setup>
+<script setup lang="ts">
 import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualization.vue'
 </script>
 
@@ -70,13 +70,13 @@ The earliest description of multicellularity in yeast was reported by Ratcliff e
 
 Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the *ACE2* gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.[^9]
 
-To ensure the stability of the introduced genes in our chassis, we integrate the following modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on only homologous recombination without introducing additional CRISPR/Cas9 (which might increase genome integration efficient). This approach was adapted from the yeast modular DNA assembly methods described by Lee et al.[^6].
+To improve the [safety](/safety/#genomic-integration-over-plasmids) of our chassis, we integrate the following modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on only homologous recombination without introducing additional CRISPR/Cas9 (which might increase genome integration efficient). This approach was adapted from the yeast modular DNA assembly methods described by Lee et al.[^6].
 
 #### *ACE2* Deletion
 
 *ACE2* encodes a transcription factor that, when disrupted, prevents mother-daughter cell separation after budding[^8], leading to the formation of a multicellular yeast system. 
 
-To validate the feasibility of handling multicellular yeast, we first used the *ACE2&Delta;* Y55 strain (gift from [Prof. Ratcliff](http://snowflakeyeastlab.com/), a diploid yeast). We observed the formation of multicellular clusters, clearly visualized through [cell wall staining](/results/#fig1) under a fluoresence microscope.
+To validate the feasibility of handling multicellular yeast, we first used the *ACE2&Delta;* Y55 strain (a gift from [Prof. Ratcliff](http://snowflakeyeastlab.com/), a diploid yeast). We observed the formation of multicellular clusters, clearly visualized through [cell wall staining](/results/#fig1) under a fluoresence microscope.
 
 
 ### Module 2 — Response to External Signal
@@ -94,19 +94,21 @@ Collectively, these two modifications transform the Grape Yeast into more than a
 
 Sensing and responding to environmental cues is essential for fungal adaptation and for enabling advanced synthetic regulation. In this module, we extended the native signal transduction network to create a versatile interface that the community can later use to detect signals from other organisms or the environment. Given that G-protein coupled receptors (GPCRs) are among the most frequent drug targets in humans, they are particularly physiologically relevant targets for synthetic biology.
 
-Based on previous studies (Bean et al., 2022)[^11], we engineered yeast to activate to their native pheromone response pathway (PRP) via a heterologous GPCR, thereby triggering a MAPK signaling cascade and enhancing the expression of Ste12-regulated genes([Figure 3](#fig3)).
+Based on previous studies (Bean et al., 2022)[^11], we engineered yeast to activate to their native pheromone response pathway (PRP) via a heterologous GPCR (HsDOR), thereby triggering a MAPK signaling cascade and enhancing the expression of Ste12-regulated genes([Figure 3](#fig3)).
 
-While a complete modification of the GPCR system would ideally require the knockout of a series of genes such as Ste2 to restrict native GPCR expression, due to the time constraints of the iGEM competition, we focused on the most critical modifications: We replaced *ACE2* with the human &delta; opioid receptor (*HsDOR*, BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera (BBa_254K9906) in which five key residues were replaced with those from Gi&alpha; to ensure functional heterologous coupling.
+> The native yeast GPCR signaling pathway, includes the receptor (*STE2*), G&alpha; (*GPA1*), G&beta; (*STE4*), G&gamma; (*STE18*), and pheromone responsive transcription factor (*STE12*) genes. Upon release of the G&beta;&gamma; dimer from G&alpha; downstream signaling continues through interaction with Ste5 and recruitment of a MAPK cascade (Ste11, Ste7 and Fus3 respectively).[^98]
+
+While a complete modification of the GPCR system would ideally require the knockout of a series of genes such as Ste2 to restrict native GPCR expression[^98], due to the time constraints of the iGEM competition, we focused on the most critical modifications: We replaced *ACE2* with the translational unit of human &delta; opioid receptor (*HsDOR*, BBa_256S6J1M) and coupled it to the PRP via a Gpa1 chimera (BBa_254K9906) in which five key residues were replaced with those from Gi&alpha; to ensure functional heterologous coupling.
 
 <div style="text-align: center;" id="fig3">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/gpcr1007.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 3. Mechanism of external signal response.<br>We rewired the yeast pheromone response pathway by replacing ACE2 with human δ opioid receptor (HsDOR) and coupling it via a Gpa1–Giα3 chimera, enabling MAPK activation and cloud be validated by the agonist <a href="https://www.sigmaaldrich.com/HK/en/product/sigma/s2812" target=_blank>SNC80</a>.</span>
+        <span style="color:gray">Figure 3. Mechanism of external signal response.<br>We rewired the yeast pheromone response pathway by replacing ACE2 with the translational unit of human &delta; opioid receptor (HsDOR) and coupling it via a Gpa1–Gi&alpha;3 chimera, enabling MAPK activation and cloud be validated by the agonist <a href="https://www.sigmaaldrich.com/HK/en/product/sigma/s2812" target=_blank>SNC80</a>.</span>
         <br><br>
     </div>
 </div>
 
-We validated the activation of this signaling pathway using the small-molecule &delta;-opioid receptor agonist [SNC80](https://www.sigmaaldrich.com/HK/en/product/sigma/s2812)[^11]. Upon ligand stimulation, the system triggered the canonical MAPK cascade and activated the Ste12 transcription factor, which in turn regulates downstream mating-responsive genes. To confirm pathway activation, we quantified the mRNA levels of FUS3 and STE2 by qPCR [^25] ([Table 1](#table1)), as both genes are established Ste12 transcriptional targets whose upregulation serves as a direct readout of pathway activity.
+We validated the activation of this signaling pathway using the small-molecule &delta; opioid receptor agonist [SNC80](https://www.sigmaaldrich.com/HK/en/product/sigma/s2812)[^11]. Upon ligand stimulation, the system triggered the canonical MAPK cascade and activated the Ste12 transcription factor, which in turn regulates downstream mating-responsive genes. To confirm pathway activation, we quantified the mRNA levels of FUS3 and STE2 by qPCR [^25] ([Table 1](#table1)), as both genes are established Ste12 transcriptional targets whose upregulation serves as a direct readout of pathway activity.
 
 <div style="text-align: center;" id="table1">
         <span style="color:gray">Table 1. qPCR primers for validating HsDOR's activation</span>
@@ -122,11 +124,11 @@ We validated the activation of this signaling pathway using the small-molecule &
 
 #### 2) Yeast Membrane Engineering
 
-The ergosterol biosynthesis pathway is crucial, with *ERG6* and *ERG5* defining membrane sterol composition and influencing the expression and functionality of heterologously expressed human GPCRs. Crucially, elevated ergosterol levels disrupt the proper integration and function of GPCRs in the yeast membrane. Consequently, deleting *ERG5/6* and redirecting sterol flux toward cholesterol significantly enhances receptor efficiency[^11]. 
+The ergosterol biosynthesis pathway is crucial for yeast membrane, with *ERG6* and *ERG5* defining membrane sterol composition and influencing the expression and functionality of heterologously expressed human GPCRs. It has been shown that elevated ergosterol levels disrupt the proper integration and function of human GPCRs in the yeast membrane. Consequently, deleting *ERG5/6* and redirecting sterol flux toward cholesterol significantly enhances receptor efficiency[^11]. 
 
-To leverage this for our application, we deleted *ERG5/6* and added pREV1-driven (BBa_K3748015) zebrafish genes (*DHCR7/24*: BBa_25RCU5CB and BBa_25FOVO4C) through homologous recombination. This modification blocks ergosterol production and redirects zymosterol to cholesterol, which is necessary for the human receptor to function properly[^11]. We confirmed this modification using cholesterol staining.
+To leverage this for our application, we deleted *ERG5/6* and replaced with translational units of pREV1-driven (BBa_K3748015) zebrafish genes (*DHCR7/24*: BBa_25RCU5CB and BBa_25FOVO4C) through homologous recombination. This modification blocks ergosterol production and redirects zymosterol to cholesterol, which is necessary for the human receptor to function properly[^11]. This modification could be easily verified using cholesterol staining.
 
-Furthermore, the resulting reduced ergosterol content mimics a phenotype associated with antifungal drug resistance[^12], offering a platform to investigate the impact of membrane composition on drug sensitivity and to identify non-ergosterol-related targets.
+Reducing ergosterol content in *Candida* yeast membrane mimics its acquiring antifungal drug resistance[^12], offering a platform to investigate the impact of membrane composition on drug sensitivity and to identify non-ergosterol-related targets.
 
 
 ### Module 3 — Controlling Individual Diversity
@@ -145,7 +147,7 @@ First, we introduced the meiosis-inducing gene *IME1* (BBa_250R9OVR) under the c
     </div>
 </div>
 
-Previous research has shown that during gravity-based selection, the Y55 (*ACE2* &Delta; was achieved by replace ACE2 with KanMX) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 selection pressure. To isolate the specific effects of the drugs, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
+Previous research has shown that during gravity-based selection, the Y55 (*ACE2&Delta;* was achieved by replace ACE2 with KanMX, a gift from [Prof. Ratcliff](http://snowflakeyeastlab.com/)) strain undergoes a ploidy shift from diploid (2n) to tetraploid (4n)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 (a common aminoglycoside antibiotic used as a selectable marker in eukaryotic cell culture) selection pressure. To isolate the specific effects of the drugs, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
 
 
 ### Module 4 — Controlling Cluster Size
@@ -173,7 +175,7 @@ Our project features two simple yet powerful visualization modules designed to t
 
 Microscopic observation alone cannot reveal the chronological relationship between two neighboring cells. To overcome this limitation, we developed the Timer module, which visually records a single cell's life cycle in real-time. 
 
-The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro, BBa_25VHXKNL), a modified mCherry fluorescent protein (BBa_25TQG9WZ), the Ash1 3'UTR, and the ScENO1 terminator (BBa_K2753051).
+The TU Timer (BBa_25AT6YR4) consists of an AI-optimized Ash1 promoter (Ash1 AIpro, BBa_25VHXKNL), a modified mCherry fluorescent protein (BBa_25TQG9WZ) whose color emission changes blue &rarr; red predictably over time, the Ash1 3'UTR, and the ScENO1 terminator (BBa_K2753051).
 
 The Timer matures in daughter cells based on model-guided selection of the Ash1 AIpro promoter (see [Model](/model/) page), and together with the modified mCherry (see [Improved Parts](/improve/) page), enables visualization of the cell lineage.
 
@@ -195,7 +197,7 @@ To intuitively record the pressure at different chromosomal loci during evolutio
 To impose stress, we applied ethyl methanesulfonate (EMS) mutagenesis to yeast, which predominantly induces single-nucleotide polymorphisms (G/C&rarr;A/T), the most common mutation type in *S. cerevisiae*[^20].
 
 To identify the optimal reporter configuration, we constructed a combinatorial library, testing four distinct promoters with seven of our EMS-optimized fluorescent proteins (the sequences of these proteins were designed to be EMS-resistant to eliminate the direct impact of EMS on their fluorescence; see our [Software Tool](/software/) page
-for details). Three of the four promoters were specifically chosen to capture a range of expression dynamics under EMS mutagenesis[^21]. Menawhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6][^23].
+for details). Three of the four promoters were specifically chosen to capture a range of expression dynamics under EMS mutagenesis[^21]. Meanwhile, to isolate the effects of the promoter-reporter interaction, a single, consistent terminator was used across all constructs, as its contribution to expression variance was presumed to be minor compared to that of the promoters[^6][^23].
 
 We screened 28 combinations of four promoters and seven optimized fluorescent proteins after EMS mutagenesis by flow cytometer analysis and selected the combination with the most significant change in brightness and named it [the TU Recorder](https://registry.igem.org/parts/bba-2525t0phy).
 
@@ -370,3 +372,5 @@ Throughout this project, we fully embraced the "*dry-lab guiding wet-lab*" appro
 [^27]: Sorida, M., & Bonasio, R. (2023). An efficient cloning method to expand vector and restriction site compatibility of Golden Gate Assembly. *Cell reports methods*, *3*(8), 100564. DOI: 10.1016/j.crmeth.2023.100564 
 
 [^99]: Ando, R., Shimozono, S., Ago, H., Takagi, M., Sugiyama, M., Kurokawa, H., Hirano, M., Niino, Y., Ueno, G., Ishidate, F., Fujiwara, T., Okada, Y., Yamamoto, M., & Miyawaki, A. (2024). StayGold variants for molecular fusion and membrane-targeting applications. *Nature methods*, *21*(4), 648–656. DOI: 10.1038/s41592-023-02085-6
+
+[^98]: Shaw, W. M., Yamauchi, H., Mead, J., Gowers, G. F., Bell, D. J., Öling, D., Larsson, N., Wigglesworth, M., Ladds, G., & Ellis, T. (2019). Engineering a Model Cell for Rational Tuning of GPCR Signaling. *Cell*, *177*(3), 782–796.e27. DOI: 10.1016/j.cell.2019.02.023

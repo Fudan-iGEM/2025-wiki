@@ -26,7 +26,7 @@
           sentence="a Drug Resistance mutation Tracking Technology based on Grape Yeast"
           :blurAmount="0"
           :animationDuration="0.8"
-          :pauseBetweenAnimations="1.2"
+          :pauseBetweenAnimations="1.3"
           :skipWords="['a', 'mutation', 'based', 'on']"
         />
       </div>

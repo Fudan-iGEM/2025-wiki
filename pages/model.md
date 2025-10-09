@@ -12,6 +12,10 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/model/heroimage-model.w
 description: On this page, we describe a model of dynamic protein Timer in yeast, with design recommendations independently validated by AI-assisted reasoning, before any wet-lab experiment.
 ---
 
+> Try YeastVerse Visualization at https://yeastverse-99735e.igem.wiki/
+>
+> Source code at https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse
+
 ## Highlights — A New Paradigm for Synthetic Biology in the AI Era
 
 Traditional synthetic biology relies on iterative Design–Build–Test–Learn (DBTL) cycles, where modeling informs initial designs, but multiple rounds of wet-lab experimentation are often needed to refine parameters and achieve functional outcomes. While effective, this process can be time-consuming and resource-intensive, especially when initial model predictions lack sufficient biological fidelity.
@@ -495,9 +499,13 @@ Therefore, choosing the 1x medium promoter is a reasonable decision that balance
 
 To enhance the interpretability and accessibility of our modeling framework, we developed two interactive 3D visualization tools as part of the YeastVerse virtual experiment platform. These tools simulate key aspects of the multicellular yeast chassis and fluorescent timer dynamics, providing intuitive insights into system behavior under various parameters. Built using React.js and Three.js, they allow users to explore spatial growth patterns and temporal fluorescence changes in real-time, bridging abstract mathematical predictions with visual, biologically grounded representations.
 
+> YeastVerse Visualization at https://yeastverse-99735e.igem.wiki/
+>
+> Source code at https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse
+
 ### 3D Yeast Growth Simulation
 
-This module simulates the three-dimensional growth of the multicellular "Grape Yeast" cluster, modeling cell division, elongation, and cluster formation under controlled environmental conditions (e.g. temperature at 30°C, YPD medium). Starting from a single ancestral cell, the simulation applies deterministic branching rules inspired by Pascal’s triangle developmental pattern[^9], incorporating asynchronous division to generate geometrically defined, clonal clusters. Users can toggle between "Grape" and "normal" yeast types, adjusting simulation speed (0.5–3×) to observe morphological transitions and cluster expansion. This interactive visualization gives us a more graphic understanding of "Grape Yeast's'' growth, thereby guiding the design of our multicellular chassis to enable precise, real-time tracking of drug resistance evolution in the [DR.&nbsp;sTraTeGY platform](/design/).
+This module simulates the three-dimensional growth of the multicellular "Grape Yeast" cluster, modeling cell division, elongation, and cluster formation under controlled environmental conditions (e.g. temperature at 30°C, YPD medium). Starting from a single ancestral cell, the simulation applies deterministic branching rules inspired by Pascal’s triangle developmental pattern[^9], incorporating asynchronous division to generate geometrically defined, clonal clusters. Users can toggle between "Grape" and "normal" yeast types, adjusting simulation speed (0.5–3×) to observe morphological transitions and cluster expansion. This interactive visualization gives us a more graphic understanding of "Grape Yeast's'' growth, thereby guiding the design of our multicellular chassis to enable precise, real-time tracking of drug resistance evolution in the [*DR.&nbsp;sTraTeGY* platform](/design/).
 
 <div style="text-align: center;">
         <span style="color:gray">Table 4. Parameters (local variables) for 3D Yeast Growth Simulation</span>

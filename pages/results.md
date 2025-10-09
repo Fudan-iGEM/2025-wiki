@@ -23,40 +23,39 @@ We first confirmed the multicellular morphology of the *ACE2*-knockout grape yea
 
 To determine the temporal sequence of growth and identify mother–daughter relationships, the culture was resumed for an additional 24 h after staining. Under bright-field illumination, several cells lacked detectable fluorescence (orange arrows), demonstrating that the fluorophore had not yet incorporated into these nascent cell structures.
 
-<div>
-  <p style="text-align:center; margin:0; color:gray;">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp" style="width:100%">  
-    <small>Figure 1. Chitin Imaging of 2x and 4x Grape Yeast</small>
-  </p>
-  <p style="text-align:left; margin:0; color:gray;">
-  <small>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.</small>
-  </p>
+<div style="text-align:center;" id="fig1">
+  <img src="https://static.igem.wiki/teams/5643/pageimage/results/chitin-imaging-2.webp" style="width:100%">  
+  <div><span style="text-align:left; margin:0; color:gray;">Figure 1. Chitin Imaging of 2n and 4n Grape Yeast.
+    <br>
+    <small>Morphological comparison of diploid and tetraploid yeast under bright-field (BF) and fluorescence (FL) microscopy. Fix: cells were fixed and stained immediately before imaging; Fix-Grow: cells were stained and then allowed to grow for an additional 24 hours prior to fixation and imaging. Blue arrows: regions that appear as cell junctions or buds in the bright-field channel but lack corresponding fluorescence signals; Orange arrows: newly formed cells (buds) that emerged after the staining procedure and display minimal or no fluorescence signal. Scale bar = 10 &mu;m.</small>
+  </span></div>
 </div>
+
+@@@@ chitin of single yeast
 
 However, a subset of cells in the Fix group were found outside the focal plane during image acquisition, making their fluorescence undetectable and potentially confounding the identification of newborn cells in the Fix-and-Grow cohort. To overcome this limitation, we engineered a brighter and more definitive reporter [TU Timer](/part-collection/#fluorescent-timer) (BBa_25AT6YR4) to resolve the temporal relationships between adjacent cells.
 
 
 ### Settling Selection Leads to Ploidy Abnormalities in Tetraploid Yeast
 
-It is indicated that during gravity-based selection, multicellular yeast undergoes ploidy doubling[^1], which is much similar to the change some pathogenic fungi undergo under the pressure of drug[^2]. Hence, we subjected both diploid (2x) and tetraploid (4x) Grape Yeast under [settling selection](/experiments/#grape-yeast-settling-selection) over successive generations to simulate the ploidy shift experienced by pathogenic fungi under drug-induced stress. We performed Propidium Iodide (PI) staining on the cell nuclei and subsequently acquired fluorescence images. The log-transformed PI fluorescence intensity is known to be linearly correlated with the number of chromosomes[^1].
+It is indicated that during gravity-based selection, multicellular yeast undergoes ploidy doubling[^1], which is much similar to the change some pathogenic fungi undergo under the pressure of drug[^2]. Hence, we subjected both diploid (2n) and tetraploid (4n) Grape Yeast under [settling selection](/experiments/#grape-yeast-settling-selection) over successive generations to simulate the ploidy shift experienced by pathogenic fungi under drug-induced stress. We performed Propidium Iodide (PI) staining on the cell nuclei and subsequently acquired fluorescence images. The log-transformed PI fluorescence intensity is known to be linearly correlated with the number of chromosomes[^1].
 
-While the ploidy of diploid grape yeast remained relatively stable in short time (9 generations), we unexpectedly discovered a distinct abnormality in the ploidy of the tetraploid (4x) strain. As shown in Figure 2A, the blue arrow points to a single cell containing two nuclei—the nucleus on the right appears to be in a state of division—suggesting a higher ploidy state, potentially hexaploid (6x). 
+While the ploidy of diploid grape yeast remained relatively stable in short time (9 generations), we unexpectedly discovered a distinct abnormality in the ploidy of the tetraploid (4n) strain. As shown in Figure 2A, the blue arrow points to a single cell containing two nuclei—the nucleus on the right appears to be in a state of division—suggesting a higher ploidy state, potentially hexaploid (6n). 
 
-Our quantitative statistical data (Figure 2B, C) further supports this observation. The distribution of PI fluorescence intensity for the 4x strain was significantly more dispersed than the 2x strain, and a distinct minor peak corresponding to a putative hexaploid (6x) population was visible in the histogram (Figure 2B).
+Our quantitative statistical data (Figure 2B, C) further supports this observation. The distribution of PI fluorescence intensity for the 4n strain was significantly more dispersed than the 2n strain, and a distinct minor peak corresponding to a putative hexaploid (6n) population was visible in the histogram (Figure 2B).
 
 These results collectively suggest that, under the pressure of settling selection, higher-ploidy strains of *S. cerevisiae* possess a comparatively less stable genome and exhibit a pronounced tendency toward increased ploidy. We hypothesize that the underlying cause involves a failure in the ploidy sensing and maintenance machinery. This defect may lead to chromosome missegregation events, resulting in an unstable state where the cell is unable to correctly regulate its division cycle based on its current chromosome complement.
 
-<div>
-  <p style="text-align:center; margin:0; color:gray;">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/results/ploid-abnormality-2.webp">  
-    <small>Figure 2. Microscopy images and statistical analysis of yeast ploidy changes.</small>
-  </p>
-  <p style="text-align:left; margin:0; color:gray;">
-    <small>(A) Merged bright-field and fluorescence images of PI-stained diploid (left) and tetraploid (right) yeast after 9 generations of settling selection. Blue arrow: a single cell containing two nuclei, suggestive of an abnormal karyotype. Scale bar = 10 &mu;m. </br>
- (B) Population-level distribution of fluorescence intensity in diploid and tetraploid yeast. </br>
- (C) Fluorescence intensity distribution across individual biological replicates of diploid (n = 7) and tetraploid (n = 9) yeast samples. </small>
-  </p>
+<div style="text-align:center;" id="fig2">
+  <img src="https://static.igem.wiki/teams/5643/pageimage/results/ploid-abnormality-2.webp" style="width:100%">  
+  <div><span style="text-align:left; margin:0; color:gray;">Figure 2. Microscopy images and statistical analysis of yeast ploidy changes.
+    <br>
+    <small>(A) Merged bright-field and fluorescence images of PI-stained diploid (left) and tetraploid (right) yeast after 9 generations of settling selection. Blue arrow: a single cell containing two nuclei, suggestive of an abnormal karyotype. Scale bar = 10 &mu;m. <br>
+(B) Population-level distribution of fluorescence intensity in diploid and tetraploid yeast. <br>
+(C) Fluorescence intensity distribution across individual biological replicates of diploid (n = 7) and tetraploid (n = 9) yeast samples.</small>
+  </span></div>
 </div>
+
 
 ### Polyploid Yeast Exhibits a Faster Sedimentation Rate
 
@@ -64,12 +63,11 @@ Throughout the settling selection experiment, we noticed a gradual increase in y
 
 To test this idea, we measured the settling rates of yeast at different passages (d15 vs. d45) and ploidy levels (2× vs. 4×). Consistent with our expectation, the 4× strain in d45 settled the fastest.
 
-<div style="text-align: center;" id="fig1">
+<div style="text-align: center;" id="vid1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/results/od5.webp" style="width:80%">
     <div>
-        <small>
         <span style="color:gray">Video 1. Comparison of sedimentation rate OD600 values for four strains.</span>
-        <br><br></small>
+        <br><br>
     </div>
 </div>
 
@@ -78,13 +76,15 @@ To test this idea, we measured the settling rates of yeast at different passages
 
 As microscopic images of fixed yeast cells fail to capture the real-time, authentic dynamics of Grape Yeast branching, we employed [live-cell imaging](/experiments/#yeast-live-cell-imaging-in-agarose) over a 3-hour span to track the yeast growth process.
 
-  <p style="text-align:center; margin:0; color:gray;">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif" style="width:100%">  
-    <small>Figure 3. Live-cell imaging of Grape Yeast.</small>
-  </p>
-  <p style="text-align:left; margin:0; color:gray;">
-    <small>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3h.</small>
-  </p>
+<div style="text-align:center;" id="fig2">
+  <img src="https://static.igem.wiki/teams/5643/pageimage/results/pos5-1-montage.avif" style="width:100%">  
+  <div><span style="text-align:left; margin:0; color:gray;">Figure 3. Live-cell imaging of Grape Yeast.
+    <br>
+    <small>Grape Yeast was embedded in 0.4% low-melting agarose in SC media and presented on a glass-botton dish. Live-cell growth was imaged using a microscope at a maintained temperature of 30°C. Red arrows indicate the buddiing process of Grape Yeast in 3 h.</small>
+  </span></div>
+</div>
+
+@@@@ good animation
 
 
 ## Visualize the Evolution: The Timer & Recorder Extension
@@ -92,6 +92,7 @@ As microscopic images of fixed yeast cells fail to capture the real-time, authen
 Having obtained the multicellular [Grape Yeast](/design/) and gained familiarity with the its properties, we initiated an evolutionary tracing study.
 
 In this section, we evaluated various combination of promoters and fluorescent protein from different perspectives, including [fluoresence imaging](/measurement/#microscopy-qualitative-observation-of-signal-variation), [flow cytometry](/measurement/#flow-cytometry-data-processing-and-composite-score-calculating) and [deep sequencing](/measurement/#deep-sequencing-molecular-validation-of-the-mechanism). Through this thorough assessment, we eventually come up with a optimized fluorescent reporter, pSTM1 driven EMSfp499 (BBa_255T0PHY), that can function effectively under stress conditions. For more details, please refer to our [Measurement](/measurement/) page.
+
 
 ## What we learn
 
@@ -108,6 +109,7 @@ Future teams may easily sort out grape yeast based on this characteristic.
 - The live-cell images give us confidence to track mother-daughter sequence utilizing our [TU timer](/part-collection/#fluorescent-timer).
 - An optimized fluorescent reporter, [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) was developed to effectively trace the evolutionary dynamics of the Grape Yeast under selective pressure. 
 - On the next stage of our project, we will integrate [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) into sixteen chromosomes of yeast to find out the most unstable chromosome and even gene loci. This work would lay the foundation for advancing the understanding of fungal drug resistance mechanisms as well as the development of fungal drug targets.
+
 
 ## Reference
 

@@ -25,7 +25,7 @@ mCherry consists of 236 amino acids. According to previous studies, the M23V / E
 
 <div style="text-align: center;" id="fig1">    <img src="https://static.igem.wiki/teams/5643/pageimage/improved-part/sequence-compressed.webp" style="width:80%">    <div>        <span style="color:gray">Figure 1. Sequence alignment of mCherry and modified mCherry</span>        <br><br>    </div></div>
 
-Modified mCherry exhibits a color transition from blue (excitation/emission peaks: 403/466 nm) to red (excitation/emission peaks: 583/606 nm). This color change primarily results from the oxidation of the Cα2–Cβ2 bond in Tyr72. The roles of other key residues are summarized below[^2]:
+Modified mCherry exhibits a color transition from blue (excitation/emission peaks: 403/466 nm) to red (excitation/emission peaks: 583/606 nm). This color change primarily results from the oxidation of the C&alpha;2–C&beta;2 bond in Tyr72. The roles of other key residues are summarized below[^2]:
 
 <div style="text-align: center;">
 

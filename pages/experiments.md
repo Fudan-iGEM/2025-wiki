@@ -336,7 +336,7 @@ As described in Tong et al. (2025)[^6], briefly:
 
 ## Flow Cytometry of Single Cell Yeast
 
-Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/#recorder) transformed into BY4741 or BY4742.
+Flow cytometry is performed to detect the fluorescence of [TU recorder](/design/#recorder) transformed into BY4741 or BY4742 (unicellular yeast). We did not use chitinase to treat multicellular yeast for this analysis.
 
 1. Pick strains into 3 mL synthetic complete (SC) medium and grow them at 30°C with 250 rpm shaking overnight.
 2. Take 2 mL cultures into a 2-mL tube and pellet the cells by spinning at 8,000 *g* for 1 min.

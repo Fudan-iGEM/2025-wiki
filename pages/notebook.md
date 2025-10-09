@@ -27,7 +27,7 @@ The training was structured into three components:
     </div>
 </div>
 
-Through these training programs, we ensured seamless transfer of knowledge and experience between alumni and new members, maintained team continuity, and fostered team growth. We also actively sought valuable feedback from faculty, inviting their suggestions on our brainstorming initiatives. Ultimately, inspired by the insights of alumnus [Kai Tong](https://www.scopus.com/authid/detail.uri?authorId=57224397364) and under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading figure in experimental evolution, we selected multicellular yeast as our chassis organism and developed the initial concept for our subsequent project, [DR.&nbsp;sTraTeGY](/design/) (Drug Resistance mutation Tracking Technology based on Grape Yeast).
+Through these training programs, we ensured seamless transfer of knowledge and experience between alumni and new members, maintained team continuity, and fostered team growth. We also actively sought valuable feedback from faculty, inviting their suggestions on our brainstorming initiatives. Ultimately, inspired by the insights of alumnus [Kai Tong](https://www.scopus.com/authid/detail.uri?authorId=57224397364) and under the mentorship of Professor [Ratcliff](https://ratclifflab.biosci.gatech.edu/), a leading figure in experimental evolution, we selected multicellular yeast as our chassis organism and developed the initial concept for our subsequent project, [*DR.&nbsp;sTraTeGY*](/design/) (Drug Resistance mutation Tracking Technology based on Grape Yeast).
 
 <div style="text-align: center;" id="fig2">
     <img src="https://static.igem.wiki/teams/5643/pageimage/notebook/january-groupphoto.webp" style="width:80%">
@@ -128,7 +128,7 @@ We also jointly produced the children's [picture book "My Microbe Friends"](/edu
 
 ## July
 
-On July 7th, we named our multicellular yeast "[Grape Yeast](/design/)" based on its morphological characteristics and officially designated the project as "[DR.&nbsp;sTraTeGY](/description/)". During the summer vacation, we conducted a series of wet-lab experiments including yeast culturing, competent cell preparation, plasmid extraction, and [NotI](https://www.neb.com/en/products/r3189-noti-hf) enzyme digestion followed by yeast transformation.
+On July 7th, we named our multicellular yeast "[Grape Yeast](/design/)" based on its morphological characteristics and officially designated the project as "[*DR.&nbsp;sTraTeGY*](/description/)". During the summer vacation, we conducted a series of wet-lab experiments including yeast culturing, competent cell preparation, plasmid extraction, and [NotI](https://www.neb.com/en/products/r3189-noti-hf) enzyme digestion followed by yeast transformation.
 
 Furthermore, we collaborated with [USTC](https://2025.igem.wiki/ustc/), [Nanjing-China](https://2025.igem.wiki/nanjing-china/), [SJTU-BioX-Shanghai](https://2025.igem.wiki/sjtu-biox-shanghai/), and [ZJU-China](https://2025.igem.wiki/zju-china/) to organize educational initiatives, producing instructional videos on microbial painting. Throughout mid-to-late July, we conducted multiple [microbial science outreach activities](/education.html#interactive-science-workshop) in various communities, successfully inspiring children's interest in scientific exploration.
 
