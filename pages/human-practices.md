@@ -52,7 +52,7 @@ This reflection naturally led us to examine our own project. We asked: how can w
 <div style="text-align: center;"> 
   <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%;">
   <div>
-    <span style="color:gray">Letter exchange with a child</small><br><br>
+    <small style="color:gray">Letter exchange with a child</small><br><br>
   </div>
 </div>
 
