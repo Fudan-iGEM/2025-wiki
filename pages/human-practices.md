@@ -19,7 +19,7 @@ description: On this page, we show how Human Practices guided our project to be 
 
 Our Integrated Human Practices journey began with a simple question: *Is technology inherently good or bad?* Guided by this reflection, we built our project around responsibility, inclusivity, and real-world relevance. Through dialogues with scientists, clinicians, and policymakers, we shaped a multicellular yeast platform inspired by the “AI Yeast System” concept to address antifungal resistance. From early conceptual debates to clinical fieldwork and ethical reflections, each encounter refined our design and ensured our work remained scientifically sound and socially conscious — a project truly created for humanity, not just by technology.
 
-### **Integrated Human Practices: Designing for Responsibility**
+### Integrated Human Practices: Designing for Responsibility
 
 > “Our technology has exceeded our humanity.”
 > 

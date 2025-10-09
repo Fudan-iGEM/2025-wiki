@@ -214,7 +214,7 @@ This insight encouraged us: although the division between *EB patients* and *non
 
 ---
 
-#### **Details**
+#### Details
 
 - **Art as a medium**
 
