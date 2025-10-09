@@ -14,24 +14,18 @@ layout: igem
 heroImage: https://static.igem.wiki/teams/5643/header/ihp.avif
 description: On this page, we show how Human Practices guided our project to be both scientifically innovative and socially responsible.
 ---
-## Overview
-
-Our Integrated Human Practices journey began with a simple question: *Is technology inherently good or bad?*
- Guided by this reflection, we built our project around responsibility, inclusivity, and real-world relevance. Through dialogues with scientists, clinicians, and policymakers, we shaped a multicellular yeast platform inspired by the “AI Yeast System” concept to address antifungal resistance. From early conceptual debates to clinical fieldwork and ethical reflections, each encounter refined our design and ensured our work remained scientifically sound and socially conscious — a project truly created for humanity, not just by technology.
-
-### **Integrated Human Practices: Designing for Responsibility**
 
 ## Overview
 
 Our Integrated Human Practices journey began with a simple question: *Is technology inherently good or bad?* Guided by this reflection, we built our project around responsibility, inclusivity, and real-world relevance. Through dialogues with scientists, clinicians, and policymakers, we shaped a multicellular yeast platform inspired by the “AI Yeast System” concept to address antifungal resistance. From early conceptual debates to clinical fieldwork and ethical reflections, each encounter refined our design and ensured our work remained scientifically sound and socially conscious — a project truly created for humanity, not just by technology.
+
+### **Integrated Human Practices: Designing for Responsibility**
 
 > “Our technology has exceeded our humanity.”
 > 
 > -- Albert Einstein
 
 These words are not just a warning — they are a mirror. This qote became the seed of our Human Practices journey. It made us pause and reflect—not only on what we could create, but on why and for whom we were creating it.
-
-Through months of dialogue—with scientists, clinicians, policymakers, and designers—we sought to weave inclusivity, reflection, and real-world responsiveness into every part of our work. What follows is the story of how each encounter reshaped our understanding of what it means to build technology that serves humanity.
 
 Through months of dialogue—with scientists, clinicians, policymakers, and designers—we sought to weave inclusivity, reflection, and real-world responsiveness into every part of our work. What follows is the story of how each encounter reshaped our understanding of what it means to build technology that serves humanity.
 
@@ -51,17 +45,19 @@ The students responded with enthusiasm, sharing their curiosity, challenges, and
 
 > “Is this ‘new’ technology truly beneficial or harmful? Will it make a real difference? Does it genuinely matter to society?”
 
-This simple yet profound doubt prompted us to pause and reflect. Through this activity, we began to **consider whether synthetic biology technologies inherently have “good” or “bad” effects**. For example, the development of antibiotics is a clear technological advancement—but does it serve as a blessing for humanity, or could it also bring unforeseen challenges?
+This simple yet profound doubt prompted us to pause and reflect. Through this activity, we began to **consider whether synthetic biology technologies inherently have “good” or “bad” effects**. For example, the development of antibiotics is a clear technological advancement — but does it serve as a blessing for humanity, or could it also bring unforeseen challenges?
 
 This reflection naturally led us to examine our own project. We asked: how can we ensure that the technologies we develop provide real societal benefits rather than unintended problems? Guided by these questions, we embarked on further exploration and practical efforts, designing our project to not only advance science but also respond meaningfully to human needs and ethical considerations.
 
 <div style="text-align: center;"> 
-<img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%;">
-<div> <p><small style="color: gray">letter exchange with children</small></p> </div> 
+  <img src="https://static.igem.wiki/teams/5643/pageimage/ihp/letters.webp" style="width:80%;">
+  <div>
+    <span style="color:gray">Letter exchange with a child</small><br><br>
+  </div>
 </div>
 
 
-With this philosophical foundation, we turned to the scientific core of our project: **multicellular yeast** as a platform for dynamic screening of antibiotic-resistance targets. Our discussions with experts helped us shape the idea and define its scientific and societal significance.
+With this philosophical foundation, we turned to the scientific core of our project: **multicellular yeast** as a platform for dynamic screening of drug-resistance targets. Our discussions with experts helped us shape the idea and define its scientific and societal significance.
 
 ## From Reflection to Design
 
@@ -77,13 +73,13 @@ His insight inspired our modeling strategy: using simulation-driven design to pr
 
 **Respondent Profile:** Researcher @ Department of Neurobiology, School of Life Sciences, Fudan University; Study neurodegenerative diseases, develop original drug development strategies
 
-![](https://static.igem.wiki/teams/5643/pageimage/ihp/boxun-lu.webp)
+<!-- https://static.igem.wiki/teams/5643/pageimage/ihp/boxun-lu.webp -->
 
 **Key Takeaways:**  Professor Lu suggested that with the rise of large-scale AI models, an exciting direction is to simulate living cells through artificial digital systems — what he called an “AI Yeast System”. Such a concept, he noted, could have transformative implications for biopharmaceutical research and resonated strongly with our project’s vision of simulation-driven design.
 
-His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model](/model/) page). After extensive internal discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are presenting today.
+His insights inspired us profoundly and laid the foundation for our modeling strategy to predict and guide experimental design (see our [Model](/model/) page). After extensive internal discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of drug-resistance targets — forming the initial blueprint of the project we are presenting today.
 
-After extensive discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of antibiotic-resistance targets — forming the initial blueprint of the project we are developing today.  It was here that the concept of *multicellular yeast* as a research platform was born.
+After extensive discussion, we refined our idea and decided to employ *multicellular yeast* as a platform for dynamic screening of drug-resistance targets — forming the initial blueprint of the project we are developing today.  It was here that the concept of *multicellular yeast* as a research platform was born.
 
 ### Discussion with Dr. Hengchi Chen
 
@@ -109,9 +105,9 @@ To deepen our understanding, we continued to seek insights from global researche
 
 **Respondent:** Dr. Willim Ratcliff
 
-**Respondent Profile:** Assistant Professor @ Georgia Institute of Technology, Major transitions in evolution (mainly multicellularity)
+**Respondent Profile:** John C. and Leslie C. Sutherland Professor, School of Biological Sciences @ Georgia Institute of Technology; Study major transitions in evolution (mainly multicellularity)
 
-**Topic:** Re: Students from Fudan University,China want to get involved in the http://snowflakeyeastlab.com/
+**Topic:** Re: Students from Fudan University want to get involved in the http://snowflakeyeastlab.com/
 
 **Key Takeaways:**
 
@@ -119,6 +115,7 @@ To deepen our understanding, we continued to seek insights from global researche
 - The outreach lab organized by Prof. Ratcliff greatly inspired us by demonstrating how even complex scientific concepts developed in laboratories can be simplified and shared with the public, thereby promoting accessibility and ensuring equal opportunities for quality education.
 
 This exchange inspired us to think not only about the scientific novelty of our system but also about how it could serve as a bridge between fundamental research and public engagement.
+
 
 ### Discussion with Prof. Guanghua Huang
 
@@ -171,7 +168,7 @@ After integrating clinical perspectives, we recognized the need to align our exp
 
 **Respondent:** Suzhou Biopharmaceutical Technology Conference Participants
 
-![](https://static.igem.wiki/teams/5643/pageimage/ihp/suzhou-biopharmaceutical-technology-conference.webp)
+![](https://static.igem.wiki/teams/5643/pageimage/ihp/suzhou-biopharmaceutical-technology-conference-new.webp)
 
 **Topic:** Industry Insights and Project Feedback
 
@@ -179,10 +176,11 @@ After integrating clinical perspectives, we recognized the need to align our exp
 
 - Our team participated in the *Synthetic Biology Forum* at the Suzhou Biopharmaceutical Technology Conference, where we explored the latest advancements and learned how industry leaders are leveraging synthetic biology for product development.
 - Discussions and presentations broadened our perspective on the applications of *synthetic biology* in real-world contexts, helping us refine our project concept and align it more closely with industrial needs.
-- By presenting our project—using *Saccharomyces cerevisiae* to track antibiotic resistance targets—we received valuable feedback from professionals in leading biopharmaceutical companies. They shared insights into current R&D pipelines, screening strategies, and future directions in antibiotic resistance research.
+- By presenting our project—using *Saccharomyces cerevisiae* to track drug resistance targets—we received valuable feedback from professionals in leading biopharmaceutical companies. They shared insights into current R&D pipelines, screening strategies, and future directions in drug resistance research.
 - We established connections with several company representatives, enabling us to maintain communication and integrate industrial perspectives into the ongoing evolution of our project.
 
 Following these industrial dialogues, we learned how practical implementation could transform scientific prototypes into viable tools for society.
+
 
 ### Attend Jiangsu-Zhejiang-Shanghai iGEM Regional Meet-up
 
@@ -288,7 +286,7 @@ With a scientifically and ethically grounded foundation, we turned to a new ques
 
 ![](https://static.igem.wiki/teams/5643/pageimage/ihp/experience-sharing-with-bnuzh-china.avif)
 
-**Topic:** About hp project exchange, harvest sharing
+**Topic:** About HP idea exchange, data sharing
 
 **Key Takeaways:**
 
@@ -425,7 +423,7 @@ Through this, we not only improved our AI tool but also deepened our commitment 
 These discussions allowed us to collectively define safety not as a constraint, but as a shared responsibility across disciplines.
 
 
-### Dialogue with Prof.Li Tang
+### Dialogue with Prof. Li Tang
 
 **Date:** September 24th, 2025
 
@@ -455,13 +453,11 @@ Additionally, We expanded our scope beyond academia, exploring how our technolog
 
 **Date:** June 13th, 2025
 
-### Dialogue with Mr. Jie Chen
-
 **Respondent:** Mr. Jie Chen
 
 **Respondent Profile:** Associate Director @ SoftBank China Venture Capital
 
-![](https://static.igem.wiki/teams/5643/pageimage/ihp/softbank-china.webp)
+<!-- https://static.igem.wiki/teams/5643/pageimage/ihp/softbank-china.webp -->
 
 **Topic:** Commercialization of the Visualization Tracking Platform
 

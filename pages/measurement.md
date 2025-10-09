@@ -32,24 +32,12 @@ Our screening focused on two key aspects:
   
   <div style="text-align: center;" id="fig1">
       <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f1.avif" style="width:80%">
-      <div>
-          <span style="color:gray"></span>
-          <br><br>
-      </div>
-  </div>
-  
-  <div style="text-align: center;" id="fig1">
+<br>
       <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f2.avif" style="width:80%">
-      <div>
-          <span style="color:gray"></span>
-          <br><br>
-      </div>
-  </div>
-
-<div style="text-align: center;" id="fig1">
-    <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f3.avif" style="width:80%">
+<br>
+      <img src="https://static.igem.wiki/teams/5643/pageimage/measurement/f3.avif" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment. <a href="https://static.igem.wiki/teams/5643/pageimage/measurement/fluorescence-micriscope.avif" target=_blank>(A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499.</a> Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.</span>
+        <span style="color:gray">Figure 1. Different promoter-fluorescent protein pairs exhibited distinct fluorescence intensities across channels after EMS treatment. (A) pOST1-EMSfp499. (B) pRNR2-EMSfp399. (C) pRNR2-EMSfp499. (D) pRNR2-EMSfp569. (E) pRNR2-EMSfp643. (F) pSTM1-EMSfp569. (G) pTDH3 EMSfp569. (H) pSTM1-EMSfp499. Pre-EMS treatment, pSTM1-EMSfp499 exhibited higher green channel fluorescence intensity compared to other channels. Post-EMS treatment, the green fluorescence intensity and brightness distribution became more heterogeneous, with a subset of cells appearing noticeably brighter.</span>
         <br><br>
     </div>
 </div>
@@ -66,7 +54,7 @@ The flow cytometry data processing pipeline was designed to ensure signal fideli
 
 Following initial gating to isolate single-cell populations (for experimental details, please refer to our [Experiments](/experiments/#flow-cytometry-of-single-cell-yeast) page), a rigorous, batch-specific quality control (QC) filter was applied to distinguish true positive fluorescence from background noise and to normalize data.
 
-The non-fluorescent control strain, BY4741, was used to establish the noise threshold and generate corrected fluorescent intensity. Only single-cell events registering a fluorescence intensity above the BY4741 median in the designated channel were retained for downstream analysis, otherwise they were considered non-expressing or indistinguishable from background, and were thus discarded. The effectiveness of this filtration was monitored by calculating the retained event ratio (retained signal count / total event count), which served as the key sample-specific quality control metric (see supplemental table in [gitlab](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/cytoflex?ref_type=heads)). 
+The non-fluorescent control strain, BY4741, was used to establish the noise threshold and generate corrected fluorescent intensity. Only single-cell events registering a fluorescence intensity above the BY4741 median in the designated channel were retained for downstream analysis, otherwise they were considered non-expressing or indistinguishable from background, and were thus discarded. The effectiveness of this filtration was monitored by calculating the retained event ratio (retained signal count / total event count), which served as the key sample-specific quality control metric (see supplemental table in [gitlab folder](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/cytoflex?ref_type=heads)). 
 
 $$
 \text{Corrected\_Fluorescence\_Intensity}_{\text{sample}} = \text{Raw\_Fluorescence\_Intensity}_{\text{sample}} - \text{Median\_Intensity}_{\text{BY4741}}   
@@ -126,9 +114,8 @@ Following a comprehensive performance analysis of all promoter and fluorescent p
 
 **Table 1. Performance of Individual Promoter**
 
-| Promoter Performance                |                         |                       |                               |              |
-| ----------------------------------- | ----------------------- | --------------------- | ----------------------------- | ------------ |
 | Promoter                            | Avg Composite Score (S) | Avg Effectiveness (E) | Avg Specificity Loss (S_loss) | Avg log2(FC) |
+| ----------------------------------- | ----------------------- | --------------------- | ----------------------------- | ------------ |
 | pSTM1                               | 1036.3509               | 103.7323              | 0.9717                        | 0.4013       |
 | pOST1                               | 925.2462                | 92.5575               | 0.3292                        | 0.5683       |
 | pRNR2                               | 833.1798                | 83.3489               | 0.3097                        | 0.4926       |
@@ -177,7 +164,7 @@ Following a comprehensive performance analysis of all promoter and fluorescent p
 
 To evaluate the metabolic burden imposed by the top three fluorescent reporters, we quantified and compared their growth rates by recording their hourly growth curves via optical density (OD) measurements. Although the average size of yeast is about 5-10 &mu;m, we only have NanoCym950 nanoparticles with a diameter of 950 nm. We estimated that 1 OD600 corresponds to 10^8 nanoparticles per mL, which was used to convert yeast counts. Experimental details please refer to our [protocol](/experiments/#yeast-growth-curves). 
 
-The experimental growth data were fitted to the Logistic Model to quantify key kinetic parameters, including the maximum population density and the specific growth rate, allowing a quantitative comparison of strain performance. It was performed by fitting the raw data to the Self-Starting Logistic Model (SSlogis) using the nls function in [R](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/cytoflex).
+The experimental growth data were fitted to the Logistic Model to quantify key kinetic parameters, including the maximum population density and the specific growth rate, allowing a quantitative comparison of strain performance. It was performed by fitting the raw data to the Self-Starting Logistic Model (SSlogis) using the [nls](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/nls) function in [R](https://www.r-project.org/).
 
 **Logistic Model:**
 
@@ -195,7 +182,6 @@ $$
         <span style="color:gray">Figure 3. Self-Starting Logistic Model Fitted Parameters</span>
         <br><br>
     </div>
-</div>
 
 **Table 4. Self-Starting Logistic Model Fitted Parameters**
 
@@ -206,13 +192,15 @@ $$
 | **pTDH3-EMSfp383** | 4.07               | 8.82                      | 2.0227             | 0.9924    |
 | **pRNR2-EMSfp383** | 5.74               | 16.23                     | 3.0789             | 0.9874    |
 
+</div>
+
 According to analysis, [pSTM1-EMSfp499](https://registry.igem.org/parts/bba-255t0phy) demonstrated a growth pattern most similar to the wild-type BY4741 strain, with pTDH3-EMSfp383 following closely ([Figure 3](#fig3) & Table 4). While the pRNR2-EMSfp383 combination achieved the highest Composite Score (S) in flow cytometry, it imposed a significant metabolic burden on the yeast, rendering it unsuitable as an ideal fluorescent reporter. By synthesizing the fluorescent change patterns with the metabolic burden profiles, we concluded that BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy) is the optimal reporter combination for our Recorder module.
 
 ## Deep Sequencing - Molecular Validation of the Mechanism
 
-To further validate that the EMS Sequence Optimizer-optimized fluorescent protein exhibits high resistance to EMS mutagenesis, we performed deep sequencing (third-generation [Nanopore](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/nanopore/) sequencing) on select gene sequences.
+To further validate that the EMS Sequence Optimizer-optimized fluorescent protein exhibits high resistance to EMS mutagenesis, we performed deep sequencing (third-generation [Nanopore sequencing](https://nanoporetech.com/platform/technology)) on select gene sequences.
 
-Using the pre-EMS-induction sequence as the reference, we employed the [NanoPlot](https://github.com/wdecoster/NanoPlot) tool to align the Nanopore reads to the reference/target sequence. We then generated a pileup output to calculate the base counts and percentages at each position. Supplemental data is available in [gitlab](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/cytoflex).
+Using the pre-EMS-induction sequence as the reference, we employed the [NanoPlot](https://github.com/wdecoster/NanoPlot) tool to align the Nanopore reads to the reference/target sequence. We then generated a pileup output to calculate the base counts and percentages at each position. Supplemental data is available in [gitlab folder](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/nanopore).
 
 A site was designated as a genuine mutation—rather than a sequencing error—if its matching rate fell below 95% relative to the reference base. This 95% threshold was established based on the reported ∼5% error rate of Nanopore sequencing itself. The potential contribution of mutations arising from the high-fidelity Phanta PCR amplification was deemed negligible, as its [mutation rate](https://bio.vazyme.com/product/115.html) (∼10<sup>−5</sup> divided by 128 for Phanta Max fidelity) is several orders of magnitude lower than the Nanopore error rate.
 

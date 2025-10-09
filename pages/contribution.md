@@ -9,21 +9,21 @@ heroImage: https://static.igem.wiki/teams/5643/header/contribution.webp
 description: Below is what we put in the judging form.
 ---
 
-## [Medal Criteria](/contribution/#medal-criteria)
+## Medal Criteria
 
-### [Bronze](/contribution/#bronze)
+### Bronze
 
 - We successfully completed the following Competition Deliverables: [Wiki](https://2025.igem.wiki/fudan/), [Project Promotion Video](/promotion-video/), [Presentation Video](https://teams.igem.org/5643/project-presentation), [Judging Form](https://teams.igem.org/5643/judging), and in-person at the Paris for Judging Session.
 - We carefully describe what work our team members did and what external staff did for our project on our [Attributions Form](https://teams.igem.org/5643/attributions) and embeded on [Attributions](/attributions/) page.
 - We describe how and why we chose our iGEM project on our [Description](/description/) page.
 - Here we list our useful contributions for future iGEM teams.
 
-### [Silver](/contribution/#silver)
+### Silver
 
 - We showcase our engineering achievements within a segment of our project by undergoing multiple iterations of the engineering design cycle, which can be found on our [Engineering](/engineering/) page.
 - We elucidate how our efforts are deemed responsible and beneficial for the world on our [Human Practices](/human-practices/) page.
 
-### [Gold](/contribution/#gold)
+### Gold
 
 We are competing for three special awards: [New Composite Part](https://registry.igem.org/parts/bba-255t0phy), [Model](/model/), [Inclusivity](/inclusivity/).
 

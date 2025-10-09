@@ -72,7 +72,7 @@ Below is the complete list of our iGEM projects.
     <tr><td>Fudan</td><td><a href="https://video.igem.org/w/d1795b71-2707-4eeb-92ce-5b88145ef1a3" target="_blank">MINERAL</a> - Microparticle Integration for Nickel Extraction and Resuable Applications</td><td>Xujie&#160;Tan</td><td><a href="https://teams.igem.org/5115" rel="noreferrer" target="_blank">2024</a></td>
       <td>Nominated for <a href="https://jamboree.igem.org/2024/results/village-awards#bioremediation" target="_blank">Bioremediation Project</a>, Measurement, Inculsivity, Wiki; <a href="https://jamboree.igem.org/2024/results/medals" target="_blank">Gold Medal</a></td>
       <td><a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU2ODA2MTY1MQ==&action=getalbum&album_id=3322758862575403011#wechat_redirect" target="_blank">Fudan_iGEM</a></td></tr>
-    <tr><td>Fudan</td><td><a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target="_blank">Dr.sTraTeGY</a> - track evolution</td><td>Zhiqin&#160;Wang</td><td><a href="https://teams.igem.org/5643" rel="noreferrer" target="_blank">2025</a></td>
+    <tr><td>Fudan</td><td><a href="https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe" target="_blank">Dr. sTraTeGY</a> - Engineering Multicellular Yeast for Drug Resistance Mutation Tracking</td><td>Zhiqin&#160;Wang</td><td><a href="https://teams.igem.org/5643" rel="noreferrer" target="_blank">2025</a></td>
       <td><a href="https://jamboree.igem.org/2025/results/village-awards#" target="_blank"></a><a href="https://jamboree.igem.org/2025/results/medals" target="_blank"></a></td>
       <td><a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU2ODA2MTY1MQ==&action=getalbum&album_id=3718300648232550407#wechat_redirect" target="_blank">Fudan_iGEM</a></td></tr>
   </tbody>

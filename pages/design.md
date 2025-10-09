@@ -26,7 +26,7 @@ Our approach combines synthetic biology with advanced modeling and visualization
 
 ## How it Started?
 
-Fungal pathogens cause a wide range of diseases that have a significant impact on plant and animal life. It's estimated that approximately 1.7 billion people are affected globally, with more than 1.5 million deaths annually.[^1] Treatment options for invasive fungal infections are extremely limited, with only five main classes of drugs currently available. The long-term abuse of antibiotics has led to the constant emergence of drug-resistant variants, making it crucial to study the mutation and evolution of fungi under drug pressure.
+Fungal pathogens cause a wide range of diseases that have a significant impact on plant and animal life. It's estimated that approximately 1.7 billion people are affected globally, with more than 1.5 million deaths annually.[^1] Treatment options for invasive fungal infections are extremely limited, with only five main classes of drugs currently available. The long-term abuse of antifungal drugs has led to the constant emergence of drug-resistant variants, making it crucial to study the mutation and evolution of fungi under drug pressure.
 
 To address this challenge, we developed *DR.&nbsp;sTraTeGY*, an innovative platform built on a multicellular yeast chassis to track the evolutionary dynamics of fungal resistance. Our project is divided into three components:
 
@@ -37,7 +37,7 @@ To address this challenge, we developed *DR.&nbsp;sTraTeGY*, an innovative platf
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/design/fig1-dr-strategy.webp" style="width:80%">
     <div>
-        <span style="color:gray">Figure 1. *DR.&nbsp;sTraTeGY* overview</span>
+        <span style="color:gray">Figure 1. <em>DR.&nbsp;sTraTeGY</em> overview</span>
         <br><br>
     </div>
 </div>
@@ -66,7 +66,7 @@ We engineered this chassis through modular approach that allows us to achieve ke
 
 #### Inspiration and Background
 
-The earliest description of multicellularity in yeast was reported by Ratcliff et al.[^24], which served as the primary inspiration for our project. In that seminal study, *Saccharomyces cerevisiae* (strain Y55) was subjected to gravity-based selection, favoring cells with a rapid sedimentation phenotype. Multicellular aggregates were observed after just 60 transfers.
+The earliest description of multicellularity in yeast was reported by Ratcliff et al.[^24], which served as the primary inspiration for our project. In that seminal study, *Saccharomyces cerevisiae* (strain Y55) was subjected to gravity-based selection, favoring cells with a rapid sedimentation phenotype. Multicellular aggregates were observed after just 60 [transfers](/experiments/#grape-yeast-settling-selection).
 
 Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the *ACE2* gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.[^9]
 
@@ -74,11 +74,9 @@ To ensure the stability of the introduced genes in our chassis, we integrate the
 
 #### *ACE2* Deletion
 
-To validate the feasibility of a multifunctional multicellular chassis, we first used homologous recombination to knock out the  *ACE2* gene in the Y55 strain (a unicellular yeast).
-
 *ACE2* encodes a transcription factor that, when disrupted, prevents mother-daughter cell separation after budding[^8], leading to the formation of a multicellular yeast system. 
 
-We confirmed the successful knockout by observing the formation of multicellular clusters, clearly visualized through [cell wall staining](/results/#fig1) under a fluoresence microscope.
+To validate the feasibility of handling multicellular yeast, we first used the *ACE2&Delta;* Y55 strain (gift from [Prof. Ratcliff](http://snowflakeyeastlab.com/), a diploid yeast). We observed the formation of multicellular clusters, clearly visualized through [cell wall staining](/results/#fig1) under a fluoresence microscope.
 
 
 ### Module 2 — Response to External Signal
@@ -147,7 +145,7 @@ First, we introduced the meiosis-inducing gene *IME1* (BBa_250R9OVR) under the c
     </div>
 </div>
 
-Previous research has shown that during gravity-based selection, the Y55 (*ACE2* &Delta; was achieved by replace ACE2 with KanMX) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 selection pressure. To isolate the specific effects of the antibiotic, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
+Previous research has shown that during gravity-based selection, the Y55 (*ACE2* &Delta; was achieved by replace ACE2 with KanMX) strain undergoes a ploidy shift from diploid (2x) to tetraploid (4x)[^9]. To mimic the liquid environment where drug resistance evolves *in vivo*, we further investigated the ploidy stability of the tetraploid Y55 strain during gravity-based passaging under G418 selection pressure. To isolate the specific effects of the drugs, we also performed comparative passaging experiments under both selective (G418) and non-selective (G418-free) conditions.
 
 
 ### Module 4 — Controlling Cluster Size

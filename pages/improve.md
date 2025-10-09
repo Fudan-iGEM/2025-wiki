@@ -27,6 +27,8 @@ mCherry consists of 236 amino acids. According to previous studies, the M23V / E
 
 Modified mCherry exhibits a color transition from blue (excitation/emission peaks: 403/466 nm) to red (excitation/emission peaks: 583/606 nm). This color change primarily results from the oxidation of the Cα2–Cβ2 bond in Tyr72. The roles of other key residues are summarized below[^2]:
 
+<div style="text-align: center;">
+
 | Residue    | Functional Description                                       |
 | ---------- | ------------------------------------------------------------ |
 | **Arg75**  | Slows down the blue-to-red conversion.                       |
@@ -34,7 +36,7 @@ Modified mCherry exhibits a color transition from blue (excitation/emission peak
 | **Ser222** | Accelerates the formation of the blue chromophore.           |
 | **Trp88**  | Delays the blue-to-red conversion and enhances both blue and red fluorescence intensity. |
 
-
+</div>
 
 <div style="text-align: center;" id="fig2">    <img src="https://static.igem.wiki/teams/5643/pageimage/improved-part/modified-mcherry.webp" style="width:80%">    <div>        <span style="color:gray">Figure 2. Structure of modified mCherry.<br>The mutated residues and the fluorescent core are highlighted in different colors.Structural data were obtained from the Protein Data Bank (ID: pdb_00003lf3).</span>        <br><br>    </div></div>
 
@@ -44,7 +46,7 @@ We constructed the TU Timer (BBa_25AT6YR4) to utilize the modified mCherry . Sin
 
 Based on the results from our [Model](/model/), we chose the ASH1 AIpro promoter (BBa_25VHXKNL), which is transcriptionally activated during the late M phase. In addition, we incorporated the ASH1 3' UTR (BBa_25AIDL8P), which localizes the mRNA to the bud tip of the daughter cell, ensuring that translation begins specifically within the daughter cell[^3]. 
 
-Consequently, the modified mCherry transcript is produced in the mother cell during late M phase, and its mRNA is then localized to the newly formed daughter cell, where translation and chromophore maturation occur. This process is repeated at every cell division, enabling the TU Timer(BBa_25AT6YR4) to visually track cell lineage over successive generations.
+Consequently, the modified mCherry transcript is produced in the mother cell during late M phase, and its mRNA is then localized to the newly formed daughter cell, where translation and chromophore maturation occur. This process is repeated at every cell division, enabling the TU Timer (BBa_25AT6YR4) to visually track cell lineage over successive generations.
 
 
 ## Experimental Validation
