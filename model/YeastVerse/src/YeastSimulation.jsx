@@ -1,15 +1,23 @@
-import React, { useState, useEffect, useRef } from 'react';
+﻿import React, { useState, useEffect, useRef } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 import { Button } from './components/ui/button';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Raycaster } from 'three';
+import HelpButton from './components/help/HelpButton';
 function YeastSimulation() {
   const [isPaused, setIsPaused] = useState(true);
   const [timeStep, setTimeStep] = useState(0);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
-  const [yeastType, setYeastType] = useState('grape');
+  const [yeastType, setYeastType] = useState('grape_n1');
   const [selectedCell, setSelectedCell] = useState(null);
+  const helpContent = (
+    <div>
+      <p>1. Start the simulation and observe how the yeast cluster grows from a single cell to a multicellular structure.</p>
+      <p>2. Note the branching patterns and cell arrangements in "Grape" vs. "normal" yeast, which can inform the design of the multicellular chassis for drug resistance evolution studies.</p>
+      <p>3. Key growth parameters are user-adjustable, allowing for the customization of simulations to explore morphological outcomes under different hypothetical conditions. (Note: Some parameters need to be modified in the source code)</p>
+    </div>
+  );
   const environment = {
     oxygen: 10,
     temperature: 30
@@ -28,7 +36,7 @@ function YeastSimulation() {
   const MAX_TOTAL_CELLS = 2000;
   const MAX_LENGTH_RATIO = 1.8;
   const calculateCellLength = (oxygen) => {
-    if (yeastType === 'normal') {
+    if (yeastType === 'grape_n1') {
       return 1.0;
     } else {
       if (oxygen >= 20) {
@@ -38,6 +46,20 @@ function YeastSimulation() {
         return Math.min(1.0 + lengthIncrease, MAX_LENGTH_RATIO);
       }
     }
+  };
+  const getRadiusAlongDirection = (cell, direction) => {
+    const u = direction.clone().normalize();
+    const invQ = cell.quaternion.clone().invert();
+    const localDir = u.clone().applyQuaternion(invQ);
+    const a = cell.scale.x;
+    const b = cell.scale.y;
+    const c = cell.scale.z;
+    const denom = Math.sqrt(
+      (localDir.x * localDir.x) / (a * a) +
+      (localDir.y * localDir.y) / (b * b) +
+      (localDir.z * localDir.z) / (c * c)
+    );
+    return 1 / denom;
   };
   const handleMouseClick = (event) => {
     const rect = canvasRef.current.getBoundingClientRect();
@@ -164,7 +186,12 @@ function YeastSimulation() {
         });
         cellsRef.current.forEach(cell => {
           const targetLength = calculateCellLength(environment.oxygen);
-          cell.scale.x += (targetLength - cell.scale.x) * 0.1;
+          const newScaleX = cell.scale.x + (targetLength - cell.scale.x) * 0.1;
+          if (yeastType === 'grape_n1') {
+            cell.scale.set(newScaleX, newScaleX, newScaleX);
+          } else {
+            cell.scale.set(newScaleX, 1, 1);
+          }
         });
       }
       if (controlsRef.current) {
@@ -203,9 +230,8 @@ function YeastSimulation() {
   const createYeastCell = (position, oxygen, parentCellId = null) => {
     const length = calculateCellLength(oxygen);
     const geometry = new THREE.SphereGeometry(1, 16, 16);
-    geometry.scale(length, 1, 1);
-    const cellColor = yeastType === 'normal' ? new THREE.Color(0x90EE90) : new THREE.Color(0x00FFFF);
-      const cellGlowColor = yeastType === 'normal' ? new THREE.Color(0x98FB98) : new THREE.Color(0x40E0D0);
+    const cellColor = yeastType === 'grape_n1' ? new THREE.Color(0x00FFFF) : new THREE.Color(0x90EE90);
+    const cellGlowColor = yeastType === 'grape_n1' ? new THREE.Color(0x40E0D0) : new THREE.Color(0x98FB98);
     const customMaterial = new THREE.ShaderMaterial({
       uniforms: {
         color: { value: cellColor },
@@ -238,6 +264,11 @@ function YeastSimulation() {
       side: THREE.DoubleSide
     });
     var cell = new THREE.Mesh(geometry, customMaterial);
+    if (yeastType === 'grape_n1') {
+      cell.scale.set(length, length, length);
+    } else {
+      cell.scale.set(length, 1, 1);
+    }
     cell.castShadow = true;
     cell.receiveShadow = true;
     const nucleusGeometry = new THREE.SphereGeometry(0.3, 16, 16);
@@ -395,14 +426,14 @@ function YeastSimulation() {
         produceTwoCells = !isInitialCell && Math.random() < 0.6;
       }
     }
-    const newCell1 = createYeastCell(null, environment.oxygen, parentCell.userData.cellId);
+    const newCell1 = createYeastCell(parentCell.position.clone(), environment.oxygen, parentCell.userData.cellId);
     newCell1.userData.generation = childGeneration;
     if (produceTwoCells) {
       newCell1.userData.isChildOfDividedCell = true;
     }
     let newCell2 = null;
     if (produceTwoCells) {
-      newCell2 = createYeastCell(null, environment.oxygen, parentCell.userData.cellId);
+      newCell2 = createYeastCell(parentCell.position.clone(), environment.oxygen, parentCell.userData.cellId);
       newCell2.userData.generation = childGeneration;
       newCell2.userData.isChildOfDividedCell = true;
       newCell2.visible = false;
@@ -426,8 +457,8 @@ function YeastSimulation() {
     const centerToParent = new THREE.Vector3();
     centerToParent.copy(parentCell.position);
     const distanceFromCenter = centerToParent.length();
-    const cellLength = parentCell.scale.x;
-    const separationDistance = cellLength * 2.3;
+    let separationDistance1 = 0;
+    let separationDistance2 = 0;
     let progress = 0;
     const secondBudDelay = (produceTwoCells && newCell2) ? (1.10 + Math.random() * 0.15) : 0;
     const sampleSeparationAngleDeg = () => {
@@ -614,6 +645,10 @@ function YeastSimulation() {
       quaternion2.setFromRotationMatrix(rotationMatrix2);
       newCell2.setRotationFromQuaternion(quaternion2);
     }
+    separationDistance1 = getRadiusAlongDirection(parentCell, directionVector1) + getRadiusAlongDirection(newCell1, directionVector1);
+    if (produceTwoCells && newCell2) {
+      separationDistance2 = getRadiusAlongDirection(parentCell, directionVector2) + getRadiusAlongDirection(newCell2, directionVector2);
+    }
     if (totalCellCountRef.current >= MAX_TOTAL_CELLS ||
     cellsRef.current.length >= MAX_VISIBLE_CELLS) {
       setIsPaused(true);
@@ -627,14 +662,11 @@ function YeastSimulation() {
         return;
       }
       progress += 0.015;
-      const separationFactor = newCell1.userData.separationFactor || 1.0;
-      const baseMultiplier = produceTwoCells ? 1.05 : 1.18;
-      const adjustedSeparationDistance = separationDistance * baseMultiplier * separationFactor;
+      const adjustedSeparationDistance = separationDistance1;
       const progress1 = Math.min(progress, 1);
       newCell1.position.copy(parentCell.position).addScaledVector(directionVector1, adjustedSeparationDistance * progress1);
       if (produceTwoCells && newCell2) {
-        const separationFactor2 = newCell2.userData.separationFactor || 1.0;
-        const adjustedSeparationDistance2 = separationDistance * baseMultiplier * separationFactor2;
+        const adjustedSeparationDistance2 = separationDistance2;
         const progress2 = Math.max(Math.min(progress - secondBudDelay, 1), 0);
         if (progress2 > 0 && !newCell2.visible)
           newCell2.visible = true;
@@ -663,7 +695,12 @@ function YeastSimulation() {
             const growthRate = (calculateGrowthRate() / 2000) * cell.userData.growthRateModifier;
             cell.userData.growthStage += growthRate;
             const targetLength = calculateCellLength(environment.oxygen);
-            cell.scale.x += (targetLength - cell.scale.x) * 0.1;
+            const newScaleX = cell.scale.x + (targetLength - cell.scale.x) * 0.1;
+            if (yeastType === 'grape_n1') {
+              cell.scale.set(newScaleX, newScaleX, newScaleX);
+            } else {
+              cell.scale.set(newScaleX, 1, 1);
+            }
             if (cell.userData.growthStage >= (1 + cell.userData.divisionDelay)) {
               divideCellProcess(cell);
             }
@@ -696,98 +733,101 @@ function YeastSimulation() {
   const minutes = Math.floor(totalMinutes);
   const seconds = Math.floor((totalMinutes - minutes) * 60);
   return (
-    <Card className="w-full mx-auto">
-      <CardHeader>
-        <CardTitle>3D Yeast Growth Simulation</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="flex flex-col gap-4 w-full mx-auto">
-          <div className="flex gap-4 mb-4">
-            <Button 
-              onClick={() => setIsPaused(!isPaused)} 
-              className="w-24"
-            >
-              {isPaused ? 'Start' : 'Pause'}
-            </Button>
-            <Button 
-              onClick={handleReset} 
-              className="w-24"
-            >
-              Reset
-            </Button>
-            <Button 
-              onClick={resetCamera} 
-              className="w-24"
-            >
-              Reset View
-            </Button>
-            <select
-              className="w-32 h-10 rounded-md border border-input bg-background px-3 text-sm"
-              value={yeastType}
-              onChange={(e) => setYeastType(e.target.value)}
-            >
-              <option value="grape">Grape Yeast</option>
-              <option value="normal">Normal Yeast</option>
-            </select>
-          </div>
-          <div className="mb-4">
-            <div className="mb-2">Simulation Speed: {speedMultiplier}x</div>
-            <input
-              type="range"
-              value={speedMultiplier}
-              onChange={(e) => setSpeedMultiplier(parseFloat(e.target.value))}
-              min={0.5}
-              max={3}
-              step={0.5}
-              className="w-full"
-            />
-            <div className="flex justify-between text-xs text-gray-500">
-              <span>0.5x</span>
-              <span>1x</span>
-              <span>1.5x</span>
-              <span>2x</span>
-              <span>2.5x</span>
-              <span>3x</span>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row gap-3">
-            <div className="flex justify-center items-center bg-gray-100 rounded-lg flex-1" style={{ width: '100%', height: '75vh', position: 'relative' }}>
-             <canvas 
-               ref={canvasRef} 
-              className="rounded-lg w-full h-full"
-              style={{ width: '100%', height: '100%' }}
-             />
-            {selectedCell && (
-              <div 
-                className="absolute bg-black bg-opacity-70 text-white px-2 py-1 rounded-md text-sm"
-                style={{
-                  left: `${selectedCell.clickPosition ? selectedCell.clickPosition.x : 400}px`,
-                  top: `${selectedCell.clickPosition ? selectedCell.clickPosition.y : 250}px`,
-                  transform: 'translate(-50%, -50%)',
-                  zIndex: 10
-                }}
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <HelpButton title="Yeast Simulation Help" content={helpContent} />
+      <Card className="w-full mx-auto">
+        <CardHeader>
+          <CardTitle>3D Yeast Growth Simulation</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-col gap-4 w-full mx-auto">
+            <div className="flex gap-4 mb-4">
+              <Button 
+                onClick={() => setIsPaused(!isPaused)} 
+                className="w-24"
               >
-                Generation {selectedCell.id}
-              </div>
-            )}
+                {isPaused ? 'Start' : 'Pause'}
+              </Button>
+              <Button 
+                onClick={handleReset} 
+                className="w-24"
+              >
+                Reset
+              </Button>
+              <Button 
+                onClick={resetCamera} 
+                className="w-24"
+              >
+                Reset View
+              </Button>
+              <select
+                className="min-w-[220px] w-56 h-10 rounded-md border border-input bg-background px-3 text-sm"
+                value={yeastType}
+                onChange={(e) => setYeastType(e.target.value)}
+              >
+                <option value="grape_n1">Grape Yeast N1</option>
+                <option value="grape">Grape Yeast</option>
+              </select>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow lg:w-64 w-full">
-              <div className="text-gray-600 text-sm text-left space-y-2">
-                <p>
-                  This model simulates the 3D growth of our multicellular Grape Yeast using a bio-mathematical modeling framework.
-                </p>
-                <p>
-                  The framework can be extended to simulate more complex behaviors or introduce other variables (e.g., nutrients, competition).
-                </p>
-                <p className="mt-1 text-green-600">
-                  Left-drag rotates, mouse wheel zooms, right-click pans the view.
-                </p>
+            <div className="mb-4">
+              <div className="mb-2">Simulation Speed: {speedMultiplier}x</div>
+              <input
+                type="range"
+                value={speedMultiplier}
+                onChange={(e) => setSpeedMultiplier(parseFloat(e.target.value))}
+                min={0.5}
+                max={3}
+                step={0.5}
+                className="w-full"
+              />
+              <div className="flex justify-between text-xs text-gray-500">
+                <span>0.5x</span>
+                <span>1x</span>
+                <span>1.5x</span>
+                <span>2x</span>
+                <span>2.5x</span>
+                <span>3x</span>
+              </div>
+            </div>
+            <div className="flex flex-col lg:flex-row gap-3">
+              <div className="flex justify-center items-center bg-gray-100 rounded-lg flex-1" style={{ width: '100%', height: '75vh', position: 'relative' }}>
+               <canvas 
+                 ref={canvasRef} 
+                className="rounded-lg w-full h-full"
+                style={{ width: '100%', height: '100%' }}
+               />
+              {selectedCell && (
+                <div 
+                  className="absolute bg-black bg-opacity-70 text-white px-2 py-1 rounded-md text-sm"
+                  style={{
+                    left: `${selectedCell.clickPosition ? selectedCell.clickPosition.x : 400}px`,
+                    top: `${selectedCell.clickPosition ? selectedCell.clickPosition.y : 250}px`,
+                    transform: 'translate(-50%, -50%)',
+                    zIndex: 10
+                  }}
+                >
+                  Generation {selectedCell.id}
+                </div>
+              )}
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow lg:w-64 w-full">
+                <div className="text-gray-600 text-sm text-left space-y-2">
+                  <p>
+                    This model simulates the 3D growth of our multicellular Grape Yeast using a bio-mathematical modeling framework.
+                  </p>
+                  <p>
+                    The framework can be extended to simulate more complex behaviors or introduce other variables (e.g., nutrients, competition).
+                  </p>
+                  <p className="mt-1 text-green-600">
+                    Left-drag rotates, mouse wheel zooms, right-click pans the view.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </CardContent>
-    </Card>
+        </CardContent>
+      </Card>
+    </div>
   );
 }
-export { YeastSimulation };
+export default YeastSimulation;

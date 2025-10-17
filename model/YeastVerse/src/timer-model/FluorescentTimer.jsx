@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+﻿import React, { useState, useEffect, useRef } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import HelpButton from '../components/help/HelpButton';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Raycaster } from 'three';
@@ -22,6 +23,7 @@ function FluorescentTimer() {
   const [isPaused, setIsPaused] = useState(true);
   const [timeStep, setTimeStep] = useState(0);
   const [speedMultiplier, setSpeedMultiplier] = useState(1);
+  const [yeastType, setYeastType] = useState('grape_n1');
   const [selectedCell, setSelectedCell] = useState(null);
   const selectedCellRef = useRef(null);
   const modelParams = MODEL_PARAMS;
@@ -31,6 +33,13 @@ function FluorescentTimer() {
     avgMaturationStage: 0,
     avgRRatio: 0
   });
+  const helpContent = (
+    <div>
+      <p>1. Run the maturation simulation and watch the color changes in the population over time.</p>
+      <p>2. Click on cells at different positions in the cluster to compare their maturation states, which can help validate the inheritance and maturation logic in a spatial context.</p>
+      <p>3. The underlying maturation kinetics and promoter parameters can be modified, enabling researchers to tailor the simulation for different fluorescent protein variants or experimental scenarios. (Note: Some parameters need to be modified in the source code)</p>
+    </div>
+  );
   const canvasRef = useRef(null);
   const sceneRef = useRef(null);
   const rendererRef = useRef(null);
@@ -67,10 +76,23 @@ function FluorescentTimer() {
   };
   const isPausedRef = useRef(isPaused);
   const speedMultiplierRef = useRef(speedMultiplier);
+  const yeastTypeRef = useRef(yeastType);
   useEffect(() => {
     isPausedRef.current = isPaused;
     speedMultiplierRef.current = speedMultiplier;
   }, [isPaused, speedMultiplier]);
+  useEffect(() => {
+    yeastTypeRef.current = yeastType;
+  }, [yeastType]);
+  useEffect(() => {
+    if (sceneRef.current) {
+      cellsRef.current.forEach(cell => sceneRef.current.remove(cell));
+      cellsRef.current = [];
+      totalCellCountRef.current = 1;
+      cellIdCounterRef.current = 1;
+      addInitialCell();
+    }
+  }, [yeastType]);
   const calculateCellLength = (oxygen) => {
     if (oxygen >= 20) {
       return 1.0;
@@ -134,7 +156,6 @@ function FluorescentTimer() {
   const createFluorescentCell = (position, parentCell = null) => {
     const length = calculateCellLength(environment.oxygen);
     const geometry = new THREE.SphereGeometry(1, 16, 16);
-    geometry.scale(length, 1, 1);
     const material = new THREE.MeshPhongMaterial({
       color: 0x888888,
       transparent: true,
@@ -143,6 +164,11 @@ function FluorescentTimer() {
       emissiveIntensity: 0.1
     });
     const cell = new THREE.Mesh(geometry, material);
+    if (yeastTypeRef.current === 'grape') {
+      cell.scale.set(length, 1, 1);
+    } else {
+      cell.scale.set(length, length, length);
+    }
     cell.castShadow = false;
     cell.receiveShadow = false;
     const nucleusGeometry = new THREE.SphereGeometry(0.3, 16, 16);
@@ -330,7 +356,11 @@ function FluorescentTimer() {
       MAX_TOTAL_CELLS
     );
     const parentLongAxis = new THREE.Vector3(1, 0, 0).applyQuaternion(parentCell.quaternion);
-    const separationDistance = (parentCell.scale.x + newCell1.scale.x) * 0.95;
+    const CONTACT_TIGHTNESS = 0.88; 
+    const separationDistance1 = (parentCell.scale.x + newCell1.scale.x) * CONTACT_TIGHTNESS;
+    const separationDistance2 = (produceTwoCells && newCell2)
+      ? (parentCell.scale.x + newCell2.scale.x) * CONTACT_TIGHTNESS
+      : 0;
     let directionVector1, directionVector2;
     if (isInitialCell) {
       const divisionIndex = parentCell.userData.divisionCount - 1;
@@ -426,18 +456,19 @@ function FluorescentTimer() {
       if (progress >= 1) {
         parentCell.userData.dividing = false;
         parentCell.userData.growthStage = 0;
-        parentCell.scale.x = 1;
+        if (yeastTypeRef.current === 'grape') {
+          const baseLength = calculateCellLength(environment.oxygen);
+          parentCell.scale.set(baseLength, 1, 1);
+        } else {
+          parentCell.scale.set(1, 1, 1);
+        }
         updateStats();
         return;
       }
       progress += 0.015;
-      const separationFactor1 = newCell1.userData.separationFactor || 1.0;
-      const adjustedSeparationDistance1 = separationDistance * 1.10 * separationFactor1;
-      newCell1.position.copy(parentCell.position).addScaledVector(directionVector1, adjustedSeparationDistance1 * progress);
+      newCell1.position.copy(parentCell.position).addScaledVector(directionVector1, separationDistance1 * progress);
       if (produceTwoCells && newCell2) {
-        const separationFactor2 = newCell2.userData.separationFactor || 1.0;
-        const adjustedSeparationDistance2 = separationDistance * 1.10 * separationFactor2;
-        newCell2.position.copy(parentCell.position).addScaledVector(directionVector2, adjustedSeparationDistance2 * progress);
+        newCell2.position.copy(parentCell.position).addScaledVector(directionVector2, separationDistance2 * progress);
       }
       requestAnimationFrame(animateDivision);
     };
@@ -547,11 +578,13 @@ function FluorescentTimer() {
             const growthRate = (baseGrowthRate / 200) * cell.userData.growthRateModifier;
             cell.userData.growthStage += growthRate;
             const divisionThreshold = 0.5 + cell.userData.divisionDelay;
-            const growthProgress = Math.min(cell.userData.growthStage / divisionThreshold, 1.0);
-            const initialLength = calculateCellLength(cell.userData.createdAtOxygen);
-            const targetScale = MAX_LENGTH_RATIO / initialLength;
-            const scaleMultiplier = 1 + (targetScale - 1) * growthProgress;
-            cell.scale.x = scaleMultiplier;
+            const targetLength = calculateCellLength(environment.oxygen);
+            const newScaleX = cell.scale.x + (targetLength - cell.scale.x) * 0.1;
+            if (yeastTypeRef.current === 'grape') {
+              cell.scale.set(newScaleX, 1, 1);
+            } else {
+              cell.scale.set(newScaleX, newScaleX, newScaleX);
+            }
             if (cell.userData.growthStage >= divisionThreshold) {
               divideCellProcess(cell);
             }
@@ -597,8 +630,11 @@ function FluorescentTimer() {
   return (
     <div className="w-full h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex flex-col">
       <div className="bg-white shadow-sm border-b p-4">
-        <h1 className="text-2xl font-bold text-gray-800">Fluorescent Timer Model Visualization</h1>
-        <p className="text-sm text-gray-600 mt-1">Based on Fast-FT protein C→B→I→R maturation chain</p>
+        <div className="flex items-center justify-between">
+          <h1 className="text-2xl font-bold text-gray-800">Fluorescent Timer Model Visualization</h1>
+          <HelpButton title="Fluorescent Timer Model" content={helpContent} />
+        </div>
+        <p className="text-sm text-gray-600 mt-1">Based on Fast-FT protein C鈫払鈫扞鈫扲 maturation chain</p>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row">
         <div className="w-full lg:w-80 bg-white shadow-lg p-4 overflow-y-auto">
@@ -628,6 +664,17 @@ function FluorescentTimer() {
                 >
                   Reset
                 </Button>
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2">Yeast Type</label>
+                <select
+                  className="w-full h-10 rounded-md border border-input bg-background px-3 text-sm"
+                  value={yeastType}
+                  onChange={(e) => setYeastType(e.target.value)}
+                >
+                  <option value="grape_n1">Grape Yeast N1 (spherical)</option>
+                  <option value="grape">Grape Yeast (ellipsoidal)</option>
+                </select>
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">Speed Multiplier: {speedMultiplier}x</label>
