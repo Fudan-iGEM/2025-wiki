@@ -34,7 +34,7 @@ As described in Shaw et al. (2023)[^1], briefly:
    | **2** |          Plasmid Backbone (25 fmol/&mu;L)          |              0.5              |            12.5 fmol            |
    | **3** |              10x T4 DNA Ligase Buffer              |               1               |               1x                |
    | **4** |            T4 DNA Ligase (400 U/&mu;L)             |              0.5              |              200 U              |
-   | **5** | Restriction Enzyme ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) or [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) or [BpiI](https://www.thermofisher.com/order/catalog/product/FD1014)) |              0.5              | 10 U ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2)) or 5 U ([BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2)/[BpiI](https://www.thermofisher.com/order/catalog/product/FD1014)) |
+   | **5** | Restriction Enzyme ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2) or [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2) or [BpiI](https://www.thermofisher.com/order/catalog/product/FD1014)) | 0.5 | 10 U ([BsaI](https://www.neb.com/en/products/r3733-bsai-hf-v2)) or 5 U ([BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2)/[BpiI](https://www.thermofisher.com/order/catalog/product/FD1014)) |
    | **6** |                Nuclease-Free Water                 | to a final volume of 10 &mu;L |                -                |
    |       |                     **Total**                      |            **10**             |                                 |
 
@@ -112,9 +112,9 @@ Inspired by Sorida et al. (2023)[^2], briefly:
    | **5** |     Nuclease-Free Water     | Bring up to 10 &mu;L |
    |       |          **Total**          |        **10**        |
 
-2. Incubate the reaction at 37°C for 4 h, and then 65°C for 20 min to heat inactivate the enzymes.
+2. Incubate the reaction at 37°C for 4 h, and then gel extract the large DNA fragment (&gt; 1.77 kb).
 
-3. Take 1 &mu;L digested vector, add 0.25 &mu;L each of new 5' and 3' HA, 0.25 &mu;L [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2), and 0.25 &mu;L T4 DNA Ligase to a total reaction volume of 2 &mu;L, and then conduct 37°C - 16°C 2-min cycling of Golden Gate assembly for 25 cycles. Preform [bateria transformation](https://2023.igem.wiki/fudan/experiments/#plasmid-transformation) as described above.
+3. Take 1 &mu;L digested vector, add 0.25 &mu;L each of new 5' and 3' HA, 0.25 &mu;L [BsmBI](https://www.neb.com/en/products/r0739-bsmbi-v2), and 0.25 &mu;L T4 DNA Ligase to a total reaction volume of 2 &mu;L, and then conduct 42°C - 16°C 2-min cycling of Golden Gate assembly for 25 cycles. Preform [bateria transformation](https://2023.igem.wiki/fudan/experiments/#plasmid-transformation) as described above.
 
 4. Once correct bacteria clones are obtained, use [BpiI](https://www.thermofisher.com/order/catalog/product/FD1014) to [introduce the selection marker into the vector](#golden-gate-assembly).
 
@@ -173,8 +173,8 @@ As described in Shaw et al. (2023)[^1]. Briefly:
 
 3. Grow up yeast to OD600 ~0.7 (about 4 h).
 4. Pellet cells at 3000 *g* for 3 min, room temperature; use large centrifuge if needed.
-5. Wash with 0.5x volume 0.2 M LiOAc and pellet cells at 3000 *g* for 3 min in large centrifuge, room temperature.
-6. Resuspend cells in 0.2 M LiOAc, 100 &mu;L per transformation 
+5. Wash with 0.5x volume 0.1 M LiOAc and pellet cells at 3000 *g* for 3 min in large centrifuge, room temperature.
+6. Resuspend cells in 0.1 M LiOAc, 100 &mu;L per transformation 
 7. Aliquot 100 &mu;L of cells into individual 1.5-mL tubes and pellet at 8000 rpm for 1 min at room temperature on small tabletop centrifuge and remove supernatant.
 
 ### DNA Digestion

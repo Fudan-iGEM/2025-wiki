@@ -2,7 +2,7 @@
   <div class="chromosome-visualization" data-skip-content-processing>
     <!-- Simple Header -->
     <div class="header">
-      <h3 class="title">Saccharomyces cerevisiae Genome</h3>
+      <h3 class="title"><i>Saccharomyces cerevisiae</i> (strain S288C)</h3>
       <p class="subtitle">Hover over markers to view distance from centromere</p>
     </div>
     <!-- Chromosomes Grid -->
@@ -16,11 +16,8 @@
         <div class="chromosome-header">
           <div class="chromosome-info">
             <span class="chromosome-name">Chr {{ chromosome.roman }}</span>
-            <span class="locus-info" v-if="chromosome.intLocus">
-              (Int. locus {{ chromosome.intLocus }})
-            </span>
-            <span class="ace2-info" v-else-if="chromosome.number === 12">
-              (ACE2)
+            <span class="locus-info" v-if="chromosome.markerSummary">
+              ({{ chromosome.markerSummary }})
             </span>
           </div>
           <span class="length-info">{{ formatLength(chromosome.totalLength) }}</span>
@@ -43,6 +40,23 @@
               </linearGradient>
               <filter :id="`shadow-${chromosome.number}`">
                 <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+              </filter>
+              <filter :id="`shadow-centromere-${chromosome.number}`">
+                <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-opacity="0.12" />
+              </filter>
+              <filter :id="`glow-insertion-${chromosome.number}`">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+              <filter :id="`glow-ace2-${chromosome.number}`">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
               </filter>
             </defs>
             
@@ -70,85 +84,60 @@
               fill="#062570"
               stroke="#ffffff"
               stroke-width="1"
-              filter="url(#shadow-centromere)"
+              :filter="`url(#shadow-centromere-${chromosome.number})`"
             />
             
-            <!-- Insertion site with glow effect -->
-            <g v-if="chromosome.insertionLocus">
+            <!-- Insertion markers -->
+            <g 
+              v-for="marker in chromosome.markers"
+              :key="marker.id"
+            >
               <rect
-                :x="30 + getInsertionPosition(chromosome) - 8"
+                :x="30 + getMarkerPosition(chromosome, marker) - 8"
                 y="19.5"
-                width="16"
-                height="16"
-                fill="transparent"
-                class="interactive-marker"
-                @mouseenter="showTooltip($event, chromosome, 'insertion')"
-                @mouseleave="hideTooltip"
-              />
-              <defs>
-                <filter id="glow-insertion">
-                  <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-                  <feMerge> 
-                    <feMergeNode in="coloredBlur"/>
-                    <feMergeNode in="SourceGraphic"/> 
-                  </feMerge>
-                </filter>
-              </defs>
-              <circle
-                :cx="30 + getInsertionPosition(chromosome)"
-                cy="27.5"
-                r="8"
-                fill="#008794"
-                stroke="#ffffff"
-                stroke-width="2"
-                class="insertion-shape"
-                filter="url(#glow-insertion)"
-              />
-              <circle
-                :cx="30 + getInsertionPosition(chromosome)"
-                cy="27.5"
-                r="4"
-                fill="#5dcac6"
-                class="pointer-events-none"
-              />
-            </g>
-            
-            <!-- ACE2 position with special styling -->
-            <g v-if="chromosome.number === 12">
-              <rect
-                :x="30 + getACE2Position() - 8"
-                y="15"
                 width="16"
                 height="20"
                 fill="transparent"
                 class="interactive-marker"
-                @mouseenter="showTooltip($event, chromosome, 'ace2')"
+                @mouseenter="showTooltip($event, chromosome, marker)"
                 @mouseleave="hideTooltip"
               />
-              <defs>
-                <filter id="glow-ace2">
-                  <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-                  <feMerge> 
-                    <feMergeNode in="coloredBlur"/>
-                    <feMergeNode in="SourceGraphic"/> 
-                  </feMerge>
-                </filter>
-              </defs>
-              <polygon
-                :points="`${30 + getACE2Position() - 8},35 ${30 + getACE2Position()},15 ${30 + getACE2Position() + 8},35`"
-                fill="#e97e35"
-                stroke="#ffffff"
-                stroke-width="2"
-                class="ace2-shape"
-                filter="url(#glow-ace2)"
-              />
-              <circle
-                :cx="30 + getACE2Position()"
-                cy="25"
-                r="3"
-                fill="#faccaf"
-                class="pointer-events-none"
-              />
+              <template v-if="marker.type === 'insertion'">
+                <circle
+                  :cx="30 + getMarkerPosition(chromosome, marker)"
+                  cy="27.5"
+                  r="8"
+                  fill="#008794"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  class="insertion-shape"
+                  :filter="`url(#glow-insertion-${chromosome.number})`"
+                />
+                <circle
+                  :cx="30 + getMarkerPosition(chromosome, marker)"
+                  cy="27.5"
+                  r="4"
+                  fill="#5dcac6"
+                  class="pointer-events-none"
+                />
+              </template>
+              <template v-else-if="marker.type === 'ace2'">
+                <polygon
+                  :points="`${30 + getMarkerPosition(chromosome, marker) - 8},35 ${30 + getMarkerPosition(chromosome, marker)},15 ${30 + getMarkerPosition(chromosome, marker) + 8},35`"
+                  fill="#e97e35"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  class="ace2-shape"
+                  :filter="`url(#glow-ace2-${chromosome.number})`"
+                />
+                <circle
+                  :cx="30 + getMarkerPosition(chromosome, marker)"
+                  cy="25"
+                  r="3"
+                  fill="#faccaf"
+                  class="pointer-events-none"
+                />
+              </template>
             </g>
             
             <!-- Enhanced scale markers -->
@@ -204,6 +193,10 @@
         </div>
         <div class="tooltip-content">
           <div class="tooltip-row">
+            <span class="tooltip-label">Chromosome:</span>
+            <span class="tooltip-value">{{ tooltip.chromosome }}</span>
+          </div>
+          <div class="tooltip-row">
             <span class="tooltip-label">Position:</span>
             <span class="tooltip-value">{{ tooltip.position.toLocaleString() }} bp</span>
           </div>
@@ -215,8 +208,13 @@
             <span class="tooltip-label">Percentage:</span>
             <span class="tooltip-percentage">{{ tooltip.percentage }}%</span>
           </div>
-          <div v-if="tooltip.type === 'insertion'" class="tooltip-chromosome">
-            <span class="tooltip-chromosome-text">Chromosome {{ tooltip.chromosome }}</span>
+          <div class="tooltip-row" v-if="tooltip.arm">
+            <span class="tooltip-label">Arm:</span>
+            <span class="tooltip-value">{{ tooltip.arm }}</span>
+          </div>
+          <div class="tooltip-row" v-if="tooltip.homologyLeft && tooltip.homologyRight">
+            <span class="tooltip-label">Homology:</span>
+            <span class="tooltip-value">{{ tooltip.homologyLeft }} / {{ tooltip.homologyRight }} bp</span>
           </div>
         </div>
         <!-- Tooltip arrow -->
@@ -228,180 +226,112 @@
 
 <script setup>
 import { ref, reactive } from 'vue'
+import rawChromosomeData from './chromosome-markers.json'
 
 const chromosomeWidth = 480
 const chromosomeHeight = 80
-// Use a more balanced scaling approach - minimum width ensures visibility
-const minChromosomeWidth = 200  // Increased minimum width for better visual balance
+const minChromosomeWidth = 200
 const maxChromosomeWidth = 420
-const maxChromosomeLength = 1531933 // Chromosome IV length for scaling
 
-// Chromosome data - EXACT match with provided table
-const chromosomes = ref([
-  {
-    number: 1,
-    roman: 'I',
-    intLocus: 1,
-    homologyStart: 169422,
-    homologyEnd: 169940,
-    insertionLocus: 169941,
-    totalLength: 230382,  // Corrected from table
-    centromereStart: 143468,
-    centromereEnd: 143585,
-    centromereCenter: 143526.5
-  },
-  {
-    number: 4,
-    roman: 'IV',
-    intLocus: 2,
-    homologyStart: 359888,
-    homologyEnd: 360355,
-    insertionLocus: 360355.5,
-    totalLength: 1479067,
-    centromereStart: 450378,
-    centromereEnd: 450455,
-    centromereCenter: 450416.5
-  },
-  {
-    number: 6,  // Corrected: this is chromosome VI, not V
-    roman: 'VI',
-    intLocus: 3,
-    homologyStart: 10278,
-    homologyEnd: 10913,
-    insertionLocus: 10913.5,  // Corrected insertion locus
-    totalLength: 270130,  // Corrected total length
-    centromereStart: 151188,
-    centromereEnd: 151305,
-    centromereCenter: 151246.5
-  },
-  {
-    number: 7,
-    roman: 'VII',
-    intLocus: 4,
-    homologyStart: 12472,
-    homologyEnd: 12982,
-    insertionLocus: 12982.5,
-    totalLength: 1051019,  // Corrected
-    centromereStart: 496347,
-    centromereEnd: 496447,
-    centromereCenter: 496397
-  },
-  {
-    number: 8,
-    roman: 'VIII',
-    intLocus: 5,
-    homologyStart: 191015,
-    homologyEnd: 191539,
-    insertionLocus: 191539.5,
-    totalLength: 544025,  // Corrected
-    centromereStart: 95093,
-    centromereEnd: 95210,
-    centromereCenter: 95151.5
-  },
-  {
-    number: 9,
-    roman: 'IX',
-    intLocus: 6,
-    homologyStart: 340431,
-    homologyEnd: 340933,
-    insertionLocus: 340934,
-    totalLength: 454735,
-    centromereStart: 355819,
-    centromereEnd: 355935,
-    centromereCenter: 355877
-  },
-  {
-    number: 11,
-    roman: 'XI',
-    intLocus: 7,
-    homologyStart: 24931,
-    homologyEnd: 25451,
-    insertionLocus: 25451.5,
-    totalLength: 682226,  // Corrected from table
-    centromereStart: 453080,
-    centromereEnd: 453770,
-    centromereCenter: 453425
-  },
-  {
-    number: 13,
-    roman: 'XIII',
-    intLocus: 8,
-    homologyStart: 408123,
-    homologyEnd: 408657,
-    insertionLocus: 408657.5,
-    totalLength: 916765,
-    centromereStart: 254283,
-    centromereEnd: 254383,
-    centromereCenter: 254333
-  },
-  {
-    number: 15,
-    roman: 'XV',
-    intLocus: 9,
-    homologyStart: 686950,
-    homologyEnd: 687450,
-    insertionLocus: 687450.5,
-    totalLength: 1056263,
-    centromereStart: 317448,
-    centromereEnd: 317566,
-    centromereCenter: 317507
-  },
-  {
-    number: 16,
-    roman: 'XVI',
-    intLocus: 10,
-    homologyStart: 569995,
-    homologyEnd: 570541,
-    insertionLocus: 570541.5,
-    totalLength: 916013,
-    centromereStart: 537133,
-    centromereEnd: 537249,
-    centromereCenter: 537191
-  },
-  // ACE2 chromosome
-  {
-    number: 12,
-    roman: 'XII',
-    intLocus: null,
-    homologyStart: 91523,  // ACE2 homology start
-    homologyEnd: 96004,    // ACE2 homology end
-    insertionLocus: null,
-    totalLength: 1018864,  // Corrected from table
-    centromereStart: 141525,
-    centromereEnd: 141644,
-    centromereCenter: 141584.5
+const romanNumerals = [
+  '',
+  'I',
+  'II',
+  'III',
+  'IV',
+  'V',
+  'VI',
+  'VII',
+  'VIII',
+  'IX',
+  'X',
+  'XI',
+  'XII',
+  'XIII',
+  'XIV',
+  'XV',
+  'XVI'
+]
+
+function toRoman(number) {
+  return romanNumerals[number] || String(number)
+}
+
+function formatMarkerLabel(identifier) {
+  if (identifier === null || identifier === undefined) {
+    return 'Unknown marker'
   }
-])
+  if (typeof identifier === 'number') {
+    return `Int. locus ${identifier}`
+  }
+  const trimmed = String(identifier).trim()
+  return trimmed.length ? trimmed : 'Unknown marker'
+}
 
-// ACE2 position (chromosome XII) - EXACT from table
-const ace2Position = 93763.5
+function formatArm(orientation) {
+  if (orientation === 1) return 'Right arm'
+  if (orientation === -1) return 'Left arm'
+  if (orientation === 0) return 'Centromeric'
+  return null
+}
+
+const structuredChromosomes = rawChromosomeData
+  .map((chromosome) => {
+    const markers = chromosome.markers.map((marker, index) => {
+      const label = formatMarkerLabel(marker.identifier)
+      const sanitized = label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+      return {
+        ...marker,
+        label,
+        id: `${chromosome.chromosome}-${sanitized || index}`,
+        armLabel: formatArm(marker.orientation)
+      }
+    }).sort((a, b) => a.insertionLocus - b.insertionLocus)
+
+    return {
+      number: chromosome.chromosome,
+      roman: toRoman(chromosome.chromosome),
+      totalLength: chromosome.totalLength,
+      centromereStart: chromosome.centromereStart,
+      centromereEnd: chromosome.centromereEnd,
+      centromereCenter: chromosome.centromereCenter,
+      markers,
+      markerSummary: markers.map((marker) => marker.label).join(', ')
+    }
+  })
+  .sort((a, b) => a.number - b.number)
+
+const chromosomes = ref(structuredChromosomes)
+const totalLengths = structuredChromosomes.map((chromosome) => chromosome.totalLength)
+const minDatasetLength = Math.min(...totalLengths)
+const maxChromosomeLength = Math.max(...totalLengths)
 
 const tooltip = reactive({
   visible: false,
   x: 0,
   y: 0,
   title: '',
+  chromosome: '',
+  type: '',
   position: 0,
   distance: 0,
-  percentage: 0,
-  chromosome: '',
-  type: ''
+  percentage: '',
+  arm: null,
+  homologyLeft: '',
+  homologyRight: ''
 })
 
 function getChromosomeLength(totalLength) {
-  // Use logarithmic scaling for better visual balance
-  const minLength = 200000  // Minimum chromosome length in dataset
+  const minLength = Math.max(minDatasetLength, 1)
   const maxLength = maxChromosomeLength
-  
-  // Logarithmic scaling formula
+
   const logMin = Math.log(minLength)
   const logMax = Math.log(maxLength)
   const logCurrent = Math.log(totalLength)
-  
-  // Map to visual range with better distribution
-  const normalizedLog = (logCurrent - logMin) / (logMax - logMin)
-  const scaledWidth = minChromosomeWidth + (normalizedLog * (maxChromosomeWidth - minChromosomeWidth))
-  
+
+  const normalizedLog = (logCurrent - logMin) / (logMax - logMin || 1)
+  const scaledWidth = minChromosomeWidth + normalizedLog * (maxChromosomeWidth - minChromosomeWidth)
+
   return Math.max(scaledWidth, minChromosomeWidth)
 }
 
@@ -409,14 +339,9 @@ function getCentromerePosition(chromosome) {
   return (chromosome.centromereCenter / chromosome.totalLength) * getChromosomeLength(chromosome.totalLength)
 }
 
-function getInsertionPosition(chromosome) {
-  if (!chromosome.insertionLocus) return 0
-  return (chromosome.insertionLocus / chromosome.totalLength) * getChromosomeLength(chromosome.totalLength)
-}
-
-function getACE2Position() {
-  const chromosome12 = chromosomes.value.find(c => c.number === 12)
-  return (ace2Position / chromosome12.totalLength) * getChromosomeLength(chromosome12.totalLength)
+function getMarkerPosition(chromosome, marker) {
+  if (!marker?.insertionLocus) return 0
+  return (marker.insertionLocus / chromosome.totalLength) * getChromosomeLength(chromosome.totalLength)
 }
 
 function calculateDistanceFromCentromere(position, centromereCenter) {
@@ -424,50 +349,46 @@ function calculateDistanceFromCentromere(position, centromereCenter) {
 }
 
 function calculatePercentage(distance, totalLength) {
-  return Math.round((distance / totalLength) * 100)
+  return ((distance / totalLength) * 100).toFixed(1)
 }
 
 function formatLength(length) {
   if (length >= 1000000) {
     return (length / 1000000).toFixed(1) + 'M'
-  } else if (length >= 1000) {
+  }
+  if (length >= 1000) {
     return (length / 1000).toFixed(0) + 'k'
   }
   return length.toString()
 }
 
-function showTooltip(event, chromosome, type) {
+function formatRange(range) {
+  if (!Array.isArray(range) || range.length !== 2) {
+    return null
+  }
+  const [start, end] = range
+  return `${Math.round(start).toLocaleString()}-${Math.round(end).toLocaleString()}`
+}
+
+function showTooltip(event, chromosome, marker) {
   const target = event.currentTarget || event.target
-  if (!target) return
+  if (!target || !marker) return
 
   const rect = target.getBoundingClientRect()
-  
-  // 使用固定定位，直接使用viewport坐标
   tooltip.x = rect.left + rect.width / 2
   tooltip.y = rect.top - 10
-  
-  if (type === 'insertion') {
-    const distance = calculateDistanceFromCentromere(chromosome.insertionLocus, chromosome.centromereCenter)
-    const percentage = calculatePercentage(distance, chromosome.totalLength)
-    
-    tooltip.title = `Insertion Site ${chromosome.intLocus}`
-    tooltip.position = Math.round(chromosome.insertionLocus)
-    tooltip.distance = Math.round(distance)
-    tooltip.percentage = percentage
-    tooltip.chromosome = chromosome.roman
-    tooltip.type = 'insertion'
-  } else if (type === 'ace2') {
-    const distance = calculateDistanceFromCentromere(ace2Position, chromosome.centromereCenter)
-    const percentage = calculatePercentage(distance, chromosome.totalLength)
-    
-    tooltip.title = 'ACE2 Gene'
-    tooltip.position = Math.round(ace2Position)
-    tooltip.distance = Math.round(distance)
-    tooltip.percentage = percentage
-    tooltip.chromosome = chromosome.roman
-    tooltip.type = 'ace2'
-  }
-  
+
+  const distance = calculateDistanceFromCentromere(marker.insertionLocus, chromosome.centromereCenter)
+  tooltip.title = marker.label
+  tooltip.chromosome = chromosome.roman
+  tooltip.type = marker.type
+  tooltip.position = Math.round(marker.insertionLocus)
+  tooltip.distance = Math.round(distance)
+  tooltip.percentage = calculatePercentage(distance, chromosome.totalLength)
+  tooltip.arm = marker.armLabel
+  tooltip.homologyLeft = formatRange(marker.homologyArmLeft) || ''
+  tooltip.homologyRight = formatRange(marker.homologyArmRight) || ''
+
   tooltip.visible = true
 }
 
@@ -548,11 +469,6 @@ function hideTooltip() {
 .locus-info {
   font-size: 0.75rem;
   color: #6b7280;
-}
-
-.ace2-info {
-  font-size: 0.75rem;
-  color: #ea580c;
 }
 
 .length-info {
@@ -692,16 +608,6 @@ function hideTooltip() {
 .tooltip-percentage {
   font-weight: 600;
   color: #ea580c;
-}
-
-.tooltip-chromosome {
-  padding-top: 0.25rem;
-  border-top: 1px solid #e5e7eb;
-}
-
-.tooltip-chromosome-text {
-  font-size: 0.75rem;
-  color: #6b7280;
 }
 
 .tooltip-arrow {

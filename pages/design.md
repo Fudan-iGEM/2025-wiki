@@ -70,7 +70,7 @@ The earliest description of multicellularity in yeast was reported by Ratcliff e
 
 Subsequent reports have revealed a strong correlation between this emergent multicellularity and the loss-of-function of the *ACE2* gene. Furthermore, during the process of directed evolution, it was consistently observed that diploid yeast rapidly evolve to become tetraploid.[^9]
 
-To improve the [safety](/safety/#genomic-integration-over-plasmids) of our chassis, we integrate the following modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on only homologous recombination without introducing additional CRISPR/Cas9 (which might increase genome integration efficient). This approach was adapted from the yeast modular DNA assembly methods described by Lee et al.[^6].
+To improve the [safety](/safety/#genomic-integration-over-plasmids) of our chassis, we integrate the following modules into the genome. However, given the time constraints and the fact that *S. cerevisiae* naturally exhibits highly efficient homologous recombination, we strategically chose to rely on only homologous recombination. If either gRNA or Cas9 plamid was used to facilitate genome integration, additional negative selection was applied to remove the helper plasmids. This approach was adapted from the yeast modular DNA assembly methods described by Lee et al. (2015) [^6] and Shaw et al. (2023)[^7].
 
 #### *ACE2* Deletion
 

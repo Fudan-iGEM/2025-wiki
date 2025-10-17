@@ -157,6 +157,7 @@ subparts = []
 sub_is_NOT_basic = []
 basic_parts = []
 parts_not_published = []
+coding_not_ATG = []
 known_basic_parts = ['BBa_B0030',
 'BBa_I742151',
 'BBa_J18920',
@@ -332,6 +333,8 @@ for zz in z:
                     p2['type']['label'],
                     len(p2['sequence']),
                     p2['audit']['updated'] ))
+    if p2['type']['label'] == 'Coding' and p2['sequence'][:3] != 'ATG':
+        coding_not_ATG.append(part_name)
     # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/compatibilities
     # https://api.registry.igem.org/v1/parts/3e30ad4f-5360-49f7-bda4-60929b0f2971/uses
     if force_check_rfc or not os.path.isfile('parts-json/%s_rfc.json' % part_name):
@@ -424,6 +427,10 @@ if sub_is_NOT_basic:
 if parts_not_published:
     print('\n\n====\nBelow are parts block for doc:\n')
     print('\n'.join(["'%s'," % x for x in sorted(parts_not_published) ]))
+
+if coding_not_ATG:
+    print('\n====\nCoding sequence must start with ATG:\n')
+    print('\n'.join(["'%s'," % x for x in sorted(coding_not_ATG) ]))
 
 print('\n\nCAUTION: remove files in parts-json for update\n')
 #print('Validate with https://parts.igem.org/partsdb/search_1000.cgi?q=K5115000\n\n\n\n')

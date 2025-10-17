@@ -1,0 +1,418 @@
+[
+  {
+    "chromosome": 1,
+    "totalLength": 230218,
+    "centromereStart": 151465,
+    "centromereEnd": 151582,
+    "centromereCenter": 151523.5,
+    "markers": [
+      {
+        "identifier": 1,
+        "type": "insertion",
+        "insertionLocus": 178563.5,
+        "homologyArmLeft": [
+          178043.0,
+          178563.0
+        ],
+        "homologyArmRight": [
+          178564.0,
+          179100.0
+        ],
+        "orientation": 1,
+        "distanceBp": 27040,
+        "distanceFraction": 0.343607240658496
+      }
+    ]
+  },
+  {
+    "chromosome": 2,
+    "totalLength": 813184,
+    "centromereStart": 238207,
+    "centromereEnd": 238323,
+    "centromereCenter": 238265,
+    "markers": [
+      {
+        "identifier": "DPB3",
+        "type": "insertion",
+        "insertionLocus": 760596.5,
+        "homologyArmLeft": [
+          759793.0,
+          760293.0
+        ],
+        "homologyArmRight": [
+          760900.0,
+          761400.0
+        ],
+        "orientation": 1,
+        "distanceBp": 522331.5,
+        "distanceFraction": 0.908530593005275
+      }
+    ]
+  },
+  {
+    "chromosome": 3,
+    "totalLength": 316620,
+    "centromereStart": 114385,
+    "centromereEnd": 114501,
+    "centromereCenter": 114443,
+    "markers": [
+      {
+        "identifier": "FEN2",
+        "type": "insertion",
+        "insertionLocus": 171655,
+        "homologyArmLeft": [
+          170385.0,
+          170885.0
+        ],
+        "homologyArmRight": [
+          172425.0,
+          172925.0
+        ],
+        "orientation": 1,
+        "distanceBp": 57212,
+        "distanceFraction": 0.282979765255197
+      }
+    ]
+  },
+  {
+    "chromosome": 4,
+    "totalLength": 1531933,
+    "centromereStart": 449711,
+    "centromereEnd": 449821,
+    "centromereCenter": 449766,
+    "markers": [
+      {
+        "identifier": 2,
+        "type": "insertion",
+        "insertionLocus": 358664.5,
+        "homologyArmLeft": [
+          358177.0,
+          358664.0
+        ],
+        "homologyArmRight": [
+          358665.0,
+          359206.0
+        ],
+        "orientation": 0,
+        "distanceBp": 91101.5,
+        "distanceFraction": 0.202553105392582
+      }
+    ]
+  },
+  {
+    "chromosome": 5,
+    "totalLength": 576874,
+    "centromereStart": 151987,
+    "centromereEnd": 152104,
+    "centromereCenter": 152045.5,
+    "markers": [
+      {
+        "identifier": "SWI4",
+        "type": "insertion",
+        "insertionLocus": 384235.5,
+        "homologyArmLeft": [
+          382094.0,
+          362594.0
+        ],
+        "homologyArmRight": [
+          385877.0,
+          386377.0
+        ],
+        "orientation": 1,
+        "distanceBp": 232190,
+        "distanceFraction": 0.546549960748867
+      }
+    ]
+  },
+  {
+    "chromosome": 6,
+    "totalLength": 270161,
+    "centromereStart": 148510,
+    "centromereEnd": 148627,
+    "centromereCenter": 148568.5,
+    "markers": [
+      {
+        "identifier": 3,
+        "type": "insertion",
+        "insertionLocus": 26425.5,
+        "homologyArmLeft": [
+          25790.0,
+          26425.0
+        ],
+        "homologyArmRight": [
+          26426.0,
+          26940.0
+        ],
+        "orientation": 0,
+        "distanceBp": 122143,
+        "distanceFraction": 0.822132551651259
+      }
+    ]
+  },
+  {
+    "chromosome": 7,
+    "totalLength": 1090940,
+    "centromereStart": 496920,
+    "centromereEnd": 497038,
+    "centromereCenter": 496979,
+    "markers": [
+      {
+        "identifier": 4,
+        "type": "insertion",
+        "insertionLocus": 19208.5,
+        "homologyArmLeft": [
+          18698.0,
+          19208.0
+        ],
+        "homologyArmRight": [
+          19209.0,
+          19724.0
+        ],
+        "orientation": 0,
+        "distanceBp": 477770.5,
+        "distanceFraction": 0.961349473519002
+      }
+    ]
+  },
+  {
+    "chromosome": 8,
+    "totalLength": 562643,
+    "centromereStart": 105586,
+    "centromereEnd": 105703,
+    "centromereCenter": 105644.5,
+    "markers": [
+      {
+        "identifier": 5,
+        "type": "insertion",
+        "insertionLocus": 202751.5,
+        "homologyArmLeft": [
+          202227.0,
+          202751.0
+        ],
+        "homologyArmRight": [
+          202752.0,
+          203265.0
+        ],
+        "orientation": 1,
+        "distanceBp": 97107,
+        "distanceFraction": 0.212488662435435
+      }
+    ]
+  },
+  {
+    "chromosome": 9,
+    "totalLength": 439888,
+    "centromereStart": 355629,
+    "centromereEnd": 355745,
+    "centromereCenter": 355687,
+    "markers": [
+      {
+        "identifier": 6,
+        "type": "insertion",
+        "insertionLocus": 337771.5,
+        "homologyArmLeft": [
+          337270.0,
+          337771.0
+        ],
+        "homologyArmRight": [
+          337772.0,
+          338361.0
+        ],
+        "orientation": 0,
+        "distanceBp": 17915.5,
+        "distanceFraction": 0.0503687230626928
+      }
+    ]
+  },
+  {
+    "chromosome": 10,
+    "totalLength": 745751,
+    "centromereStart": 436307,
+    "centromereEnd": 436425,
+    "centromereCenter": 436366,
+    "markers": [
+      {
+        "identifier": "SOD1",
+        "type": "insertion",
+        "insertionLocus": 622782,
+        "homologyArmLeft": [
+          622049.0,
+          622549.0
+        ],
+        "homologyArmRight": [
+          623015.0,
+          623515.0
+        ],
+        "orientation": 1,
+        "distanceBp": 186416,
+        "distanceFraction": 0.602537291723904
+      }
+    ]
+  },
+  {
+    "chromosome": 11,
+    "totalLength": 666816,
+    "centromereStart": 440129,
+    "centromereEnd": 440246,
+    "centromereCenter": 440187.5,
+    "markers": [
+      {
+        "identifier": 7,
+        "type": "insertion",
+        "insertionLocus": 20292.5,
+        "homologyArmLeft": [
+          19786.0,
+          20292.0
+        ],
+        "homologyArmRight": [
+          20293.0,
+          20804.0
+        ],
+        "orientation": 0,
+        "distanceBp": 419895,
+        "distanceFraction": 0.953900326565384
+      }
+    ]
+  },
+  {
+    "chromosome": 12,
+    "totalLength": 1078177,
+    "centromereStart": 150828,
+    "centromereEnd": 150947,
+    "centromereCenter": 150887.5,
+    "markers": [
+      {
+        "identifier": "BDF1",
+        "type": "insertion",
+        "insertionLocus": 920566,
+        "homologyArmLeft": [
+          919035.0,
+          919535.0
+        ],
+        "homologyArmRight": [
+          921597.0,
+          922097.0
+        ],
+        "orientation": 1,
+        "distanceBp": 769678.5,
+        "distanceFraction": 0.830030427390799
+      },
+      {
+        "identifier": "ACE2",
+        "type": "ace2",
+        "insertionLocus": 405666,
+        "homologyArmLeft": [
+          404209.0,
+          404509.0
+        ],
+        "homologyArmRight": [
+          406823.0,
+          407327.0
+        ],
+        "orientation": 1,
+        "distanceBp": 254778.5,
+        "distanceFraction": 0.274756157596953
+      }
+    ]
+  },
+  {
+    "chromosome": 13,
+    "totalLength": 924431,
+    "centromereStart": 268031,
+    "centromereEnd": 268149,
+    "centromereCenter": 268090,
+    "markers": [
+      {
+        "identifier": 8,
+        "type": "insertion",
+        "insertionLocus": 433662.5,
+        "homologyArmLeft": [
+          433128.0,
+          433662.0
+        ],
+        "homologyArmRight": [
+          433663.0,
+          434166.0
+        ],
+        "orientation": 1,
+        "distanceBp": 165572.5,
+        "distanceFraction": 0.252265971499571
+      }
+    ]
+  },
+  {
+    "chromosome": 14,
+    "totalLength": 784333,
+    "centromereStart": 628758,
+    "centromereEnd": 628875,
+    "centromereCenter": 628816.5,
+    "markers": [
+      {
+        "identifier": "CAF",
+        "type": "insertion",
+        "insertionLocus": 90863.5,
+        "homologyArmLeft": [
+          89802.0,
+          90302.0
+        ],
+        "homologyArmRight": [
+          91425.0,
+          91925.0
+        ],
+        "orientation": 0,
+        "distanceBp": 537953,
+        "distanceFraction": 0.855500770097477
+      }
+    ]
+  },
+  {
+    "chromosome": 15,
+    "totalLength": 1091291,
+    "centromereStart": 326584,
+    "centromereEnd": 326702,
+    "centromereCenter": 326643,
+    "markers": [
+      {
+        "identifier": 9,
+        "type": "insertion",
+        "insertionLocus": 702111.5,
+        "homologyArmLeft": [
+          701610.0,
+          702111.0
+        ],
+        "homologyArmRight": [
+          702112.0,
+          702626.0
+        ],
+        "orientation": 1,
+        "distanceBp": 375468.5,
+        "distanceFraction": 0.491034436760444
+      }
+    ]
+  },
+  {
+    "chromosome": 16,
+    "totalLength": 948066,
+    "centromereStart": 555957,
+    "centromereEnd": 556073,
+    "centromereCenter": 556015,
+    "markers": [
+      {
+        "identifier": 10,
+        "type": "insertion",
+        "insertionLocus": 589378.5,
+        "homologyArmLeft": [
+          588839.0,
+          589378.0
+        ],
+        "homologyArmRight": [
+          589379.0,
+          589860.0
+        ],
+        "orientation": 1,
+        "distanceBp": 33363.5,
+        "distanceFraction": 0.0850998977173888
+      }
+    ]
+  }
+]

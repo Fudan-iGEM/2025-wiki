@@ -153,13 +153,13 @@ Shaw et al. (2023) designed 10 sets of safe integration sites located on differe
 1. **Minimize Host Cell Impact:** To ensure that the integration of the foreign DNA into the host genome has the least possible disruptive effect on the yeast cell's essential physiology.
 2. **Maximize Integration Efficiency and Stability:** To increase the likelihood of achieving highly efficient and stable integration of the genetic constructs.
 3. **Highly Conserved in Common Strains:** To guarantee that the loci are well-conserved across common laboratory strains of *S. cerevisiae*, thereby ensuring the broad utility and portability of the toolkit.
-4. **Directly Amenable to CRISPR-Cas9 Manipulation:** To make these sites readily accessible and targetable for precise editing using CRISPR-Cas9 technology. Please note in our project, no gRNA nor Cas9 were introduced into yeast.
+4. **Directly Amenable to CRISPR/Cas9 Manipulation:** To make these sites readily accessible and targetable for precise editing using CRISPR/Cas9 technology. Please note in our project, if either gRNA or Cas9 plamid was used to facilitate genome integration, additional negative selection was applied to remove the helper plasmids.
 
 To uphold these principles, Shaw et al. (2023) picked 10 sites because they reside in true intergenic regions (non-coding DNA), being located more than 1 kb from any known gene's start codon and more than 0.5 kb from its stop codon.
 
 Furthermore, we recognized that these integration sites exhibit varying distances from the centromere across the chromosomes. We hypothsize that during yeast growth, sites located farther from the centromere undergo more frequent recombination events, leading to greater genetic variation. The question of whether these variations can be recorded was part of the inspiration behind our [design](/design/) of the [TU Recorders](https://registry.igem.org/collections/6594370b-999e-4d9c-a3ea-7c1b83e12a30).
 
-Table 3. Integration Sites with varying distances to the centromere
+Table 3. Integration Sites with varying distances to the centromere (strain Y55)
 
 | Part number  |  Part name   |     Integration Loci     |Chr. Arm |Distance to Centromere |
 | :----------: | :----------: | :----------------------: | :------ | :---------------------|

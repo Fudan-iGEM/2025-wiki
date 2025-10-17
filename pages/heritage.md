@@ -8,7 +8,7 @@ heroImage: https://static.igem.wiki/teams/5643/header/heritage.avif
 description: Our legacy is being passed down from our ancestors.
 ---
 
-<strong>Fudan University</strong> has been taking part in [iGEM Competition](https://old.igem.org/Timeline) since 2011. Among one of the first teams in China to participate in iGEM, we have deepened our understanding in synthetic biology over the years and endeavored to pass down both our knowledge and our passion, for follew teams that come.
+<strong>Fudan University</strong> has been taking part in [iGEM Competition](https://old.igem.org/Timeline) since 2011. Among one of the first teams in China to participate in iGEM, we have deepened our understanding in synthetic biology over the years and endeavored to pass down both our knowledge and our passion, for follow teams that come.
 
 Below is the complete list of our iGEM projects.
 
