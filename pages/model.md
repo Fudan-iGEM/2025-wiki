@@ -509,7 +509,9 @@ To enhance the interpretability and accessibility of our modeling framework, we 
 
 > Try YeastVerse Visualization at https://yeastverse-99735e.igem.wiki/
 >
-> Source code at https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse
+> Source code at https://gitlab.igem.org/2025/fudan/-/tree/main/model/YeastVerse/
+> 
+> After Wiki Freeze, please follow updates at https://happytjh.github.io/YeastVerse/
 
 ### 3D Yeast Growth Simulation
 

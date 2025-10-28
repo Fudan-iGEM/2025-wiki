@@ -14,7 +14,7 @@ function YeastSimulation() {
   const helpContent = (
     <div>
       <p>1. Start the simulation and observe how the yeast cluster grows from a single cell to a multicellular structure.</p>
-      <p>2. Note the branching patterns and cell arrangements in "Grape" vs. "normal" yeast, which can inform the design of the multicellular chassis for drug resistance evolution studies.</p>
+      <p>2. Note the branching patterns and cell arrangements in 'Grape 2N/4N' vs. 'Grape 1N' yeast, which can inform the design of the multicellular chassis for drug resistance evolution studies. 'Grape 2N/4N' is a diploid/polyploid strain, with cells exhibiting an elongated elliptical shape, whereas 'Grape 1N' is a haploid strain, with cells displaying a spherical shape.</p>
       <p>3. Key growth parameters are user-adjustable, allowing for the customization of simulations to explore morphological outcomes under different hypothetical conditions. (Note: Some parameters need to be modified in the source code)</p>
     </div>
   );
@@ -765,8 +765,8 @@ function YeastSimulation() {
                 value={yeastType}
                 onChange={(e) => setYeastType(e.target.value)}
               >
-                <option value="grape_n1">Grape Yeast N1</option>
-                <option value="grape">Grape Yeast</option>
+                <option value="grape_n1">Grape Yeast 1N</option>
+                <option value="grape">Grape Yeast 2N/4N</option>
               </select>
             </div>
             <div className="mb-4">

@@ -220,9 +220,6 @@ This step linearizes plasmid DNA prior to yeast transformation to increase integ
 1. Resuspend [cell pellet](#one-day-competent-yeast-preparation) with 64 &mu;L of DNA cocktail.
 2. Mix cell-DNA suspension with 296 &mu;L of PEG-LiOAc mixture and incubate at room temperature for 30 min.
 3. Transfer tubes to 42°C water bath for 15 min, or longer if needed (up to 45 min).
-
-> Immediately place the tubes on ice to cool after heat shock!
-
 4. Centrifuge 8000 rpm on small bench top centrifuge for 30 s and remove supernatant.
 5. Depending on the selection marker:
 

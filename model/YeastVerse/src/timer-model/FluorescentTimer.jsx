@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import HelpButton from '../components/help/HelpButton';
@@ -159,7 +159,7 @@ function FluorescentTimer() {
     const material = new THREE.MeshPhongMaterial({
       color: 0x888888,
       transparent: true,
-      opacity: 0.3,
+      opacity: 0.78,
       emissive: 0x222222,
       emissiveIntensity: 0.1
     });
@@ -245,7 +245,7 @@ function FluorescentTimer() {
     const totalFluorescent = data.B + data.I + data.R;
     if (totalFluorescent < 0.01) {
       cell.material.color.setHex(0x888888);
-      cell.material.opacity = 0.3;
+      cell.material.opacity = 0.78;
       cell.material.emissive.setHex(0x222222);
       cell.material.emissiveIntensity = 0.1;
     } else {
@@ -264,9 +264,10 @@ function FluorescentTimer() {
       }
       const color = (Math.floor(r) << 16) | (Math.floor(g) << 8) | Math.floor(b);
       cell.material.color.setHex(color);
-      cell.material.opacity = 0.7 + totalFluorescent * 0.3;
+      const opacity = Math.max(0.78, Math.min(0.93, 0.58 + 0.32 * progress));
+      cell.material.opacity = opacity;
       cell.material.emissive.setHex(color);
-      cell.material.emissiveIntensity = 0.2 + totalFluorescent * 0.3;
+      cell.material.emissiveIntensity = 0.2 + 0.22 * progress;
     }
   };
   const updateStats = () => {
@@ -634,7 +635,7 @@ function FluorescentTimer() {
           <h1 className="text-2xl font-bold text-gray-800">Fluorescent Timer Model Visualization</h1>
           <HelpButton title="Fluorescent Timer Model" content={helpContent} />
         </div>
-        <p className="text-sm text-gray-600 mt-1">Based on Fast-FT protein C鈫払鈫扞鈫扲 maturation chain</p>
+        <p className="text-sm text-gray-600 mt-1">Based on Fast-FT protein C→B→I→R maturation chain</p>
       </div>
       <div className="flex-1 flex flex-col lg:flex-row">
         <div className="w-full lg:w-80 bg-white shadow-lg p-4 overflow-y-auto">
@@ -672,8 +673,8 @@ function FluorescentTimer() {
                   value={yeastType}
                   onChange={(e) => setYeastType(e.target.value)}
                 >
-                  <option value="grape_n1">Grape Yeast N1 (spherical)</option>
-                  <option value="grape">Grape Yeast (ellipsoidal)</option>
+                  <option value="grape_n1">Grape Yeast 1N (spherical)</option>
+                  <option value="grape">Grape Yeast 2N/4N (ellipsoidal)</option>
                 </select>
               </div>
               <div>
