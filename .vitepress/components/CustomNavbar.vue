@@ -801,7 +801,7 @@ const navItems = ref([
         icon: "heritage",
         title: "Heritage",
         description: "Team history and legacy",
-        link: "/fudan/heritage/",
+        link: "https://2024.igem.wiki/fudan/heritage/",
       },
       {
         icon: "team",

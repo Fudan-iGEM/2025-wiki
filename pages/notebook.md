@@ -11,7 +11,7 @@ description: On this page, we document our project's journey, tracking the key d
 
 ## January
 
-From January 6th to 15th, we held the ten-day [winter training](/heritage/) on synthetic biology and the iGEM competition.
+From January 6th to 15th, we held the ten-day [winter training](https://2018.igem.org/Team:Fudan/Heritage#section2) on synthetic biology and the iGEM competition.
 
 The training was structured into three components:
 

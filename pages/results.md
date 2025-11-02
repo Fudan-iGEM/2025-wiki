@@ -15,6 +15,8 @@ heroImage: https://static.igem.wiki/teams/5643/header/screenshot-2025-10-08-at-2
 description: On this page, we show the results of our experiments.
 ---
 
+Updated on 2025-10-31: we won the <a href="https://competition.igem.org/results/2025?tab=medals" target="_blank">Gold Medal</a>, and our project was nominated for the <a href="https://competition.igem.org/results/2025?tab=special-prizes#inclusivity-award" target="_blank">Inculsivity Award</a>.
+
 ## Characteristics of Grape Yeast
 
 ### Chitin Imaging Reveals the Morphology of Multicellularity

@@ -9,6 +9,8 @@ heroImage: https://static.igem.wiki/teams/5643/header/sus.webp
 description: On this page, we describe why we developed a new way to study microbial evolution.
 ---
 
+Updated on 2025-10-31: we won the <a href="https://competition.igem.org/results/2025?tab=medals" target="_blank">Gold Medal</a>, and our project was nominated for the <a href="https://competition.igem.org/results/2025?tab=special-prizes#inclusivity-award" target="_blank">Inculsivity Award</a>.
+
 ## The Global Challenge: Antifungal Resistance
 
 Fungi are responsible for a wide spectrum of human diseases, ranging from superficial infections to severe, life-threatening systemic mycoses. According to recent estimates, more than **6.55 million cases of acute fungal-related infections** occur every year worldwide, leading to approximately **3.8 million deaths**[^1].
