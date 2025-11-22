@@ -122,7 +122,7 @@ const teamMembers = [
     avatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx.webp",
     barAvatarUrl: "https://static.igem.wiki/teams/5643/pageimage/team/lyx-a.webp",
     iconUrl: "https://static.igem.wiki/teams/5643/img/parts-design-safety.webp",
-    description: "A light chaser: always moving forward and enbracing all possibilities. I pretty enjoy communication and collaboration during the journey of iGEM. For me, life is like a game called <i>Earth Online</i> and there's always something to explore!"
+    description: "A light chaser: always moving forward and enbracing all possibilities. I pretty enjoy communication and collaboration during the journey of iGEM. For me, life is like a game called <em>Earth Online</em> and there's always something to explore!"
   },
   {
     name: "Zuyao Wu",
