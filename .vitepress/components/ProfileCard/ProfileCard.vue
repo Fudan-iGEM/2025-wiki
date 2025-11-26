@@ -64,7 +64,7 @@
             
             <!-- 描述信息 - 在翻转时显示在title下面 -->
             <div v-if="isFlipped" class="pc-description-section">
-              <p class="pc-description-text">{{ description || 'No description available yet...' }}</p>
+              <p class="pc-description-text" v-html="description || 'No description available yet...'"></p>
             </div>
           </div>
         </div>
