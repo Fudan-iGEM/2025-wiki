@@ -109,7 +109,7 @@ $$
 
 We set a high weight on Effectiveness (WE = 10.0) and a lower weight on Specificity Loss (WS = 1.0), for the model explicitly prioritizes successful mutational outcomes (Effectiveness) but simultaneously enforces a necessary penalty for any system instability (Specificity Loss).
 
-Following a comprehensive performance analysis of all promoter and fluorescent protein combinations (our raw data at DOI: 10.5281/zenodo.17293146), we selected the three optimal pairs -- BBa_25FQWVZE [pRNR2 driven EMSfp383](https://registry.igem.org/parts/bba-25fqwvze), BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy), and BBa_25PHHOV9 [pTDH3 driven EMSfp383](https://registry.igem.org/parts/bba-25phhov9).
+Following a comprehensive performance analysis of all promoter and fluorescent protein combinations (our raw data at DOI: 10.5281/zenodo.17293146 ), we selected the three optimal pairs -- BBa_25FQWVZE [pRNR2 driven EMSfp383](https://registry.igem.org/parts/bba-25fqwvze), BBa_255T0PHY [pSTM1 driven EMSfp499](https://registry.igem.org/parts/bba-255t0phy), and BBa_25PHHOV9 [pTDH3 driven EMSfp383](https://registry.igem.org/parts/bba-25phhov9).
 
 **Table 1. Performance of Individual Promoter**
 

@@ -82,7 +82,7 @@ We implemented the new standard operating procedure: yeast cultures were incubat
 
 #### Test
 
-[Quantitively](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/cytoflex?ref_type=heads) analysis via flow cytometry (our raw data at DOI: 10.5281/zenodo.17293146) showed a significant increase in fluorescence intensity for both EMSfp642 (Log10_Fold Change = 1.85) and EMSfp643 (Log10_Fold Change = 2.36), achieving an acceptable signal-to-noise ratio.
+[Quantitively](https://gitlab.igem.org/2025/fudan/-/tree/main/measurement/cytoflex?ref_type=heads) analysis via flow cytometry (our raw data at DOI: 10.5281/zenodo.17293146 ) showed a significant increase in fluorescence intensity for both EMSfp642 (Log10_Fold Change = 1.85) and EMSfp643 (Log10_Fold Change = 2.36), achieving an acceptable signal-to-noise ratio.
 
 <div style="text-align: center;" id="fig1">
     <img src="https://static.igem.wiki/teams/5643/pageimage/engineering/pcb-analysis-grouped-by-sample-final-colors-capsize-r660-a-fixedtitle.webp" style="width:50%">
