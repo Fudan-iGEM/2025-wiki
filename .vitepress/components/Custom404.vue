@@ -86,8 +86,14 @@ let animationTimeline = null
 const recommendedLinks = [
   {
     href: 'https://video.igem.org/w/nri1zca7eHRFtGVEZWxfqe',
-    title: 'Project Video',
-    description: 'Our project promotional video',
+    title: 'Promotion Video',
+    description: 'Our project promotional video (2 minutes)',
+    tag: 'Community',
+  },
+  {
+    href: 'https://video.igem.org/w/iRsWyoY68ey3E83McFmNf2',
+    title: 'Presentation',
+    description: 'Our project presentation (15 minutes)',
     tag: 'Community',
   },
   {
@@ -101,13 +107,7 @@ const recommendedLinks = [
     title: 'Project Design',
     description: 'Why we designed Grape Yeast',
     tag: 'Project',
-  },
-  {
-    href: '/fudan/results/',
-    title: 'Project Results',
-    description: 'Our findings around Grape Yeast',
-    tag: 'Project',
-  },
+  }
 ]
 
 onMounted(() => {

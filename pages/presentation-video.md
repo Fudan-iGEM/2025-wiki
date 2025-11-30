@@ -5,7 +5,7 @@ authors:
     url: /fudan/team/#meet-our-members
 layout: igem
 heroImage: https://static.igem.wiki/teams/5643/img/screenshot-2025-08-06-at-21-23-43.webp
-description: We are still cooking our presentation at this moment.
+description: On this page, you can find the transcript of our presentation.
 ---
 
 Our presentation is at [https://video.igem.org/w/iRsWyoY68ey3E83McFmNf2](https://video.igem.org/w/iRsWyoY68ey3E83McFmNf2).
@@ -69,9 +69,13 @@ Focusing on the most genuine societal needs,  we strive to deliver welfare to th
 With a direct reach of 5000 peple, we try to make HP sustainable. have you noticed that in most public science activities
 
 > science lead and patients are mainly told
+> 
 > when inclusivity becomes a one-way event
+> 
 > the identities solidify
+> 
 > science and patient
+> 
 > giver and receiver
 
 This creates invisible barriers that keep some voices outside science and we wanted to make a difference
