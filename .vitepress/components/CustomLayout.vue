@@ -17,6 +17,7 @@ const hasAside = computed(() => {
          !route.path.includes('/hardware') &&
          !route.path.includes('/parts') &&
          !route.path.includes('/plant') &&
+         !route.path.includes('/presentation-video') &&
          !route.path.includes('/proof-of-concept') ;
 });
 const leftAside = computed(() => true); 
