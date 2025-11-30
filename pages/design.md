@@ -12,7 +12,7 @@ heroImage: https://static.igem.wiki/teams/5643/pageimage/design/design-headmap.w
 description: On this page, we introduce <em>DR.sTraTeGY</em>, a Drug Resistance mutation Tracking Technology based on Grape Yeast.
 ---
 
-Updated on 2025-10-31: we won the <a href="https://competition.igem.org/results/2025?tab=medals" target="_blank">Gold Medal</a>, and our project was nominated for the <a href="https://competition.igem.org/results/2025?tab=special-prizes#inclusivity-award" target="_blank">Inculsivity Award</a>.
+Updated on 2025-10-31: we won the <a href="https://competition.igem.org/results/2025?tab=medals" target="_blank">Gold Medal</a>, and our project was nominated for the <a href="https://competition.igem.org/results/2025?tab=special-prizes#inclusivity-award" target="_blank">Inclusivity Award</a>.
 
 <script setup lang="ts">
 import ChromosomeVisualization from '../.vitepress/components/ChromosomeVisualization.vue'
