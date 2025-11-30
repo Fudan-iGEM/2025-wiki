@@ -760,7 +760,7 @@ const navItems = ref([
         icon: "presentation",
         title: "Presentation",
         description: "Project presentation",
-        link: "https://teams.igem.org/5643/project-presentation",
+        link: "/fudan/presentation-video/",
       },
       {
         icon: "promotion-video",

@@ -13,7 +13,7 @@ description: Below is what we put in the judging form.
 
 ### Bronze
 
-- We successfully completed the following Competition Deliverables: [Wiki](https://2025.igem.wiki/fudan/), [Project Promotion Video](/promotion-video/), [Presentation Video](https://teams.igem.org/5643/project-presentation), [Judging Form](https://teams.igem.org/5643/judging), and in-person at the Paris for Judging Session.
+- We successfully completed the following Competition Deliverables: [Wiki](https://2025.igem.wiki/fudan/), [Project Promotion Video](/promotion-video/), [Presentation Video](/presentation-video/), [Judging Form](https://teams.igem.org/5643/judging), and in-person at the Paris for Judging Session.
 - We carefully describe what work our team members did and what external staff did for our project on our [Attributions Form](https://teams.igem.org/5643/attributions) and embeded on [Attributions](/attributions/) page.
 - We describe how and why we chose our iGEM project on our [Description](/description/) page.
 - Here we list our useful contributions for future iGEM teams.

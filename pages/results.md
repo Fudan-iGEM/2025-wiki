@@ -103,7 +103,7 @@ In this section, we evaluated various combination of promoters and fluorescent p
 
 - The multicellular Grape Yeast grows in grape-like clusters and was confirmed using chitin staining, which provides a great chassis for us to trace the growth and mutation of yeast.
 - Higher-ploidy tetraploid yeast exhibits a less stable genome than diploid yeast under gravity-based settling selection. This characteristic shows the potential for grape yeast to mimic pathogenic fungus under pressure. 
-- Meanwhile, as some studies have reported that certain fungi develop drug resistance by downregulating the expression of drug targets—potentially through mechanisms such as gene modification or genome ploidy reduction—we employed IME1 to induce meiosis in grape yeast as a model for this phenomenon. The corresponding results will be presented in our presentation video.
+- Meanwhile, as some studies have reported that certain fungi develop drug resistance by downregulating the expression of drug targets—potentially through mechanisms such as gene modification or genome ploidy reduction—we employed IME1 to induce meiosis in grape yeast as a model for this phenomenon. The corresponding results is presented in [our presentation video](https://video.igem.org/w/iRsWyoY68ey3E83McFmNf2).
 - Both higher ploidy and increased passage number lead to faster sedimentation rates.
 Future teams may easily sort out grape yeast based on this characteristic.
 
